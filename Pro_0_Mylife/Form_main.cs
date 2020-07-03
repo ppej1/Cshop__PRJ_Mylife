@@ -1,0 +1,91 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace Pro_0_Mylife
+{
+    public partial class Form_main : Form
+    {
+        Form_login form_Login;
+        public Form_main()
+        {
+            InitializeComponent();
+            
+        }
+
+
+        private void Form_main_Load(object sender, EventArgs e)
+        {
+            form_Login = new Form_login();
+            form_Login.loginEventHandler += new EventHandler(LoginSuccess);
+            switch (form_Login.ShowDialog())
+            {
+                case DialogResult.OK:
+                    form_Login.Close();
+                    break;
+                case DialogResult.Cancel:
+                    Dispose();
+                    break;
+            }
+
+           
+        }
+        private void LoginSuccess(String userName)
+        {
+            MessageBox.Show(userName);
+        }
+        private void Btn_home_Click(object sender, EventArgs e)
+        {
+            tab_form.SelectedIndex = 0;
+        }
+
+        private void Btn_memo_Click(object sender, EventArgs e)
+        {
+            tab_form.SelectedIndex = 1;
+        }
+
+        private void Btn_ck_Click(object sender, EventArgs e)
+        {
+            tab_form.SelectedIndex = 2;
+        }
+
+        private void Btn_shp_Click(object sender, EventArgs e)
+        {
+            tab_form.SelectedIndex = 3;
+        }
+
+        private void Btn_hk_btn(object sender, EventArgs e)
+        {
+            tab_form.SelectedIndex = 4;
+        }
+
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void checkedListBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+
+    }
+}
