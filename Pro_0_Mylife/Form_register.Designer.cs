@@ -35,7 +35,6 @@
             this.txt_pwd2 = new System.Windows.Forms.TextBox();
             this.txt_firstName = new System.Windows.Forms.TextBox();
             this.txt_lastName = new System.Windows.Forms.TextBox();
-            this.Btn_ck_pwd = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -54,7 +53,7 @@
             this.Btn_ck_email.Location = new System.Drawing.Point(260, 51);
             this.Btn_ck_email.Name = "Btn_ck_email";
             this.Btn_ck_email.Size = new System.Drawing.Size(78, 25);
-            this.Btn_ck_email.TabIndex = 0;
+            this.Btn_ck_email.TabIndex = 1;
             this.Btn_ck_email.Text = "확인";
             this.Btn_ck_email.UseVisualStyleBackColor = true;
             // 
@@ -63,7 +62,7 @@
             this.txt_email.Location = new System.Drawing.Point(40, 74);
             this.txt_email.Name = "txt_email";
             this.txt_email.Size = new System.Drawing.Size(298, 25);
-            this.txt_email.TabIndex = 1;
+            this.txt_email.TabIndex = 0;
             // 
             // lb_register
             // 
@@ -78,38 +77,31 @@
             // 
             this.txt_pwd1.Location = new System.Drawing.Point(40, 157);
             this.txt_pwd1.Name = "txt_pwd1";
+            this.txt_pwd1.PasswordChar = '*';
             this.txt_pwd1.Size = new System.Drawing.Size(298, 25);
-            this.txt_pwd1.TabIndex = 1;
+            this.txt_pwd1.TabIndex = 2;
             // 
             // txt_pwd2
             // 
             this.txt_pwd2.Location = new System.Drawing.Point(40, 204);
             this.txt_pwd2.Name = "txt_pwd2";
+            this.txt_pwd2.PasswordChar = '*';
             this.txt_pwd2.Size = new System.Drawing.Size(298, 25);
-            this.txt_pwd2.TabIndex = 1;
+            this.txt_pwd2.TabIndex = 3;
             // 
             // txt_firstName
             // 
             this.txt_firstName.Location = new System.Drawing.Point(40, 287);
             this.txt_firstName.Name = "txt_firstName";
             this.txt_firstName.Size = new System.Drawing.Size(83, 25);
-            this.txt_firstName.TabIndex = 1;
+            this.txt_firstName.TabIndex = 4;
             // 
             // txt_lastName
             // 
             this.txt_lastName.Location = new System.Drawing.Point(147, 287);
             this.txt_lastName.Name = "txt_lastName";
             this.txt_lastName.Size = new System.Drawing.Size(191, 25);
-            this.txt_lastName.TabIndex = 1;
-            // 
-            // Btn_ck_pwd
-            // 
-            this.Btn_ck_pwd.Location = new System.Drawing.Point(260, 128);
-            this.Btn_ck_pwd.Name = "Btn_ck_pwd";
-            this.Btn_ck_pwd.Size = new System.Drawing.Size(78, 26);
-            this.Btn_ck_pwd.TabIndex = 0;
-            this.Btn_ck_pwd.Text = "확인";
-            this.Btn_ck_pwd.UseVisualStyleBackColor = true;
+            this.txt_lastName.TabIndex = 5;
             // 
             // label2
             // 
@@ -158,14 +150,14 @@
             // 
             // cb_gender
             // 
-            this.cb_gender.AutoCompleteCustomSource.AddRange(new string[] {
+            this.cb_gender.FormattingEnabled = true;
+            this.cb_gender.Items.AddRange(new object[] {
             "남자",
             "여자"});
-            this.cb_gender.FormattingEnabled = true;
             this.cb_gender.Location = new System.Drawing.Point(40, 381);
             this.cb_gender.Name = "cb_gender";
             this.cb_gender.Size = new System.Drawing.Size(298, 23);
-            this.cb_gender.TabIndex = 3;
+            this.cb_gender.TabIndex = 6;
             // 
             // label7
             // 
@@ -181,25 +173,27 @@
             this.txt_phone.Location = new System.Drawing.Point(40, 454);
             this.txt_phone.Name = "txt_phone";
             this.txt_phone.Size = new System.Drawing.Size(298, 25);
-            this.txt_phone.TabIndex = 5;
+            this.txt_phone.TabIndex = 7;
             // 
             // Btn_register
             // 
             this.Btn_register.Location = new System.Drawing.Point(40, 506);
             this.Btn_register.Name = "Btn_register";
             this.Btn_register.Size = new System.Drawing.Size(134, 47);
-            this.Btn_register.TabIndex = 6;
+            this.Btn_register.TabIndex = 8;
             this.Btn_register.Text = "가입";
             this.Btn_register.UseVisualStyleBackColor = true;
+            this.Btn_register.Click += new System.EventHandler(this.Btn_register_Click);
             // 
             // Btn_cancel
             // 
             this.Btn_cancel.Location = new System.Drawing.Point(204, 506);
             this.Btn_cancel.Name = "Btn_cancel";
             this.Btn_cancel.Size = new System.Drawing.Size(134, 47);
-            this.Btn_cancel.TabIndex = 6;
+            this.Btn_cancel.TabIndex = 9;
             this.Btn_cancel.Text = "취소";
             this.Btn_cancel.UseVisualStyleBackColor = true;
+            this.Btn_cancel.Click += new System.EventHandler(this.Btn_cancel_Click);
             // 
             // label8
             // 
@@ -232,7 +226,6 @@
             this.Controls.Add(this.txt_pwd2);
             this.Controls.Add(this.txt_pwd1);
             this.Controls.Add(this.txt_email);
-            this.Controls.Add(this.Btn_ck_pwd);
             this.Controls.Add(this.Btn_ck_email);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -252,7 +245,6 @@
         private System.Windows.Forms.TextBox txt_pwd2;
         private System.Windows.Forms.TextBox txt_firstName;
         private System.Windows.Forms.TextBox txt_lastName;
-        private System.Windows.Forms.Button Btn_ck_pwd;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;

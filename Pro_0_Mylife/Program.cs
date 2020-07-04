@@ -22,8 +22,6 @@ namespace Pro_0_Mylife
                 return;
             }
 
-            MessageBox.Show("데이터베이스 접속 성공!!!");
-
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form_main());

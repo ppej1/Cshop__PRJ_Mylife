@@ -195,40 +195,28 @@
   <data name="&gt;&gt;memo_del.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <metadata name="memo.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="memo.HeaderText" xml:space="preserve">
-    <value>memo</value>
-  </data>
-  <data name="memo.MinimumWidth" type="System.Int32, mscorlib">
-    <value>1000</value>
-  </data>
-  <data name="memo.Width" type="System.Int32, mscorlib">
-    <value>1000</value>
-  </data>
-  <data name="dataGridView1.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="MemoView1.Location" type="System.Drawing.Point, System.Drawing">
     <value>10, 165</value>
   </data>
-  <data name="dataGridView1.RowHeadersWidth" type="System.Int32, mscorlib">
+  <data name="MemoView1.RowHeadersWidth" type="System.Int32, mscorlib">
     <value>51</value>
   </data>
-  <data name="dataGridView1.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="MemoView1.Size" type="System.Drawing.Size, System.Drawing">
     <value>1260, 564</value>
   </data>
-  <data name="dataGridView1.TabIndex" type="System.Int32, mscorlib">
+  <data name="MemoView1.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
-  <data name="&gt;&gt;dataGridView1.Name" xml:space="preserve">
-    <value>dataGridView1</value>
+  <data name="&gt;&gt;MemoView1.Name" xml:space="preserve">
+    <value>MemoView1</value>
   </data>
-  <data name="&gt;&gt;dataGridView1.Type" xml:space="preserve">
+  <data name="&gt;&gt;MemoView1.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;dataGridView1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;MemoView1.Parent" xml:space="preserve">
     <value>tabPage2</value>
   </data>
-  <data name="&gt;&gt;dataGridView1.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;MemoView1.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
   <data name="Lb_memo.Font" type="System.Drawing.Font, System.Drawing">
@@ -1053,32 +1041,8 @@
   <data name="&gt;&gt;tab_form.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
-  <data name="btn_home.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-3, 58</value>
-  </data>
-  <data name="btn_home.Size" type="System.Drawing.Size, System.Drawing">
-    <value>108, 60</value>
-  </data>
-  <data name="btn_home.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="btn_home.Text" xml:space="preserve">
-    <value>home</value>
-  </data>
-  <data name="&gt;&gt;btn_home.Name" xml:space="preserve">
-    <value>btn_home</value>
-  </data>
-  <data name="&gt;&gt;btn_home.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_home.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;btn_home.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
   <data name="btn_memo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-3, 115</value>
+    <value>-3, 58</value>
   </data>
   <data name="btn_memo.Size" type="System.Drawing.Size, System.Drawing">
     <value>108, 60</value>
@@ -1099,10 +1063,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btn_memo.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="btn_ck.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-3, 172</value>
+    <value>-3, 114</value>
   </data>
   <data name="btn_ck.Size" type="System.Drawing.Size, System.Drawing">
     <value>108, 60</value>
@@ -1123,10 +1087,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btn_ck.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="btn_shp.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-3, 229</value>
+    <value>-3, 170</value>
   </data>
   <data name="btn_shp.Size" type="System.Drawing.Size, System.Drawing">
     <value>108, 60</value>
@@ -1147,10 +1111,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btn_shp.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="btn_hk.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-3, 286</value>
+    <value>-3, 226</value>
   </data>
   <data name="btn_hk.Size" type="System.Drawing.Size, System.Drawing">
     <value>108, 60</value>
@@ -1171,7 +1135,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btn_hk.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="LOGO.Font" type="System.Drawing.Font, System.Drawing">
     <value>Snap ITC, 18pt</value>
@@ -1198,6 +1162,27 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;LOGO.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="Lb_loginUser.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1244, 21</value>
+  </data>
+  <data name="Lb_loginUser.Size" type="System.Drawing.Size, System.Drawing">
+    <value>143, 24</value>
+  </data>
+  <data name="Lb_loginUser.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;Lb_loginUser.Name" xml:space="preserve">
+    <value>Lb_loginUser</value>
+  </data>
+  <data name="&gt;&gt;Lb_loginUser.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Lb_loginUser.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Lb_loginUser.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -1217,12 +1202,6 @@
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>main</value>
-  </data>
-  <data name="&gt;&gt;memo.Name" xml:space="preserve">
-    <value>memo</value>
-  </data>
-  <data name="&gt;&gt;memo.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>Form_main</value>

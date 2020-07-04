@@ -202,6 +202,8 @@ namespace Pro_0_Mylife
                 System.Reflection.MemberInfo info = System.Reflection.MethodInfo.GetCurrentMethod();
                 string id = string.Format("{0}.{1}\n[{2}]",info.ReflectedType.Name,info.Name,query);
 
+                MessageBox.Show(ex.Message);
+
                 result = -1;
             }
             return result;

@@ -71,21 +71,22 @@
             this.id_bx.Location = new System.Drawing.Point(155, 52);
             this.id_bx.Name = "id_bx";
             this.id_bx.Size = new System.Drawing.Size(176, 25);
-            this.id_bx.TabIndex = 3;
+            this.id_bx.TabIndex = 0;
             // 
             // pwd_bx
             // 
             this.pwd_bx.Location = new System.Drawing.Point(155, 104);
             this.pwd_bx.Name = "pwd_bx";
+            this.pwd_bx.PasswordChar = '*';
             this.pwd_bx.Size = new System.Drawing.Size(176, 25);
-            this.pwd_bx.TabIndex = 4;
+            this.pwd_bx.TabIndex = 1;
             // 
             // btn_register
             // 
             this.btn_register.Location = new System.Drawing.Point(368, 136);
             this.btn_register.Name = "btn_register";
             this.btn_register.Size = new System.Drawing.Size(77, 25);
-            this.btn_register.TabIndex = 5;
+            this.btn_register.TabIndex = 3;
             this.btn_register.Text = "Register";
             this.btn_register.UseVisualStyleBackColor = true;
             this.btn_register.Click += new System.EventHandler(this.btn_register_Click);
@@ -95,7 +96,7 @@
             this.btn_pass_find.Location = new System.Drawing.Point(368, 167);
             this.btn_pass_find.Name = "btn_pass_find";
             this.btn_pass_find.Size = new System.Drawing.Size(77, 25);
-            this.btn_pass_find.TabIndex = 6;
+            this.btn_pass_find.TabIndex = 4;
             this.btn_pass_find.Text = "find password";
             this.btn_pass_find.UseVisualStyleBackColor = true;
             this.btn_pass_find.Click += new System.EventHandler(this.btn_pass_find_Click);

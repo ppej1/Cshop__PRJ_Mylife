@@ -34,8 +34,7 @@
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.memo_modi = new System.Windows.Forms.Button();
             this.memo_del = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.memo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MemoView1 = new System.Windows.Forms.DataGridView();
             this.Lb_memo = new System.Windows.Forms.Label();
             this.txt_memo = new System.Windows.Forms.TextBox();
             this.memo_add = new System.Windows.Forms.Button();
@@ -69,15 +68,15 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.btn_home = new System.Windows.Forms.Button();
             this.btn_memo = new System.Windows.Forms.Button();
             this.btn_ck = new System.Windows.Forms.Button();
             this.btn_shp = new System.Windows.Forms.Button();
             this.btn_hk = new System.Windows.Forms.Button();
             this.LOGO = new System.Windows.Forms.Label();
+            this.Lb_loginUser = new System.Windows.Forms.Label();
             this.tab_form.SuspendLayout();
             this.tabPage2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MemoView1)).BeginInit();
             this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.tabPage4.SuspendLayout();
@@ -107,7 +106,7 @@
             this.tabPage2.BackColor = System.Drawing.SystemColors.Highlight;
             this.tabPage2.Controls.Add(this.memo_modi);
             this.tabPage2.Controls.Add(this.memo_del);
-            this.tabPage2.Controls.Add(this.dataGridView1);
+            this.tabPage2.Controls.Add(this.MemoView1);
             this.tabPage2.Controls.Add(this.Lb_memo);
             this.tabPage2.Controls.Add(this.txt_memo);
             this.tabPage2.Controls.Add(this.memo_add);
@@ -126,28 +125,20 @@
             this.memo_del.Name = "memo_del";
             this.memo_del.UseVisualStyleBackColor = true;
             // 
-            // dataGridView1
+            // MemoView1
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.HighlightText;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.memo});
-            this.dataGridView1.GridColor = System.Drawing.SystemColors.ActiveCaption;
-            resources.ApplyResources(this.dataGridView1, "dataGridView1");
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 27;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // memo
-            // 
-            resources.ApplyResources(this.memo, "memo");
-            this.memo.Name = "memo";
-            this.memo.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.MemoView1.BackgroundColor = System.Drawing.SystemColors.HighlightText;
+            this.MemoView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.MemoView1.GridColor = System.Drawing.SystemColors.ActiveCaption;
+            resources.ApplyResources(this.MemoView1, "MemoView1");
+            this.MemoView1.Name = "MemoView1";
+            this.MemoView1.RowTemplate.Height = 27;
             // 
             // Lb_memo
             // 
             resources.ApplyResources(this.Lb_memo, "Lb_memo");
             this.Lb_memo.Name = "Lb_memo";
+            this.Lb_memo.Click += new System.EventHandler(this.Lb_memo_Click);
             // 
             // txt_memo
             // 
@@ -160,6 +151,7 @@
             resources.ApplyResources(this.memo_add, "memo_add");
             this.memo_add.Name = "memo_add";
             this.memo_add.UseVisualStyleBackColor = true;
+            this.memo_add.Click += new System.EventHandler(this.memo_add_Click);
             // 
             // tabPage3
             // 
@@ -361,14 +353,6 @@
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.UseVisualStyleBackColor = true;
             // 
-            // btn_home
-            // 
-            this.btn_home.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            resources.ApplyResources(this.btn_home, "btn_home");
-            this.btn_home.Name = "btn_home";
-            this.btn_home.UseVisualStyleBackColor = false;
-            this.btn_home.Click += new System.EventHandler(this.Btn_home_Click);
-            // 
             // btn_memo
             // 
             this.btn_memo.BackColor = System.Drawing.SystemColors.MenuHighlight;
@@ -405,18 +389,24 @@
             // 
             resources.ApplyResources(this.LOGO, "LOGO");
             this.LOGO.Name = "LOGO";
+            this.LOGO.Click += new System.EventHandler(this.LOGO_Click);
+            // 
+            // Lb_loginUser
+            // 
+            resources.ApplyResources(this.Lb_loginUser, "Lb_loginUser");
+            this.Lb_loginUser.Name = "Lb_loginUser";
             // 
             // Form_main
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Highlight;
+            this.Controls.Add(this.Lb_loginUser);
             this.Controls.Add(this.LOGO);
             this.Controls.Add(this.btn_hk);
             this.Controls.Add(this.btn_shp);
             this.Controls.Add(this.btn_ck);
             this.Controls.Add(this.btn_memo);
-            this.Controls.Add(this.btn_home);
             this.Controls.Add(this.tab_form);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "Form_main";
@@ -424,7 +414,7 @@
             this.tab_form.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MemoView1)).EndInit();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
@@ -442,7 +432,6 @@
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.TabPage tabPage4;
-        private System.Windows.Forms.Button btn_home;
         private System.Windows.Forms.Button btn_memo;
         private System.Windows.Forms.Button btn_ck;
         private System.Windows.Forms.Button btn_shp;
@@ -451,7 +440,7 @@
         private System.Windows.Forms.Label Lb_memo;
         private System.Windows.Forms.TextBox txt_memo;
         private System.Windows.Forms.Button memo_add;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView MemoView1;
         private System.Windows.Forms.Button memo_modi;
         private System.Windows.Forms.Button memo_del;
         private System.Windows.Forms.Button button1;
@@ -481,7 +470,7 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn memo;
         private System.Windows.Forms.Label LOGO;
+        private System.Windows.Forms.Label Lb_loginUser;
     }
 }

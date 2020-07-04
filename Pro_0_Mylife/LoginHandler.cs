@@ -29,13 +29,6 @@ namespace Pro_0_Mylife
             {
                 return false;
             }
-
-
-            /*            if (id.Equals("admin") && password.Equals("admin"))
-                        {
-                            return true;
-                        }*/
-            return false;
         }
     }
 }

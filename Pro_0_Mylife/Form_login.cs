@@ -60,7 +60,7 @@ namespace Pro_0_Mylife
 
         private void loginForm_Load(object sender, EventArgs e)
         {
-           
+            
         }
 
         private void btn_register_Click(object sender, EventArgs e)
