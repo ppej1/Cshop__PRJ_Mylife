@@ -63,15 +63,11 @@ namespace Pro_0_Mylife
             
         }
 
-        private void btn_register_Click(object sender, EventArgs e)
+        private void lb_register_Click(object sender, EventArgs e)
         {
             Form_register registerForm = new Form_register();
             registerForm.Show();
         }
 
-        private void btn_pass_find_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

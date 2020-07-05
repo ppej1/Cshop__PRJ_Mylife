@@ -30,11 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_main));
             this.tab_form = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.memo_modi = new System.Windows.Forms.Button();
-            this.memo_del = new System.Windows.Forms.Button();
-            this.MemoView1 = new System.Windows.Forms.DataGridView();
+            this.tab_home = new System.Windows.Forms.TabPage();
+            this.tab_Memo = new System.Windows.Forms.TabPage();
             this.Lb_memo = new System.Windows.Forms.Label();
             this.txt_memo = new System.Windows.Forms.TextBox();
             this.memo_add = new System.Windows.Forms.Button();
@@ -68,26 +65,34 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.btn_memo = new System.Windows.Forms.Button();
             this.btn_ck = new System.Windows.Forms.Button();
             this.btn_shp = new System.Windows.Forms.Button();
             this.btn_hk = new System.Windows.Forms.Button();
             this.LOGO = new System.Windows.Forms.Label();
             this.Lb_loginUser = new System.Windows.Forms.Label();
+            this.button6 = new System.Windows.Forms.Button();
+            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.button8 = new System.Windows.Forms.Button();
+            this.Memo_flowpanel = new System.Windows.Forms.FlowLayoutPanel();
             this.tab_form.SuspendLayout();
-            this.tabPage2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.MemoView1)).BeginInit();
+            this.tab_Memo.SuspendLayout();
             this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.tabPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
+            this.tabPage5.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
+            this.flowLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // tab_form
             // 
             resources.ApplyResources(this.tab_form, "tab_form");
-            this.tab_form.Controls.Add(this.tabPage1);
-            this.tab_form.Controls.Add(this.tabPage2);
+            this.tab_form.Controls.Add(this.tab_home);
+            this.tab_form.Controls.Add(this.tab_Memo);
             this.tab_form.Controls.Add(this.tabPage3);
             this.tab_form.Controls.Add(this.tabPage4);
             this.tab_form.Controls.Add(this.tabPage5);
@@ -95,44 +100,21 @@
             this.tab_form.SelectedIndex = 0;
             this.tab_form.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             // 
-            // tabPage1
+            // tab_home
             // 
-            this.tabPage1.BackColor = System.Drawing.Color.White;
-            resources.ApplyResources(this.tabPage1, "tabPage1");
-            this.tabPage1.Name = "tabPage1";
+            this.tab_home.BackColor = System.Drawing.Color.White;
+            resources.ApplyResources(this.tab_home, "tab_home");
+            this.tab_home.Name = "tab_home";
             // 
-            // tabPage2
+            // tab_Memo
             // 
-            this.tabPage2.BackColor = System.Drawing.SystemColors.Highlight;
-            this.tabPage2.Controls.Add(this.memo_modi);
-            this.tabPage2.Controls.Add(this.memo_del);
-            this.tabPage2.Controls.Add(this.MemoView1);
-            this.tabPage2.Controls.Add(this.Lb_memo);
-            this.tabPage2.Controls.Add(this.txt_memo);
-            this.tabPage2.Controls.Add(this.memo_add);
-            resources.ApplyResources(this.tabPage2, "tabPage2");
-            this.tabPage2.Name = "tabPage2";
-            // 
-            // memo_modi
-            // 
-            resources.ApplyResources(this.memo_modi, "memo_modi");
-            this.memo_modi.Name = "memo_modi";
-            this.memo_modi.UseVisualStyleBackColor = true;
-            // 
-            // memo_del
-            // 
-            resources.ApplyResources(this.memo_del, "memo_del");
-            this.memo_del.Name = "memo_del";
-            this.memo_del.UseVisualStyleBackColor = true;
-            // 
-            // MemoView1
-            // 
-            this.MemoView1.BackgroundColor = System.Drawing.SystemColors.HighlightText;
-            this.MemoView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.MemoView1.GridColor = System.Drawing.SystemColors.ActiveCaption;
-            resources.ApplyResources(this.MemoView1, "MemoView1");
-            this.MemoView1.Name = "MemoView1";
-            this.MemoView1.RowTemplate.Height = 27;
+            this.tab_Memo.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.tab_Memo.Controls.Add(this.Memo_flowpanel);
+            this.tab_Memo.Controls.Add(this.txt_memo);
+            this.tab_Memo.Controls.Add(this.memo_add);
+            this.tab_Memo.Controls.Add(this.Lb_memo);
+            resources.ApplyResources(this.tab_Memo, "tab_Memo");
+            this.tab_Memo.Name = "tab_Memo";
             // 
             // Lb_memo
             // 
@@ -148,9 +130,11 @@
             // 
             // memo_add
             // 
+            this.memo_add.BackColor = System.Drawing.Color.SkyBlue;
+            this.memo_add.FlatAppearance.BorderSize = 0;
             resources.ApplyResources(this.memo_add, "memo_add");
             this.memo_add.Name = "memo_add";
-            this.memo_add.UseVisualStyleBackColor = true;
+            this.memo_add.UseVisualStyleBackColor = false;
             this.memo_add.Click += new System.EventHandler(this.memo_add_Click);
             // 
             // tabPage3
@@ -349,13 +333,25 @@
             // 
             // tabPage5
             // 
+            this.tabPage5.Controls.Add(this.button6);
+            this.tabPage5.Controls.Add(this.flowLayoutPanel1);
             resources.ApplyResources(this.tabPage5, "tabPage5");
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.UseVisualStyleBackColor = true;
             // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.BackColor = System.Drawing.SystemColors.Control;
+            this.flowLayoutPanel1.Controls.Add(this.flowLayoutPanel2);
+            resources.ApplyResources(this.flowLayoutPanel1, "flowLayoutPanel1");
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel1_Paint);
+            // 
             // btn_memo
             // 
-            this.btn_memo.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btn_memo.BackColor = System.Drawing.Color.SkyBlue;
+            this.btn_memo.FlatAppearance.BorderSize = 0;
+            this.btn_memo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DeepSkyBlue;
             resources.ApplyResources(this.btn_memo, "btn_memo");
             this.btn_memo.Name = "btn_memo";
             this.btn_memo.UseVisualStyleBackColor = false;
@@ -363,7 +359,9 @@
             // 
             // btn_ck
             // 
-            this.btn_ck.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btn_ck.BackColor = System.Drawing.Color.SkyBlue;
+            this.btn_ck.FlatAppearance.BorderSize = 0;
+            this.btn_ck.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DeepSkyBlue;
             resources.ApplyResources(this.btn_ck, "btn_ck");
             this.btn_ck.Name = "btn_ck";
             this.btn_ck.UseVisualStyleBackColor = false;
@@ -371,7 +369,9 @@
             // 
             // btn_shp
             // 
-            this.btn_shp.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btn_shp.BackColor = System.Drawing.Color.SkyBlue;
+            this.btn_shp.FlatAppearance.BorderSize = 0;
+            this.btn_shp.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DeepSkyBlue;
             resources.ApplyResources(this.btn_shp, "btn_shp");
             this.btn_shp.Name = "btn_shp";
             this.btn_shp.UseVisualStyleBackColor = false;
@@ -379,7 +379,9 @@
             // 
             // btn_hk
             // 
-            this.btn_hk.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btn_hk.BackColor = System.Drawing.Color.SkyBlue;
+            this.btn_hk.FlatAppearance.BorderSize = 0;
+            this.btn_hk.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DeepSkyBlue;
             resources.ApplyResources(this.btn_hk, "btn_hk");
             this.btn_hk.Name = "btn_hk";
             this.btn_hk.UseVisualStyleBackColor = false;
@@ -396,11 +398,41 @@
             resources.ApplyResources(this.Lb_loginUser, "Lb_loginUser");
             this.Lb_loginUser.Name = "Lb_loginUser";
             // 
+            // button6
+            // 
+            resources.ApplyResources(this.button6, "button6");
+            this.button6.Name = "button6";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // flowLayoutPanel2
+            // 
+            this.flowLayoutPanel2.Controls.Add(this.textBox8);
+            this.flowLayoutPanel2.Controls.Add(this.button8);
+            resources.ApplyResources(this.flowLayoutPanel2, "flowLayoutPanel2");
+            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
+            // 
+            // textBox8
+            // 
+            resources.ApplyResources(this.textBox8, "textBox8");
+            this.textBox8.Name = "textBox8";
+            // 
+            // button8
+            // 
+            resources.ApplyResources(this.button8, "button8");
+            this.button8.Name = "button8";
+            this.button8.UseVisualStyleBackColor = true;
+            // 
+            // Memo_flowpanel
+            // 
+            resources.ApplyResources(this.Memo_flowpanel, "Memo_flowpanel");
+            this.Memo_flowpanel.Name = "Memo_flowpanel";
+            // 
             // Form_main
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.Highlight;
+            this.BackColor = System.Drawing.Color.SkyBlue;
             this.Controls.Add(this.Lb_loginUser);
             this.Controls.Add(this.LOGO);
             this.Controls.Add(this.btn_hk);
@@ -409,18 +441,23 @@
             this.Controls.Add(this.btn_memo);
             this.Controls.Add(this.tab_form);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Form_main";
             this.Load += new System.EventHandler(this.Form_main_Load);
             this.tab_form.ResumeLayout(false);
-            this.tabPage2.ResumeLayout(false);
-            this.tabPage2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.MemoView1)).EndInit();
+            this.tab_Memo.ResumeLayout(false);
+            this.tab_Memo.PerformLayout();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
+            this.tabPage5.ResumeLayout(false);
+            this.flowLayoutPanel1.ResumeLayout(false);
+            this.flowLayoutPanel2.ResumeLayout(false);
+            this.flowLayoutPanel2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -428,8 +465,8 @@
         #endregion
 
         private System.Windows.Forms.TabControl tab_form;
-        private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.TabPage tab_home;
+        private System.Windows.Forms.TabPage tab_Memo;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.TabPage tabPage4;
         private System.Windows.Forms.Button btn_memo;
@@ -440,9 +477,6 @@
         private System.Windows.Forms.Label Lb_memo;
         private System.Windows.Forms.TextBox txt_memo;
         private System.Windows.Forms.Button memo_add;
-        private System.Windows.Forms.DataGridView MemoView1;
-        private System.Windows.Forms.Button memo_modi;
-        private System.Windows.Forms.Button memo_del;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox comboBox1;
@@ -472,5 +506,11 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label LOGO;
         private System.Windows.Forms.Label Lb_loginUser;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
+        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.FlowLayoutPanel Memo_flowpanel;
     }
 }

@@ -51,8 +51,6 @@ namespace Pro_0_Mylife
 
 
             int result = db.ExecuteNonQuery(query);
-            MessageBox.Show(query);
-            MessageBox.Show("" + result);
             if (result > 0)
             {
                 return true;

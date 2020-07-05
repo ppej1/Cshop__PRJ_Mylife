@@ -122,135 +122,57 @@
     <value>FlatButtons</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="tabPage1.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="tab_home.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 5</value>
   </data>
-  <data name="tabPage1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="tab_home.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 3, 3, 3</value>
   </data>
-  <data name="tabPage1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1284, 744</value>
+  <data name="tab_home.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1389, 761</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="tabPage1.TabIndex" type="System.Int32, mscorlib">
+  <data name="tab_home.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;tabPage1.Name" xml:space="preserve">
-    <value>tabPage1</value>
+  <data name="&gt;&gt;tab_home.Name" xml:space="preserve">
+    <value>tab_home</value>
   </data>
-  <data name="&gt;&gt;tabPage1.Type" xml:space="preserve">
+  <data name="&gt;&gt;tab_home.Type" xml:space="preserve">
     <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;tabPage1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;tab_home.Parent" xml:space="preserve">
     <value>tab_form</value>
   </data>
-  <data name="&gt;&gt;tabPage1.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;tab_home.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="memo_modi.Location" type="System.Drawing.Point, System.Drawing">
-    <value>973, 135</value>
+  <data name="Memo_flowpanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>64, 114</value>
   </data>
-  <data name="memo_modi.Size" type="System.Drawing.Size, System.Drawing">
-    <value>136, 24</value>
+  <data name="Memo_flowpanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1266, 771</value>
   </data>
-  <data name="memo_modi.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
+  <data name="Memo_flowpanel.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
   </data>
-  <data name="memo_modi.Text" xml:space="preserve">
-    <value>MODIFY</value>
+  <data name="&gt;&gt;Memo_flowpanel.Name" xml:space="preserve">
+    <value>Memo_flowpanel</value>
   </data>
-  <data name="&gt;&gt;memo_modi.Name" xml:space="preserve">
-    <value>memo_modi</value>
+  <data name="&gt;&gt;Memo_flowpanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;memo_modi.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;Memo_flowpanel.Parent" xml:space="preserve">
+    <value>tab_Memo</value>
   </data>
-  <data name="&gt;&gt;memo_modi.Parent" xml:space="preserve">
-    <value>tabPage2</value>
-  </data>
-  <data name="&gt;&gt;memo_modi.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;Memo_flowpanel.ZOrder" xml:space="preserve">
     <value>0</value>
-  </data>
-  <data name="memo_del.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1129, 135</value>
-  </data>
-  <data name="memo_del.Size" type="System.Drawing.Size, System.Drawing">
-    <value>136, 24</value>
-  </data>
-  <data name="memo_del.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="memo_del.Text" xml:space="preserve">
-    <value>DELETE</value>
-  </data>
-  <data name="&gt;&gt;memo_del.Name" xml:space="preserve">
-    <value>memo_del</value>
-  </data>
-  <data name="&gt;&gt;memo_del.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;memo_del.Parent" xml:space="preserve">
-    <value>tabPage2</value>
-  </data>
-  <data name="&gt;&gt;memo_del.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="MemoView1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 165</value>
-  </data>
-  <data name="MemoView1.RowHeadersWidth" type="System.Int32, mscorlib">
-    <value>51</value>
-  </data>
-  <data name="MemoView1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1260, 564</value>
-  </data>
-  <data name="MemoView1.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;MemoView1.Name" xml:space="preserve">
-    <value>MemoView1</value>
-  </data>
-  <data name="&gt;&gt;MemoView1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;MemoView1.Parent" xml:space="preserve">
-    <value>tabPage2</value>
-  </data>
-  <data name="&gt;&gt;MemoView1.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="Lb_memo.Font" type="System.Drawing.Font, System.Drawing">
-    <value>굴림, 15pt</value>
-  </data>
-  <data name="Lb_memo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>24, 23</value>
-  </data>
-  <data name="Lb_memo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>88, 25</value>
-  </data>
-  <data name="Lb_memo.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="Lb_memo.Text" xml:space="preserve">
-    <value>MEMO</value>
-  </data>
-  <data name="&gt;&gt;Lb_memo.Name" xml:space="preserve">
-    <value>Lb_memo</value>
-  </data>
-  <data name="&gt;&gt;Lb_memo.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Lb_memo.Parent" xml:space="preserve">
-    <value>tabPage2</value>
-  </data>
-  <data name="&gt;&gt;Lb_memo.ZOrder" xml:space="preserve">
-    <value>3</value>
   </data>
   <data name="txt_memo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>130, 22</value>
+    <value>114, 58</value>
   </data>
   <data name="txt_memo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>955, 25</value>
+    <value>1094, 25</value>
   </data>
   <data name="txt_memo.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -262,16 +184,22 @@
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;txt_memo.Parent" xml:space="preserve">
-    <value>tabPage2</value>
+    <value>tab_Memo</value>
   </data>
   <data name="&gt;&gt;txt_memo.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>1</value>
+  </data>
+  <data name="memo_add.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="memo_add.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Ravie, 9pt</value>
   </data>
   <data name="memo_add.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1129, 23</value>
+    <value>1232, 58</value>
   </data>
   <data name="memo_add.Size" type="System.Drawing.Size, System.Drawing">
-    <value>136, 24</value>
+    <value>83, 27</value>
   </data>
   <data name="memo_add.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -286,33 +214,60 @@
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;memo_add.Parent" xml:space="preserve">
-    <value>tabPage2</value>
+    <value>tab_Memo</value>
   </data>
   <data name="&gt;&gt;memo_add.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>2</value>
   </data>
-  <data name="tabPage2.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="Lb_memo.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Ravie, 15pt</value>
+  </data>
+  <data name="Lb_memo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 12</value>
+  </data>
+  <data name="Lb_memo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 34</value>
+  </data>
+  <data name="Lb_memo.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="Lb_memo.Text" xml:space="preserve">
+    <value>MEMO</value>
+  </data>
+  <data name="&gt;&gt;Lb_memo.Name" xml:space="preserve">
+    <value>Lb_memo</value>
+  </data>
+  <data name="&gt;&gt;Lb_memo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Lb_memo.Parent" xml:space="preserve">
+    <value>tab_Memo</value>
+  </data>
+  <data name="&gt;&gt;Lb_memo.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="tab_Memo.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 5</value>
   </data>
-  <data name="tabPage2.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="tab_Memo.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 3, 3, 3</value>
   </data>
-  <data name="tabPage2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1284, 744</value>
+  <data name="tab_Memo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1388, 885</value>
   </data>
-  <data name="tabPage2.TabIndex" type="System.Int32, mscorlib">
+  <data name="tab_Memo.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="&gt;&gt;tabPage2.Name" xml:space="preserve">
-    <value>tabPage2</value>
+  <data name="&gt;&gt;tab_Memo.Name" xml:space="preserve">
+    <value>tab_Memo</value>
   </data>
-  <data name="&gt;&gt;tabPage2.Type" xml:space="preserve">
+  <data name="&gt;&gt;tab_Memo.Type" xml:space="preserve">
     <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;tabPage2.Parent" xml:space="preserve">
+  <data name="&gt;&gt;tab_Memo.Parent" xml:space="preserve">
     <value>tab_form</value>
   </data>
-  <data name="&gt;&gt;tabPage2.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;tab_Memo.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
   <data name="dataGridView2.Location" type="System.Drawing.Point, System.Drawing">
@@ -622,7 +577,7 @@
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tabPage3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1284, 744</value>
+    <value>1389, 761</value>
   </data>
   <data name="tabPage3.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -979,7 +934,7 @@
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tabPage4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1284, 744</value>
+    <value>1389, 761</value>
   </data>
   <data name="tabPage4.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -996,11 +951,122 @@
   <data name="&gt;&gt;tabPage4.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <data name="button6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>47, 34</value>
+  </data>
+  <data name="button6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>82, 31</value>
+  </data>
+  <data name="button6.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="button6.Text" xml:space="preserve">
+    <value>button6</value>
+  </data>
+  <data name="&gt;&gt;button6.Name" xml:space="preserve">
+    <value>button6</value>
+  </data>
+  <data name="&gt;&gt;button6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button6.Parent" xml:space="preserve">
+    <value>tabPage5</value>
+  </data>
+  <data name="&gt;&gt;button6.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="textBox8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="textBox8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1300, 25</value>
+  </data>
+  <data name="textBox8.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;textBox8.Name" xml:space="preserve">
+    <value>textBox8</value>
+  </data>
+  <data name="&gt;&gt;textBox8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox8.Parent" xml:space="preserve">
+    <value>flowLayoutPanel2</value>
+  </data>
+  <data name="&gt;&gt;textBox8.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="button8.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="button8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1309, 3</value>
+  </data>
+  <data name="button8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>27, 27</value>
+  </data>
+  <data name="button8.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;button8.Name" xml:space="preserve">
+    <value>button8</value>
+  </data>
+  <data name="&gt;&gt;button8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button8.Parent" xml:space="preserve">
+    <value>flowLayoutPanel2</value>
+  </data>
+  <data name="&gt;&gt;button8.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="flowLayoutPanel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="flowLayoutPanel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1383, 34</value>
+  </data>
+  <data name="flowLayoutPanel2.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;flowLayoutPanel2.Name" xml:space="preserve">
+    <value>flowLayoutPanel2</value>
+  </data>
+  <data name="&gt;&gt;flowLayoutPanel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;flowLayoutPanel2.Parent" xml:space="preserve">
+    <value>flowLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;flowLayoutPanel2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="flowLayoutPanel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 85</value>
+  </data>
+  <data name="flowLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1389, 676</value>
+  </data>
+  <data name="flowLayoutPanel1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;flowLayoutPanel1.Name" xml:space="preserve">
+    <value>flowLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;flowLayoutPanel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;flowLayoutPanel1.Parent" xml:space="preserve">
+    <value>tabPage5</value>
+  </data>
+  <data name="&gt;&gt;flowLayoutPanel1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <data name="tabPage5.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 5</value>
   </data>
   <data name="tabPage5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1284, 744</value>
+    <value>1389, 761</value>
   </data>
   <data name="tabPage5.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -1021,10 +1087,10 @@
     <value>0, 1</value>
   </data>
   <data name="tab_form.Location" type="System.Drawing.Point, System.Drawing">
-    <value>100, 58</value>
+    <value>172, 51</value>
   </data>
   <data name="tab_form.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1292, 753</value>
+    <value>1396, 894</value>
   </data>
   <data name="tab_form.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -1041,11 +1107,17 @@
   <data name="&gt;&gt;tab_form.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
+  <data name="btn_memo.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btn_memo.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Ravie, 12pt</value>
+  </data>
   <data name="btn_memo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-3, 58</value>
+    <value>1, 51</value>
   </data>
   <data name="btn_memo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>108, 60</value>
+    <value>169, 41</value>
   </data>
   <data name="btn_memo.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -1065,11 +1137,17 @@
   <data name="&gt;&gt;btn_memo.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
+  <data name="btn_ck.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btn_ck.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Ravie, 12pt</value>
+  </data>
   <data name="btn_ck.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-3, 114</value>
+    <value>1, 98</value>
   </data>
   <data name="btn_ck.Size" type="System.Drawing.Size, System.Drawing">
-    <value>108, 60</value>
+    <value>169, 41</value>
   </data>
   <data name="btn_ck.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -1089,11 +1167,17 @@
   <data name="&gt;&gt;btn_ck.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
+  <data name="btn_shp.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btn_shp.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Ravie, 12pt</value>
+  </data>
   <data name="btn_shp.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-3, 170</value>
+    <value>1, 145</value>
   </data>
   <data name="btn_shp.Size" type="System.Drawing.Size, System.Drawing">
-    <value>108, 60</value>
+    <value>169, 41</value>
   </data>
   <data name="btn_shp.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -1113,11 +1197,17 @@
   <data name="&gt;&gt;btn_shp.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <data name="btn_hk.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btn_hk.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Ravie, 12pt</value>
+  </data>
   <data name="btn_hk.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-3, 226</value>
+    <value>1, 192</value>
   </data>
   <data name="btn_hk.Size" type="System.Drawing.Size, System.Drawing">
-    <value>108, 60</value>
+    <value>169, 45</value>
   </data>
   <data name="btn_hk.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -1138,13 +1228,13 @@
     <value>2</value>
   </data>
   <data name="LOGO.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Snap ITC, 18pt</value>
+    <value>Ravie, 15pt</value>
   </data>
   <data name="LOGO.Location" type="System.Drawing.Point, System.Drawing">
     <value>13, 4</value>
   </data>
   <data name="LOGO.Size" type="System.Drawing.Size, System.Drawing">
-    <value>150, 51</value>
+    <value>128, 41</value>
   </data>
   <data name="LOGO.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -1165,10 +1255,10 @@
     <value>1</value>
   </data>
   <data name="Lb_loginUser.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1244, 21</value>
+    <value>1405, 9</value>
   </data>
   <data name="Lb_loginUser.Size" type="System.Drawing.Size, System.Drawing">
-    <value>143, 24</value>
+    <value>151, 36</value>
   </data>
   <data name="Lb_loginUser.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -1195,7 +1285,10 @@
     <value>GrowAndShrink</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1398, 819</value>
+    <value>1568, 946</value>
+  </data>
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>

@@ -13,8 +13,6 @@ namespace Pro_0_Mylife
         OracleDBManager db = new OracleDBManager();
         public bool InsertMemo(string loginUser,string memo)
         {
-            MessageBox.Show(loginUser+" : " + memo);
-
             DataSet ds = new DataSet();
             string query = string.Empty;
             
@@ -30,13 +28,10 @@ namespace Pro_0_Mylife
                 ,sysDate
              )";
 
-
             query = query.Replace("#US_EMAIL", loginUser);
             query = query.Replace("#ME_CONTENTS", memo);
 
             int result = db.ExecuteNonQuery(query);
-            MessageBox.Show(query);
-            MessageBox.Show("" + result);
             if (result > 0)
             {
                 return true;
@@ -47,7 +42,7 @@ namespace Pro_0_Mylife
         {
             try
             {
-                string query = @"SELECT ME_CONTENTS FROM root2.MEMO_T WHERE US_EMAIL='#US_EMAIL'";
+                string query = @"SELECT * FROM root2.MEMO_T WHERE US_EMAIL='#US_EMAIL' ORDER BY ME_REG_DATE DESC";
                 query = query.Replace("#US_EMAIL", loginUser);
                 db.ExecuteDsQuery(ds, query);
 
@@ -60,6 +55,30 @@ namespace Pro_0_Mylife
                 MessageBox.Show(ex.ToString(),"Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 
             }
+        }
+        public bool DeleteMemo(string memo_no)
+        {
+            try
+            {
+                string query = @"DELETE MEMO_T WHERE ME_NO = '#ME_NO'";
+                query = query.Replace("#ME_NO", memo_no);
+
+                int result = db.ExecuteNonQuery(query);
+                if (result > 0)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }              
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString(), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+
         }
     }
 }
