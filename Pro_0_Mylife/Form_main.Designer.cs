@@ -32,24 +32,35 @@
             this.tab_form = new System.Windows.Forms.TabControl();
             this.tab_home = new System.Windows.Forms.TabPage();
             this.tab_Memo = new System.Windows.Forms.TabPage();
-            this.Lb_memo = new System.Windows.Forms.Label();
+            this.Memo_flowpanel = new System.Windows.Forms.FlowLayoutPanel();
             this.txt_memo = new System.Windows.Forms.TextBox();
             this.memo_add = new System.Windows.Forms.Button();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.label3 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
-            this.label2 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.Lb_memo = new System.Windows.Forms.Label();
+            this.tab_TodoList = new System.Windows.Forms.TabPage();
+            this.todo_panel2 = new System.Windows.Forms.Panel();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.lb_Todo_Title = new System.Windows.Forms.Label();
+            this.todolistFlowPanel = new System.Windows.Forms.FlowLayoutPanel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.Todo_panel1 = new System.Windows.Forms.Panel();
+            this.Todo_EndMinute = new System.Windows.Forms.ComboBox();
+            this.Todo_StartMinute = new System.Windows.Forms.ComboBox();
+            this.Todo_Calendar = new System.Windows.Forms.MonthCalendar();
+            this.btn_TodoRegister = new System.Windows.Forms.Button();
+            this.Todo_StartHour = new System.Windows.Forms.ComboBox();
+            this.lb_todo_contents = new System.Windows.Forms.Label();
+            this.Todo_contents = new System.Windows.Forms.TextBox();
+            this.lb_startDate = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.Todo_EndHour = new System.Windows.Forms.ComboBox();
+            this.Todo_EndDate = new System.Windows.Forms.DateTimePicker();
+            this.Todo_startDate = new System.Windows.Forms.DateTimePicker();
+            this.tab_shopping = new System.Windows.Forms.TabPage();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
@@ -65,27 +76,22 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.btn_memo = new System.Windows.Forms.Button();
             this.btn_ck = new System.Windows.Forms.Button();
             this.btn_shp = new System.Windows.Forms.Button();
             this.btn_hk = new System.Windows.Forms.Button();
             this.LOGO = new System.Windows.Forms.Label();
             this.Lb_loginUser = new System.Windows.Forms.Label();
-            this.button6 = new System.Windows.Forms.Button();
-            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.button8 = new System.Windows.Forms.Button();
-            this.Memo_flowpanel = new System.Windows.Forms.FlowLayoutPanel();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.tab_form.SuspendLayout();
             this.tab_Memo.SuspendLayout();
-            this.tabPage3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
-            this.tabPage4.SuspendLayout();
+            this.tab_TodoList.SuspendLayout();
+            this.todo_panel2.SuspendLayout();
+            this.todolistFlowPanel.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.Todo_panel1.SuspendLayout();
+            this.tab_shopping.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
-            this.tabPage5.SuspendLayout();
-            this.flowLayoutPanel1.SuspendLayout();
-            this.flowLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // tab_form
@@ -93,8 +99,8 @@
             resources.ApplyResources(this.tab_form, "tab_form");
             this.tab_form.Controls.Add(this.tab_home);
             this.tab_form.Controls.Add(this.tab_Memo);
-            this.tab_form.Controls.Add(this.tabPage3);
-            this.tab_form.Controls.Add(this.tabPage4);
+            this.tab_form.Controls.Add(this.tab_TodoList);
+            this.tab_form.Controls.Add(this.tab_shopping);
             this.tab_form.Controls.Add(this.tabPage5);
             this.tab_form.Name = "tab_form";
             this.tab_form.SelectedIndex = 0;
@@ -116,11 +122,10 @@
             resources.ApplyResources(this.tab_Memo, "tab_Memo");
             this.tab_Memo.Name = "tab_Memo";
             // 
-            // Lb_memo
+            // Memo_flowpanel
             // 
-            resources.ApplyResources(this.Lb_memo, "Lb_memo");
-            this.Lb_memo.Name = "Lb_memo";
-            this.Lb_memo.Click += new System.EventHandler(this.Lb_memo_Click);
+            resources.ApplyResources(this.Memo_flowpanel, "Memo_flowpanel");
+            this.Memo_flowpanel.Name = "Memo_flowpanel";
             // 
             // txt_memo
             // 
@@ -137,122 +142,369 @@
             this.memo_add.UseVisualStyleBackColor = false;
             this.memo_add.Click += new System.EventHandler(this.memo_add_Click);
             // 
-            // tabPage3
+            // Lb_memo
             // 
-            this.tabPage3.BackColor = System.Drawing.SystemColors.Highlight;
-            this.tabPage3.Controls.Add(this.dataGridView2);
-            this.tabPage3.Controls.Add(this.textBox2);
-            this.tabPage3.Controls.Add(this.label4);
-            this.tabPage3.Controls.Add(this.comboBox2);
-            this.tabPage3.Controls.Add(this.dateTimePicker2);
-            this.tabPage3.Controls.Add(this.label3);
-            this.tabPage3.Controls.Add(this.comboBox1);
-            this.tabPage3.Controls.Add(this.monthCalendar1);
-            this.tabPage3.Controls.Add(this.label2);
-            this.tabPage3.Controls.Add(this.dateTimePicker1);
-            this.tabPage3.Controls.Add(this.textBox1);
-            this.tabPage3.Controls.Add(this.button1);
-            this.tabPage3.Controls.Add(this.label1);
-            resources.ApplyResources(this.tabPage3, "tabPage3");
-            this.tabPage3.Name = "tabPage3";
+            resources.ApplyResources(this.Lb_memo, "Lb_memo");
+            this.Lb_memo.Name = "Lb_memo";
+            this.Lb_memo.Click += new System.EventHandler(this.Lb_memo_Click);
             // 
-            // dataGridView2
+            // tab_TodoList
             // 
-            this.dataGridView2.BackgroundColor = System.Drawing.SystemColors.InactiveBorder;
-            this.dataGridView2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dataGridView2.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.GridColor = System.Drawing.SystemColors.ButtonHighlight;
-            resources.ApplyResources(this.dataGridView2, "dataGridView2");
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.RowTemplate.Height = 27;
+            this.tab_TodoList.BackColor = System.Drawing.Color.White;
+            this.tab_TodoList.Controls.Add(this.todo_panel2);
+            this.tab_TodoList.Controls.Add(this.Todo_panel1);
+            resources.ApplyResources(this.tab_TodoList, "tab_TodoList");
+            this.tab_TodoList.Name = "tab_TodoList";
             // 
-            // textBox2
+            // todo_panel2
             // 
-            this.textBox2.BackColor = System.Drawing.SystemColors.Highlight;
-            resources.ApplyResources(this.textBox2, "textBox2");
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
+            this.todo_panel2.BackColor = System.Drawing.Color.Lavender;
+            this.todo_panel2.Controls.Add(this.textBox1);
+            this.todo_panel2.Controls.Add(this.button1);
+            this.todo_panel2.Controls.Add(this.lb_Todo_Title);
+            this.todo_panel2.Controls.Add(this.todolistFlowPanel);
+            resources.ApplyResources(this.todo_panel2, "todo_panel2");
+            this.todo_panel2.Name = "todo_panel2";
             // 
-            // label4
+            // textBox1
             // 
-            resources.ApplyResources(this.label4, "label4");
-            this.label4.Name = "label4";
+            this.textBox1.BackColor = System.Drawing.Color.Lavender;
+            resources.ApplyResources(this.textBox1, "textBox1");
+            this.textBox1.Name = "textBox1";
             // 
-            // comboBox2
+            // button1
             // 
-            this.comboBox2.FormattingEnabled = true;
-            resources.ApplyResources(this.comboBox2, "comboBox2");
-            this.comboBox2.Name = "comboBox2";
+            this.button1.BackColor = System.Drawing.Color.MediumSlateBlue;
+            resources.ApplyResources(this.button1, "button1");
+            this.button1.Name = "button1";
+            this.button1.UseVisualStyleBackColor = false;
             // 
-            // dateTimePicker2
+            // lb_Todo_Title
             // 
-            resources.ApplyResources(this.dateTimePicker2, "dateTimePicker2");
-            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.lb_Todo_Title.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.lb_Todo_Title, "lb_Todo_Title");
+            this.lb_Todo_Title.Name = "lb_Todo_Title";
+            // 
+            // todolistFlowPanel
+            // 
+            this.todolistFlowPanel.BackColor = System.Drawing.Color.AliceBlue;
+            this.todolistFlowPanel.Controls.Add(this.panel1);
+            resources.ApplyResources(this.todolistFlowPanel, "todolistFlowPanel");
+            this.todolistFlowPanel.Name = "todolistFlowPanel";
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.checkBox1);
+            this.panel1.Controls.Add(this.label10);
+            this.panel1.Controls.Add(this.label12);
+            this.panel1.Controls.Add(this.label11);
+            this.panel1.Controls.Add(this.label9);
+            resources.ApplyResources(this.panel1, "panel1");
+            this.panel1.Name = "panel1";
+            // 
+            // label10
+            // 
+            this.label10.BackColor = System.Drawing.Color.SteelBlue;
+            resources.ApplyResources(this.label10, "label10");
+            this.label10.Name = "label10";
+            // 
+            // label12
+            // 
+            this.label12.BackColor = System.Drawing.Color.SteelBlue;
+            resources.ApplyResources(this.label12, "label12");
+            this.label12.Name = "label12";
+            // 
+            // label11
+            // 
+            this.label11.BackColor = System.Drawing.Color.SteelBlue;
+            resources.ApplyResources(this.label11, "label11");
+            this.label11.Name = "label11";
+            // 
+            // label9
+            // 
+            this.label9.BackColor = System.Drawing.Color.SteelBlue;
+            resources.ApplyResources(this.label9, "label9");
+            this.label9.Name = "label9";
+            // 
+            // Todo_panel1
+            // 
+            this.Todo_panel1.BackColor = System.Drawing.Color.Lavender;
+            this.Todo_panel1.Controls.Add(this.Todo_EndMinute);
+            this.Todo_panel1.Controls.Add(this.Todo_StartMinute);
+            this.Todo_panel1.Controls.Add(this.Todo_Calendar);
+            this.Todo_panel1.Controls.Add(this.btn_TodoRegister);
+            this.Todo_panel1.Controls.Add(this.Todo_StartHour);
+            this.Todo_panel1.Controls.Add(this.lb_todo_contents);
+            this.Todo_panel1.Controls.Add(this.Todo_contents);
+            this.Todo_panel1.Controls.Add(this.lb_startDate);
+            this.Todo_panel1.Controls.Add(this.label3);
+            this.Todo_panel1.Controls.Add(this.Todo_EndHour);
+            this.Todo_panel1.Controls.Add(this.Todo_EndDate);
+            this.Todo_panel1.Controls.Add(this.Todo_startDate);
+            resources.ApplyResources(this.Todo_panel1, "Todo_panel1");
+            this.Todo_panel1.Name = "Todo_panel1";
+            // 
+            // Todo_EndMinute
+            // 
+            this.Todo_EndMinute.FormattingEnabled = true;
+            this.Todo_EndMinute.Items.AddRange(new object[] {
+            resources.GetString("Todo_EndMinute.Items"),
+            resources.GetString("Todo_EndMinute.Items1"),
+            resources.GetString("Todo_EndMinute.Items2"),
+            resources.GetString("Todo_EndMinute.Items3"),
+            resources.GetString("Todo_EndMinute.Items4"),
+            resources.GetString("Todo_EndMinute.Items5"),
+            resources.GetString("Todo_EndMinute.Items6"),
+            resources.GetString("Todo_EndMinute.Items7"),
+            resources.GetString("Todo_EndMinute.Items8"),
+            resources.GetString("Todo_EndMinute.Items9"),
+            resources.GetString("Todo_EndMinute.Items10"),
+            resources.GetString("Todo_EndMinute.Items11"),
+            resources.GetString("Todo_EndMinute.Items12"),
+            resources.GetString("Todo_EndMinute.Items13"),
+            resources.GetString("Todo_EndMinute.Items14"),
+            resources.GetString("Todo_EndMinute.Items15"),
+            resources.GetString("Todo_EndMinute.Items16"),
+            resources.GetString("Todo_EndMinute.Items17"),
+            resources.GetString("Todo_EndMinute.Items18"),
+            resources.GetString("Todo_EndMinute.Items19"),
+            resources.GetString("Todo_EndMinute.Items20"),
+            resources.GetString("Todo_EndMinute.Items21"),
+            resources.GetString("Todo_EndMinute.Items22"),
+            resources.GetString("Todo_EndMinute.Items23"),
+            resources.GetString("Todo_EndMinute.Items24"),
+            resources.GetString("Todo_EndMinute.Items25"),
+            resources.GetString("Todo_EndMinute.Items26"),
+            resources.GetString("Todo_EndMinute.Items27"),
+            resources.GetString("Todo_EndMinute.Items28"),
+            resources.GetString("Todo_EndMinute.Items29"),
+            resources.GetString("Todo_EndMinute.Items30"),
+            resources.GetString("Todo_EndMinute.Items31"),
+            resources.GetString("Todo_EndMinute.Items32"),
+            resources.GetString("Todo_EndMinute.Items33"),
+            resources.GetString("Todo_EndMinute.Items34"),
+            resources.GetString("Todo_EndMinute.Items35"),
+            resources.GetString("Todo_EndMinute.Items36"),
+            resources.GetString("Todo_EndMinute.Items37"),
+            resources.GetString("Todo_EndMinute.Items38"),
+            resources.GetString("Todo_EndMinute.Items39"),
+            resources.GetString("Todo_EndMinute.Items40"),
+            resources.GetString("Todo_EndMinute.Items41"),
+            resources.GetString("Todo_EndMinute.Items42"),
+            resources.GetString("Todo_EndMinute.Items43"),
+            resources.GetString("Todo_EndMinute.Items44"),
+            resources.GetString("Todo_EndMinute.Items45"),
+            resources.GetString("Todo_EndMinute.Items46"),
+            resources.GetString("Todo_EndMinute.Items47"),
+            resources.GetString("Todo_EndMinute.Items48"),
+            resources.GetString("Todo_EndMinute.Items49"),
+            resources.GetString("Todo_EndMinute.Items50"),
+            resources.GetString("Todo_EndMinute.Items51"),
+            resources.GetString("Todo_EndMinute.Items52"),
+            resources.GetString("Todo_EndMinute.Items53"),
+            resources.GetString("Todo_EndMinute.Items54"),
+            resources.GetString("Todo_EndMinute.Items55"),
+            resources.GetString("Todo_EndMinute.Items56"),
+            resources.GetString("Todo_EndMinute.Items57"),
+            resources.GetString("Todo_EndMinute.Items58"),
+            resources.GetString("Todo_EndMinute.Items59")});
+            resources.ApplyResources(this.Todo_EndMinute, "Todo_EndMinute");
+            this.Todo_EndMinute.Name = "Todo_EndMinute";
+            // 
+            // Todo_StartMinute
+            // 
+            this.Todo_StartMinute.FormattingEnabled = true;
+            this.Todo_StartMinute.Items.AddRange(new object[] {
+            resources.GetString("Todo_StartMinute.Items"),
+            resources.GetString("Todo_StartMinute.Items1"),
+            resources.GetString("Todo_StartMinute.Items2"),
+            resources.GetString("Todo_StartMinute.Items3"),
+            resources.GetString("Todo_StartMinute.Items4"),
+            resources.GetString("Todo_StartMinute.Items5"),
+            resources.GetString("Todo_StartMinute.Items6"),
+            resources.GetString("Todo_StartMinute.Items7"),
+            resources.GetString("Todo_StartMinute.Items8"),
+            resources.GetString("Todo_StartMinute.Items9"),
+            resources.GetString("Todo_StartMinute.Items10"),
+            resources.GetString("Todo_StartMinute.Items11"),
+            resources.GetString("Todo_StartMinute.Items12"),
+            resources.GetString("Todo_StartMinute.Items13"),
+            resources.GetString("Todo_StartMinute.Items14"),
+            resources.GetString("Todo_StartMinute.Items15"),
+            resources.GetString("Todo_StartMinute.Items16"),
+            resources.GetString("Todo_StartMinute.Items17"),
+            resources.GetString("Todo_StartMinute.Items18"),
+            resources.GetString("Todo_StartMinute.Items19"),
+            resources.GetString("Todo_StartMinute.Items20"),
+            resources.GetString("Todo_StartMinute.Items21"),
+            resources.GetString("Todo_StartMinute.Items22"),
+            resources.GetString("Todo_StartMinute.Items23"),
+            resources.GetString("Todo_StartMinute.Items24"),
+            resources.GetString("Todo_StartMinute.Items25"),
+            resources.GetString("Todo_StartMinute.Items26"),
+            resources.GetString("Todo_StartMinute.Items27"),
+            resources.GetString("Todo_StartMinute.Items28"),
+            resources.GetString("Todo_StartMinute.Items29"),
+            resources.GetString("Todo_StartMinute.Items30"),
+            resources.GetString("Todo_StartMinute.Items31"),
+            resources.GetString("Todo_StartMinute.Items32"),
+            resources.GetString("Todo_StartMinute.Items33"),
+            resources.GetString("Todo_StartMinute.Items34"),
+            resources.GetString("Todo_StartMinute.Items35"),
+            resources.GetString("Todo_StartMinute.Items36"),
+            resources.GetString("Todo_StartMinute.Items37"),
+            resources.GetString("Todo_StartMinute.Items38"),
+            resources.GetString("Todo_StartMinute.Items39"),
+            resources.GetString("Todo_StartMinute.Items40"),
+            resources.GetString("Todo_StartMinute.Items41"),
+            resources.GetString("Todo_StartMinute.Items42"),
+            resources.GetString("Todo_StartMinute.Items43"),
+            resources.GetString("Todo_StartMinute.Items44"),
+            resources.GetString("Todo_StartMinute.Items45"),
+            resources.GetString("Todo_StartMinute.Items46"),
+            resources.GetString("Todo_StartMinute.Items47"),
+            resources.GetString("Todo_StartMinute.Items48"),
+            resources.GetString("Todo_StartMinute.Items49"),
+            resources.GetString("Todo_StartMinute.Items50"),
+            resources.GetString("Todo_StartMinute.Items51"),
+            resources.GetString("Todo_StartMinute.Items52"),
+            resources.GetString("Todo_StartMinute.Items53"),
+            resources.GetString("Todo_StartMinute.Items54"),
+            resources.GetString("Todo_StartMinute.Items55"),
+            resources.GetString("Todo_StartMinute.Items56"),
+            resources.GetString("Todo_StartMinute.Items57"),
+            resources.GetString("Todo_StartMinute.Items58"),
+            resources.GetString("Todo_StartMinute.Items59")});
+            resources.ApplyResources(this.Todo_StartMinute, "Todo_StartMinute");
+            this.Todo_StartMinute.Name = "Todo_StartMinute";
+            // 
+            // Todo_Calendar
+            // 
+            resources.ApplyResources(this.Todo_Calendar, "Todo_Calendar");
+            this.Todo_Calendar.Name = "Todo_Calendar";
+            this.Todo_Calendar.DateChanged += new System.Windows.Forms.DateRangeEventHandler(this.Todo_Calendar_DateChanged);
+            // 
+            // btn_TodoRegister
+            // 
+            this.btn_TodoRegister.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btn_TodoRegister.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.btn_TodoRegister, "btn_TodoRegister");
+            this.btn_TodoRegister.Name = "btn_TodoRegister";
+            this.btn_TodoRegister.UseVisualStyleBackColor = false;
+            this.btn_TodoRegister.Click += new System.EventHandler(this.btn_TodoRegister_Click);
+            // 
+            // Todo_StartHour
+            // 
+            this.Todo_StartHour.FormattingEnabled = true;
+            this.Todo_StartHour.Items.AddRange(new object[] {
+            resources.GetString("Todo_StartHour.Items"),
+            resources.GetString("Todo_StartHour.Items1"),
+            resources.GetString("Todo_StartHour.Items2"),
+            resources.GetString("Todo_StartHour.Items3"),
+            resources.GetString("Todo_StartHour.Items4"),
+            resources.GetString("Todo_StartHour.Items5"),
+            resources.GetString("Todo_StartHour.Items6"),
+            resources.GetString("Todo_StartHour.Items7"),
+            resources.GetString("Todo_StartHour.Items8"),
+            resources.GetString("Todo_StartHour.Items9"),
+            resources.GetString("Todo_StartHour.Items10"),
+            resources.GetString("Todo_StartHour.Items11"),
+            resources.GetString("Todo_StartHour.Items12"),
+            resources.GetString("Todo_StartHour.Items13"),
+            resources.GetString("Todo_StartHour.Items14"),
+            resources.GetString("Todo_StartHour.Items15"),
+            resources.GetString("Todo_StartHour.Items16"),
+            resources.GetString("Todo_StartHour.Items17"),
+            resources.GetString("Todo_StartHour.Items18"),
+            resources.GetString("Todo_StartHour.Items19"),
+            resources.GetString("Todo_StartHour.Items20"),
+            resources.GetString("Todo_StartHour.Items21"),
+            resources.GetString("Todo_StartHour.Items22"),
+            resources.GetString("Todo_StartHour.Items23")});
+            resources.ApplyResources(this.Todo_StartHour, "Todo_StartHour");
+            this.Todo_StartHour.Name = "Todo_StartHour";
+            // 
+            // lb_todo_contents
+            // 
+            resources.ApplyResources(this.lb_todo_contents, "lb_todo_contents");
+            this.lb_todo_contents.Name = "lb_todo_contents";
+            // 
+            // Todo_contents
+            // 
+            resources.ApplyResources(this.Todo_contents, "Todo_contents");
+            this.Todo_contents.Name = "Todo_contents";
+            // 
+            // lb_startDate
+            // 
+            resources.ApplyResources(this.lb_startDate, "lb_startDate");
+            this.lb_startDate.Name = "lb_startDate";
             // 
             // label3
             // 
             resources.ApplyResources(this.label3, "label3");
             this.label3.Name = "label3";
             // 
-            // comboBox1
+            // Todo_EndHour
             // 
-            this.comboBox1.FormattingEnabled = true;
-            resources.ApplyResources(this.comboBox1, "comboBox1");
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.Todo_EndHour.FormattingEnabled = true;
+            this.Todo_EndHour.Items.AddRange(new object[] {
+            resources.GetString("Todo_EndHour.Items"),
+            resources.GetString("Todo_EndHour.Items1"),
+            resources.GetString("Todo_EndHour.Items2"),
+            resources.GetString("Todo_EndHour.Items3"),
+            resources.GetString("Todo_EndHour.Items4"),
+            resources.GetString("Todo_EndHour.Items5"),
+            resources.GetString("Todo_EndHour.Items6"),
+            resources.GetString("Todo_EndHour.Items7"),
+            resources.GetString("Todo_EndHour.Items8"),
+            resources.GetString("Todo_EndHour.Items9"),
+            resources.GetString("Todo_EndHour.Items10"),
+            resources.GetString("Todo_EndHour.Items11"),
+            resources.GetString("Todo_EndHour.Items12"),
+            resources.GetString("Todo_EndHour.Items13"),
+            resources.GetString("Todo_EndHour.Items14"),
+            resources.GetString("Todo_EndHour.Items15"),
+            resources.GetString("Todo_EndHour.Items16"),
+            resources.GetString("Todo_EndHour.Items17"),
+            resources.GetString("Todo_EndHour.Items18"),
+            resources.GetString("Todo_EndHour.Items19"),
+            resources.GetString("Todo_EndHour.Items20"),
+            resources.GetString("Todo_EndHour.Items21"),
+            resources.GetString("Todo_EndHour.Items22"),
+            resources.GetString("Todo_EndHour.Items23")});
+            resources.ApplyResources(this.Todo_EndHour, "Todo_EndHour");
+            this.Todo_EndHour.Name = "Todo_EndHour";
             // 
-            // monthCalendar1
+            // Todo_EndDate
             // 
-            resources.ApplyResources(this.monthCalendar1, "monthCalendar1");
-            this.monthCalendar1.Name = "monthCalendar1";
+            resources.ApplyResources(this.Todo_EndDate, "Todo_EndDate");
+            this.Todo_EndDate.Name = "Todo_EndDate";
             // 
-            // label2
+            // Todo_startDate
             // 
-            resources.ApplyResources(this.label2, "label2");
-            this.label2.Name = "label2";
+            resources.ApplyResources(this.Todo_startDate, "Todo_startDate");
+            this.Todo_startDate.Name = "Todo_startDate";
             // 
-            // dateTimePicker1
+            // tab_shopping
             // 
-            resources.ApplyResources(this.dateTimePicker1, "dateTimePicker1");
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            // 
-            // textBox1
-            // 
-            resources.ApplyResources(this.textBox1, "textBox1");
-            this.textBox1.Name = "textBox1";
-            // 
-            // button1
-            // 
-            resources.ApplyResources(this.button1, "button1");
-            this.button1.Name = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // label1
-            // 
-            resources.ApplyResources(this.label1, "label1");
-            this.label1.Name = "label1";
-            // 
-            // tabPage4
-            // 
-            this.tabPage4.Controls.Add(this.button5);
-            this.tabPage4.Controls.Add(this.button4);
-            this.tabPage4.Controls.Add(this.dataGridView3);
-            this.tabPage4.Controls.Add(this.button3);
-            this.tabPage4.Controls.Add(this.textBox6);
-            this.tabPage4.Controls.Add(this.textBox5);
-            this.tabPage4.Controls.Add(this.textBox4);
-            this.tabPage4.Controls.Add(this.textBox3);
-            this.tabPage4.Controls.Add(this.button2);
-            this.tabPage4.Controls.Add(this.comboBox3);
-            this.tabPage4.Controls.Add(this.label8);
-            this.tabPage4.Controls.Add(this.label7);
-            this.tabPage4.Controls.Add(this.label6);
-            this.tabPage4.Controls.Add(this.label5);
-            this.tabPage4.ForeColor = System.Drawing.SystemColors.ControlText;
-            resources.ApplyResources(this.tabPage4, "tabPage4");
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.UseVisualStyleBackColor = true;
+            this.tab_shopping.Controls.Add(this.button5);
+            this.tab_shopping.Controls.Add(this.button4);
+            this.tab_shopping.Controls.Add(this.dataGridView3);
+            this.tab_shopping.Controls.Add(this.button3);
+            this.tab_shopping.Controls.Add(this.textBox6);
+            this.tab_shopping.Controls.Add(this.textBox5);
+            this.tab_shopping.Controls.Add(this.textBox4);
+            this.tab_shopping.Controls.Add(this.textBox3);
+            this.tab_shopping.Controls.Add(this.button2);
+            this.tab_shopping.Controls.Add(this.comboBox3);
+            this.tab_shopping.Controls.Add(this.label8);
+            this.tab_shopping.Controls.Add(this.label7);
+            this.tab_shopping.Controls.Add(this.label6);
+            this.tab_shopping.Controls.Add(this.label5);
+            this.tab_shopping.ForeColor = System.Drawing.SystemColors.ControlText;
+            resources.ApplyResources(this.tab_shopping, "tab_shopping");
+            this.tab_shopping.Name = "tab_shopping";
+            this.tab_shopping.UseVisualStyleBackColor = true;
             // 
             // button5
             // 
@@ -333,19 +585,9 @@
             // 
             // tabPage5
             // 
-            this.tabPage5.Controls.Add(this.button6);
-            this.tabPage5.Controls.Add(this.flowLayoutPanel1);
             resources.ApplyResources(this.tabPage5, "tabPage5");
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.UseVisualStyleBackColor = true;
-            // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.BackColor = System.Drawing.SystemColors.Control;
-            this.flowLayoutPanel1.Controls.Add(this.flowLayoutPanel2);
-            resources.ApplyResources(this.flowLayoutPanel1, "flowLayoutPanel1");
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel1_Paint);
             // 
             // btn_memo
             // 
@@ -398,35 +640,11 @@
             resources.ApplyResources(this.Lb_loginUser, "Lb_loginUser");
             this.Lb_loginUser.Name = "Lb_loginUser";
             // 
-            // button6
+            // checkBox1
             // 
-            resources.ApplyResources(this.button6, "button6");
-            this.button6.Name = "button6";
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
-            // 
-            // flowLayoutPanel2
-            // 
-            this.flowLayoutPanel2.Controls.Add(this.textBox8);
-            this.flowLayoutPanel2.Controls.Add(this.button8);
-            resources.ApplyResources(this.flowLayoutPanel2, "flowLayoutPanel2");
-            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            // 
-            // textBox8
-            // 
-            resources.ApplyResources(this.textBox8, "textBox8");
-            this.textBox8.Name = "textBox8";
-            // 
-            // button8
-            // 
-            resources.ApplyResources(this.button8, "button8");
-            this.button8.Name = "button8";
-            this.button8.UseVisualStyleBackColor = true;
-            // 
-            // Memo_flowpanel
-            // 
-            resources.ApplyResources(this.Memo_flowpanel, "Memo_flowpanel");
-            this.Memo_flowpanel.Name = "Memo_flowpanel";
+            resources.ApplyResources(this.checkBox1, "checkBox1");
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.UseVisualStyleBackColor = true;
             // 
             // Form_main
             // 
@@ -448,16 +666,16 @@
             this.tab_form.ResumeLayout(false);
             this.tab_Memo.ResumeLayout(false);
             this.tab_Memo.PerformLayout();
-            this.tabPage3.ResumeLayout(false);
-            this.tabPage3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
-            this.tabPage4.ResumeLayout(false);
-            this.tabPage4.PerformLayout();
+            this.tab_TodoList.ResumeLayout(false);
+            this.todo_panel2.ResumeLayout(false);
+            this.todo_panel2.PerformLayout();
+            this.todolistFlowPanel.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            this.Todo_panel1.ResumeLayout(false);
+            this.Todo_panel1.PerformLayout();
+            this.tab_shopping.ResumeLayout(false);
+            this.tab_shopping.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
-            this.tabPage5.ResumeLayout(false);
-            this.flowLayoutPanel1.ResumeLayout(false);
-            this.flowLayoutPanel2.ResumeLayout(false);
-            this.flowLayoutPanel2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -467,28 +685,24 @@
         private System.Windows.Forms.TabControl tab_form;
         private System.Windows.Forms.TabPage tab_home;
         private System.Windows.Forms.TabPage tab_Memo;
-        private System.Windows.Forms.TabPage tabPage3;
-        private System.Windows.Forms.TabPage tabPage4;
+        private System.Windows.Forms.TabPage tab_TodoList;
+        private System.Windows.Forms.TabPage tab_shopping;
         private System.Windows.Forms.Button btn_memo;
         private System.Windows.Forms.Button btn_ck;
         private System.Windows.Forms.Button btn_shp;
         private System.Windows.Forms.Button btn_hk;
-        private System.Windows.Forms.TabPage tabPage5;
         private System.Windows.Forms.Label Lb_memo;
         private System.Windows.Forms.TextBox txt_memo;
         private System.Windows.Forms.Button memo_add;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.MonthCalendar monthCalendar1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.DataGridView dataGridView2;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.Button btn_TodoRegister;
+        private System.Windows.Forms.Label lb_todo_contents;
+        private System.Windows.Forms.ComboBox Todo_StartHour;
+        private System.Windows.Forms.MonthCalendar Todo_Calendar;
+        private System.Windows.Forms.Label lb_startDate;
+        private System.Windows.Forms.DateTimePicker Todo_startDate;
+        private System.Windows.Forms.TextBox Todo_contents;
+        private System.Windows.Forms.ComboBox Todo_EndHour;
+        private System.Windows.Forms.DateTimePicker Todo_EndDate;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button4;
@@ -506,11 +720,21 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label LOGO;
         private System.Windows.Forms.Label Lb_loginUser;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.Button button8;
         private System.Windows.Forms.FlowLayoutPanel Memo_flowpanel;
+        private System.Windows.Forms.Panel todo_panel2;
+        private System.Windows.Forms.Panel Todo_panel1;
+        private System.Windows.Forms.TabPage tabPage5;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label lb_Todo_Title;
+        private System.Windows.Forms.FlowLayoutPanel todolistFlowPanel;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.ComboBox Todo_EndMinute;
+        private System.Windows.Forms.ComboBox Todo_StartMinute;
+        private System.Windows.Forms.CheckBox checkBox1;
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Pro_0_Mylife.DTO;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
@@ -8,16 +9,16 @@ using System.Windows.Forms;
 
 namespace Pro_0_Mylife
 {
-    class LoginHandler
+    class LoginDao
     {
-        public bool LoginCheck(String id, String password)
+        public bool LoginCheck(UserVO user)
         {
             DataSet ds = new DataSet();
             OracleDBManager db = new OracleDBManager();
             String query = @"SELECT US_EMAIL,US_PWD FROM root2.USER_T WHERE 1=1 AND  US_EMAIL = '#id' AND US_PWD = '#password'";
             
-            query = query.Replace("#id",id);
-            query = query.Replace("#password",password);
+            query = query.Replace("#id",user.Email);
+            query = query.Replace("#password",user.Password);
             db.ExecuteDsQuery(ds, query);
 
             //MessageBox.Show(ds.Tables[0].Rows[0][1].ToString());

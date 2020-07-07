@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Pro_0_Mylife.DTO;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
@@ -8,36 +9,46 @@ using System.Windows.Forms;
 
 namespace Pro_0_Mylife
 {
-    class MemoHandler
+    class MemoDao
     {
         OracleDBManager db = new OracleDBManager();
-        public bool InsertMemo(string loginUser,string memo)
+        public bool InsertMemo(MemoVO memo)
         {
             DataSet ds = new DataSet();
             string query = string.Empty;
-            
-            query = @"
-            INSERT INTO root2.MEMO_T(
-                US_EMAIL
-                ,ME_CONTENTS
-                ,ME_REG_DATE
-                )
-            Values(
-                '#US_EMAIL'
-                ,'#ME_CONTENTS'
-                ,sysDate
-             )";
-
-            query = query.Replace("#US_EMAIL", loginUser);
-            query = query.Replace("#ME_CONTENTS", memo);
-
-            int result = db.ExecuteNonQuery(query);
-            if (result > 0)
+            try
             {
-                return true;
+                query = @"
+                INSERT INTO root2.MEMO_T(
+                    US_EMAIL
+                    ,ME_CONTENTS
+                    ,ME_REG_DATE
+                    )
+                Values(
+                    '#US_EMAIL'
+                    ,'#ME_CONTENTS'
+                    ,sysDate
+                 )";
+
+                query = query.Replace("#US_EMAIL", memo.Email);
+                query = query.Replace("#ME_CONTENTS", memo.MemoContents);
+
+                int result = db.ExecuteNonQuery(query);
+                if (result > 0)
+                {
+                    return true;
+                }
+                return false;
+
             }
-            return false;
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString(), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }       
         }
+
+
         public void SelectMemo(DataSet ds,string loginUser)
         {
             try
@@ -56,6 +67,8 @@ namespace Pro_0_Mylife
                 
             }
         }
+
+
         public bool DeleteMemo(string memo_no)
         {
             try

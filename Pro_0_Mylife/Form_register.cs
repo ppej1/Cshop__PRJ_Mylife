@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Pro_0_Mylife.DTO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -25,19 +26,13 @@ namespace Pro_0_Mylife
 
         private void Btn_register_Click(object sender, EventArgs e)
         {
-            RegisterHandler registerHandler = new RegisterHandler();
+            RegisterDao registerDAo = new RegisterDao();
             if (ControlCheck())
             {
                 MessageBox.Show("정상입력");
+                UserVO user = new UserVO(txt_email.Text, txt_pwd1.Text, txt_firstName.Text, txt_lastName.Text, cb_gender.SelectedIndex, txt_phone.Text);
 
-                string email = txt_email.Text;
-                string pwd = txt_pwd1.Text;
-                string firstName = txt_firstName.Text;
-                string lastName = txt_lastName.Text;
-                string phoneNumber = txt_phone.Text;
-                int gender = cb_gender.SelectedIndex;
-
-                if (registerHandler.InsertEmployeeData(email,pwd,firstName,lastName,phoneNumber,gender))
+                if (registerDAo.InsertEmployeeData(user))
                 {
                     this.Close();
                 }

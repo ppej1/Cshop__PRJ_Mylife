@@ -1,4 +1,5 @@
 ﻿using System;
+using Pro_0_Mylife.DTO;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -23,10 +24,13 @@ namespace Pro_0_Mylife
 
         private void Login_click(object sender, EventArgs e)
         {
-            LoginHandler loginHandler = new LoginHandler();
+            LoginDao loginDao = new LoginDao();
+            UserVO user = new UserVO();
+            user.Email = id_bx.Text;
+            user.Password = pwd_bx.Text;
             if (ControlCheck())
             {
-                if (loginHandler.LoginCheck(id_bx.Text, pwd_bx.Text))
+                if (loginDao.LoginCheck(user))
                 {
                     String userName = id_bx.Text;
                     loginEventHandler(userName);

@@ -161,7 +161,7 @@ namespace Pro_0_Mylife
                     ds = ExecuteDataAdt(ds, query);
                     return ds;
                 }
-
+                MessageBox.Show(ex.Message);
                 System.Reflection.MemberInfo info = System.Reflection.MethodInfo.GetCurrentMethod();
                 string id = string.Format("{0}.{1}\n[{2}]", info.ReflectedType.Name, info.Name, query);
 

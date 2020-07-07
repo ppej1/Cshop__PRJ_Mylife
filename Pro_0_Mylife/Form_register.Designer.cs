@@ -154,6 +154,7 @@
             this.cb_gender.Items.AddRange(new object[] {
             "남자",
             "여자"});
+            this.cb_gender.SelectedIndex = 0;
             this.cb_gender.Location = new System.Drawing.Point(40, 381);
             this.cb_gender.Name = "cb_gender";
             this.cb_gender.Size = new System.Drawing.Size(298, 23);
