@@ -18,7 +18,7 @@ namespace Pro_0_Mylife
         static string loggin_User;
         MemoDao memoDao = new MemoDao();
         TodoListDao todoListDao = new TodoListDao();
-
+        DateTime now = DateTime.Now;
         // main form
         public Form_main()
         {
@@ -67,7 +67,8 @@ namespace Pro_0_Mylife
         private void Btn_ck_Click(object sender, EventArgs e)
         {
             tab_form.SelectedIndex = 2;
-            loadTodolist();
+            lb_Todo_Title.Text = now.ToString("MMM dd,yyyy");
+            loadTodolist(now);
         }
 
         private void Btn_shp_Click(object sender, EventArgs e)
@@ -174,6 +175,7 @@ namespace Pro_0_Mylife
             Todo_startDate.Value = Todo_Calendar.SelectionStart;
             Todo_EndDate.Value = Todo_Calendar.SelectionEnd;
             lb_Todo_Title.Text = Todo_Calendar.SelectionStart.ToString("MMM dd,yyyy");
+            loadTodolist(Todo_Calendar.SelectionStart);
         }
 
         private void btn_TodoRegister_Click(object sender, EventArgs e)
@@ -206,11 +208,11 @@ namespace Pro_0_Mylife
             Todo_EndMinute.SelectedIndex = 0;
         }
 
-        private void loadTodolist()
+        private void loadTodolist(DateTime selectDate)
         {
             todolistFlowPanel.Controls.Clear();
             DataSet ds = new DataSet();
-            todoListDao.SelectTodoList(ds, loggin_User);
+            todoListDao.SelectTodoList(ds, loggin_User, selectDate);
             DataTable dt = ds.Tables[0];
 
             foreach (DataRow row in dt.Rows)
@@ -227,8 +229,8 @@ namespace Pro_0_Mylife
                 pnl.Name = String.Format("pnl_text_{0}", row[0].ToString());
 
                 ch_todo.AutoSize = false;
-                ch_todo.Size = new Size(15 , 44);
-                ch_todo.Location = new Point(14, 1);
+                ch_todo.Size = new Size(15 , 30);
+                ch_todo.Location = new Point(14, 15);
                 ch_todo.Name = String.Format("ck_{0}", row[0].ToString());
                 
                 DateTime endDate = DateTime.Parse(row[4].ToString());
@@ -238,6 +240,7 @@ namespace Pro_0_Mylife
                 txt_DDay.BackColor = Color.FromArgb(230, 230, 250);
                 txt_DDay.BorderStyle = BorderStyle.None;
                 txt_DDay.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+                txt_DDay.Name = String.Format("txt_DDayt_{0}", row[0].ToString());
                 TimeSpan dday = endDate- DateTime.Now;
                 if(dday.Days > 0)
                 {
@@ -253,7 +256,7 @@ namespace Pro_0_Mylife
                     txt_DDay.Text = String.Format("D + {0}", System.Math.Abs(dday.Days));
                 }
 
-                txt_DDay.Name = String.Format("txt_DDayt_{0}", row[0].ToString());
+
 
                 txt_contents.AutoSize = false;
                 txt_contents.Size = new Size(525, 40);
@@ -279,8 +282,27 @@ namespace Pro_0_Mylife
                 txt_state.BackColor = Color.FromArgb(230, 230, 250);
                 txt_state.BorderStyle = BorderStyle.None;
                 txt_state.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-                txt_state.Text = String.Format("{0}", row[5].ToString());
                 txt_state.Name = String.Format("txt_state_{0}", row[0].ToString());
+                if (row[5].ToString().Equals("0"))
+                {
+                    if(dday.Days > 3)
+                    {
+                        txt_state.Text = String.Format("미완료");
+                    }
+                    else if(dday.Days >=0 && dday.Days < 3)
+                    {
+                        txt_state.Text = String.Format("임박");
+                    }
+                    else
+                    {
+                        txt_state.Text = String.Format("기한지남");
+                    }
+                }
+                else
+                {
+                    txt_state.Text = String.Format("완료");
+                }
+
 
                 pnl.Controls.Add(ch_todo);
                 pnl.Controls.Add(txt_DDay);

@@ -309,6 +309,8 @@
             resources.GetString("Todo_EndMinute.Items58"),
             resources.GetString("Todo_EndMinute.Items59")});
             resources.ApplyResources(this.Todo_EndMinute, "Todo_EndMinute");
+            Todo_EndMinute.SelectedIndex = 0;
+
             this.Todo_EndMinute.Name = "Todo_EndMinute";
             // 
             // Todo_StartMinute
@@ -377,6 +379,8 @@
             resources.GetString("Todo_StartMinute.Items59")});
             resources.ApplyResources(this.Todo_StartMinute, "Todo_StartMinute");
             this.Todo_StartMinute.Name = "Todo_StartMinute";
+            Todo_StartMinute.SelectedIndex = 0;
+
             // 
             // Todo_Calendar
             // 
@@ -423,6 +427,8 @@
             resources.GetString("Todo_StartHour.Items23")});
             resources.ApplyResources(this.Todo_StartHour, "Todo_StartHour");
             this.Todo_StartHour.Name = "Todo_StartHour";
+            Todo_StartHour.SelectedIndex = 0;
+
             // 
             // lb_todo_contents
             // 
@@ -474,6 +480,8 @@
             resources.GetString("Todo_EndHour.Items23")});
             resources.ApplyResources(this.Todo_EndHour, "Todo_EndHour");
             this.Todo_EndHour.Name = "Todo_EndHour";
+            Todo_EndHour.SelectedIndex = 0;
+
             // 
             // Todo_EndDate
             // 

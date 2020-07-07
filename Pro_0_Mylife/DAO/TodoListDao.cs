@@ -40,8 +40,6 @@ namespace Pro_0_Mylife
                 query = query.Replace("#TOD_DEADLINE_DATE", ""+ todolist.TodoDeadLine.ToString("yyyy-MM-dd HH:mm:ss"));
                 query = query.Replace("#US_EMAIL", todolist.Email);
 
-                MessageBox.Show(query);
-
                 int result = db.ExecuteNonQuery(query);
                 if (result > 0)
                 {
@@ -56,13 +54,15 @@ namespace Pro_0_Mylife
             }
 
         }
-        public void SelectTodoList(DataSet ds, string loginUser)
+        public void SelectTodoList(DataSet ds, string loginUser ,DateTime selectDate)
         {
             try
             {
-                string query = @"SELECT * FROM root2.TODO_T WHERE US_EMAIL='#US_EMAIL' ORDER BY TOD_REGDATE DESC";
+                string query = @"SELECT * FROM root2.TODO_T WHERE US_EMAIL='#US_EMAIL' AND To_DATE('#selectDate','YYYY-MM-DD HH24:MI:SS') <=TOD_DEADLINE_DATE ORDER BY TOD_DEADLINE_DATE asc";
                 query = query.Replace("#US_EMAIL", loginUser);
-
+                query = query.Replace("#selectDate", selectDate.ToString("yyyy-MM-dd HH:mm:ss"));
+                
+                
                 db.ExecuteDsQuery(ds, query);
 
                 if (ds == null || ds.Tables.Count == 0 || ds.Tables[0].Rows.Count == 0)
