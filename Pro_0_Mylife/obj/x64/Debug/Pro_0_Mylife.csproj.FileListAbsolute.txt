@@ -12,3 +12,4 @@ D:\study\PR_0\Csharp\Pro_0_Mylife\Pro_0_Mylife\obj\x64\Debug\Pro_0_Mylife.exe
 D:\study\PR_0\Csharp\Pro_0_Mylife\Pro_0_Mylife\obj\x64\Debug\Pro_0_Mylife.pdb
 D:\study\PR_0\Csharp\Pro_0_Mylife\Pro_0_Mylife\obj\x64\Debug\Pro_0_Mylife.csprojAssemblyReference.cache
 D:\study\PR_0\Csharp\Pro_0_Mylife\Pro_0_Mylife\obj\x64\Debug\Pro_0_Mylife.Form_register.resources
+D:\study\PR_0\Csharp\Pro_0_Mylife\Pro_0_Mylife\obj\x64\Debug\Pro_0_Mylife.TodoPopUp.resources

@@ -42,11 +42,6 @@
             this.button1 = new System.Windows.Forms.Button();
             this.lb_Todo_Title = new System.Windows.Forms.Label();
             this.todolistFlowPanel = new System.Windows.Forms.FlowLayoutPanel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
             this.Todo_panel1 = new System.Windows.Forms.Panel();
             this.Todo_EndMinute = new System.Windows.Forms.ComboBox();
             this.Todo_StartMinute = new System.Windows.Forms.ComboBox();
@@ -82,13 +77,12 @@
             this.btn_hk = new System.Windows.Forms.Button();
             this.LOGO = new System.Windows.Forms.Label();
             this.Lb_loginUser = new System.Windows.Forms.Label();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.tab_form.SuspendLayout();
             this.tab_Memo.SuspendLayout();
             this.tab_TodoList.SuspendLayout();
             this.todo_panel2.SuspendLayout();
-            this.todolistFlowPanel.SuspendLayout();
-            this.panel1.SuspendLayout();
             this.Todo_panel1.SuspendLayout();
             this.tab_shopping.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
@@ -115,6 +109,7 @@
             // tab_Memo
             // 
             this.tab_Memo.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.tab_Memo.Controls.Add(this.panel2);
             this.tab_Memo.Controls.Add(this.Memo_flowpanel);
             this.tab_Memo.Controls.Add(this.txt_memo);
             this.tab_Memo.Controls.Add(this.memo_add);
@@ -131,7 +126,6 @@
             // 
             resources.ApplyResources(this.txt_memo, "txt_memo");
             this.txt_memo.Name = "txt_memo";
-            this.txt_memo.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // memo_add
             // 
@@ -159,6 +153,7 @@
             // todo_panel2
             // 
             this.todo_panel2.BackColor = System.Drawing.Color.Lavender;
+            this.todo_panel2.Controls.Add(this.panel3);
             this.todo_panel2.Controls.Add(this.textBox1);
             this.todo_panel2.Controls.Add(this.button1);
             this.todo_panel2.Controls.Add(this.lb_Todo_Title);
@@ -188,43 +183,8 @@
             // todolistFlowPanel
             // 
             this.todolistFlowPanel.BackColor = System.Drawing.Color.AliceBlue;
-            this.todolistFlowPanel.Controls.Add(this.panel1);
             resources.ApplyResources(this.todolistFlowPanel, "todolistFlowPanel");
             this.todolistFlowPanel.Name = "todolistFlowPanel";
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.checkBox1);
-            this.panel1.Controls.Add(this.label10);
-            this.panel1.Controls.Add(this.label12);
-            this.panel1.Controls.Add(this.label11);
-            this.panel1.Controls.Add(this.label9);
-            resources.ApplyResources(this.panel1, "panel1");
-            this.panel1.Name = "panel1";
-            // 
-            // label10
-            // 
-            this.label10.BackColor = System.Drawing.Color.SteelBlue;
-            resources.ApplyResources(this.label10, "label10");
-            this.label10.Name = "label10";
-            // 
-            // label12
-            // 
-            this.label12.BackColor = System.Drawing.Color.SteelBlue;
-            resources.ApplyResources(this.label12, "label12");
-            this.label12.Name = "label12";
-            // 
-            // label11
-            // 
-            this.label11.BackColor = System.Drawing.Color.SteelBlue;
-            resources.ApplyResources(this.label11, "label11");
-            this.label11.Name = "label11";
-            // 
-            // label9
-            // 
-            this.label9.BackColor = System.Drawing.Color.SteelBlue;
-            resources.ApplyResources(this.label9, "label9");
-            this.label9.Name = "label9";
             // 
             // Todo_panel1
             // 
@@ -309,8 +269,6 @@
             resources.GetString("Todo_EndMinute.Items58"),
             resources.GetString("Todo_EndMinute.Items59")});
             resources.ApplyResources(this.Todo_EndMinute, "Todo_EndMinute");
-            Todo_EndMinute.SelectedIndex = 0;
-
             this.Todo_EndMinute.Name = "Todo_EndMinute";
             // 
             // Todo_StartMinute
@@ -379,8 +337,6 @@
             resources.GetString("Todo_StartMinute.Items59")});
             resources.ApplyResources(this.Todo_StartMinute, "Todo_StartMinute");
             this.Todo_StartMinute.Name = "Todo_StartMinute";
-            Todo_StartMinute.SelectedIndex = 0;
-
             // 
             // Todo_Calendar
             // 
@@ -392,6 +348,8 @@
             // 
             this.btn_TodoRegister.BackColor = System.Drawing.Color.LightSteelBlue;
             this.btn_TodoRegister.FlatAppearance.BorderSize = 0;
+            this.btn_TodoRegister.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btn_TodoRegister.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SkyBlue;
             resources.ApplyResources(this.btn_TodoRegister, "btn_TodoRegister");
             this.btn_TodoRegister.Name = "btn_TodoRegister";
             this.btn_TodoRegister.UseVisualStyleBackColor = false;
@@ -427,8 +385,6 @@
             resources.GetString("Todo_StartHour.Items23")});
             resources.ApplyResources(this.Todo_StartHour, "Todo_StartHour");
             this.Todo_StartHour.Name = "Todo_StartHour";
-            Todo_StartHour.SelectedIndex = 0;
-
             // 
             // lb_todo_contents
             // 
@@ -480,8 +436,6 @@
             resources.GetString("Todo_EndHour.Items23")});
             resources.ApplyResources(this.Todo_EndHour, "Todo_EndHour");
             this.Todo_EndHour.Name = "Todo_EndHour";
-            Todo_EndHour.SelectedIndex = 0;
-
             // 
             // Todo_EndDate
             // 
@@ -601,7 +555,8 @@
             // 
             this.btn_memo.BackColor = System.Drawing.Color.SkyBlue;
             this.btn_memo.FlatAppearance.BorderSize = 0;
-            this.btn_memo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btn_memo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btn_memo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SkyBlue;
             resources.ApplyResources(this.btn_memo, "btn_memo");
             this.btn_memo.Name = "btn_memo";
             this.btn_memo.UseVisualStyleBackColor = false;
@@ -611,7 +566,8 @@
             // 
             this.btn_ck.BackColor = System.Drawing.Color.SkyBlue;
             this.btn_ck.FlatAppearance.BorderSize = 0;
-            this.btn_ck.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btn_ck.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btn_ck.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SkyBlue;
             resources.ApplyResources(this.btn_ck, "btn_ck");
             this.btn_ck.Name = "btn_ck";
             this.btn_ck.UseVisualStyleBackColor = false;
@@ -621,7 +577,8 @@
             // 
             this.btn_shp.BackColor = System.Drawing.Color.SkyBlue;
             this.btn_shp.FlatAppearance.BorderSize = 0;
-            this.btn_shp.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btn_shp.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btn_shp.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SkyBlue;
             resources.ApplyResources(this.btn_shp, "btn_shp");
             this.btn_shp.Name = "btn_shp";
             this.btn_shp.UseVisualStyleBackColor = false;
@@ -631,7 +588,8 @@
             // 
             this.btn_hk.BackColor = System.Drawing.Color.SkyBlue;
             this.btn_hk.FlatAppearance.BorderSize = 0;
-            this.btn_hk.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btn_hk.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btn_hk.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SkyBlue;
             resources.ApplyResources(this.btn_hk, "btn_hk");
             this.btn_hk.Name = "btn_hk";
             this.btn_hk.UseVisualStyleBackColor = false;
@@ -648,11 +606,15 @@
             resources.ApplyResources(this.Lb_loginUser, "Lb_loginUser");
             this.Lb_loginUser.Name = "Lb_loginUser";
             // 
-            // checkBox1
+            // panel2
             // 
-            resources.ApplyResources(this.checkBox1, "checkBox1");
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.panel2, "panel2");
+            this.panel2.Name = "panel2";
+            // 
+            // panel3
+            // 
+            resources.ApplyResources(this.panel3, "panel3");
+            this.panel3.Name = "panel3";
             // 
             // Form_main
             // 
@@ -677,8 +639,6 @@
             this.tab_TodoList.ResumeLayout(false);
             this.todo_panel2.ResumeLayout(false);
             this.todo_panel2.PerformLayout();
-            this.todolistFlowPanel.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
             this.Todo_panel1.ResumeLayout(false);
             this.Todo_panel1.PerformLayout();
             this.tab_shopping.ResumeLayout(false);
@@ -736,13 +696,9 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label lb_Todo_Title;
         private System.Windows.Forms.FlowLayoutPanel todolistFlowPanel;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.ComboBox Todo_EndMinute;
         private System.Windows.Forms.ComboBox Todo_StartMinute;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel3;
     }
 }

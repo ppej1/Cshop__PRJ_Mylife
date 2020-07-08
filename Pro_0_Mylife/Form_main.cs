@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -19,6 +20,8 @@ namespace Pro_0_Mylife
         MemoDao memoDao = new MemoDao();
         TodoListDao todoListDao = new TodoListDao();
         DateTime now = DateTime.Now;
+
+
         // main form
         public Form_main()
         {
@@ -68,7 +71,8 @@ namespace Pro_0_Mylife
         {
             tab_form.SelectedIndex = 2;
             lb_Todo_Title.Text = now.ToString("MMM dd,yyyy");
-            loadTodolist(now);
+            resetTodolistForm();
+
         }
 
         private void Btn_shp_Click(object sender, EventArgs e)
@@ -231,17 +235,23 @@ namespace Pro_0_Mylife
                 ch_todo.AutoSize = false;
                 ch_todo.Size = new Size(15 , 30);
                 ch_todo.Location = new Point(14, 15);
-                ch_todo.Name = String.Format("ck_{0}", row[0].ToString());
-                
-                DateTime endDate = DateTime.Parse(row[4].ToString());
+                ch_todo.Name = String.Format("{0}", row[0].ToString());
+                if (row[5].ToString().Equals("1"))
+                {
+                    ch_todo.Checked = true;
+                }
+                ch_todo.CheckStateChanged += todoCheckStateChanged;
+
                 txt_DDay.AutoSize = false;
-                txt_DDay.Size = new Size(50, 40);
+                txt_DDay.Size = new Size(60, 40);
                 txt_DDay.Location = new Point(43, 9);
                 txt_DDay.BackColor = Color.FromArgb(230, 230, 250);
                 txt_DDay.BorderStyle = BorderStyle.None;
                 txt_DDay.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
                 txt_DDay.Name = String.Format("txt_DDayt_{0}", row[0].ToString());
-                TimeSpan dday = endDate- DateTime.Now;
+
+                DateTime endDate = DateTime.Parse(row[4].ToString());
+                TimeSpan dday = DateTime.Parse(endDate.ToString("yyyy-MM-dd")) - DateTime.Parse(DateTime.Now.ToString("yyyy-MM-dd"));
                 if(dday.Days > 0)
                 {
                     txt_DDay.Text = String.Format("D - {0}", dday.Days);
@@ -257,19 +267,19 @@ namespace Pro_0_Mylife
                 }
 
 
-
                 txt_contents.AutoSize = false;
-                txt_contents.Size = new Size(525, 40);
-                txt_contents.Location = new Point(97, 9);
+                txt_contents.Size = new Size(495, 40);
+                txt_contents.Location = new Point(107, 9);
                 txt_contents.BackColor = Color.FromArgb(230, 230, 250);
                 txt_contents.BorderStyle = BorderStyle.None;
                 txt_contents.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
                 txt_contents.Text = String.Format("{0}", row[1].ToString());
-                txt_contents.Name = String.Format("txt_contents_{0}", row[0].ToString());
+                txt_contents.Name = String.Format("{0}", row[0].ToString());
+                txt_contents.Click += popUpTodo;
 
                 txt_Period.AutoSize = false;
-                txt_Period.Size = new Size(90, 40);
-                txt_Period.Location = new Point(628, 9);
+                txt_Period.Size = new Size(80, 40);
+                txt_Period.Location = new Point(608, 9);
                 txt_Period.BackColor = Color.FromArgb(230, 230, 250);
                 txt_Period.BorderStyle = BorderStyle.None;                
                 txt_Period.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -277,8 +287,8 @@ namespace Pro_0_Mylife
                 txt_Period.Name = String.Format("txt_Period_{0}", row[0].ToString());
 
                 txt_state.AutoSize = false;
-                txt_state.Size = new Size(50, 40);
-                txt_state.Location = new Point(725, 9);
+                txt_state.Size = new Size(80, 40);
+                txt_state.Location = new Point(695, 9);
                 txt_state.BackColor = Color.FromArgb(230, 230, 250);
                 txt_state.BorderStyle = BorderStyle.None;
                 txt_state.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -289,7 +299,7 @@ namespace Pro_0_Mylife
                     {
                         txt_state.Text = String.Format("미완료");
                     }
-                    else if(dday.Days >=0 && dday.Days < 3)
+                    else if(dday.Days >=0 && dday.Days <= 3)
                     {
                         txt_state.Text = String.Format("임박");
                     }
@@ -312,23 +322,28 @@ namespace Pro_0_Mylife
 
                 todolistFlowPanel.Controls.Add(pnl);
             }
+            
+            
         }
 
-
-
-
-
-
-
-
-
-
-        /* test */
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void todoCheckStateChanged(object sender, EventArgs e)
         {
-         
+            CheckBox chk = (CheckBox)sender;            
+            todoListDao.ChangeChecklistState(chk.Name, chk.Checked);           
+            loadTodolist(Todo_Calendar.SelectionStart);
+            
         }
+        private void popUpTodo(object sender, EventArgs e)
+        {
+            Label selectTodo = (Label)sender;
+            TodoPopUp PopUp = new TodoPopUp(selectTodo.Name);
+
+            PopUp.Owner = this;
+            PopUp.ShowDialog();
+        }
+
+
+
 
 
 
