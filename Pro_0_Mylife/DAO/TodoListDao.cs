@@ -76,6 +76,28 @@ namespace Pro_0_Mylife
 
         }
 
+        public void selectTodolistByNo(DataSet ds, string loginUser, string todoNo)
+        {
+            try
+            {
+                string query = @"SELECT * FROM root2.TODO_T WHERE US_EMAIL='#US_EMAIL' AND TOD_NO ='#TOD_NO' ";
+                query = query.Replace("#US_EMAIL", loginUser);
+                query = query.Replace("#TOD_NO", todoNo);
+
+
+                db.ExecuteDsQuery(ds, query);
+
+                if (ds == null || ds.Tables.Count == 0 || ds.Tables[0].Rows.Count == 0)
+                    return;
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString(), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+
 
         public bool ChangeChecklistState(string ck_no, bool state)
         {
@@ -111,6 +133,69 @@ namespace Pro_0_Mylife
                     return true;
                 }
                 return false;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString(), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+        }
+
+        public bool UpdateTodolist(TodolistVO todolist)
+        {
+            DataSet ds = new DataSet();
+            string query = string.Empty;
+
+            try
+            {
+                query = @"
+                 UPDATE root2.TODO_T
+               SET
+                    TOD_CONTENTS ='#TOD_CONTENTS'
+                    ,TOD_START_DATE = TO_DATE('#TOD_START_DATE','YYYY-MM-DD HH24:MI:SS')
+                    ,TOD_DEADLINE_DATE = TO_DATE('#TOD_DEADLINE_DATE','YYYY-MM-DD HH24:MI:SS')
+                    ,TOD_REGDATE = sysdate              
+               WHERE
+                    TOD_NO = '#TOD_NO'
+                ";
+
+                query = query.Replace("#TOD_NO", ""+todolist.TodoNo);
+                query = query.Replace("#TOD_CONTENTS", todolist.TodoContent);
+                query = query.Replace("#TOD_START_DATE", "" + todolist.TodoStartDate.ToString("yyyy-MM-dd HH:mm:ss"));
+                query = query.Replace("#TOD_DEADLINE_DATE", "" + todolist.TodoDeadLine.ToString("yyyy-MM-dd HH:mm:ss"));
+
+
+                int result = db.ExecuteNonQuery(query);
+                if (result > 0)
+                {
+                    return true;
+                }
+                return false;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString(), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+        }
+
+
+        public bool DeleteTodoList(string ck_no)
+        {
+            try
+            {
+                string query = @"DELETE TODO_T WHERE TOD_NO = '#TOD_NO'";
+                query = query.Replace("#TOD_NO", ck_no);
+
+                int result = db.ExecuteNonQuery(query);
+                if (result > 0)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
             }
             catch (Exception ex)
             {

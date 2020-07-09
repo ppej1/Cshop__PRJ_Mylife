@@ -32,12 +32,14 @@
             this.tab_form = new System.Windows.Forms.TabControl();
             this.tab_home = new System.Windows.Forms.TabPage();
             this.tab_Memo = new System.Windows.Forms.TabPage();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.Memo_flowpanel = new System.Windows.Forms.FlowLayoutPanel();
             this.txt_memo = new System.Windows.Forms.TextBox();
             this.memo_add = new System.Windows.Forms.Button();
             this.Lb_memo = new System.Windows.Forms.Label();
             this.tab_TodoList = new System.Windows.Forms.TabPage();
             this.todo_panel2 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.lb_Todo_Title = new System.Windows.Forms.Label();
@@ -77,8 +79,6 @@
             this.btn_hk = new System.Windows.Forms.Button();
             this.LOGO = new System.Windows.Forms.Label();
             this.Lb_loginUser = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.tab_form.SuspendLayout();
             this.tab_Memo.SuspendLayout();
             this.tab_TodoList.SuspendLayout();
@@ -102,7 +102,7 @@
             // 
             // tab_home
             // 
-            this.tab_home.BackColor = System.Drawing.Color.White;
+            this.tab_home.BackColor = System.Drawing.Color.Lavender;
             resources.ApplyResources(this.tab_home, "tab_home");
             this.tab_home.Name = "tab_home";
             // 
@@ -116,6 +116,11 @@
             this.tab_Memo.Controls.Add(this.Lb_memo);
             resources.ApplyResources(this.tab_Memo, "tab_Memo");
             this.tab_Memo.Name = "tab_Memo";
+            // 
+            // panel2
+            // 
+            resources.ApplyResources(this.panel2, "panel2");
+            this.panel2.Name = "panel2";
             // 
             // Memo_flowpanel
             // 
@@ -161,6 +166,11 @@
             resources.ApplyResources(this.todo_panel2, "todo_panel2");
             this.todo_panel2.Name = "todo_panel2";
             // 
+            // panel3
+            // 
+            resources.ApplyResources(this.panel3, "panel3");
+            this.panel3.Name = "panel3";
+            // 
             // textBox1
             // 
             this.textBox1.BackColor = System.Drawing.Color.Lavender;
@@ -182,7 +192,7 @@
             // 
             // todolistFlowPanel
             // 
-            this.todolistFlowPanel.BackColor = System.Drawing.Color.AliceBlue;
+            this.todolistFlowPanel.BackColor = System.Drawing.Color.LightCyan;
             resources.ApplyResources(this.todolistFlowPanel, "todolistFlowPanel");
             this.todolistFlowPanel.Name = "todolistFlowPanel";
             // 
@@ -270,6 +280,7 @@
             resources.GetString("Todo_EndMinute.Items59")});
             resources.ApplyResources(this.Todo_EndMinute, "Todo_EndMinute");
             this.Todo_EndMinute.Name = "Todo_EndMinute";
+            this.Todo_EndMinute.SelectedIndexChanged += new System.EventHandler(this.CkEndMinuteChanged);
             // 
             // Todo_StartMinute
             // 
@@ -337,6 +348,7 @@
             resources.GetString("Todo_StartMinute.Items59")});
             resources.ApplyResources(this.Todo_StartMinute, "Todo_StartMinute");
             this.Todo_StartMinute.Name = "Todo_StartMinute";
+            this.Todo_StartMinute.SelectedIndexChanged += new System.EventHandler(this.CkStartMinuteChanged);
             // 
             // Todo_Calendar
             // 
@@ -385,6 +397,7 @@
             resources.GetString("Todo_StartHour.Items23")});
             resources.ApplyResources(this.Todo_StartHour, "Todo_StartHour");
             this.Todo_StartHour.Name = "Todo_StartHour";
+            this.Todo_StartHour.SelectedIndexChanged += new System.EventHandler(this.CkStartHourChanged);
             // 
             // lb_todo_contents
             // 
@@ -436,16 +449,19 @@
             resources.GetString("Todo_EndHour.Items23")});
             resources.ApplyResources(this.Todo_EndHour, "Todo_EndHour");
             this.Todo_EndHour.Name = "Todo_EndHour";
+            this.Todo_EndHour.SelectedIndexChanged += new System.EventHandler(this.CkEndHourChanged);
             // 
             // Todo_EndDate
             // 
             resources.ApplyResources(this.Todo_EndDate, "Todo_EndDate");
             this.Todo_EndDate.Name = "Todo_EndDate";
+            this.Todo_EndDate.ValueChanged += new System.EventHandler(this.CkEndDateChanged);
             // 
             // Todo_startDate
             // 
             resources.ApplyResources(this.Todo_startDate, "Todo_startDate");
             this.Todo_startDate.Name = "Todo_startDate";
+            this.Todo_startDate.ValueChanged += new System.EventHandler(this.CKstartDateChanged);
             // 
             // tab_shopping
             // 
@@ -605,16 +621,6 @@
             // 
             resources.ApplyResources(this.Lb_loginUser, "Lb_loginUser");
             this.Lb_loginUser.Name = "Lb_loginUser";
-            // 
-            // panel2
-            // 
-            resources.ApplyResources(this.panel2, "panel2");
-            this.panel2.Name = "panel2";
-            // 
-            // panel3
-            // 
-            resources.ApplyResources(this.panel3, "panel3");
-            this.panel3.Name = "panel3";
             // 
             // Form_main
             // 

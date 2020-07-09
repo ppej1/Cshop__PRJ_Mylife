@@ -96,15 +96,16 @@
     <Compile Include="DAO\LoginDao.cs" />
     <Compile Include="DAO\MemoDao.cs" />
     <Compile Include="DB\OracleDBManager.cs" />
+    <Compile Include="Handler\TodolistHandler.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="DAO\RegisterDao.cs" />
     <Compile Include="DAO\TodoListDao.cs" />
-    <Compile Include="TodoPopUp.cs">
+    <Compile Include="Form_TodoPopUp.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TodoPopUp.Designer.cs">
-      <DependentUpon>TodoPopUp.cs</DependentUpon>
+    <Compile Include="Form_TodoPopUp.Designer.cs">
+      <DependentUpon>Form_TodoPopUp.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Form_register.resx">
       <DependentUpon>Form_register.cs</DependentUpon>
@@ -124,8 +125,8 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="TodoPopUp.resx">
-      <DependentUpon>TodoPopUp.cs</DependentUpon>
+    <EmbeddedResource Include="Form_TodoPopUp.resx">
+      <DependentUpon>Form_TodoPopUp.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

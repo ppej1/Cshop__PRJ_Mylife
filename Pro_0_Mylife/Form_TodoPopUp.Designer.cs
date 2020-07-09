@@ -1,6 +1,6 @@
 ﻿namespace Pro_0_Mylife
 {
-    partial class TodoPopUp
+    partial class Form_TodoPopUp
     {
         /// <summary>
         /// Required designer variable.
@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.btn_modify = new System.Windows.Forms.Button();
+            this.btn_delete = new System.Windows.Forms.Button();
+            this.lb_state = new System.Windows.Forms.Label();
+            this.lb_DDAY = new System.Windows.Forms.Label();
             this.Todo_EndMinute = new System.Windows.Forms.ComboBox();
             this.Todo_StartMinute = new System.Windows.Forms.ComboBox();
             this.Todo_StartHour = new System.Windows.Forms.ComboBox();
@@ -42,56 +42,58 @@
             this.Todo_EndHour = new System.Windows.Forms.ComboBox();
             this.Todo_EndDate = new System.Windows.Forms.DateTimePicker();
             this.Todo_startDate = new System.Windows.Forms.DateTimePicker();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.ck_modify = new System.Windows.Forms.CheckBox();
+            this.ck_delete = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
-            // button1
+            // btn_modify
             // 
-            this.button1.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DeepSkyBlue;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SkyBlue;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Ravie", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(252, 504);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(187, 38);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "수정";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btn_modify.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.btn_modify.FlatAppearance.BorderSize = 0;
+            this.btn_modify.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btn_modify.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SkyBlue;
+            this.btn_modify.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_modify.Font = new System.Drawing.Font("Ravie", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_modify.Location = new System.Drawing.Point(252, 504);
+            this.btn_modify.Name = "btn_modify";
+            this.btn_modify.Size = new System.Drawing.Size(187, 38);
+            this.btn_modify.TabIndex = 0;
+            this.btn_modify.Text = "수정";
+            this.btn_modify.UseVisualStyleBackColor = false;
+            this.btn_modify.Click += new System.EventHandler(this.btn_modify_Click);
             // 
-            // button2
+            // btn_delete
             // 
-            this.button2.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DeepSkyBlue;
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SkyBlue;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(252, 548);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(187, 38);
-            this.button2.TabIndex = 0;
-            this.button2.Text = "삭제";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btn_delete.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.btn_delete.FlatAppearance.BorderSize = 0;
+            this.btn_delete.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btn_delete.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SkyBlue;
+            this.btn_delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_delete.Location = new System.Drawing.Point(252, 548);
+            this.btn_delete.Name = "btn_delete";
+            this.btn_delete.Size = new System.Drawing.Size(187, 38);
+            this.btn_delete.TabIndex = 0;
+            this.btn_delete.Text = "삭제";
+            this.btn_delete.UseVisualStyleBackColor = false;
+            this.btn_delete.Click += new System.EventHandler(this.btn_delete_Click);
             // 
-            // label1
+            // lb_state
             // 
-            this.label1.Location = new System.Drawing.Point(336, 35);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(103, 50);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "완료";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lb_state.Location = new System.Drawing.Point(350, 35);
+            this.lb_state.Name = "lb_state";
+            this.lb_state.Size = new System.Drawing.Size(89, 50);
+            this.lb_state.TabIndex = 1;
+            this.lb_state.Text = "완료";
+            this.lb_state.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // label2
+            // lb_DDAY
             // 
-            this.label2.Location = new System.Drawing.Point(25, 5);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(138, 55);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "D-DAY";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lb_DDAY.Location = new System.Drawing.Point(25, 5);
+            this.lb_DDAY.Name = "lb_DDAY";
+            this.lb_DDAY.Size = new System.Drawing.Size(103, 55);
+            this.lb_DDAY.TabIndex = 1;
+            this.lb_DDAY.Text = "D-DAY";
+            this.lb_DDAY.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // Todo_EndMinute
             // 
@@ -161,6 +163,7 @@
             this.Todo_EndMinute.Name = "Todo_EndMinute";
             this.Todo_EndMinute.Size = new System.Drawing.Size(89, 23);
             this.Todo_EndMinute.TabIndex = 16;
+            this.Todo_EndMinute.SelectedIndexChanged += new System.EventHandler(this.CkEndMinuteChanged);
             // 
             // Todo_StartMinute
             // 
@@ -230,6 +233,7 @@
             this.Todo_StartMinute.Name = "Todo_StartMinute";
             this.Todo_StartMinute.Size = new System.Drawing.Size(89, 23);
             this.Todo_StartMinute.TabIndex = 12;
+            this.Todo_StartMinute.SelectedIndexChanged += new System.EventHandler(this.CkStartMinuteChanged);
             // 
             // Todo_StartHour
             // 
@@ -263,6 +267,7 @@
             this.Todo_StartHour.Name = "Todo_StartHour";
             this.Todo_StartHour.Size = new System.Drawing.Size(89, 23);
             this.Todo_StartHour.TabIndex = 11;
+            this.Todo_StartHour.SelectedIndexChanged += new System.EventHandler(this.CkStartHourChanged);
             // 
             // lb_todo_contents
             // 
@@ -337,6 +342,7 @@
             this.Todo_EndHour.Name = "Todo_EndHour";
             this.Todo_EndHour.Size = new System.Drawing.Size(89, 23);
             this.Todo_EndHour.TabIndex = 15;
+            this.Todo_EndHour.SelectedIndexChanged += new System.EventHandler(this.CkEndHourChanged);
             // 
             // Todo_EndDate
             // 
@@ -344,6 +350,7 @@
             this.Todo_EndDate.Name = "Todo_EndDate";
             this.Todo_EndDate.Size = new System.Drawing.Size(218, 25);
             this.Todo_EndDate.TabIndex = 14;
+            this.Todo_EndDate.ValueChanged += new System.EventHandler(this.CkEndDateChanged);
             // 
             // Todo_startDate
             // 
@@ -351,35 +358,36 @@
             this.Todo_startDate.Name = "Todo_startDate";
             this.Todo_startDate.Size = new System.Drawing.Size(218, 25);
             this.Todo_startDate.TabIndex = 10;
+            this.Todo_startDate.ValueChanged += new System.EventHandler(this.CKstartDateChanged);
             // 
-            // checkBox1
+            // ck_modify
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(28, 515);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(204, 19);
-            this.checkBox1.TabIndex = 18;
-            this.checkBox1.Text = "수정하는것에 동의합니다.";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.ck_modify.AutoSize = true;
+            this.ck_modify.Location = new System.Drawing.Point(28, 515);
+            this.ck_modify.Name = "ck_modify";
+            this.ck_modify.Size = new System.Drawing.Size(204, 19);
+            this.ck_modify.TabIndex = 18;
+            this.ck_modify.Text = "수정하는것에 동의합니다.";
+            this.ck_modify.UseVisualStyleBackColor = true;
             // 
-            // checkBox2
+            // ck_delete
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(28, 559);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(204, 19);
-            this.checkBox2.TabIndex = 18;
-            this.checkBox2.Text = "삭제하는것에 동의합니다.";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.ck_delete.AutoSize = true;
+            this.ck_delete.Location = new System.Drawing.Point(28, 559);
+            this.ck_delete.Name = "ck_delete";
+            this.ck_delete.Size = new System.Drawing.Size(204, 19);
+            this.ck_delete.TabIndex = 18;
+            this.ck_delete.Text = "삭제하는것에 동의합니다.";
+            this.ck_delete.UseVisualStyleBackColor = true;
             // 
-            // TodoPopUp
+            // Form_TodoPopUp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Lavender;
             this.ClientSize = new System.Drawing.Size(468, 601);
-            this.Controls.Add(this.checkBox2);
-            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.ck_delete);
+            this.Controls.Add(this.ck_modify);
             this.Controls.Add(this.Todo_EndMinute);
             this.Controls.Add(this.Todo_StartMinute);
             this.Controls.Add(this.Todo_StartHour);
@@ -390,11 +398,11 @@
             this.Controls.Add(this.Todo_EndHour);
             this.Controls.Add(this.Todo_EndDate);
             this.Controls.Add(this.Todo_startDate);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Name = "TodoPopUp";
+            this.Controls.Add(this.lb_DDAY);
+            this.Controls.Add(this.lb_state);
+            this.Controls.Add(this.btn_delete);
+            this.Controls.Add(this.btn_modify);
+            this.Name = "Form_TodoPopUp";
             this.Text = "TodoPopUp";
             this.Load += new System.EventHandler(this.TodoPopUp_Load);
             this.ResumeLayout(false);
@@ -404,10 +412,10 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btn_modify;
+        private System.Windows.Forms.Button btn_delete;
+        private System.Windows.Forms.Label lb_state;
+        private System.Windows.Forms.Label lb_DDAY;
         private System.Windows.Forms.ComboBox Todo_EndMinute;
         private System.Windows.Forms.ComboBox Todo_StartMinute;
         private System.Windows.Forms.ComboBox Todo_StartHour;
@@ -418,7 +426,7 @@
         private System.Windows.Forms.ComboBox Todo_EndHour;
         private System.Windows.Forms.DateTimePicker Todo_EndDate;
         private System.Windows.Forms.DateTimePicker Todo_startDate;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.CheckBox ck_modify;
+        private System.Windows.Forms.CheckBox ck_delete;
     }
 }
