@@ -17,11 +17,10 @@ namespace Pro_0_Mylife
     public partial class Form_main : Form
     {
         Form_login form_Login;
-        static string loggin_User;
         MemoDao memoDao = new MemoDao();
         TodoListDao todoListDao = new TodoListDao();
         DateTime now = DateTime.Now;
-
+        static UserVO _logIn_User = new UserVO();
 
         // main form
         public Form_main()
@@ -29,7 +28,7 @@ namespace Pro_0_Mylife
             InitializeComponent();
             Memo_flowpanel.AutoScroll = true;
             todolistFlowPanel.AutoScroll = true;
-
+            UserInfo_panel.Hide();
 
         }
 
@@ -52,39 +51,69 @@ namespace Pro_0_Mylife
         }
         private void LoginSuccess(String userName)
         {
-            loggin_User = userName;
-            Lb_loginUser.Text = loggin_User+" 님";
+            LoginDao logindao = new LoginDao();
+            _logIn_User.Email = userName;
+            logindao.selectNowLogin(_logIn_User);
+            settingUser();
+        }
+        private void settingUser()
+        {
+
+            Lb_loginUser.Text = _logIn_User.FirstName +" " +_logIn_User.LastName + " 님";
         }
 
         private void LOGO_Click(object sender, EventArgs e)
         {
             tab_form.SelectedIndex = 0;
+            btn_setting(LOGO);
+
 
         }
 
         private void Btn_memo_Click(object sender, EventArgs e)
         {
             tab_form.SelectedIndex = 1;
+            btn_setting(btn_memo);
             LoadMemo();
         }
 
         private void Btn_ck_Click(object sender, EventArgs e)
         {
-            tab_form.SelectedIndex = 2;            
+            tab_form.SelectedIndex = 2;
+            btn_setting(btn_ck);
             resetTodolistForm();
 
+            
         }
 
         private void Btn_shp_Click(object sender, EventArgs e)
         {
             tab_form.SelectedIndex = 3;
+            btn_setting(btn_shp);
+
         }
 
-        private void Btn_hk_btn(object sender, EventArgs e)
+        private void Btn_hk_click(object sender, EventArgs e)
         {
             tab_form.SelectedIndex = 4;
+            btn_setting(btn_hk);
         }
 
+        private void btn_setting(Button btn_select)
+        {
+            btn_memo.BackColor = Color.FromArgb(37, 44, 65);
+            btn_memo.ForeColor = Color.FromArgb(255, 255, 255);
+            btn_ck.BackColor = Color.FromArgb(37, 44, 65);
+            btn_ck.ForeColor = Color.FromArgb(255, 255, 255);
+            btn_hk.BackColor = Color.FromArgb(37, 44, 65);
+            btn_hk.ForeColor = Color.FromArgb(255, 255, 255);
+            btn_shp.BackColor = Color.FromArgb(37, 44, 65);
+            btn_shp.ForeColor = Color.FromArgb(255, 255, 255);
+            btn_select.BackColor = Color.FromArgb(255, 255, 255);
+            btn_select.ForeColor = Color.FromArgb(0, 0, 0);
+
+
+        }
         /*  main form  End*/
 
 
@@ -99,7 +128,7 @@ namespace Pro_0_Mylife
         private void memo_add_Click(object sender, EventArgs e)
         {
             TodolistHandler todolistHandler = new TodolistHandler();
-            MemoVO memo = new MemoVO(txt_memo.Text, loggin_User);
+            MemoVO memo = new MemoVO(txt_memo.Text, _logIn_User.Email);
             if (todolistHandler.CheckTextEmpty(memo.MemoContents))
             {
                 if (memoDao.InsertMemo(memo))
@@ -116,7 +145,7 @@ namespace Pro_0_Mylife
 
             DataSet ds = new System.Data.DataSet();
 
-            memoDao.SelectMemo(ds, loggin_User);
+            memoDao.SelectMemo(ds, _logIn_User.Email);
 
             DataTable dt = ds.Tables[0];
 
@@ -128,25 +157,25 @@ namespace Pro_0_Mylife
                 Button btn_x = new Button();
 
                 pnl.Size = new Size(200, 250);
-                pnl.BackColor = Color.FromArgb(230, 230, 250);
+                pnl.BackColor = Color.FromArgb(255, 255, 102);
                 pnl.Name = String.Format("pnl_text_{0}", row[1].ToString());
 
                 txtbox_contents.Size = new Size(140, 175);
                 txtbox_contents.Location = new Point(15, 15);
-                txtbox_contents.BackColor = Color.FromArgb(230, 230, 250);
+                txtbox_contents.BackColor = Color.FromArgb(255, 255, 102);
                 txtbox_contents.BorderStyle = BorderStyle.None;
                 txtbox_contents.Text = String.Format("{0}", row[1].ToString());
                 txtbox_contents.Name = String.Format("txt_content_{0}", row[0].ToString());
                 
                 txtbox_date.Size = new Size(145, 25);
                 txtbox_date.Location = new Point(50, 214); 
-                txtbox_date.BackColor = Color.FromArgb(230, 230, 250);
+                txtbox_date.BackColor = Color.FromArgb(255, 255, 102);
                 txtbox_date.BorderStyle = BorderStyle.None;
                 txtbox_date.Text = String.Format("{0}", row[2].ToString());
                 txtbox_date.Name = String.Format("txt_date_{0}", row[0].ToString());
 
                 btn_x.Size = new Size(28,28);
-                btn_x.BackColor = System.Drawing.Color.FromArgb(230, 230, 250);
+                btn_x.BackColor = System.Drawing.Color.FromArgb(255, 255, 102);
                 btn_x.Font = new System.Drawing.Font("Ravie", 10F);
                 btn_x.FlatStyle = FlatStyle.Flat;
                 btn_x.FlatAppearance.BorderSize = 0;
@@ -180,7 +209,7 @@ namespace Pro_0_Mylife
             Todo_startDate.Value = Todo_Calendar.SelectionStart;
             Todo_EndDate.Value = Todo_Calendar.SelectionEnd;
             lb_Todo_Title.Text = Todo_Calendar.SelectionStart.ToString("MMM dd,yyyy");
-            loadTodolist(Todo_Calendar.SelectionStart);
+            loadAllTodolist(Todo_Calendar.SelectionStart);
             return;
         }
         private void CKstartDateChanged(object sender, EventArgs e)
@@ -253,7 +282,7 @@ namespace Pro_0_Mylife
             DateTime startDate = DateTime.ParseExact(Todo_startDate.Value.ToString("MM-dd-yyyy") +" "+ Todo_StartHour.Text + ":" + Todo_StartMinute.Text + ":00", "MM-dd-yyyy HH:mm:ss", System.Globalization.CultureInfo.InvariantCulture);
             DateTime todoDeadLine = DateTime.ParseExact(Todo_EndDate.Value.ToString("MM-dd-yyyy") + " " + Todo_EndHour.Text + ":" + Todo_EndMinute.Text + ":00", "MM-dd-yyyy HH:mm:ss", System.Globalization.CultureInfo.InvariantCulture);
             string todoContent = Todo_contents.Text;
-            TodolistVO todolist = new TodolistVO(Todo_contents.Text,startDate, todoDeadLine, loggin_User);
+            TodolistVO todolist = new TodolistVO(Todo_contents.Text,startDate, todoDeadLine, _logIn_User.Email);
             
             if (todolistHandler.CheckTextEmpty(todolist.TodoContent))
             {   
@@ -284,12 +313,17 @@ namespace Pro_0_Mylife
             Todo_EndMinute.SelectedIndex = 0;
         }
 
-        private void loadTodolist(DateTime selectDate)
+        private void loadAllTodolist(DateTime selectDate)
         {
-            TodolistHandler todolistHandler = new TodolistHandler();
-            todolistFlowPanel.Controls.Clear();
             DataSet ds = new DataSet();
-            todoListDao.SelectTodoList(ds, loggin_User, selectDate);
+            todoListDao.SelectTodoList(ds, _logIn_User.Email, selectDate);
+            loadTodolist(ds);
+        }
+
+        private void loadTodolist(DataSet ds)
+        {
+            todolistFlowPanel.Controls.Clear();
+            TodolistHandler todolistHandler = new TodolistHandler();
             DataTable dt = ds.Tables[0];
 
             foreach (DataRow row in dt.Rows)
@@ -301,12 +335,12 @@ namespace Pro_0_Mylife
                 Label txt_Period = new Label();
                 Label txt_state = new Label();
 
-                pnl.Size = new Size(779, 60);
+                pnl.Size = new Size(819, 60);
                 pnl.BackColor = Color.FromArgb(255, 255, 255);
                 pnl.Name = String.Format("pnl_text_{0}", row[0].ToString());
 
                 ch_todo.AutoSize = false;
-                ch_todo.Size = new Size(15 , 30);
+                ch_todo.Size = new Size(15, 30);
                 ch_todo.Location = new Point(14, 15);
                 ch_todo.Name = String.Format("{0}", row[0].ToString());
                 if (row[5].ToString().Equals("1"))
@@ -322,12 +356,12 @@ namespace Pro_0_Mylife
                 txt_DDay.BorderStyle = BorderStyle.None;
                 txt_DDay.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
                 txt_DDay.Name = String.Format("txt_DDayt_{0}", row[0].ToString());
-                txt_DDay.Text=todolistHandler.selectDDay(DateTime.Parse(row[4].ToString()));
-                
+                txt_DDay.Text = todolistHandler.selectDDay(DateTime.Parse(row[4].ToString()));
+
 
 
                 txt_contents.AutoSize = false;
-                txt_contents.Size = new Size(495, 40);
+                txt_contents.Size = new Size(515, 40);
                 txt_contents.Location = new Point(107, 9);
                 txt_contents.BackColor = Color.FromArgb(255, 255, 255);
                 txt_contents.BorderStyle = BorderStyle.None;
@@ -338,22 +372,22 @@ namespace Pro_0_Mylife
 
                 txt_Period.AutoSize = false;
                 txt_Period.Size = new Size(80, 40);
-                txt_Period.Location = new Point(608, 9);
+                txt_Period.Location = new Point(628, 9);
                 txt_Period.BackColor = Color.FromArgb(255, 255, 255);
-                txt_Period.BorderStyle = BorderStyle.None;                
+                txt_Period.BorderStyle = BorderStyle.None;
                 txt_Period.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
                 txt_Period.Text = String.Format("{0}", row[3].ToString());
                 txt_Period.Name = String.Format("txt_Period_{0}", row[0].ToString());
 
                 txt_state.AutoSize = false;
-                txt_state.Size = new Size(80, 40);
-                txt_state.Location = new Point(695, 9);
+                txt_state.Size = new Size(90, 40);
+                txt_state.Location = new Point(715, 9);
                 txt_state.BackColor = Color.FromArgb(255, 255, 255);
                 txt_state.BorderStyle = BorderStyle.None;
                 txt_state.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
                 txt_state.Name = String.Format("txt_state_{0}", row[0].ToString());
-                txt_state.Text = todolistHandler.todoState(row[5].ToString() , DateTime.Parse(row[4].ToString()));
-               
+                txt_state.Text = todolistHandler.todoState(row[5].ToString(), DateTime.Parse(row[4].ToString()));
+
 
                 pnl.Controls.Add(ch_todo);
                 pnl.Controls.Add(txt_DDay);
@@ -363,34 +397,69 @@ namespace Pro_0_Mylife
 
                 todolistFlowPanel.Controls.Add(pnl);
             }
-            
-            
+
         }
+
 
         private void todoCheckStateChanged(object sender, EventArgs e)
         {
             CheckBox chk = (CheckBox)sender;            
             todoListDao.ChangeChecklistState(chk.Name, chk.Checked);           
-            loadTodolist(Todo_Calendar.SelectionStart);
+            loadAllTodolist(Todo_Calendar.SelectionStart);
             
         }
+
+        private void btn_search_Click(object sender, EventArgs e)
+        {
+            if (!txt_todoSearch.Text.Equals(""))
+            {
+                DataSet ds = new DataSet();
+                todoListDao.SearchTodolist(ds, _logIn_User.Email, txt_todoSearch.Text);
+                loadTodolist(ds);
+                txt_todoSearch.Text = "";
+            }
+            else
+            {
+                MessageBox.Show("검색 키워드가 없습니다.");
+            }
+        }
+
         private void popUpTodo(object sender, EventArgs e)
         {
             Label selectTodo = (Label)sender;
-            Form_TodoPopUp PopUp = new Form_TodoPopUp(loggin_User, selectTodo.Name);
+            Form_TodoPopUp PopUp = new Form_TodoPopUp(_logIn_User.Email, selectTodo.Name);
 
             PopUp.Owner = this;
             switch (PopUp.ShowDialog())
             {
                 case DialogResult.OK:
                     PopUp.Close();
-                    loadTodolist(Todo_Calendar.SelectionStart);
+                    loadAllTodolist(Todo_Calendar.SelectionStart);
                     break;
                 case DialogResult.Cancel:
                     PopUp.Close();
                     break;
             }
 
+        }
+
+        private void Lb_loginUser_Click(object sender, EventArgs e)
+        {
+            if (UserInfo_panel.Visible)
+            {
+                UserInfo_panel.Hide();
+            }
+            else
+            {
+                UserInfo_panel.Location = new Point(1040, 41);
+                UserInfo_panel.Show();
+            }
+        }
+
+        private void btn_signOut_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+            Application.Restart();
         }
 
 

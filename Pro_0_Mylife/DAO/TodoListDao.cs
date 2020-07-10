@@ -96,7 +96,25 @@ namespace Pro_0_Mylife
                 MessageBox.Show(ex.ToString(), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+        public void SearchTodolist(DataSet ds, string loginUser, string search)
+        {
+            try
+            {
+                string query = @"SELECT * FROM root2.TODO_T WHERE US_EMAIL='#US_EMAIL' AND UPPER(REPLACE(TOD_CONTENTS,' ','')) like  UPPER('%' || REPLACE('#SEARCH',' ','') || '%')";
+                query = query.Replace("#US_EMAIL", loginUser);
+                query = query.Replace("#SEARCH", search);
 
+                db.ExecuteDsQuery(ds, query);
+
+                if (ds == null || ds.Tables.Count == 0 || ds.Tables[0].Rows.Count == 0)
+                    return;
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString(), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
 
 
         public bool ChangeChecklistState(string ck_no, bool state)

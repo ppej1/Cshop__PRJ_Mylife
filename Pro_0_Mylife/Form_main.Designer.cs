@@ -40,8 +40,8 @@
             this.tab_TodoList = new System.Windows.Forms.TabPage();
             this.todo_panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.txt_todoSearch = new System.Windows.Forms.TextBox();
+            this.btn_search = new System.Windows.Forms.Button();
             this.lb_Todo_Title = new System.Windows.Forms.Label();
             this.todolistFlowPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.Todo_panel1 = new System.Windows.Forms.Panel();
@@ -73,12 +73,20 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.btn_memo = new System.Windows.Forms.Button();
+            this.UserInfo_panel = new System.Windows.Forms.Panel();
+            this.btn_UserModify = new System.Windows.Forms.Button();
+            this.btn_signOut = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.LOGO = new System.Windows.Forms.Button();
+            this.Lb_loginUser = new System.Windows.Forms.Button();
+            this.Top_panel = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.btn_ck = new System.Windows.Forms.Button();
             this.btn_shp = new System.Windows.Forms.Button();
             this.btn_hk = new System.Windows.Forms.Button();
-            this.LOGO = new System.Windows.Forms.Label();
-            this.Lb_loginUser = new System.Windows.Forms.Label();
+            this.btn_memo = new System.Windows.Forms.Button();
             this.tab_form.SuspendLayout();
             this.tab_Memo.SuspendLayout();
             this.tab_TodoList.SuspendLayout();
@@ -86,6 +94,10 @@
             this.Todo_panel1.SuspendLayout();
             this.tab_shopping.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
+            this.UserInfo_panel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.Top_panel.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tab_form
@@ -159,8 +171,8 @@
             // 
             this.todo_panel2.BackColor = System.Drawing.Color.Lavender;
             this.todo_panel2.Controls.Add(this.panel3);
-            this.todo_panel2.Controls.Add(this.textBox1);
-            this.todo_panel2.Controls.Add(this.button1);
+            this.todo_panel2.Controls.Add(this.txt_todoSearch);
+            this.todo_panel2.Controls.Add(this.btn_search);
             this.todo_panel2.Controls.Add(this.lb_Todo_Title);
             this.todo_panel2.Controls.Add(this.todolistFlowPanel);
             resources.ApplyResources(this.todo_panel2, "todo_panel2");
@@ -171,18 +183,19 @@
             resources.ApplyResources(this.panel3, "panel3");
             this.panel3.Name = "panel3";
             // 
-            // textBox1
+            // txt_todoSearch
             // 
-            this.textBox1.BackColor = System.Drawing.Color.Lavender;
-            resources.ApplyResources(this.textBox1, "textBox1");
-            this.textBox1.Name = "textBox1";
+            this.txt_todoSearch.BackColor = System.Drawing.Color.Lavender;
+            resources.ApplyResources(this.txt_todoSearch, "txt_todoSearch");
+            this.txt_todoSearch.Name = "txt_todoSearch";
             // 
-            // button1
+            // btn_search
             // 
-            this.button1.BackColor = System.Drawing.Color.MediumSlateBlue;
-            resources.ApplyResources(this.button1, "button1");
-            this.button1.Name = "button1";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btn_search.BackColor = System.Drawing.Color.MediumSlateBlue;
+            resources.ApplyResources(this.btn_search, "btn_search");
+            this.btn_search.Name = "btn_search";
+            this.btn_search.UseVisualStyleBackColor = false;
+            this.btn_search.Click += new System.EventHandler(this.btn_search_Click);
             // 
             // lb_Todo_Title
             // 
@@ -567,72 +580,138 @@
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.UseVisualStyleBackColor = true;
             // 
-            // btn_memo
+            // UserInfo_panel
             // 
-            this.btn_memo.BackColor = System.Drawing.Color.SkyBlue;
-            this.btn_memo.FlatAppearance.BorderSize = 0;
-            this.btn_memo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DeepSkyBlue;
-            this.btn_memo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SkyBlue;
-            resources.ApplyResources(this.btn_memo, "btn_memo");
-            this.btn_memo.Name = "btn_memo";
-            this.btn_memo.UseVisualStyleBackColor = false;
-            this.btn_memo.Click += new System.EventHandler(this.Btn_memo_Click);
+            resources.ApplyResources(this.UserInfo_panel, "UserInfo_panel");
+            this.UserInfo_panel.BackColor = System.Drawing.Color.White;
+            this.UserInfo_panel.Controls.Add(this.btn_UserModify);
+            this.UserInfo_panel.Controls.Add(this.btn_signOut);
+            this.UserInfo_panel.Controls.Add(this.label2);
+            this.UserInfo_panel.Controls.Add(this.label1);
+            this.UserInfo_panel.Controls.Add(this.pictureBox1);
+            this.UserInfo_panel.Name = "UserInfo_panel";
             // 
-            // btn_ck
+            // btn_UserModify
             // 
-            this.btn_ck.BackColor = System.Drawing.Color.SkyBlue;
-            this.btn_ck.FlatAppearance.BorderSize = 0;
-            this.btn_ck.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DeepSkyBlue;
-            this.btn_ck.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SkyBlue;
-            resources.ApplyResources(this.btn_ck, "btn_ck");
-            this.btn_ck.Name = "btn_ck";
-            this.btn_ck.UseVisualStyleBackColor = false;
-            this.btn_ck.Click += new System.EventHandler(this.Btn_ck_Click);
+            this.btn_UserModify.BackColor = System.Drawing.Color.Tomato;
+            this.btn_UserModify.FlatAppearance.BorderSize = 0;
+            this.btn_UserModify.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Salmon;
+            resources.ApplyResources(this.btn_UserModify, "btn_UserModify");
+            this.btn_UserModify.Name = "btn_UserModify";
+            this.btn_UserModify.UseVisualStyleBackColor = false;
             // 
-            // btn_shp
+            // btn_signOut
             // 
-            this.btn_shp.BackColor = System.Drawing.Color.SkyBlue;
-            this.btn_shp.FlatAppearance.BorderSize = 0;
-            this.btn_shp.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DeepSkyBlue;
-            this.btn_shp.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SkyBlue;
-            resources.ApplyResources(this.btn_shp, "btn_shp");
-            this.btn_shp.Name = "btn_shp";
-            this.btn_shp.UseVisualStyleBackColor = false;
-            this.btn_shp.Click += new System.EventHandler(this.Btn_shp_Click);
+            this.btn_signOut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(44)))), ((int)(((byte)(65)))));
+            this.btn_signOut.FlatAppearance.BorderSize = 0;
+            this.btn_signOut.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(59)))), ((int)(((byte)(80)))));
+            resources.ApplyResources(this.btn_signOut, "btn_signOut");
+            this.btn_signOut.ForeColor = System.Drawing.Color.White;
+            this.btn_signOut.Name = "btn_signOut";
+            this.btn_signOut.UseVisualStyleBackColor = false;
+            this.btn_signOut.Click += new System.EventHandler(this.btn_signOut_Click);
             // 
-            // btn_hk
+            // label2
             // 
-            this.btn_hk.BackColor = System.Drawing.Color.SkyBlue;
-            this.btn_hk.FlatAppearance.BorderSize = 0;
-            this.btn_hk.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DeepSkyBlue;
-            this.btn_hk.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SkyBlue;
-            resources.ApplyResources(this.btn_hk, "btn_hk");
-            this.btn_hk.Name = "btn_hk";
-            this.btn_hk.UseVisualStyleBackColor = false;
-            this.btn_hk.Click += new System.EventHandler(this.Btn_hk_btn);
+            resources.ApplyResources(this.label2, "label2");
+            this.label2.Name = "label2";
+            // 
+            // label1
+            // 
+            resources.ApplyResources(this.label1, "label1");
+            this.label1.Name = "label1";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.LightPink;
+            resources.ApplyResources(this.pictureBox1, "pictureBox1");
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.TabStop = false;
             // 
             // LOGO
             // 
+            this.LOGO.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.LOGO.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.LOGO.FlatAppearance.BorderSize = 0;
+            this.LOGO.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.LOGO.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             resources.ApplyResources(this.LOGO, "LOGO");
+            this.LOGO.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.LOGO.Name = "LOGO";
+            this.LOGO.UseVisualStyleBackColor = false;
             this.LOGO.Click += new System.EventHandler(this.LOGO_Click);
             // 
             // Lb_loginUser
             // 
             resources.ApplyResources(this.Lb_loginUser, "Lb_loginUser");
+            this.Lb_loginUser.BackColor = System.Drawing.Color.Transparent;
+            this.Lb_loginUser.FlatAppearance.BorderSize = 0;
             this.Lb_loginUser.Name = "Lb_loginUser";
+            this.Lb_loginUser.UseVisualStyleBackColor = false;
+            this.Lb_loginUser.Click += new System.EventHandler(this.Lb_loginUser_Click);
+            // 
+            // Top_panel
+            // 
+            this.Top_panel.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.Top_panel.Controls.Add(this.LOGO);
+            this.Top_panel.Controls.Add(this.Lb_loginUser);
+            resources.ApplyResources(this.Top_panel, "Top_panel");
+            this.Top_panel.Name = "Top_panel";
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(44)))), ((int)(((byte)(65)))));
+            this.panel1.Controls.Add(this.btn_ck);
+            this.panel1.Controls.Add(this.btn_shp);
+            this.panel1.Controls.Add(this.btn_hk);
+            this.panel1.Controls.Add(this.btn_memo);
+            resources.ApplyResources(this.panel1, "panel1");
+            this.panel1.Name = "panel1";
+            // 
+            // btn_ck
+            // 
+            this.btn_ck.FlatAppearance.BorderSize = 0;
+            this.btn_ck.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(59)))), ((int)(((byte)(80)))));
+            resources.ApplyResources(this.btn_ck, "btn_ck");
+            this.btn_ck.ForeColor = System.Drawing.Color.White;
+            this.btn_ck.Name = "btn_ck";
+            this.btn_ck.Click += new System.EventHandler(this.Btn_ck_Click);
+            // 
+            // btn_shp
+            // 
+            this.btn_shp.FlatAppearance.BorderSize = 0;
+            this.btn_shp.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(59)))), ((int)(((byte)(80)))));
+            resources.ApplyResources(this.btn_shp, "btn_shp");
+            this.btn_shp.ForeColor = System.Drawing.Color.White;
+            this.btn_shp.Name = "btn_shp";
+            this.btn_shp.Click += new System.EventHandler(this.Btn_shp_Click);
+            // 
+            // btn_hk
+            // 
+            this.btn_hk.FlatAppearance.BorderSize = 0;
+            this.btn_hk.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(59)))), ((int)(((byte)(80)))));
+            resources.ApplyResources(this.btn_hk, "btn_hk");
+            this.btn_hk.ForeColor = System.Drawing.Color.White;
+            this.btn_hk.Name = "btn_hk";
+            this.btn_hk.Click += new System.EventHandler(this.Btn_hk_click);
+            // 
+            // btn_memo
+            // 
+            this.btn_memo.FlatAppearance.BorderSize = 0;
+            this.btn_memo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(59)))), ((int)(((byte)(80)))));
+            resources.ApplyResources(this.btn_memo, "btn_memo");
+            this.btn_memo.ForeColor = System.Drawing.Color.White;
+            this.btn_memo.Name = "btn_memo";
+            this.btn_memo.Click += new System.EventHandler(this.Btn_memo_Click);
             // 
             // Form_main
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.SkyBlue;
-            this.Controls.Add(this.Lb_loginUser);
-            this.Controls.Add(this.LOGO);
-            this.Controls.Add(this.btn_hk);
-            this.Controls.Add(this.btn_shp);
-            this.Controls.Add(this.btn_ck);
-            this.Controls.Add(this.btn_memo);
+            this.BackColor = System.Drawing.SystemColors.Desktop;
+            this.Controls.Add(this.UserInfo_panel);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.Top_panel);
             this.Controls.Add(this.tab_form);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
@@ -650,6 +729,10 @@
             this.tab_shopping.ResumeLayout(false);
             this.tab_shopping.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
+            this.UserInfo_panel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.Top_panel.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -661,10 +744,6 @@
         private System.Windows.Forms.TabPage tab_Memo;
         private System.Windows.Forms.TabPage tab_TodoList;
         private System.Windows.Forms.TabPage tab_shopping;
-        private System.Windows.Forms.Button btn_memo;
-        private System.Windows.Forms.Button btn_ck;
-        private System.Windows.Forms.Button btn_shp;
-        private System.Windows.Forms.Button btn_hk;
         private System.Windows.Forms.Label Lb_memo;
         private System.Windows.Forms.TextBox txt_memo;
         private System.Windows.Forms.Button memo_add;
@@ -692,19 +771,31 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label LOGO;
-        private System.Windows.Forms.Label Lb_loginUser;
+        private System.Windows.Forms.Button LOGO;
         private System.Windows.Forms.FlowLayoutPanel Memo_flowpanel;
         private System.Windows.Forms.Panel todo_panel2;
         private System.Windows.Forms.Panel Todo_panel1;
         private System.Windows.Forms.TabPage tabPage5;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox txt_todoSearch;
+        private System.Windows.Forms.Button btn_search;
         private System.Windows.Forms.Label lb_Todo_Title;
         private System.Windows.Forms.FlowLayoutPanel todolistFlowPanel;
         private System.Windows.Forms.ComboBox Todo_EndMinute;
         private System.Windows.Forms.ComboBox Todo_StartMinute;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel UserInfo_panel;
+        private System.Windows.Forms.Button Lb_loginUser;
+        private System.Windows.Forms.Button btn_signOut;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btn_UserModify;
+        private System.Windows.Forms.Panel Top_panel;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button btn_ck;
+        private System.Windows.Forms.Button btn_shp;
+        private System.Windows.Forms.Button btn_hk;
+        private System.Windows.Forms.Button btn_memo;
     }
 }

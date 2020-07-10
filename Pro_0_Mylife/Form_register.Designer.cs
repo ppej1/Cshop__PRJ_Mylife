@@ -56,6 +56,7 @@
             this.Btn_ck_email.TabIndex = 1;
             this.Btn_ck_email.Text = "확인";
             this.Btn_ck_email.UseVisualStyleBackColor = true;
+            this.Btn_ck_email.Click += new System.EventHandler(this.Btn_ck_email_Click);
             // 
             // txt_email
             // 
@@ -154,7 +155,6 @@
             this.cb_gender.Items.AddRange(new object[] {
             "남자",
             "여자"});
-            this.cb_gender.SelectedIndex = 0;
             this.cb_gender.Location = new System.Drawing.Point(40, 381);
             this.cb_gender.Name = "cb_gender";
             this.cb_gender.Size = new System.Drawing.Size(298, 23);
@@ -232,6 +232,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Form_register";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Register";
             this.ResumeLayout(false);
             this.PerformLayout();

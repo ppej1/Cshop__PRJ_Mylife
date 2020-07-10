@@ -15,6 +15,11 @@ namespace Pro_0_Mylife
         [STAThread]
         static void Main()
         {
+            ProgramStart();
+
+        }
+        static void ProgramStart()
+        {
             OracleDBManager dbManager = new OracleDBManager();
             if (dbManager.GetConnection() == false)
             {
@@ -25,9 +30,6 @@ namespace Pro_0_Mylife
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form_main());
-
-
-
         }
     }
 }

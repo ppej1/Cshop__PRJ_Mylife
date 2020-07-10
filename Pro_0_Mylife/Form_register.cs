@@ -14,6 +14,8 @@ namespace Pro_0_Mylife
 {
     public partial class Form_register : Form
     {
+        RegisterDao registerDAo = new RegisterDao();
+
         public Form_register()
         {
             InitializeComponent();
@@ -26,7 +28,6 @@ namespace Pro_0_Mylife
 
         private void Btn_register_Click(object sender, EventArgs e)
         {
-            RegisterDao registerDAo = new RegisterDao();
             if (ControlCheck())
             {
                 MessageBox.Show("정상입력");
@@ -88,6 +89,21 @@ namespace Pro_0_Mylife
                 return false;
             }
             return true;
+        }
+
+        private void Btn_ck_email_Click(object sender, EventArgs e)
+        {
+            UserVO user = new UserVO();
+            user.Email = txt_email.Text;
+            if (registerDAo.CheckEmail(user))
+            {
+                MessageBox.Show("이 이메일은 이미 등록되어있는 이메일입니다.");
+                txt_email.Text = "";
+            }
+            else
+            {
+                MessageBox.Show("이 이메일은 사용 가능한 이메일입니다.");
+            }
         }
     }
 }

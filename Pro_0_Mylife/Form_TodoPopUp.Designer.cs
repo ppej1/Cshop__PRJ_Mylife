@@ -403,6 +403,7 @@
             this.Controls.Add(this.btn_delete);
             this.Controls.Add(this.btn_modify);
             this.Name = "Form_TodoPopUp";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "TodoPopUp";
             this.Load += new System.EventHandler(this.TodoPopUp_Load);
             this.ResumeLayout(false);
