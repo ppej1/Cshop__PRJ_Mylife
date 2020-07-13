@@ -500,6 +500,11 @@ namespace Pro_0_Mylife
             }
         }
 
+        private void panel8_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
 
 
 
