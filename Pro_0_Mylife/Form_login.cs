@@ -16,7 +16,7 @@ namespace Pro_0_Mylife
     public delegate void EventHandler(String userName);
     public partial class Form_login : Form
     {
-        public event EventHandler loginEventHandler;
+        public event EventHandler LoginEventHandler;
         public Form_login()
         {
             InitializeComponent();
@@ -33,12 +33,20 @@ namespace Pro_0_Mylife
                 if (loginDao.LoginCheck(user))
                 {
                     String userName = id_bx.Text;
-                    loginEventHandler(userName);
+                    LoginEventHandler(userName);
                     DialogResult = DialogResult.OK;
                 }
                 else
                 {
-                    MessageBox.Show("로그인 정보가 정확하지 않습니다.", "알림", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    if(loginDao.widthdrawCheck(user))
+                    {
+                        MessageBox.Show("이미 탈퇴한 회원입니다.", "알림", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+                    }
+                    else
+                    {
+                        MessageBox.Show("로그인 정보가 정확하지 않습니다.", "알림", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
                     id_bx.Clear();
                     pwd_bx.Clear();
                 }

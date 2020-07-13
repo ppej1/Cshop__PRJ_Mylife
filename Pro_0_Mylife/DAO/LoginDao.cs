@@ -17,7 +17,7 @@ namespace Pro_0_Mylife
             {
                 DataSet ds = new DataSet();
                 OracleDBManager db = new OracleDBManager();
-                String query = @"SELECT US_EMAIL,US_PWD FROM root2.USER_T WHERE 1=1 AND  US_EMAIL = '#id' AND US_PWD = '#password'";
+                String query = @"SELECT US_EMAIL,US_PWD FROM root2.USER_T WHERE US_WITHDRAWAL is null AND  US_EMAIL = '#id' AND US_PWD = '#password'";
 
                 query = query.Replace("#id", user.Email);
                 query = query.Replace("#password", user.Password);
@@ -39,6 +39,34 @@ namespace Pro_0_Mylife
                 return false;
             }
 
+        }
+        public bool widthdrawCheck(UserVO user)
+        {
+            try
+            {
+                DataSet ds = new DataSet();
+                OracleDBManager db = new OracleDBManager();
+                String query = @"SELECT US_EMAIL,US_PWD FROM root2.USER_T WHERE US_EMAIL = '#id' AND US_PWD = '#password'";
+
+                query = query.Replace("#id", user.Email);
+                query = query.Replace("#password", user.Password);
+                db.ExecuteDsQuery(ds, query);
+
+                //MessageBox.Show(ds.Tables[0].Rows[0][1].ToString());
+                if (ds.Tables.Count > 0 && ds.Tables[0].Rows.Count > 0)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString(), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
         }
         public bool selectNowLogin(UserVO user)
         {

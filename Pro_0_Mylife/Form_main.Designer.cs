@@ -58,26 +58,13 @@
             this.Todo_EndDate = new System.Windows.Forms.DateTimePicker();
             this.Todo_startDate = new System.Windows.Forms.DateTimePicker();
             this.tab_shopping = new System.Windows.Forms.TabPage();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.dataGridView3 = new System.Windows.Forms.DataGridView();
-            this.button3 = new System.Windows.Forms.Button();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.pnl_shplist = new System.Windows.Forms.Panel();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.UserInfo_panel = new System.Windows.Forms.Panel();
             this.btn_UserModify = new System.Windows.Forms.Button();
             this.btn_signOut = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lb_UserEmail = new System.Windows.Forms.Label();
+            this.lb_UserName = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.LOGO = new System.Windows.Forms.Button();
             this.Lb_loginUser = new System.Windows.Forms.Button();
@@ -87,17 +74,43 @@
             this.btn_shp = new System.Windows.Forms.Button();
             this.btn_hk = new System.Windows.Forms.Button();
             this.btn_memo = new System.Windows.Forms.Button();
+            this.cb_shp_type = new System.Windows.Forms.ComboBox();
+            this.txt_productName = new System.Windows.Forms.TextBox();
+            this.txt_price = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.btn_shpRegister = new System.Windows.Forms.Button();
+            this.pnl_shp_insert = new System.Windows.Forms.Panel();
+            this.pnl_wish_shp = new System.Windows.Forms.Panel();
+            this.pnl_shp = new System.Windows.Forms.Panel();
+            this.flp_shp = new System.Windows.Forms.FlowLayoutPanel();
+            this.flp_wish_shp = new System.Windows.Forms.FlowLayoutPanel();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.pnl_shpOption = new System.Windows.Forms.Panel();
+            this.btn_shpAdd = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.pnl_Shpinfo = new System.Windows.Forms.Panel();
+            this.lb_logoShp = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.tab_form.SuspendLayout();
             this.tab_Memo.SuspendLayout();
             this.tab_TodoList.SuspendLayout();
             this.todo_panel2.SuspendLayout();
             this.Todo_panel1.SuspendLayout();
             this.tab_shopping.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
+            this.pnl_shplist.SuspendLayout();
             this.UserInfo_panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.Top_panel.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.pnl_shp_insert.SuspendLayout();
+            this.pnl_wish_shp.SuspendLayout();
+            this.pnl_shp.SuspendLayout();
+            this.flp_shp.SuspendLayout();
+            this.flp_wish_shp.SuspendLayout();
+            this.pnl_shpOption.SuspendLayout();
             this.SuspendLayout();
             // 
             // tab_form
@@ -161,7 +174,7 @@
             // 
             // tab_TodoList
             // 
-            this.tab_TodoList.BackColor = System.Drawing.Color.White;
+            this.tab_TodoList.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
             this.tab_TodoList.Controls.Add(this.todo_panel2);
             this.tab_TodoList.Controls.Add(this.Todo_panel1);
             resources.ApplyResources(this.tab_TodoList, "tab_TodoList");
@@ -371,11 +384,11 @@
             // 
             // btn_TodoRegister
             // 
-            this.btn_TodoRegister.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btn_TodoRegister.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(44)))), ((int)(((byte)(65)))));
             this.btn_TodoRegister.FlatAppearance.BorderSize = 0;
-            this.btn_TodoRegister.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DeepSkyBlue;
-            this.btn_TodoRegister.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SkyBlue;
+            this.btn_TodoRegister.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(59)))), ((int)(((byte)(80)))));
             resources.ApplyResources(this.btn_TodoRegister, "btn_TodoRegister");
+            this.btn_TodoRegister.ForeColor = System.Drawing.Color.White;
             this.btn_TodoRegister.Name = "btn_TodoRegister";
             this.btn_TodoRegister.UseVisualStyleBackColor = false;
             this.btn_TodoRegister.Click += new System.EventHandler(this.btn_TodoRegister_Click);
@@ -478,101 +491,24 @@
             // 
             // tab_shopping
             // 
-            this.tab_shopping.Controls.Add(this.button5);
-            this.tab_shopping.Controls.Add(this.button4);
-            this.tab_shopping.Controls.Add(this.dataGridView3);
-            this.tab_shopping.Controls.Add(this.button3);
-            this.tab_shopping.Controls.Add(this.textBox6);
-            this.tab_shopping.Controls.Add(this.textBox5);
-            this.tab_shopping.Controls.Add(this.textBox4);
-            this.tab_shopping.Controls.Add(this.textBox3);
-            this.tab_shopping.Controls.Add(this.button2);
-            this.tab_shopping.Controls.Add(this.comboBox3);
-            this.tab_shopping.Controls.Add(this.label8);
-            this.tab_shopping.Controls.Add(this.label7);
-            this.tab_shopping.Controls.Add(this.label6);
-            this.tab_shopping.Controls.Add(this.label5);
+            this.tab_shopping.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
+            this.tab_shopping.Controls.Add(this.pnl_shplist);
             this.tab_shopping.ForeColor = System.Drawing.SystemColors.ControlText;
             resources.ApplyResources(this.tab_shopping, "tab_shopping");
             this.tab_shopping.Name = "tab_shopping";
-            this.tab_shopping.UseVisualStyleBackColor = true;
             // 
-            // button5
+            // pnl_shplist
             // 
-            resources.ApplyResources(this.button5, "button5");
-            this.button5.Name = "button5";
-            this.button5.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            resources.ApplyResources(this.button4, "button4");
-            this.button4.Name = "button4";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
-            // dataGridView3
-            // 
-            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            resources.ApplyResources(this.dataGridView3, "dataGridView3");
-            this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.RowTemplate.Height = 27;
-            // 
-            // button3
-            // 
-            resources.ApplyResources(this.button3, "button3");
-            this.button3.Name = "button3";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // textBox6
-            // 
-            resources.ApplyResources(this.textBox6, "textBox6");
-            this.textBox6.Name = "textBox6";
-            // 
-            // textBox5
-            // 
-            resources.ApplyResources(this.textBox5, "textBox5");
-            this.textBox5.Name = "textBox5";
-            // 
-            // textBox4
-            // 
-            resources.ApplyResources(this.textBox4, "textBox4");
-            this.textBox4.Name = "textBox4";
-            // 
-            // textBox3
-            // 
-            resources.ApplyResources(this.textBox3, "textBox3");
-            this.textBox3.Name = "textBox3";
-            // 
-            // button2
-            // 
-            resources.ApplyResources(this.button2, "button2");
-            this.button2.Name = "button2";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // comboBox3
-            // 
-            this.comboBox3.FormattingEnabled = true;
-            resources.ApplyResources(this.comboBox3, "comboBox3");
-            this.comboBox3.Name = "comboBox3";
-            // 
-            // label8
-            // 
-            resources.ApplyResources(this.label8, "label8");
-            this.label8.Name = "label8";
-            // 
-            // label7
-            // 
-            resources.ApplyResources(this.label7, "label7");
-            this.label7.Name = "label7";
-            // 
-            // label6
-            // 
-            resources.ApplyResources(this.label6, "label6");
-            this.label6.Name = "label6";
-            // 
-            // label5
-            // 
-            resources.ApplyResources(this.label5, "label5");
-            this.label5.Name = "label5";
+            this.pnl_shplist.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.pnl_shplist.Controls.Add(this.lb_logoShp);
+            this.pnl_shplist.Controls.Add(this.pnl_Shpinfo);
+            this.pnl_shplist.Controls.Add(this.btn_shpAdd);
+            this.pnl_shplist.Controls.Add(this.pnl_shpOption);
+            this.pnl_shplist.Controls.Add(this.pnl_shp);
+            this.pnl_shplist.Controls.Add(this.pnl_wish_shp);
+            this.pnl_shplist.Controls.Add(this.pnl_shp_insert);
+            resources.ApplyResources(this.pnl_shplist, "pnl_shplist");
+            this.pnl_shplist.Name = "pnl_shplist";
             // 
             // tabPage5
             // 
@@ -586,8 +522,8 @@
             this.UserInfo_panel.BackColor = System.Drawing.Color.White;
             this.UserInfo_panel.Controls.Add(this.btn_UserModify);
             this.UserInfo_panel.Controls.Add(this.btn_signOut);
-            this.UserInfo_panel.Controls.Add(this.label2);
-            this.UserInfo_panel.Controls.Add(this.label1);
+            this.UserInfo_panel.Controls.Add(this.lb_UserEmail);
+            this.UserInfo_panel.Controls.Add(this.lb_UserName);
             this.UserInfo_panel.Controls.Add(this.pictureBox1);
             this.UserInfo_panel.Name = "UserInfo_panel";
             // 
@@ -599,6 +535,7 @@
             resources.ApplyResources(this.btn_UserModify, "btn_UserModify");
             this.btn_UserModify.Name = "btn_UserModify";
             this.btn_UserModify.UseVisualStyleBackColor = false;
+            this.btn_UserModify.Click += new System.EventHandler(this.btn_UserModify_Click);
             // 
             // btn_signOut
             // 
@@ -611,15 +548,15 @@
             this.btn_signOut.UseVisualStyleBackColor = false;
             this.btn_signOut.Click += new System.EventHandler(this.btn_signOut_Click);
             // 
-            // label2
+            // lb_UserEmail
             // 
-            resources.ApplyResources(this.label2, "label2");
-            this.label2.Name = "label2";
+            resources.ApplyResources(this.lb_UserEmail, "lb_UserEmail");
+            this.lb_UserEmail.Name = "lb_UserEmail";
             // 
-            // label1
+            // lb_UserName
             // 
-            resources.ApplyResources(this.label1, "label1");
-            this.label1.Name = "label1";
+            resources.ApplyResources(this.lb_UserName, "lb_UserName");
+            this.lb_UserName.Name = "lb_UserName";
             // 
             // pictureBox1
             // 
@@ -704,6 +641,130 @@
             this.btn_memo.Name = "btn_memo";
             this.btn_memo.Click += new System.EventHandler(this.Btn_memo_Click);
             // 
+            // cb_shp_type
+            // 
+            this.cb_shp_type.FormattingEnabled = true;
+            resources.ApplyResources(this.cb_shp_type, "cb_shp_type");
+            this.cb_shp_type.Name = "cb_shp_type";
+            // 
+            // txt_productName
+            // 
+            resources.ApplyResources(this.txt_productName, "txt_productName");
+            this.txt_productName.Name = "txt_productName";
+            // 
+            // txt_price
+            // 
+            resources.ApplyResources(this.txt_price, "txt_price");
+            this.txt_price.Name = "txt_price";
+            // 
+            // textBox3
+            // 
+            resources.ApplyResources(this.textBox3, "textBox3");
+            this.textBox3.Name = "textBox3";
+            // 
+            // btn_shpRegister
+            // 
+            resources.ApplyResources(this.btn_shpRegister, "btn_shpRegister");
+            this.btn_shpRegister.Name = "btn_shpRegister";
+            this.btn_shpRegister.UseVisualStyleBackColor = true;
+            // 
+            // pnl_shp_insert
+            // 
+            this.pnl_shp_insert.BackColor = System.Drawing.Color.White;
+            this.pnl_shp_insert.Controls.Add(this.label4);
+            this.pnl_shp_insert.Controls.Add(this.label2);
+            this.pnl_shp_insert.Controls.Add(this.cb_shp_type);
+            this.pnl_shp_insert.Controls.Add(this.btn_shpRegister);
+            this.pnl_shp_insert.Controls.Add(this.txt_productName);
+            this.pnl_shp_insert.Controls.Add(this.txt_price);
+            this.pnl_shp_insert.Controls.Add(this.textBox3);
+            resources.ApplyResources(this.pnl_shp_insert, "pnl_shp_insert");
+            this.pnl_shp_insert.Name = "pnl_shp_insert";
+            // 
+            // pnl_wish_shp
+            // 
+            this.pnl_wish_shp.BackColor = System.Drawing.Color.White;
+            this.pnl_wish_shp.Controls.Add(this.flp_wish_shp);
+            resources.ApplyResources(this.pnl_wish_shp, "pnl_wish_shp");
+            this.pnl_wish_shp.Name = "pnl_wish_shp";
+            // 
+            // pnl_shp
+            // 
+            this.pnl_shp.BackColor = System.Drawing.Color.White;
+            this.pnl_shp.Controls.Add(this.flp_shp);
+            resources.ApplyResources(this.pnl_shp, "pnl_shp");
+            this.pnl_shp.Name = "pnl_shp";
+            // 
+            // flp_shp
+            // 
+            this.flp_shp.Controls.Add(this.panel9);
+            resources.ApplyResources(this.flp_shp, "flp_shp");
+            this.flp_shp.Name = "flp_shp";
+            // 
+            // flp_wish_shp
+            // 
+            resources.ApplyResources(this.flp_wish_shp, "flp_wish_shp");
+            this.flp_wish_shp.Controls.Add(this.panel8);
+            this.flp_wish_shp.Name = "flp_wish_shp";
+            // 
+            // panel8
+            // 
+            resources.ApplyResources(this.panel8, "panel8");
+            this.panel8.Name = "panel8";
+            // 
+            // panel9
+            // 
+            resources.ApplyResources(this.panel9, "panel9");
+            this.panel9.Name = "panel9";
+            // 
+            // pnl_shpOption
+            // 
+            this.pnl_shpOption.BackColor = System.Drawing.Color.White;
+            this.pnl_shpOption.Controls.Add(this.button4);
+            this.pnl_shpOption.Controls.Add(this.button3);
+            resources.ApplyResources(this.pnl_shpOption, "pnl_shpOption");
+            this.pnl_shpOption.Name = "pnl_shpOption";
+            // 
+            // btn_shpAdd
+            // 
+            resources.ApplyResources(this.btn_shpAdd, "btn_shpAdd");
+            this.btn_shpAdd.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btn_shpAdd.Name = "btn_shpAdd";
+            this.btn_shpAdd.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            resources.ApplyResources(this.button3, "button3");
+            this.button3.Name = "button3";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            resources.ApplyResources(this.button4, "button4");
+            this.button4.Name = "button4";
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // pnl_Shpinfo
+            // 
+            this.pnl_Shpinfo.BackColor = System.Drawing.Color.White;
+            resources.ApplyResources(this.pnl_Shpinfo, "pnl_Shpinfo");
+            this.pnl_Shpinfo.Name = "pnl_Shpinfo";
+            // 
+            // lb_logoShp
+            // 
+            resources.ApplyResources(this.lb_logoShp, "lb_logoShp");
+            this.lb_logoShp.Name = "lb_logoShp";
+            // 
+            // label2
+            // 
+            resources.ApplyResources(this.label2, "label2");
+            this.label2.Name = "label2";
+            // 
+            // label4
+            // 
+            resources.ApplyResources(this.label4, "label4");
+            this.label4.Name = "label4";
+            // 
             // Form_main
             // 
             resources.ApplyResources(this, "$this");
@@ -727,12 +788,18 @@
             this.Todo_panel1.ResumeLayout(false);
             this.Todo_panel1.PerformLayout();
             this.tab_shopping.ResumeLayout(false);
-            this.tab_shopping.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
+            this.pnl_shplist.ResumeLayout(false);
             this.UserInfo_panel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.Top_panel.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
+            this.pnl_shp_insert.ResumeLayout(false);
+            this.pnl_shp_insert.PerformLayout();
+            this.pnl_wish_shp.ResumeLayout(false);
+            this.pnl_shp.ResumeLayout(false);
+            this.flp_shp.ResumeLayout(false);
+            this.flp_wish_shp.ResumeLayout(false);
+            this.pnl_shpOption.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -757,20 +824,6 @@
         private System.Windows.Forms.ComboBox Todo_EndHour;
         private System.Windows.Forms.DateTimePicker Todo_EndDate;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.DataGridView dataGridView3;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button LOGO;
         private System.Windows.Forms.FlowLayoutPanel Memo_flowpanel;
         private System.Windows.Forms.Panel todo_panel2;
@@ -787,8 +840,8 @@
         private System.Windows.Forms.Panel UserInfo_panel;
         private System.Windows.Forms.Button Lb_loginUser;
         private System.Windows.Forms.Button btn_signOut;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lb_UserEmail;
+        private System.Windows.Forms.Label lb_UserName;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btn_UserModify;
         private System.Windows.Forms.Panel Top_panel;
@@ -797,5 +850,26 @@
         private System.Windows.Forms.Button btn_shp;
         private System.Windows.Forms.Button btn_hk;
         private System.Windows.Forms.Button btn_memo;
+        private System.Windows.Forms.Panel pnl_shplist;
+        private System.Windows.Forms.Panel pnl_wish_shp;
+        private System.Windows.Forms.Panel pnl_shp_insert;
+        private System.Windows.Forms.ComboBox cb_shp_type;
+        private System.Windows.Forms.Button btn_shpRegister;
+        private System.Windows.Forms.TextBox txt_productName;
+        private System.Windows.Forms.TextBox txt_price;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Panel pnl_shp;
+        private System.Windows.Forms.FlowLayoutPanel flp_shp;
+        private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.FlowLayoutPanel flp_wish_shp;
+        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Button btn_shpAdd;
+        private System.Windows.Forms.Panel pnl_shpOption;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Panel pnl_Shpinfo;
+        private System.Windows.Forms.Label lb_logoShp;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label2;
     }
 }

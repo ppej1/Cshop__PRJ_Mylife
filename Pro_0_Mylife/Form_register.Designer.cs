@@ -153,8 +153,8 @@
             // 
             this.cb_gender.FormattingEnabled = true;
             this.cb_gender.Items.AddRange(new object[] {
-            "남자",
-            "여자"});
+            "MAN",
+            "WOMAN"});
             this.cb_gender.Location = new System.Drawing.Point(40, 381);
             this.cb_gender.Name = "cb_gender";
             this.cb_gender.Size = new System.Drawing.Size(298, 23);
@@ -229,6 +229,7 @@
             this.Controls.Add(this.txt_pwd1);
             this.Controls.Add(this.txt_email);
             this.Controls.Add(this.Btn_ck_email);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Form_register";

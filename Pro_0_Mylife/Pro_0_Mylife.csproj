@@ -75,6 +75,12 @@
     <Compile Include="DTO\ShoppingVO.cs" />
     <Compile Include="DTO\TodolistVO.cs" />
     <Compile Include="DTO\UserVO.cs" />
+    <Compile Include="Form_confirmPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_confirmPassword.Designer.cs">
+      <DependentUpon>Form_confirmPassword.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form_register.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,6 +102,12 @@
     <Compile Include="DAO\LoginDao.cs" />
     <Compile Include="DAO\MemoDao.cs" />
     <Compile Include="DB\OracleDBManager.cs" />
+    <Compile Include="Form_SettingUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_SettingUser.Designer.cs">
+      <DependentUpon>Form_SettingUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="Handler\TodolistHandler.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -107,6 +119,9 @@
     <Compile Include="Form_TodoPopUp.Designer.cs">
       <DependentUpon>Form_TodoPopUp.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Form_confirmPassword.resx">
+      <DependentUpon>Form_confirmPassword.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form_register.resx">
       <DependentUpon>Form_register.cs</DependentUpon>
     </EmbeddedResource>
@@ -115,6 +130,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form_main.resx">
       <DependentUpon>Form_main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_SettingUser.resx">
+      <DependentUpon>Form_SettingUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

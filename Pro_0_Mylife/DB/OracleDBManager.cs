@@ -48,7 +48,7 @@ namespace Pro_0_Mylife
             {
                 System.Reflection.MemberInfo info = System.Reflection.MethodInfo.GetCurrentMethod();
                 String id = string.Format("{0},{1}", info.ReflectedType.Name, info.Name);
-                //MessageBox.Show(ex.Message);
+                MessageBox.Show(ex.Message);
                 return false;
 
             }

@@ -74,7 +74,6 @@ namespace Pro_0_Mylife
             {
                 DateTime startDate = DateTime.ParseExact(Todo_startDate.Value.ToString("MM-dd-yyyy") + " " + Todo_StartHour.Text + ":" + Todo_StartMinute.Text + ":00", "MM-dd-yyyy HH:mm:ss", System.Globalization.CultureInfo.InvariantCulture);
                 DateTime todoDeadLine = DateTime.ParseExact(Todo_EndDate.Value.ToString("MM-dd-yyyy") + " " + Todo_EndHour.Text + ":" + Todo_EndMinute.Text + ":00", "MM-dd-yyyy HH:mm:ss", System.Globalization.CultureInfo.InvariantCulture);
-                string todoContent = Todo_contents.Text;
                 TodolistVO todolist = new TodolistVO(Todo_contents.Text, startDate, todoDeadLine, loginUser);
                 todolist.TodoNo = Convert.ToInt32(Todo_contents.Name);
 
@@ -107,55 +106,55 @@ namespace Pro_0_Mylife
 
         private void CKstartDateChanged(object sender, EventArgs e)
         {
-            changeDate();
+            ChangeDate();
         }
         private void CkEndDateChanged(object sender, EventArgs e)
         {
-            changeDate();
+            ChangeDate();
         }
 
         private void CkStartHourChanged(object sender, EventArgs e)
         {
-            changeHour();
+            ChangeHour();
         }
 
         private void CkEndHourChanged(object sender, EventArgs e)
         {
-            changeHour();
+            ChangeHour();
         }
 
         private void CkStartMinuteChanged(object sender, EventArgs e)
         {
-            changeMinute();
+            ChangeMinute();
         }
 
         private void CkEndMinuteChanged(object sender, EventArgs e)
         {
-            changeMinute();
+            ChangeMinute();
         }
 
-        private void changeDate()
+        private void ChangeDate()
         {
             if (DateTime.Compare(DateTime.Parse(Todo_startDate.Value.ToString("yyyy-MM-dd")), DateTime.Parse(Todo_EndDate.Value.ToString("yyyy-MM-dd"))) > 0)
             {
                 Todo_EndDate.Value = Todo_startDate.Value;
-                changeHour();
+                ChangeHour();
             }
         }
-        private void changeHour()
+        private void ChangeHour()
         {
             if (DateTime.Compare(DateTime.Parse(Todo_startDate.Value.ToString("yyyy-MM-dd")), DateTime.Parse(Todo_EndDate.Value.ToString("yyyy-MM-dd"))) == 0)
             {
                 if (Convert.ToInt32(Todo_EndHour.SelectedItem) < Convert.ToInt32(Todo_StartHour.SelectedItem))
                 {
                     Todo_EndHour.SelectedIndex = Todo_StartHour.SelectedIndex;
-                    changeMinute();
+                    ChangeMinute();
                 }
             }
         }
 
 
-        private void changeMinute()
+        private void ChangeMinute()
         {
             if (DateTime.Compare(DateTime.Parse(Todo_startDate.Value.ToString("yyyy-MM-dd")), DateTime.Parse(Todo_EndDate.Value.ToString("yyyy-MM-dd"))) == 0)
             {

@@ -36,7 +36,7 @@ namespace Pro_0_Mylife
         private void Form_main_Load(object sender, EventArgs e)
         {
             form_Login = new Form_login();
-            form_Login.loginEventHandler += new EventHandler(LoginSuccess);
+            form_Login.LoginEventHandler += new EventHandler(LoginSuccess);
             switch (form_Login.ShowDialog())
             {
                 case DialogResult.OK:
@@ -46,20 +46,21 @@ namespace Pro_0_Mylife
                     Dispose();
                     break;
             }
-
-
         }
+
         private void LoginSuccess(String userName)
         {
-            LoginDao logindao = new LoginDao();
             _logIn_User.Email = userName;
-            logindao.selectNowLogin(_logIn_User);
-            settingUser();
+            SettingUser();
         }
-        private void settingUser()
-        {
 
+        private void SettingUser()
+        {
+            LoginDao logindao = new LoginDao();
+            logindao.selectNowLogin(_logIn_User);           
             Lb_loginUser.Text = _logIn_User.FirstName +" " +_logIn_User.LastName + " 님";
+            lb_UserName.Text = _logIn_User.FirstName + " " + _logIn_User.LastName;
+            lb_UserEmail.Text = _logIn_User.Email;
         }
 
         private void LOGO_Click(object sender, EventArgs e)
@@ -81,7 +82,7 @@ namespace Pro_0_Mylife
         {
             tab_form.SelectedIndex = 2;
             btn_setting(btn_ck);
-            resetTodolistForm();
+            ResetTodolistForm();
 
             
         }
@@ -209,60 +210,60 @@ namespace Pro_0_Mylife
             Todo_startDate.Value = Todo_Calendar.SelectionStart;
             Todo_EndDate.Value = Todo_Calendar.SelectionEnd;
             lb_Todo_Title.Text = Todo_Calendar.SelectionStart.ToString("MMM dd,yyyy");
-            loadAllTodolist(Todo_Calendar.SelectionStart);
+            LoadAllTodolist(Todo_Calendar.SelectionStart);
             return;
         }
         private void CKstartDateChanged(object sender, EventArgs e)
         {
-            changeDate();
+            ChangeDate();
         }
         private void CkEndDateChanged(object sender, EventArgs e)
         {
-            changeDate();
+            ChangeDate();
         }
         
         private void CkStartHourChanged(object sender, EventArgs e)
         {
-            changeHour();
+            ChangeHour();
         }
         
         private void CkEndHourChanged(object sender, EventArgs e)
         {
-            changeHour();
+            ChangeHour();
         }
         
         private void CkStartMinuteChanged(object sender, EventArgs e)
         {
-            changeMinute();
+            ChangeMinute();
         }
         
         private void CkEndMinuteChanged(object sender, EventArgs e)
         {
-            changeMinute();
+            ChangeMinute();
         }
 
-        private void changeDate()
+        private void ChangeDate()
         {
             if (DateTime.Compare(DateTime.Parse(Todo_startDate.Value.ToString("yyyy-MM-dd")), DateTime.Parse(Todo_EndDate.Value.ToString("yyyy-MM-dd"))) > 0)
             {
                 Todo_EndDate.Value = Todo_startDate.Value;
-                changeHour();
+                ChangeHour();
             }
         }
-        private void changeHour()
+        private void ChangeHour()
         {
             if (DateTime.Compare(DateTime.Parse(Todo_startDate.Value.ToString("yyyy-MM-dd")), DateTime.Parse(Todo_EndDate.Value.ToString("yyyy-MM-dd"))) == 0)
             {
                 if (Convert.ToInt32(Todo_EndHour.SelectedItem) < Convert.ToInt32(Todo_StartHour.SelectedItem))
                 {
                     Todo_EndHour.SelectedIndex = Todo_StartHour.SelectedIndex;
-                    changeMinute();
+                    ChangeMinute();
                 }
             }
         }
 
 
-        private void changeMinute()
+        private void ChangeMinute()
         {
             if (DateTime.Compare(DateTime.Parse(Todo_startDate.Value.ToString("yyyy-MM-dd")), DateTime.Parse(Todo_EndDate.Value.ToString("yyyy-MM-dd"))) == 0)
             {
@@ -281,7 +282,6 @@ namespace Pro_0_Mylife
             TodolistHandler todolistHandler = new TodolistHandler();
             DateTime startDate = DateTime.ParseExact(Todo_startDate.Value.ToString("MM-dd-yyyy") +" "+ Todo_StartHour.Text + ":" + Todo_StartMinute.Text + ":00", "MM-dd-yyyy HH:mm:ss", System.Globalization.CultureInfo.InvariantCulture);
             DateTime todoDeadLine = DateTime.ParseExact(Todo_EndDate.Value.ToString("MM-dd-yyyy") + " " + Todo_EndHour.Text + ":" + Todo_EndMinute.Text + ":00", "MM-dd-yyyy HH:mm:ss", System.Globalization.CultureInfo.InvariantCulture);
-            string todoContent = Todo_contents.Text;
             TodolistVO todolist = new TodolistVO(Todo_contents.Text,startDate, todoDeadLine, _logIn_User.Email);
             
             if (todolistHandler.CheckTextEmpty(todolist.TodoContent))
@@ -290,7 +290,7 @@ namespace Pro_0_Mylife
                 {
                     if (todoListDao.InsertTodoList(todolist))
                     {
-                        resetTodolistForm();
+                        ResetTodolistForm();
                     }
                 }
                 else
@@ -301,7 +301,7 @@ namespace Pro_0_Mylife
             }
         }
 
-        private void resetTodolistForm()
+        private void ResetTodolistForm()
         {
             Todo_contents.Text = "";
             Todo_Calendar.SelectionStart = DateTime.Now;
@@ -313,14 +313,14 @@ namespace Pro_0_Mylife
             Todo_EndMinute.SelectedIndex = 0;
         }
 
-        private void loadAllTodolist(DateTime selectDate)
+        private void LoadAllTodolist(DateTime selectDate)
         {
             DataSet ds = new DataSet();
             todoListDao.SelectTodoList(ds, _logIn_User.Email, selectDate);
-            loadTodolist(ds);
+            LoadTodolist(ds);
         }
 
-        private void loadTodolist(DataSet ds)
+        private void LoadTodolist(DataSet ds)
         {
             todolistFlowPanel.Controls.Clear();
             TodolistHandler todolistHandler = new TodolistHandler();
@@ -347,7 +347,7 @@ namespace Pro_0_Mylife
                 {
                     ch_todo.Checked = true;
                 }
-                ch_todo.CheckStateChanged += todoCheckStateChanged;
+                ch_todo.CheckStateChanged += TodoCheckStateChanged;
 
                 txt_DDay.AutoSize = false;
                 txt_DDay.Size = new Size(60, 40);
@@ -368,7 +368,7 @@ namespace Pro_0_Mylife
                 txt_contents.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
                 txt_contents.Text = String.Format("{0}", row[1].ToString());
                 txt_contents.Name = String.Format("{0}", row[0].ToString());
-                txt_contents.Click += popUpTodo;
+                txt_contents.Click += PopUpTodo;
 
                 txt_Period.AutoSize = false;
                 txt_Period.Size = new Size(80, 40);
@@ -401,11 +401,11 @@ namespace Pro_0_Mylife
         }
 
 
-        private void todoCheckStateChanged(object sender, EventArgs e)
+        private void TodoCheckStateChanged(object sender, EventArgs e)
         {
             CheckBox chk = (CheckBox)sender;            
             todoListDao.ChangeChecklistState(chk.Name, chk.Checked);           
-            loadAllTodolist(Todo_Calendar.SelectionStart);
+            LoadAllTodolist(Todo_Calendar.SelectionStart);
             
         }
 
@@ -415,7 +415,7 @@ namespace Pro_0_Mylife
             {
                 DataSet ds = new DataSet();
                 todoListDao.SearchTodolist(ds, _logIn_User.Email, txt_todoSearch.Text);
-                loadTodolist(ds);
+                LoadTodolist(ds);
                 txt_todoSearch.Text = "";
             }
             else
@@ -424,7 +424,7 @@ namespace Pro_0_Mylife
             }
         }
 
-        private void popUpTodo(object sender, EventArgs e)
+        private void PopUpTodo(object sender, EventArgs e)
         {
             Label selectTodo = (Label)sender;
             Form_TodoPopUp PopUp = new Form_TodoPopUp(_logIn_User.Email, selectTodo.Name);
@@ -434,7 +434,7 @@ namespace Pro_0_Mylife
             {
                 case DialogResult.OK:
                     PopUp.Close();
-                    loadAllTodolist(Todo_Calendar.SelectionStart);
+                    LoadAllTodolist(Todo_Calendar.SelectionStart);
                     break;
                 case DialogResult.Cancel:
                     PopUp.Close();
@@ -460,6 +460,44 @@ namespace Pro_0_Mylife
         {
             this.Dispose();
             Application.Restart();
+        }
+
+        private void btn_UserModify_Click(object sender, EventArgs e)
+        {
+            Form_confirmPassword confirmPassword = new Form_confirmPassword(_logIn_User.Email);
+
+            confirmPassword.Owner = this;
+            switch (confirmPassword.ShowDialog())
+            {
+                case DialogResult.OK:
+                    confirmPassword.Close();
+                    loadSettingUser();
+                    break;
+                case DialogResult.Cancel:
+                    confirmPassword.Close();
+                    break;
+            }
+        }
+        private void loadSettingUser()
+        {
+            Form_SettingUser settingUser = new Form_SettingUser(_logIn_User.Email);
+
+            settingUser.Owner = this;
+            switch (settingUser.ShowDialog())
+            {
+                case DialogResult.OK:
+                    settingUser.Close();
+                    SettingUser();
+                    break;
+                case DialogResult.Yes:
+                    settingUser.Close();
+                    this.Dispose();
+                    Application.Restart();
+                    break;
+                case DialogResult.Cancel:
+                    settingUser.Close();
+                    break;
+            }
         }
 
 

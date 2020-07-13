@@ -51,7 +51,7 @@ namespace Pro_0_Mylife
 
 
         // 회원가입 입력확인 
-        private bool ControlCheck()
+        private  bool ControlCheck()
         {
             if (String.IsNullOrEmpty(txt_email.Text))
             {

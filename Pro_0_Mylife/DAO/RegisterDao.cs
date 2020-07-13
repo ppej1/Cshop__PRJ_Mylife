@@ -89,6 +89,76 @@ namespace Pro_0_Mylife
                 return false;
             }
         }
+        public bool withdraw (UserVO user)
+        {
+            OracleDBManager db = new OracleDBManager();
+            DataSet ds = new DataSet();
+            string query = string.Empty;
+
+            try
+            {
+                query = @"
+                    UPDATE root2.USER_T
+               SET
+                    US_WITHDRAWAL = sysdate
+               WHERE
+                    US_EMAIL = '#US_EMAIL'
+                ";
+
+                query = query.Replace("#US_EMAIL", user.Email);
+                int result = db.ExecuteNonQuery(query);
+                if (result > 0)
+                {
+                    return true;
+                }
+                return false;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString(), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+        }
+
+        public bool confirmUser(UserVO user)
+        {
+            OracleDBManager db = new OracleDBManager();
+            DataSet ds = new DataSet();
+            string query = string.Empty;
+
+            try
+            {
+                query = @"
+                    UPDATE root2.USER_T
+               SET
+                    US_PWD = '#US_PWD',
+                    US_FIRSTNAME = '#US_FIRSTNAME',
+                    US_LASTNAME = '#US_LASTNAME',
+                    US_SEX   = '#US_SEX',
+                    US_PHONE = '#US_PHONE'
+               WHERE
+                    US_EMAIL = '#US_EMAIL'
+                ";
+                query = query.Replace("#US_PWD", user.Password);
+                query = query.Replace("#US_FIRSTNAME", user.FirstName);
+                query = query.Replace("#US_LASTNAME", user.LastName);
+                query = query.Replace("#US_SEX", ""+user.Sex);
+                query = query.Replace("#US_PHONE", user.Phone);
+                query = query.Replace("#US_EMAIL", user.Email);
+
+                int result = db.ExecuteNonQuery(query);
+                if (result > 0)
+                {
+                    return true;
+                }
+                return false;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString(), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+        }
 
     }
 }
