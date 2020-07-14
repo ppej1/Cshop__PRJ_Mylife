@@ -159,20 +159,20 @@ namespace Pro_0_Mylife
 
                 pnl.Size = new Size(200, 250);
                 pnl.BackColor = Color.FromArgb(255, 255, 102);
-                pnl.Name = String.Format("pnl_text_{0}", row[1].ToString());
+                pnl.Name = String.Format("pnl_text_{0}", row[0].ToString());
 
                 txtbox_contents.Size = new Size(140, 175);
                 txtbox_contents.Location = new Point(15, 15);
                 txtbox_contents.BackColor = Color.FromArgb(255, 255, 102);
                 txtbox_contents.BorderStyle = BorderStyle.None;
-                txtbox_contents.Text = String.Format("{0}", row[1].ToString());
+                txtbox_contents.Text = String.Format("{0}", row[2].ToString());
                 txtbox_contents.Name = String.Format("txt_content_{0}", row[0].ToString());
                 
                 txtbox_date.Size = new Size(145, 25);
                 txtbox_date.Location = new Point(50, 214); 
                 txtbox_date.BackColor = Color.FromArgb(255, 255, 102);
                 txtbox_date.BorderStyle = BorderStyle.None;
-                txtbox_date.Text = String.Format("{0}", row[2].ToString());
+                txtbox_date.Text = String.Format("{0}", row[3].ToString());
                 txtbox_date.Name = String.Format("txt_date_{0}", row[0].ToString());
 
                 btn_x.Size = new Size(28,28);
@@ -356,7 +356,7 @@ namespace Pro_0_Mylife
                 txt_DDay.BorderStyle = BorderStyle.None;
                 txt_DDay.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
                 txt_DDay.Name = String.Format("txt_DDayt_{0}", row[0].ToString());
-                txt_DDay.Text = todolistHandler.selectDDay(DateTime.Parse(row[4].ToString()));
+                txt_DDay.Text = todolistHandler.selectDDay(DateTime.Parse(row[5].ToString()));
 
 
 
@@ -366,7 +366,7 @@ namespace Pro_0_Mylife
                 txt_contents.BackColor = Color.FromArgb(255, 255, 255);
                 txt_contents.BorderStyle = BorderStyle.None;
                 txt_contents.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-                txt_contents.Text = String.Format("{0}", row[1].ToString());
+                txt_contents.Text = String.Format("{0}", row[2].ToString());
                 txt_contents.Name = String.Format("{0}", row[0].ToString());
                 txt_contents.Click += PopUpTodo;
 
@@ -376,7 +376,7 @@ namespace Pro_0_Mylife
                 txt_Period.BackColor = Color.FromArgb(255, 255, 255);
                 txt_Period.BorderStyle = BorderStyle.None;
                 txt_Period.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-                txt_Period.Text = String.Format("{0}", row[3].ToString());
+                txt_Period.Text = String.Format("{0}", row[4].ToString());
                 txt_Period.Name = String.Format("txt_Period_{0}", row[0].ToString());
 
                 txt_state.AutoSize = false;
@@ -386,7 +386,7 @@ namespace Pro_0_Mylife
                 txt_state.BorderStyle = BorderStyle.None;
                 txt_state.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
                 txt_state.Name = String.Format("txt_state_{0}", row[0].ToString());
-                txt_state.Text = todolistHandler.todoState(row[5].ToString(), DateTime.Parse(row[4].ToString()));
+                txt_state.Text = todolistHandler.todoState(row[6].ToString(), DateTime.Parse(row[5].ToString()));
 
 
                 pnl.Controls.Add(ch_todo);
@@ -499,12 +499,6 @@ namespace Pro_0_Mylife
                     break;
             }
         }
-
-        private void panel8_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
 
 
 

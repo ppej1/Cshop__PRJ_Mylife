@@ -15,3 +15,4 @@ D:\study\PR_0\Csharp\Pro_0_Mylife\Pro_0_Mylife\obj\x64\Debug\Pro_0_Mylife.Form_r
 D:\study\PR_0\Csharp\Pro_0_Mylife\Pro_0_Mylife\obj\x64\Debug\Pro_0_Mylife.Form_TodoPopUp.resources
 D:\study\PR_0\Csharp\Pro_0_Mylife\Pro_0_Mylife\obj\x64\Debug\Pro_0_Mylife.Form_confirmPassword.resources
 D:\study\PR_0\Csharp\Pro_0_Mylife\Pro_0_Mylife\obj\x64\Debug\Pro_0_Mylife.Form_SettingUser.resources
+D:\study\PR_0\Csharp\Pro_0_Mylife\Pro_0_Mylife\obj\x64\Debug\Pro_0_Mylife.Form_ProdTypeSet.resources

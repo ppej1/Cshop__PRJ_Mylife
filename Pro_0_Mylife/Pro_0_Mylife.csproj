@@ -72,6 +72,7 @@
     <Compile Include="DB\ConfigManager.cs" />
     <Compile Include="DTO\HouseKeepVO.cs" />
     <Compile Include="DTO\MemoVO.cs" />
+    <Compile Include="DTO\ProductType.cs" />
     <Compile Include="DTO\ShoppingVO.cs" />
     <Compile Include="DTO\TodolistVO.cs" />
     <Compile Include="DTO\UserVO.cs" />
@@ -80,6 +81,12 @@
     </Compile>
     <Compile Include="Form_confirmPassword.Designer.cs">
       <DependentUpon>Form_confirmPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_ProdTypeSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_ProdTypeSet.Designer.cs">
+      <DependentUpon>Form_ProdTypeSet.cs</DependentUpon>
     </Compile>
     <Compile Include="Form_register.cs">
       <SubType>Form</SubType>
@@ -121,6 +128,9 @@
     </Compile>
     <EmbeddedResource Include="Form_confirmPassword.resx">
       <DependentUpon>Form_confirmPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_ProdTypeSet.resx">
+      <DependentUpon>Form_ProdTypeSet.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form_register.resx">
       <DependentUpon>Form_register.cs</DependentUpon>

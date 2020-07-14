@@ -41,17 +41,17 @@ namespace Pro_0_Mylife
             foreach (DataRow row in dt.Rows)
             {
                 lb_DDAY.Name = String.Format("txt_DDayt_{0}", row[0].ToString());
-                lb_DDAY.Text = todolistHandler.selectDDay(DateTime.Parse(row[4].ToString()));
-                Todo_contents.Text = String.Format("{0}", row[1].ToString());
+                lb_DDAY.Text = todolistHandler.selectDDay(DateTime.Parse(row[5].ToString()));
+                Todo_contents.Text = String.Format("{0}", row[2].ToString());
                 Todo_contents.Name = String.Format("{0}", row[0].ToString());
                 lb_state.Name = String.Format("txt_state_{0}", row[0].ToString());
-                lb_state.Text = todolistHandler.todoState(row[5].ToString(), DateTime.Parse(row[4].ToString()));
-                Todo_startDate.Value = DateTime.Parse(row[2].ToString());
-                Todo_StartHour.SelectedIndex = HourIndex(DateTime.Parse(row[2].ToString()));
-                Todo_StartMinute.SelectedIndex = int.Parse(DateTime.Parse(row[2].ToString()).ToString("mm"));
-                Todo_EndDate.Value = DateTime.Parse(row[4].ToString());
-                Todo_EndHour.SelectedIndex = HourIndex(DateTime.Parse(row[4].ToString()));
-                Todo_EndMinute.SelectedIndex = int.Parse(DateTime.Parse(row[4].ToString()).ToString("mm"));
+                lb_state.Text = todolistHandler.todoState(row[6].ToString(), DateTime.Parse(row[5].ToString()));
+                Todo_startDate.Value = DateTime.Parse(row[3].ToString());
+                Todo_StartHour.SelectedIndex = HourIndex(DateTime.Parse(row[3].ToString()));
+                Todo_StartMinute.SelectedIndex = int.Parse(DateTime.Parse(row[3].ToString()).ToString("mm"));
+                Todo_EndDate.Value = DateTime.Parse(row[5].ToString());
+                Todo_EndHour.SelectedIndex = HourIndex(DateTime.Parse(row[5].ToString()));
+                Todo_EndMinute.SelectedIndex = int.Parse(DateTime.Parse(row[5].ToString()).ToString("mm"));
             }
         }
 
