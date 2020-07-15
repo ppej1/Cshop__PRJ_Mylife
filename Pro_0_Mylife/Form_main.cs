@@ -154,6 +154,7 @@ namespace Pro_0_Mylife
             tab_form.SelectedIndex = 3;
             loadShoppingProdType();
             resetShoppingRegister();
+            loadshopList(0);
             btn_setting(btn_shp);
 
         }
@@ -223,21 +224,22 @@ namespace Pro_0_Mylife
 
                 pnl.Size = new Size(200, 250);
                 pnl.BackColor = Color.FromArgb(255, 255, 102);
-                pnl.Name = String.Format("pnl_text_{0}", row[0].ToString());
+                pnl.Name = String.Format("pnl_text_{0}", row["ME_NO"].ToString());
 
                 txtbox_contents.Size = new Size(140, 175);
                 txtbox_contents.Location = new Point(15, 15);
                 txtbox_contents.BackColor = Color.FromArgb(255, 255, 102);
                 txtbox_contents.BorderStyle = BorderStyle.None;
-                txtbox_contents.Text = String.Format("{0}", row[2].ToString());
-                txtbox_contents.Name = String.Format("txt_content_{0}", row[0].ToString());
-                
+                txtbox_contents.Text = String.Format("{0}", row["ME_CONTENTS"].ToString());
+                txtbox_contents.Name = String.Format("txt_content_{0}", row["ME_NO"].ToString());
+
+
                 txtbox_date.Size = new Size(145, 25);
                 txtbox_date.Location = new Point(50, 214); 
                 txtbox_date.BackColor = Color.FromArgb(255, 255, 102);
                 txtbox_date.BorderStyle = BorderStyle.None;
-                txtbox_date.Text = String.Format("{0}", row[3].ToString());
-                txtbox_date.Name = String.Format("txt_date_{0}", row[0].ToString());
+                txtbox_date.Text = String.Format("{0}", row["ME_REG_DATE"].ToString());
+                txtbox_date.Name = String.Format("txt_date_{0}", row["ME_NO"].ToString());
 
                 btn_x.Size = new Size(28,28);
                 btn_x.BackColor = System.Drawing.Color.FromArgb(255, 255, 102);
@@ -246,7 +248,7 @@ namespace Pro_0_Mylife
                 btn_x.FlatAppearance.BorderSize = 0;
                 btn_x.Location = new Point(170, 4);
                 btn_x.Text = String.Format("X");
-                btn_x.Name = String.Format("{0}", row[0].ToString());
+                btn_x.Name = String.Format("{0}", row["ME_NO"].ToString());
                 btn_x.Click += delete_memo_click;
                 
                 pnl.Controls.Add(txtbox_contents);
@@ -399,14 +401,14 @@ namespace Pro_0_Mylife
                 Label txt_Period = new Label();
                 Label txt_state = new Label();
 
-                pnl.Size = new Size(819, 60);
+                pnl.Size = new Size(804, 60);
                 pnl.BackColor = Color.FromArgb(255, 255, 255);
-                pnl.Name = String.Format("pnl_text_{0}", row[0].ToString());
+                pnl.Name = String.Format("pnl_text_{0}", row["TOD_NO"].ToString());
 
                 ch_todo.AutoSize = false;
                 ch_todo.Size = new Size(15, 30);
                 ch_todo.Location = new Point(14, 15);
-                ch_todo.Name = String.Format("{0}", row[0].ToString());
+                ch_todo.Name = String.Format("{0}", row["TOD_NO"].ToString());
                 if (row[5].ToString().Equals("1"))
                 {
                     ch_todo.Checked = true;
@@ -419,8 +421,8 @@ namespace Pro_0_Mylife
                 txt_DDay.BackColor = Color.FromArgb(255, 255, 255);
                 txt_DDay.BorderStyle = BorderStyle.None;
                 txt_DDay.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-                txt_DDay.Name = String.Format("txt_DDayt_{0}", row[0].ToString());
-                txt_DDay.Text = todolistHandler.selectDDay(DateTime.Parse(row[5].ToString()));
+                txt_DDay.Name = String.Format("txt_DDayt_{0}", row["TOD_NO"].ToString());
+                txt_DDay.Text = todolistHandler.selectDDay(DateTime.Parse(row["TOD_DEADLINE_DATE"].ToString()));
 
 
 
@@ -430,8 +432,8 @@ namespace Pro_0_Mylife
                 txt_contents.BackColor = Color.FromArgb(255, 255, 255);
                 txt_contents.BorderStyle = BorderStyle.None;
                 txt_contents.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-                txt_contents.Text = String.Format("{0}", row[2].ToString());
-                txt_contents.Name = String.Format("{0}", row[0].ToString());
+                txt_contents.Text = String.Format("{0}", row["TOD_CONTENTS"].ToString());
+                txt_contents.Name = String.Format("{0}", row["TOD_NO"].ToString());
                 txt_contents.Click += PopUpTodo;
 
                 txt_Period.AutoSize = false;
@@ -440,8 +442,8 @@ namespace Pro_0_Mylife
                 txt_Period.BackColor = Color.FromArgb(255, 255, 255);
                 txt_Period.BorderStyle = BorderStyle.None;
                 txt_Period.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-                txt_Period.Text = String.Format("{0}", row[4].ToString());
-                txt_Period.Name = String.Format("txt_Period_{0}", row[0].ToString());
+                txt_Period.Text = String.Format("{0}", row["TOD_END_DATE"].ToString());
+                txt_Period.Name = String.Format("txt_Period_{0}", row["TOD_NO"].ToString());
 
                 txt_state.AutoSize = false;
                 txt_state.Size = new Size(90, 40);
@@ -449,8 +451,8 @@ namespace Pro_0_Mylife
                 txt_state.BackColor = Color.FromArgb(255, 255, 255);
                 txt_state.BorderStyle = BorderStyle.None;
                 txt_state.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-                txt_state.Name = String.Format("txt_state_{0}", row[0].ToString());
-                txt_state.Text = todolistHandler.todoState(row[6].ToString(), DateTime.Parse(row[5].ToString()));
+                txt_state.Name = String.Format("txt_state_{0}", row["TOD_NO"].ToString());
+                txt_state.Text = todolistHandler.todoState(row["TOD_STATE"].ToString(), DateTime.Parse(row[5].ToString()));
 
 
                 pnl.Controls.Add(ch_todo);
@@ -576,14 +578,119 @@ namespace Pro_0_Mylife
 
             foreach (DataRow row in dt.Rows)
             {
-                list.Add(row[1].ToString());
+                list.Add(row["PROD_T_NAME"].ToString());
             }
             string[] data = list.ToArray();
             cb_shp_type.Items.AddRange(data);
         }
-        private void loadShoppinglist()
+        private void loadshopList(int state)
         {
+            flp_wishShp.Controls.Clear();
+            DataSet ds = new DataSet();
+            ShoppingWishDAO shoppingWishDAO = new ShoppingWishDAO();
+            shoppingWishDAO.loadshopList(ds,_logIn_User.Email, state);
+            DataTable dt = ds.Tables[0];
+            foreach(DataRow row in dt.Rows)
+            {
+                Panel pnl = new Panel();
+                CheckBox ch_wishShp = new CheckBox();
+                Label txt_Type = new Label();
+                Label txt_contents = new Label();
+                Label txt_registerDate = new Label();
+                Label txt_price = new Label();
+                Button btn_URL = new Button();
+                Label txt_buyDate = new Label();
+                Label txt_state = new Label();
 
+                pnl.Size = new Size(754, 100);
+                pnl.BackColor = Color.FromArgb(255, 255, 255);
+                pnl.Name = String.Format("pnl_text_{0}", row["SHOP_NO"].ToString());
+
+                ch_wishShp.AutoSize = false;
+                ch_wishShp.Size = new Size(14, 14);
+                ch_wishShp.Location = new Point(12, 38);
+                ch_wishShp.Name = String.Format("{0}", row["SHOP_NO"].ToString());
+
+                txt_Type.AutoSize = false;
+                txt_Type.Size = new Size(180,20);
+                txt_Type.Location = new Point(50, 5);
+                txt_Type.BackColor = Color.FromArgb(255, 25, 255);
+                txt_Type.BorderStyle = BorderStyle.None;
+                txt_Type.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+                txt_Type.Name = String.Format("txt_DDayt_{0}", row["SHOP_NO"].ToString());
+                txt_Type.Text = String.Format("{0}", row["PROD_TYPE"].ToString());
+
+
+
+                txt_contents.AutoSize = false;
+                txt_contents.Size = new Size(550, 40);
+                txt_contents.Location = new Point(50, 30);
+                txt_contents.BackColor = Color.FromArgb(255, 25, 255);
+                txt_contents.BorderStyle = BorderStyle.None;
+                txt_contents.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+                txt_contents.Text = String.Format("{0}", row["SHOP_NAME"].ToString());
+                txt_contents.Name = String.Format("{0}", row["SHOP_NO"].ToString());
+
+                txt_registerDate.AutoSize = false;
+                txt_registerDate.Size = new Size(80, 20);
+                txt_registerDate.Location = new Point(50, 75);
+                txt_registerDate.BackColor = Color.FromArgb(255, 25, 255);
+                txt_registerDate.BorderStyle = BorderStyle.None;
+                txt_registerDate.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+                txt_registerDate.Text = String.Format("{0}", row["SHOP_REGISTER"].ToString());
+                txt_registerDate.Name = String.Format("txt_Period_{0}", row["SHOP_NO"].ToString());
+
+                txt_price.AutoSize = false;
+                txt_price.Size = new Size(70, 20);
+                txt_price.Location = new Point(530, 75);
+                txt_price.BackColor = Color.FromArgb(255, 25, 255);
+                txt_price.BorderStyle = BorderStyle.None;
+                txt_price.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+                txt_price.Name = String.Format("txt_state_{0}", row["SHOP_NO"].ToString());
+                txt_price.Text = String.Format("{0}", row["PRICE"].ToString());
+
+                btn_URL.AutoSize = false;
+                btn_URL.Size = new Size(130, 20);
+                btn_URL.Location = new Point(610, 75);
+                btn_URL.BackColor = Color.FromArgb(255, 25, 255);
+                btn_URL.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+                btn_URL.Name = String.Format("txt_state_{0}", row["SHOP_NO"].ToString());
+                btn_URL.Text = String.Format("판매사이트로 가기");
+
+                txt_buyDate.AutoSize = false;
+                txt_buyDate.Size = new Size(90, 40);
+                txt_buyDate.Location = new Point(600, 9);
+                txt_buyDate.BackColor = Color.FromArgb(255, 25, 255);
+                txt_buyDate.BorderStyle = BorderStyle.None;
+                txt_buyDate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+                txt_buyDate.Name = String.Format("txt_state_{0}", row["SHOP_NO"].ToString());
+                txt_buyDate.Text = String.Format("{0}", row["BUY_DATE"].ToString());
+
+                txt_state.AutoSize = false;
+                txt_state.Size = new Size(90, 40);
+                txt_state.Location = new Point(600, 9);
+                txt_state.BackColor = Color.FromArgb(255, 25, 255);
+                txt_state.BorderStyle = BorderStyle.None;
+                txt_state.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+                txt_state.Name = String.Format("txt_state_{0}", row["SHOP_NO"].ToString());
+                txt_state.Text = String.Format("{0}", row["SHP_STATE"].ToString());
+
+                pnl.Controls.Add(ch_wishShp);
+                pnl.Controls.Add(txt_Type);
+                pnl.Controls.Add(txt_contents);
+                pnl.Controls.Add(txt_registerDate);
+                pnl.Controls.Add(txt_price);
+                pnl.Controls.Add(btn_URL);
+
+                pnl.Controls.Add(txt_buyDate);
+                pnl.Controls.Add(txt_state);
+
+                flp_wishShp.Controls.Add(pnl);
+
+
+
+
+            }
         }
 
         /* Function */

@@ -65,15 +65,10 @@
             this.btn_shpAdd = new System.Windows.Forms.Button();
             this.pnl_wish_shp = new System.Windows.Forms.Panel();
             this.panel56 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.flp_wishShp = new System.Windows.Forms.FlowLayoutPanel();
-            this.panel4 = new System.Windows.Forms.Panel();
             this.tabPage_purechased = new System.Windows.Forms.TabPage();
             this.button3 = new System.Windows.Forms.Button();
             this.panel21 = new System.Windows.Forms.Panel();
-            this.pnl_shp = new System.Windows.Forms.Panel();
-            this.label5 = new System.Windows.Forms.Label();
-            this.flp_shp = new System.Windows.Forms.FlowLayoutPanel();
             this.lb_logoShp = new System.Windows.Forms.Label();
             this.pnl_Shpinfo = new System.Windows.Forms.Panel();
             this.pnl_shpOption = new System.Windows.Forms.Panel();
@@ -97,11 +92,6 @@
             this.home_tab_result = new System.Windows.Forms.TabControl();
             this.tabPage6 = new System.Windows.Forms.TabPage();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.panel38 = new System.Windows.Forms.Panel();
-            this.panel39 = new System.Windows.Forms.Panel();
-            this.panel40 = new System.Windows.Forms.Panel();
-            this.panel41 = new System.Windows.Forms.Panel();
-            this.panel42 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
@@ -111,17 +101,6 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.panel26 = new System.Windows.Forms.Panel();
-            this.panel28 = new System.Windows.Forms.Panel();
-            this.panel29 = new System.Windows.Forms.Panel();
-            this.panel30 = new System.Windows.Forms.Panel();
-            this.panel31 = new System.Windows.Forms.Panel();
-            this.panel32 = new System.Windows.Forms.Panel();
-            this.panel33 = new System.Windows.Forms.Panel();
-            this.panel34 = new System.Windows.Forms.Panel();
-            this.panel35 = new System.Windows.Forms.Panel();
-            this.panel36 = new System.Windows.Forms.Panel();
-            this.panel37 = new System.Windows.Forms.Panel();
             this.tabPage7 = new System.Windows.Forms.TabPage();
             this.panel43 = new System.Windows.Forms.Panel();
             this.panel27 = new System.Windows.Forms.Panel();
@@ -192,12 +171,6 @@
             this.btn_hk = new System.Windows.Forms.Button();
             this.btn_memo = new System.Windows.Forms.Button();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
-            this.button4 = new System.Windows.Forms.Button();
-            this.label26 = new System.Windows.Forms.Label();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.panel6 = new System.Windows.Forms.Panel();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.label27 = new System.Windows.Forms.Label();
@@ -205,62 +178,16 @@
             this.label28 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.label31 = new System.Windows.Forms.Label();
-            this.button26 = new System.Windows.Forms.Button();
-            this.label32 = new System.Windows.Forms.Label();
-            this.label33 = new System.Windows.Forms.Label();
-            this.label34 = new System.Windows.Forms.Label();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.label40 = new System.Windows.Forms.Label();
-            this.button28 = new System.Windows.Forms.Button();
-            this.label41 = new System.Windows.Forms.Label();
-            this.label42 = new System.Windows.Forms.Label();
-            this.label43 = new System.Windows.Forms.Label();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.checkBox5 = new System.Windows.Forms.CheckBox();
-            this.label44 = new System.Windows.Forms.Label();
-            this.button29 = new System.Windows.Forms.Button();
-            this.label45 = new System.Windows.Forms.Label();
-            this.label46 = new System.Windows.Forms.Label();
-            this.label47 = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.label35 = new System.Windows.Forms.Label();
-            this.button27 = new System.Windows.Forms.Button();
-            this.label36 = new System.Windows.Forms.Label();
-            this.label37 = new System.Windows.Forms.Label();
-            this.label38 = new System.Windows.Forms.Label();
-            this.label63 = new System.Windows.Forms.Label();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.label39 = new System.Windows.Forms.Label();
-            this.label48 = new System.Windows.Forms.Label();
-            this.button30 = new System.Windows.Forms.Button();
-            this.label49 = new System.Windows.Forms.Label();
-            this.label50 = new System.Windows.Forms.Label();
-            this.label51 = new System.Windows.Forms.Label();
-            this.panel11 = new System.Windows.Forms.Panel();
-            this.label52 = new System.Windows.Forms.Label();
-            this.label53 = new System.Windows.Forms.Label();
-            this.button31 = new System.Windows.Forms.Button();
-            this.label54 = new System.Windows.Forms.Label();
-            this.label55 = new System.Windows.Forms.Label();
-            this.label56 = new System.Windows.Forms.Label();
-            this.panel12 = new System.Windows.Forms.Panel();
-            this.label57 = new System.Windows.Forms.Label();
-            this.label58 = new System.Windows.Forms.Label();
-            this.button32 = new System.Windows.Forms.Button();
-            this.label59 = new System.Windows.Forms.Label();
-            this.label60 = new System.Windows.Forms.Label();
-            this.label61 = new System.Windows.Forms.Label();
-            this.panel13 = new System.Windows.Forms.Panel();
-            this.label62 = new System.Windows.Forms.Label();
-            this.label64 = new System.Windows.Forms.Label();
-            this.button33 = new System.Windows.Forms.Button();
-            this.label65 = new System.Windows.Forms.Label();
-            this.label66 = new System.Windows.Forms.Label();
-            this.label67 = new System.Windows.Forms.Label();
+            this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.button4 = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.tab_form.SuspendLayout();
             this.tab_home.SuspendLayout();
             this.tab_Memo.SuspendLayout();
@@ -273,10 +200,7 @@
             this.tabPage_shpWish.SuspendLayout();
             this.pnl_wish_shp.SuspendLayout();
             this.flp_wishShp.SuspendLayout();
-            this.panel4.SuspendLayout();
             this.tabPage_purechased.SuspendLayout();
-            this.pnl_shp.SuspendLayout();
-            this.flp_shp.SuspendLayout();
             this.pnl_shpOption.SuspendLayout();
             this.pnl_shp_insert.SuspendLayout();
             this.tab_HouseKeep.SuspendLayout();
@@ -285,7 +209,6 @@
             this.tabPage1.SuspendLayout();
             this.home_tab_result.SuspendLayout();
             this.tabPage6.SuspendLayout();
-            this.flowLayoutPanel1.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
             this.panel25.SuspendLayout();
             this.panel27.SuspendLayout();
@@ -300,14 +223,9 @@
             this.Top_panel.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel6.SuspendLayout();
+            this.panel4.SuspendLayout();
+            this.flowLayoutPanel3.SuspendLayout();
             this.panel7.SuspendLayout();
-            this.panel8.SuspendLayout();
-            this.panel9.SuspendLayout();
-            this.panel5.SuspendLayout();
-            this.panel10.SuspendLayout();
-            this.panel11.SuspendLayout();
-            this.panel12.SuspendLayout();
-            this.panel13.SuspendLayout();
             this.SuspendLayout();
             // 
             // tab_form
@@ -378,7 +296,7 @@
             // 
             // tab_TodoList
             // 
-            this.tab_TodoList.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
+            this.tab_TodoList.BackColor = System.Drawing.Color.White;
             this.tab_TodoList.Controls.Add(this.todo_panel2);
             this.tab_TodoList.Controls.Add(this.Todo_panel1);
             resources.ApplyResources(this.tab_TodoList, "tab_TodoList");
@@ -386,7 +304,7 @@
             // 
             // todo_panel2
             // 
-            this.todo_panel2.BackColor = System.Drawing.Color.Lavender;
+            this.todo_panel2.BackColor = System.Drawing.Color.White;
             this.todo_panel2.Controls.Add(this.panel3);
             this.todo_panel2.Controls.Add(this.txt_todoSearch);
             this.todo_panel2.Controls.Add(this.btn_search);
@@ -402,13 +320,13 @@
             // 
             // txt_todoSearch
             // 
-            this.txt_todoSearch.BackColor = System.Drawing.Color.Lavender;
+            this.txt_todoSearch.BackColor = System.Drawing.Color.LightCyan;
             resources.ApplyResources(this.txt_todoSearch, "txt_todoSearch");
             this.txt_todoSearch.Name = "txt_todoSearch";
             // 
             // btn_search
             // 
-            this.btn_search.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.btn_search.BackColor = System.Drawing.Color.LightGray;
             resources.ApplyResources(this.btn_search, "btn_search");
             this.btn_search.Name = "btn_search";
             this.btn_search.UseVisualStyleBackColor = false;
@@ -428,7 +346,7 @@
             // 
             // Todo_panel1
             // 
-            this.Todo_panel1.BackColor = System.Drawing.Color.Lavender;
+            this.Todo_panel1.BackColor = System.Drawing.Color.White;
             this.Todo_panel1.Controls.Add(this.Todo_EndMinute);
             this.Todo_panel1.Controls.Add(this.Todo_StartMinute);
             this.Todo_panel1.Controls.Add(this.Todo_Calendar);
@@ -446,6 +364,7 @@
             // 
             // Todo_EndMinute
             // 
+            this.Todo_EndMinute.BackColor = System.Drawing.Color.LightCyan;
             this.Todo_EndMinute.FormattingEnabled = true;
             this.Todo_EndMinute.Items.AddRange(new object[] {
             resources.GetString("Todo_EndMinute.Items"),
@@ -514,6 +433,7 @@
             // 
             // Todo_StartMinute
             // 
+            this.Todo_StartMinute.BackColor = System.Drawing.Color.LightCyan;
             this.Todo_StartMinute.FormattingEnabled = true;
             this.Todo_StartMinute.Items.AddRange(new object[] {
             resources.GetString("Todo_StartMinute.Items"),
@@ -582,6 +502,7 @@
             // 
             // Todo_Calendar
             // 
+            this.Todo_Calendar.BackColor = System.Drawing.Color.LightCyan;
             resources.ApplyResources(this.Todo_Calendar, "Todo_Calendar");
             this.Todo_Calendar.Name = "Todo_Calendar";
             this.Todo_Calendar.DateChanged += new System.Windows.Forms.DateRangeEventHandler(this.Todo_Calendar_DateChanged);
@@ -599,6 +520,7 @@
             // 
             // Todo_StartHour
             // 
+            this.Todo_StartHour.BackColor = System.Drawing.Color.LightCyan;
             this.Todo_StartHour.FormattingEnabled = true;
             this.Todo_StartHour.Items.AddRange(new object[] {
             resources.GetString("Todo_StartHour.Items"),
@@ -636,6 +558,7 @@
             // 
             // Todo_contents
             // 
+            this.Todo_contents.BackColor = System.Drawing.Color.LightCyan;
             resources.ApplyResources(this.Todo_contents, "Todo_contents");
             this.Todo_contents.Name = "Todo_contents";
             // 
@@ -651,6 +574,7 @@
             // 
             // Todo_EndHour
             // 
+            this.Todo_EndHour.BackColor = System.Drawing.Color.LightCyan;
             this.Todo_EndHour.FormattingEnabled = true;
             this.Todo_EndHour.Items.AddRange(new object[] {
             resources.GetString("Todo_EndHour.Items"),
@@ -683,12 +607,14 @@
             // 
             // Todo_EndDate
             // 
+            this.Todo_EndDate.CalendarMonthBackground = System.Drawing.Color.LightCyan;
             resources.ApplyResources(this.Todo_EndDate, "Todo_EndDate");
             this.Todo_EndDate.Name = "Todo_EndDate";
             this.Todo_EndDate.ValueChanged += new System.EventHandler(this.CkEndDateChanged);
             // 
             // Todo_startDate
             // 
+            this.Todo_startDate.CalendarMonthBackground = System.Drawing.Color.LightCyan;
             resources.ApplyResources(this.Todo_startDate, "Todo_startDate");
             this.Todo_startDate.Name = "Todo_startDate";
             this.Todo_startDate.ValueChanged += new System.EventHandler(this.CKstartDateChanged);
@@ -704,11 +630,11 @@
             // pnl_shplist
             // 
             this.pnl_shplist.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.pnl_shplist.Controls.Add(this.shp_tab_result);
             this.pnl_shplist.Controls.Add(this.lb_logoShp);
             this.pnl_shplist.Controls.Add(this.pnl_Shpinfo);
             this.pnl_shplist.Controls.Add(this.pnl_shpOption);
             this.pnl_shplist.Controls.Add(this.pnl_shp_insert);
+            this.pnl_shplist.Controls.Add(this.shp_tab_result);
             resources.ApplyResources(this.pnl_shplist, "pnl_shplist");
             this.pnl_shplist.Name = "pnl_shplist";
             // 
@@ -739,7 +665,6 @@
             // 
             this.pnl_wish_shp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.pnl_wish_shp.Controls.Add(this.panel56);
-            this.pnl_wish_shp.Controls.Add(this.label1);
             this.pnl_wish_shp.Controls.Add(this.flp_wishShp);
             resources.ApplyResources(this.pnl_wish_shp, "pnl_wish_shp");
             this.pnl_wish_shp.Name = "pnl_wish_shp";
@@ -750,40 +675,19 @@
             resources.ApplyResources(this.panel56, "panel56");
             this.panel56.Name = "panel56";
             // 
-            // label1
-            // 
-            resources.ApplyResources(this.label1, "label1");
-            this.label1.Name = "label1";
-            // 
             // flp_wishShp
             // 
             resources.ApplyResources(this.flp_wishShp, "flp_wishShp");
             this.flp_wishShp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(255)))), ((int)(((byte)(208)))));
-            this.flp_wishShp.Controls.Add(this.panel4);
             this.flp_wishShp.Controls.Add(this.panel6);
-            this.flp_wishShp.Controls.Add(this.panel7);
-            this.flp_wishShp.Controls.Add(this.panel8);
-            this.flp_wishShp.Controls.Add(this.panel9);
             this.flp_wishShp.Name = "flp_wishShp";
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.White;
-            this.panel4.Controls.Add(this.checkBox1);
-            this.panel4.Controls.Add(this.label26);
-            this.panel4.Controls.Add(this.button4);
-            this.panel4.Controls.Add(this.label25);
-            this.panel4.Controls.Add(this.label4);
-            this.panel4.Controls.Add(this.label2);
-            resources.ApplyResources(this.panel4, "panel4");
-            this.panel4.Name = "panel4";
             // 
             // tabPage_purechased
             // 
             this.tabPage_purechased.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.tabPage_purechased.Controls.Add(this.panel4);
             this.tabPage_purechased.Controls.Add(this.button3);
             this.tabPage_purechased.Controls.Add(this.panel21);
-            this.tabPage_purechased.Controls.Add(this.pnl_shp);
             resources.ApplyResources(this.tabPage_purechased, "tabPage_purechased");
             this.tabPage_purechased.Name = "tabPage_purechased";
             // 
@@ -799,30 +703,6 @@
             this.panel21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             resources.ApplyResources(this.panel21, "panel21");
             this.panel21.Name = "panel21";
-            // 
-            // pnl_shp
-            // 
-            this.pnl_shp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.pnl_shp.Controls.Add(this.label5);
-            this.pnl_shp.Controls.Add(this.flp_shp);
-            resources.ApplyResources(this.pnl_shp, "pnl_shp");
-            this.pnl_shp.Name = "pnl_shp";
-            // 
-            // label5
-            // 
-            resources.ApplyResources(this.label5, "label5");
-            this.label5.Name = "label5";
-            // 
-            // flp_shp
-            // 
-            resources.ApplyResources(this.flp_shp, "flp_shp");
-            this.flp_shp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(255)))), ((int)(((byte)(208)))));
-            this.flp_shp.Controls.Add(this.panel5);
-            this.flp_shp.Controls.Add(this.panel10);
-            this.flp_shp.Controls.Add(this.panel11);
-            this.flp_shp.Controls.Add(this.panel12);
-            this.flp_shp.Controls.Add(this.panel13);
-            this.flp_shp.Name = "flp_shp";
             // 
             // lb_logoShp
             // 
@@ -947,11 +827,11 @@
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.tabPage1.Controls.Add(this.panel27);
             this.tabPage1.Controls.Add(this.comboBox1);
             this.tabPage1.Controls.Add(this.comboBox2);
             this.tabPage1.Controls.Add(this.home_tab_result);
             this.tabPage1.Controls.Add(this.panel43);
-            this.tabPage1.Controls.Add(this.panel27);
             resources.ApplyResources(this.tabPage1, "tabPage1");
             this.tabPage1.Name = "tabPage1";
             // 
@@ -989,37 +869,7 @@
             // 
             resources.ApplyResources(this.flowLayoutPanel1, "flowLayoutPanel1");
             this.flowLayoutPanel1.BackColor = System.Drawing.Color.White;
-            this.flowLayoutPanel1.Controls.Add(this.panel38);
-            this.flowLayoutPanel1.Controls.Add(this.panel39);
-            this.flowLayoutPanel1.Controls.Add(this.panel40);
-            this.flowLayoutPanel1.Controls.Add(this.panel41);
-            this.flowLayoutPanel1.Controls.Add(this.panel42);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            // 
-            // panel38
-            // 
-            resources.ApplyResources(this.panel38, "panel38");
-            this.panel38.Name = "panel38";
-            // 
-            // panel39
-            // 
-            resources.ApplyResources(this.panel39, "panel39");
-            this.panel39.Name = "panel39";
-            // 
-            // panel40
-            // 
-            resources.ApplyResources(this.panel40, "panel40");
-            this.panel40.Name = "panel40";
-            // 
-            // panel41
-            // 
-            resources.ApplyResources(this.panel41, "panel41");
-            this.panel41.Name = "panel41";
-            // 
-            // panel42
-            // 
-            resources.ApplyResources(this.panel42, "panel42");
-            this.panel42.Name = "panel42";
             // 
             // label7
             // 
@@ -1036,17 +886,6 @@
             resources.ApplyResources(this.flowLayoutPanel2, "flowLayoutPanel2");
             this.flowLayoutPanel2.BackColor = System.Drawing.Color.White;
             this.flowLayoutPanel2.Controls.Add(this.panel25);
-            this.flowLayoutPanel2.Controls.Add(this.panel26);
-            this.flowLayoutPanel2.Controls.Add(this.panel28);
-            this.flowLayoutPanel2.Controls.Add(this.panel29);
-            this.flowLayoutPanel2.Controls.Add(this.panel30);
-            this.flowLayoutPanel2.Controls.Add(this.panel31);
-            this.flowLayoutPanel2.Controls.Add(this.panel32);
-            this.flowLayoutPanel2.Controls.Add(this.panel33);
-            this.flowLayoutPanel2.Controls.Add(this.panel34);
-            this.flowLayoutPanel2.Controls.Add(this.panel35);
-            this.flowLayoutPanel2.Controls.Add(this.panel36);
-            this.flowLayoutPanel2.Controls.Add(this.panel37);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
             // 
             // panel25
@@ -1083,61 +922,6 @@
             // 
             resources.ApplyResources(this.label8, "label8");
             this.label8.Name = "label8";
-            // 
-            // panel26
-            // 
-            resources.ApplyResources(this.panel26, "panel26");
-            this.panel26.Name = "panel26";
-            // 
-            // panel28
-            // 
-            resources.ApplyResources(this.panel28, "panel28");
-            this.panel28.Name = "panel28";
-            // 
-            // panel29
-            // 
-            resources.ApplyResources(this.panel29, "panel29");
-            this.panel29.Name = "panel29";
-            // 
-            // panel30
-            // 
-            resources.ApplyResources(this.panel30, "panel30");
-            this.panel30.Name = "panel30";
-            // 
-            // panel31
-            // 
-            resources.ApplyResources(this.panel31, "panel31");
-            this.panel31.Name = "panel31";
-            // 
-            // panel32
-            // 
-            resources.ApplyResources(this.panel32, "panel32");
-            this.panel32.Name = "panel32";
-            // 
-            // panel33
-            // 
-            resources.ApplyResources(this.panel33, "panel33");
-            this.panel33.Name = "panel33";
-            // 
-            // panel34
-            // 
-            resources.ApplyResources(this.panel34, "panel34");
-            this.panel34.Name = "panel34";
-            // 
-            // panel35
-            // 
-            resources.ApplyResources(this.panel35, "panel35");
-            this.panel35.Name = "panel35";
-            // 
-            // panel36
-            // 
-            resources.ApplyResources(this.panel36, "panel36");
-            this.panel36.Name = "panel36";
-            // 
-            // panel37
-            // 
-            resources.ApplyResources(this.panel37, "panel37");
-            this.panel37.Name = "panel37";
             // 
             // tabPage7
             // 
@@ -1625,38 +1409,6 @@
             this.btn_memo.Name = "btn_memo";
             this.btn_memo.Click += new System.EventHandler(this.Btn_memo_Click);
             // 
-            // label2
-            // 
-            resources.ApplyResources(this.label2, "label2");
-            this.label2.Name = "label2";
-            // 
-            // label4
-            // 
-            resources.ApplyResources(this.label4, "label4");
-            this.label4.Name = "label4";
-            // 
-            // label25
-            // 
-            resources.ApplyResources(this.label25, "label25");
-            this.label25.Name = "label25";
-            // 
-            // button4
-            // 
-            resources.ApplyResources(this.button4, "button4");
-            this.button4.Name = "button4";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
-            // label26
-            // 
-            resources.ApplyResources(this.label26, "label26");
-            this.label26.Name = "label26";
-            // 
-            // checkBox1
-            // 
-            resources.ApplyResources(this.checkBox1, "checkBox1");
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            // 
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.White;
@@ -1701,352 +1453,70 @@
             resources.ApplyResources(this.label30, "label30");
             this.label30.Name = "label30";
             // 
-            // panel7
+            // panel4
             // 
-            this.panel7.BackColor = System.Drawing.Color.White;
-            this.panel7.Controls.Add(this.checkBox3);
-            this.panel7.Controls.Add(this.label31);
-            this.panel7.Controls.Add(this.button26);
-            this.panel7.Controls.Add(this.label32);
-            this.panel7.Controls.Add(this.label33);
-            this.panel7.Controls.Add(this.label34);
-            resources.ApplyResources(this.panel7, "panel7");
-            this.panel7.Name = "panel7";
-            // 
-            // checkBox3
-            // 
-            resources.ApplyResources(this.checkBox3, "checkBox3");
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.UseVisualStyleBackColor = true;
-            // 
-            // label31
-            // 
-            resources.ApplyResources(this.label31, "label31");
-            this.label31.Name = "label31";
-            // 
-            // button26
-            // 
-            resources.ApplyResources(this.button26, "button26");
-            this.button26.Name = "button26";
-            this.button26.UseVisualStyleBackColor = true;
-            // 
-            // label32
-            // 
-            resources.ApplyResources(this.label32, "label32");
-            this.label32.Name = "label32";
-            // 
-            // label33
-            // 
-            resources.ApplyResources(this.label33, "label33");
-            this.label33.Name = "label33";
-            // 
-            // label34
-            // 
-            resources.ApplyResources(this.label34, "label34");
-            this.label34.Name = "label34";
-            // 
-            // panel8
-            // 
-            this.panel8.BackColor = System.Drawing.Color.White;
-            this.panel8.Controls.Add(this.checkBox4);
-            this.panel8.Controls.Add(this.label40);
-            this.panel8.Controls.Add(this.button28);
-            this.panel8.Controls.Add(this.label41);
-            this.panel8.Controls.Add(this.label42);
-            this.panel8.Controls.Add(this.label43);
-            resources.ApplyResources(this.panel8, "panel8");
-            this.panel8.Name = "panel8";
-            // 
-            // checkBox4
-            // 
-            resources.ApplyResources(this.checkBox4, "checkBox4");
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.UseVisualStyleBackColor = true;
-            // 
-            // label40
-            // 
-            resources.ApplyResources(this.label40, "label40");
-            this.label40.Name = "label40";
-            // 
-            // button28
-            // 
-            resources.ApplyResources(this.button28, "button28");
-            this.button28.Name = "button28";
-            this.button28.UseVisualStyleBackColor = true;
-            // 
-            // label41
-            // 
-            resources.ApplyResources(this.label41, "label41");
-            this.label41.Name = "label41";
-            // 
-            // label42
-            // 
-            resources.ApplyResources(this.label42, "label42");
-            this.label42.Name = "label42";
-            // 
-            // label43
-            // 
-            resources.ApplyResources(this.label43, "label43");
-            this.label43.Name = "label43";
-            // 
-            // panel9
-            // 
-            this.panel9.BackColor = System.Drawing.Color.White;
-            this.panel9.Controls.Add(this.checkBox5);
-            this.panel9.Controls.Add(this.label44);
-            this.panel9.Controls.Add(this.button29);
-            this.panel9.Controls.Add(this.label45);
-            this.panel9.Controls.Add(this.label46);
-            this.panel9.Controls.Add(this.label47);
-            resources.ApplyResources(this.panel9, "panel9");
-            this.panel9.Name = "panel9";
-            // 
-            // checkBox5
-            // 
-            resources.ApplyResources(this.checkBox5, "checkBox5");
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.UseVisualStyleBackColor = true;
-            // 
-            // label44
-            // 
-            resources.ApplyResources(this.label44, "label44");
-            this.label44.Name = "label44";
-            // 
-            // button29
-            // 
-            resources.ApplyResources(this.button29, "button29");
-            this.button29.Name = "button29";
-            this.button29.UseVisualStyleBackColor = true;
-            // 
-            // label45
-            // 
-            resources.ApplyResources(this.label45, "label45");
-            this.label45.Name = "label45";
-            // 
-            // label46
-            // 
-            resources.ApplyResources(this.label46, "label46");
-            this.label46.Name = "label46";
-            // 
-            // label47
-            // 
-            resources.ApplyResources(this.label47, "label47");
-            this.label47.Name = "label47";
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.panel4.Controls.Add(this.panel5);
+            this.panel4.Controls.Add(this.flowLayoutPanel3);
+            resources.ApplyResources(this.panel4, "panel4");
+            this.panel4.Name = "panel4";
             // 
             // panel5
             // 
-            this.panel5.BackColor = System.Drawing.Color.White;
-            this.panel5.Controls.Add(this.label63);
-            this.panel5.Controls.Add(this.label35);
-            this.panel5.Controls.Add(this.button27);
-            this.panel5.Controls.Add(this.label36);
-            this.panel5.Controls.Add(this.label37);
-            this.panel5.Controls.Add(this.label38);
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             resources.ApplyResources(this.panel5, "panel5");
             this.panel5.Name = "panel5";
             // 
-            // label35
+            // flowLayoutPanel3
             // 
-            resources.ApplyResources(this.label35, "label35");
-            this.label35.Name = "label35";
+            resources.ApplyResources(this.flowLayoutPanel3, "flowLayoutPanel3");
+            this.flowLayoutPanel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(255)))), ((int)(((byte)(208)))));
+            this.flowLayoutPanel3.Controls.Add(this.panel7);
+            this.flowLayoutPanel3.Name = "flowLayoutPanel3";
             // 
-            // button27
+            // panel7
             // 
-            resources.ApplyResources(this.button27, "button27");
-            this.button27.Name = "button27";
-            this.button27.UseVisualStyleBackColor = true;
+            this.panel7.BackColor = System.Drawing.Color.White;
+            this.panel7.Controls.Add(this.checkBox1);
+            this.panel7.Controls.Add(this.label1);
+            this.panel7.Controls.Add(this.button4);
+            this.panel7.Controls.Add(this.label2);
+            this.panel7.Controls.Add(this.label4);
+            this.panel7.Controls.Add(this.label5);
+            resources.ApplyResources(this.panel7, "panel7");
+            this.panel7.Name = "panel7";
             // 
-            // label36
+            // checkBox1
             // 
-            resources.ApplyResources(this.label36, "label36");
-            this.label36.Name = "label36";
+            resources.ApplyResources(this.checkBox1, "checkBox1");
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.UseVisualStyleBackColor = true;
             // 
-            // label37
+            // label1
             // 
-            resources.ApplyResources(this.label37, "label37");
-            this.label37.Name = "label37";
+            resources.ApplyResources(this.label1, "label1");
+            this.label1.Name = "label1";
             // 
-            // label38
+            // button4
             // 
-            resources.ApplyResources(this.label38, "label38");
-            this.label38.Name = "label38";
+            resources.ApplyResources(this.button4, "button4");
+            this.button4.Name = "button4";
+            this.button4.UseVisualStyleBackColor = true;
             // 
-            // label63
+            // label2
             // 
-            resources.ApplyResources(this.label63, "label63");
-            this.label63.Name = "label63";
+            resources.ApplyResources(this.label2, "label2");
+            this.label2.Name = "label2";
             // 
-            // panel10
+            // label4
             // 
-            this.panel10.BackColor = System.Drawing.Color.White;
-            this.panel10.Controls.Add(this.label39);
-            this.panel10.Controls.Add(this.label48);
-            this.panel10.Controls.Add(this.button30);
-            this.panel10.Controls.Add(this.label49);
-            this.panel10.Controls.Add(this.label50);
-            this.panel10.Controls.Add(this.label51);
-            resources.ApplyResources(this.panel10, "panel10");
-            this.panel10.Name = "panel10";
+            resources.ApplyResources(this.label4, "label4");
+            this.label4.Name = "label4";
             // 
-            // label39
+            // label5
             // 
-            resources.ApplyResources(this.label39, "label39");
-            this.label39.Name = "label39";
-            // 
-            // label48
-            // 
-            resources.ApplyResources(this.label48, "label48");
-            this.label48.Name = "label48";
-            // 
-            // button30
-            // 
-            resources.ApplyResources(this.button30, "button30");
-            this.button30.Name = "button30";
-            this.button30.UseVisualStyleBackColor = true;
-            // 
-            // label49
-            // 
-            resources.ApplyResources(this.label49, "label49");
-            this.label49.Name = "label49";
-            // 
-            // label50
-            // 
-            resources.ApplyResources(this.label50, "label50");
-            this.label50.Name = "label50";
-            // 
-            // label51
-            // 
-            resources.ApplyResources(this.label51, "label51");
-            this.label51.Name = "label51";
-            // 
-            // panel11
-            // 
-            this.panel11.BackColor = System.Drawing.Color.White;
-            this.panel11.Controls.Add(this.label52);
-            this.panel11.Controls.Add(this.label53);
-            this.panel11.Controls.Add(this.button31);
-            this.panel11.Controls.Add(this.label54);
-            this.panel11.Controls.Add(this.label55);
-            this.panel11.Controls.Add(this.label56);
-            resources.ApplyResources(this.panel11, "panel11");
-            this.panel11.Name = "panel11";
-            // 
-            // label52
-            // 
-            resources.ApplyResources(this.label52, "label52");
-            this.label52.Name = "label52";
-            // 
-            // label53
-            // 
-            resources.ApplyResources(this.label53, "label53");
-            this.label53.Name = "label53";
-            // 
-            // button31
-            // 
-            resources.ApplyResources(this.button31, "button31");
-            this.button31.Name = "button31";
-            this.button31.UseVisualStyleBackColor = true;
-            // 
-            // label54
-            // 
-            resources.ApplyResources(this.label54, "label54");
-            this.label54.Name = "label54";
-            // 
-            // label55
-            // 
-            resources.ApplyResources(this.label55, "label55");
-            this.label55.Name = "label55";
-            // 
-            // label56
-            // 
-            resources.ApplyResources(this.label56, "label56");
-            this.label56.Name = "label56";
-            // 
-            // panel12
-            // 
-            this.panel12.BackColor = System.Drawing.Color.White;
-            this.panel12.Controls.Add(this.label57);
-            this.panel12.Controls.Add(this.label58);
-            this.panel12.Controls.Add(this.button32);
-            this.panel12.Controls.Add(this.label59);
-            this.panel12.Controls.Add(this.label60);
-            this.panel12.Controls.Add(this.label61);
-            resources.ApplyResources(this.panel12, "panel12");
-            this.panel12.Name = "panel12";
-            // 
-            // label57
-            // 
-            resources.ApplyResources(this.label57, "label57");
-            this.label57.Name = "label57";
-            // 
-            // label58
-            // 
-            resources.ApplyResources(this.label58, "label58");
-            this.label58.Name = "label58";
-            // 
-            // button32
-            // 
-            resources.ApplyResources(this.button32, "button32");
-            this.button32.Name = "button32";
-            this.button32.UseVisualStyleBackColor = true;
-            // 
-            // label59
-            // 
-            resources.ApplyResources(this.label59, "label59");
-            this.label59.Name = "label59";
-            // 
-            // label60
-            // 
-            resources.ApplyResources(this.label60, "label60");
-            this.label60.Name = "label60";
-            // 
-            // label61
-            // 
-            resources.ApplyResources(this.label61, "label61");
-            this.label61.Name = "label61";
-            // 
-            // panel13
-            // 
-            this.panel13.BackColor = System.Drawing.Color.White;
-            this.panel13.Controls.Add(this.label62);
-            this.panel13.Controls.Add(this.label64);
-            this.panel13.Controls.Add(this.button33);
-            this.panel13.Controls.Add(this.label65);
-            this.panel13.Controls.Add(this.label66);
-            this.panel13.Controls.Add(this.label67);
-            resources.ApplyResources(this.panel13, "panel13");
-            this.panel13.Name = "panel13";
-            // 
-            // label62
-            // 
-            resources.ApplyResources(this.label62, "label62");
-            this.label62.Name = "label62";
-            // 
-            // label64
-            // 
-            resources.ApplyResources(this.label64, "label64");
-            this.label64.Name = "label64";
-            // 
-            // button33
-            // 
-            resources.ApplyResources(this.button33, "button33");
-            this.button33.Name = "button33";
-            this.button33.UseVisualStyleBackColor = true;
-            // 
-            // label65
-            // 
-            resources.ApplyResources(this.label65, "label65");
-            this.label65.Name = "label65";
-            // 
-            // label66
-            // 
-            resources.ApplyResources(this.label66, "label66");
-            this.label66.Name = "label66";
-            // 
-            // label67
-            // 
-            resources.ApplyResources(this.label67, "label67");
-            this.label67.Name = "label67";
+            resources.ApplyResources(this.label5, "label5");
+            this.label5.Name = "label5";
             // 
             // Form_main
             // 
@@ -2077,11 +1547,7 @@
             this.tabPage_shpWish.ResumeLayout(false);
             this.pnl_wish_shp.ResumeLayout(false);
             this.flp_wishShp.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
             this.tabPage_purechased.ResumeLayout(false);
-            this.pnl_shp.ResumeLayout(false);
-            this.flp_shp.ResumeLayout(false);
             this.pnl_shpOption.ResumeLayout(false);
             this.pnl_shp_insert.ResumeLayout(false);
             this.pnl_shp_insert.PerformLayout();
@@ -2092,7 +1558,6 @@
             this.home_tab_result.ResumeLayout(false);
             this.tabPage6.ResumeLayout(false);
             this.tabPage6.PerformLayout();
-            this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel2.ResumeLayout(false);
             this.panel25.ResumeLayout(false);
             this.panel27.ResumeLayout(false);
@@ -2110,17 +1575,10 @@
             this.panel1.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.flowLayoutPanel3.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
-            this.panel8.ResumeLayout(false);
-            this.panel8.PerformLayout();
-            this.panel9.ResumeLayout(false);
-            this.panel9.PerformLayout();
-            this.panel5.ResumeLayout(false);
-            this.panel10.ResumeLayout(false);
-            this.panel11.ResumeLayout(false);
-            this.panel12.ResumeLayout(false);
-            this.panel13.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -2177,7 +1635,6 @@
         private System.Windows.Forms.TextBox txt_shp_productName;
         private System.Windows.Forms.TextBox txt_shp_price;
         private System.Windows.Forms.TextBox txt_shp_URL;
-        private System.Windows.Forms.Panel pnl_shp;
         private System.Windows.Forms.Button btn_shpAdd;
         private System.Windows.Forms.Panel pnl_shpOption;
         private System.Windows.Forms.Button btn_shpType;
@@ -2185,9 +1642,6 @@
         private System.Windows.Forms.Label lb_logoShp;
         private System.Windows.Forms.Label lb_URL;
         private System.Windows.Forms.Label lb_productName;
-        private System.Windows.Forms.FlowLayoutPanel flp_shp;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox cb_shp_type;
         private System.Windows.Forms.Button btn_shpRegister;
         private System.Windows.Forms.Panel panel23;
@@ -2201,11 +1655,6 @@
         private System.Windows.Forms.TabControl home_tab_result;
         private System.Windows.Forms.TabPage tabPage6;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private System.Windows.Forms.Panel panel38;
-        private System.Windows.Forms.Panel panel39;
-        private System.Windows.Forms.Panel panel40;
-        private System.Windows.Forms.Panel panel41;
-        private System.Windows.Forms.Panel panel42;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
@@ -2215,17 +1664,6 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Panel panel26;
-        private System.Windows.Forms.Panel panel28;
-        private System.Windows.Forms.Panel panel29;
-        private System.Windows.Forms.Panel panel30;
-        private System.Windows.Forms.Panel panel31;
-        private System.Windows.Forms.Panel panel32;
-        private System.Windows.Forms.Panel panel33;
-        private System.Windows.Forms.Panel panel34;
-        private System.Windows.Forms.Panel panel35;
-        private System.Windows.Forms.Panel panel36;
-        private System.Windows.Forms.Panel panel37;
         private System.Windows.Forms.TabPage tabPage7;
         private System.Windows.Forms.Panel panel27;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
@@ -2288,14 +1726,7 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Panel panel21;
         private System.Windows.Forms.FlowLayoutPanel flp_wishShp;
-        private System.Windows.Forms.Panel panel4;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.CheckBox checkBox2;
         private System.Windows.Forms.Label label27;
@@ -2303,61 +1734,15 @@
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.Label label30;
-        private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.Label label31;
-        private System.Windows.Forms.Button button26;
-        private System.Windows.Forms.Label label32;
-        private System.Windows.Forms.Label label33;
-        private System.Windows.Forms.Label label34;
-        private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.CheckBox checkBox4;
-        private System.Windows.Forms.Label label40;
-        private System.Windows.Forms.Button button28;
-        private System.Windows.Forms.Label label41;
-        private System.Windows.Forms.Label label42;
-        private System.Windows.Forms.Label label43;
-        private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.CheckBox checkBox5;
-        private System.Windows.Forms.Label label44;
-        private System.Windows.Forms.Button button29;
-        private System.Windows.Forms.Label label45;
-        private System.Windows.Forms.Label label46;
-        private System.Windows.Forms.Label label47;
+        private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Label label63;
-        private System.Windows.Forms.Label label35;
-        private System.Windows.Forms.Button button27;
-        private System.Windows.Forms.Label label36;
-        private System.Windows.Forms.Label label37;
-        private System.Windows.Forms.Label label38;
-        private System.Windows.Forms.Panel panel10;
-        private System.Windows.Forms.Label label39;
-        private System.Windows.Forms.Label label48;
-        private System.Windows.Forms.Button button30;
-        private System.Windows.Forms.Label label49;
-        private System.Windows.Forms.Label label50;
-        private System.Windows.Forms.Label label51;
-        private System.Windows.Forms.Panel panel11;
-        private System.Windows.Forms.Label label52;
-        private System.Windows.Forms.Label label53;
-        private System.Windows.Forms.Button button31;
-        private System.Windows.Forms.Label label54;
-        private System.Windows.Forms.Label label55;
-        private System.Windows.Forms.Label label56;
-        private System.Windows.Forms.Panel panel12;
-        private System.Windows.Forms.Label label57;
-        private System.Windows.Forms.Label label58;
-        private System.Windows.Forms.Button button32;
-        private System.Windows.Forms.Label label59;
-        private System.Windows.Forms.Label label60;
-        private System.Windows.Forms.Label label61;
-        private System.Windows.Forms.Panel panel13;
-        private System.Windows.Forms.Label label62;
-        private System.Windows.Forms.Label label64;
-        private System.Windows.Forms.Button button33;
-        private System.Windows.Forms.Label label65;
-        private System.Windows.Forms.Label label66;
-        private System.Windows.Forms.Label label67;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
     }
 }

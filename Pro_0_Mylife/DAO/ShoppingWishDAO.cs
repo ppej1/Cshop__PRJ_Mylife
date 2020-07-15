@@ -30,7 +30,25 @@ namespace Pro_0_Mylife.DAO
                 MessageBox.Show(ex.ToString(), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+        public void loadshopList(DataSet ds,String email,int state)
+        {
+            try
+            {
 
+                string query = @"select * from shop_t where US_EMAIL ='#US_EMAIL' and SHP_STATE = '#SHP_STATE' order by SHOP_REGISTER desc";
+                query = query.Replace("#US_EMAIL", email);
+                query = query.Replace("#SHP_STATE", "" + state);
+                db.ExecuteDsQuery(ds, query);
+
+                if (ds == null || ds.Tables.Count == 0 || ds.Tables[0].Rows.Count == 0)
+                    return;
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString(), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
         public bool InsertShoppingList(ShoppingVO data)
         {
             DataSet ds = new DataSet();
@@ -64,7 +82,6 @@ namespace Pro_0_Mylife.DAO
                 query = query.Replace("#EXCHANGE_TYPE", "" + data.ExchangeType);
                 query = query.Replace("#PRICE", "" + data.Price);
                 query = query.Replace("#SHOP_URL", data.URL);
-                MessageBox.Show(query);
                 int result = db.ExecuteNonQuery(query);
                 if (result > 0)
                 {
