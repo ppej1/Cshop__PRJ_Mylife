@@ -1,6 +1,8 @@
-﻿using Pro_0_Mylife.DTO;
+﻿using Pro_0_Mylife.DAO;
+using Pro_0_Mylife.DTO;
 using Pro_0_Mylife.Handler;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -47,7 +49,7 @@ namespace Pro_0_Mylife
                     break;
             }
         }
-
+        /* login function */
         private void LoginSuccess(String userName)
         {
             _logIn_User.Email = userName;
@@ -63,6 +65,66 @@ namespace Pro_0_Mylife
             lb_UserEmail.Text = _logIn_User.Email;
         }
 
+
+        private void Lb_loginUser_Click(object sender, EventArgs e)
+        {
+            if (UserInfo_panel.Visible)
+            {
+                UserInfo_panel.Hide();
+            }
+            else
+            {
+                UserInfo_panel.Location = new Point(1040, 41);
+                UserInfo_panel.Show();
+            }
+        }
+
+        private void btn_signOut_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+            Application.Restart();
+        }
+
+        private void btn_UserModify_Click(object sender, EventArgs e)
+        {
+            Form_confirmPassword confirmPassword = new Form_confirmPassword(_logIn_User.Email);
+
+            confirmPassword.Owner = this;
+            switch (confirmPassword.ShowDialog())
+            {
+                case DialogResult.OK:
+                    confirmPassword.Close();
+                    loadSettingUser();
+                    break;
+                case DialogResult.Cancel:
+                    confirmPassword.Close();
+                    break;
+            }
+        }
+        private void loadSettingUser()
+        {
+            Form_SettingUser settingUser = new Form_SettingUser(_logIn_User.Email);
+
+            settingUser.Owner = this;
+            switch (settingUser.ShowDialog())
+            {
+                case DialogResult.OK:
+                    settingUser.Close();
+                    SettingUser();
+                    break;
+                case DialogResult.Yes:
+                    settingUser.Close();
+                    this.Dispose();
+                    Application.Restart();
+                    break;
+                case DialogResult.Cancel:
+                    settingUser.Close();
+                    break;
+            }
+        }
+
+
+        /* nav Menu */
         private void LOGO_Click(object sender, EventArgs e)
         {
             tab_form.SelectedIndex = 0;
@@ -90,6 +152,8 @@ namespace Pro_0_Mylife
         private void Btn_shp_Click(object sender, EventArgs e)
         {
             tab_form.SelectedIndex = 3;
+            loadShoppingProdType();
+            resetShoppingRegister();
             btn_setting(btn_shp);
 
         }
@@ -120,7 +184,7 @@ namespace Pro_0_Mylife
 
         /* function */
 
-        /* memo UI */
+        /* memo function */
         private void Lb_memo_Click(object sender, EventArgs e)
         {
             txt_memo.Focus();
@@ -199,11 +263,11 @@ namespace Pro_0_Mylife
                 LoadMemo();
             }
         }
-        /* memo UI END */
+        /* memo Function END */
 
 
 
-        /*TodoList UI */
+        /*TodoList Function */
 
         private void Todo_Calendar_DateChanged(object sender, DateRangeEventArgs e)
         {
@@ -443,66 +507,84 @@ namespace Pro_0_Mylife
 
         }
 
-        private void Lb_loginUser_Click(object sender, EventArgs e)
+        /*TodoList Function END */
+
+
+        /* ShoppingList Function */
+
+        private void btn_shpRegister_Click(object sender, EventArgs e)
         {
-            if (UserInfo_panel.Visible)
+            ShoppingWishDAO shpDAO = new ShoppingWishDAO();
+            if (CheckShoppingInsert())
             {
-                UserInfo_panel.Hide();
+                ShoppingVO shpData = new ShoppingVO(_logIn_User.Email, cb_shp_type.SelectedIndex, txt_shp_productName.Text, cb_shp_exchangeType.SelectedIndex, Convert.ToInt32(txt_shp_price.Text), txt_shp_URL.Text);
+                if (shpDAO.InsertShoppingList(shpData))
+                {
+                    resetShoppingRegister();
+                }
+            }
+        }
+
+        private bool CheckShoppingInsert()
+        {
+            int i = 0;
+            if (txt_shp_productName.Text.Equals(""))
+            {
+                MessageBox.Show("상품의 내용이 입력 되지 않았습니다.");
+                return false;
+            }
+            else if (txt_shp_price.Text.Equals(""))
+            {
+                MessageBox.Show("상품의 가격이 입력 되지 않았습니다.");
+                return false;
+            }
+            else if (!int.TryParse(txt_shp_price.Text, out i))
+            {
+                MessageBox.Show("상품가격은 숫자만 입력 됩니다.");
+                return false;
+
+            }
+            else if (txt_shp_URL.Text.Equals(""))
+            {
+                MessageBox.Show("상품의 주소이 입력 되지 않았습니다.");
+                return false;
             }
             else
             {
-                UserInfo_panel.Location = new Point(1040, 41);
-                UserInfo_panel.Show();
+                return true;
             }
         }
 
-        private void btn_signOut_Click(object sender, EventArgs e)
+        private void resetShoppingRegister()
         {
-            this.Dispose();
-            Application.Restart();
+            cb_shp_exchangeType.SelectedIndex = 1;
+            cb_shp_type.SelectedIndex = 0;
+            txt_shp_price.Text = "";
+            txt_shp_productName.Text = "";
+            txt_shp_URL.Text = "";
+
         }
 
-        private void btn_UserModify_Click(object sender, EventArgs e)
+        private void loadShoppingProdType()
         {
-            Form_confirmPassword confirmPassword = new Form_confirmPassword(_logIn_User.Email);
+            cb_shp_type.Items.Clear();
+            DataSet ds = new DataSet();
+            ShoppingWishDAO shoppingWishDAO = new ShoppingWishDAO();
+            shoppingWishDAO.SelectProdType(ds); 
+            DataTable dt = ds.Tables[0];
+            List<String> list = new List<string>();
 
-            confirmPassword.Owner = this;
-            switch (confirmPassword.ShowDialog())
+            foreach (DataRow row in dt.Rows)
             {
-                case DialogResult.OK:
-                    confirmPassword.Close();
-                    loadSettingUser();
-                    break;
-                case DialogResult.Cancel:
-                    confirmPassword.Close();
-                    break;
+                list.Add(row[1].ToString());
             }
+            string[] data = list.ToArray();
+            cb_shp_type.Items.AddRange(data);
         }
-        private void loadSettingUser()
+        private void loadShoppinglist()
         {
-            Form_SettingUser settingUser = new Form_SettingUser(_logIn_User.Email);
 
-            settingUser.Owner = this;
-            switch (settingUser.ShowDialog())
-            {
-                case DialogResult.OK:
-                    settingUser.Close();
-                    SettingUser();
-                    break;
-                case DialogResult.Yes:
-                    settingUser.Close();
-                    this.Dispose();
-                    Application.Restart();
-                    break;
-                case DialogResult.Cancel:
-                    settingUser.Close();
-                    break;
-            }
         }
-
-
-
-
 
         /* Function */
 

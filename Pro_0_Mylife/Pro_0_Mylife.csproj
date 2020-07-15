@@ -69,6 +69,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAO\ShoppingWishDAO.cs" />
     <Compile Include="DB\ConfigManager.cs" />
     <Compile Include="DTO\HouseKeepVO.cs" />
     <Compile Include="DTO\MemoVO.cs" />

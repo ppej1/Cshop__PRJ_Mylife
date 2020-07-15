@@ -13,3 +13,6 @@ D:\study\PR_0\Csharp\Pro_0_Mylife\Pro_0_Mylife\obj\x64\Release\Pro_0_Mylife.cspr
 D:\study\PR_0\Csharp\Pro_0_Mylife\Pro_0_Mylife\obj\x64\Release\Pro_0_Mylife.csproj.CopyComplete
 D:\study\PR_0\Csharp\Pro_0_Mylife\Pro_0_Mylife\obj\x64\Release\Pro_0_Mylife.exe
 D:\study\PR_0\Csharp\Pro_0_Mylife\Pro_0_Mylife\obj\x64\Release\Pro_0_Mylife.pdb
+D:\study\PR_0\Csharp\Pro_0_Mylife\Pro_0_Mylife\obj\x64\Release\Pro_0_Mylife.Form_confirmPassword.resources
+D:\study\PR_0\Csharp\Pro_0_Mylife\Pro_0_Mylife\obj\x64\Release\Pro_0_Mylife.Form_ProdTypeSet.resources
+D:\study\PR_0\Csharp\Pro_0_Mylife\Pro_0_Mylife\obj\x64\Release\Pro_0_Mylife.Form_SettingUser.resources
