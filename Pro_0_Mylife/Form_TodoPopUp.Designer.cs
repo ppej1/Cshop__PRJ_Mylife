@@ -97,6 +97,7 @@
             // 
             // Todo_EndMinute
             // 
+            this.Todo_EndMinute.BackColor = System.Drawing.Color.LightCyan;
             this.Todo_EndMinute.FormattingEnabled = true;
             this.Todo_EndMinute.Items.AddRange(new object[] {
             "00",
@@ -167,6 +168,7 @@
             // 
             // Todo_StartMinute
             // 
+            this.Todo_StartMinute.BackColor = System.Drawing.Color.LightCyan;
             this.Todo_StartMinute.FormattingEnabled = true;
             this.Todo_StartMinute.Items.AddRange(new object[] {
             "00",
@@ -237,6 +239,7 @@
             // 
             // Todo_StartHour
             // 
+            this.Todo_StartHour.BackColor = System.Drawing.Color.LightCyan;
             this.Todo_StartHour.FormattingEnabled = true;
             this.Todo_StartHour.Items.AddRange(new object[] {
             "08",
@@ -282,6 +285,7 @@
             // 
             // Todo_contents
             // 
+            this.Todo_contents.BackColor = System.Drawing.Color.LightCyan;
             this.Todo_contents.Location = new System.Drawing.Point(28, 88);
             this.Todo_contents.Multiline = true;
             this.Todo_contents.Name = "Todo_contents";
@@ -312,6 +316,7 @@
             // 
             // Todo_EndHour
             // 
+            this.Todo_EndHour.BackColor = System.Drawing.Color.LightCyan;
             this.Todo_EndHour.FormattingEnabled = true;
             this.Todo_EndHour.Items.AddRange(new object[] {
             "08",
@@ -346,6 +351,7 @@
             // 
             // Todo_EndDate
             // 
+            this.Todo_EndDate.CalendarMonthBackground = System.Drawing.Color.LightCyan;
             this.Todo_EndDate.Location = new System.Drawing.Point(28, 418);
             this.Todo_EndDate.Name = "Todo_EndDate";
             this.Todo_EndDate.Size = new System.Drawing.Size(218, 25);
@@ -354,6 +360,7 @@
             // 
             // Todo_startDate
             // 
+            this.Todo_startDate.CalendarMonthBackground = System.Drawing.Color.LightCyan;
             this.Todo_startDate.Location = new System.Drawing.Point(28, 347);
             this.Todo_startDate.Name = "Todo_startDate";
             this.Todo_startDate.Size = new System.Drawing.Size(218, 25);
@@ -384,8 +391,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Lavender;
-            this.ClientSize = new System.Drawing.Size(468, 601);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(468, 602);
             this.Controls.Add(this.ck_delete);
             this.Controls.Add(this.ck_modify);
             this.Controls.Add(this.Todo_EndMinute);

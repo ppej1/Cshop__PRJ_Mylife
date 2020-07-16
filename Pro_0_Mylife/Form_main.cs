@@ -19,11 +19,9 @@ namespace Pro_0_Mylife
     public partial class Form_main : Form
     {
         Form_login form_Login;
-        MemoDao memoDao = new MemoDao();
-        TodoListDao todoListDao = new TodoListDao();
         DateTime now = DateTime.Now;
         static UserVO _logIn_User = new UserVO();
-
+        static ArrayList shpCheck = new ArrayList();
         // main form
         public Form_main()
         {
@@ -31,7 +29,7 @@ namespace Pro_0_Mylife
             Memo_flowpanel.AutoScroll = true;
             todolistFlowPanel.AutoScroll = true;
             UserInfo_panel.Hide();
-
+            cb_shp_exchangeType.SelectedIndex = 1;
         }
 
 
@@ -154,9 +152,15 @@ namespace Pro_0_Mylife
             tab_form.SelectedIndex = 3;
             loadShoppingProdType();
             resetShoppingRegister();
-            loadshopList(0);
-            btn_setting(btn_shp);
 
+            
+            if(shp_tab_result.SelectedIndex == 0) 
+            {
+                loadshopList(shp_tab_result.SelectedIndex);
+            }
+            shp_tab_result.SelectedIndex = 0;
+
+            btn_setting(btn_shp);
         }
 
         private void Btn_hk_click(object sender, EventArgs e)
@@ -177,8 +181,6 @@ namespace Pro_0_Mylife
             btn_shp.ForeColor = Color.FromArgb(255, 255, 255);
             btn_select.BackColor = Color.FromArgb(255, 255, 255);
             btn_select.ForeColor = Color.FromArgb(0, 0, 0);
-
-
         }
         /*  main form  End*/
 
@@ -193,6 +195,7 @@ namespace Pro_0_Mylife
 
         private void memo_add_Click(object sender, EventArgs e)
         {
+            MemoDao memoDao = new MemoDao();
             TodolistHandler todolistHandler = new TodolistHandler();
             MemoVO memo = new MemoVO(txt_memo.Text, _logIn_User.Email);
             if (todolistHandler.CheckTextEmpty(memo.MemoContents))
@@ -208,7 +211,7 @@ namespace Pro_0_Mylife
         private void LoadMemo()
         {
             Memo_flowpanel.Controls.Clear();
-
+            MemoDao memoDao = new MemoDao();
             DataSet ds = new System.Data.DataSet();
 
             memoDao.SelectMemo(ds, _logIn_User.Email);
@@ -259,6 +262,7 @@ namespace Pro_0_Mylife
         }
         private void delete_memo_click(object sender, EventArgs e)
         {
+            MemoDao memoDao = new MemoDao();
             Button btn = (Button)sender;
             if (memoDao.DeleteMemo(btn.Name))
             {
@@ -345,6 +349,7 @@ namespace Pro_0_Mylife
 
         private void btn_TodoRegister_Click(object sender, EventArgs e)
         {
+            TodoListDao todoListDao = new TodoListDao();
             TodolistHandler todolistHandler = new TodolistHandler();
             DateTime startDate = DateTime.ParseExact(Todo_startDate.Value.ToString("MM-dd-yyyy") +" "+ Todo_StartHour.Text + ":" + Todo_StartMinute.Text + ":00", "MM-dd-yyyy HH:mm:ss", System.Globalization.CultureInfo.InvariantCulture);
             DateTime todoDeadLine = DateTime.ParseExact(Todo_EndDate.Value.ToString("MM-dd-yyyy") + " " + Todo_EndHour.Text + ":" + Todo_EndMinute.Text + ":00", "MM-dd-yyyy HH:mm:ss", System.Globalization.CultureInfo.InvariantCulture);
@@ -381,6 +386,7 @@ namespace Pro_0_Mylife
 
         private void LoadAllTodolist(DateTime selectDate)
         {
+            TodoListDao todoListDao = new TodoListDao();
             DataSet ds = new DataSet();
             todoListDao.SelectTodoList(ds, _logIn_User.Email, selectDate);
             LoadTodolist(ds);
@@ -469,6 +475,7 @@ namespace Pro_0_Mylife
 
         private void TodoCheckStateChanged(object sender, EventArgs e)
         {
+            TodoListDao todoListDao = new TodoListDao();
             CheckBox chk = (CheckBox)sender;            
             todoListDao.ChangeChecklistState(chk.Name, chk.Checked);           
             LoadAllTodolist(Todo_Calendar.SelectionStart);
@@ -477,6 +484,7 @@ namespace Pro_0_Mylife
 
         private void btn_search_Click(object sender, EventArgs e)
         {
+            TodoListDao todoListDao = new TodoListDao();
             if (!txt_todoSearch.Text.Equals(""))
             {
                 DataSet ds = new DataSet();
@@ -516,13 +524,14 @@ namespace Pro_0_Mylife
 
         private void btn_shpRegister_Click(object sender, EventArgs e)
         {
-            ShoppingWishDAO shpDAO = new ShoppingWishDAO();
+            ShoppingWishDAO shoppingWishDAO = new ShoppingWishDAO();
             if (CheckShoppingInsert())
             {
                 ShoppingVO shpData = new ShoppingVO(_logIn_User.Email, cb_shp_type.SelectedIndex, txt_shp_productName.Text, cb_shp_exchangeType.SelectedIndex, Convert.ToInt32(txt_shp_price.Text), txt_shp_URL.Text);
-                if (shpDAO.InsertShoppingList(shpData))
+                if (shoppingWishDAO.InsertShoppingList(shpData))
                 {
                     resetShoppingRegister();
+                    loadshopList(shp_tab_result.SelectedIndex);
                 }
             }
         }
@@ -559,19 +568,18 @@ namespace Pro_0_Mylife
 
         private void resetShoppingRegister()
         {
-            cb_shp_exchangeType.SelectedIndex = 1;
             cb_shp_type.SelectedIndex = 0;
             txt_shp_price.Text = "";
             txt_shp_productName.Text = "";
             txt_shp_URL.Text = "";
-
         }
 
         private void loadShoppingProdType()
         {
+            ShoppingWishDAO shoppingWishDAO = new ShoppingWishDAO();
+
             cb_shp_type.Items.Clear();
             DataSet ds = new DataSet();
-            ShoppingWishDAO shoppingWishDAO = new ShoppingWishDAO();
             shoppingWishDAO.SelectProdType(ds); 
             DataTable dt = ds.Tables[0];
             List<String> list = new List<string>();
@@ -583,13 +591,21 @@ namespace Pro_0_Mylife
             string[] data = list.ToArray();
             cb_shp_type.Items.AddRange(data);
         }
+
         private void loadshopList(int state)
         {
-            flp_wishShp.Controls.Clear();
-            DataSet ds = new DataSet();
             ShoppingWishDAO shoppingWishDAO = new ShoppingWishDAO();
+
+            shpCheck.Clear();
+            flp_wishShp.Hide();
+            flp_purchasedList.Hide();
+            flp_wishShp.Controls.Clear();
+            flp_purchasedList.Controls.Clear();
+            DataSet ds = new DataSet();
+            ShoppingHandler shoppingHandler = new ShoppingHandler();
             shoppingWishDAO.loadshopList(ds,_logIn_User.Email, state);
             DataTable dt = ds.Tables[0];
+
             foreach(DataRow row in dt.Rows)
             {
                 Panel pnl = new Panel();
@@ -610,70 +626,61 @@ namespace Pro_0_Mylife
                 ch_wishShp.Size = new Size(14, 14);
                 ch_wishShp.Location = new Point(12, 38);
                 ch_wishShp.Name = String.Format("{0}", row["SHOP_NO"].ToString());
+                ch_wishShp.CheckedChanged += ch_wishShp_Change;
 
                 txt_Type.AutoSize = false;
                 txt_Type.Size = new Size(180,20);
                 txt_Type.Location = new Point(50, 5);
-                txt_Type.BackColor = Color.FromArgb(255, 25, 255);
+                txt_Type.BackColor = Color.FromArgb(255, 255, 255);
                 txt_Type.BorderStyle = BorderStyle.None;
                 txt_Type.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
                 txt_Type.Name = String.Format("txt_DDayt_{0}", row["SHOP_NO"].ToString());
-                txt_Type.Text = String.Format("{0}", row["PROD_TYPE"].ToString());
+                DataSet tds = new DataSet();
+                shoppingWishDAO.SelectOneProdType(tds, Convert.ToInt32(row["PROD_TYPE"].ToString()));
+                DataTable ttb = tds.Tables[0];
+                txt_Type.Text = String.Format("{0}", ttb.Rows[0]["PROD_T_NAME"].ToString());
 
 
-
-                txt_contents.AutoSize = false;
-                txt_contents.Size = new Size(550, 40);
-                txt_contents.Location = new Point(50, 30);
-                txt_contents.BackColor = Color.FromArgb(255, 25, 255);
-                txt_contents.BorderStyle = BorderStyle.None;
-                txt_contents.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
                 txt_contents.Text = String.Format("{0}", row["SHOP_NAME"].ToString());
                 txt_contents.Name = String.Format("{0}", row["SHOP_NO"].ToString());
+                txt_contents.AutoSize = false;
+                txt_contents.Size = new Size(590, 40);
+                txt_contents.Location = new Point(50, 30);
+                txt_contents.BackColor = Color.FromArgb(255, 255, 255);
+                txt_contents.BorderStyle = BorderStyle.None;
+                txt_contents.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 
+                txt_registerDate.Text = String.Format("{0}", DateTime.Parse(row["SHOP_REGISTER"].ToString()).ToString("yyyy-MM-dd"));
+                txt_registerDate.Name = String.Format("txt_Period_{0}", row["SHOP_NO"].ToString());
                 txt_registerDate.AutoSize = false;
-                txt_registerDate.Size = new Size(80, 20);
+                txt_registerDate.Size = new Size(70, 20);
                 txt_registerDate.Location = new Point(50, 75);
-                txt_registerDate.BackColor = Color.FromArgb(255, 25, 255);
+                txt_registerDate.BackColor = Color.FromArgb(255, 255, 255);
                 txt_registerDate.BorderStyle = BorderStyle.None;
                 txt_registerDate.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-                txt_registerDate.Text = String.Format("{0}", row["SHOP_REGISTER"].ToString());
-                txt_registerDate.Name = String.Format("txt_Period_{0}", row["SHOP_NO"].ToString());
 
+
+
+                txt_price.Name = String.Format("txt_state_{0}", row["SHOP_NO"].ToString());
+                txt_price.Text = String.Format("{0}", shoppingHandler.ExchangeSet(cb_shp_exchangeType.SelectedIndex, row["EXCHANGE_TYPE"].ToString(), row["PRICE"].ToString()));
                 txt_price.AutoSize = false;
-                txt_price.Size = new Size(70, 20);
-                txt_price.Location = new Point(530, 75);
-                txt_price.BackColor = Color.FromArgb(255, 25, 255);
+                txt_price.Size = new Size(100, 20);
+                txt_price.Location = new Point(500, 75);
+                txt_price.BackColor = Color.FromArgb(255, 255, 255);
                 txt_price.BorderStyle = BorderStyle.None;
                 txt_price.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-                txt_price.Name = String.Format("txt_state_{0}", row["SHOP_NO"].ToString());
-                txt_price.Text = String.Format("{0}", row["PRICE"].ToString());
 
-                btn_URL.AutoSize = false;
-                btn_URL.Size = new Size(130, 20);
-                btn_URL.Location = new Point(610, 75);
-                btn_URL.BackColor = Color.FromArgb(255, 25, 255);
-                btn_URL.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-                btn_URL.Name = String.Format("txt_state_{0}", row["SHOP_NO"].ToString());
+ 
+                btn_URL.Name = String.Format("{0}", row["SHOP_URL"].ToString());
                 btn_URL.Text = String.Format("판매사이트로 가기");
+                btn_URL.AutoSize = false;
+                btn_URL.Size = new Size(130, 25);
+                btn_URL.Location = new Point(610, 70);
+                btn_URL.BackColor = Color.FromArgb(128, 255, 128);
+                btn_URL.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+                btn_URL.FlatStyle = FlatStyle.Flat;
+                btn_URL.Click += btn_URL_Click;
 
-                txt_buyDate.AutoSize = false;
-                txt_buyDate.Size = new Size(90, 40);
-                txt_buyDate.Location = new Point(600, 9);
-                txt_buyDate.BackColor = Color.FromArgb(255, 25, 255);
-                txt_buyDate.BorderStyle = BorderStyle.None;
-                txt_buyDate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-                txt_buyDate.Name = String.Format("txt_state_{0}", row["SHOP_NO"].ToString());
-                txt_buyDate.Text = String.Format("{0}", row["BUY_DATE"].ToString());
-
-                txt_state.AutoSize = false;
-                txt_state.Size = new Size(90, 40);
-                txt_state.Location = new Point(600, 9);
-                txt_state.BackColor = Color.FromArgb(255, 25, 255);
-                txt_state.BorderStyle = BorderStyle.None;
-                txt_state.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-                txt_state.Name = String.Format("txt_state_{0}", row["SHOP_NO"].ToString());
-                txt_state.Text = String.Format("{0}", row["SHP_STATE"].ToString());
 
                 pnl.Controls.Add(ch_wishShp);
                 pnl.Controls.Add(txt_Type);
@@ -682,16 +689,114 @@ namespace Pro_0_Mylife
                 pnl.Controls.Add(txt_price);
                 pnl.Controls.Add(btn_URL);
 
-                pnl.Controls.Add(txt_buyDate);
-                pnl.Controls.Add(txt_state);
 
-                flp_wishShp.Controls.Add(pnl);
+                if (shp_tab_result.SelectedIndex == 1)
+                {
+                    txt_buyDate.Name = String.Format("txt_state_{0}", row["SHOP_NO"].ToString());
+                    txt_buyDate.Text = String.Format("({0})", DateTime.Parse(row["BUY_DATE"].ToString()).ToString("yyyy-MM-dd"));
+                    txt_buyDate.AutoSize = false;
+                    txt_buyDate.Size = new Size(80, 20);
+                    txt_buyDate.Location = new Point(120, 75);
+                    txt_buyDate.BackColor = Color.FromArgb(255, 255, 255);
+                    txt_buyDate.BorderStyle = BorderStyle.None;
+                    txt_buyDate.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 
+                    txt_state.Name = String.Format("txt_state_{0}", row["SHOP_NO"].ToString());
+                    txt_state.Text = String.Format("구매완료");
+                    txt_state.AutoSize = false;
+                    txt_state.Size = new Size(90, 40);
+                    txt_state.Location = new Point(650, 30);
+                    txt_state.BackColor = Color.FromArgb(255, 255, 255);
+                    txt_state.BorderStyle = BorderStyle.None;
+                    txt_state.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+ 
 
-
-
+                    pnl.Controls.Add(txt_buyDate);
+                    pnl.Controls.Add(txt_state);
+                    flp_purchasedList.Controls.Add(pnl);
+                }
+                else
+                {
+                    flp_wishShp.Controls.Add(pnl);
+                }
             }
+            flp_purchasedList.Show();
+            flp_wishShp.Show();
+
+            ShoppingInfo();
+            
         }
+        private void ShoppingInfo()
+        {
+            
+            ShoppingHandler shoppingHandler = new ShoppingHandler();
+            List<float> wishList = shoppingHandler.CalshoppingList(cb_shp_exchangeType.SelectedIndex,_logIn_User.Email,0);
+            List<float> purchasedList = shoppingHandler.CalshoppingList(cb_shp_exchangeType.SelectedIndex,_logIn_User.Email, 1);
+            float totalNo = wishList[0] + purchasedList[0];
+            float totalMoney = wishList[1] + purchasedList[1];
+
+            lb_shp_wishNo.Text = wishList[0].ToString("N0");
+            lb_shp_purchasedNo.Text = purchasedList[0].ToString("N0");
+            lb_shp_TotalNo.Text = totalNo.ToString("N0");
+
+            lb_shp_wishMoney.Text = shoppingHandler.AddExchangeType(cb_shp_exchangeType.SelectedIndex,wishList[1].ToString("N0"));
+            lb_shp_purchasedMoney.Text = shoppingHandler.AddExchangeType(cb_shp_exchangeType.SelectedIndex,purchasedList[1].ToString("N0"));
+            lb_shp_TotalMoney.Text = shoppingHandler.AddExchangeType(cb_shp_exchangeType.SelectedIndex,totalMoney.ToString("N0"));
+
+            shp_chart.Series["Series"].Points.Clear();
+            shp_chart.Series["Series"].Points.Add(wishList[1]);
+            shp_chart.Series["Series"].Points.Add(purchasedList[1]);
+            shp_chart.Series["Series"].Points[0].LegendText = "wishList";
+            shp_chart.Series["Series"].Points[1].LegendText = "purchasedList";
+        }
+
+        private void shp_tab_result_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            loadshopList(shp_tab_result.SelectedIndex);
+        }
+
+        private void cb_shp_exchangeType_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            loadshopList(shp_tab_result.SelectedIndex);
+        }
+        private void btn_URL_Click(object sender, EventArgs e)
+        {
+            Button btn_URL = (Button)sender;
+            System.Diagnostics.Process.Start(btn_URL.Name);
+        }
+        private void ch_wishShp_Change(object sender, EventArgs e)
+        {
+            CheckBox ch_wish = (CheckBox)sender;
+            if (ch_wish.Checked)
+            {
+                shpCheck.Add(ch_wish.Name);
+            }
+            else
+            {
+                shpCheck.Remove(ch_wish.Name);
+            }
+
+        }
+        private void btn_shpAdd_Click(object sender, EventArgs e)
+        {
+            ShoppingWishDAO shoppingWishDAO = new ShoppingWishDAO();
+
+            bool result = false;
+            foreach (string chNo in shpCheck)
+            {
+                if (shoppingWishDAO.purchaseShpList(chNo))
+                {
+                    result = true;
+                }
+            }
+            if (result)
+            {
+                loadshopList(shp_tab_result.SelectedIndex);
+            }
+
+        }
+
+
 
         /* Function */
 
