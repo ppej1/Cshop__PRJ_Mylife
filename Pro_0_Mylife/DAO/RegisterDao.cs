@@ -11,13 +11,14 @@ namespace Pro_0_Mylife
 {
     class RegisterDao
     {
+        OracleDBManager db = new OracleDBManager();
+
         public bool InsertEmployeeData(UserVO user)
         {
             try
             {
                 DataSet ds = new DataSet();
                 string query = string.Empty;
-                OracleDBManager db = new OracleDBManager();
 
                 query = @"
             INSERT INTO root2.USER_T(
@@ -67,7 +68,6 @@ namespace Pro_0_Mylife
             try
             {
                 DataSet ds = new DataSet();
-                OracleDBManager db = new OracleDBManager();
                 String query = @"SELECT US_EMAIL,US_PWD FROM root2.USER_T WHERE US_EMAIL = '#id'";
 
                 query = query.Replace("#id", user.Email);
@@ -91,7 +91,6 @@ namespace Pro_0_Mylife
         }
         public bool withdraw (UserVO user)
         {
-            OracleDBManager db = new OracleDBManager();
             DataSet ds = new DataSet();
             string query = string.Empty;
 
@@ -122,7 +121,6 @@ namespace Pro_0_Mylife
 
         public bool confirmUser(UserVO user)
         {
-            OracleDBManager db = new OracleDBManager();
             DataSet ds = new DataSet();
             string query = string.Empty;
 

@@ -185,6 +185,7 @@ namespace Pro_0_Mylife
                 LastExecutedCommand = cmd;
                 result = cmd.ExecuteNonQuery();
 
+
             }
             catch(Exception ex)
             {

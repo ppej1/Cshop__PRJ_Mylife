@@ -16,7 +16,6 @@ namespace Pro_0_Mylife.DAO
         {
             try
             {
-                
                 string query = @"SELECT * FROM PROD_T ORDER BY PROD_TYPE ASC";
 
                 db.ExecuteDsQuery(ds, query);
@@ -34,7 +33,6 @@ namespace Pro_0_Mylife.DAO
         {
             try
             {
-
                 string query = @"SELECT PROD_T_NAME FROM PROD_T WHERE PROD_TYPE = '#PROD_TYPE'";
                 query = query.Replace("#PROD_TYPE", "" + prodType);
 

@@ -32,6 +32,15 @@
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.tab_form = new System.Windows.Forms.TabControl();
             this.tab_home = new System.Windows.Forms.TabPage();
             this.panel23 = new System.Windows.Forms.Panel();
@@ -96,78 +105,6 @@
             this.pnl_shp_side2 = new System.Windows.Forms.Panel();
             this.flp_purchasedList = new System.Windows.Forms.FlowLayoutPanel();
             this.tab_HouseKeep = new System.Windows.Forms.TabPage();
-            this.panel24 = new System.Windows.Forms.Panel();
-            this.home_tab_list = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.panel27 = new System.Windows.Forms.Panel();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.panel45 = new System.Windows.Forms.Panel();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.panel44 = new System.Windows.Forms.Panel();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.home_tab_insert = new System.Windows.Forms.TabControl();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.button1 = new System.Windows.Forms.Button();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.button2 = new System.Windows.Forms.Button();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
-            this.comboBox7 = new System.Windows.Forms.ComboBox();
-            this.comboBox6 = new System.Windows.Forms.ComboBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.button5 = new System.Windows.Forms.Button();
-            this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.button24 = new System.Windows.Forms.Button();
-            this.button23 = new System.Windows.Forms.Button();
-            this.button22 = new System.Windows.Forms.Button();
-            this.button21 = new System.Windows.Forms.Button();
-            this.button20 = new System.Windows.Forms.Button();
-            this.button19 = new System.Windows.Forms.Button();
-            this.button18 = new System.Windows.Forms.Button();
-            this.button17 = new System.Windows.Forms.Button();
-            this.button16 = new System.Windows.Forms.Button();
-            this.button15 = new System.Windows.Forms.Button();
-            this.button14 = new System.Windows.Forms.Button();
-            this.button13 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.label24 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.home_tab_result = new System.Windows.Forms.TabControl();
-            this.tabPage6 = new System.Windows.Forms.TabPage();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
-            this.panel25 = new System.Windows.Forms.Panel();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.tabPage7 = new System.Windows.Forms.TabPage();
-            this.panel43 = new System.Windows.Forms.Panel();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.UserInfo_panel = new System.Windows.Forms.Panel();
             this.btn_UserModify = new System.Windows.Forms.Button();
             this.btn_signOut = new System.Windows.Forms.Button();
@@ -183,6 +120,118 @@
             this.btn_hk = new System.Windows.Forms.Button();
             this.btn_memo = new System.Windows.Forms.Button();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.home_tab_list = new System.Windows.Forms.TabControl();
+            this.hk_Month = new System.Windows.Forms.TabPage();
+            this.home_tab_result = new System.Windows.Forms.TabControl();
+            this.hk_month_table = new System.Windows.Forms.TabPage();
+            this.panel27 = new System.Windows.Forms.Panel();
+            this.chart3 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.panel44 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.home_tab_insert = new System.Windows.Forms.TabControl();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.button1 = new System.Windows.Forms.Button();
+            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.comboBox5 = new System.Windows.Forms.ComboBox();
+            this.comboBox7 = new System.Windows.Forms.ComboBox();
+            this.comboBox6 = new System.Windows.Forms.ComboBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
+            this.panel25 = new System.Windows.Forms.Panel();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.hk_month_Analysis = new System.Windows.Forms.TabPage();
+            this.panel43 = new System.Windows.Forms.Panel();
+            this.hk_year = new System.Windows.Forms.TabPage();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.chart2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.button6 = new System.Windows.Forms.Button();
+            this.label24 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
+            this.button10 = new System.Windows.Forms.Button();
+            this.button11 = new System.Windows.Forms.Button();
+            this.button13 = new System.Windows.Forms.Button();
+            this.button14 = new System.Windows.Forms.Button();
+            this.button15 = new System.Windows.Forms.Button();
+            this.button17 = new System.Windows.Forms.Button();
+            this.button18 = new System.Windows.Forms.Button();
+            this.button19 = new System.Windows.Forms.Button();
+            this.button21 = new System.Windows.Forms.Button();
+            this.button22 = new System.Windows.Forms.Button();
+            this.button23 = new System.Windows.Forms.Button();
+            this.button25 = new System.Windows.Forms.Button();
+            this.button26 = new System.Windows.Forms.Button();
+            this.button27 = new System.Windows.Forms.Button();
+            this.button28 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.comboBox8 = new System.Windows.Forms.ComboBox();
+            this.comboBox9 = new System.Windows.Forms.ComboBox();
+            this.lb_exchange = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.label30 = new System.Windows.Forms.Label();
+            this.label31 = new System.Windows.Forms.Label();
+            this.label32 = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.label35 = new System.Windows.Forms.Label();
+            this.label36 = new System.Windows.Forms.Label();
+            this.label37 = new System.Windows.Forms.Label();
+            this.label38 = new System.Windows.Forms.Label();
+            this.label39 = new System.Windows.Forms.Label();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.label40 = new System.Windows.Forms.Label();
+            this.label41 = new System.Windows.Forms.Label();
+            this.label42 = new System.Windows.Forms.Label();
+            this.label43 = new System.Windows.Forms.Label();
+            this.label44 = new System.Windows.Forms.Label();
             this.tab_form.SuspendLayout();
             this.tab_home.SuspendLayout();
             this.tab_Memo.SuspendLayout();
@@ -200,24 +249,34 @@
             this.tabPage_purechased.SuspendLayout();
             this.pnl_shp_purchased.SuspendLayout();
             this.tab_HouseKeep.SuspendLayout();
-            this.panel24.SuspendLayout();
-            this.home_tab_list.SuspendLayout();
-            this.tabPage1.SuspendLayout();
-            this.panel27.SuspendLayout();
-            this.panel45.SuspendLayout();
-            this.panel44.SuspendLayout();
-            this.home_tab_insert.SuspendLayout();
-            this.tabPage3.SuspendLayout();
-            this.tabPage4.SuspendLayout();
-            this.tabPage5.SuspendLayout();
-            this.home_tab_result.SuspendLayout();
-            this.tabPage6.SuspendLayout();
-            this.flowLayoutPanel2.SuspendLayout();
-            this.panel25.SuspendLayout();
             this.UserInfo_panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.Top_panel.SuspendLayout();
             this.pnl_nav.SuspendLayout();
+            this.home_tab_list.SuspendLayout();
+            this.hk_Month.SuspendLayout();
+            this.home_tab_result.SuspendLayout();
+            this.hk_month_table.SuspendLayout();
+            this.panel27.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chart3)).BeginInit();
+            this.flowLayoutPanel3.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.panel44.SuspendLayout();
+            this.home_tab_insert.SuspendLayout();
+            this.tabPage3.SuspendLayout();
+            this.tabPage4.SuspendLayout();
+            this.flowLayoutPanel2.SuspendLayout();
+            this.panel25.SuspendLayout();
+            this.hk_month_Analysis.SuspendLayout();
+            this.panel8.SuspendLayout();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart2)).BeginInit();
+            this.panel3.SuspendLayout();
+            this.panel4.SuspendLayout();
+            this.panel5.SuspendLayout();
+            this.panel6.SuspendLayout();
+            this.panel10.SuspendLayout();
             this.SuspendLayout();
             // 
             // tab_form
@@ -495,6 +554,7 @@
             // Todo_Calendar
             // 
             this.Todo_Calendar.BackColor = System.Drawing.Color.LightCyan;
+            this.Todo_Calendar.Cursor = System.Windows.Forms.Cursors.Default;
             resources.ApplyResources(this.Todo_Calendar, "Todo_Calendar");
             this.Todo_Calendar.Name = "Todo_Calendar";
             this.Todo_Calendar.DateChanged += new System.Windows.Forms.DateRangeEventHandler(this.Todo_Calendar_DateChanged);
@@ -513,6 +573,7 @@
             // Todo_StartHour
             // 
             this.Todo_StartHour.BackColor = System.Drawing.Color.LightCyan;
+            resources.ApplyResources(this.Todo_StartHour, "Todo_StartHour");
             this.Todo_StartHour.FormattingEnabled = true;
             this.Todo_StartHour.Items.AddRange(new object[] {
             resources.GetString("Todo_StartHour.Items"),
@@ -539,7 +600,6 @@
             resources.GetString("Todo_StartHour.Items21"),
             resources.GetString("Todo_StartHour.Items22"),
             resources.GetString("Todo_StartHour.Items23")});
-            resources.ApplyResources(this.Todo_StartHour, "Todo_StartHour");
             this.Todo_StartHour.Name = "Todo_StartHour";
             this.Todo_StartHour.SelectedIndexChanged += new System.EventHandler(this.CkStartHourChanged);
             // 
@@ -551,6 +611,8 @@
             // Todo_contents
             // 
             this.Todo_contents.BackColor = System.Drawing.Color.LightCyan;
+            this.Todo_contents.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Todo_contents.ForeColor = System.Drawing.SystemColors.WindowText;
             resources.ApplyResources(this.Todo_contents, "Todo_contents");
             this.Todo_contents.Name = "Todo_contents";
             // 
@@ -726,7 +788,7 @@
             // 
             // cb_shp_exchangeType
             // 
-            this.cb_shp_exchangeType.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.cb_shp_exchangeType.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(255)))), ((int)(((byte)(180)))));
             this.cb_shp_exchangeType.FormattingEnabled = true;
             this.cb_shp_exchangeType.Items.AddRange(new object[] {
             resources.GetString("cb_shp_exchangeType.Items"),
@@ -738,7 +800,7 @@
             // 
             // cb_shp_type
             // 
-            this.cb_shp_type.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.cb_shp_type.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(255)))), ((int)(((byte)(180)))));
             this.cb_shp_type.FormattingEnabled = true;
             resources.ApplyResources(this.cb_shp_type, "cb_shp_type");
             this.cb_shp_type.Name = "cb_shp_type";
@@ -769,19 +831,19 @@
             // 
             // txt_shp_productName
             // 
-            this.txt_shp_productName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.txt_shp_productName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(255)))), ((int)(((byte)(180)))));
             resources.ApplyResources(this.txt_shp_productName, "txt_shp_productName");
             this.txt_shp_productName.Name = "txt_shp_productName";
             // 
             // txt_shp_price
             // 
-            this.txt_shp_price.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.txt_shp_price.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(255)))), ((int)(((byte)(180)))));
             resources.ApplyResources(this.txt_shp_price, "txt_shp_price");
             this.txt_shp_price.Name = "txt_shp_price";
             // 
             // txt_shp_URL
             // 
-            this.txt_shp_URL.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.txt_shp_URL.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(255)))), ((int)(((byte)(180)))));
             resources.ApplyResources(this.txt_shp_URL, "txt_shp_URL");
             this.txt_shp_URL.Name = "txt_shp_URL";
             // 
@@ -804,7 +866,7 @@
             // 
             // btn_shpAdd
             // 
-            this.btn_shpAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.btn_shpAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(255)))), ((int)(((byte)(180)))));
             this.btn_shpAdd.FlatAppearance.BorderSize = 0;
             resources.ApplyResources(this.btn_shpAdd, "btn_shpAdd");
             this.btn_shpAdd.ForeColor = System.Drawing.SystemColors.ControlText;
@@ -829,7 +891,7 @@
             // flp_wishShp
             // 
             resources.ApplyResources(this.flp_wishShp, "flp_wishShp");
-            this.flp_wishShp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.flp_wishShp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(255)))), ((int)(((byte)(180)))));
             this.flp_wishShp.Name = "flp_wishShp";
             // 
             // tabPage_purechased
@@ -856,492 +918,15 @@
             // flp_purchasedList
             // 
             resources.ApplyResources(this.flp_purchasedList, "flp_purchasedList");
-            this.flp_purchasedList.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.flp_purchasedList.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(255)))), ((int)(((byte)(180)))));
             this.flp_purchasedList.Name = "flp_purchasedList";
             // 
             // tab_HouseKeep
             // 
             this.tab_HouseKeep.BackColor = System.Drawing.Color.White;
-            this.tab_HouseKeep.Controls.Add(this.panel24);
+            this.tab_HouseKeep.Controls.Add(this.home_tab_list);
             resources.ApplyResources(this.tab_HouseKeep, "tab_HouseKeep");
             this.tab_HouseKeep.Name = "tab_HouseKeep";
-            // 
-            // panel24
-            // 
-            this.panel24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.panel24.Controls.Add(this.home_tab_list);
-            resources.ApplyResources(this.panel24, "panel24");
-            this.panel24.Name = "panel24";
-            // 
-            // home_tab_list
-            // 
-            this.home_tab_list.Controls.Add(this.tabPage1);
-            this.home_tab_list.Controls.Add(this.tabPage2);
-            this.home_tab_list.HotTrack = true;
-            resources.ApplyResources(this.home_tab_list, "home_tab_list");
-            this.home_tab_list.Multiline = true;
-            this.home_tab_list.Name = "home_tab_list";
-            this.home_tab_list.SelectedIndex = 0;
-            // 
-            // tabPage1
-            // 
-            this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.tabPage1.Controls.Add(this.panel27);
-            this.tabPage1.Controls.Add(this.comboBox1);
-            this.tabPage1.Controls.Add(this.comboBox2);
-            this.tabPage1.Controls.Add(this.home_tab_result);
-            this.tabPage1.Controls.Add(this.panel43);
-            resources.ApplyResources(this.tabPage1, "tabPage1");
-            this.tabPage1.Name = "tabPage1";
-            // 
-            // panel27
-            // 
-            this.panel27.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.panel27.Controls.Add(this.dateTimePicker1);
-            this.panel27.Controls.Add(this.panel45);
-            this.panel27.Controls.Add(this.panel44);
-            this.panel27.Controls.Add(this.home_tab_insert);
-            resources.ApplyResources(this.panel27, "panel27");
-            this.panel27.Name = "panel27";
-            // 
-            // dateTimePicker1
-            // 
-            resources.ApplyResources(this.dateTimePicker1, "dateTimePicker1");
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            // 
-            // panel45
-            // 
-            this.panel45.Controls.Add(this.label23);
-            this.panel45.Controls.Add(this.label22);
-            this.panel45.Controls.Add(this.label21);
-            this.panel45.Controls.Add(this.label20);
-            this.panel45.Controls.Add(this.label19);
-            resources.ApplyResources(this.panel45, "panel45");
-            this.panel45.Name = "panel45";
-            // 
-            // label23
-            // 
-            resources.ApplyResources(this.label23, "label23");
-            this.label23.Name = "label23";
-            // 
-            // label22
-            // 
-            resources.ApplyResources(this.label22, "label22");
-            this.label22.Name = "label22";
-            // 
-            // label21
-            // 
-            resources.ApplyResources(this.label21, "label21");
-            this.label21.Name = "label21";
-            // 
-            // label20
-            // 
-            resources.ApplyResources(this.label20, "label20");
-            this.label20.Name = "label20";
-            // 
-            // label19
-            // 
-            resources.ApplyResources(this.label19, "label19");
-            this.label19.Name = "label19";
-            // 
-            // panel44
-            // 
-            this.panel44.Controls.Add(this.label18);
-            this.panel44.Controls.Add(this.label17);
-            this.panel44.Controls.Add(this.label16);
-            this.panel44.Controls.Add(this.label15);
-            this.panel44.Controls.Add(this.label14);
-            this.panel44.Controls.Add(this.label13);
-            resources.ApplyResources(this.panel44, "panel44");
-            this.panel44.Name = "panel44";
-            // 
-            // label18
-            // 
-            resources.ApplyResources(this.label18, "label18");
-            this.label18.Name = "label18";
-            // 
-            // label17
-            // 
-            resources.ApplyResources(this.label17, "label17");
-            this.label17.Name = "label17";
-            // 
-            // label16
-            // 
-            resources.ApplyResources(this.label16, "label16");
-            this.label16.Name = "label16";
-            // 
-            // label15
-            // 
-            resources.ApplyResources(this.label15, "label15");
-            this.label15.Name = "label15";
-            // 
-            // label14
-            // 
-            resources.ApplyResources(this.label14, "label14");
-            this.label14.Name = "label14";
-            // 
-            // label13
-            // 
-            resources.ApplyResources(this.label13, "label13");
-            this.label13.Name = "label13";
-            // 
-            // home_tab_insert
-            // 
-            this.home_tab_insert.Controls.Add(this.tabPage3);
-            this.home_tab_insert.Controls.Add(this.tabPage4);
-            this.home_tab_insert.Controls.Add(this.tabPage5);
-            resources.ApplyResources(this.home_tab_insert, "home_tab_insert");
-            this.home_tab_insert.Name = "home_tab_insert";
-            this.home_tab_insert.SelectedIndex = 0;
-            // 
-            // tabPage3
-            // 
-            this.tabPage3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.tabPage3.Controls.Add(this.button1);
-            this.tabPage3.Controls.Add(this.comboBox4);
-            this.tabPage3.Controls.Add(this.comboBox3);
-            this.tabPage3.Controls.Add(this.textBox2);
-            this.tabPage3.Controls.Add(this.textBox1);
-            resources.ApplyResources(this.tabPage3, "tabPage3");
-            this.tabPage3.Name = "tabPage3";
-            // 
-            // button1
-            // 
-            resources.ApplyResources(this.button1, "button1");
-            this.button1.Name = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // comboBox4
-            // 
-            this.comboBox4.FormattingEnabled = true;
-            resources.ApplyResources(this.comboBox4, "comboBox4");
-            this.comboBox4.Name = "comboBox4";
-            // 
-            // comboBox3
-            // 
-            this.comboBox3.FormattingEnabled = true;
-            resources.ApplyResources(this.comboBox3, "comboBox3");
-            this.comboBox3.Name = "comboBox3";
-            // 
-            // textBox2
-            // 
-            resources.ApplyResources(this.textBox2, "textBox2");
-            this.textBox2.Name = "textBox2";
-            // 
-            // textBox1
-            // 
-            resources.ApplyResources(this.textBox1, "textBox1");
-            this.textBox1.Name = "textBox1";
-            // 
-            // tabPage4
-            // 
-            this.tabPage4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.tabPage4.Controls.Add(this.button2);
-            this.tabPage4.Controls.Add(this.textBox5);
-            this.tabPage4.Controls.Add(this.textBox4);
-            this.tabPage4.Controls.Add(this.comboBox5);
-            this.tabPage4.Controls.Add(this.comboBox7);
-            this.tabPage4.Controls.Add(this.comboBox6);
-            this.tabPage4.Controls.Add(this.textBox6);
-            this.tabPage4.Controls.Add(this.button5);
-            resources.ApplyResources(this.tabPage4, "tabPage4");
-            this.tabPage4.Name = "tabPage4";
-            // 
-            // button2
-            // 
-            resources.ApplyResources(this.button2, "button2");
-            this.button2.Name = "button2";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // textBox5
-            // 
-            resources.ApplyResources(this.textBox5, "textBox5");
-            this.textBox5.Name = "textBox5";
-            // 
-            // textBox4
-            // 
-            resources.ApplyResources(this.textBox4, "textBox4");
-            this.textBox4.Name = "textBox4";
-            // 
-            // comboBox5
-            // 
-            this.comboBox5.FormattingEnabled = true;
-            resources.ApplyResources(this.comboBox5, "comboBox5");
-            this.comboBox5.Name = "comboBox5";
-            // 
-            // comboBox7
-            // 
-            this.comboBox7.FormattingEnabled = true;
-            resources.ApplyResources(this.comboBox7, "comboBox7");
-            this.comboBox7.Name = "comboBox7";
-            // 
-            // comboBox6
-            // 
-            this.comboBox6.FormattingEnabled = true;
-            resources.ApplyResources(this.comboBox6, "comboBox6");
-            this.comboBox6.Name = "comboBox6";
-            // 
-            // textBox6
-            // 
-            resources.ApplyResources(this.textBox6, "textBox6");
-            this.textBox6.Name = "textBox6";
-            // 
-            // button5
-            // 
-            resources.ApplyResources(this.button5, "button5");
-            this.button5.Name = "button5";
-            this.button5.UseVisualStyleBackColor = true;
-            // 
-            // tabPage5
-            // 
-            this.tabPage5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.tabPage5.Controls.Add(this.button24);
-            this.tabPage5.Controls.Add(this.button23);
-            this.tabPage5.Controls.Add(this.button22);
-            this.tabPage5.Controls.Add(this.button21);
-            this.tabPage5.Controls.Add(this.button20);
-            this.tabPage5.Controls.Add(this.button19);
-            this.tabPage5.Controls.Add(this.button18);
-            this.tabPage5.Controls.Add(this.button17);
-            this.tabPage5.Controls.Add(this.button16);
-            this.tabPage5.Controls.Add(this.button15);
-            this.tabPage5.Controls.Add(this.button14);
-            this.tabPage5.Controls.Add(this.button13);
-            this.tabPage5.Controls.Add(this.button12);
-            this.tabPage5.Controls.Add(this.button11);
-            this.tabPage5.Controls.Add(this.button10);
-            this.tabPage5.Controls.Add(this.button9);
-            this.tabPage5.Controls.Add(this.button8);
-            this.tabPage5.Controls.Add(this.button7);
-            this.tabPage5.Controls.Add(this.button6);
-            this.tabPage5.Controls.Add(this.label24);
-            resources.ApplyResources(this.tabPage5, "tabPage5");
-            this.tabPage5.Name = "tabPage5";
-            // 
-            // button24
-            // 
-            resources.ApplyResources(this.button24, "button24");
-            this.button24.Name = "button24";
-            this.button24.UseVisualStyleBackColor = true;
-            // 
-            // button23
-            // 
-            resources.ApplyResources(this.button23, "button23");
-            this.button23.Name = "button23";
-            this.button23.UseVisualStyleBackColor = true;
-            // 
-            // button22
-            // 
-            resources.ApplyResources(this.button22, "button22");
-            this.button22.Name = "button22";
-            this.button22.UseVisualStyleBackColor = true;
-            // 
-            // button21
-            // 
-            resources.ApplyResources(this.button21, "button21");
-            this.button21.Name = "button21";
-            this.button21.UseVisualStyleBackColor = true;
-            // 
-            // button20
-            // 
-            resources.ApplyResources(this.button20, "button20");
-            this.button20.Name = "button20";
-            this.button20.UseVisualStyleBackColor = true;
-            // 
-            // button19
-            // 
-            resources.ApplyResources(this.button19, "button19");
-            this.button19.Name = "button19";
-            this.button19.UseVisualStyleBackColor = true;
-            // 
-            // button18
-            // 
-            resources.ApplyResources(this.button18, "button18");
-            this.button18.Name = "button18";
-            this.button18.UseVisualStyleBackColor = true;
-            // 
-            // button17
-            // 
-            resources.ApplyResources(this.button17, "button17");
-            this.button17.Name = "button17";
-            this.button17.UseVisualStyleBackColor = true;
-            // 
-            // button16
-            // 
-            resources.ApplyResources(this.button16, "button16");
-            this.button16.Name = "button16";
-            this.button16.UseVisualStyleBackColor = true;
-            // 
-            // button15
-            // 
-            resources.ApplyResources(this.button15, "button15");
-            this.button15.Name = "button15";
-            this.button15.UseVisualStyleBackColor = true;
-            // 
-            // button14
-            // 
-            resources.ApplyResources(this.button14, "button14");
-            this.button14.Name = "button14";
-            this.button14.UseVisualStyleBackColor = true;
-            // 
-            // button13
-            // 
-            resources.ApplyResources(this.button13, "button13");
-            this.button13.Name = "button13";
-            this.button13.UseVisualStyleBackColor = true;
-            // 
-            // button12
-            // 
-            resources.ApplyResources(this.button12, "button12");
-            this.button12.Name = "button12";
-            this.button12.UseVisualStyleBackColor = true;
-            // 
-            // button11
-            // 
-            resources.ApplyResources(this.button11, "button11");
-            this.button11.Name = "button11";
-            this.button11.UseVisualStyleBackColor = true;
-            // 
-            // button10
-            // 
-            resources.ApplyResources(this.button10, "button10");
-            this.button10.Name = "button10";
-            this.button10.UseVisualStyleBackColor = true;
-            // 
-            // button9
-            // 
-            resources.ApplyResources(this.button9, "button9");
-            this.button9.Name = "button9";
-            this.button9.UseVisualStyleBackColor = true;
-            // 
-            // button8
-            // 
-            resources.ApplyResources(this.button8, "button8");
-            this.button8.Name = "button8";
-            this.button8.UseVisualStyleBackColor = true;
-            // 
-            // button7
-            // 
-            resources.ApplyResources(this.button7, "button7");
-            this.button7.Name = "button7";
-            this.button7.UseVisualStyleBackColor = true;
-            // 
-            // button6
-            // 
-            resources.ApplyResources(this.button6, "button6");
-            this.button6.Name = "button6";
-            this.button6.UseVisualStyleBackColor = true;
-            // 
-            // label24
-            // 
-            this.label24.BackColor = System.Drawing.Color.White;
-            resources.ApplyResources(this.label24, "label24");
-            this.label24.Name = "label24";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            resources.ApplyResources(this.comboBox1, "comboBox1");
-            this.comboBox1.Name = "comboBox1";
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.FormattingEnabled = true;
-            resources.ApplyResources(this.comboBox2, "comboBox2");
-            this.comboBox2.Name = "comboBox2";
-            // 
-            // home_tab_result
-            // 
-            this.home_tab_result.Controls.Add(this.tabPage6);
-            this.home_tab_result.Controls.Add(this.tabPage7);
-            resources.ApplyResources(this.home_tab_result, "home_tab_result");
-            this.home_tab_result.Name = "home_tab_result";
-            this.home_tab_result.SelectedIndex = 0;
-            // 
-            // tabPage6
-            // 
-            this.tabPage6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.tabPage6.Controls.Add(this.flowLayoutPanel1);
-            this.tabPage6.Controls.Add(this.label7);
-            this.tabPage6.Controls.Add(this.label6);
-            this.tabPage6.Controls.Add(this.flowLayoutPanel2);
-            resources.ApplyResources(this.tabPage6, "tabPage6");
-            this.tabPage6.Name = "tabPage6";
-            // 
-            // flowLayoutPanel1
-            // 
-            resources.ApplyResources(this.flowLayoutPanel1, "flowLayoutPanel1");
-            this.flowLayoutPanel1.BackColor = System.Drawing.Color.White;
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            // 
-            // label7
-            // 
-            resources.ApplyResources(this.label7, "label7");
-            this.label7.Name = "label7";
-            // 
-            // label6
-            // 
-            resources.ApplyResources(this.label6, "label6");
-            this.label6.Name = "label6";
-            // 
-            // flowLayoutPanel2
-            // 
-            resources.ApplyResources(this.flowLayoutPanel2, "flowLayoutPanel2");
-            this.flowLayoutPanel2.BackColor = System.Drawing.Color.White;
-            this.flowLayoutPanel2.Controls.Add(this.panel25);
-            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            // 
-            // panel25
-            // 
-            this.panel25.Controls.Add(this.label12);
-            this.panel25.Controls.Add(this.label11);
-            this.panel25.Controls.Add(this.label10);
-            this.panel25.Controls.Add(this.label9);
-            this.panel25.Controls.Add(this.label8);
-            resources.ApplyResources(this.panel25, "panel25");
-            this.panel25.Name = "panel25";
-            // 
-            // label12
-            // 
-            resources.ApplyResources(this.label12, "label12");
-            this.label12.Name = "label12";
-            // 
-            // label11
-            // 
-            resources.ApplyResources(this.label11, "label11");
-            this.label11.Name = "label11";
-            // 
-            // label10
-            // 
-            resources.ApplyResources(this.label10, "label10");
-            this.label10.Name = "label10";
-            // 
-            // label9
-            // 
-            resources.ApplyResources(this.label9, "label9");
-            this.label9.Name = "label9";
-            // 
-            // label8
-            // 
-            resources.ApplyResources(this.label8, "label8");
-            this.label8.Name = "label8";
-            // 
-            // tabPage7
-            // 
-            this.tabPage7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            resources.ApplyResources(this.tabPage7, "tabPage7");
-            this.tabPage7.Name = "tabPage7";
-            // 
-            // panel43
-            // 
-            resources.ApplyResources(this.panel43, "panel43");
-            this.panel43.Name = "panel43";
-            // 
-            // tabPage2
-            // 
-            this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            resources.ApplyResources(this.tabPage2, "tabPage2");
-            this.tabPage2.Name = "tabPage2";
             // 
             // UserInfo_panel
             // 
@@ -1468,6 +1053,807 @@
             this.btn_memo.Name = "btn_memo";
             this.btn_memo.Click += new System.EventHandler(this.Btn_memo_Click);
             // 
+            // home_tab_list
+            // 
+            this.home_tab_list.Controls.Add(this.hk_Month);
+            this.home_tab_list.Controls.Add(this.hk_year);
+            this.home_tab_list.HotTrack = true;
+            resources.ApplyResources(this.home_tab_list, "home_tab_list");
+            this.home_tab_list.Multiline = true;
+            this.home_tab_list.Name = "home_tab_list";
+            this.home_tab_list.SelectedIndex = 0;
+            // 
+            // hk_Month
+            // 
+            this.hk_Month.BackColor = System.Drawing.Color.White;
+            this.hk_Month.Controls.Add(this.comboBox2);
+            this.hk_Month.Controls.Add(this.textBox3);
+            this.hk_Month.Controls.Add(this.home_tab_result);
+            this.hk_Month.Controls.Add(this.panel43);
+            resources.ApplyResources(this.hk_Month, "hk_Month");
+            this.hk_Month.Name = "hk_Month";
+            // 
+            // home_tab_result
+            // 
+            this.home_tab_result.Controls.Add(this.hk_month_table);
+            this.home_tab_result.Controls.Add(this.hk_month_Analysis);
+            resources.ApplyResources(this.home_tab_result, "home_tab_result");
+            this.home_tab_result.Multiline = true;
+            this.home_tab_result.Name = "home_tab_result";
+            this.home_tab_result.SelectedIndex = 0;
+            // 
+            // hk_month_table
+            // 
+            this.hk_month_table.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.hk_month_table.Controls.Add(this.panel27);
+            this.hk_month_table.Controls.Add(this.flowLayoutPanel1);
+            this.hk_month_table.Controls.Add(this.label7);
+            this.hk_month_table.Controls.Add(this.label6);
+            this.hk_month_table.Controls.Add(this.flowLayoutPanel2);
+            resources.ApplyResources(this.hk_month_table, "hk_month_table");
+            this.hk_month_table.Name = "hk_month_table";
+            // 
+            // panel27
+            // 
+            this.panel27.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.panel27.Controls.Add(this.chart3);
+            this.panel27.Controls.Add(this.flowLayoutPanel3);
+            this.panel27.Controls.Add(this.dateTimePicker1);
+            this.panel27.Controls.Add(this.panel44);
+            this.panel27.Controls.Add(this.home_tab_insert);
+            resources.ApplyResources(this.panel27, "panel27");
+            this.panel27.Name = "panel27";
+            // 
+            // chart3
+            // 
+            this.chart3.BackColor = System.Drawing.Color.Transparent;
+            chartArea2.Name = "ChartArea1";
+            this.chart3.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chart3.Legends.Add(legend2);
+            resources.ApplyResources(this.chart3, "chart3");
+            this.chart3.Name = "chart3";
+            series2.ChartArea = "ChartArea1";
+            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Bar;
+            series2.Legend = "Legend1";
+            series2.Name = "Series1";
+            this.chart3.Series.Add(series2);
+            // 
+            // flowLayoutPanel3
+            // 
+            resources.ApplyResources(this.flowLayoutPanel3, "flowLayoutPanel3");
+            this.flowLayoutPanel3.Controls.Add(this.panel1);
+            this.flowLayoutPanel3.Controls.Add(this.panel3);
+            this.flowLayoutPanel3.Controls.Add(this.panel4);
+            this.flowLayoutPanel3.Controls.Add(this.panel5);
+            this.flowLayoutPanel3.Controls.Add(this.panel6);
+            this.flowLayoutPanel3.Controls.Add(this.panel10);
+            this.flowLayoutPanel3.Name = "flowLayoutPanel3";
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.label17);
+            this.panel1.Controls.Add(this.label16);
+            this.panel1.Controls.Add(this.label5);
+            this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.label3);
+            resources.ApplyResources(this.panel1, "panel1");
+            this.panel1.Name = "panel1";
+            // 
+            // label17
+            // 
+            this.label17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            resources.ApplyResources(this.label17, "label17");
+            this.label17.Name = "label17";
+            // 
+            // label16
+            // 
+            this.label16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            resources.ApplyResources(this.label16, "label16");
+            this.label16.Name = "label16";
+            // 
+            // label5
+            // 
+            this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            resources.ApplyResources(this.label5, "label5");
+            this.label5.Name = "label5";
+            // 
+            // label4
+            // 
+            this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            resources.ApplyResources(this.label4, "label4");
+            this.label4.Name = "label4";
+            // 
+            // label3
+            // 
+            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            resources.ApplyResources(this.label3, "label3");
+            this.label3.Name = "label3";
+            // 
+            // dateTimePicker1
+            // 
+            resources.ApplyResources(this.dateTimePicker1, "dateTimePicker1");
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            // 
+            // panel44
+            // 
+            this.panel44.Controls.Add(this.label2);
+            this.panel44.Controls.Add(this.label1);
+            this.panel44.Controls.Add(this.label18);
+            this.panel44.Controls.Add(this.label15);
+            this.panel44.Controls.Add(this.label14);
+            this.panel44.Controls.Add(this.label13);
+            resources.ApplyResources(this.panel44, "panel44");
+            this.panel44.Name = "panel44";
+            // 
+            // label2
+            // 
+            resources.ApplyResources(this.label2, "label2");
+            this.label2.Name = "label2";
+            // 
+            // label1
+            // 
+            resources.ApplyResources(this.label1, "label1");
+            this.label1.Name = "label1";
+            // 
+            // label18
+            // 
+            resources.ApplyResources(this.label18, "label18");
+            this.label18.Name = "label18";
+            // 
+            // label15
+            // 
+            resources.ApplyResources(this.label15, "label15");
+            this.label15.Name = "label15";
+            // 
+            // label14
+            // 
+            resources.ApplyResources(this.label14, "label14");
+            this.label14.Name = "label14";
+            // 
+            // label13
+            // 
+            resources.ApplyResources(this.label13, "label13");
+            this.label13.Name = "label13";
+            // 
+            // home_tab_insert
+            // 
+            this.home_tab_insert.Controls.Add(this.tabPage3);
+            this.home_tab_insert.Controls.Add(this.tabPage4);
+            resources.ApplyResources(this.home_tab_insert, "home_tab_insert");
+            this.home_tab_insert.Name = "home_tab_insert";
+            this.home_tab_insert.SelectedIndex = 0;
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.tabPage3.Controls.Add(this.button25);
+            this.tabPage3.Controls.Add(this.button26);
+            this.tabPage3.Controls.Add(this.button27);
+            this.tabPage3.Controls.Add(this.button28);
+            this.tabPage3.Controls.Add(this.button21);
+            this.tabPage3.Controls.Add(this.button22);
+            this.tabPage3.Controls.Add(this.button23);
+            this.tabPage3.Controls.Add(this.button17);
+            this.tabPage3.Controls.Add(this.button18);
+            this.tabPage3.Controls.Add(this.button19);
+            this.tabPage3.Controls.Add(this.button13);
+            this.tabPage3.Controls.Add(this.button14);
+            this.tabPage3.Controls.Add(this.button15);
+            this.tabPage3.Controls.Add(this.button9);
+            this.tabPage3.Controls.Add(this.button10);
+            this.tabPage3.Controls.Add(this.button11);
+            this.tabPage3.Controls.Add(this.button4);
+            this.tabPage3.Controls.Add(this.button3);
+            this.tabPage3.Controls.Add(this.comboBox1);
+            this.tabPage3.Controls.Add(this.button6);
+            this.tabPage3.Controls.Add(this.label24);
+            this.tabPage3.Controls.Add(this.button1);
+            this.tabPage3.Controls.Add(this.comboBox4);
+            this.tabPage3.Controls.Add(this.comboBox3);
+            this.tabPage3.Controls.Add(this.textBox2);
+            this.tabPage3.Controls.Add(this.textBox1);
+            resources.ApplyResources(this.tabPage3, "tabPage3");
+            this.tabPage3.Name = "tabPage3";
+            // 
+            // button1
+            // 
+            resources.ApplyResources(this.button1, "button1");
+            this.button1.Name = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // comboBox4
+            // 
+            this.comboBox4.FormattingEnabled = true;
+            resources.ApplyResources(this.comboBox4, "comboBox4");
+            this.comboBox4.Name = "comboBox4";
+            // 
+            // comboBox3
+            // 
+            this.comboBox3.FormattingEnabled = true;
+            resources.ApplyResources(this.comboBox3, "comboBox3");
+            this.comboBox3.Name = "comboBox3";
+            // 
+            // textBox2
+            // 
+            resources.ApplyResources(this.textBox2, "textBox2");
+            this.textBox2.Name = "textBox2";
+            // 
+            // textBox1
+            // 
+            resources.ApplyResources(this.textBox1, "textBox1");
+            this.textBox1.Name = "textBox1";
+            // 
+            // tabPage4
+            // 
+            this.tabPage4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.tabPage4.Controls.Add(this.lb_exchange);
+            this.tabPage4.Controls.Add(this.comboBox9);
+            this.tabPage4.Controls.Add(this.comboBox8);
+            this.tabPage4.Controls.Add(this.button2);
+            this.tabPage4.Controls.Add(this.button7);
+            this.tabPage4.Controls.Add(this.textBox5);
+            this.tabPage4.Controls.Add(this.textBox4);
+            this.tabPage4.Controls.Add(this.comboBox5);
+            this.tabPage4.Controls.Add(this.comboBox7);
+            this.tabPage4.Controls.Add(this.comboBox6);
+            this.tabPage4.Controls.Add(this.textBox6);
+            resources.ApplyResources(this.tabPage4, "tabPage4");
+            this.tabPage4.Name = "tabPage4";
+            // 
+            // textBox5
+            // 
+            resources.ApplyResources(this.textBox5, "textBox5");
+            this.textBox5.Name = "textBox5";
+            // 
+            // textBox4
+            // 
+            resources.ApplyResources(this.textBox4, "textBox4");
+            this.textBox4.Name = "textBox4";
+            // 
+            // comboBox5
+            // 
+            this.comboBox5.FormattingEnabled = true;
+            resources.ApplyResources(this.comboBox5, "comboBox5");
+            this.comboBox5.Name = "comboBox5";
+            // 
+            // comboBox7
+            // 
+            this.comboBox7.FormattingEnabled = true;
+            resources.ApplyResources(this.comboBox7, "comboBox7");
+            this.comboBox7.Name = "comboBox7";
+            // 
+            // comboBox6
+            // 
+            this.comboBox6.FormattingEnabled = true;
+            resources.ApplyResources(this.comboBox6, "comboBox6");
+            this.comboBox6.Name = "comboBox6";
+            // 
+            // textBox6
+            // 
+            resources.ApplyResources(this.textBox6, "textBox6");
+            this.textBox6.Name = "textBox6";
+            // 
+            // flowLayoutPanel1
+            // 
+            resources.ApplyResources(this.flowLayoutPanel1, "flowLayoutPanel1");
+            this.flowLayoutPanel1.BackColor = System.Drawing.Color.White;
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            // 
+            // label7
+            // 
+            resources.ApplyResources(this.label7, "label7");
+            this.label7.Name = "label7";
+            // 
+            // label6
+            // 
+            resources.ApplyResources(this.label6, "label6");
+            this.label6.Name = "label6";
+            // 
+            // flowLayoutPanel2
+            // 
+            resources.ApplyResources(this.flowLayoutPanel2, "flowLayoutPanel2");
+            this.flowLayoutPanel2.BackColor = System.Drawing.Color.White;
+            this.flowLayoutPanel2.Controls.Add(this.panel25);
+            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
+            // 
+            // panel25
+            // 
+            this.panel25.Controls.Add(this.label12);
+            this.panel25.Controls.Add(this.label11);
+            this.panel25.Controls.Add(this.label10);
+            this.panel25.Controls.Add(this.label9);
+            this.panel25.Controls.Add(this.label8);
+            resources.ApplyResources(this.panel25, "panel25");
+            this.panel25.Name = "panel25";
+            // 
+            // label12
+            // 
+            resources.ApplyResources(this.label12, "label12");
+            this.label12.Name = "label12";
+            // 
+            // label11
+            // 
+            resources.ApplyResources(this.label11, "label11");
+            this.label11.Name = "label11";
+            // 
+            // label10
+            // 
+            resources.ApplyResources(this.label10, "label10");
+            this.label10.Name = "label10";
+            // 
+            // label9
+            // 
+            resources.ApplyResources(this.label9, "label9");
+            this.label9.Name = "label9";
+            // 
+            // label8
+            // 
+            resources.ApplyResources(this.label8, "label8");
+            this.label8.Name = "label8";
+            // 
+            // hk_month_Analysis
+            // 
+            this.hk_month_Analysis.Controls.Add(this.panel9);
+            this.hk_month_Analysis.Controls.Add(this.panel8);
+            this.hk_month_Analysis.Controls.Add(this.panel7);
+            this.hk_month_Analysis.Controls.Add(this.panel2);
+            resources.ApplyResources(this.hk_month_Analysis, "hk_month_Analysis");
+            this.hk_month_Analysis.Name = "hk_month_Analysis";
+            this.hk_month_Analysis.UseVisualStyleBackColor = true;
+            // 
+            // panel43
+            // 
+            resources.ApplyResources(this.panel43, "panel43");
+            this.panel43.Name = "panel43";
+            // 
+            // hk_year
+            // 
+            this.hk_year.BackColor = System.Drawing.Color.White;
+            resources.ApplyResources(this.hk_year, "hk_year");
+            this.hk_year.Name = "hk_year";
+            // 
+            // panel9
+            // 
+            this.panel9.BackColor = System.Drawing.Color.Aqua;
+            resources.ApplyResources(this.panel9, "panel9");
+            this.panel9.Name = "panel9";
+            // 
+            // panel8
+            // 
+            this.panel8.BackColor = System.Drawing.Color.Aqua;
+            this.panel8.Controls.Add(this.chart2);
+            resources.ApplyResources(this.panel8, "panel8");
+            this.panel8.Name = "panel8";
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.Aqua;
+            resources.ApplyResources(this.panel7, "panel7");
+            this.panel7.Name = "panel7";
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.Aqua;
+            this.panel2.Controls.Add(this.chart1);
+            resources.ApplyResources(this.panel2, "panel2");
+            this.panel2.Name = "panel2";
+            // 
+            // chart1
+            // 
+            chartArea4.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea4);
+            legend4.Name = "Legend1";
+            this.chart1.Legends.Add(legend4);
+            resources.ApplyResources(this.chart1, "chart1");
+            this.chart1.Name = "chart1";
+            series4.ChartArea = "ChartArea1";
+            series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            series4.Legend = "Legend1";
+            series4.Name = "Series1";
+            this.chart1.Series.Add(series4);
+            // 
+            // chart2
+            // 
+            chartArea3.Name = "ChartArea1";
+            this.chart2.ChartAreas.Add(chartArea3);
+            legend3.Name = "Legend1";
+            this.chart2.Legends.Add(legend3);
+            resources.ApplyResources(this.chart2, "chart2");
+            this.chart2.Name = "chart2";
+            series3.ChartArea = "ChartArea1";
+            series3.Legend = "Legend1";
+            series3.Name = "Series1";
+            this.chart2.Series.Add(series3);
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            resources.ApplyResources(this.comboBox2, "comboBox2");
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            resources.GetString("comboBox2.Items"),
+            resources.GetString("comboBox2.Items1"),
+            resources.GetString("comboBox2.Items2"),
+            resources.GetString("comboBox2.Items3"),
+            resources.GetString("comboBox2.Items4"),
+            resources.GetString("comboBox2.Items5"),
+            resources.GetString("comboBox2.Items6"),
+            resources.GetString("comboBox2.Items7"),
+            resources.GetString("comboBox2.Items8"),
+            resources.GetString("comboBox2.Items9"),
+            resources.GetString("comboBox2.Items10"),
+            resources.GetString("comboBox2.Items11")});
+            this.comboBox2.Name = "comboBox2";
+            // 
+            // textBox3
+            // 
+            this.textBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.textBox3, "textBox3");
+            this.textBox3.Name = "textBox3";
+            // 
+            // button6
+            // 
+            resources.ApplyResources(this.button6, "button6");
+            this.button6.Name = "button6";
+            this.button6.UseVisualStyleBackColor = true;
+            // 
+            // label24
+            // 
+            this.label24.BackColor = System.Drawing.Color.White;
+            resources.ApplyResources(this.label24, "label24");
+            this.label24.Name = "label24";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            resources.ApplyResources(this.comboBox1, "comboBox1");
+            this.comboBox1.Name = "comboBox1";
+            // 
+            // button3
+            // 
+            resources.ApplyResources(this.button3, "button3");
+            this.button3.Name = "button3";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            resources.ApplyResources(this.button4, "button4");
+            this.button4.Name = "button4";
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // button9
+            // 
+            resources.ApplyResources(this.button9, "button9");
+            this.button9.Name = "button9";
+            this.button9.UseVisualStyleBackColor = true;
+            // 
+            // button10
+            // 
+            resources.ApplyResources(this.button10, "button10");
+            this.button10.Name = "button10";
+            this.button10.UseVisualStyleBackColor = true;
+            // 
+            // button11
+            // 
+            resources.ApplyResources(this.button11, "button11");
+            this.button11.Name = "button11";
+            this.button11.UseVisualStyleBackColor = true;
+            // 
+            // button13
+            // 
+            resources.ApplyResources(this.button13, "button13");
+            this.button13.Name = "button13";
+            this.button13.UseVisualStyleBackColor = true;
+            // 
+            // button14
+            // 
+            resources.ApplyResources(this.button14, "button14");
+            this.button14.Name = "button14";
+            this.button14.UseVisualStyleBackColor = true;
+            // 
+            // button15
+            // 
+            resources.ApplyResources(this.button15, "button15");
+            this.button15.Name = "button15";
+            this.button15.UseVisualStyleBackColor = true;
+            // 
+            // button17
+            // 
+            resources.ApplyResources(this.button17, "button17");
+            this.button17.Name = "button17";
+            this.button17.UseVisualStyleBackColor = true;
+            // 
+            // button18
+            // 
+            resources.ApplyResources(this.button18, "button18");
+            this.button18.Name = "button18";
+            this.button18.UseVisualStyleBackColor = true;
+            // 
+            // button19
+            // 
+            resources.ApplyResources(this.button19, "button19");
+            this.button19.Name = "button19";
+            this.button19.UseVisualStyleBackColor = true;
+            // 
+            // button21
+            // 
+            resources.ApplyResources(this.button21, "button21");
+            this.button21.Name = "button21";
+            this.button21.UseVisualStyleBackColor = true;
+            // 
+            // button22
+            // 
+            resources.ApplyResources(this.button22, "button22");
+            this.button22.Name = "button22";
+            this.button22.UseVisualStyleBackColor = true;
+            // 
+            // button23
+            // 
+            resources.ApplyResources(this.button23, "button23");
+            this.button23.Name = "button23";
+            this.button23.UseVisualStyleBackColor = true;
+            // 
+            // button25
+            // 
+            resources.ApplyResources(this.button25, "button25");
+            this.button25.Name = "button25";
+            this.button25.UseVisualStyleBackColor = true;
+            // 
+            // button26
+            // 
+            resources.ApplyResources(this.button26, "button26");
+            this.button26.Name = "button26";
+            this.button26.UseVisualStyleBackColor = true;
+            // 
+            // button27
+            // 
+            resources.ApplyResources(this.button27, "button27");
+            this.button27.Name = "button27";
+            this.button27.UseVisualStyleBackColor = true;
+            // 
+            // button28
+            // 
+            resources.ApplyResources(this.button28, "button28");
+            this.button28.Name = "button28";
+            this.button28.UseVisualStyleBackColor = true;
+            // 
+            // button7
+            // 
+            resources.ApplyResources(this.button7, "button7");
+            this.button7.Name = "button7";
+            this.button7.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            resources.ApplyResources(this.button2, "button2");
+            this.button2.Name = "button2";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // comboBox8
+            // 
+            this.comboBox8.FormattingEnabled = true;
+            resources.ApplyResources(this.comboBox8, "comboBox8");
+            this.comboBox8.Name = "comboBox8";
+            // 
+            // comboBox9
+            // 
+            this.comboBox9.FormattingEnabled = true;
+            resources.ApplyResources(this.comboBox9, "comboBox9");
+            this.comboBox9.Name = "comboBox9";
+            // 
+            // lb_exchange
+            // 
+            resources.ApplyResources(this.lb_exchange, "lb_exchange");
+            this.lb_exchange.Name = "lb_exchange";
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.White;
+            this.panel3.Controls.Add(this.label19);
+            this.panel3.Controls.Add(this.label20);
+            this.panel3.Controls.Add(this.label21);
+            this.panel3.Controls.Add(this.label22);
+            this.panel3.Controls.Add(this.label23);
+            resources.ApplyResources(this.panel3, "panel3");
+            this.panel3.Name = "panel3";
+            // 
+            // label19
+            // 
+            this.label19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            resources.ApplyResources(this.label19, "label19");
+            this.label19.Name = "label19";
+            // 
+            // label20
+            // 
+            this.label20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            resources.ApplyResources(this.label20, "label20");
+            this.label20.Name = "label20";
+            // 
+            // label21
+            // 
+            this.label21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            resources.ApplyResources(this.label21, "label21");
+            this.label21.Name = "label21";
+            // 
+            // label22
+            // 
+            this.label22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            resources.ApplyResources(this.label22, "label22");
+            this.label22.Name = "label22";
+            // 
+            // label23
+            // 
+            this.label23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            resources.ApplyResources(this.label23, "label23");
+            this.label23.Name = "label23";
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.White;
+            this.panel4.Controls.Add(this.label25);
+            this.panel4.Controls.Add(this.label26);
+            this.panel4.Controls.Add(this.label27);
+            this.panel4.Controls.Add(this.label28);
+            this.panel4.Controls.Add(this.label29);
+            resources.ApplyResources(this.panel4, "panel4");
+            this.panel4.Name = "panel4";
+            // 
+            // label25
+            // 
+            this.label25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            resources.ApplyResources(this.label25, "label25");
+            this.label25.Name = "label25";
+            // 
+            // label26
+            // 
+            this.label26.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            resources.ApplyResources(this.label26, "label26");
+            this.label26.Name = "label26";
+            // 
+            // label27
+            // 
+            this.label27.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            resources.ApplyResources(this.label27, "label27");
+            this.label27.Name = "label27";
+            // 
+            // label28
+            // 
+            this.label28.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            resources.ApplyResources(this.label28, "label28");
+            this.label28.Name = "label28";
+            // 
+            // label29
+            // 
+            this.label29.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            resources.ApplyResources(this.label29, "label29");
+            this.label29.Name = "label29";
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.White;
+            this.panel5.Controls.Add(this.label30);
+            this.panel5.Controls.Add(this.label31);
+            this.panel5.Controls.Add(this.label32);
+            this.panel5.Controls.Add(this.label33);
+            this.panel5.Controls.Add(this.label34);
+            resources.ApplyResources(this.panel5, "panel5");
+            this.panel5.Name = "panel5";
+            // 
+            // label30
+            // 
+            this.label30.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            resources.ApplyResources(this.label30, "label30");
+            this.label30.Name = "label30";
+            // 
+            // label31
+            // 
+            this.label31.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            resources.ApplyResources(this.label31, "label31");
+            this.label31.Name = "label31";
+            // 
+            // label32
+            // 
+            this.label32.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            resources.ApplyResources(this.label32, "label32");
+            this.label32.Name = "label32";
+            // 
+            // label33
+            // 
+            this.label33.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            resources.ApplyResources(this.label33, "label33");
+            this.label33.Name = "label33";
+            // 
+            // label34
+            // 
+            this.label34.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            resources.ApplyResources(this.label34, "label34");
+            this.label34.Name = "label34";
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.White;
+            this.panel6.Controls.Add(this.label35);
+            this.panel6.Controls.Add(this.label36);
+            this.panel6.Controls.Add(this.label37);
+            this.panel6.Controls.Add(this.label38);
+            this.panel6.Controls.Add(this.label39);
+            resources.ApplyResources(this.panel6, "panel6");
+            this.panel6.Name = "panel6";
+            // 
+            // label35
+            // 
+            this.label35.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            resources.ApplyResources(this.label35, "label35");
+            this.label35.Name = "label35";
+            // 
+            // label36
+            // 
+            this.label36.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            resources.ApplyResources(this.label36, "label36");
+            this.label36.Name = "label36";
+            // 
+            // label37
+            // 
+            this.label37.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            resources.ApplyResources(this.label37, "label37");
+            this.label37.Name = "label37";
+            // 
+            // label38
+            // 
+            this.label38.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            resources.ApplyResources(this.label38, "label38");
+            this.label38.Name = "label38";
+            // 
+            // label39
+            // 
+            this.label39.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            resources.ApplyResources(this.label39, "label39");
+            this.label39.Name = "label39";
+            // 
+            // panel10
+            // 
+            this.panel10.BackColor = System.Drawing.Color.White;
+            this.panel10.Controls.Add(this.label40);
+            this.panel10.Controls.Add(this.label41);
+            this.panel10.Controls.Add(this.label42);
+            this.panel10.Controls.Add(this.label43);
+            this.panel10.Controls.Add(this.label44);
+            resources.ApplyResources(this.panel10, "panel10");
+            this.panel10.Name = "panel10";
+            // 
+            // label40
+            // 
+            this.label40.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            resources.ApplyResources(this.label40, "label40");
+            this.label40.Name = "label40";
+            // 
+            // label41
+            // 
+            this.label41.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            resources.ApplyResources(this.label41, "label41");
+            this.label41.Name = "label41";
+            // 
+            // label42
+            // 
+            this.label42.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            resources.ApplyResources(this.label42, "label42");
+            this.label42.Name = "label42";
+            // 
+            // label43
+            // 
+            this.label43.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            resources.ApplyResources(this.label43, "label43");
+            this.label43.Name = "label43";
+            // 
+            // label44
+            // 
+            this.label44.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            resources.ApplyResources(this.label44, "label44");
+            this.label44.Name = "label44";
+            // 
             // Form_main
             // 
             resources.ApplyResources(this, "$this");
@@ -1503,27 +1889,37 @@
             this.tabPage_purechased.ResumeLayout(false);
             this.pnl_shp_purchased.ResumeLayout(false);
             this.tab_HouseKeep.ResumeLayout(false);
-            this.panel24.ResumeLayout(false);
+            this.UserInfo_panel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.Top_panel.ResumeLayout(false);
+            this.pnl_nav.ResumeLayout(false);
             this.home_tab_list.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
+            this.hk_Month.ResumeLayout(false);
+            this.hk_Month.PerformLayout();
+            this.home_tab_result.ResumeLayout(false);
+            this.hk_month_table.ResumeLayout(false);
             this.panel27.ResumeLayout(false);
-            this.panel45.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.chart3)).EndInit();
+            this.flowLayoutPanel3.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
             this.panel44.ResumeLayout(false);
             this.home_tab_insert.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
-            this.tabPage5.ResumeLayout(false);
-            this.home_tab_result.ResumeLayout(false);
-            this.tabPage6.ResumeLayout(false);
-            this.tabPage6.PerformLayout();
             this.flowLayoutPanel2.ResumeLayout(false);
             this.panel25.ResumeLayout(false);
-            this.UserInfo_panel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.Top_panel.ResumeLayout(false);
-            this.pnl_nav.ResumeLayout(false);
+            this.hk_month_Analysis.ResumeLayout(false);
+            this.panel8.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart2)).EndInit();
+            this.panel3.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
+            this.panel5.ResumeLayout(false);
+            this.panel6.ResumeLayout(false);
+            this.panel10.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1543,7 +1939,6 @@
         private System.Windows.Forms.ComboBox Todo_StartHour;
         private System.Windows.Forms.MonthCalendar Todo_Calendar;
         private System.Windows.Forms.Label lb_startDate;
-        private System.Windows.Forms.DateTimePicker Todo_startDate;
         private System.Windows.Forms.TextBox Todo_contents;
         private System.Windows.Forms.ComboBox Todo_EndHour;
         private System.Windows.Forms.DateTimePicker Todo_EndDate;
@@ -1588,78 +1983,6 @@
         private System.Windows.Forms.ComboBox cb_shp_type;
         private System.Windows.Forms.Button btn_shpRegister;
         private System.Windows.Forms.Panel panel23;
-        private System.Windows.Forms.Panel panel24;
-        private System.Windows.Forms.TabControl home_tab_list;
-        private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.Panel panel43;
-        private System.Windows.Forms.TabControl home_tab_result;
-        private System.Windows.Forms.TabPage tabPage6;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
-        private System.Windows.Forms.Panel panel25;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TabPage tabPage7;
-        private System.Windows.Forms.Panel panel27;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.Panel panel45;
-        private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Panel panel44;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TabControl home_tab_insert;
-        private System.Windows.Forms.TabPage tabPage3;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.ComboBox comboBox4;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TabPage tabPage4;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.ComboBox comboBox5;
-        private System.Windows.Forms.ComboBox comboBox7;
-        private System.Windows.Forms.ComboBox comboBox6;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.TabPage tabPage5;
-        private System.Windows.Forms.Button button24;
-        private System.Windows.Forms.Button button23;
-        private System.Windows.Forms.Button button22;
-        private System.Windows.Forms.Button button21;
-        private System.Windows.Forms.Button button20;
-        private System.Windows.Forms.Button button19;
-        private System.Windows.Forms.Button button18;
-        private System.Windows.Forms.Button button17;
-        private System.Windows.Forms.Button button16;
-        private System.Windows.Forms.Button button15;
-        private System.Windows.Forms.Button button14;
-        private System.Windows.Forms.Button button13;
-        private System.Windows.Forms.Button button12;
-        private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label lb_shp_price;
         private System.Windows.Forms.ComboBox cb_shp_exchangeType;
         private System.Windows.Forms.TabControl shp_tab_result;
@@ -1681,5 +2004,118 @@
         private System.Windows.Forms.Label lb_shp_wishMoney;
         private System.Windows.Forms.Label lb_shp_wishNo;
         private System.Windows.Forms.Label lb_shp_title_wish;
+        private System.Windows.Forms.TabControl home_tab_list;
+        private System.Windows.Forms.TabPage hk_Month;
+        private System.Windows.Forms.TabControl home_tab_result;
+        private System.Windows.Forms.TabPage hk_month_table;
+        private System.Windows.Forms.Panel panel27;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chart3;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Panel panel44;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.TabControl home_tab_insert;
+        private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ComboBox comboBox4;
+        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TabPage tabPage4;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.ComboBox comboBox5;
+        private System.Windows.Forms.ComboBox comboBox7;
+        private System.Windows.Forms.ComboBox comboBox6;
+        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
+        private System.Windows.Forms.Panel panel25;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TabPage hk_month_Analysis;
+        private System.Windows.Forms.Panel panel43;
+        private System.Windows.Forms.TabPage hk_year;
+        private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chart2;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Button button25;
+        private System.Windows.Forms.Button button26;
+        private System.Windows.Forms.Button button27;
+        private System.Windows.Forms.Button button28;
+        private System.Windows.Forms.Button button21;
+        private System.Windows.Forms.Button button22;
+        private System.Windows.Forms.Button button23;
+        private System.Windows.Forms.Button button17;
+        private System.Windows.Forms.Button button18;
+        private System.Windows.Forms.Button button19;
+        private System.Windows.Forms.Button button13;
+        private System.Windows.Forms.Button button14;
+        private System.Windows.Forms.Button button15;
+        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Label lb_exchange;
+        private System.Windows.Forms.ComboBox comboBox9;
+        private System.Windows.Forms.ComboBox comboBox8;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Label label35;
+        private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.Label label37;
+        private System.Windows.Forms.Label label38;
+        private System.Windows.Forms.Label label39;
+        private System.Windows.Forms.Panel panel10;
+        private System.Windows.Forms.Label label40;
+        private System.Windows.Forms.Label label41;
+        private System.Windows.Forms.Label label42;
+        private System.Windows.Forms.Label label43;
+        private System.Windows.Forms.Label label44;
+        private System.Windows.Forms.DateTimePicker Todo_startDate;
     }
 }

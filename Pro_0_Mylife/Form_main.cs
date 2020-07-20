@@ -676,7 +676,7 @@ namespace Pro_0_Mylife
                 btn_URL.AutoSize = false;
                 btn_URL.Size = new Size(130, 25);
                 btn_URL.Location = new Point(610, 70);
-                btn_URL.BackColor = Color.FromArgb(128, 255, 128);
+                btn_URL.BackColor = Color.FromArgb(150, 255, 180);
                 btn_URL.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
                 btn_URL.FlatStyle = FlatStyle.Flat;
                 btn_URL.Click += btn_URL_Click;
@@ -795,6 +795,10 @@ namespace Pro_0_Mylife
             }
 
         }
+
+
+
+
 
 
 

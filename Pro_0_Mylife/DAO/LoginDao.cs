@@ -11,12 +11,13 @@ namespace Pro_0_Mylife
 {
     class LoginDao
     {
+        OracleDBManager db = new OracleDBManager();
+
         public bool LoginCheck(UserVO user)
         {
             try
             {
                 DataSet ds = new DataSet();
-                OracleDBManager db = new OracleDBManager();
                 String query = @"SELECT US_EMAIL,US_PWD FROM root2.USER_T WHERE US_WITHDRAWAL is null AND  US_EMAIL = '#id' AND US_PWD = '#password'";
 
                 query = query.Replace("#id", user.Email);
@@ -45,7 +46,6 @@ namespace Pro_0_Mylife
             try
             {
                 DataSet ds = new DataSet();
-                OracleDBManager db = new OracleDBManager();
                 String query = @"SELECT US_EMAIL,US_PWD FROM root2.USER_T WHERE US_EMAIL = '#id' AND US_PWD = '#password'";
 
                 query = query.Replace("#id", user.Email);
@@ -74,7 +74,6 @@ namespace Pro_0_Mylife
             {
                 
                 DataSet ds = new DataSet();
-                OracleDBManager db = new OracleDBManager();
                 String query = @"SELECT US_EMAIL
                                         ,US_FIRSTNAME
                                         ,US_LASTNAME
