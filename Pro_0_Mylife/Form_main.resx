@@ -2310,287 +2310,95 @@
   <data name="&gt;&gt;tab_shopping.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="comboBox2.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+  <data name="cb_hk_selectMonth.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
-  <data name="comboBox2.Items" xml:space="preserve">
+  <data name="cb_hk_selectMonth.Items" xml:space="preserve">
     <value>01</value>
   </data>
-  <data name="comboBox2.Items1" xml:space="preserve">
+  <data name="cb_hk_selectMonth.Items1" xml:space="preserve">
     <value>02</value>
   </data>
-  <data name="comboBox2.Items2" xml:space="preserve">
+  <data name="cb_hk_selectMonth.Items2" xml:space="preserve">
     <value>03</value>
   </data>
-  <data name="comboBox2.Items3" xml:space="preserve">
+  <data name="cb_hk_selectMonth.Items3" xml:space="preserve">
     <value>04</value>
   </data>
-  <data name="comboBox2.Items4" xml:space="preserve">
+  <data name="cb_hk_selectMonth.Items4" xml:space="preserve">
     <value>05</value>
   </data>
-  <data name="comboBox2.Items5" xml:space="preserve">
+  <data name="cb_hk_selectMonth.Items5" xml:space="preserve">
     <value>06</value>
   </data>
-  <data name="comboBox2.Items6" xml:space="preserve">
+  <data name="cb_hk_selectMonth.Items6" xml:space="preserve">
     <value>07</value>
   </data>
-  <data name="comboBox2.Items7" xml:space="preserve">
+  <data name="cb_hk_selectMonth.Items7" xml:space="preserve">
     <value>08</value>
   </data>
-  <data name="comboBox2.Items8" xml:space="preserve">
+  <data name="cb_hk_selectMonth.Items8" xml:space="preserve">
     <value>09</value>
   </data>
-  <data name="comboBox2.Items9" xml:space="preserve">
+  <data name="cb_hk_selectMonth.Items9" xml:space="preserve">
     <value>10</value>
   </data>
-  <data name="comboBox2.Items10" xml:space="preserve">
+  <data name="cb_hk_selectMonth.Items10" xml:space="preserve">
     <value>11</value>
   </data>
-  <data name="comboBox2.Items11" xml:space="preserve">
+  <data name="cb_hk_selectMonth.Items11" xml:space="preserve">
     <value>12</value>
   </data>
-  <data name="comboBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1121, 6</value>
+  <data name="cb_hk_selectMonth.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1101, 4</value>
   </data>
-  <data name="comboBox2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="cb_hk_selectMonth.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
   </data>
-  <data name="comboBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>36, 20</value>
+  <data name="cb_hk_selectMonth.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 20</value>
   </data>
-  <data name="comboBox2.TabIndex" type="System.Int32, mscorlib">
+  <data name="cb_hk_selectMonth.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
   </data>
-  <data name="&gt;&gt;comboBox2.Name" xml:space="preserve">
-    <value>comboBox2</value>
+  <data name="&gt;&gt;cb_hk_selectMonth.Name" xml:space="preserve">
+    <value>cb_hk_selectMonth</value>
   </data>
-  <data name="&gt;&gt;comboBox2.Type" xml:space="preserve">
+  <data name="&gt;&gt;cb_hk_selectMonth.Type" xml:space="preserve">
     <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;comboBox2.Parent" xml:space="preserve">
+  <data name="&gt;&gt;cb_hk_selectMonth.Parent" xml:space="preserve">
     <value>hk_Month</value>
   </data>
-  <data name="&gt;&gt;comboBox2.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;cb_hk_selectMonth.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="textBox3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1071, 5</value>
+  <data name="txt_hk_selectYear.Font" type="System.Drawing.Font, System.Drawing">
+    <value>굴림, 11.25pt</value>
   </data>
-  <data name="textBox3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 21</value>
+  <data name="txt_hk_selectYear.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1051, 5</value>
   </data>
-  <data name="textBox3.TabIndex" type="System.Int32, mscorlib">
+  <data name="txt_hk_selectYear.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 18</value>
+  </data>
+  <data name="txt_hk_selectYear.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
   </data>
-  <data name="&gt;&gt;textBox3.Name" xml:space="preserve">
-    <value>textBox3</value>
+  <data name="txt_hk_selectYear.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Right</value>
   </data>
-  <data name="&gt;&gt;textBox3.Type" xml:space="preserve">
+  <data name="&gt;&gt;txt_hk_selectYear.Name" xml:space="preserve">
+    <value>txt_hk_selectYear</value>
+  </data>
+  <data name="&gt;&gt;txt_hk_selectYear.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;textBox3.Parent" xml:space="preserve">
+  <data name="&gt;&gt;txt_hk_selectYear.Parent" xml:space="preserve">
     <value>hk_Month</value>
   </data>
-  <data name="&gt;&gt;textBox3.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;txt_hk_selectYear.ZOrder" xml:space="preserve">
     <value>1</value>
-  </data>
-  <data name="chart3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 257</value>
-  </data>
-  <data name="chart3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>432, 97</value>
-  </data>
-  <data name="chart3.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="chart3.Text" xml:space="preserve">
-    <value>chart3</value>
-  </data>
-  <data name="&gt;&gt;chart3.Name" xml:space="preserve">
-    <value>chart3</value>
-  </data>
-  <data name="&gt;&gt;chart3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataVisualization.Charting.Chart, System.Windows.Forms.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35</value>
-  </data>
-  <data name="&gt;&gt;chart3.Parent" xml:space="preserve">
-    <value>panel27</value>
-  </data>
-  <data name="&gt;&gt;chart3.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="flowLayoutPanel3.AutoScroll" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label17.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label17.Location" type="System.Drawing.Point, System.Drawing">
-    <value>358, 1</value>
-  </data>
-  <data name="label17.Size" type="System.Drawing.Size, System.Drawing">
-    <value>71, 27</value>
-  </data>
-  <data name="label17.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="label17.Text" xml:space="preserve">
-    <value>합계</value>
-  </data>
-  <data name="label17.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="&gt;&gt;label17.Name" xml:space="preserve">
-    <value>label17</value>
-  </data>
-  <data name="&gt;&gt;label17.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label17.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;label17.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="label16.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label16.Location" type="System.Drawing.Point, System.Drawing">
-    <value>295, 1</value>
-  </data>
-  <data name="label16.Size" type="System.Drawing.Size, System.Drawing">
-    <value>59, 27</value>
-  </data>
-  <data name="label16.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="label16.Text" xml:space="preserve">
-    <value>출금</value>
-  </data>
-  <data name="label16.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="&gt;&gt;label16.Name" xml:space="preserve">
-    <value>label16</value>
-  </data>
-  <data name="&gt;&gt;label16.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label16.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;label16.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="label5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>230, 0</value>
-  </data>
-  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>59, 28</value>
-  </data>
-  <data name="label5.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="label5.Text" xml:space="preserve">
-    <value>입금</value>
-  </data>
-  <data name="label5.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="&gt;&gt;label5.Name" xml:space="preserve">
-    <value>label5</value>
-  </data>
-  <data name="&gt;&gt;label5.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label5.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="label4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>165, 0</value>
-  </data>
-  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>59, 29</value>
-  </data>
-  <data name="label4.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="label4.Text" xml:space="preserve">
-    <value>이월계좌</value>
-  </data>
-  <data name="label4.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="&gt;&gt;label4.Name" xml:space="preserve">
-    <value>label4</value>
-  </data>
-  <data name="&gt;&gt;label4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="label3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 0</value>
-  </data>
-  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>156, 27</value>
-  </data>
-  <data name="label3.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="label3.Text" xml:space="preserve">
-    <value>통장명</value>
-  </data>
-  <data name="label3.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="&gt;&gt;label3.Name" xml:space="preserve">
-    <value>label3</value>
-  </data>
-  <data name="&gt;&gt;label3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
-  </data>
-  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>427, 28</value>
-  </data>
-  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
-    <value>flowLayoutPanel3</value>
-  </data>
-  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
-    <value>0</value>
   </data>
   <data name="label19.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -2743,13 +2551,13 @@
     <value>4</value>
   </data>
   <data name="panel3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 37</value>
+    <value>6, 68</value>
   </data>
   <data name="panel3.Size" type="System.Drawing.Size, System.Drawing">
     <value>427, 28</value>
   </data>
   <data name="panel3.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+    <value>15</value>
   </data>
   <data name="&gt;&gt;panel3.Name" xml:space="preserve">
     <value>panel3</value>
@@ -2758,523 +2566,256 @@
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;panel3.Parent" xml:space="preserve">
-    <value>flowLayoutPanel3</value>
+    <value>pnl_hk_input</value>
   </data>
   <data name="&gt;&gt;panel3.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="label25.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label25.Location" type="System.Drawing.Point, System.Drawing">
-    <value>358, 1</value>
-  </data>
-  <data name="label25.Size" type="System.Drawing.Size, System.Drawing">
-    <value>71, 27</value>
-  </data>
-  <data name="label25.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="label25.Text" xml:space="preserve">
-    <value>합계</value>
-  </data>
-  <data name="label25.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="&gt;&gt;label25.Name" xml:space="preserve">
-    <value>label25</value>
-  </data>
-  <data name="&gt;&gt;label25.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label25.Parent" xml:space="preserve">
-    <value>panel4</value>
-  </data>
-  <data name="&gt;&gt;label25.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="label26.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="lb_hk_infoNo3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>굴림, 9.75pt</value>
+  </data>
+  <data name="lb_hk_infoNo3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="label26.Location" type="System.Drawing.Point, System.Drawing">
-    <value>295, 1</value>
+  <data name="lb_hk_infoNo3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>337, 27</value>
   </data>
-  <data name="label26.Size" type="System.Drawing.Size, System.Drawing">
-    <value>59, 27</value>
+  <data name="lb_hk_infoNo3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 18</value>
   </data>
-  <data name="label26.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+  <data name="lb_hk_infoNo3.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
   </data>
-  <data name="label26.Text" xml:space="preserve">
-    <value>출금</value>
+  <data name="lb_hk_infoNo3.Text" xml:space="preserve">
+    <value>0</value>
   </data>
-  <data name="label26.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
+  <data name="lb_hk_infoNo3.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
   </data>
-  <data name="&gt;&gt;label26.Name" xml:space="preserve">
-    <value>label26</value>
+  <data name="&gt;&gt;lb_hk_infoNo3.Name" xml:space="preserve">
+    <value>lb_hk_infoNo3</value>
   </data>
-  <data name="&gt;&gt;label26.Type" xml:space="preserve">
+  <data name="&gt;&gt;lb_hk_infoNo3.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label26.Parent" xml:space="preserve">
-    <value>panel4</value>
+  <data name="&gt;&gt;lb_hk_infoNo3.Parent" xml:space="preserve">
+    <value>pnl_hk_input</value>
   </data>
-  <data name="&gt;&gt;label26.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;lb_hk_infoNo3.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="label27.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="lb_hk_infoNo2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>굴림, 9.75pt</value>
+  </data>
+  <data name="lb_hk_infoNo2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="label27.Location" type="System.Drawing.Point, System.Drawing">
-    <value>230, 0</value>
+  <data name="lb_hk_infoNo2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>212, 27</value>
   </data>
-  <data name="label27.Size" type="System.Drawing.Size, System.Drawing">
-    <value>59, 28</value>
+  <data name="lb_hk_infoNo2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 18</value>
   </data>
-  <data name="label27.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+  <data name="lb_hk_infoNo2.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
   </data>
-  <data name="label27.Text" xml:space="preserve">
-    <value>입금</value>
+  <data name="lb_hk_infoNo2.Text" xml:space="preserve">
+    <value>0</value>
   </data>
-  <data name="label27.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
+  <data name="lb_hk_infoNo2.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
   </data>
-  <data name="&gt;&gt;label27.Name" xml:space="preserve">
-    <value>label27</value>
+  <data name="&gt;&gt;lb_hk_infoNo2.Name" xml:space="preserve">
+    <value>lb_hk_infoNo2</value>
   </data>
-  <data name="&gt;&gt;label27.Type" xml:space="preserve">
+  <data name="&gt;&gt;lb_hk_infoNo2.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label27.Parent" xml:space="preserve">
-    <value>panel4</value>
+  <data name="&gt;&gt;lb_hk_infoNo2.Parent" xml:space="preserve">
+    <value>pnl_hk_input</value>
   </data>
-  <data name="&gt;&gt;label27.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;lb_hk_infoNo2.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="label28.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="lb_hk_infoNo1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>굴림, 9.75pt</value>
+  </data>
+  <data name="lb_hk_infoNo1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="label28.Location" type="System.Drawing.Point, System.Drawing">
-    <value>165, 0</value>
+  <data name="lb_hk_infoNo1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>87, 27</value>
   </data>
-  <data name="label28.Size" type="System.Drawing.Size, System.Drawing">
-    <value>59, 29</value>
+  <data name="lb_hk_infoNo1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 18</value>
   </data>
-  <data name="label28.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+  <data name="lb_hk_infoNo1.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
   </data>
-  <data name="label28.Text" xml:space="preserve">
-    <value>이월계좌</value>
+  <data name="lb_hk_infoNo1.Text" xml:space="preserve">
+    <value>0</value>
   </data>
-  <data name="label28.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
+  <data name="lb_hk_infoNo1.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
   </data>
-  <data name="&gt;&gt;label28.Name" xml:space="preserve">
-    <value>label28</value>
+  <data name="&gt;&gt;lb_hk_infoNo1.Name" xml:space="preserve">
+    <value>lb_hk_infoNo1</value>
   </data>
-  <data name="&gt;&gt;label28.Type" xml:space="preserve">
+  <data name="&gt;&gt;lb_hk_infoNo1.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label28.Parent" xml:space="preserve">
-    <value>panel4</value>
+  <data name="&gt;&gt;lb_hk_infoNo1.Parent" xml:space="preserve">
+    <value>pnl_hk_input</value>
   </data>
-  <data name="&gt;&gt;label28.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;lb_hk_infoNo1.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="label29.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="lb_hk_info2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>굴림, 9.75pt</value>
+  </data>
+  <data name="lb_hk_info2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="label29.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 0</value>
+  <data name="lb_hk_info2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>146, 27</value>
   </data>
-  <data name="label29.Size" type="System.Drawing.Size, System.Drawing">
-    <value>156, 27</value>
+  <data name="lb_hk_info2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 18</value>
   </data>
-  <data name="label29.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="lb_hk_info2.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
   </data>
-  <data name="label29.Text" xml:space="preserve">
-    <value>통장명</value>
+  <data name="lb_hk_info2.Text" xml:space="preserve">
+    <value>현금잔액</value>
   </data>
-  <data name="label29.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+  <data name="lb_hk_info2.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
   </data>
-  <data name="&gt;&gt;label29.Name" xml:space="preserve">
-    <value>label29</value>
+  <data name="&gt;&gt;lb_hk_info2.Name" xml:space="preserve">
+    <value>lb_hk_info2</value>
   </data>
-  <data name="&gt;&gt;label29.Type" xml:space="preserve">
+  <data name="&gt;&gt;lb_hk_info2.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label29.Parent" xml:space="preserve">
-    <value>panel4</value>
+  <data name="&gt;&gt;lb_hk_info2.Parent" xml:space="preserve">
+    <value>pnl_hk_input</value>
   </data>
-  <data name="&gt;&gt;label29.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;lb_hk_info2.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="panel4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 71</value>
+  <data name="lb_hk_info3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>굴림, 9.75pt</value>
   </data>
-  <data name="panel4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>427, 28</value>
+  <data name="lb_hk_info3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="panel4.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
+  <data name="lb_hk_info3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>271, 26</value>
   </data>
-  <data name="&gt;&gt;panel4.Name" xml:space="preserve">
-    <value>panel4</value>
+  <data name="lb_hk_info3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 20</value>
   </data>
-  <data name="&gt;&gt;panel4.Type" xml:space="preserve">
+  <data name="lb_hk_info3.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="lb_hk_info3.Text" xml:space="preserve">
+    <value>계좌잔액</value>
+  </data>
+  <data name="lb_hk_info3.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;lb_hk_info3.Name" xml:space="preserve">
+    <value>lb_hk_info3</value>
+  </data>
+  <data name="&gt;&gt;lb_hk_info3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lb_hk_info3.Parent" xml:space="preserve">
+    <value>pnl_hk_input</value>
+  </data>
+  <data name="&gt;&gt;lb_hk_info3.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="lb_hk_info1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>굴림, 9.75pt</value>
+  </data>
+  <data name="lb_hk_info1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lb_hk_info1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 27</value>
+  </data>
+  <data name="lb_hk_info1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>63, 18</value>
+  </data>
+  <data name="lb_hk_info1.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="lb_hk_info1.Text" xml:space="preserve">
+    <value>현재잔액</value>
+  </data>
+  <data name="lb_hk_info1.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;lb_hk_info1.Name" xml:space="preserve">
+    <value>lb_hk_info1</value>
+  </data>
+  <data name="&gt;&gt;lb_hk_info1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lb_hk_info1.Parent" xml:space="preserve">
+    <value>pnl_hk_input</value>
+  </data>
+  <data name="&gt;&gt;lb_hk_info1.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="pnl_hk_side1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>439, 68</value>
+  </data>
+  <data name="pnl_hk_side1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>18, 170</value>
+  </data>
+  <data name="pnl_hk_side1.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;pnl_hk_side1.Name" xml:space="preserve">
+    <value>pnl_hk_side1</value>
+  </data>
+  <data name="&gt;&gt;pnl_hk_side1.Type" xml:space="preserve">
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;panel4.Parent" xml:space="preserve">
-    <value>flowLayoutPanel3</value>
+  <data name="&gt;&gt;pnl_hk_side1.Parent" xml:space="preserve">
+    <value>pnl_hk_input</value>
   </data>
-  <data name="&gt;&gt;panel4.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="&gt;&gt;pnl_hk_side1.ZOrder" xml:space="preserve">
+    <value>7</value>
   </data>
-  <data name="label30.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="chart_inOut.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 257</value>
   </data>
-  <data name="label30.Location" type="System.Drawing.Point, System.Drawing">
-    <value>358, 1</value>
+  <data name="chart_inOut.Size" type="System.Drawing.Size, System.Drawing">
+    <value>432, 97</value>
   </data>
-  <data name="label30.Size" type="System.Drawing.Size, System.Drawing">
-    <value>71, 27</value>
-  </data>
-  <data name="label30.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="label30.Text" xml:space="preserve">
-    <value>합계</value>
-  </data>
-  <data name="label30.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="&gt;&gt;label30.Name" xml:space="preserve">
-    <value>label30</value>
-  </data>
-  <data name="&gt;&gt;label30.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label30.Parent" xml:space="preserve">
-    <value>panel5</value>
-  </data>
-  <data name="&gt;&gt;label30.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="label31.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label31.Location" type="System.Drawing.Point, System.Drawing">
-    <value>295, 1</value>
-  </data>
-  <data name="label31.Size" type="System.Drawing.Size, System.Drawing">
-    <value>59, 27</value>
-  </data>
-  <data name="label31.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="label31.Text" xml:space="preserve">
-    <value>출금</value>
-  </data>
-  <data name="label31.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="&gt;&gt;label31.Name" xml:space="preserve">
-    <value>label31</value>
-  </data>
-  <data name="&gt;&gt;label31.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label31.Parent" xml:space="preserve">
-    <value>panel5</value>
-  </data>
-  <data name="&gt;&gt;label31.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="label32.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label32.Location" type="System.Drawing.Point, System.Drawing">
-    <value>230, 0</value>
-  </data>
-  <data name="label32.Size" type="System.Drawing.Size, System.Drawing">
-    <value>59, 28</value>
-  </data>
-  <data name="label32.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="label32.Text" xml:space="preserve">
-    <value>입금</value>
-  </data>
-  <data name="label32.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="&gt;&gt;label32.Name" xml:space="preserve">
-    <value>label32</value>
-  </data>
-  <data name="&gt;&gt;label32.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label32.Parent" xml:space="preserve">
-    <value>panel5</value>
-  </data>
-  <data name="&gt;&gt;label32.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="label33.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label33.Location" type="System.Drawing.Point, System.Drawing">
-    <value>165, 0</value>
-  </data>
-  <data name="label33.Size" type="System.Drawing.Size, System.Drawing">
-    <value>59, 29</value>
-  </data>
-  <data name="label33.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="label33.Text" xml:space="preserve">
-    <value>이월계좌</value>
-  </data>
-  <data name="label33.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="&gt;&gt;label33.Name" xml:space="preserve">
-    <value>label33</value>
-  </data>
-  <data name="&gt;&gt;label33.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label33.Parent" xml:space="preserve">
-    <value>panel5</value>
-  </data>
-  <data name="&gt;&gt;label33.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="label34.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label34.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 0</value>
-  </data>
-  <data name="label34.Size" type="System.Drawing.Size, System.Drawing">
-    <value>156, 27</value>
-  </data>
-  <data name="label34.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="label34.Text" xml:space="preserve">
-    <value>통장명</value>
-  </data>
-  <data name="label34.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="&gt;&gt;label34.Name" xml:space="preserve">
-    <value>label34</value>
-  </data>
-  <data name="&gt;&gt;label34.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label34.Parent" xml:space="preserve">
-    <value>panel5</value>
-  </data>
-  <data name="&gt;&gt;label34.ZOrder" xml:space="preserve">
+  <data name="chart_inOut.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
-  <data name="panel5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 105</value>
+  <data name="chart_inOut.Text" xml:space="preserve">
+    <value>chart3</value>
   </data>
-  <data name="panel5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>427, 28</value>
+  <data name="&gt;&gt;chart_inOut.Name" xml:space="preserve">
+    <value>chart_inOut</value>
   </data>
-  <data name="panel5.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
+  <data name="&gt;&gt;chart_inOut.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataVisualization.Charting.Chart, System.Windows.Forms.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35</value>
   </data>
-  <data name="&gt;&gt;panel5.Name" xml:space="preserve">
-    <value>panel5</value>
+  <data name="&gt;&gt;chart_inOut.Parent" xml:space="preserve">
+    <value>pnl_hk_input</value>
   </data>
-  <data name="&gt;&gt;panel5.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;chart_inOut.ZOrder" xml:space="preserve">
+    <value>8</value>
   </data>
-  <data name="&gt;&gt;panel5.Parent" xml:space="preserve">
-    <value>flowLayoutPanel3</value>
-  </data>
-  <data name="&gt;&gt;panel5.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="label35.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label35.Location" type="System.Drawing.Point, System.Drawing">
-    <value>358, 1</value>
-  </data>
-  <data name="label35.Size" type="System.Drawing.Size, System.Drawing">
-    <value>71, 27</value>
-  </data>
-  <data name="label35.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="label35.Text" xml:space="preserve">
-    <value>합계</value>
-  </data>
-  <data name="label35.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="&gt;&gt;label35.Name" xml:space="preserve">
-    <value>label35</value>
-  </data>
-  <data name="&gt;&gt;label35.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label35.Parent" xml:space="preserve">
-    <value>panel6</value>
-  </data>
-  <data name="&gt;&gt;label35.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="label36.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label36.Location" type="System.Drawing.Point, System.Drawing">
-    <value>295, 1</value>
-  </data>
-  <data name="label36.Size" type="System.Drawing.Size, System.Drawing">
-    <value>59, 27</value>
-  </data>
-  <data name="label36.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="label36.Text" xml:space="preserve">
-    <value>출금</value>
-  </data>
-  <data name="label36.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="&gt;&gt;label36.Name" xml:space="preserve">
-    <value>label36</value>
-  </data>
-  <data name="&gt;&gt;label36.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label36.Parent" xml:space="preserve">
-    <value>panel6</value>
-  </data>
-  <data name="&gt;&gt;label36.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="label37.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label37.Location" type="System.Drawing.Point, System.Drawing">
-    <value>230, 0</value>
-  </data>
-  <data name="label37.Size" type="System.Drawing.Size, System.Drawing">
-    <value>59, 28</value>
-  </data>
-  <data name="label37.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="label37.Text" xml:space="preserve">
-    <value>입금</value>
-  </data>
-  <data name="label37.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="&gt;&gt;label37.Name" xml:space="preserve">
-    <value>label37</value>
-  </data>
-  <data name="&gt;&gt;label37.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label37.Parent" xml:space="preserve">
-    <value>panel6</value>
-  </data>
-  <data name="&gt;&gt;label37.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="label38.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label38.Location" type="System.Drawing.Point, System.Drawing">
-    <value>165, 0</value>
-  </data>
-  <data name="label38.Size" type="System.Drawing.Size, System.Drawing">
-    <value>59, 29</value>
-  </data>
-  <data name="label38.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="label38.Text" xml:space="preserve">
-    <value>이월계좌</value>
-  </data>
-  <data name="label38.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="&gt;&gt;label38.Name" xml:space="preserve">
-    <value>label38</value>
-  </data>
-  <data name="&gt;&gt;label38.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label38.Parent" xml:space="preserve">
-    <value>panel6</value>
-  </data>
-  <data name="&gt;&gt;label38.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="label39.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label39.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 0</value>
-  </data>
-  <data name="label39.Size" type="System.Drawing.Size, System.Drawing">
-    <value>156, 27</value>
-  </data>
-  <data name="label39.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="label39.Text" xml:space="preserve">
-    <value>통장명</value>
-  </data>
-  <data name="label39.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="&gt;&gt;label39.Name" xml:space="preserve">
-    <value>label39</value>
-  </data>
-  <data name="&gt;&gt;label39.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label39.Parent" xml:space="preserve">
-    <value>panel6</value>
-  </data>
-  <data name="&gt;&gt;label39.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="panel6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 139</value>
-  </data>
-  <data name="panel6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>427, 28</value>
-  </data>
-  <data name="panel6.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;panel6.Name" xml:space="preserve">
-    <value>panel6</value>
-  </data>
-  <data name="&gt;&gt;panel6.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel6.Parent" xml:space="preserve">
-    <value>flowLayoutPanel3</value>
-  </data>
-  <data name="&gt;&gt;panel6.ZOrder" xml:space="preserve">
-    <value>4</value>
+  <data name="flp_hk_AccontInfo.AutoScroll" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="label40.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -3427,7 +2968,7 @@
     <value>4</value>
   </data>
   <data name="panel10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 173</value>
+    <value>3, 3</value>
   </data>
   <data name="panel10.Size" type="System.Drawing.Size, System.Drawing">
     <value>427, 28</value>
@@ -3442,379 +2983,220 @@
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;panel10.Parent" xml:space="preserve">
-    <value>flowLayoutPanel3</value>
+    <value>flp_hk_AccontInfo</value>
   </data>
   <data name="&gt;&gt;panel10.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>0</value>
   </data>
-  <data name="flowLayoutPanel3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 68</value>
+  <data name="flp_hk_AccontInfo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 98</value>
   </data>
-  <data name="flowLayoutPanel3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>451, 170</value>
+  <data name="flp_hk_AccontInfo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>451, 140</value>
   </data>
-  <data name="flowLayoutPanel3.TabIndex" type="System.Int32, mscorlib">
+  <data name="flp_hk_AccontInfo.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
-  <data name="&gt;&gt;flowLayoutPanel3.Name" xml:space="preserve">
-    <value>flowLayoutPanel3</value>
+  <data name="&gt;&gt;flp_hk_AccontInfo.Name" xml:space="preserve">
+    <value>flp_hk_AccontInfo</value>
   </data>
-  <data name="&gt;&gt;flowLayoutPanel3.Type" xml:space="preserve">
+  <data name="&gt;&gt;flp_hk_AccontInfo.Type" xml:space="preserve">
     <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;flowLayoutPanel3.Parent" xml:space="preserve">
-    <value>panel27</value>
+  <data name="&gt;&gt;flp_hk_AccontInfo.Parent" xml:space="preserve">
+    <value>pnl_hk_input</value>
   </data>
-  <data name="&gt;&gt;flowLayoutPanel3.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="&gt;&gt;flp_hk_AccontInfo.ZOrder" xml:space="preserve">
+    <value>9</value>
   </data>
-  <data name="dateTimePicker1.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="tdp_hk_selectDate.Location" type="System.Drawing.Point, System.Drawing">
     <value>246, 372</value>
   </data>
-  <data name="dateTimePicker1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="tdp_hk_selectDate.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
   </data>
-  <data name="dateTimePicker1.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="tdp_hk_selectDate.Size" type="System.Drawing.Size, System.Drawing">
     <value>176, 21</value>
   </data>
-  <data name="dateTimePicker1.TabIndex" type="System.Int32, mscorlib">
+  <data name="tdp_hk_selectDate.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;dateTimePicker1.Name" xml:space="preserve">
-    <value>dateTimePicker1</value>
+  <data name="&gt;&gt;tdp_hk_selectDate.Name" xml:space="preserve">
+    <value>tdp_hk_selectDate</value>
   </data>
-  <data name="&gt;&gt;dateTimePicker1.Type" xml:space="preserve">
+  <data name="&gt;&gt;tdp_hk_selectDate.Type" xml:space="preserve">
     <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;dateTimePicker1.Parent" xml:space="preserve">
-    <value>panel27</value>
+  <data name="&gt;&gt;tdp_hk_selectDate.Parent" xml:space="preserve">
+    <value>pnl_hk_input</value>
   </data>
-  <data name="&gt;&gt;dateTimePicker1.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="&gt;&gt;tdp_hk_selectDate.ZOrder" xml:space="preserve">
+    <value>10</value>
   </data>
-  <data name="label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="lb_hk_title1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lb_hk_title1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>317, 13</value>
+  <data name="lb_hk_title1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 6</value>
   </data>
-  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>46, 12</value>
+  <data name="lb_hk_title1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>29, 12</value>
   </data>
-  <data name="label2.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
+  <data name="lb_hk_title1.TabIndex" type="System.Int32, mscorlib">
+    <value>50</value>
   </data>
-  <data name="label2.Text" xml:space="preserve">
+  <data name="lb_hk_title1.Text" xml:space="preserve">
+    <value>지출</value>
+  </data>
+  <data name="&gt;&gt;lb_hk_title1.Name" xml:space="preserve">
+    <value>lb_hk_title1</value>
+  </data>
+  <data name="&gt;&gt;lb_hk_title1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lb_hk_title1.Parent" xml:space="preserve">
+    <value>tabPage_hk_spend</value>
+  </data>
+  <data name="&gt;&gt;lb_hk_title1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="label2.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleRight</value>
+  <data name="cal_1.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
   </data>
-  <data name="&gt;&gt;label2.Name" xml:space="preserve">
-    <value>label2</value>
-  </data>
-  <data name="&gt;&gt;label2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
-    <value>panel44</value>
-  </data>
-  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="cal_1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>189, 14</value>
-  </data>
-  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>46, 12</value>
-  </data>
-  <data name="label1.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="label1.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="label1.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleRight</value>
-  </data>
-  <data name="&gt;&gt;label1.Name" xml:space="preserve">
-    <value>label1</value>
-  </data>
-  <data name="&gt;&gt;label1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
-    <value>panel44</value>
-  </data>
-  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="label18.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label18.Location" type="System.Drawing.Point, System.Drawing">
-    <value>130, 11</value>
-  </data>
-  <data name="label18.Size" type="System.Drawing.Size, System.Drawing">
-    <value>70, 18</value>
-  </data>
-  <data name="label18.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="label18.Text" xml:space="preserve">
-    <value>현금잔액</value>
-  </data>
-  <data name="label18.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="&gt;&gt;label18.Name" xml:space="preserve">
-    <value>label18</value>
-  </data>
-  <data name="&gt;&gt;label18.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label18.Parent" xml:space="preserve">
-    <value>panel44</value>
-  </data>
-  <data name="&gt;&gt;label18.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="label15.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label15.Location" type="System.Drawing.Point, System.Drawing">
-    <value>263, 9</value>
-  </data>
-  <data name="label15.Size" type="System.Drawing.Size, System.Drawing">
-    <value>70, 20</value>
-  </data>
-  <data name="label15.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="label15.Text" xml:space="preserve">
-    <value>계좌잔액</value>
-  </data>
-  <data name="label15.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="&gt;&gt;label15.Name" xml:space="preserve">
-    <value>label15</value>
-  </data>
-  <data name="&gt;&gt;label15.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label15.Parent" xml:space="preserve">
-    <value>panel44</value>
-  </data>
-  <data name="&gt;&gt;label15.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="label14.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label14.Location" type="System.Drawing.Point, System.Drawing">
-    <value>78, 14</value>
-  </data>
-  <data name="label14.Size" type="System.Drawing.Size, System.Drawing">
-    <value>46, 12</value>
-  </data>
-  <data name="label14.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="label14.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="label14.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleRight</value>
-  </data>
-  <data name="&gt;&gt;label14.Name" xml:space="preserve">
-    <value>label14</value>
-  </data>
-  <data name="&gt;&gt;label14.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label14.Parent" xml:space="preserve">
-    <value>panel44</value>
-  </data>
-  <data name="&gt;&gt;label14.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="label13.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label13.Location" type="System.Drawing.Point, System.Drawing">
-    <value>18, 11</value>
-  </data>
-  <data name="label13.Size" type="System.Drawing.Size, System.Drawing">
-    <value>66, 18</value>
-  </data>
-  <data name="label13.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="label13.Text" xml:space="preserve">
-    <value>현재잔액</value>
-  </data>
-  <data name="label13.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="&gt;&gt;label13.Name" xml:space="preserve">
-    <value>label13</value>
-  </data>
-  <data name="&gt;&gt;label13.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label13.Parent" xml:space="preserve">
-    <value>panel44</value>
-  </data>
-  <data name="&gt;&gt;label13.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="panel44.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 20</value>
-  </data>
-  <data name="panel44.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
-  </data>
-  <data name="panel44.Size" type="System.Drawing.Size, System.Drawing">
-    <value>448, 35</value>
-  </data>
-  <data name="panel44.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;panel44.Name" xml:space="preserve">
-    <value>panel44</value>
-  </data>
-  <data name="&gt;&gt;panel44.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel44.Parent" xml:space="preserve">
-    <value>panel27</value>
-  </data>
-  <data name="&gt;&gt;panel44.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="button25.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="button25.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="cal_1.Location" type="System.Drawing.Point, System.Drawing">
     <value>246, 179</value>
   </data>
-  <data name="button25.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="cal_1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
-  <data name="button25.Size" type="System.Drawing.Size, System.Drawing">
-    <value>40, 40</value>
+  <data name="cal_1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>39, 39</value>
   </data>
-  <data name="button25.TabIndex" type="System.Int32, mscorlib">
+  <data name="cal_1.TabIndex" type="System.Int32, mscorlib">
     <value>49</value>
   </data>
-  <data name="button25.Text" xml:space="preserve">
+  <data name="cal_1.Text" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="&gt;&gt;button25.Name" xml:space="preserve">
-    <value>button25</value>
+  <data name="&gt;&gt;cal_1.Name" xml:space="preserve">
+    <value>cal_1</value>
   </data>
-  <data name="&gt;&gt;button25.Type" xml:space="preserve">
+  <data name="&gt;&gt;cal_1.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button25.Parent" xml:space="preserve">
-    <value>tabPage3</value>
+  <data name="&gt;&gt;cal_1.Parent" xml:space="preserve">
+    <value>tabPage_hk_spend</value>
   </data>
-  <data name="&gt;&gt;button25.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="&gt;&gt;cal_1.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
-  <data name="button26.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="cal_4.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="cal_4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="button26.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="cal_4.Location" type="System.Drawing.Point, System.Drawing">
     <value>246, 139</value>
   </data>
-  <data name="button26.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="cal_4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
-  <data name="button26.Size" type="System.Drawing.Size, System.Drawing">
-    <value>40, 40</value>
+  <data name="cal_4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>39, 39</value>
   </data>
-  <data name="button26.TabIndex" type="System.Int32, mscorlib">
+  <data name="cal_4.TabIndex" type="System.Int32, mscorlib">
     <value>48</value>
   </data>
-  <data name="button26.Text" xml:space="preserve">
+  <data name="cal_4.Text" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="&gt;&gt;button26.Name" xml:space="preserve">
-    <value>button26</value>
+  <data name="&gt;&gt;cal_4.Name" xml:space="preserve">
+    <value>cal_4</value>
   </data>
-  <data name="&gt;&gt;button26.Type" xml:space="preserve">
+  <data name="&gt;&gt;cal_4.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button26.Parent" xml:space="preserve">
-    <value>tabPage3</value>
+  <data name="&gt;&gt;cal_4.Parent" xml:space="preserve">
+    <value>tabPage_hk_spend</value>
   </data>
-  <data name="&gt;&gt;button26.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="button27.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="button27.Location" type="System.Drawing.Point, System.Drawing">
-    <value>246, 99</value>
-  </data>
-  <data name="button27.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="button27.Size" type="System.Drawing.Size, System.Drawing">
-    <value>40, 40</value>
-  </data>
-  <data name="button27.TabIndex" type="System.Int32, mscorlib">
-    <value>47</value>
-  </data>
-  <data name="button27.Text" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;button27.Name" xml:space="preserve">
-    <value>button27</value>
-  </data>
-  <data name="&gt;&gt;button27.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button27.Parent" xml:space="preserve">
-    <value>tabPage3</value>
-  </data>
-  <data name="&gt;&gt;button27.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;cal_4.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="button28.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="cal_7.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="cal_7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="button28.Location" type="System.Drawing.Point, System.Drawing">
-    <value>246, 59</value>
+  <data name="cal_7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>246, 99</value>
   </data>
-  <data name="button28.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="cal_7.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
-  <data name="button28.Size" type="System.Drawing.Size, System.Drawing">
-    <value>40, 40</value>
+  <data name="cal_7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>39, 39</value>
   </data>
-  <data name="button28.TabIndex" type="System.Int32, mscorlib">
-    <value>46</value>
+  <data name="cal_7.TabIndex" type="System.Int32, mscorlib">
+    <value>47</value>
   </data>
-  <data name="button28.Text" xml:space="preserve">
-    <value>%</value>
+  <data name="cal_7.Text" xml:space="preserve">
+    <value>7</value>
   </data>
-  <data name="&gt;&gt;button28.Name" xml:space="preserve">
-    <value>button28</value>
+  <data name="&gt;&gt;cal_7.Name" xml:space="preserve">
+    <value>cal_7</value>
   </data>
-  <data name="&gt;&gt;button28.Type" xml:space="preserve">
+  <data name="&gt;&gt;cal_7.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button28.Parent" xml:space="preserve">
-    <value>tabPage3</value>
+  <data name="&gt;&gt;cal_7.Parent" xml:space="preserve">
+    <value>tabPage_hk_spend</value>
   </data>
-  <data name="&gt;&gt;button28.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;cal_7.ZOrder" xml:space="preserve">
     <value>3</value>
+  </data>
+  <data name="cal_CE.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="cal_CE.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="cal_CE.Location" type="System.Drawing.Point, System.Drawing">
+    <value>246, 59</value>
+  </data>
+  <data name="cal_CE.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="cal_CE.Size" type="System.Drawing.Size, System.Drawing">
+    <value>39, 39</value>
+  </data>
+  <data name="cal_CE.TabIndex" type="System.Int32, mscorlib">
+    <value>46</value>
+  </data>
+  <data name="cal_CE.Text" xml:space="preserve">
+    <value>CE</value>
+  </data>
+  <data name="&gt;&gt;cal_CE.Name" xml:space="preserve">
+    <value>cal_CE</value>
+  </data>
+  <data name="&gt;&gt;cal_CE.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cal_CE.Parent" xml:space="preserve">
+    <value>tabPage_hk_spend</value>
+  </data>
+  <data name="&gt;&gt;cal_CE.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="button21.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
   </data>
   <data name="button21.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -3826,7 +3208,7 @@
     <value>0, 0, 0, 0</value>
   </data>
   <data name="button21.Size" type="System.Drawing.Size, System.Drawing">
-    <value>40, 40</value>
+    <value>39, 39</value>
   </data>
   <data name="button21.TabIndex" type="System.Int32, mscorlib">
     <value>44</value>
@@ -3841,637 +3223,1066 @@
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;button21.Parent" xml:space="preserve">
-    <value>tabPage3</value>
+    <value>tabPage_hk_spend</value>
   </data>
   <data name="&gt;&gt;button21.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
-  <data name="button22.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="cal_comma.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="cal_comma.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="button22.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="cal_comma.Location" type="System.Drawing.Point, System.Drawing">
     <value>326, 219</value>
   </data>
-  <data name="button22.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="cal_comma.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
-  <data name="button22.Size" type="System.Drawing.Size, System.Drawing">
-    <value>40, 40</value>
+  <data name="cal_comma.Size" type="System.Drawing.Size, System.Drawing">
+    <value>39, 39</value>
   </data>
-  <data name="button22.TabIndex" type="System.Int32, mscorlib">
+  <data name="cal_comma.TabIndex" type="System.Int32, mscorlib">
     <value>43</value>
   </data>
-  <data name="button22.Text" xml:space="preserve">
+  <data name="cal_comma.Text" xml:space="preserve">
     <value>.</value>
   </data>
-  <data name="&gt;&gt;button22.Name" xml:space="preserve">
-    <value>button22</value>
+  <data name="&gt;&gt;cal_comma.Name" xml:space="preserve">
+    <value>cal_comma</value>
   </data>
-  <data name="&gt;&gt;button22.Type" xml:space="preserve">
+  <data name="&gt;&gt;cal_comma.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button22.Parent" xml:space="preserve">
-    <value>tabPage3</value>
+  <data name="&gt;&gt;cal_comma.Parent" xml:space="preserve">
+    <value>tabPage_hk_spend</value>
   </data>
-  <data name="&gt;&gt;button22.ZOrder" xml:space="preserve">
-    <value>5</value>
+  <data name="&gt;&gt;cal_comma.ZOrder" xml:space="preserve">
+    <value>6</value>
   </data>
-  <data name="button23.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="cal_0.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="cal_0.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="button23.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="cal_0.Location" type="System.Drawing.Point, System.Drawing">
     <value>246, 219</value>
   </data>
-  <data name="button23.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="cal_0.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
-  <data name="button23.Size" type="System.Drawing.Size, System.Drawing">
-    <value>80, 40</value>
+  <data name="cal_0.Size" type="System.Drawing.Size, System.Drawing">
+    <value>79, 39</value>
   </data>
-  <data name="button23.TabIndex" type="System.Int32, mscorlib">
+  <data name="cal_0.TabIndex" type="System.Int32, mscorlib">
     <value>42</value>
   </data>
-  <data name="button23.Text" xml:space="preserve">
+  <data name="cal_0.Text" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;button23.Name" xml:space="preserve">
-    <value>button23</value>
+  <data name="&gt;&gt;cal_0.Name" xml:space="preserve">
+    <value>cal_0</value>
   </data>
-  <data name="&gt;&gt;button23.Type" xml:space="preserve">
+  <data name="&gt;&gt;cal_0.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button23.Parent" xml:space="preserve">
-    <value>tabPage3</value>
+  <data name="&gt;&gt;cal_0.Parent" xml:space="preserve">
+    <value>tabPage_hk_spend</value>
   </data>
-  <data name="&gt;&gt;button23.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="button17.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="button17.Location" type="System.Drawing.Point, System.Drawing">
-    <value>366, 179</value>
-  </data>
-  <data name="button17.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="button17.Size" type="System.Drawing.Size, System.Drawing">
-    <value>40, 40</value>
-  </data>
-  <data name="button17.TabIndex" type="System.Int32, mscorlib">
-    <value>40</value>
-  </data>
-  <data name="button17.Text" xml:space="preserve">
-    <value>+</value>
-  </data>
-  <data name="&gt;&gt;button17.Name" xml:space="preserve">
-    <value>button17</value>
-  </data>
-  <data name="&gt;&gt;button17.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button17.Parent" xml:space="preserve">
-    <value>tabPage3</value>
-  </data>
-  <data name="&gt;&gt;button17.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;cal_0.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
-  <data name="button18.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="cal_Plus.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="cal_Plus.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="button18.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="cal_Plus.Location" type="System.Drawing.Point, System.Drawing">
+    <value>366, 179</value>
+  </data>
+  <data name="cal_Plus.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="cal_Plus.Size" type="System.Drawing.Size, System.Drawing">
+    <value>39, 39</value>
+  </data>
+  <data name="cal_Plus.TabIndex" type="System.Int32, mscorlib">
+    <value>40</value>
+  </data>
+  <data name="cal_Plus.Text" xml:space="preserve">
+    <value>+</value>
+  </data>
+  <data name="&gt;&gt;cal_Plus.Name" xml:space="preserve">
+    <value>cal_Plus</value>
+  </data>
+  <data name="&gt;&gt;cal_Plus.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cal_Plus.Parent" xml:space="preserve">
+    <value>tabPage_hk_spend</value>
+  </data>
+  <data name="&gt;&gt;cal_Plus.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="cal_3.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="cal_3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="cal_3.Location" type="System.Drawing.Point, System.Drawing">
     <value>326, 179</value>
   </data>
-  <data name="button18.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="cal_3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
-  <data name="button18.Size" type="System.Drawing.Size, System.Drawing">
-    <value>40, 40</value>
+  <data name="cal_3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>39, 39</value>
   </data>
-  <data name="button18.TabIndex" type="System.Int32, mscorlib">
+  <data name="cal_3.TabIndex" type="System.Int32, mscorlib">
     <value>39</value>
   </data>
-  <data name="button18.Text" xml:space="preserve">
+  <data name="cal_3.Text" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="&gt;&gt;button18.Name" xml:space="preserve">
-    <value>button18</value>
+  <data name="&gt;&gt;cal_3.Name" xml:space="preserve">
+    <value>cal_3</value>
   </data>
-  <data name="&gt;&gt;button18.Type" xml:space="preserve">
+  <data name="&gt;&gt;cal_3.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button18.Parent" xml:space="preserve">
-    <value>tabPage3</value>
+  <data name="&gt;&gt;cal_3.Parent" xml:space="preserve">
+    <value>tabPage_hk_spend</value>
   </data>
-  <data name="&gt;&gt;button18.ZOrder" xml:space="preserve">
-    <value>8</value>
+  <data name="&gt;&gt;cal_3.ZOrder" xml:space="preserve">
+    <value>9</value>
   </data>
-  <data name="button19.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="cal_2.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="cal_2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="button19.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="cal_2.Location" type="System.Drawing.Point, System.Drawing">
     <value>286, 179</value>
   </data>
-  <data name="button19.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="cal_2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
-  <data name="button19.Size" type="System.Drawing.Size, System.Drawing">
-    <value>40, 40</value>
+  <data name="cal_2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>39, 39</value>
   </data>
-  <data name="button19.TabIndex" type="System.Int32, mscorlib">
+  <data name="cal_2.TabIndex" type="System.Int32, mscorlib">
     <value>38</value>
   </data>
-  <data name="button19.Text" xml:space="preserve">
+  <data name="cal_2.Text" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="&gt;&gt;button19.Name" xml:space="preserve">
-    <value>button19</value>
+  <data name="&gt;&gt;cal_2.Name" xml:space="preserve">
+    <value>cal_2</value>
   </data>
-  <data name="&gt;&gt;button19.Type" xml:space="preserve">
+  <data name="&gt;&gt;cal_2.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button19.Parent" xml:space="preserve">
-    <value>tabPage3</value>
+  <data name="&gt;&gt;cal_2.Parent" xml:space="preserve">
+    <value>tabPage_hk_spend</value>
   </data>
-  <data name="&gt;&gt;button19.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="button13.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="button13.Location" type="System.Drawing.Point, System.Drawing">
-    <value>366, 139</value>
-  </data>
-  <data name="button13.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="button13.Size" type="System.Drawing.Size, System.Drawing">
-    <value>40, 40</value>
-  </data>
-  <data name="button13.TabIndex" type="System.Int32, mscorlib">
-    <value>36</value>
-  </data>
-  <data name="button13.Text" xml:space="preserve">
-    <value>-</value>
-  </data>
-  <data name="&gt;&gt;button13.Name" xml:space="preserve">
-    <value>button13</value>
-  </data>
-  <data name="&gt;&gt;button13.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button13.Parent" xml:space="preserve">
-    <value>tabPage3</value>
-  </data>
-  <data name="&gt;&gt;button13.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;cal_2.ZOrder" xml:space="preserve">
     <value>10</value>
   </data>
-  <data name="button14.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="cal_minuse.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="cal_minuse.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="button14.Location" type="System.Drawing.Point, System.Drawing">
-    <value>326, 139</value>
+  <data name="cal_minuse.Location" type="System.Drawing.Point, System.Drawing">
+    <value>366, 139</value>
   </data>
-  <data name="button14.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="cal_minuse.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
-  <data name="button14.Size" type="System.Drawing.Size, System.Drawing">
-    <value>40, 40</value>
+  <data name="cal_minuse.Size" type="System.Drawing.Size, System.Drawing">
+    <value>39, 39</value>
   </data>
-  <data name="button14.TabIndex" type="System.Int32, mscorlib">
-    <value>35</value>
+  <data name="cal_minuse.TabIndex" type="System.Int32, mscorlib">
+    <value>36</value>
   </data>
-  <data name="button14.Text" xml:space="preserve">
-    <value>6</value>
+  <data name="cal_minuse.Text" xml:space="preserve">
+    <value>-</value>
   </data>
-  <data name="&gt;&gt;button14.Name" xml:space="preserve">
-    <value>button14</value>
+  <data name="&gt;&gt;cal_minuse.Name" xml:space="preserve">
+    <value>cal_minuse</value>
   </data>
-  <data name="&gt;&gt;button14.Type" xml:space="preserve">
+  <data name="&gt;&gt;cal_minuse.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button14.Parent" xml:space="preserve">
-    <value>tabPage3</value>
+  <data name="&gt;&gt;cal_minuse.Parent" xml:space="preserve">
+    <value>tabPage_hk_spend</value>
   </data>
-  <data name="&gt;&gt;button14.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;cal_minuse.ZOrder" xml:space="preserve">
     <value>11</value>
   </data>
-  <data name="button15.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="cal_6.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="cal_6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="button15.Location" type="System.Drawing.Point, System.Drawing">
-    <value>286, 139</value>
+  <data name="cal_6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>326, 139</value>
   </data>
-  <data name="button15.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="cal_6.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
-  <data name="button15.Size" type="System.Drawing.Size, System.Drawing">
-    <value>40, 40</value>
+  <data name="cal_6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>39, 39</value>
   </data>
-  <data name="button15.TabIndex" type="System.Int32, mscorlib">
-    <value>34</value>
+  <data name="cal_6.TabIndex" type="System.Int32, mscorlib">
+    <value>35</value>
   </data>
-  <data name="button15.Text" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;button15.Name" xml:space="preserve">
-    <value>button15</value>
-  </data>
-  <data name="&gt;&gt;button15.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button15.Parent" xml:space="preserve">
-    <value>tabPage3</value>
-  </data>
-  <data name="&gt;&gt;button15.ZOrder" xml:space="preserve">
-    <value>12</value>
-  </data>
-  <data name="button9.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="button9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>366, 99</value>
-  </data>
-  <data name="button9.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="button9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>40, 40</value>
-  </data>
-  <data name="button9.TabIndex" type="System.Int32, mscorlib">
-    <value>32</value>
-  </data>
-  <data name="button9.Text" xml:space="preserve">
-    <value>X</value>
-  </data>
-  <data name="&gt;&gt;button9.Name" xml:space="preserve">
-    <value>button9</value>
-  </data>
-  <data name="&gt;&gt;button9.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button9.Parent" xml:space="preserve">
-    <value>tabPage3</value>
-  </data>
-  <data name="&gt;&gt;button9.ZOrder" xml:space="preserve">
-    <value>13</value>
-  </data>
-  <data name="button10.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="button10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>326, 99</value>
-  </data>
-  <data name="button10.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="button10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>40, 40</value>
-  </data>
-  <data name="button10.TabIndex" type="System.Int32, mscorlib">
-    <value>31</value>
-  </data>
-  <data name="button10.Text" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="&gt;&gt;button10.Name" xml:space="preserve">
-    <value>button10</value>
-  </data>
-  <data name="&gt;&gt;button10.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button10.Parent" xml:space="preserve">
-    <value>tabPage3</value>
-  </data>
-  <data name="&gt;&gt;button10.ZOrder" xml:space="preserve">
-    <value>14</value>
-  </data>
-  <data name="button11.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="button11.Location" type="System.Drawing.Point, System.Drawing">
-    <value>286, 99</value>
-  </data>
-  <data name="button11.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="button11.Size" type="System.Drawing.Size, System.Drawing">
-    <value>40, 40</value>
-  </data>
-  <data name="button11.TabIndex" type="System.Int32, mscorlib">
-    <value>30</value>
-  </data>
-  <data name="button11.Text" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;button11.Name" xml:space="preserve">
-    <value>button11</value>
-  </data>
-  <data name="&gt;&gt;button11.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button11.Parent" xml:space="preserve">
-    <value>tabPage3</value>
-  </data>
-  <data name="&gt;&gt;button11.ZOrder" xml:space="preserve">
-    <value>15</value>
-  </data>
-  <data name="button4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="button4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>366, 59</value>
-  </data>
-  <data name="button4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="button4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>40, 40</value>
-  </data>
-  <data name="button4.TabIndex" type="System.Int32, mscorlib">
-    <value>28</value>
-  </data>
-  <data name="button4.Text" xml:space="preserve">
-    <value>&lt;-</value>
-  </data>
-  <data name="&gt;&gt;button4.Name" xml:space="preserve">
-    <value>button4</value>
-  </data>
-  <data name="&gt;&gt;button4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button4.Parent" xml:space="preserve">
-    <value>tabPage3</value>
-  </data>
-  <data name="&gt;&gt;button4.ZOrder" xml:space="preserve">
-    <value>16</value>
-  </data>
-  <data name="button3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="button3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>326, 59</value>
-  </data>
-  <data name="button3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="button3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>40, 40</value>
-  </data>
-  <data name="button3.TabIndex" type="System.Int32, mscorlib">
-    <value>27</value>
-  </data>
-  <data name="button3.Text" xml:space="preserve">
-    <value>/</value>
-  </data>
-  <data name="&gt;&gt;button3.Name" xml:space="preserve">
-    <value>button3</value>
-  </data>
-  <data name="&gt;&gt;button3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button3.Parent" xml:space="preserve">
-    <value>tabPage3</value>
-  </data>
-  <data name="&gt;&gt;button3.ZOrder" xml:space="preserve">
-    <value>17</value>
-  </data>
-  <data name="comboBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 198</value>
-  </data>
-  <data name="comboBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
-  </data>
-  <data name="comboBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>50, 20</value>
-  </data>
-  <data name="comboBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>26</value>
-  </data>
-  <data name="&gt;&gt;comboBox1.Name" xml:space="preserve">
-    <value>comboBox1</value>
-  </data>
-  <data name="&gt;&gt;comboBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;comboBox1.Parent" xml:space="preserve">
-    <value>tabPage3</value>
-  </data>
-  <data name="&gt;&gt;comboBox1.ZOrder" xml:space="preserve">
-    <value>18</value>
-  </data>
-  <data name="button6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="button6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>286, 59</value>
-  </data>
-  <data name="button6.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="button6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>40, 40</value>
-  </data>
-  <data name="button6.TabIndex" type="System.Int32, mscorlib">
-    <value>24</value>
-  </data>
-  <data name="&gt;&gt;button6.Name" xml:space="preserve">
-    <value>button6</value>
-  </data>
-  <data name="&gt;&gt;button6.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button6.Parent" xml:space="preserve">
-    <value>tabPage3</value>
-  </data>
-  <data name="&gt;&gt;button6.ZOrder" xml:space="preserve">
-    <value>19</value>
-  </data>
-  <data name="label24.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label24.Location" type="System.Drawing.Point, System.Drawing">
-    <value>246, 18</value>
-  </data>
-  <data name="label24.Size" type="System.Drawing.Size, System.Drawing">
-    <value>160, 34</value>
-  </data>
-  <data name="label24.TabIndex" type="System.Int32, mscorlib">
+  <data name="cal_6.Text" xml:space="preserve">
     <value>6</value>
   </data>
-  <data name="label24.Text" xml:space="preserve">
-    <value>label24</value>
+  <data name="&gt;&gt;cal_6.Name" xml:space="preserve">
+    <value>cal_6</value>
   </data>
-  <data name="&gt;&gt;label24.Name" xml:space="preserve">
-    <value>label24</value>
-  </data>
-  <data name="&gt;&gt;label24.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label24.Parent" xml:space="preserve">
-    <value>tabPage3</value>
-  </data>
-  <data name="&gt;&gt;label24.ZOrder" xml:space="preserve">
-    <value>20</value>
-  </data>
-  <data name="button1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 226</value>
-  </data>
-  <data name="button1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
-  </data>
-  <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>215, 33</value>
-  </data>
-  <data name="button1.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="button1.Text" xml:space="preserve">
-    <value>button1</value>
-  </data>
-  <data name="&gt;&gt;button1.Name" xml:space="preserve">
-    <value>button1</value>
-  </data>
-  <data name="&gt;&gt;button1.Type" xml:space="preserve">
+  <data name="&gt;&gt;cal_6.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button1.Parent" xml:space="preserve">
-    <value>tabPage3</value>
+  <data name="&gt;&gt;cal_6.Parent" xml:space="preserve">
+    <value>tabPage_hk_spend</value>
   </data>
-  <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
-    <value>21</value>
+  <data name="&gt;&gt;cal_6.ZOrder" xml:space="preserve">
+    <value>12</value>
   </data>
-  <data name="comboBox4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 169</value>
+  <data name="cal_5.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
   </data>
-  <data name="comboBox4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="cal_5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="cal_5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>286, 139</value>
+  </data>
+  <data name="cal_5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="cal_5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>39, 39</value>
+  </data>
+  <data name="cal_5.TabIndex" type="System.Int32, mscorlib">
+    <value>34</value>
+  </data>
+  <data name="cal_5.Text" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;cal_5.Name" xml:space="preserve">
+    <value>cal_5</value>
+  </data>
+  <data name="&gt;&gt;cal_5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cal_5.Parent" xml:space="preserve">
+    <value>tabPage_hk_spend</value>
+  </data>
+  <data name="&gt;&gt;cal_5.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="cal_multiple.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="cal_multiple.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="cal_multiple.Location" type="System.Drawing.Point, System.Drawing">
+    <value>366, 99</value>
+  </data>
+  <data name="cal_multiple.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="cal_multiple.Size" type="System.Drawing.Size, System.Drawing">
+    <value>39, 39</value>
+  </data>
+  <data name="cal_multiple.TabIndex" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="cal_multiple.Text" xml:space="preserve">
+    <value>X</value>
+  </data>
+  <data name="&gt;&gt;cal_multiple.Name" xml:space="preserve">
+    <value>cal_multiple</value>
+  </data>
+  <data name="&gt;&gt;cal_multiple.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cal_multiple.Parent" xml:space="preserve">
+    <value>tabPage_hk_spend</value>
+  </data>
+  <data name="&gt;&gt;cal_multiple.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="cal_9.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="cal_9.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="cal_9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>326, 99</value>
+  </data>
+  <data name="cal_9.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="cal_9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>39, 39</value>
+  </data>
+  <data name="cal_9.TabIndex" type="System.Int32, mscorlib">
+    <value>31</value>
+  </data>
+  <data name="cal_9.Text" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;cal_9.Name" xml:space="preserve">
+    <value>cal_9</value>
+  </data>
+  <data name="&gt;&gt;cal_9.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cal_9.Parent" xml:space="preserve">
+    <value>tabPage_hk_spend</value>
+  </data>
+  <data name="&gt;&gt;cal_9.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="cal_8.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="cal_8.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="cal_8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>286, 99</value>
+  </data>
+  <data name="cal_8.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="cal_8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>39, 39</value>
+  </data>
+  <data name="cal_8.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="cal_8.Text" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;cal_8.Name" xml:space="preserve">
+    <value>cal_8</value>
+  </data>
+  <data name="&gt;&gt;cal_8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cal_8.Parent" xml:space="preserve">
+    <value>tabPage_hk_spend</value>
+  </data>
+  <data name="&gt;&gt;cal_8.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="cal_Backspace.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="cal_Backspace.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="cal_Backspace.Location" type="System.Drawing.Point, System.Drawing">
+    <value>366, 59</value>
+  </data>
+  <data name="cal_Backspace.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="cal_Backspace.Size" type="System.Drawing.Size, System.Drawing">
+    <value>39, 39</value>
+  </data>
+  <data name="cal_Backspace.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="cal_Backspace.Text" xml:space="preserve">
+    <value>&lt;-</value>
+  </data>
+  <data name="&gt;&gt;cal_Backspace.Name" xml:space="preserve">
+    <value>cal_Backspace</value>
+  </data>
+  <data name="&gt;&gt;cal_Backspace.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cal_Backspace.Parent" xml:space="preserve">
+    <value>tabPage_hk_spend</value>
+  </data>
+  <data name="&gt;&gt;cal_Backspace.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="cal_division.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="cal_division.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="cal_division.Location" type="System.Drawing.Point, System.Drawing">
+    <value>326, 59</value>
+  </data>
+  <data name="cal_division.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="cal_division.Size" type="System.Drawing.Size, System.Drawing">
+    <value>39, 39</value>
+  </data>
+  <data name="cal_division.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="cal_division.Text" xml:space="preserve">
+    <value>/</value>
+  </data>
+  <data name="&gt;&gt;cal_division.Name" xml:space="preserve">
+    <value>cal_division</value>
+  </data>
+  <data name="&gt;&gt;cal_division.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cal_division.Parent" xml:space="preserve">
+    <value>tabPage_hk_spend</value>
+  </data>
+  <data name="&gt;&gt;cal_division.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="cb_hk_spendEx.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="cb_hk_spendEx.Items" xml:space="preserve">
+    <value>$(USD)</value>
+  </data>
+  <data name="cb_hk_spendEx.Items1" xml:space="preserve">
+    <value>\(KOW)</value>
+  </data>
+  <data name="cb_hk_spendEx.Items2" xml:space="preserve">
+    <value>￥(JPY)</value>
+  </data>
+  <data name="cb_hk_spendEx.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 198</value>
+  </data>
+  <data name="cb_hk_spendEx.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
   </data>
-  <data name="comboBox4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>215, 20</value>
+  <data name="cb_hk_spendEx.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 20</value>
   </data>
-  <data name="comboBox4.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
+  <data name="cb_hk_spendEx.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
   </data>
-  <data name="&gt;&gt;comboBox4.Name" xml:space="preserve">
-    <value>comboBox4</value>
+  <data name="&gt;&gt;cb_hk_spendEx.Name" xml:space="preserve">
+    <value>cb_hk_spendEx</value>
   </data>
-  <data name="&gt;&gt;comboBox4.Type" xml:space="preserve">
+  <data name="&gt;&gt;cb_hk_spendEx.Type" xml:space="preserve">
     <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;comboBox4.Parent" xml:space="preserve">
-    <value>tabPage3</value>
+  <data name="&gt;&gt;cb_hk_spendEx.Parent" xml:space="preserve">
+    <value>tabPage_hk_spend</value>
   </data>
-  <data name="&gt;&gt;comboBox4.ZOrder" xml:space="preserve">
-    <value>22</value>
+  <data name="&gt;&gt;cb_hk_spendEx.ZOrder" xml:space="preserve">
+    <value>19</value>
   </data>
-  <data name="comboBox3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 20</value>
+  <data name="cal_Percent.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
   </data>
-  <data name="comboBox3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
+  <data name="cal_Percent.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="comboBox3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>215, 20</value>
+  <data name="cal_Percent.Location" type="System.Drawing.Point, System.Drawing">
+    <value>286, 59</value>
   </data>
-  <data name="comboBox3.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
+  <data name="cal_Percent.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
   </data>
-  <data name="&gt;&gt;comboBox3.Name" xml:space="preserve">
-    <value>comboBox3</value>
+  <data name="cal_Percent.Size" type="System.Drawing.Size, System.Drawing">
+    <value>39, 39</value>
   </data>
-  <data name="&gt;&gt;comboBox3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;comboBox3.Parent" xml:space="preserve">
-    <value>tabPage3</value>
-  </data>
-  <data name="&gt;&gt;comboBox3.ZOrder" xml:space="preserve">
-    <value>23</value>
-  </data>
-  <data name="textBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>70, 198</value>
-  </data>
-  <data name="textBox2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
-  </data>
-  <data name="textBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>155, 21</value>
-  </data>
-  <data name="textBox2.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;textBox2.Name" xml:space="preserve">
-    <value>textBox2</value>
-  </data>
-  <data name="&gt;&gt;textBox2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBox2.Parent" xml:space="preserve">
-    <value>tabPage3</value>
-  </data>
-  <data name="&gt;&gt;textBox2.ZOrder" xml:space="preserve">
+  <data name="cal_Percent.TabIndex" type="System.Int32, mscorlib">
     <value>24</value>
   </data>
-  <data name="textBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 45</value>
+  <data name="cal_Percent.Text" xml:space="preserve">
+    <value>%</value>
   </data>
-  <data name="textBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="&gt;&gt;cal_Percent.Name" xml:space="preserve">
+    <value>cal_Percent</value>
+  </data>
+  <data name="&gt;&gt;cal_Percent.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cal_Percent.Parent" xml:space="preserve">
+    <value>tabPage_hk_spend</value>
+  </data>
+  <data name="&gt;&gt;cal_Percent.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="cal_result.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="cal_result.Location" type="System.Drawing.Point, System.Drawing">
+    <value>246, 18</value>
+  </data>
+  <data name="cal_result.Size" type="System.Drawing.Size, System.Drawing">
+    <value>159, 34</value>
+  </data>
+  <data name="cal_result.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="cal_result.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="cal_result.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;cal_result.Name" xml:space="preserve">
+    <value>cal_result</value>
+  </data>
+  <data name="&gt;&gt;cal_result.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cal_result.Parent" xml:space="preserve">
+    <value>tabPage_hk_spend</value>
+  </data>
+  <data name="&gt;&gt;cal_result.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="btn_hk_spend.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btn_hk_spend.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_hk_spend.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 226</value>
+  </data>
+  <data name="btn_hk_spend.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
   </data>
-  <data name="textBox1.Multiline" type="System.Boolean, mscorlib">
+  <data name="btn_hk_spend.Size" type="System.Drawing.Size, System.Drawing">
+    <value>215, 33</value>
+  </data>
+  <data name="btn_hk_spend.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="btn_hk_spend.Text" xml:space="preserve">
+    <value>Spend</value>
+  </data>
+  <data name="&gt;&gt;btn_hk_spend.Name" xml:space="preserve">
+    <value>btn_hk_spend</value>
+  </data>
+  <data name="&gt;&gt;btn_hk_spend.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_hk_spend.Parent" xml:space="preserve">
+    <value>tabPage_hk_spend</value>
+  </data>
+  <data name="&gt;&gt;btn_hk_spend.ZOrder" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="cb_hk_spendAccont.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="cb_hk_spendAccont.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 169</value>
+  </data>
+  <data name="cb_hk_spendAccont.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="cb_hk_spendAccont.Size" type="System.Drawing.Size, System.Drawing">
+    <value>215, 20</value>
+  </data>
+  <data name="cb_hk_spendAccont.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;cb_hk_spendAccont.Name" xml:space="preserve">
+    <value>cb_hk_spendAccont</value>
+  </data>
+  <data name="&gt;&gt;cb_hk_spendAccont.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cb_hk_spendAccont.Parent" xml:space="preserve">
+    <value>tabPage_hk_spend</value>
+  </data>
+  <data name="&gt;&gt;cb_hk_spendAccont.ZOrder" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="cb_hk_spendType.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="cb_hk_spendType.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 20</value>
+  </data>
+  <data name="cb_hk_spendType.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="cb_hk_spendType.Size" type="System.Drawing.Size, System.Drawing">
+    <value>215, 20</value>
+  </data>
+  <data name="cb_hk_spendType.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;cb_hk_spendType.Name" xml:space="preserve">
+    <value>cb_hk_spendType</value>
+  </data>
+  <data name="&gt;&gt;cb_hk_spendType.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cb_hk_spendType.Parent" xml:space="preserve">
+    <value>tabPage_hk_spend</value>
+  </data>
+  <data name="&gt;&gt;cb_hk_spendType.ZOrder" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="txt_hk_spendPrice.Location" type="System.Drawing.Point, System.Drawing">
+    <value>96, 197</value>
+  </data>
+  <data name="txt_hk_spendPrice.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="txt_hk_spendPrice.Multiline" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="textBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>215, 120</value>
+  <data name="txt_hk_spendPrice.Size" type="System.Drawing.Size, System.Drawing">
+    <value>129, 21</value>
   </data>
-  <data name="textBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+  <data name="txt_hk_spendPrice.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
   </data>
-  <data name="&gt;&gt;textBox1.Name" xml:space="preserve">
-    <value>textBox1</value>
+  <data name="&gt;&gt;txt_hk_spendPrice.Name" xml:space="preserve">
+    <value>txt_hk_spendPrice</value>
   </data>
-  <data name="&gt;&gt;textBox1.Type" xml:space="preserve">
+  <data name="&gt;&gt;txt_hk_spendPrice.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;textBox1.Parent" xml:space="preserve">
-    <value>tabPage3</value>
+  <data name="&gt;&gt;txt_hk_spendPrice.Parent" xml:space="preserve">
+    <value>tabPage_hk_spend</value>
   </data>
-  <data name="&gt;&gt;textBox1.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;txt_hk_spendPrice.ZOrder" xml:space="preserve">
     <value>25</value>
   </data>
-  <data name="tabPage3.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="txt_hk_spendComment.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 45</value>
+  </data>
+  <data name="txt_hk_spendComment.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="txt_hk_spendComment.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="txt_hk_spendComment.Size" type="System.Drawing.Size, System.Drawing">
+    <value>215, 120</value>
+  </data>
+  <data name="txt_hk_spendComment.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;txt_hk_spendComment.Name" xml:space="preserve">
+    <value>txt_hk_spendComment</value>
+  </data>
+  <data name="&gt;&gt;txt_hk_spendComment.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txt_hk_spendComment.Parent" xml:space="preserve">
+    <value>tabPage_hk_spend</value>
+  </data>
+  <data name="&gt;&gt;txt_hk_spendComment.ZOrder" xml:space="preserve">
+    <value>26</value>
+  </data>
+  <data name="tabPage_hk_spend.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 22</value>
   </data>
-  <data name="tabPage3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="tabPage_hk_spend.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
   </data>
-  <data name="tabPage3.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="tabPage_hk_spend.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
   </data>
-  <data name="tabPage3.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="tabPage_hk_spend.Size" type="System.Drawing.Size, System.Drawing">
     <value>428, 271</value>
   </data>
-  <data name="tabPage3.TabIndex" type="System.Int32, mscorlib">
+  <data name="tabPage_hk_spend.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="tabPage3.Text" xml:space="preserve">
+  <data name="tabPage_hk_spend.Text" xml:space="preserve">
     <value>지출</value>
   </data>
-  <data name="&gt;&gt;tabPage3.Name" xml:space="preserve">
-    <value>tabPage3</value>
+  <data name="&gt;&gt;tabPage_hk_spend.Name" xml:space="preserve">
+    <value>tabPage_hk_spend</value>
   </data>
-  <data name="&gt;&gt;tabPage3.Type" xml:space="preserve">
+  <data name="&gt;&gt;tabPage_hk_spend.Type" xml:space="preserve">
     <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;tabPage3.Parent" xml:space="preserve">
+  <data name="&gt;&gt;tabPage_hk_spend.Parent" xml:space="preserve">
     <value>home_tab_insert</value>
   </data>
-  <data name="&gt;&gt;tabPage3.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;tabPage_hk_spend.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="lb_hk_title3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lb_hk_title3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lb_hk_title3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 177</value>
+  </data>
+  <data name="lb_hk_title3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>29, 12</value>
+  </data>
+  <data name="lb_hk_title3.TabIndex" type="System.Int32, mscorlib">
+    <value>31</value>
+  </data>
+  <data name="lb_hk_title3.Text" xml:space="preserve">
+    <value>이체</value>
+  </data>
+  <data name="&gt;&gt;lb_hk_title3.Name" xml:space="preserve">
+    <value>lb_hk_title3</value>
+  </data>
+  <data name="&gt;&gt;lb_hk_title3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lb_hk_title3.Parent" xml:space="preserve">
+    <value>tabPage_hk_income</value>
+  </data>
+  <data name="&gt;&gt;lb_hk_title3.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lb_hk_title2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lb_hk_title2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 6</value>
+  </data>
+  <data name="lb_hk_title2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>29, 12</value>
+  </data>
+  <data name="lb_hk_title2.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="lb_hk_title2.Text" xml:space="preserve">
+    <value>수입</value>
+  </data>
+  <data name="&gt;&gt;lb_hk_title2.Name" xml:space="preserve">
+    <value>lb_hk_title2</value>
+  </data>
+  <data name="&gt;&gt;lb_hk_title2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lb_hk_title2.Parent" xml:space="preserve">
+    <value>tabPage_hk_income</value>
+  </data>
+  <data name="&gt;&gt;lb_hk_title2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="cb_hk_exchangeEx.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="cb_hk_exchangeEx.Items" xml:space="preserve">
+    <value>$(USD)</value>
+  </data>
+  <data name="cb_hk_exchangeEx.Items1" xml:space="preserve">
+    <value>\(KOW)</value>
+  </data>
+  <data name="cb_hk_exchangeEx.Items2" xml:space="preserve">
+    <value>￥(JPY)</value>
+  </data>
+  <data name="cb_hk_exchangeEx.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 219</value>
+  </data>
+  <data name="cb_hk_exchangeEx.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="cb_hk_exchangeEx.Size" type="System.Drawing.Size, System.Drawing">
+    <value>79, 20</value>
+  </data>
+  <data name="cb_hk_exchangeEx.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="&gt;&gt;cb_hk_exchangeEx.Name" xml:space="preserve">
+    <value>cb_hk_exchangeEx</value>
+  </data>
+  <data name="&gt;&gt;cb_hk_exchangeEx.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cb_hk_exchangeEx.Parent" xml:space="preserve">
+    <value>tabPage_hk_income</value>
+  </data>
+  <data name="&gt;&gt;cb_hk_exchangeEx.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="cb_hk_incomeEx.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="cb_hk_incomeEx.Items" xml:space="preserve">
+    <value>$(USD)</value>
+  </data>
+  <data name="cb_hk_incomeEx.Items1" xml:space="preserve">
+    <value>\(KOW)</value>
+  </data>
+  <data name="cb_hk_incomeEx.Items2" xml:space="preserve">
+    <value>￥(JPY)</value>
+  </data>
+  <data name="cb_hk_incomeEx.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 120</value>
+  </data>
+  <data name="cb_hk_incomeEx.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="cb_hk_incomeEx.Size" type="System.Drawing.Size, System.Drawing">
+    <value>79, 20</value>
+  </data>
+  <data name="cb_hk_incomeEx.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="&gt;&gt;cb_hk_incomeEx.Name" xml:space="preserve">
+    <value>cb_hk_incomeEx</value>
+  </data>
+  <data name="&gt;&gt;cb_hk_incomeEx.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cb_hk_incomeEx.Parent" xml:space="preserve">
+    <value>tabPage_hk_income</value>
+  </data>
+  <data name="&gt;&gt;cb_hk_incomeEx.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="EXCHANGE.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="EXCHANGE.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="EXCHANGE.Location" type="System.Drawing.Point, System.Drawing">
+    <value>216, 219</value>
+  </data>
+  <data name="EXCHANGE.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="EXCHANGE.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 24</value>
+  </data>
+  <data name="EXCHANGE.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="EXCHANGE.Text" xml:space="preserve">
+    <value>ExChange</value>
+  </data>
+  <data name="&gt;&gt;EXCHANGE.Name" xml:space="preserve">
+    <value>EXCHANGE</value>
+  </data>
+  <data name="&gt;&gt;EXCHANGE.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;EXCHANGE.Parent" xml:space="preserve">
+    <value>tabPage_hk_income</value>
+  </data>
+  <data name="&gt;&gt;EXCHANGE.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="btn_hk_income.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btn_hk_income.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_hk_income.Location" type="System.Drawing.Point, System.Drawing">
+    <value>216, 116</value>
+  </data>
+  <data name="btn_hk_income.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="btn_hk_income.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 24</value>
+  </data>
+  <data name="btn_hk_income.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="btn_hk_income.Text" xml:space="preserve">
+    <value>InCome</value>
+  </data>
+  <data name="&gt;&gt;btn_hk_income.Name" xml:space="preserve">
+    <value>btn_hk_income</value>
+  </data>
+  <data name="&gt;&gt;btn_hk_income.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_hk_income.Parent" xml:space="preserve">
+    <value>tabPage_hk_income</value>
+  </data>
+  <data name="&gt;&gt;btn_hk_income.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="txt_hk_incomePrice.Location" type="System.Drawing.Point, System.Drawing">
+    <value>95, 119</value>
+  </data>
+  <data name="txt_hk_incomePrice.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="txt_hk_incomePrice.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="txt_hk_incomePrice.Size" type="System.Drawing.Size, System.Drawing">
+    <value>115, 21</value>
+  </data>
+  <data name="txt_hk_incomePrice.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;txt_hk_incomePrice.Name" xml:space="preserve">
+    <value>txt_hk_incomePrice</value>
+  </data>
+  <data name="&gt;&gt;txt_hk_incomePrice.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txt_hk_incomePrice.Parent" xml:space="preserve">
+    <value>tabPage_hk_income</value>
+  </data>
+  <data name="&gt;&gt;txt_hk_incomePrice.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="txt_hk_incomeComment.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 44</value>
+  </data>
+  <data name="txt_hk_incomeComment.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="txt_hk_incomeComment.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="txt_hk_incomeComment.Size" type="System.Drawing.Size, System.Drawing">
+    <value>406, 68</value>
+  </data>
+  <data name="txt_hk_incomeComment.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;txt_hk_incomeComment.Name" xml:space="preserve">
+    <value>txt_hk_incomeComment</value>
+  </data>
+  <data name="&gt;&gt;txt_hk_incomeComment.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txt_hk_incomeComment.Parent" xml:space="preserve">
+    <value>tabPage_hk_income</value>
+  </data>
+  <data name="&gt;&gt;txt_hk_incomeComment.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="cb_hk_incomeAccount.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="cb_hk_incomeAccount.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 20</value>
+  </data>
+  <data name="cb_hk_incomeAccount.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="cb_hk_incomeAccount.Size" type="System.Drawing.Size, System.Drawing">
+    <value>406, 20</value>
+  </data>
+  <data name="cb_hk_incomeAccount.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;cb_hk_incomeAccount.Name" xml:space="preserve">
+    <value>cb_hk_incomeAccount</value>
+  </data>
+  <data name="&gt;&gt;cb_hk_incomeAccount.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cb_hk_incomeAccount.Parent" xml:space="preserve">
+    <value>tabPage_hk_income</value>
+  </data>
+  <data name="&gt;&gt;cb_hk_incomeAccount.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="cb_hk_exChange1.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="cb_hk_exChange1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 191</value>
+  </data>
+  <data name="cb_hk_exChange1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="cb_hk_exChange1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 20</value>
+  </data>
+  <data name="cb_hk_exChange1.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;cb_hk_exChange1.Name" xml:space="preserve">
+    <value>cb_hk_exChange1</value>
+  </data>
+  <data name="&gt;&gt;cb_hk_exChange1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cb_hk_exChange1.Parent" xml:space="preserve">
+    <value>tabPage_hk_income</value>
+  </data>
+  <data name="&gt;&gt;cb_hk_exChange1.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="cb_hk_exChange2.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="cb_hk_exChange2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>236, 191</value>
+  </data>
+  <data name="cb_hk_exChange2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="cb_hk_exChange2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 20</value>
+  </data>
+  <data name="cb_hk_exChange2.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;cb_hk_exChange2.Name" xml:space="preserve">
+    <value>cb_hk_exChange2</value>
+  </data>
+  <data name="&gt;&gt;cb_hk_exChange2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cb_hk_exChange2.Parent" xml:space="preserve">
+    <value>tabPage_hk_income</value>
+  </data>
+  <data name="&gt;&gt;cb_hk_exChange2.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="txt_hk_exchangePrice.Location" type="System.Drawing.Point, System.Drawing">
+    <value>95, 219</value>
+  </data>
+  <data name="txt_hk_exchangePrice.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="txt_hk_exchangePrice.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="txt_hk_exchangePrice.Size" type="System.Drawing.Size, System.Drawing">
+    <value>115, 21</value>
+  </data>
+  <data name="txt_hk_exchangePrice.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;txt_hk_exchangePrice.Name" xml:space="preserve">
+    <value>txt_hk_exchangePrice</value>
+  </data>
+  <data name="&gt;&gt;txt_hk_exchangePrice.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txt_hk_exchangePrice.Parent" xml:space="preserve">
+    <value>tabPage_hk_income</value>
+  </data>
+  <data name="&gt;&gt;txt_hk_exchangePrice.ZOrder" xml:space="preserve">
+    <value>11</value>
   </data>
   <data name="lb_exchange.Font" type="System.Drawing.Font, System.Drawing">
     <value>Ravie, 12pt</value>
@@ -4501,295 +4312,190 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;lb_exchange.Parent" xml:space="preserve">
-    <value>tabPage4</value>
+    <value>tabPage_hk_income</value>
   </data>
   <data name="&gt;&gt;lb_exchange.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>12</value>
   </data>
-  <data name="comboBox9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 226</value>
-  </data>
-  <data name="comboBox9.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
-  </data>
-  <data name="comboBox9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>50, 20</value>
-  </data>
-  <data name="comboBox9.TabIndex" type="System.Int32, mscorlib">
-    <value>28</value>
-  </data>
-  <data name="&gt;&gt;comboBox9.Name" xml:space="preserve">
-    <value>comboBox9</value>
-  </data>
-  <data name="&gt;&gt;comboBox9.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;comboBox9.Parent" xml:space="preserve">
-    <value>tabPage4</value>
-  </data>
-  <data name="&gt;&gt;comboBox9.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="comboBox8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 122</value>
-  </data>
-  <data name="comboBox8.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
-  </data>
-  <data name="comboBox8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>50, 20</value>
-  </data>
-  <data name="comboBox8.TabIndex" type="System.Int32, mscorlib">
-    <value>27</value>
-  </data>
-  <data name="&gt;&gt;comboBox8.Name" xml:space="preserve">
-    <value>comboBox8</value>
-  </data>
-  <data name="&gt;&gt;comboBox8.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;comboBox8.Parent" xml:space="preserve">
-    <value>tabPage4</value>
-  </data>
-  <data name="&gt;&gt;comboBox8.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="button2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="button2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>216, 219</value>
-  </data>
-  <data name="button2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
-  </data>
-  <data name="button2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 33</value>
-  </data>
-  <data name="button2.TabIndex" type="System.Int32, mscorlib">
-    <value>23</value>
-  </data>
-  <data name="button2.Text" xml:space="preserve">
-    <value>button2</value>
-  </data>
-  <data name="&gt;&gt;button2.Name" xml:space="preserve">
-    <value>button2</value>
-  </data>
-  <data name="&gt;&gt;button2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button2.Parent" xml:space="preserve">
-    <value>tabPage4</value>
-  </data>
-  <data name="&gt;&gt;button2.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="button7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="button7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>216, 116</value>
-  </data>
-  <data name="button7.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
-  </data>
-  <data name="button7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 33</value>
-  </data>
-  <data name="button7.TabIndex" type="System.Int32, mscorlib">
-    <value>22</value>
-  </data>
-  <data name="button7.Text" xml:space="preserve">
-    <value>button7</value>
-  </data>
-  <data name="&gt;&gt;button7.Name" xml:space="preserve">
-    <value>button7</value>
-  </data>
-  <data name="&gt;&gt;button7.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button7.Parent" xml:space="preserve">
-    <value>tabPage4</value>
-  </data>
-  <data name="&gt;&gt;button7.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="textBox5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>66, 121</value>
-  </data>
-  <data name="textBox5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
-  </data>
-  <data name="textBox5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>144, 21</value>
-  </data>
-  <data name="textBox5.TabIndex" type="System.Int32, mscorlib">
-    <value>20</value>
-  </data>
-  <data name="&gt;&gt;textBox5.Name" xml:space="preserve">
-    <value>textBox5</value>
-  </data>
-  <data name="&gt;&gt;textBox5.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBox5.Parent" xml:space="preserve">
-    <value>tabPage4</value>
-  </data>
-  <data name="&gt;&gt;textBox5.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="textBox4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 44</value>
-  </data>
-  <data name="textBox4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
-  </data>
-  <data name="textBox4.Multiline" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="textBox4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>406, 68</value>
-  </data>
-  <data name="textBox4.TabIndex" type="System.Int32, mscorlib">
-    <value>19</value>
-  </data>
-  <data name="&gt;&gt;textBox4.Name" xml:space="preserve">
-    <value>textBox4</value>
-  </data>
-  <data name="&gt;&gt;textBox4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBox4.Parent" xml:space="preserve">
-    <value>tabPage4</value>
-  </data>
-  <data name="&gt;&gt;textBox4.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="comboBox5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 20</value>
-  </data>
-  <data name="comboBox5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
-  </data>
-  <data name="comboBox5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>406, 20</value>
-  </data>
-  <data name="comboBox5.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
-  </data>
-  <data name="&gt;&gt;comboBox5.Name" xml:space="preserve">
-    <value>comboBox5</value>
-  </data>
-  <data name="&gt;&gt;comboBox5.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;comboBox5.Parent" xml:space="preserve">
-    <value>tabPage4</value>
-  </data>
-  <data name="&gt;&gt;comboBox5.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="comboBox7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 191</value>
-  </data>
-  <data name="comboBox7.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
-  </data>
-  <data name="comboBox7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>161, 20</value>
-  </data>
-  <data name="comboBox7.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
-  </data>
-  <data name="&gt;&gt;comboBox7.Name" xml:space="preserve">
-    <value>comboBox7</value>
-  </data>
-  <data name="&gt;&gt;comboBox7.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;comboBox7.Parent" xml:space="preserve">
-    <value>tabPage4</value>
-  </data>
-  <data name="&gt;&gt;comboBox7.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="comboBox6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>255, 191</value>
-  </data>
-  <data name="comboBox6.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
-  </data>
-  <data name="comboBox6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>161, 20</value>
-  </data>
-  <data name="comboBox6.TabIndex" type="System.Int32, mscorlib">
-    <value>16</value>
-  </data>
-  <data name="&gt;&gt;comboBox6.Name" xml:space="preserve">
-    <value>comboBox6</value>
-  </data>
-  <data name="&gt;&gt;comboBox6.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;comboBox6.Parent" xml:space="preserve">
-    <value>tabPage4</value>
-  </data>
-  <data name="&gt;&gt;comboBox6.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="textBox6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>66, 226</value>
-  </data>
-  <data name="textBox6.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
-  </data>
-  <data name="textBox6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>144, 21</value>
-  </data>
-  <data name="textBox6.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
-  </data>
-  <data name="&gt;&gt;textBox6.Name" xml:space="preserve">
-    <value>textBox6</value>
-  </data>
-  <data name="&gt;&gt;textBox6.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBox6.Parent" xml:space="preserve">
-    <value>tabPage4</value>
-  </data>
-  <data name="&gt;&gt;textBox6.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="tabPage4.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="tabPage_hk_income.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 22</value>
   </data>
-  <data name="tabPage4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="tabPage_hk_income.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
   </data>
-  <data name="tabPage4.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="tabPage_hk_income.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
   </data>
-  <data name="tabPage4.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="tabPage_hk_income.Size" type="System.Drawing.Size, System.Drawing">
     <value>428, 271</value>
   </data>
-  <data name="tabPage4.TabIndex" type="System.Int32, mscorlib">
+  <data name="tabPage_hk_income.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="tabPage4.Text" xml:space="preserve">
+  <data name="tabPage_hk_income.Text" xml:space="preserve">
     <value>수입/이체</value>
   </data>
-  <data name="&gt;&gt;tabPage4.Name" xml:space="preserve">
-    <value>tabPage4</value>
+  <data name="&gt;&gt;tabPage_hk_income.Name" xml:space="preserve">
+    <value>tabPage_hk_income</value>
   </data>
-  <data name="&gt;&gt;tabPage4.Type" xml:space="preserve">
+  <data name="&gt;&gt;tabPage_hk_income.Type" xml:space="preserve">
     <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;tabPage4.Parent" xml:space="preserve">
+  <data name="&gt;&gt;tabPage_hk_income.Parent" xml:space="preserve">
     <value>home_tab_insert</value>
   </data>
-  <data name="&gt;&gt;tabPage4.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;tabPage_hk_income.ZOrder" xml:space="preserve">
     <value>1</value>
+  </data>
+  <data name="lb_hk_title4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>굴림, 11.25pt</value>
+  </data>
+  <data name="lb_hk_title4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lb_hk_title4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 67</value>
+  </data>
+  <data name="lb_hk_title4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 23</value>
+  </data>
+  <data name="lb_hk_title4.TabIndex" type="System.Int32, mscorlib">
+    <value>31</value>
+  </data>
+  <data name="lb_hk_title4.Text" xml:space="preserve">
+    <value>계좌 등록</value>
+  </data>
+  <data name="lb_hk_title4.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;lb_hk_title4.Name" xml:space="preserve">
+    <value>lb_hk_title4</value>
+  </data>
+  <data name="&gt;&gt;lb_hk_title4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lb_hk_title4.Parent" xml:space="preserve">
+    <value>tabPage_hk_account</value>
+  </data>
+  <data name="&gt;&gt;lb_hk_title4.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btn_hk_AccountRegister.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btn_hk_AccountRegister.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_hk_AccountRegister.Location" type="System.Drawing.Point, System.Drawing">
+    <value>221, 161</value>
+  </data>
+  <data name="btn_hk_AccountRegister.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="btn_hk_AccountRegister.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 24</value>
+  </data>
+  <data name="btn_hk_AccountRegister.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="btn_hk_AccountRegister.Text" xml:space="preserve">
+    <value>Register</value>
+  </data>
+  <data name="&gt;&gt;btn_hk_AccountRegister.Name" xml:space="preserve">
+    <value>btn_hk_AccountRegister</value>
+  </data>
+  <data name="&gt;&gt;btn_hk_AccountRegister.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_hk_AccountRegister.Parent" xml:space="preserve">
+    <value>tabPage_hk_account</value>
+  </data>
+  <data name="&gt;&gt;btn_hk_AccountRegister.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="txt_hk_AccountName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 124</value>
+  </data>
+  <data name="txt_hk_AccountName.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="txt_hk_AccountName.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="txt_hk_AccountName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>406, 22</value>
+  </data>
+  <data name="txt_hk_AccountName.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;txt_hk_AccountName.Name" xml:space="preserve">
+    <value>txt_hk_AccountName</value>
+  </data>
+  <data name="&gt;&gt;txt_hk_AccountName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txt_hk_AccountName.Parent" xml:space="preserve">
+    <value>tabPage_hk_account</value>
+  </data>
+  <data name="&gt;&gt;txt_hk_AccountName.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="cb_hk_AccountType.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="cb_hk_AccountType.Items" xml:space="preserve">
+    <value>계좌</value>
+  </data>
+  <data name="cb_hk_AccountType.Items1" xml:space="preserve">
+    <value>현금</value>
+  </data>
+  <data name="cb_hk_AccountType.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 100</value>
+  </data>
+  <data name="cb_hk_AccountType.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="cb_hk_AccountType.Size" type="System.Drawing.Size, System.Drawing">
+    <value>406, 20</value>
+  </data>
+  <data name="cb_hk_AccountType.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;cb_hk_AccountType.Name" xml:space="preserve">
+    <value>cb_hk_AccountType</value>
+  </data>
+  <data name="&gt;&gt;cb_hk_AccountType.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cb_hk_AccountType.Parent" xml:space="preserve">
+    <value>tabPage_hk_account</value>
+  </data>
+  <data name="&gt;&gt;cb_hk_AccountType.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="tabPage_hk_account.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="tabPage_hk_account.Size" type="System.Drawing.Size, System.Drawing">
+    <value>428, 271</value>
+  </data>
+  <data name="tabPage_hk_account.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="tabPage_hk_account.Text" xml:space="preserve">
+    <value>계좌등록</value>
+  </data>
+  <data name="&gt;&gt;tabPage_hk_account.Name" xml:space="preserve">
+    <value>tabPage_hk_account</value>
+  </data>
+  <data name="&gt;&gt;tabPage_hk_account.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage_hk_account.Parent" xml:space="preserve">
+    <value>home_tab_insert</value>
+  </data>
+  <data name="&gt;&gt;tabPage_hk_account.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="home_tab_insert.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 375</value>
@@ -4810,129 +4516,129 @@
     <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;home_tab_insert.Parent" xml:space="preserve">
-    <value>panel27</value>
+    <value>pnl_hk_input</value>
   </data>
   <data name="&gt;&gt;home_tab_insert.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>11</value>
   </data>
-  <data name="panel27.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="pnl_hk_input.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
-  <data name="panel27.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="pnl_hk_input.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
   </data>
-  <data name="panel27.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="pnl_hk_input.Size" type="System.Drawing.Size, System.Drawing">
     <value>448, 679</value>
   </data>
-  <data name="panel27.TabIndex" type="System.Int32, mscorlib">
+  <data name="pnl_hk_input.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
   </data>
-  <data name="&gt;&gt;panel27.Name" xml:space="preserve">
-    <value>panel27</value>
+  <data name="&gt;&gt;pnl_hk_input.Name" xml:space="preserve">
+    <value>pnl_hk_input</value>
   </data>
-  <data name="&gt;&gt;panel27.Type" xml:space="preserve">
+  <data name="&gt;&gt;pnl_hk_input.Type" xml:space="preserve">
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;panel27.Parent" xml:space="preserve">
+  <data name="&gt;&gt;pnl_hk_input.Parent" xml:space="preserve">
     <value>hk_month_table</value>
   </data>
-  <data name="&gt;&gt;panel27.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;pnl_hk_input.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="flowLayoutPanel1.AutoScroll" type="System.Boolean, mscorlib">
+  <data name="flp_hk_income.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="flowLayoutPanel1.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="flp_hk_income.Location" type="System.Drawing.Point, System.Drawing">
     <value>451, 486</value>
   </data>
-  <data name="flowLayoutPanel1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="flp_hk_income.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
   </data>
-  <data name="flowLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="flp_hk_income.Size" type="System.Drawing.Size, System.Drawing">
     <value>702, 186</value>
   </data>
-  <data name="flowLayoutPanel1.TabIndex" type="System.Int32, mscorlib">
+  <data name="flp_hk_income.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
   </data>
-  <data name="&gt;&gt;flowLayoutPanel1.Name" xml:space="preserve">
-    <value>flowLayoutPanel1</value>
+  <data name="&gt;&gt;flp_hk_income.Name" xml:space="preserve">
+    <value>flp_hk_income</value>
   </data>
-  <data name="&gt;&gt;flowLayoutPanel1.Type" xml:space="preserve">
+  <data name="&gt;&gt;flp_hk_income.Type" xml:space="preserve">
     <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;flowLayoutPanel1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;flp_hk_income.Parent" xml:space="preserve">
     <value>hk_month_table</value>
   </data>
-  <data name="&gt;&gt;flowLayoutPanel1.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;flp_hk_income.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="label7.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="lb_hk_income.Font" type="System.Drawing.Font, System.Drawing">
     <value>굴림, 11.25pt</value>
   </data>
-  <data name="label7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="lb_hk_income.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="lb_hk_income.Location" type="System.Drawing.Point, System.Drawing">
     <value>448, 464</value>
   </data>
-  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="lb_hk_income.Size" type="System.Drawing.Size, System.Drawing">
     <value>46, 20</value>
   </data>
-  <data name="label7.TabIndex" type="System.Int32, mscorlib">
+  <data name="lb_hk_income.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
   </data>
-  <data name="label7.Text" xml:space="preserve">
+  <data name="lb_hk_income.Text" xml:space="preserve">
     <value>수입</value>
   </data>
-  <data name="label7.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+  <data name="lb_hk_income.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
   </data>
-  <data name="&gt;&gt;label7.Name" xml:space="preserve">
-    <value>label7</value>
+  <data name="&gt;&gt;lb_hk_income.Name" xml:space="preserve">
+    <value>lb_hk_income</value>
   </data>
-  <data name="&gt;&gt;label7.Type" xml:space="preserve">
+  <data name="&gt;&gt;lb_hk_income.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label7.Parent" xml:space="preserve">
+  <data name="&gt;&gt;lb_hk_income.Parent" xml:space="preserve">
     <value>hk_month_table</value>
   </data>
-  <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;lb_hk_income.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="label6.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="lb_hk_spend.Font" type="System.Drawing.Font, System.Drawing">
     <value>굴림, 11.25pt</value>
   </data>
-  <data name="label6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="lb_hk_spend.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="lb_hk_spend.Location" type="System.Drawing.Point, System.Drawing">
     <value>448, 2</value>
   </data>
-  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="lb_hk_spend.Size" type="System.Drawing.Size, System.Drawing">
     <value>53, 26</value>
   </data>
-  <data name="label6.TabIndex" type="System.Int32, mscorlib">
+  <data name="lb_hk_spend.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
   </data>
-  <data name="label6.Text" xml:space="preserve">
+  <data name="lb_hk_spend.Text" xml:space="preserve">
     <value>지출</value>
   </data>
-  <data name="label6.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+  <data name="lb_hk_spend.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
   </data>
-  <data name="&gt;&gt;label6.Name" xml:space="preserve">
-    <value>label6</value>
+  <data name="&gt;&gt;lb_hk_spend.Name" xml:space="preserve">
+    <value>lb_hk_spend</value>
   </data>
-  <data name="&gt;&gt;label6.Type" xml:space="preserve">
+  <data name="&gt;&gt;lb_hk_spend.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label6.Parent" xml:space="preserve">
+  <data name="&gt;&gt;lb_hk_spend.Parent" xml:space="preserve">
     <value>hk_month_table</value>
   </data>
-  <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;lb_hk_spend.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="flowLayoutPanel2.AutoScroll" type="System.Boolean, mscorlib">
+  <data name="flp_hk_spend.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="label12.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
@@ -4942,7 +4648,7 @@
     <value>554, 6</value>
   </data>
   <data name="label12.Size" type="System.Drawing.Size, System.Drawing">
-    <value>118, 12</value>
+    <value>119, 12</value>
   </data>
   <data name="label12.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -5092,7 +4798,7 @@
     <value>3, 2, 3, 2</value>
   </data>
   <data name="panel25.Size" type="System.Drawing.Size, System.Drawing">
-    <value>676, 23</value>
+    <value>680, 23</value>
   </data>
   <data name="panel25.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -5104,33 +4810,33 @@
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;panel25.Parent" xml:space="preserve">
-    <value>flowLayoutPanel2</value>
+    <value>flp_hk_spend</value>
   </data>
   <data name="&gt;&gt;panel25.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="flowLayoutPanel2.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="flp_hk_spend.Location" type="System.Drawing.Point, System.Drawing">
     <value>451, 30</value>
   </data>
-  <data name="flowLayoutPanel2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="flp_hk_spend.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
   </data>
-  <data name="flowLayoutPanel2.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="flp_hk_spend.Size" type="System.Drawing.Size, System.Drawing">
     <value>702, 432</value>
   </data>
-  <data name="flowLayoutPanel2.TabIndex" type="System.Int32, mscorlib">
+  <data name="flp_hk_spend.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
   </data>
-  <data name="&gt;&gt;flowLayoutPanel2.Name" xml:space="preserve">
-    <value>flowLayoutPanel2</value>
+  <data name="&gt;&gt;flp_hk_spend.Name" xml:space="preserve">
+    <value>flp_hk_spend</value>
   </data>
-  <data name="&gt;&gt;flowLayoutPanel2.Type" xml:space="preserve">
+  <data name="&gt;&gt;flp_hk_spend.Type" xml:space="preserve">
     <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;flowLayoutPanel2.Parent" xml:space="preserve">
+  <data name="&gt;&gt;flp_hk_spend.Parent" xml:space="preserve">
     <value>hk_month_table</value>
   </data>
-  <data name="&gt;&gt;flowLayoutPanel2.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;flp_hk_spend.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
   <data name="hk_month_table.Location" type="System.Drawing.Point, System.Drawing">

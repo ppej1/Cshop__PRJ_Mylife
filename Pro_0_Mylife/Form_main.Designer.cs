@@ -35,12 +35,12 @@
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.tab_form = new System.Windows.Forms.TabControl();
             this.tab_home = new System.Windows.Forms.TabPage();
             this.panel23 = new System.Windows.Forms.Panel();
@@ -105,6 +105,85 @@
             this.pnl_shp_side2 = new System.Windows.Forms.Panel();
             this.flp_purchasedList = new System.Windows.Forms.FlowLayoutPanel();
             this.tab_HouseKeep = new System.Windows.Forms.TabPage();
+            this.home_tab_list = new System.Windows.Forms.TabControl();
+            this.hk_Month = new System.Windows.Forms.TabPage();
+            this.cb_hk_selectMonth = new System.Windows.Forms.ComboBox();
+            this.txt_hk_selectYear = new System.Windows.Forms.TextBox();
+            this.home_tab_result = new System.Windows.Forms.TabControl();
+            this.hk_month_table = new System.Windows.Forms.TabPage();
+            this.pnl_hk_input = new System.Windows.Forms.Panel();
+            this.pnl_hk_side1 = new System.Windows.Forms.Panel();
+            this.chart_inOut = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.flp_hk_AccontInfo = new System.Windows.Forms.FlowLayoutPanel();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.label40 = new System.Windows.Forms.Label();
+            this.label41 = new System.Windows.Forms.Label();
+            this.label42 = new System.Windows.Forms.Label();
+            this.label43 = new System.Windows.Forms.Label();
+            this.label44 = new System.Windows.Forms.Label();
+            this.tdp_hk_selectDate = new System.Windows.Forms.DateTimePicker();
+            this.home_tab_insert = new System.Windows.Forms.TabControl();
+            this.tabPage_hk_spend = new System.Windows.Forms.TabPage();
+            this.lb_hk_title1 = new System.Windows.Forms.Label();
+            this.cal_1 = new System.Windows.Forms.Button();
+            this.cal_4 = new System.Windows.Forms.Button();
+            this.cal_7 = new System.Windows.Forms.Button();
+            this.cal_CE = new System.Windows.Forms.Button();
+            this.button21 = new System.Windows.Forms.Button();
+            this.cal_comma = new System.Windows.Forms.Button();
+            this.cal_0 = new System.Windows.Forms.Button();
+            this.cal_Plus = new System.Windows.Forms.Button();
+            this.cal_3 = new System.Windows.Forms.Button();
+            this.cal_2 = new System.Windows.Forms.Button();
+            this.cal_minuse = new System.Windows.Forms.Button();
+            this.cal_6 = new System.Windows.Forms.Button();
+            this.cal_5 = new System.Windows.Forms.Button();
+            this.cal_multiple = new System.Windows.Forms.Button();
+            this.cal_9 = new System.Windows.Forms.Button();
+            this.cal_8 = new System.Windows.Forms.Button();
+            this.cal_Backspace = new System.Windows.Forms.Button();
+            this.cal_division = new System.Windows.Forms.Button();
+            this.cb_hk_spendEx = new System.Windows.Forms.ComboBox();
+            this.cal_Percent = new System.Windows.Forms.Button();
+            this.cal_result = new System.Windows.Forms.Label();
+            this.btn_hk_spend = new System.Windows.Forms.Button();
+            this.cb_hk_spendAccont = new System.Windows.Forms.ComboBox();
+            this.cb_hk_spendType = new System.Windows.Forms.ComboBox();
+            this.txt_hk_spendPrice = new System.Windows.Forms.TextBox();
+            this.txt_hk_spendComment = new System.Windows.Forms.TextBox();
+            this.tabPage_hk_income = new System.Windows.Forms.TabPage();
+            this.lb_hk_title3 = new System.Windows.Forms.Label();
+            this.lb_hk_title2 = new System.Windows.Forms.Label();
+            this.lb_exchange = new System.Windows.Forms.Label();
+            this.cb_hk_exchangeEx = new System.Windows.Forms.ComboBox();
+            this.cb_hk_incomeEx = new System.Windows.Forms.ComboBox();
+            this.EXCHANGE = new System.Windows.Forms.Button();
+            this.btn_hk_income = new System.Windows.Forms.Button();
+            this.txt_hk_incomePrice = new System.Windows.Forms.TextBox();
+            this.txt_hk_incomeComment = new System.Windows.Forms.TextBox();
+            this.cb_hk_incomeAccount = new System.Windows.Forms.ComboBox();
+            this.cb_hk_exChange1 = new System.Windows.Forms.ComboBox();
+            this.cb_hk_exChange2 = new System.Windows.Forms.ComboBox();
+            this.txt_hk_exchangePrice = new System.Windows.Forms.TextBox();
+            this.flp_hk_income = new System.Windows.Forms.FlowLayoutPanel();
+            this.lb_hk_income = new System.Windows.Forms.Label();
+            this.lb_hk_spend = new System.Windows.Forms.Label();
+            this.flp_hk_spend = new System.Windows.Forms.FlowLayoutPanel();
+            this.panel25 = new System.Windows.Forms.Panel();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.hk_month_Analysis = new System.Windows.Forms.TabPage();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.chart2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.panel43 = new System.Windows.Forms.Panel();
+            this.hk_year = new System.Windows.Forms.TabPage();
             this.UserInfo_panel = new System.Windows.Forms.Panel();
             this.btn_UserModify = new System.Windows.Forms.Button();
             this.btn_signOut = new System.Windows.Forms.Button();
@@ -120,118 +199,23 @@
             this.btn_hk = new System.Windows.Forms.Button();
             this.btn_memo = new System.Windows.Forms.Button();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.home_tab_list = new System.Windows.Forms.TabControl();
-            this.hk_Month = new System.Windows.Forms.TabPage();
-            this.home_tab_result = new System.Windows.Forms.TabControl();
-            this.hk_month_table = new System.Windows.Forms.TabPage();
-            this.panel27 = new System.Windows.Forms.Panel();
-            this.chart3 = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.panel44 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.home_tab_insert = new System.Windows.Forms.TabControl();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.button1 = new System.Windows.Forms.Button();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
-            this.comboBox7 = new System.Windows.Forms.ComboBox();
-            this.comboBox6 = new System.Windows.Forms.ComboBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
-            this.panel25 = new System.Windows.Forms.Panel();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.hk_month_Analysis = new System.Windows.Forms.TabPage();
-            this.panel43 = new System.Windows.Forms.Panel();
-            this.hk_year = new System.Windows.Forms.TabPage();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.chart2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.button6 = new System.Windows.Forms.Button();
-            this.label24 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button13 = new System.Windows.Forms.Button();
-            this.button14 = new System.Windows.Forms.Button();
-            this.button15 = new System.Windows.Forms.Button();
-            this.button17 = new System.Windows.Forms.Button();
-            this.button18 = new System.Windows.Forms.Button();
-            this.button19 = new System.Windows.Forms.Button();
-            this.button21 = new System.Windows.Forms.Button();
-            this.button22 = new System.Windows.Forms.Button();
-            this.button23 = new System.Windows.Forms.Button();
-            this.button25 = new System.Windows.Forms.Button();
-            this.button26 = new System.Windows.Forms.Button();
-            this.button27 = new System.Windows.Forms.Button();
-            this.button28 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.comboBox8 = new System.Windows.Forms.ComboBox();
-            this.comboBox9 = new System.Windows.Forms.ComboBox();
-            this.lb_exchange = new System.Windows.Forms.Label();
+            this.tabPage_hk_account = new System.Windows.Forms.TabPage();
+            this.txt_hk_AccountName = new System.Windows.Forms.TextBox();
+            this.cb_hk_AccountType = new System.Windows.Forms.ComboBox();
+            this.btn_hk_AccountRegister = new System.Windows.Forms.Button();
+            this.lb_hk_title4 = new System.Windows.Forms.Label();
+            this.lb_hk_info2 = new System.Windows.Forms.Label();
+            this.lb_hk_info3 = new System.Windows.Forms.Label();
+            this.lb_hk_info1 = new System.Windows.Forms.Label();
+            this.lb_hk_infoNo1 = new System.Windows.Forms.Label();
+            this.lb_hk_infoNo2 = new System.Windows.Forms.Label();
+            this.lb_hk_infoNo3 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.label25 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
-            this.label29 = new System.Windows.Forms.Label();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.label30 = new System.Windows.Forms.Label();
-            this.label31 = new System.Windows.Forms.Label();
-            this.label32 = new System.Windows.Forms.Label();
-            this.label33 = new System.Windows.Forms.Label();
-            this.label34 = new System.Windows.Forms.Label();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.label35 = new System.Windows.Forms.Label();
-            this.label36 = new System.Windows.Forms.Label();
-            this.label37 = new System.Windows.Forms.Label();
-            this.label38 = new System.Windows.Forms.Label();
-            this.label39 = new System.Windows.Forms.Label();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.label40 = new System.Windows.Forms.Label();
-            this.label41 = new System.Windows.Forms.Label();
-            this.label42 = new System.Windows.Forms.Label();
-            this.label43 = new System.Windows.Forms.Label();
-            this.label44 = new System.Windows.Forms.Label();
             this.tab_form.SuspendLayout();
             this.tab_home.SuspendLayout();
             this.tab_Memo.SuspendLayout();
@@ -249,34 +233,30 @@
             this.tabPage_purechased.SuspendLayout();
             this.pnl_shp_purchased.SuspendLayout();
             this.tab_HouseKeep.SuspendLayout();
-            this.UserInfo_panel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.Top_panel.SuspendLayout();
-            this.pnl_nav.SuspendLayout();
             this.home_tab_list.SuspendLayout();
             this.hk_Month.SuspendLayout();
             this.home_tab_result.SuspendLayout();
             this.hk_month_table.SuspendLayout();
-            this.panel27.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chart3)).BeginInit();
-            this.flowLayoutPanel3.SuspendLayout();
-            this.panel1.SuspendLayout();
-            this.panel44.SuspendLayout();
+            this.pnl_hk_input.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chart_inOut)).BeginInit();
+            this.flp_hk_AccontInfo.SuspendLayout();
+            this.panel10.SuspendLayout();
             this.home_tab_insert.SuspendLayout();
-            this.tabPage3.SuspendLayout();
-            this.tabPage4.SuspendLayout();
-            this.flowLayoutPanel2.SuspendLayout();
+            this.tabPage_hk_spend.SuspendLayout();
+            this.tabPage_hk_income.SuspendLayout();
+            this.flp_hk_spend.SuspendLayout();
             this.panel25.SuspendLayout();
             this.hk_month_Analysis.SuspendLayout();
             this.panel8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chart2)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chart2)).BeginInit();
+            this.UserInfo_panel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.Top_panel.SuspendLayout();
+            this.pnl_nav.SuspendLayout();
+            this.tabPage_hk_account.SuspendLayout();
             this.panel3.SuspendLayout();
-            this.panel4.SuspendLayout();
-            this.panel5.SuspendLayout();
-            this.panel6.SuspendLayout();
-            this.panel10.SuspendLayout();
             this.SuspendLayout();
             // 
             // tab_form
@@ -300,7 +280,7 @@
             // 
             // panel23
             // 
-            this.panel23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.panel23.BackColor = System.Drawing.Color.White;
             resources.ApplyResources(this.panel23, "panel23");
             this.panel23.Name = "panel23";
             // 
@@ -928,6 +908,665 @@
             resources.ApplyResources(this.tab_HouseKeep, "tab_HouseKeep");
             this.tab_HouseKeep.Name = "tab_HouseKeep";
             // 
+            // home_tab_list
+            // 
+            this.home_tab_list.Controls.Add(this.hk_Month);
+            this.home_tab_list.Controls.Add(this.hk_year);
+            this.home_tab_list.HotTrack = true;
+            resources.ApplyResources(this.home_tab_list, "home_tab_list");
+            this.home_tab_list.Multiline = true;
+            this.home_tab_list.Name = "home_tab_list";
+            this.home_tab_list.SelectedIndex = 0;
+            // 
+            // hk_Month
+            // 
+            this.hk_Month.BackColor = System.Drawing.Color.White;
+            this.hk_Month.Controls.Add(this.cb_hk_selectMonth);
+            this.hk_Month.Controls.Add(this.txt_hk_selectYear);
+            this.hk_Month.Controls.Add(this.home_tab_result);
+            this.hk_Month.Controls.Add(this.panel43);
+            resources.ApplyResources(this.hk_Month, "hk_Month");
+            this.hk_Month.Name = "hk_Month";
+            // 
+            // cb_hk_selectMonth
+            // 
+            this.cb_hk_selectMonth.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            resources.ApplyResources(this.cb_hk_selectMonth, "cb_hk_selectMonth");
+            this.cb_hk_selectMonth.FormattingEnabled = true;
+            this.cb_hk_selectMonth.Items.AddRange(new object[] {
+            resources.GetString("cb_hk_selectMonth.Items"),
+            resources.GetString("cb_hk_selectMonth.Items1"),
+            resources.GetString("cb_hk_selectMonth.Items2"),
+            resources.GetString("cb_hk_selectMonth.Items3"),
+            resources.GetString("cb_hk_selectMonth.Items4"),
+            resources.GetString("cb_hk_selectMonth.Items5"),
+            resources.GetString("cb_hk_selectMonth.Items6"),
+            resources.GetString("cb_hk_selectMonth.Items7"),
+            resources.GetString("cb_hk_selectMonth.Items8"),
+            resources.GetString("cb_hk_selectMonth.Items9"),
+            resources.GetString("cb_hk_selectMonth.Items10"),
+            resources.GetString("cb_hk_selectMonth.Items11")});
+            this.cb_hk_selectMonth.Name = "cb_hk_selectMonth";
+            // 
+            // txt_hk_selectYear
+            // 
+            this.txt_hk_selectYear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.txt_hk_selectYear.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            resources.ApplyResources(this.txt_hk_selectYear, "txt_hk_selectYear");
+            this.txt_hk_selectYear.Name = "txt_hk_selectYear";
+            // 
+            // home_tab_result
+            // 
+            this.home_tab_result.Controls.Add(this.hk_month_table);
+            this.home_tab_result.Controls.Add(this.hk_month_Analysis);
+            resources.ApplyResources(this.home_tab_result, "home_tab_result");
+            this.home_tab_result.Multiline = true;
+            this.home_tab_result.Name = "home_tab_result";
+            this.home_tab_result.SelectedIndex = 0;
+            // 
+            // hk_month_table
+            // 
+            this.hk_month_table.BackColor = System.Drawing.Color.White;
+            this.hk_month_table.Controls.Add(this.pnl_hk_input);
+            this.hk_month_table.Controls.Add(this.flp_hk_income);
+            this.hk_month_table.Controls.Add(this.lb_hk_income);
+            this.hk_month_table.Controls.Add(this.lb_hk_spend);
+            this.hk_month_table.Controls.Add(this.flp_hk_spend);
+            resources.ApplyResources(this.hk_month_table, "hk_month_table");
+            this.hk_month_table.Name = "hk_month_table";
+            // 
+            // pnl_hk_input
+            // 
+            this.pnl_hk_input.BackColor = System.Drawing.Color.White;
+            this.pnl_hk_input.Controls.Add(this.panel3);
+            this.pnl_hk_input.Controls.Add(this.lb_hk_infoNo3);
+            this.pnl_hk_input.Controls.Add(this.lb_hk_infoNo2);
+            this.pnl_hk_input.Controls.Add(this.lb_hk_infoNo1);
+            this.pnl_hk_input.Controls.Add(this.lb_hk_info2);
+            this.pnl_hk_input.Controls.Add(this.lb_hk_info3);
+            this.pnl_hk_input.Controls.Add(this.lb_hk_info1);
+            this.pnl_hk_input.Controls.Add(this.pnl_hk_side1);
+            this.pnl_hk_input.Controls.Add(this.chart_inOut);
+            this.pnl_hk_input.Controls.Add(this.flp_hk_AccontInfo);
+            this.pnl_hk_input.Controls.Add(this.tdp_hk_selectDate);
+            this.pnl_hk_input.Controls.Add(this.home_tab_insert);
+            resources.ApplyResources(this.pnl_hk_input, "pnl_hk_input");
+            this.pnl_hk_input.Name = "pnl_hk_input";
+            // 
+            // pnl_hk_side1
+            // 
+            resources.ApplyResources(this.pnl_hk_side1, "pnl_hk_side1");
+            this.pnl_hk_side1.Name = "pnl_hk_side1";
+            // 
+            // chart_inOut
+            // 
+            this.chart_inOut.BackColor = System.Drawing.Color.Transparent;
+            chartArea2.Name = "ChartArea1";
+            this.chart_inOut.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chart_inOut.Legends.Add(legend2);
+            resources.ApplyResources(this.chart_inOut, "chart_inOut");
+            this.chart_inOut.Name = "chart_inOut";
+            series2.ChartArea = "ChartArea1";
+            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Bar;
+            series2.Legend = "Legend1";
+            series2.Name = "Series1";
+            this.chart_inOut.Series.Add(series2);
+            // 
+            // flp_hk_AccontInfo
+            // 
+            resources.ApplyResources(this.flp_hk_AccontInfo, "flp_hk_AccontInfo");
+            this.flp_hk_AccontInfo.Controls.Add(this.panel10);
+            this.flp_hk_AccontInfo.Name = "flp_hk_AccontInfo";
+            // 
+            // panel10
+            // 
+            this.panel10.BackColor = System.Drawing.Color.White;
+            this.panel10.Controls.Add(this.label40);
+            this.panel10.Controls.Add(this.label41);
+            this.panel10.Controls.Add(this.label42);
+            this.panel10.Controls.Add(this.label43);
+            this.panel10.Controls.Add(this.label44);
+            resources.ApplyResources(this.panel10, "panel10");
+            this.panel10.Name = "panel10";
+            // 
+            // label40
+            // 
+            this.label40.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            resources.ApplyResources(this.label40, "label40");
+            this.label40.Name = "label40";
+            // 
+            // label41
+            // 
+            this.label41.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            resources.ApplyResources(this.label41, "label41");
+            this.label41.Name = "label41";
+            // 
+            // label42
+            // 
+            this.label42.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            resources.ApplyResources(this.label42, "label42");
+            this.label42.Name = "label42";
+            // 
+            // label43
+            // 
+            this.label43.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            resources.ApplyResources(this.label43, "label43");
+            this.label43.Name = "label43";
+            // 
+            // label44
+            // 
+            this.label44.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            resources.ApplyResources(this.label44, "label44");
+            this.label44.Name = "label44";
+            // 
+            // tdp_hk_selectDate
+            // 
+            resources.ApplyResources(this.tdp_hk_selectDate, "tdp_hk_selectDate");
+            this.tdp_hk_selectDate.Name = "tdp_hk_selectDate";
+            // 
+            // home_tab_insert
+            // 
+            this.home_tab_insert.Controls.Add(this.tabPage_hk_spend);
+            this.home_tab_insert.Controls.Add(this.tabPage_hk_income);
+            this.home_tab_insert.Controls.Add(this.tabPage_hk_account);
+            resources.ApplyResources(this.home_tab_insert, "home_tab_insert");
+            this.home_tab_insert.Name = "home_tab_insert";
+            this.home_tab_insert.SelectedIndex = 0;
+            // 
+            // tabPage_hk_spend
+            // 
+            this.tabPage_hk_spend.BackColor = System.Drawing.Color.White;
+            this.tabPage_hk_spend.Controls.Add(this.lb_hk_title1);
+            this.tabPage_hk_spend.Controls.Add(this.cal_1);
+            this.tabPage_hk_spend.Controls.Add(this.cal_4);
+            this.tabPage_hk_spend.Controls.Add(this.cal_7);
+            this.tabPage_hk_spend.Controls.Add(this.cal_CE);
+            this.tabPage_hk_spend.Controls.Add(this.button21);
+            this.tabPage_hk_spend.Controls.Add(this.cal_comma);
+            this.tabPage_hk_spend.Controls.Add(this.cal_0);
+            this.tabPage_hk_spend.Controls.Add(this.cal_Plus);
+            this.tabPage_hk_spend.Controls.Add(this.cal_3);
+            this.tabPage_hk_spend.Controls.Add(this.cal_2);
+            this.tabPage_hk_spend.Controls.Add(this.cal_minuse);
+            this.tabPage_hk_spend.Controls.Add(this.cal_6);
+            this.tabPage_hk_spend.Controls.Add(this.cal_5);
+            this.tabPage_hk_spend.Controls.Add(this.cal_multiple);
+            this.tabPage_hk_spend.Controls.Add(this.cal_9);
+            this.tabPage_hk_spend.Controls.Add(this.cal_8);
+            this.tabPage_hk_spend.Controls.Add(this.cal_Backspace);
+            this.tabPage_hk_spend.Controls.Add(this.cal_division);
+            this.tabPage_hk_spend.Controls.Add(this.cb_hk_spendEx);
+            this.tabPage_hk_spend.Controls.Add(this.cal_Percent);
+            this.tabPage_hk_spend.Controls.Add(this.cal_result);
+            this.tabPage_hk_spend.Controls.Add(this.btn_hk_spend);
+            this.tabPage_hk_spend.Controls.Add(this.cb_hk_spendAccont);
+            this.tabPage_hk_spend.Controls.Add(this.cb_hk_spendType);
+            this.tabPage_hk_spend.Controls.Add(this.txt_hk_spendPrice);
+            this.tabPage_hk_spend.Controls.Add(this.txt_hk_spendComment);
+            resources.ApplyResources(this.tabPage_hk_spend, "tabPage_hk_spend");
+            this.tabPage_hk_spend.Name = "tabPage_hk_spend";
+            // 
+            // lb_hk_title1
+            // 
+            resources.ApplyResources(this.lb_hk_title1, "lb_hk_title1");
+            this.lb_hk_title1.Name = "lb_hk_title1";
+            // 
+            // cal_1
+            // 
+            this.cal_1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.cal_1.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.cal_1, "cal_1");
+            this.cal_1.Name = "cal_1";
+            this.cal_1.UseVisualStyleBackColor = false;
+            // 
+            // cal_4
+            // 
+            this.cal_4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.cal_4.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.cal_4, "cal_4");
+            this.cal_4.Name = "cal_4";
+            this.cal_4.UseVisualStyleBackColor = false;
+            // 
+            // cal_7
+            // 
+            this.cal_7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.cal_7.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.cal_7, "cal_7");
+            this.cal_7.Name = "cal_7";
+            this.cal_7.UseVisualStyleBackColor = false;
+            // 
+            // cal_CE
+            // 
+            this.cal_CE.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.cal_CE.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.cal_CE, "cal_CE");
+            this.cal_CE.Name = "cal_CE";
+            this.cal_CE.UseVisualStyleBackColor = false;
+            // 
+            // button21
+            // 
+            this.button21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.button21.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.button21, "button21");
+            this.button21.Name = "button21";
+            this.button21.UseVisualStyleBackColor = false;
+            // 
+            // cal_comma
+            // 
+            this.cal_comma.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.cal_comma.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.cal_comma, "cal_comma");
+            this.cal_comma.Name = "cal_comma";
+            this.cal_comma.UseVisualStyleBackColor = false;
+            // 
+            // cal_0
+            // 
+            this.cal_0.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.cal_0.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.cal_0, "cal_0");
+            this.cal_0.Name = "cal_0";
+            this.cal_0.UseVisualStyleBackColor = false;
+            // 
+            // cal_Plus
+            // 
+            this.cal_Plus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.cal_Plus.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.cal_Plus, "cal_Plus");
+            this.cal_Plus.Name = "cal_Plus";
+            this.cal_Plus.UseVisualStyleBackColor = false;
+            // 
+            // cal_3
+            // 
+            this.cal_3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.cal_3.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.cal_3, "cal_3");
+            this.cal_3.Name = "cal_3";
+            this.cal_3.UseVisualStyleBackColor = false;
+            // 
+            // cal_2
+            // 
+            this.cal_2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.cal_2.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.cal_2, "cal_2");
+            this.cal_2.Name = "cal_2";
+            this.cal_2.UseVisualStyleBackColor = false;
+            // 
+            // cal_minuse
+            // 
+            this.cal_minuse.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.cal_minuse.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.cal_minuse, "cal_minuse");
+            this.cal_minuse.Name = "cal_minuse";
+            this.cal_minuse.UseVisualStyleBackColor = false;
+            // 
+            // cal_6
+            // 
+            this.cal_6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.cal_6.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.cal_6, "cal_6");
+            this.cal_6.Name = "cal_6";
+            this.cal_6.UseVisualStyleBackColor = false;
+            // 
+            // cal_5
+            // 
+            this.cal_5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.cal_5.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.cal_5, "cal_5");
+            this.cal_5.Name = "cal_5";
+            this.cal_5.UseVisualStyleBackColor = false;
+            // 
+            // cal_multiple
+            // 
+            this.cal_multiple.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.cal_multiple.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.cal_multiple, "cal_multiple");
+            this.cal_multiple.Name = "cal_multiple";
+            this.cal_multiple.UseVisualStyleBackColor = false;
+            // 
+            // cal_9
+            // 
+            this.cal_9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.cal_9.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.cal_9, "cal_9");
+            this.cal_9.Name = "cal_9";
+            this.cal_9.UseVisualStyleBackColor = false;
+            // 
+            // cal_8
+            // 
+            this.cal_8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.cal_8.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.cal_8, "cal_8");
+            this.cal_8.Name = "cal_8";
+            this.cal_8.UseVisualStyleBackColor = false;
+            // 
+            // cal_Backspace
+            // 
+            this.cal_Backspace.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.cal_Backspace.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.cal_Backspace, "cal_Backspace");
+            this.cal_Backspace.Name = "cal_Backspace";
+            this.cal_Backspace.UseVisualStyleBackColor = false;
+            // 
+            // cal_division
+            // 
+            this.cal_division.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.cal_division.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.cal_division, "cal_division");
+            this.cal_division.Name = "cal_division";
+            this.cal_division.UseVisualStyleBackColor = false;
+            // 
+            // cb_hk_spendEx
+            // 
+            this.cb_hk_spendEx.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            resources.ApplyResources(this.cb_hk_spendEx, "cb_hk_spendEx");
+            this.cb_hk_spendEx.FormattingEnabled = true;
+            this.cb_hk_spendEx.Items.AddRange(new object[] {
+            resources.GetString("cb_hk_spendEx.Items"),
+            resources.GetString("cb_hk_spendEx.Items1"),
+            resources.GetString("cb_hk_spendEx.Items2")});
+            this.cb_hk_spendEx.Name = "cb_hk_spendEx";
+            // 
+            // cal_Percent
+            // 
+            this.cal_Percent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.cal_Percent.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.cal_Percent, "cal_Percent");
+            this.cal_Percent.Name = "cal_Percent";
+            this.cal_Percent.UseVisualStyleBackColor = false;
+            // 
+            // cal_result
+            // 
+            this.cal_result.BackColor = System.Drawing.Color.WhiteSmoke;
+            resources.ApplyResources(this.cal_result, "cal_result");
+            this.cal_result.Name = "cal_result";
+            // 
+            // btn_hk_spend
+            // 
+            this.btn_hk_spend.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btn_hk_spend.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.btn_hk_spend, "btn_hk_spend");
+            this.btn_hk_spend.Name = "btn_hk_spend";
+            this.btn_hk_spend.UseVisualStyleBackColor = false;
+            this.btn_hk_spend.Click += new System.EventHandler(this.btn_hk_spend_Click);
+            // 
+            // cb_hk_spendAccont
+            // 
+            this.cb_hk_spendAccont.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            resources.ApplyResources(this.cb_hk_spendAccont, "cb_hk_spendAccont");
+            this.cb_hk_spendAccont.FormattingEnabled = true;
+            this.cb_hk_spendAccont.Name = "cb_hk_spendAccont";
+            // 
+            // cb_hk_spendType
+            // 
+            this.cb_hk_spendType.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            resources.ApplyResources(this.cb_hk_spendType, "cb_hk_spendType");
+            this.cb_hk_spendType.FormattingEnabled = true;
+            this.cb_hk_spendType.Name = "cb_hk_spendType";
+            // 
+            // txt_hk_spendPrice
+            // 
+            this.txt_hk_spendPrice.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.txt_hk_spendPrice.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            resources.ApplyResources(this.txt_hk_spendPrice, "txt_hk_spendPrice");
+            this.txt_hk_spendPrice.Name = "txt_hk_spendPrice";
+            // 
+            // txt_hk_spendComment
+            // 
+            this.txt_hk_spendComment.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.txt_hk_spendComment.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            resources.ApplyResources(this.txt_hk_spendComment, "txt_hk_spendComment");
+            this.txt_hk_spendComment.Name = "txt_hk_spendComment";
+            // 
+            // tabPage_hk_income
+            // 
+            this.tabPage_hk_income.BackColor = System.Drawing.Color.White;
+            this.tabPage_hk_income.Controls.Add(this.lb_hk_title3);
+            this.tabPage_hk_income.Controls.Add(this.lb_hk_title2);
+            this.tabPage_hk_income.Controls.Add(this.cb_hk_exchangeEx);
+            this.tabPage_hk_income.Controls.Add(this.cb_hk_incomeEx);
+            this.tabPage_hk_income.Controls.Add(this.EXCHANGE);
+            this.tabPage_hk_income.Controls.Add(this.btn_hk_income);
+            this.tabPage_hk_income.Controls.Add(this.txt_hk_incomePrice);
+            this.tabPage_hk_income.Controls.Add(this.txt_hk_incomeComment);
+            this.tabPage_hk_income.Controls.Add(this.cb_hk_incomeAccount);
+            this.tabPage_hk_income.Controls.Add(this.cb_hk_exChange1);
+            this.tabPage_hk_income.Controls.Add(this.cb_hk_exChange2);
+            this.tabPage_hk_income.Controls.Add(this.txt_hk_exchangePrice);
+            this.tabPage_hk_income.Controls.Add(this.lb_exchange);
+            resources.ApplyResources(this.tabPage_hk_income, "tabPage_hk_income");
+            this.tabPage_hk_income.Name = "tabPage_hk_income";
+            // 
+            // lb_hk_title3
+            // 
+            resources.ApplyResources(this.lb_hk_title3, "lb_hk_title3");
+            this.lb_hk_title3.Name = "lb_hk_title3";
+            // 
+            // lb_hk_title2
+            // 
+            resources.ApplyResources(this.lb_hk_title2, "lb_hk_title2");
+            this.lb_hk_title2.Name = "lb_hk_title2";
+            // 
+            // lb_exchange
+            // 
+            resources.ApplyResources(this.lb_exchange, "lb_exchange");
+            this.lb_exchange.Name = "lb_exchange";
+            // 
+            // cb_hk_exchangeEx
+            // 
+            this.cb_hk_exchangeEx.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            resources.ApplyResources(this.cb_hk_exchangeEx, "cb_hk_exchangeEx");
+            this.cb_hk_exchangeEx.FormattingEnabled = true;
+            this.cb_hk_exchangeEx.Items.AddRange(new object[] {
+            resources.GetString("cb_hk_exchangeEx.Items"),
+            resources.GetString("cb_hk_exchangeEx.Items1"),
+            resources.GetString("cb_hk_exchangeEx.Items2")});
+            this.cb_hk_exchangeEx.Name = "cb_hk_exchangeEx";
+            // 
+            // cb_hk_incomeEx
+            // 
+            this.cb_hk_incomeEx.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            resources.ApplyResources(this.cb_hk_incomeEx, "cb_hk_incomeEx");
+            this.cb_hk_incomeEx.FormattingEnabled = true;
+            this.cb_hk_incomeEx.Items.AddRange(new object[] {
+            resources.GetString("cb_hk_incomeEx.Items"),
+            resources.GetString("cb_hk_incomeEx.Items1"),
+            resources.GetString("cb_hk_incomeEx.Items2")});
+            this.cb_hk_incomeEx.Name = "cb_hk_incomeEx";
+            // 
+            // EXCHANGE
+            // 
+            this.EXCHANGE.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.EXCHANGE.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.EXCHANGE, "EXCHANGE");
+            this.EXCHANGE.Name = "EXCHANGE";
+            this.EXCHANGE.UseVisualStyleBackColor = false;
+            this.EXCHANGE.Click += new System.EventHandler(this.EXCHANGE_Click);
+            // 
+            // btn_hk_income
+            // 
+            this.btn_hk_income.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btn_hk_income.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.btn_hk_income, "btn_hk_income");
+            this.btn_hk_income.Name = "btn_hk_income";
+            this.btn_hk_income.UseVisualStyleBackColor = false;
+            this.btn_hk_income.Click += new System.EventHandler(this.btn_hk_income_Click);
+            // 
+            // txt_hk_incomePrice
+            // 
+            this.txt_hk_incomePrice.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.txt_hk_incomePrice.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            resources.ApplyResources(this.txt_hk_incomePrice, "txt_hk_incomePrice");
+            this.txt_hk_incomePrice.Name = "txt_hk_incomePrice";
+            // 
+            // txt_hk_incomeComment
+            // 
+            this.txt_hk_incomeComment.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.txt_hk_incomeComment.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            resources.ApplyResources(this.txt_hk_incomeComment, "txt_hk_incomeComment");
+            this.txt_hk_incomeComment.Name = "txt_hk_incomeComment";
+            // 
+            // cb_hk_incomeAccount
+            // 
+            this.cb_hk_incomeAccount.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            resources.ApplyResources(this.cb_hk_incomeAccount, "cb_hk_incomeAccount");
+            this.cb_hk_incomeAccount.FormattingEnabled = true;
+            this.cb_hk_incomeAccount.Name = "cb_hk_incomeAccount";
+            // 
+            // cb_hk_exChange1
+            // 
+            this.cb_hk_exChange1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            resources.ApplyResources(this.cb_hk_exChange1, "cb_hk_exChange1");
+            this.cb_hk_exChange1.FormattingEnabled = true;
+            this.cb_hk_exChange1.Name = "cb_hk_exChange1";
+            // 
+            // cb_hk_exChange2
+            // 
+            this.cb_hk_exChange2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            resources.ApplyResources(this.cb_hk_exChange2, "cb_hk_exChange2");
+            this.cb_hk_exChange2.FormattingEnabled = true;
+            this.cb_hk_exChange2.Name = "cb_hk_exChange2";
+            // 
+            // txt_hk_exchangePrice
+            // 
+            this.txt_hk_exchangePrice.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.txt_hk_exchangePrice.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            resources.ApplyResources(this.txt_hk_exchangePrice, "txt_hk_exchangePrice");
+            this.txt_hk_exchangePrice.Name = "txt_hk_exchangePrice";
+            // 
+            // flp_hk_income
+            // 
+            resources.ApplyResources(this.flp_hk_income, "flp_hk_income");
+            this.flp_hk_income.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.flp_hk_income.Name = "flp_hk_income";
+            // 
+            // lb_hk_income
+            // 
+            resources.ApplyResources(this.lb_hk_income, "lb_hk_income");
+            this.lb_hk_income.Name = "lb_hk_income";
+            // 
+            // lb_hk_spend
+            // 
+            resources.ApplyResources(this.lb_hk_spend, "lb_hk_spend");
+            this.lb_hk_spend.Name = "lb_hk_spend";
+            // 
+            // flp_hk_spend
+            // 
+            resources.ApplyResources(this.flp_hk_spend, "flp_hk_spend");
+            this.flp_hk_spend.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.flp_hk_spend.Controls.Add(this.panel25);
+            this.flp_hk_spend.Name = "flp_hk_spend";
+            // 
+            // panel25
+            // 
+            this.panel25.BackColor = System.Drawing.Color.White;
+            this.panel25.Controls.Add(this.label12);
+            this.panel25.Controls.Add(this.label11);
+            this.panel25.Controls.Add(this.label10);
+            this.panel25.Controls.Add(this.label9);
+            this.panel25.Controls.Add(this.label8);
+            resources.ApplyResources(this.panel25, "panel25");
+            this.panel25.Name = "panel25";
+            // 
+            // label12
+            // 
+            resources.ApplyResources(this.label12, "label12");
+            this.label12.Name = "label12";
+            // 
+            // label11
+            // 
+            resources.ApplyResources(this.label11, "label11");
+            this.label11.Name = "label11";
+            // 
+            // label10
+            // 
+            resources.ApplyResources(this.label10, "label10");
+            this.label10.Name = "label10";
+            // 
+            // label9
+            // 
+            resources.ApplyResources(this.label9, "label9");
+            this.label9.Name = "label9";
+            // 
+            // label8
+            // 
+            resources.ApplyResources(this.label8, "label8");
+            this.label8.Name = "label8";
+            // 
+            // hk_month_Analysis
+            // 
+            this.hk_month_Analysis.Controls.Add(this.panel9);
+            this.hk_month_Analysis.Controls.Add(this.panel8);
+            this.hk_month_Analysis.Controls.Add(this.panel7);
+            this.hk_month_Analysis.Controls.Add(this.panel2);
+            resources.ApplyResources(this.hk_month_Analysis, "hk_month_Analysis");
+            this.hk_month_Analysis.Name = "hk_month_Analysis";
+            this.hk_month_Analysis.UseVisualStyleBackColor = true;
+            // 
+            // panel9
+            // 
+            this.panel9.BackColor = System.Drawing.Color.Aqua;
+            resources.ApplyResources(this.panel9, "panel9");
+            this.panel9.Name = "panel9";
+            // 
+            // panel8
+            // 
+            this.panel8.BackColor = System.Drawing.Color.Aqua;
+            this.panel8.Controls.Add(this.chart2);
+            resources.ApplyResources(this.panel8, "panel8");
+            this.panel8.Name = "panel8";
+            // 
+            // chart2
+            // 
+            chartArea3.Name = "ChartArea1";
+            this.chart2.ChartAreas.Add(chartArea3);
+            legend3.Name = "Legend1";
+            this.chart2.Legends.Add(legend3);
+            resources.ApplyResources(this.chart2, "chart2");
+            this.chart2.Name = "chart2";
+            series3.ChartArea = "ChartArea1";
+            series3.Legend = "Legend1";
+            series3.Name = "Series1";
+            this.chart2.Series.Add(series3);
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.Aqua;
+            resources.ApplyResources(this.panel7, "panel7");
+            this.panel7.Name = "panel7";
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.Aqua;
+            this.panel2.Controls.Add(this.chart1);
+            resources.ApplyResources(this.panel2, "panel2");
+            this.panel2.Name = "panel2";
+            // 
+            // chart1
+            // 
+            chartArea4.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea4);
+            legend4.Name = "Legend1";
+            this.chart1.Legends.Add(legend4);
+            resources.ApplyResources(this.chart1, "chart1");
+            this.chart1.Name = "chart1";
+            series4.ChartArea = "ChartArea1";
+            series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            series4.Legend = "Legend1";
+            series4.Name = "Series1";
+            this.chart1.Series.Add(series4);
+            // 
+            // panel43
+            // 
+            resources.ApplyResources(this.panel43, "panel43");
+            this.panel43.Name = "panel43";
+            // 
+            // hk_year
+            // 
+            this.hk_year.BackColor = System.Drawing.Color.White;
+            resources.ApplyResources(this.hk_year, "hk_year");
+            this.hk_year.Name = "hk_year";
+            // 
             // UserInfo_panel
             // 
             resources.ApplyResources(this.UserInfo_panel, "UserInfo_panel");
@@ -1053,601 +1692,76 @@
             this.btn_memo.Name = "btn_memo";
             this.btn_memo.Click += new System.EventHandler(this.Btn_memo_Click);
             // 
-            // home_tab_list
+            // tabPage_hk_account
             // 
-            this.home_tab_list.Controls.Add(this.hk_Month);
-            this.home_tab_list.Controls.Add(this.hk_year);
-            this.home_tab_list.HotTrack = true;
-            resources.ApplyResources(this.home_tab_list, "home_tab_list");
-            this.home_tab_list.Multiline = true;
-            this.home_tab_list.Name = "home_tab_list";
-            this.home_tab_list.SelectedIndex = 0;
+            this.tabPage_hk_account.Controls.Add(this.lb_hk_title4);
+            this.tabPage_hk_account.Controls.Add(this.btn_hk_AccountRegister);
+            this.tabPage_hk_account.Controls.Add(this.txt_hk_AccountName);
+            this.tabPage_hk_account.Controls.Add(this.cb_hk_AccountType);
+            resources.ApplyResources(this.tabPage_hk_account, "tabPage_hk_account");
+            this.tabPage_hk_account.Name = "tabPage_hk_account";
+            this.tabPage_hk_account.UseVisualStyleBackColor = true;
             // 
-            // hk_Month
+            // txt_hk_AccountName
             // 
-            this.hk_Month.BackColor = System.Drawing.Color.White;
-            this.hk_Month.Controls.Add(this.comboBox2);
-            this.hk_Month.Controls.Add(this.textBox3);
-            this.hk_Month.Controls.Add(this.home_tab_result);
-            this.hk_Month.Controls.Add(this.panel43);
-            resources.ApplyResources(this.hk_Month, "hk_Month");
-            this.hk_Month.Name = "hk_Month";
+            this.txt_hk_AccountName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.txt_hk_AccountName.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            resources.ApplyResources(this.txt_hk_AccountName, "txt_hk_AccountName");
+            this.txt_hk_AccountName.Name = "txt_hk_AccountName";
             // 
-            // home_tab_result
+            // cb_hk_AccountType
             // 
-            this.home_tab_result.Controls.Add(this.hk_month_table);
-            this.home_tab_result.Controls.Add(this.hk_month_Analysis);
-            resources.ApplyResources(this.home_tab_result, "home_tab_result");
-            this.home_tab_result.Multiline = true;
-            this.home_tab_result.Name = "home_tab_result";
-            this.home_tab_result.SelectedIndex = 0;
+            this.cb_hk_AccountType.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            resources.ApplyResources(this.cb_hk_AccountType, "cb_hk_AccountType");
+            this.cb_hk_AccountType.FormattingEnabled = true;
+            this.cb_hk_AccountType.Items.AddRange(new object[] {
+            resources.GetString("cb_hk_AccountType.Items"),
+            resources.GetString("cb_hk_AccountType.Items1")});
+            this.cb_hk_AccountType.Name = "cb_hk_AccountType";
             // 
-            // hk_month_table
+            // btn_hk_AccountRegister
             // 
-            this.hk_month_table.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.hk_month_table.Controls.Add(this.panel27);
-            this.hk_month_table.Controls.Add(this.flowLayoutPanel1);
-            this.hk_month_table.Controls.Add(this.label7);
-            this.hk_month_table.Controls.Add(this.label6);
-            this.hk_month_table.Controls.Add(this.flowLayoutPanel2);
-            resources.ApplyResources(this.hk_month_table, "hk_month_table");
-            this.hk_month_table.Name = "hk_month_table";
+            this.btn_hk_AccountRegister.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btn_hk_AccountRegister.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.btn_hk_AccountRegister, "btn_hk_AccountRegister");
+            this.btn_hk_AccountRegister.Name = "btn_hk_AccountRegister";
+            this.btn_hk_AccountRegister.UseVisualStyleBackColor = false;
+            this.btn_hk_AccountRegister.Click += new System.EventHandler(this.btn_hk_AccountRegister_Click);
             // 
-            // panel27
+            // lb_hk_title4
             // 
-            this.panel27.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.panel27.Controls.Add(this.chart3);
-            this.panel27.Controls.Add(this.flowLayoutPanel3);
-            this.panel27.Controls.Add(this.dateTimePicker1);
-            this.panel27.Controls.Add(this.panel44);
-            this.panel27.Controls.Add(this.home_tab_insert);
-            resources.ApplyResources(this.panel27, "panel27");
-            this.panel27.Name = "panel27";
+            resources.ApplyResources(this.lb_hk_title4, "lb_hk_title4");
+            this.lb_hk_title4.Name = "lb_hk_title4";
             // 
-            // chart3
+            // lb_hk_info2
             // 
-            this.chart3.BackColor = System.Drawing.Color.Transparent;
-            chartArea2.Name = "ChartArea1";
-            this.chart3.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend1";
-            this.chart3.Legends.Add(legend2);
-            resources.ApplyResources(this.chart3, "chart3");
-            this.chart3.Name = "chart3";
-            series2.ChartArea = "ChartArea1";
-            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Bar;
-            series2.Legend = "Legend1";
-            series2.Name = "Series1";
-            this.chart3.Series.Add(series2);
+            resources.ApplyResources(this.lb_hk_info2, "lb_hk_info2");
+            this.lb_hk_info2.Name = "lb_hk_info2";
             // 
-            // flowLayoutPanel3
+            // lb_hk_info3
             // 
-            resources.ApplyResources(this.flowLayoutPanel3, "flowLayoutPanel3");
-            this.flowLayoutPanel3.Controls.Add(this.panel1);
-            this.flowLayoutPanel3.Controls.Add(this.panel3);
-            this.flowLayoutPanel3.Controls.Add(this.panel4);
-            this.flowLayoutPanel3.Controls.Add(this.panel5);
-            this.flowLayoutPanel3.Controls.Add(this.panel6);
-            this.flowLayoutPanel3.Controls.Add(this.panel10);
-            this.flowLayoutPanel3.Name = "flowLayoutPanel3";
+            resources.ApplyResources(this.lb_hk_info3, "lb_hk_info3");
+            this.lb_hk_info3.Name = "lb_hk_info3";
             // 
-            // panel1
+            // lb_hk_info1
             // 
-            this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.label17);
-            this.panel1.Controls.Add(this.label16);
-            this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.label3);
-            resources.ApplyResources(this.panel1, "panel1");
-            this.panel1.Name = "panel1";
+            resources.ApplyResources(this.lb_hk_info1, "lb_hk_info1");
+            this.lb_hk_info1.Name = "lb_hk_info1";
             // 
-            // label17
+            // lb_hk_infoNo1
             // 
-            this.label17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            resources.ApplyResources(this.label17, "label17");
-            this.label17.Name = "label17";
+            resources.ApplyResources(this.lb_hk_infoNo1, "lb_hk_infoNo1");
+            this.lb_hk_infoNo1.Name = "lb_hk_infoNo1";
             // 
-            // label16
+            // lb_hk_infoNo2
             // 
-            this.label16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            resources.ApplyResources(this.label16, "label16");
-            this.label16.Name = "label16";
+            resources.ApplyResources(this.lb_hk_infoNo2, "lb_hk_infoNo2");
+            this.lb_hk_infoNo2.Name = "lb_hk_infoNo2";
             // 
-            // label5
+            // lb_hk_infoNo3
             // 
-            this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            resources.ApplyResources(this.label5, "label5");
-            this.label5.Name = "label5";
-            // 
-            // label4
-            // 
-            this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            resources.ApplyResources(this.label4, "label4");
-            this.label4.Name = "label4";
-            // 
-            // label3
-            // 
-            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            resources.ApplyResources(this.label3, "label3");
-            this.label3.Name = "label3";
-            // 
-            // dateTimePicker1
-            // 
-            resources.ApplyResources(this.dateTimePicker1, "dateTimePicker1");
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            // 
-            // panel44
-            // 
-            this.panel44.Controls.Add(this.label2);
-            this.panel44.Controls.Add(this.label1);
-            this.panel44.Controls.Add(this.label18);
-            this.panel44.Controls.Add(this.label15);
-            this.panel44.Controls.Add(this.label14);
-            this.panel44.Controls.Add(this.label13);
-            resources.ApplyResources(this.panel44, "panel44");
-            this.panel44.Name = "panel44";
-            // 
-            // label2
-            // 
-            resources.ApplyResources(this.label2, "label2");
-            this.label2.Name = "label2";
-            // 
-            // label1
-            // 
-            resources.ApplyResources(this.label1, "label1");
-            this.label1.Name = "label1";
-            // 
-            // label18
-            // 
-            resources.ApplyResources(this.label18, "label18");
-            this.label18.Name = "label18";
-            // 
-            // label15
-            // 
-            resources.ApplyResources(this.label15, "label15");
-            this.label15.Name = "label15";
-            // 
-            // label14
-            // 
-            resources.ApplyResources(this.label14, "label14");
-            this.label14.Name = "label14";
-            // 
-            // label13
-            // 
-            resources.ApplyResources(this.label13, "label13");
-            this.label13.Name = "label13";
-            // 
-            // home_tab_insert
-            // 
-            this.home_tab_insert.Controls.Add(this.tabPage3);
-            this.home_tab_insert.Controls.Add(this.tabPage4);
-            resources.ApplyResources(this.home_tab_insert, "home_tab_insert");
-            this.home_tab_insert.Name = "home_tab_insert";
-            this.home_tab_insert.SelectedIndex = 0;
-            // 
-            // tabPage3
-            // 
-            this.tabPage3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.tabPage3.Controls.Add(this.button25);
-            this.tabPage3.Controls.Add(this.button26);
-            this.tabPage3.Controls.Add(this.button27);
-            this.tabPage3.Controls.Add(this.button28);
-            this.tabPage3.Controls.Add(this.button21);
-            this.tabPage3.Controls.Add(this.button22);
-            this.tabPage3.Controls.Add(this.button23);
-            this.tabPage3.Controls.Add(this.button17);
-            this.tabPage3.Controls.Add(this.button18);
-            this.tabPage3.Controls.Add(this.button19);
-            this.tabPage3.Controls.Add(this.button13);
-            this.tabPage3.Controls.Add(this.button14);
-            this.tabPage3.Controls.Add(this.button15);
-            this.tabPage3.Controls.Add(this.button9);
-            this.tabPage3.Controls.Add(this.button10);
-            this.tabPage3.Controls.Add(this.button11);
-            this.tabPage3.Controls.Add(this.button4);
-            this.tabPage3.Controls.Add(this.button3);
-            this.tabPage3.Controls.Add(this.comboBox1);
-            this.tabPage3.Controls.Add(this.button6);
-            this.tabPage3.Controls.Add(this.label24);
-            this.tabPage3.Controls.Add(this.button1);
-            this.tabPage3.Controls.Add(this.comboBox4);
-            this.tabPage3.Controls.Add(this.comboBox3);
-            this.tabPage3.Controls.Add(this.textBox2);
-            this.tabPage3.Controls.Add(this.textBox1);
-            resources.ApplyResources(this.tabPage3, "tabPage3");
-            this.tabPage3.Name = "tabPage3";
-            // 
-            // button1
-            // 
-            resources.ApplyResources(this.button1, "button1");
-            this.button1.Name = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // comboBox4
-            // 
-            this.comboBox4.FormattingEnabled = true;
-            resources.ApplyResources(this.comboBox4, "comboBox4");
-            this.comboBox4.Name = "comboBox4";
-            // 
-            // comboBox3
-            // 
-            this.comboBox3.FormattingEnabled = true;
-            resources.ApplyResources(this.comboBox3, "comboBox3");
-            this.comboBox3.Name = "comboBox3";
-            // 
-            // textBox2
-            // 
-            resources.ApplyResources(this.textBox2, "textBox2");
-            this.textBox2.Name = "textBox2";
-            // 
-            // textBox1
-            // 
-            resources.ApplyResources(this.textBox1, "textBox1");
-            this.textBox1.Name = "textBox1";
-            // 
-            // tabPage4
-            // 
-            this.tabPage4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.tabPage4.Controls.Add(this.lb_exchange);
-            this.tabPage4.Controls.Add(this.comboBox9);
-            this.tabPage4.Controls.Add(this.comboBox8);
-            this.tabPage4.Controls.Add(this.button2);
-            this.tabPage4.Controls.Add(this.button7);
-            this.tabPage4.Controls.Add(this.textBox5);
-            this.tabPage4.Controls.Add(this.textBox4);
-            this.tabPage4.Controls.Add(this.comboBox5);
-            this.tabPage4.Controls.Add(this.comboBox7);
-            this.tabPage4.Controls.Add(this.comboBox6);
-            this.tabPage4.Controls.Add(this.textBox6);
-            resources.ApplyResources(this.tabPage4, "tabPage4");
-            this.tabPage4.Name = "tabPage4";
-            // 
-            // textBox5
-            // 
-            resources.ApplyResources(this.textBox5, "textBox5");
-            this.textBox5.Name = "textBox5";
-            // 
-            // textBox4
-            // 
-            resources.ApplyResources(this.textBox4, "textBox4");
-            this.textBox4.Name = "textBox4";
-            // 
-            // comboBox5
-            // 
-            this.comboBox5.FormattingEnabled = true;
-            resources.ApplyResources(this.comboBox5, "comboBox5");
-            this.comboBox5.Name = "comboBox5";
-            // 
-            // comboBox7
-            // 
-            this.comboBox7.FormattingEnabled = true;
-            resources.ApplyResources(this.comboBox7, "comboBox7");
-            this.comboBox7.Name = "comboBox7";
-            // 
-            // comboBox6
-            // 
-            this.comboBox6.FormattingEnabled = true;
-            resources.ApplyResources(this.comboBox6, "comboBox6");
-            this.comboBox6.Name = "comboBox6";
-            // 
-            // textBox6
-            // 
-            resources.ApplyResources(this.textBox6, "textBox6");
-            this.textBox6.Name = "textBox6";
-            // 
-            // flowLayoutPanel1
-            // 
-            resources.ApplyResources(this.flowLayoutPanel1, "flowLayoutPanel1");
-            this.flowLayoutPanel1.BackColor = System.Drawing.Color.White;
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            // 
-            // label7
-            // 
-            resources.ApplyResources(this.label7, "label7");
-            this.label7.Name = "label7";
-            // 
-            // label6
-            // 
-            resources.ApplyResources(this.label6, "label6");
-            this.label6.Name = "label6";
-            // 
-            // flowLayoutPanel2
-            // 
-            resources.ApplyResources(this.flowLayoutPanel2, "flowLayoutPanel2");
-            this.flowLayoutPanel2.BackColor = System.Drawing.Color.White;
-            this.flowLayoutPanel2.Controls.Add(this.panel25);
-            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            // 
-            // panel25
-            // 
-            this.panel25.Controls.Add(this.label12);
-            this.panel25.Controls.Add(this.label11);
-            this.panel25.Controls.Add(this.label10);
-            this.panel25.Controls.Add(this.label9);
-            this.panel25.Controls.Add(this.label8);
-            resources.ApplyResources(this.panel25, "panel25");
-            this.panel25.Name = "panel25";
-            // 
-            // label12
-            // 
-            resources.ApplyResources(this.label12, "label12");
-            this.label12.Name = "label12";
-            // 
-            // label11
-            // 
-            resources.ApplyResources(this.label11, "label11");
-            this.label11.Name = "label11";
-            // 
-            // label10
-            // 
-            resources.ApplyResources(this.label10, "label10");
-            this.label10.Name = "label10";
-            // 
-            // label9
-            // 
-            resources.ApplyResources(this.label9, "label9");
-            this.label9.Name = "label9";
-            // 
-            // label8
-            // 
-            resources.ApplyResources(this.label8, "label8");
-            this.label8.Name = "label8";
-            // 
-            // hk_month_Analysis
-            // 
-            this.hk_month_Analysis.Controls.Add(this.panel9);
-            this.hk_month_Analysis.Controls.Add(this.panel8);
-            this.hk_month_Analysis.Controls.Add(this.panel7);
-            this.hk_month_Analysis.Controls.Add(this.panel2);
-            resources.ApplyResources(this.hk_month_Analysis, "hk_month_Analysis");
-            this.hk_month_Analysis.Name = "hk_month_Analysis";
-            this.hk_month_Analysis.UseVisualStyleBackColor = true;
-            // 
-            // panel43
-            // 
-            resources.ApplyResources(this.panel43, "panel43");
-            this.panel43.Name = "panel43";
-            // 
-            // hk_year
-            // 
-            this.hk_year.BackColor = System.Drawing.Color.White;
-            resources.ApplyResources(this.hk_year, "hk_year");
-            this.hk_year.Name = "hk_year";
-            // 
-            // panel9
-            // 
-            this.panel9.BackColor = System.Drawing.Color.Aqua;
-            resources.ApplyResources(this.panel9, "panel9");
-            this.panel9.Name = "panel9";
-            // 
-            // panel8
-            // 
-            this.panel8.BackColor = System.Drawing.Color.Aqua;
-            this.panel8.Controls.Add(this.chart2);
-            resources.ApplyResources(this.panel8, "panel8");
-            this.panel8.Name = "panel8";
-            // 
-            // panel7
-            // 
-            this.panel7.BackColor = System.Drawing.Color.Aqua;
-            resources.ApplyResources(this.panel7, "panel7");
-            this.panel7.Name = "panel7";
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.Aqua;
-            this.panel2.Controls.Add(this.chart1);
-            resources.ApplyResources(this.panel2, "panel2");
-            this.panel2.Name = "panel2";
-            // 
-            // chart1
-            // 
-            chartArea4.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea4);
-            legend4.Name = "Legend1";
-            this.chart1.Legends.Add(legend4);
-            resources.ApplyResources(this.chart1, "chart1");
-            this.chart1.Name = "chart1";
-            series4.ChartArea = "ChartArea1";
-            series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
-            series4.Legend = "Legend1";
-            series4.Name = "Series1";
-            this.chart1.Series.Add(series4);
-            // 
-            // chart2
-            // 
-            chartArea3.Name = "ChartArea1";
-            this.chart2.ChartAreas.Add(chartArea3);
-            legend3.Name = "Legend1";
-            this.chart2.Legends.Add(legend3);
-            resources.ApplyResources(this.chart2, "chart2");
-            this.chart2.Name = "chart2";
-            series3.ChartArea = "ChartArea1";
-            series3.Legend = "Legend1";
-            series3.Name = "Series1";
-            this.chart2.Series.Add(series3);
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            resources.ApplyResources(this.comboBox2, "comboBox2");
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
-            resources.GetString("comboBox2.Items"),
-            resources.GetString("comboBox2.Items1"),
-            resources.GetString("comboBox2.Items2"),
-            resources.GetString("comboBox2.Items3"),
-            resources.GetString("comboBox2.Items4"),
-            resources.GetString("comboBox2.Items5"),
-            resources.GetString("comboBox2.Items6"),
-            resources.GetString("comboBox2.Items7"),
-            resources.GetString("comboBox2.Items8"),
-            resources.GetString("comboBox2.Items9"),
-            resources.GetString("comboBox2.Items10"),
-            resources.GetString("comboBox2.Items11")});
-            this.comboBox2.Name = "comboBox2";
-            // 
-            // textBox3
-            // 
-            this.textBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            resources.ApplyResources(this.textBox3, "textBox3");
-            this.textBox3.Name = "textBox3";
-            // 
-            // button6
-            // 
-            resources.ApplyResources(this.button6, "button6");
-            this.button6.Name = "button6";
-            this.button6.UseVisualStyleBackColor = true;
-            // 
-            // label24
-            // 
-            this.label24.BackColor = System.Drawing.Color.White;
-            resources.ApplyResources(this.label24, "label24");
-            this.label24.Name = "label24";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            resources.ApplyResources(this.comboBox1, "comboBox1");
-            this.comboBox1.Name = "comboBox1";
-            // 
-            // button3
-            // 
-            resources.ApplyResources(this.button3, "button3");
-            this.button3.Name = "button3";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            resources.ApplyResources(this.button4, "button4");
-            this.button4.Name = "button4";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
-            // button9
-            // 
-            resources.ApplyResources(this.button9, "button9");
-            this.button9.Name = "button9";
-            this.button9.UseVisualStyleBackColor = true;
-            // 
-            // button10
-            // 
-            resources.ApplyResources(this.button10, "button10");
-            this.button10.Name = "button10";
-            this.button10.UseVisualStyleBackColor = true;
-            // 
-            // button11
-            // 
-            resources.ApplyResources(this.button11, "button11");
-            this.button11.Name = "button11";
-            this.button11.UseVisualStyleBackColor = true;
-            // 
-            // button13
-            // 
-            resources.ApplyResources(this.button13, "button13");
-            this.button13.Name = "button13";
-            this.button13.UseVisualStyleBackColor = true;
-            // 
-            // button14
-            // 
-            resources.ApplyResources(this.button14, "button14");
-            this.button14.Name = "button14";
-            this.button14.UseVisualStyleBackColor = true;
-            // 
-            // button15
-            // 
-            resources.ApplyResources(this.button15, "button15");
-            this.button15.Name = "button15";
-            this.button15.UseVisualStyleBackColor = true;
-            // 
-            // button17
-            // 
-            resources.ApplyResources(this.button17, "button17");
-            this.button17.Name = "button17";
-            this.button17.UseVisualStyleBackColor = true;
-            // 
-            // button18
-            // 
-            resources.ApplyResources(this.button18, "button18");
-            this.button18.Name = "button18";
-            this.button18.UseVisualStyleBackColor = true;
-            // 
-            // button19
-            // 
-            resources.ApplyResources(this.button19, "button19");
-            this.button19.Name = "button19";
-            this.button19.UseVisualStyleBackColor = true;
-            // 
-            // button21
-            // 
-            resources.ApplyResources(this.button21, "button21");
-            this.button21.Name = "button21";
-            this.button21.UseVisualStyleBackColor = true;
-            // 
-            // button22
-            // 
-            resources.ApplyResources(this.button22, "button22");
-            this.button22.Name = "button22";
-            this.button22.UseVisualStyleBackColor = true;
-            // 
-            // button23
-            // 
-            resources.ApplyResources(this.button23, "button23");
-            this.button23.Name = "button23";
-            this.button23.UseVisualStyleBackColor = true;
-            // 
-            // button25
-            // 
-            resources.ApplyResources(this.button25, "button25");
-            this.button25.Name = "button25";
-            this.button25.UseVisualStyleBackColor = true;
-            // 
-            // button26
-            // 
-            resources.ApplyResources(this.button26, "button26");
-            this.button26.Name = "button26";
-            this.button26.UseVisualStyleBackColor = true;
-            // 
-            // button27
-            // 
-            resources.ApplyResources(this.button27, "button27");
-            this.button27.Name = "button27";
-            this.button27.UseVisualStyleBackColor = true;
-            // 
-            // button28
-            // 
-            resources.ApplyResources(this.button28, "button28");
-            this.button28.Name = "button28";
-            this.button28.UseVisualStyleBackColor = true;
-            // 
-            // button7
-            // 
-            resources.ApplyResources(this.button7, "button7");
-            this.button7.Name = "button7";
-            this.button7.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            resources.ApplyResources(this.button2, "button2");
-            this.button2.Name = "button2";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // comboBox8
-            // 
-            this.comboBox8.FormattingEnabled = true;
-            resources.ApplyResources(this.comboBox8, "comboBox8");
-            this.comboBox8.Name = "comboBox8";
-            // 
-            // comboBox9
-            // 
-            this.comboBox9.FormattingEnabled = true;
-            resources.ApplyResources(this.comboBox9, "comboBox9");
-            this.comboBox9.Name = "comboBox9";
-            // 
-            // lb_exchange
-            // 
-            resources.ApplyResources(this.lb_exchange, "lb_exchange");
-            this.lb_exchange.Name = "lb_exchange";
+            resources.ApplyResources(this.lb_hk_infoNo3, "lb_hk_infoNo3");
+            this.lb_hk_infoNo3.Name = "lb_hk_infoNo3";
             // 
             // panel3
             // 
@@ -1662,197 +1776,33 @@
             // 
             // label19
             // 
-            this.label19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.label19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             resources.ApplyResources(this.label19, "label19");
             this.label19.Name = "label19";
             // 
             // label20
             // 
-            this.label20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.label20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             resources.ApplyResources(this.label20, "label20");
             this.label20.Name = "label20";
             // 
             // label21
             // 
-            this.label21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.label21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             resources.ApplyResources(this.label21, "label21");
             this.label21.Name = "label21";
             // 
             // label22
             // 
-            this.label22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.label22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             resources.ApplyResources(this.label22, "label22");
             this.label22.Name = "label22";
             // 
             // label23
             // 
-            this.label23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.label23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             resources.ApplyResources(this.label23, "label23");
             this.label23.Name = "label23";
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.White;
-            this.panel4.Controls.Add(this.label25);
-            this.panel4.Controls.Add(this.label26);
-            this.panel4.Controls.Add(this.label27);
-            this.panel4.Controls.Add(this.label28);
-            this.panel4.Controls.Add(this.label29);
-            resources.ApplyResources(this.panel4, "panel4");
-            this.panel4.Name = "panel4";
-            // 
-            // label25
-            // 
-            this.label25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            resources.ApplyResources(this.label25, "label25");
-            this.label25.Name = "label25";
-            // 
-            // label26
-            // 
-            this.label26.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            resources.ApplyResources(this.label26, "label26");
-            this.label26.Name = "label26";
-            // 
-            // label27
-            // 
-            this.label27.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            resources.ApplyResources(this.label27, "label27");
-            this.label27.Name = "label27";
-            // 
-            // label28
-            // 
-            this.label28.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            resources.ApplyResources(this.label28, "label28");
-            this.label28.Name = "label28";
-            // 
-            // label29
-            // 
-            this.label29.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            resources.ApplyResources(this.label29, "label29");
-            this.label29.Name = "label29";
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.White;
-            this.panel5.Controls.Add(this.label30);
-            this.panel5.Controls.Add(this.label31);
-            this.panel5.Controls.Add(this.label32);
-            this.panel5.Controls.Add(this.label33);
-            this.panel5.Controls.Add(this.label34);
-            resources.ApplyResources(this.panel5, "panel5");
-            this.panel5.Name = "panel5";
-            // 
-            // label30
-            // 
-            this.label30.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            resources.ApplyResources(this.label30, "label30");
-            this.label30.Name = "label30";
-            // 
-            // label31
-            // 
-            this.label31.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            resources.ApplyResources(this.label31, "label31");
-            this.label31.Name = "label31";
-            // 
-            // label32
-            // 
-            this.label32.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            resources.ApplyResources(this.label32, "label32");
-            this.label32.Name = "label32";
-            // 
-            // label33
-            // 
-            this.label33.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            resources.ApplyResources(this.label33, "label33");
-            this.label33.Name = "label33";
-            // 
-            // label34
-            // 
-            this.label34.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            resources.ApplyResources(this.label34, "label34");
-            this.label34.Name = "label34";
-            // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.Color.White;
-            this.panel6.Controls.Add(this.label35);
-            this.panel6.Controls.Add(this.label36);
-            this.panel6.Controls.Add(this.label37);
-            this.panel6.Controls.Add(this.label38);
-            this.panel6.Controls.Add(this.label39);
-            resources.ApplyResources(this.panel6, "panel6");
-            this.panel6.Name = "panel6";
-            // 
-            // label35
-            // 
-            this.label35.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            resources.ApplyResources(this.label35, "label35");
-            this.label35.Name = "label35";
-            // 
-            // label36
-            // 
-            this.label36.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            resources.ApplyResources(this.label36, "label36");
-            this.label36.Name = "label36";
-            // 
-            // label37
-            // 
-            this.label37.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            resources.ApplyResources(this.label37, "label37");
-            this.label37.Name = "label37";
-            // 
-            // label38
-            // 
-            this.label38.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            resources.ApplyResources(this.label38, "label38");
-            this.label38.Name = "label38";
-            // 
-            // label39
-            // 
-            this.label39.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            resources.ApplyResources(this.label39, "label39");
-            this.label39.Name = "label39";
-            // 
-            // panel10
-            // 
-            this.panel10.BackColor = System.Drawing.Color.White;
-            this.panel10.Controls.Add(this.label40);
-            this.panel10.Controls.Add(this.label41);
-            this.panel10.Controls.Add(this.label42);
-            this.panel10.Controls.Add(this.label43);
-            this.panel10.Controls.Add(this.label44);
-            resources.ApplyResources(this.panel10, "panel10");
-            this.panel10.Name = "panel10";
-            // 
-            // label40
-            // 
-            this.label40.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            resources.ApplyResources(this.label40, "label40");
-            this.label40.Name = "label40";
-            // 
-            // label41
-            // 
-            this.label41.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            resources.ApplyResources(this.label41, "label41");
-            this.label41.Name = "label41";
-            // 
-            // label42
-            // 
-            this.label42.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            resources.ApplyResources(this.label42, "label42");
-            this.label42.Name = "label42";
-            // 
-            // label43
-            // 
-            this.label43.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            resources.ApplyResources(this.label43, "label43");
-            this.label43.Name = "label43";
-            // 
-            // label44
-            // 
-            this.label44.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            resources.ApplyResources(this.label44, "label44");
-            this.label44.Name = "label44";
             // 
             // Form_main
             // 
@@ -1889,37 +1839,34 @@
             this.tabPage_purechased.ResumeLayout(false);
             this.pnl_shp_purchased.ResumeLayout(false);
             this.tab_HouseKeep.ResumeLayout(false);
-            this.UserInfo_panel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.Top_panel.ResumeLayout(false);
-            this.pnl_nav.ResumeLayout(false);
             this.home_tab_list.ResumeLayout(false);
             this.hk_Month.ResumeLayout(false);
             this.hk_Month.PerformLayout();
             this.home_tab_result.ResumeLayout(false);
             this.hk_month_table.ResumeLayout(false);
-            this.panel27.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.chart3)).EndInit();
-            this.flowLayoutPanel3.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            this.panel44.ResumeLayout(false);
+            this.pnl_hk_input.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.chart_inOut)).EndInit();
+            this.flp_hk_AccontInfo.ResumeLayout(false);
+            this.panel10.ResumeLayout(false);
             this.home_tab_insert.ResumeLayout(false);
-            this.tabPage3.ResumeLayout(false);
-            this.tabPage3.PerformLayout();
-            this.tabPage4.ResumeLayout(false);
-            this.tabPage4.PerformLayout();
-            this.flowLayoutPanel2.ResumeLayout(false);
+            this.tabPage_hk_spend.ResumeLayout(false);
+            this.tabPage_hk_spend.PerformLayout();
+            this.tabPage_hk_income.ResumeLayout(false);
+            this.tabPage_hk_income.PerformLayout();
+            this.flp_hk_spend.ResumeLayout(false);
             this.panel25.ResumeLayout(false);
             this.hk_month_Analysis.ResumeLayout(false);
             this.panel8.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.chart2)).EndInit();
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chart2)).EndInit();
+            this.UserInfo_panel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.Top_panel.ResumeLayout(false);
+            this.pnl_nav.ResumeLayout(false);
+            this.tabPage_hk_account.ResumeLayout(false);
+            this.tabPage_hk_account.PerformLayout();
             this.panel3.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
-            this.panel5.ResumeLayout(false);
-            this.panel6.ResumeLayout(false);
-            this.panel10.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -2008,41 +1955,27 @@
         private System.Windows.Forms.TabPage hk_Month;
         private System.Windows.Forms.TabControl home_tab_result;
         private System.Windows.Forms.TabPage hk_month_table;
-        private System.Windows.Forms.Panel panel27;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chart3;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.Panel panel44;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TabControl home_tab_insert;
-        private System.Windows.Forms.TabPage tabPage3;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.ComboBox comboBox4;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TabPage tabPage4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.ComboBox comboBox5;
-        private System.Windows.Forms.ComboBox comboBox7;
-        private System.Windows.Forms.ComboBox comboBox6;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
+        private System.Windows.Forms.Panel pnl_hk_input;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chart_inOut;
+        private System.Windows.Forms.FlowLayoutPanel flp_hk_AccontInfo;
+        private System.Windows.Forms.DateTimePicker tdp_hk_selectDate;
+        private System.Windows.Forms.TabPage tabPage_hk_spend;
+        private System.Windows.Forms.Button btn_hk_spend;
+        private System.Windows.Forms.ComboBox cb_hk_spendAccont;
+        private System.Windows.Forms.ComboBox cb_hk_spendType;
+        private System.Windows.Forms.TextBox txt_hk_spendPrice;
+        private System.Windows.Forms.TextBox txt_hk_spendComment;
+        private System.Windows.Forms.TabPage tabPage_hk_income;
+        private System.Windows.Forms.TextBox txt_hk_incomePrice;
+        private System.Windows.Forms.TextBox txt_hk_incomeComment;
+        private System.Windows.Forms.ComboBox cb_hk_incomeAccount;
+        private System.Windows.Forms.ComboBox cb_hk_exChange1;
+        private System.Windows.Forms.ComboBox cb_hk_exChange2;
+        private System.Windows.Forms.TextBox txt_hk_exchangePrice;
+        private System.Windows.Forms.FlowLayoutPanel flp_hk_income;
+        private System.Windows.Forms.Label lb_hk_income;
+        private System.Windows.Forms.Label lb_hk_spend;
+        private System.Windows.Forms.FlowLayoutPanel flp_hk_spend;
         private System.Windows.Forms.Panel panel25;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label11;
@@ -2058,58 +1991,34 @@
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Button button25;
-        private System.Windows.Forms.Button button26;
-        private System.Windows.Forms.Button button27;
-        private System.Windows.Forms.Button button28;
+        private System.Windows.Forms.ComboBox cb_hk_selectMonth;
+        private System.Windows.Forms.TextBox txt_hk_selectYear;
+        private System.Windows.Forms.Button cal_1;
+        private System.Windows.Forms.Button cal_4;
+        private System.Windows.Forms.Button cal_7;
+        private System.Windows.Forms.Button cal_CE;
         private System.Windows.Forms.Button button21;
-        private System.Windows.Forms.Button button22;
-        private System.Windows.Forms.Button button23;
-        private System.Windows.Forms.Button button17;
-        private System.Windows.Forms.Button button18;
-        private System.Windows.Forms.Button button19;
-        private System.Windows.Forms.Button button13;
-        private System.Windows.Forms.Button button14;
-        private System.Windows.Forms.Button button15;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Button cal_comma;
+        private System.Windows.Forms.Button cal_0;
+        private System.Windows.Forms.Button cal_Plus;
+        private System.Windows.Forms.Button cal_3;
+        private System.Windows.Forms.Button cal_2;
+        private System.Windows.Forms.Button cal_minuse;
+        private System.Windows.Forms.Button cal_6;
+        private System.Windows.Forms.Button cal_5;
+        private System.Windows.Forms.Button cal_multiple;
+        private System.Windows.Forms.Button cal_9;
+        private System.Windows.Forms.Button cal_8;
+        private System.Windows.Forms.Button cal_Backspace;
+        private System.Windows.Forms.Button cal_division;
+        private System.Windows.Forms.ComboBox cb_hk_spendEx;
+        private System.Windows.Forms.Button cal_Percent;
+        private System.Windows.Forms.Label cal_result;
         private System.Windows.Forms.Label lb_exchange;
-        private System.Windows.Forms.ComboBox comboBox9;
-        private System.Windows.Forms.ComboBox comboBox8;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.Label label29;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Label label30;
-        private System.Windows.Forms.Label label31;
-        private System.Windows.Forms.Label label32;
-        private System.Windows.Forms.Label label33;
-        private System.Windows.Forms.Label label34;
-        private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Label label35;
-        private System.Windows.Forms.Label label36;
-        private System.Windows.Forms.Label label37;
-        private System.Windows.Forms.Label label38;
-        private System.Windows.Forms.Label label39;
+        private System.Windows.Forms.ComboBox cb_hk_exchangeEx;
+        private System.Windows.Forms.ComboBox cb_hk_incomeEx;
+        private System.Windows.Forms.Button EXCHANGE;
+        private System.Windows.Forms.Button btn_hk_income;
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.Label label40;
         private System.Windows.Forms.Label label41;
@@ -2117,5 +2026,27 @@
         private System.Windows.Forms.Label label43;
         private System.Windows.Forms.Label label44;
         private System.Windows.Forms.DateTimePicker Todo_startDate;
+        private System.Windows.Forms.Panel pnl_hk_side1;
+        private System.Windows.Forms.Label lb_hk_title1;
+        private System.Windows.Forms.Label lb_hk_title3;
+        private System.Windows.Forms.Label lb_hk_title2;
+        private System.Windows.Forms.TabControl home_tab_insert;
+        private System.Windows.Forms.TabPage tabPage_hk_account;
+        private System.Windows.Forms.Label lb_hk_title4;
+        private System.Windows.Forms.Button btn_hk_AccountRegister;
+        private System.Windows.Forms.TextBox txt_hk_AccountName;
+        private System.Windows.Forms.ComboBox cb_hk_AccountType;
+        private System.Windows.Forms.Label lb_hk_info2;
+        private System.Windows.Forms.Label lb_hk_info3;
+        private System.Windows.Forms.Label lb_hk_info1;
+        private System.Windows.Forms.Label lb_hk_infoNo3;
+        private System.Windows.Forms.Label lb_hk_infoNo2;
+        private System.Windows.Forms.Label lb_hk_infoNo1;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label label23;
     }
 }

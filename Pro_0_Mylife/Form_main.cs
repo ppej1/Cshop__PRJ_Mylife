@@ -125,6 +125,12 @@ namespace Pro_0_Mylife
         /* nav Menu */
         private void LOGO_Click(object sender, EventArgs e)
         {
+            tab_Memo.Hide();
+            tab_TodoList.Hide();
+            tab_HouseKeep.Hide();
+            tab_shopping.Hide();
+            tab_home.Show();
+
             tab_form.SelectedIndex = 0;
             btn_setting(LOGO);
 
@@ -133,6 +139,12 @@ namespace Pro_0_Mylife
 
         private void Btn_memo_Click(object sender, EventArgs e)
         {
+            tab_home.Hide();
+            tab_TodoList.Hide();
+            tab_HouseKeep.Hide();
+            tab_shopping.Hide();
+            tab_Memo.Show();
+
             tab_form.SelectedIndex = 1;
             btn_setting(btn_memo);
             LoadMemo();
@@ -140,15 +152,26 @@ namespace Pro_0_Mylife
 
         private void Btn_ck_Click(object sender, EventArgs e)
         {
+            tab_home.Hide();
+            tab_Memo.Hide();
+            tab_HouseKeep.Hide();
+            tab_shopping.Hide();
+            tab_TodoList.Show();
+
             tab_form.SelectedIndex = 2;
             btn_setting(btn_ck);
             ResetTodolistForm();
-
-            
+        
         }
 
         private void Btn_shp_Click(object sender, EventArgs e)
         {
+            tab_home.Hide();
+            tab_Memo.Hide();
+            tab_TodoList.Hide();
+            tab_HouseKeep.Hide();
+            tab_shopping.Show();
+
             tab_form.SelectedIndex = 3;
             loadShoppingProdType();
             resetShoppingRegister();
@@ -165,6 +188,17 @@ namespace Pro_0_Mylife
 
         private void Btn_hk_click(object sender, EventArgs e)
         {
+            tab_home.Hide();
+            tab_Memo.Hide();
+            tab_TodoList.Hide();
+            tab_shopping.Hide();
+            tab_HouseKeep.Show();
+
+            SettingHouseKeepAccount();
+            SettingHouseKeepType();
+            ResetHouseKeep();
+            SetHouseKeepDate();
+
             tab_form.SelectedIndex = 4;
             btn_setting(btn_hk);
         }
@@ -597,8 +631,6 @@ namespace Pro_0_Mylife
             ShoppingWishDAO shoppingWishDAO = new ShoppingWishDAO();
 
             shpCheck.Clear();
-            flp_wishShp.Hide();
-            flp_purchasedList.Hide();
             flp_wishShp.Controls.Clear();
             flp_purchasedList.Controls.Clear();
             DataSet ds = new DataSet();
@@ -720,8 +752,7 @@ namespace Pro_0_Mylife
                     flp_wishShp.Controls.Add(pnl);
                 }
             }
-            flp_purchasedList.Show();
-            flp_wishShp.Show();
+
 
             ShoppingInfo();
             
@@ -797,8 +828,194 @@ namespace Pro_0_Mylife
         }
 
 
+        /*homekeeper function */
+
+        /* 버튼 클릭 */
+        private void btn_hk_AccountRegister_Click(object sender, EventArgs e)
+        {
+            if(!(txt_hk_AccountName.Text.Equals("")))
+            {
+                HouseKeepDao hkDao = new HouseKeepDao();
+                HouseKeep_PaymentVO hkVO = new HouseKeep_PaymentVO(cb_hk_AccountType.SelectedIndex, txt_hk_AccountName.Text, _logIn_User.Email);
+                if (hkDao.InsertAccount(hkVO))
+                {
+                    MessageBox.Show("success");
+                    txt_hk_AccountName.Text = "";
+                    cb_hk_AccountType.SelectedIndex = 0;
+                }
+            }
+            else
+            {
+                MessageBox.Show("내용이 비어있습니다.");
+            }
+        }
+
+        private void btn_hk_spend_Click(object sender, EventArgs e)
+        {
+            int i = 0;
+            if (!(txt_hk_spendComment.Text.Equals("")))
+            {
+                if (!(txt_hk_spendPrice.Text.Equals("")))
+                {
+                    if (int.TryParse(txt_hk_spendPrice.Text, out i))
+                    {
+                        HouseKeepDao hkDao = new HouseKeepDao();
+                        HouseKeepHandler hkHandler = new HouseKeepHandler();
+                        int houseKeepNo = cb_hk_spendType.SelectedIndex + 2;
+                        int payNo = hkHandler.selectPaymentNo(cb_hk_spendAccont.SelectedItem.ToString(), _logIn_User);
+                        HouseKeepVO houseVO = new HouseKeepVO(_logIn_User.Email, houseKeepNo, txt_hk_spendComment.Text, payNo, cb_hk_spendEx.SelectedIndex, Convert.ToSingle(txt_hk_spendPrice.Text), tdp_hk_selectDate.Value);
+                        if (hkDao.spend(houseVO))
+                        {
+                            MessageBox.Show("Spend success");
+                            txt_hk_spendComment.Text = "";
+                            txt_hk_spendPrice.Text = "";
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("숫자가 아닙니다.");
+                        txt_hk_spendPrice.Text = "";
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("내용이 비어있습니다.");
+                }
+            }
+            else
+            {
+                MessageBox.Show("내용이 비어있습니다.");
+            }
+        }
 
 
+
+        private void btn_hk_income_Click(object sender, EventArgs e)
+        {
+            int i = 0;
+            if(!(txt_hk_incomeComment.Text.Equals("")))
+            {
+                if(!(txt_hk_incomePrice.Text.Equals("")))
+                {
+                    if(int.TryParse(txt_hk_incomePrice.Text, out i))
+                    {
+                        HouseKeepDao hkDao = new HouseKeepDao();
+                        HouseKeepHandler hkHandler = new HouseKeepHandler();
+
+                        int payNo = hkHandler.selectPaymentNo(cb_hk_incomeAccount.SelectedItem.ToString(), _logIn_User);
+                        HouseKeepVO houseVO = new HouseKeepVO(_logIn_User.Email, txt_hk_incomeComment.Text, payNo, cb_hk_incomeEx.SelectedIndex, Convert.ToSingle(txt_hk_incomePrice.Text), tdp_hk_selectDate.Value);
+                        if (hkDao.Income(houseVO))
+                        {
+                            MessageBox.Show("Income success");
+                            txt_hk_incomeComment.Text = "";
+                            txt_hk_incomePrice.Text = "";
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("숫자가 아닙니다.");
+                        txt_hk_incomePrice.Text = "";
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("내용이 비어있습니다.");
+                }
+            }
+            else
+            {
+                MessageBox.Show("내용이 비어있습니다.");
+            }
+        }
+
+
+        private void EXCHANGE_Click(object sender, EventArgs e)
+        {
+            int i = 0;
+            if (int.TryParse(txt_hk_exchangePrice.Text, out i))
+            {
+                HouseKeepDao hkDao = new HouseKeepDao();
+                HouseKeepHandler hkHandler = new HouseKeepHandler();
+                int payNo1 = hkHandler.selectPaymentNo(cb_hk_exChange1.SelectedItem.ToString(), _logIn_User);
+                int payNo2 = hkHandler.selectPaymentNo(cb_hk_exChange2.SelectedItem.ToString(), _logIn_User);
+
+                HouseKeepVO houseVO1 = new HouseKeepVO(_logIn_User.Email, "Exchange(send)", payNo1, cb_hk_incomeEx.SelectedIndex, Convert.ToSingle(txt_hk_exchangePrice.Text), tdp_hk_selectDate.Value);
+                HouseKeepVO houseVO2 = new HouseKeepVO(_logIn_User.Email, "Exchange(receive)", payNo2, cb_hk_incomeEx.SelectedIndex, Convert.ToSingle(txt_hk_exchangePrice.Text), tdp_hk_selectDate.Value);
+                if (hkDao.ExchangeMoney(houseVO1, houseVO2))
+                {
+                    MessageBox.Show("Exchange success");
+                    cb_hk_exChange1.SelectedIndex = 0;
+                    cb_hk_exChange2.SelectedIndex = 0;
+                    txt_hk_exchangePrice.Text = "";
+                }
+            }
+            else
+            {
+                MessageBox.Show("숫자가 아닙니다.");
+                txt_hk_exchangePrice.Text = "";
+            }
+
+        }
+
+
+        /* Function */
+
+        private void ResetHouseKeep()
+        {
+            cb_hk_AccountType.SelectedIndex = 0;
+            cb_hk_spendAccont.SelectedIndex = 0;
+            cb_hk_incomeAccount.SelectedIndex = 0;
+            cb_hk_exChange1.SelectedIndex = 0;
+            cb_hk_exChange2.SelectedIndex = 0;
+
+            cb_hk_incomeEx.SelectedIndex = 2;
+            cb_hk_exchangeEx.SelectedIndex = 2;
+            cb_hk_spendEx.SelectedIndex = 2;
+
+            cb_hk_spendType.SelectedIndex = 0;
+
+
+            txt_hk_incomeComment.Text = "";
+            txt_hk_incomePrice.Text = "";
+            txt_hk_AccountName.Text = "";
+            txt_hk_exchangePrice.Text = "";
+            txt_hk_spendComment.Text = "";
+            txt_hk_spendPrice.Text = "";
+        }
+
+        private void SettingHouseKeepAccount()
+        {
+            cb_hk_spendAccont.Items.Clear();
+            cb_hk_incomeAccount.Items.Clear();
+            cb_hk_exChange1.Items.Clear();
+            cb_hk_exChange2.Items.Clear();
+            
+            HouseKeepHandler hkHandler = new HouseKeepHandler();
+            List<String> list = hkHandler.SettingHouseKeepAccount(_logIn_User);
+            string[] data = list.ToArray();
+            cb_hk_spendAccont.Items.AddRange(data);
+            cb_hk_incomeAccount.Items.AddRange(data);
+            cb_hk_exChange1.Items.AddRange(data);
+            cb_hk_exChange2.Items.AddRange(data);
+        }
+
+
+        private void SettingHouseKeepType()
+        {
+            cb_hk_spendType.Items.Clear();
+
+            HouseKeepHandler hkHandler = new HouseKeepHandler();
+            List<String> list = hkHandler.SettingHouseKeepType();
+            string[] data = list.ToArray();
+            cb_hk_spendType.Items.AddRange(data);
+        }
+        
+        private void SetHouseKeepDate()
+        {
+            tdp_hk_selectDate.Value = now;
+            cb_hk_selectMonth.SelectedIndex = Convert.ToInt32(now.ToString("MM")) - 1;
+            txt_hk_selectYear.Text = now.ToString("yyyy");
+        }
 
 
 

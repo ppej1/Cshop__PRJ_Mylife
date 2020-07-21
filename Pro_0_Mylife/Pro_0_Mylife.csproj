@@ -70,9 +70,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAO\HouseKeepDao.cs" />
     <Compile Include="DAO\ShoppingWishDAO.cs" />
     <Compile Include="DB\ConfigManager.cs" />
     <Compile Include="DTO\HouseKeepVO.cs" />
+    <Compile Include="DTO\HouseKeep_PaymentVO.cs" />
+    <Compile Include="DTO\HouseKeep_TypeVO.cs" />
     <Compile Include="DTO\MemoVO.cs" />
     <Compile Include="DTO\ProductType.cs" />
     <Compile Include="DTO\ShoppingVO.cs" />
@@ -117,6 +120,7 @@
     <Compile Include="Form_SettingUser.Designer.cs">
       <DependentUpon>Form_SettingUser.cs</DependentUpon>
     </Compile>
+    <Compile Include="Handler\HouseKeepHandler.cs" />
     <Compile Include="Handler\ShoppingHandler.cs" />
     <Compile Include="Handler\TodolistHandler.cs" />
     <Compile Include="Program.cs" />
