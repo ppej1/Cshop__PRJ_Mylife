@@ -61,6 +61,18 @@ namespace Pro_0_Mylife.Handler
             return result;
         }
 
+        public string selectPaymentName(String pamentNo, UserVO user)
+        {
+            HouseKeepDao hkDao = new HouseKeepDao();
+
+            DataSet ds = new DataSet();
+            hkDao.selectPaymentName(ds, pamentNo, user);
+            DataTable dt = ds.Tables[0];
+
+            return dt.Rows[0]["PAY_NAME"].ToString();
+        }
+
+
 
 
     }

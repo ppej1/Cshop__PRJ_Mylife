@@ -22,7 +22,7 @@ namespace Pro_0_Mylife
         DateTime now = DateTime.Now;
         static UserVO _logIn_User = new UserVO();
         static ArrayList shpCheck = new ArrayList();
-        // main form
+        // Program Main start //////////////////////////////////////////////////////////////////////////////////
         public Form_main()
         {
             InitializeComponent();
@@ -47,13 +47,13 @@ namespace Pro_0_Mylife
                     break;
             }
         }
-        /* login function */
+        // login Function////////////////////////////////////////////////////////////////////////////////////////////////
         private void LoginSuccess(String userName)
         {
             _logIn_User.Email = userName;
             SettingUser();
         }
-
+        // 초기 로그인 유저 세팅 
         private void SettingUser()
         {
             LoginDao logindao = new LoginDao();
@@ -122,7 +122,7 @@ namespace Pro_0_Mylife
         }
 
 
-        /* nav Menu */
+        // nav function //////////////////////////////////////////////////////////////////////////
         private void LOGO_Click(object sender, EventArgs e)
         {
             tab_Memo.Hide();
@@ -199,6 +199,7 @@ namespace Pro_0_Mylife
             ResetHouseKeep();
             SetHouseKeepDate();
 
+
             tab_form.SelectedIndex = 4;
             btn_setting(btn_hk);
         }
@@ -216,12 +217,10 @@ namespace Pro_0_Mylife
             btn_select.BackColor = Color.FromArgb(255, 255, 255);
             btn_select.ForeColor = Color.FromArgb(0, 0, 0);
         }
-        /*  main form  End*/
 
 
-        /* function */
-
-        /* memo function */
+        // memo function /////////////////////////////////////////////////////////////////////////////////
+        // memo label click 
         private void Lb_memo_Click(object sender, EventArgs e)
         {
             txt_memo.Focus();
@@ -241,7 +240,7 @@ namespace Pro_0_Mylife
                 }
             }
         }
-
+        // memolist Load
         private void LoadMemo()
         {
             Memo_flowpanel.Controls.Clear();
@@ -294,6 +293,7 @@ namespace Pro_0_Mylife
                 Memo_flowpanel.Controls.Add(pnl);
             }
         }
+        // delete memo
         private void delete_memo_click(object sender, EventArgs e)
         {
             MemoDao memoDao = new MemoDao();
@@ -303,12 +303,9 @@ namespace Pro_0_Mylife
                 LoadMemo();
             }
         }
-        /* memo Function END */
 
 
-
-        /*TodoList Function */
-
+        // Todolist Function //////////////////////////////////////////////////////////////////////////////////
         private void Todo_Calendar_DateChanged(object sender, DateRangeEventArgs e)
         {
             Todo_startDate.Value = Todo_Calendar.SelectionStart;
@@ -443,6 +440,7 @@ namespace Pro_0_Mylife
 
                 pnl.Size = new Size(804, 60);
                 pnl.BackColor = Color.FromArgb(255, 255, 255);
+                pnl.BorderStyle = BorderStyle.FixedSingle;
                 pnl.Name = String.Format("pnl_text_{0}", row["TOD_NO"].ToString());
 
                 ch_todo.AutoSize = false;
@@ -513,8 +511,8 @@ namespace Pro_0_Mylife
             CheckBox chk = (CheckBox)sender;            
             todoListDao.ChangeChecklistState(chk.Name, chk.Checked);           
             LoadAllTodolist(Todo_Calendar.SelectionStart);
-            
         }
+
 
         private void btn_search_Click(object sender, EventArgs e)
         {
@@ -551,11 +549,8 @@ namespace Pro_0_Mylife
 
         }
 
-        /*TodoList Function END */
 
-
-        /* ShoppingList Function */
-
+        //shoppingList Function ////////////////////////////////////////////////////////////////////////////////////
         private void btn_shpRegister_Click(object sender, EventArgs e)
         {
             ShoppingWishDAO shoppingWishDAO = new ShoppingWishDAO();
@@ -652,6 +647,7 @@ namespace Pro_0_Mylife
 
                 pnl.Size = new Size(754, 100);
                 pnl.BackColor = Color.FromArgb(255, 255, 255);
+                pnl.BorderStyle = BorderStyle.FixedSingle;
                 pnl.Name = String.Format("pnl_text_{0}", row["SHOP_NO"].ToString());
 
                 ch_wishShp.AutoSize = false;
@@ -757,6 +753,7 @@ namespace Pro_0_Mylife
             ShoppingInfo();
             
         }
+
         private void ShoppingInfo()
         {
             
@@ -790,11 +787,13 @@ namespace Pro_0_Mylife
         {
             loadshopList(shp_tab_result.SelectedIndex);
         }
+
         private void btn_URL_Click(object sender, EventArgs e)
         {
             Button btn_URL = (Button)sender;
             System.Diagnostics.Process.Start(btn_URL.Name);
         }
+
         private void ch_wishShp_Change(object sender, EventArgs e)
         {
             CheckBox ch_wish = (CheckBox)sender;
@@ -827,10 +826,8 @@ namespace Pro_0_Mylife
 
         }
 
-
-        /*homekeeper function */
-
-        /* 버튼 클릭 */
+        //homeKeeper Function ///////////////////////////////////////////////////////////////////////////////////////
+        // regist new Account
         private void btn_hk_AccountRegister_Click(object sender, EventArgs e)
         {
             if(!(txt_hk_AccountName.Text.Equals("")))
@@ -849,7 +846,7 @@ namespace Pro_0_Mylife
                 MessageBox.Show("내용이 비어있습니다.");
             }
         }
-
+        // spend Function
         private void btn_hk_spend_Click(object sender, EventArgs e)
         {
             int i = 0;
@@ -889,7 +886,7 @@ namespace Pro_0_Mylife
         }
 
 
-
+        //income Function
         private void btn_hk_income_Click(object sender, EventArgs e)
         {
             int i = 0;
@@ -928,7 +925,7 @@ namespace Pro_0_Mylife
             }
         }
 
-
+        // Exchange Function
         private void EXCHANGE_Click(object sender, EventArgs e)
         {
             int i = 0;
@@ -957,9 +954,97 @@ namespace Pro_0_Mylife
 
         }
 
+        //HouseKeeper SelectFunction
+        private void LoadHouseKeepIncome(String year, String month)
+        {
+            flp_hk_income.Controls.Clear();
+            HouseKeepDao hkDao = new HouseKeepDao();
+            HouseKeepHandler hkHandler = new HouseKeepHandler();
+            ShoppingHandler shoppingHandler = new ShoppingHandler();
 
-        /* Function */
+            DataSet ds = new DataSet();
+            hkDao.SelectInCome(ds,year,month, _logIn_User);
+            DataTable dt = ds.Tables[0];
 
+            foreach (DataRow row in dt.Rows)
+            {
+                Panel pnl = new Panel();
+                Label txt_registerDate = new Label();
+                Label txt_contents = new Label();
+                Label txt_price = new Label();
+                Label txt_payType = new Label();
+
+                pnl.Size = new Size(680, 24);
+                pnl.BackColor = Color.FromArgb(255, 255, 255);
+                pnl.BorderStyle = BorderStyle.FixedSingle;
+                pnl.Name = String.Format("pnl_text_{0}", row["KE_NO"].ToString());
+
+
+                txt_registerDate.Text = String.Format("{0}", DateTime.Parse(row["KE_PAY_DATE"].ToString()).ToString("yyyy-MM-dd"));
+                txt_registerDate.Name = String.Format("txt_registerDate_{0}", row["KE_NO"].ToString());
+                txt_registerDate.AutoSize = false;
+                txt_registerDate.Size = new Size(99, 20);
+                txt_registerDate.Location = new Point(0, 2);
+                txt_registerDate.BackColor = Color.FromArgb(255, 255, 255);
+                txt_registerDate.BorderStyle = BorderStyle.None;
+                txt_registerDate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+
+                txt_contents.Text = String.Format("{0}", row["KE_CONTENTS"].ToString());
+                txt_contents.Name = String.Format("{0}", row["KE_NO"].ToString());
+                txt_contents.AutoSize = false;
+                txt_contents.Size = new Size(359, 20);
+                txt_contents.Location = new Point(100, 2);
+                txt_contents.BackColor = Color.FromArgb(255, 255, 255);
+                txt_contents.BorderStyle = BorderStyle.None;
+                txt_contents.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+
+                txt_price.Name = String.Format("txt_price_{0}", row["KE_NO"].ToString());
+                txt_price.Text = String.Format("{0}", shoppingHandler.ExchangeSet(cb_hk_exchangeEx.SelectedIndex, row["EXCHANGE_TYPE"].ToString(), row["KE_PRICE"].ToString()));
+                txt_price.AutoSize = false;
+                txt_price.Size = new Size(79, 20);
+                txt_price.Location = new Point(460, 2);
+                txt_price.BackColor = Color.FromArgb(255, 255, 255);
+                txt_price.BorderStyle = BorderStyle.None;
+                txt_price.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+
+                txt_payType.AutoSize = false;
+                txt_payType.Size = new Size(149, 20);
+                txt_payType.Location = new Point(540, 2);
+                txt_payType.BackColor = Color.FromArgb(255, 255, 255);
+                txt_payType.BorderStyle = BorderStyle.None;
+                txt_payType.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+                txt_payType.Name = String.Format("txt_payType_{0}", row["KE_NO"].ToString());
+                txt_payType.Text=hkHandler.selectPaymentName(row["PAY_TYPE_NO"].ToString(),_logIn_User);
+
+
+
+
+                pnl.Controls.Add(txt_registerDate);
+                pnl.Controls.Add(txt_contents);
+                pnl.Controls.Add(txt_price);
+                pnl.Controls.Add(txt_payType);
+                flp_hk_income.Controls.Add(pnl);
+
+            }
+        }
+
+
+        private void LoadHouseKeepSpend()
+        {
+
+        }
+
+
+        private void LoadHouseKeepAccountList()
+        {
+
+        }
+
+
+
+        //setting for show
+
+        //reset housekeeper  textBox
         private void ResetHouseKeep()
         {
             cb_hk_AccountType.SelectedIndex = 0;
@@ -1013,9 +1098,16 @@ namespace Pro_0_Mylife
         private void SetHouseKeepDate()
         {
             tdp_hk_selectDate.Value = now;
-            cb_hk_selectMonth.SelectedIndex = Convert.ToInt32(now.ToString("MM")) - 1;
             txt_hk_selectYear.Text = now.ToString("yyyy");
+            cb_hk_selectMonth.SelectedIndex = Convert.ToInt32(now.ToString("MM")) - 1;
         }
+
+
+        private void cb_hk_selectMonth_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            LoadHouseKeepIncome(txt_hk_selectYear.Text, cb_hk_selectMonth.SelectedItem.ToString());
+        }
+
 
 
 

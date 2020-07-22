@@ -216,6 +216,11 @@
             this.label21 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.tab_form.SuspendLayout();
             this.tab_home.SuspendLayout();
             this.tab_Memo.SuspendLayout();
@@ -244,6 +249,7 @@
             this.home_tab_insert.SuspendLayout();
             this.tabPage_hk_spend.SuspendLayout();
             this.tabPage_hk_income.SuspendLayout();
+            this.flp_hk_income.SuspendLayout();
             this.flp_hk_spend.SuspendLayout();
             this.panel25.SuspendLayout();
             this.hk_month_Analysis.SuspendLayout();
@@ -257,6 +263,7 @@
             this.pnl_nav.SuspendLayout();
             this.tabPage_hk_account.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tab_form
@@ -371,7 +378,7 @@
             // 
             // todolistFlowPanel
             // 
-            this.todolistFlowPanel.BackColor = System.Drawing.Color.LightCyan;
+            this.todolistFlowPanel.BackColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(this.todolistFlowPanel, "todolistFlowPanel");
             this.todolistFlowPanel.Name = "todolistFlowPanel";
             // 
@@ -871,7 +878,7 @@
             // flp_wishShp
             // 
             resources.ApplyResources(this.flp_wishShp, "flp_wishShp");
-            this.flp_wishShp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(255)))), ((int)(((byte)(180)))));
+            this.flp_wishShp.BackColor = System.Drawing.Color.White;
             this.flp_wishShp.Name = "flp_wishShp";
             // 
             // tabPage_purechased
@@ -898,7 +905,7 @@
             // flp_purchasedList
             // 
             resources.ApplyResources(this.flp_purchasedList, "flp_purchasedList");
-            this.flp_purchasedList.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(255)))), ((int)(((byte)(180)))));
+            this.flp_purchasedList.BackColor = System.Drawing.Color.White;
             this.flp_purchasedList.Name = "flp_purchasedList";
             // 
             // tab_HouseKeep
@@ -947,6 +954,7 @@
             resources.GetString("cb_hk_selectMonth.Items10"),
             resources.GetString("cb_hk_selectMonth.Items11")});
             this.cb_hk_selectMonth.Name = "cb_hk_selectMonth";
+            this.cb_hk_selectMonth.SelectedIndexChanged += new System.EventHandler(this.cb_hk_selectMonth_SelectedIndexChanged);
             // 
             // txt_hk_selectYear
             // 
@@ -1438,6 +1446,7 @@
             // 
             resources.ApplyResources(this.flp_hk_income, "flp_hk_income");
             this.flp_hk_income.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.flp_hk_income.Controls.Add(this.panel1);
             this.flp_hk_income.Name = "flp_hk_income";
             // 
             // lb_hk_income
@@ -1804,6 +1813,37 @@
             resources.ApplyResources(this.label23, "label23");
             this.label23.Name = "label23";
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.label5);
+            resources.ApplyResources(this.panel1, "panel1");
+            this.panel1.Name = "panel1";
+            // 
+            // label1
+            // 
+            resources.ApplyResources(this.label1, "label1");
+            this.label1.Name = "label1";
+            // 
+            // label2
+            // 
+            resources.ApplyResources(this.label2, "label2");
+            this.label2.Name = "label2";
+            // 
+            // label3
+            // 
+            resources.ApplyResources(this.label3, "label3");
+            this.label3.Name = "label3";
+            // 
+            // label5
+            // 
+            resources.ApplyResources(this.label5, "label5");
+            this.label5.Name = "label5";
+            // 
             // Form_main
             // 
             resources.ApplyResources(this, "$this");
@@ -1853,6 +1893,7 @@
             this.tabPage_hk_spend.PerformLayout();
             this.tabPage_hk_income.ResumeLayout(false);
             this.tabPage_hk_income.PerformLayout();
+            this.flp_hk_income.ResumeLayout(false);
             this.flp_hk_spend.ResumeLayout(false);
             this.panel25.ResumeLayout(false);
             this.hk_month_Analysis.ResumeLayout(false);
@@ -1867,6 +1908,7 @@
             this.tabPage_hk_account.ResumeLayout(false);
             this.tabPage_hk_account.PerformLayout();
             this.panel3.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -2048,5 +2090,10 @@
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label5;
     }
 }

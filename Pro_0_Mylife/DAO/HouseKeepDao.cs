@@ -33,7 +33,7 @@ namespace Pro_0_Mylife.DAO
              )";
 
                 query = query.Replace("#PAY_NAME", payment.PayName);
-                query = query.Replace("#US_EMAIL",  payment.Email);
+                query = query.Replace("#US_EMAIL", payment.Email);
                 query = query.Replace("#PAY_TYPE", "" + payment.payType);
                 int result = db.ExecuteNonQuery(query);
                 if (result > 0)
@@ -46,70 +46,6 @@ namespace Pro_0_Mylife.DAO
             {
                 MessageBox.Show(ex.ToString(), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return false;
-            }
-        }
-
-
-        public DataSet LoadPayment(UserVO user)
-        {
-            DataSet ds = new DataSet();
-            try
-            {
-                string query = @"SELECT * FROM PAY_T WHERE US_EMAIL = '#US_EMAIL' ORDER BY PAY_TYPE_NO ASC ";
-
-                query = query.Replace("#US_EMAIL", user.Email);
-                db.ExecuteDsQuery(ds, query);
-
-                if (ds == null || ds.Tables.Count == 0 || ds.Tables[0].Rows.Count == 0)
-                    return ds;
-
-                return ds;
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.ToString(), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return ds;
-            }
-        }
-
-        public DataSet LoadHouseKeepType()
-        {
-            DataSet ds = new DataSet();
-            try
-            {
-                string query = @"SELECT * FROM K_TYPE_T ORDER BY KE_TYPE ASC ";
-
-                db.ExecuteDsQuery(ds, query);
-
-                if (ds == null || ds.Tables.Count == 0 || ds.Tables[0].Rows.Count == 0)
-                    return ds;
-
-                return ds;
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.ToString(), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return ds;
-            }
-        }
-
-        public void selectPaymentNo(DataSet ds, String pamentName, UserVO user)
-        {
-            try
-            {
-                string query = @"SELECT PAY_TYPE_NO FROM PAY_T WHERE PAY_NAME  = '#PAY_NAME' AND US_EMAIL = '#US_EMAIL' ";
-
-                query = query.Replace("#PAY_NAME", pamentName);
-                query = query.Replace("#US_EMAIL", user.Email);
-                db.ExecuteDsQuery(ds, query);
-
-                if (ds == null || ds.Tables.Count == 0 || ds.Tables[0].Rows.Count == 0)
-                    return;
-
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.ToString(), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -145,10 +81,10 @@ namespace Pro_0_Mylife.DAO
                 query = query.Replace("#US_EMAIL", hkVO.Email);
                 query = query.Replace("#IETYPE", "1");
                 query = query.Replace("#KE_TYPE", "1");
-                query = query.Replace("#KE_CONTENTS",hkVO.Contents);
-                query = query.Replace("#PAY_TYPE_NO",""+hkVO.PayNo);
-                query = query.Replace("#EXCHANGE_TYPE",""+ hkVO.ExchangeType);
-                query = query.Replace("#KE_PRICE",""+hkVO.Price);
+                query = query.Replace("#KE_CONTENTS", hkVO.Contents);
+                query = query.Replace("#PAY_TYPE_NO", "" + hkVO.PayNo);
+                query = query.Replace("#EXCHANGE_TYPE", "" + hkVO.ExchangeType);
+                query = query.Replace("#KE_PRICE", "" + hkVO.Price);
                 query = query.Replace("#KE_PAY_DATE", "" + hkVO.RegisterDate.ToString("yyyy-MM-dd"));
 
 
@@ -198,7 +134,7 @@ namespace Pro_0_Mylife.DAO
 
                 query = query.Replace("#US_EMAIL", hkVO1.Email);
                 query = query.Replace("#IETYPE", "1");
-                query = query.Replace("#KE_TYPE", "1");
+                query = query.Replace("#KE_TYPE", "2");
                 query = query.Replace("#KE_CONTENTS", hkVO1.Contents);
                 query = query.Replace("#PAY_TYPE_NO", "" + hkVO1.PayNo);
                 query = query.Replace("#EXCHANGE_TYPE", "" + hkVO1.ExchangeType);
@@ -297,7 +233,7 @@ namespace Pro_0_Mylife.DAO
 
                 query = query.Replace("#US_EMAIL", hkVO.Email);
                 query = query.Replace("#IETYPE", "0");
-                query = query.Replace("#KE_TYPE", ""+hkVO.HouseKeepTypeNo);
+                query = query.Replace("#KE_TYPE", "" + hkVO.HouseKeepTypeNo);
                 query = query.Replace("#KE_CONTENTS", hkVO.Contents);
                 query = query.Replace("#PAY_TYPE_NO", "" + hkVO.PayNo);
                 query = query.Replace("#EXCHANGE_TYPE", "" + hkVO.ExchangeType);
@@ -319,6 +255,114 @@ namespace Pro_0_Mylife.DAO
             }
 
         }
+
+        public DataSet LoadPayment(UserVO user)
+        {
+            DataSet ds = new DataSet();
+            try
+            {
+                string query = @"SELECT * FROM PAY_T WHERE US_EMAIL = '#US_EMAIL' ORDER BY PAY_TYPE_NO ASC ";
+
+                query = query.Replace("#US_EMAIL", user.Email);
+                db.ExecuteDsQuery(ds, query);
+
+                if (ds == null || ds.Tables.Count == 0 || ds.Tables[0].Rows.Count == 0)
+                    return ds;
+
+                return ds;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString(), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return ds;
+            }
+        }
+        public void selectPaymentNo(DataSet ds, String pamentName, UserVO user)
+        {
+            try
+            {
+                string query = @"SELECT PAY_TYPE_NO FROM PAY_T WHERE PAY_NAME  = '#PAY_NAME' AND US_EMAIL = '#US_EMAIL' ";
+
+                query = query.Replace("#PAY_NAME", pamentName);
+                query = query.Replace("#US_EMAIL", user.Email);
+                db.ExecuteDsQuery(ds, query);
+
+                if (ds == null || ds.Tables.Count == 0 || ds.Tables[0].Rows.Count == 0)
+                    return;
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString(), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        public void selectPaymentName(DataSet ds, String pamentNo, UserVO user)
+        {
+            try
+            {
+                string query = @"SELECT PAY_NAME FROM PAY_T WHERE PAY_TYPE_NO  = '#PAY_TYPE_NO' AND US_EMAIL = '#US_EMAIL' ";
+
+                query = query.Replace("#PAY_TYPE_NO", pamentNo);
+                query = query.Replace("#US_EMAIL", user.Email);
+                db.ExecuteDsQuery(ds, query);
+
+                if (ds == null || ds.Tables.Count == 0 || ds.Tables[0].Rows.Count == 0)
+                    return;
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString(), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        public DataSet LoadHouseKeepType()
+        {
+            DataSet ds = new DataSet();
+            try
+            {
+                string query = @"SELECT * FROM K_TYPE_T ORDER BY KE_TYPE ASC ";
+
+                db.ExecuteDsQuery(ds, query);
+
+                if (ds == null || ds.Tables.Count == 0 || ds.Tables[0].Rows.Count == 0)
+                    return ds;
+
+                return ds;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString(), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return ds;
+            }
+        }
+
+
+        public void SelectInCome(DataSet ds, String year, String month, UserVO user)
+        {
+            try
+            {
+                string query = @"SELECT * FROM HOUSE_T WHERE KE_PAY_DATE BETWEEN TO_DATE('#YEAR'||'-'||'#MONTH1','YYYY-MM') AND TO_DATE('#YEAR'||'-'||'#MONTH2','YYYY-MM')-1 AND US_EMAIL = '#US_EMAIL' AND IETYPE = 1";
+
+
+                query = query.Replace("#YEAR", year);
+                query = query.Replace("#MONTH1", month);
+                query = query.Replace("#MONTH2", "" + (Convert.ToInt32(month) + 1));
+                query = query.Replace("#US_EMAIL", user.Email);
+
+                db.ExecuteDsQuery(ds, query);
+
+                if (ds == null || ds.Tables.Count == 0 || ds.Tables[0].Rows.Count == 0)
+                    return;
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString(), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+ 
 
 
 
