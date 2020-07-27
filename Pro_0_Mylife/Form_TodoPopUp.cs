@@ -14,7 +14,8 @@ namespace Pro_0_Mylife
 {
     public partial class Form_TodoPopUp : Form
     {
-        TodoListDao todolistDao = new TodoListDao();
+        TodoListDao todoListDao = new TodoListDao();
+        TodolistHandler todolistHandler = new TodolistHandler();
         string todoNo;
         string loginUser;
         public Form_TodoPopUp(string loginUser,string todoNo)
@@ -31,9 +32,7 @@ namespace Pro_0_Mylife
 
         private void TodoDataLoad()
         {
-            TodolistHandler todolistHandler = new TodolistHandler();
             DataSet ds = new DataSet();
-            TodoListDao todoListDao = new TodoListDao();
             todoListDao.selectTodolistByNo(ds, loginUser, todoNo);
 
             DataTable dt = ds.Tables[0];
@@ -77,7 +76,7 @@ namespace Pro_0_Mylife
                 TodolistVO todolist = new TodolistVO(Todo_contents.Text, startDate, todoDeadLine, loginUser);
                 todolist.TodoNo = Convert.ToInt32(Todo_contents.Name);
 
-                if (todolistDao.UpdateTodolist(todolist))
+                if (todoListDao.UpdateTodolist(todolist))
                 {
                     DialogResult = DialogResult.OK;
                 }
@@ -92,7 +91,7 @@ namespace Pro_0_Mylife
         {
             if (ck_delete.Checked)
             {
-                if (todolistDao.DeleteTodoList(Todo_contents.Name))
+                if (todoListDao.DeleteTodoList(Todo_contents.Name))
                 {
                    DialogResult = DialogResult.OK;
                 }

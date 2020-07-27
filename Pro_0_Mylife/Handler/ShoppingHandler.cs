@@ -11,10 +11,13 @@ namespace Pro_0_Mylife.Handler
 {
     class ShoppingHandler
     {
+        ShoppingWishDAO shoppingWishDAO = new ShoppingWishDAO();
+
         public string ExchangeSet(int exchangeType, String moneyType, String money)
         {
             return AddExchangeType(exchangeType, exchangePrice(exchangeType, moneyType, money));
         }
+
         public string exchangePrice(int exchangeType, String moneyType, String money)
         {
             float exchangeRate = getExchange(exchangeType.ToString());
@@ -46,7 +49,6 @@ namespace Pro_0_Mylife.Handler
         }
         private float getExchange(String exchangeType)
         {
-            ShoppingWishDAO shoppingWishDAO = new ShoppingWishDAO();
             DataSet ds = new DataSet();
             shoppingWishDAO.selectExchange(ds, exchangeType);
             DataTable dt = ds.Tables[0];
@@ -58,7 +60,6 @@ namespace Pro_0_Mylife.Handler
             List<float> list = new List<float>();
 
             DataSet ds = new DataSet();
-            ShoppingWishDAO shoppingWishDAO = new ShoppingWishDAO();
             shoppingWishDAO.loadshopList(ds, email, type);
             DataTable dt = ds.Tables[0];
             int wishNo = dt.Rows.Count;

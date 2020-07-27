@@ -16,6 +16,8 @@ namespace Pro_0_Mylife
     public delegate void EventHandler(String userName);
     public partial class Form_login : Form
     {
+        LoginDao loginDao = new LoginDao();
+
         public event EventHandler LoginEventHandler;
         public Form_login()
         {
@@ -24,7 +26,6 @@ namespace Pro_0_Mylife
 
         private void Login_click(object sender, EventArgs e)
         {
-            LoginDao loginDao = new LoginDao();
             UserVO user = new UserVO();
             user.Email = id_bx.Text;
             user.Password = pwd_bx.Text;

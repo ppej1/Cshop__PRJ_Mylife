@@ -20,13 +20,6 @@ namespace Pro_0_Mylife
         }
         static void ProgramStart()
         {
-            OracleDBManager dbManager = new OracleDBManager();
-            if (dbManager.GetConnection() == false)
-            {
-                MessageBox.Show("데이터베이스 접속 연결 실패!!!!");
-                return;
-            }
-
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form_main());

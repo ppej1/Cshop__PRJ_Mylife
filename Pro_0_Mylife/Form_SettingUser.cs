@@ -14,6 +14,8 @@ namespace Pro_0_Mylife
     public partial class Form_SettingUser : Form
     {
         UserVO _loginUser = new UserVO();
+        RegisterDao register = new RegisterDao();
+
         public Form_SettingUser(string email)
         {
             InitializeComponent();
@@ -41,7 +43,6 @@ namespace Pro_0_Mylife
                 _loginUser.Phone = txt_phone.Text;
                 _loginUser.Sex = cb_gender.SelectedIndex;
 
-                RegisterDao register = new RegisterDao();
                 if (register.confirmUser(_loginUser))
                 {
                     MessageBox.Show("수정이 완료 되었습니다.");
@@ -55,7 +56,6 @@ namespace Pro_0_Mylife
 
             if (ck_withdraw.Checked)
             {
-                RegisterDao register = new RegisterDao();
                 if (register.withdraw(_loginUser))
                 {
                     MessageBox.Show("탈퇴되었습니다.");

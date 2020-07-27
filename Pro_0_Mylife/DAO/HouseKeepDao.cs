@@ -337,19 +337,45 @@ namespace Pro_0_Mylife.DAO
                 return ds;
             }
         }
+        public void SelectHKTypeName(DataSet ds, String typeNo)
+        {
+            try
+            {
+                string query = @"SELECT KEEP_TYPE_NAME FROM K_TYPE_T WHERE KE_TYPE  = '#KE_TYPE'";
+
+                query = query.Replace("#KE_TYPE", typeNo);
+                db.ExecuteDsQuery(ds, query);
+
+                if (ds == null || ds.Tables.Count == 0 || ds.Tables[0].Rows.Count == 0)
+                    return;
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString(), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
 
 
         public void SelectInCome(DataSet ds, String year, String month, UserVO user)
         {
             try
             {
-                string query = @"SELECT * FROM HOUSE_T WHERE KE_PAY_DATE BETWEEN TO_DATE('#YEAR'||'-'||'#MONTH1','YYYY-MM') AND TO_DATE('#YEAR'||'-'||'#MONTH2','YYYY-MM')-1 AND US_EMAIL = '#US_EMAIL' AND IETYPE = 1";
-
-
-                query = query.Replace("#YEAR", year);
+                string query = @"SELECT * FROM HOUSE_T WHERE KE_PAY_DATE BETWEEN TO_DATE('#YEAR1'||'-'||'#MONTH1','YYYY-MM') AND TO_DATE('#YEAR2'||'-'||'#MONTH2','YYYY-MM')-1 AND US_EMAIL = '#US_EMAIL' AND IETYPE = 1 ORDER BY KE_PAY_DATE ASC";
+                query = query.Replace("#YEAR1", year);
                 query = query.Replace("#MONTH1", month);
-                query = query.Replace("#MONTH2", "" + (Convert.ToInt32(month) + 1));
                 query = query.Replace("#US_EMAIL", user.Email);
+                if (Convert.ToInt32(month) < 12)
+                {
+                    query = query.Replace("#YEAR2", year);
+                    query = query.Replace("#MONTH2", "" + (Convert.ToInt32(month) + 1));
+                }
+                else
+                {
+                    query = query.Replace("#YEAR2", "" + (Convert.ToInt32(year) + 1));
+                    query = query.Replace("#MONTH2", "" + 1);
+                }
+
 
                 db.ExecuteDsQuery(ds, query);
 
@@ -362,16 +388,157 @@ namespace Pro_0_Mylife.DAO
                 MessageBox.Show(ex.ToString(), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
- 
+
+        public void SelectSpend(DataSet ds, String year, String month, UserVO user)
+        {
+            try
+            {
+                string query = @"SELECT * FROM HOUSE_T WHERE KE_PAY_DATE BETWEEN TO_DATE('#YEAR1'||'-'||'#MONTH1','YYYY-MM') AND TO_DATE('#YEAR2'||'-'||'#MONTH2','YYYY-MM')-1 AND US_EMAIL = '#US_EMAIL' AND IETYPE = 0  ORDER BY KE_PAY_DATE ASC";
+                query = query.Replace("#YEAR1", year);
+                query = query.Replace("#MONTH1", month);
+                query = query.Replace("#US_EMAIL", user.Email);
+                if (Convert.ToInt32(month) < 12)
+                {
+                    query = query.Replace("#YEAR2", year);
+                    query = query.Replace("#MONTH2", "" + (Convert.ToInt32(month) + 1));
+                }
+                else
+                {
+                    query = query.Replace("#YEAR2", "" + (Convert.ToInt32(year) + 1));
+                    query = query.Replace("#MONTH2", "" + 1);
+                }
+
+                db.ExecuteDsQuery(ds, query);
+
+                if (ds == null || ds.Tables.Count == 0 || ds.Tables[0].Rows.Count == 0)
+                    return;
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString(), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        public void SelectMontlyIncomeByAccount(DataSet ds, String year, String month, String payNo, UserVO user)
+        {
+            try
+            {
+                string query = @"SELECT * FROM HOUSE_T WHERE KE_PAY_DATE BETWEEN TO_DATE('#YEAR1'||'-'||'#MONTH1','YYYY-MM') AND TO_DATE('#YEAR2'||'-'||'#MONTH2','YYYY-MM')-1 AND US_EMAIL = '#US_EMAIL' AND IETYPE = 1 And PAY_TYPE_NO='#PAY_TYPE_NO' ORDER BY KE_PAY_DATE ASC";
+                query = query.Replace("#YEAR1", year);
+                query = query.Replace("#MONTH1", month);
+                query = query.Replace("#US_EMAIL", user.Email);
+                query = query.Replace("#PAY_TYPE_NO", payNo);
+
+                if (Convert.ToInt32(month) < 12)
+                {
+                    query = query.Replace("#YEAR2", year);
+                    query = query.Replace("#MONTH2", "" + (Convert.ToInt32(month) + 1));
+                }
+                else
+                {
+                    query = query.Replace("#YEAR2", "" + (Convert.ToInt32(year) + 1));
+                    query = query.Replace("#MONTH2", "" + 1);
+                }
 
 
+                db.ExecuteDsQuery(ds, query);
+
+                if (ds == null || ds.Tables.Count == 0 || ds.Tables[0].Rows.Count == 0)
+                    return;
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString(), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        public void SelectMontlySpendByAccount(DataSet ds, String year, String month, String payNo, UserVO user)
+        {
+            try
+            {
+                string query = @"SELECT * FROM HOUSE_T WHERE KE_PAY_DATE BETWEEN TO_DATE('#YEAR1'||'-'||'#MONTH1','YYYY-MM') AND TO_DATE('#YEAR2'||'-'||'#MONTH2','YYYY-MM')-1 AND US_EMAIL = '#US_EMAIL' AND IETYPE = 0 And PAY_TYPE_NO='#PAY_TYPE_NO' ORDER BY KE_PAY_DATE ASC";
+                query = query.Replace("#YEAR1", year);
+                query = query.Replace("#MONTH1", month);
+                query = query.Replace("#US_EMAIL", user.Email);
+                query = query.Replace("#PAY_TYPE_NO", payNo);
+
+                if (Convert.ToInt32(month) < 12)
+                {
+                    query = query.Replace("#YEAR2", year);
+                    query = query.Replace("#MONTH2", "" + (Convert.ToInt32(month) + 1));
+                }
+                else
+                {
+                    query = query.Replace("#YEAR2", "" + (Convert.ToInt32(year) + 1));
+                    query = query.Replace("#MONTH2", "" + 1);
+                }
 
 
+                db.ExecuteDsQuery(ds, query);
 
+                if (ds == null || ds.Tables.Count == 0 || ds.Tables[0].Rows.Count == 0)
+                    return;
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString(), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        public void CarryForewardByAccount(DataSet ds, String year, String month, String payNo, UserVO user)
+        {
+            try
+            {
+                string query = @"SELECT* FROM HOUSE_T WHERE KE_PAY_DATE < TO_DATE('#YEAR' || '-' || '#MONTH', 'YYYY-MM') AND US_EMAIL = '#US_EMAIL' And PAY_TYPE_NO='#PAY_TYPE_NO' ORDER BY KE_PAY_DATE ASC";
+
+                query = query.Replace("#YEAR", year);
+                query = query.Replace("#MONTH", month);
+                query = query.Replace("#US_EMAIL", user.Email);
+                query = query.Replace("#PAY_TYPE_NO", payNo);
+
+                db.ExecuteDsQuery(ds, query);
+
+                if (ds == null || ds.Tables.Count == 0 || ds.Tables[0].Rows.Count == 0)
+                    return;
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString(), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        public void AnalysisHkByDate(DataSet ds, String year, String month, UserVO user)
+        {
+            try
+            {
+                string query = @"SELECT sum(KE_PRICE) as TOTALPRICE , KE_PAY_DATE, EXCHANGE_TYPE  FROM HOUSE_T WHERE KE_PAY_DATE BETWEEN TO_DATE('#YEAR1'||'-'||'#MONTH1','YYYY-MM') AND TO_DATE('#YEAR2'||'-'||'#MONTH2','YYYY-MM')-1 AND US_EMAIL = '#US_EMAIL' AND IETYPE = 0 GROUP BY KE_PAY_DATE, EXCHANGE_TYPE ORDER BY KE_PAY_DATE asc";
+                query = query.Replace("#YEAR1", year);
+                query = query.Replace("#MONTH1", month);
+                query = query.Replace("#US_EMAIL", user.Email);
+                if (Convert.ToInt32(month) < 12)
+                {
+                    query = query.Replace("#YEAR2", year);
+                    query = query.Replace("#MONTH2", "" + (Convert.ToInt32(month) + 1));
+                }
+                else
+                {
+                    query = query.Replace("#YEAR2", "" + (Convert.ToInt32(year) + 1));
+                    query = query.Replace("#MONTH2", "" + 1);
+                }
+
+
+                db.ExecuteDsQuery(ds, query);
+
+                if (ds == null || ds.Tables.Count == 0 || ds.Tables[0].Rows.Count == 0)
+                    return;
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString(), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
-
-
-
-
-
 }

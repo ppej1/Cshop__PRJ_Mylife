@@ -18,10 +18,13 @@ namespace Pro_0_Mylife
         public string Port = string.Empty;
 
         private OracleCommand LastExecutedCommand = null;
-        private int RetryCnt = 0;
+        private static int RetryCnt = 0;
             
-        public OracleConnection Connection { get; private set; }
-
+        public  OracleConnection Connection { get; private set; }
+        public OracleDBManager()
+        {
+            GetConnection();
+        }
         public bool GetConnection()
         {
            
@@ -31,8 +34,7 @@ namespace Pro_0_Mylife
                 {
                     this.Connection.Close();
                     this.Connection.Dispose();
-                    this.Connection = null;
-                    
+                    this.Connection = null;               
                 }
                 
                 if (ConnectionString == string.Empty)
@@ -153,7 +155,6 @@ namespace Pro_0_Mylife
                 if(RetryCnt< 1 && CheckDBConnected() == false)
                 {
                     RetryCnt++;
-
                     GetConnection();
 
                     Exception ex02 = new Exception("Reconnect to database");
