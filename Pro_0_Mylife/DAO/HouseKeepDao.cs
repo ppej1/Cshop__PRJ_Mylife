@@ -509,14 +509,49 @@ namespace Pro_0_Mylife.DAO
             }
         }
 
-        public void AnalysisHkByDate(DataSet ds, String year, String month, UserVO user)
+        public void AnalysisHkByDate(DataSet ds, String year, String month, UserVO user, int ieType)
         {
             try
             {
-                string query = @"SELECT sum(KE_PRICE) as TOTALPRICE , KE_PAY_DATE, EXCHANGE_TYPE  FROM HOUSE_T WHERE KE_PAY_DATE BETWEEN TO_DATE('#YEAR1'||'-'||'#MONTH1','YYYY-MM') AND TO_DATE('#YEAR2'||'-'||'#MONTH2','YYYY-MM')-1 AND US_EMAIL = '#US_EMAIL' AND IETYPE = 0 GROUP BY KE_PAY_DATE, EXCHANGE_TYPE ORDER BY KE_PAY_DATE asc";
+                string query = @"SELECT sum(KE_PRICE) as TOTALPRICE , KE_PAY_DATE, EXCHANGE_TYPE  FROM HOUSE_T WHERE KE_PAY_DATE BETWEEN TO_DATE('#YEAR1'||'-'||'#MONTH1','YYYY-MM') AND TO_DATE('#YEAR2'||'-'||'#MONTH2','YYYY-MM')-1 AND US_EMAIL = '#US_EMAIL' AND IETYPE = '#IETYPE' GROUP BY KE_PAY_DATE, EXCHANGE_TYPE ORDER BY KE_PAY_DATE asc";
                 query = query.Replace("#YEAR1", year);
                 query = query.Replace("#MONTH1", month);
                 query = query.Replace("#US_EMAIL", user.Email);
+                query = query.Replace("#IETYPE", ""+ ieType);
+
+                if (Convert.ToInt32(month) < 12)
+                {
+                    query = query.Replace("#YEAR2", year);
+                    query = query.Replace("#MONTH2", "" + (Convert.ToInt32(month) + 1));
+                }
+                else
+                {
+                    query = query.Replace("#YEAR2", "" + (Convert.ToInt32(year) + 1));
+                    query = query.Replace("#MONTH2", "" + 1);
+                }
+
+
+                db.ExecuteDsQuery(ds, query);
+
+                if (ds == null || ds.Tables.Count == 0 || ds.Tables[0].Rows.Count == 0)
+                    return;
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString(), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        public void CalcTotalByType(DataSet ds, String year, String month, UserVO user,int hkType)
+        {
+            try
+            {
+                string query = @"SELECT sum(KE_PRICE) as TOTALPRICE , KE_TYPE , EXCHANGE_TYPE FROM HOUSE_T WHERE KE_PAY_DATE BETWEEN TO_DATE('#YEAR1'||'-'||'#MONTH1','YYYY-MM') AND TO_DATE('#YEAR2'||'-'||'#MONTH2','YYYY-MM')-1 AND US_EMAIL = '#US_EMAIL' AND IETYPE = '0' AND KE_TYPE = '#KE_TYPE' GROUP BY KE_TYPE, EXCHANGE_TYPE ORDER BY KE_TYPE asc";
+                query = query.Replace("#YEAR1", year);
+                query = query.Replace("#MONTH1", month);
+                query = query.Replace("#US_EMAIL", user.Email);
+                query = query.Replace("#KE_TYPE", ""+ hkType);
+
                 if (Convert.ToInt32(month) < 12)
                 {
                     query = query.Replace("#YEAR2", year);

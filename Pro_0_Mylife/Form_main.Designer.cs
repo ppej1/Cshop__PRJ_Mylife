@@ -113,11 +113,11 @@
             this.hk_month_table = new System.Windows.Forms.TabPage();
             this.pnl_hk_input = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
+            this.lb_accountinfo5 = new System.Windows.Forms.Label();
+            this.lb_accountinfo4 = new System.Windows.Forms.Label();
+            this.lb_accountinfo3 = new System.Windows.Forms.Label();
+            this.lb_accountinfo2 = new System.Windows.Forms.Label();
+            this.lb_accountinfo1 = new System.Windows.Forms.Label();
             this.lb_hk_infoNo3 = new System.Windows.Forms.Label();
             this.lb_hk_infoNo2 = new System.Windows.Forms.Label();
             this.lb_hk_infoNo1 = new System.Windows.Forms.Label();
@@ -182,9 +182,16 @@
             this.lb_hk_spend = new System.Windows.Forms.Label();
             this.flp_hk_spend = new System.Windows.Forms.FlowLayoutPanel();
             this.hk_month_Analysis = new System.Windows.Forms.TabPage();
-            this.panel8 = new System.Windows.Forms.Panel();
+            this.pnl_hk_analysis_title = new System.Windows.Forms.Panel();
+            this.lb_hk_anal_title3 = new System.Windows.Forms.Label();
+            this.lb_hk_anal_title2 = new System.Windows.Forms.Label();
+            this.lb_hk_anal_title1 = new System.Windows.Forms.Label();
+            this.pnl_hk_analysis2 = new System.Windows.Forms.Panel();
             this.chart_AnalysisByDate = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.panel7 = new System.Windows.Forms.Panel();
+            this.pnl_hk_analysis1 = new System.Windows.Forms.Panel();
+            this.pnl_hk_side2 = new System.Windows.Forms.Panel();
+            this.chart_hk_pie = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.flp_hk_analysis = new System.Windows.Forms.FlowLayoutPanel();
             this.panel43 = new System.Windows.Forms.Panel();
             this.hk_year = new System.Windows.Forms.TabPage();
             this.UserInfo_panel = new System.Windows.Forms.Panel();
@@ -202,18 +209,6 @@
             this.btn_hk = new System.Windows.Forms.Button();
             this.btn_memo = new System.Windows.Forms.Button();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.panel11 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.tab_form.SuspendLayout();
             this.tab_home.SuspendLayout();
             this.tab_Memo.SuspendLayout();
@@ -243,17 +238,15 @@
             this.tabPage_hk_income.SuspendLayout();
             this.tabPage_hk_account.SuspendLayout();
             this.hk_month_Analysis.SuspendLayout();
-            this.panel8.SuspendLayout();
+            this.pnl_hk_analysis_title.SuspendLayout();
+            this.pnl_hk_analysis2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart_AnalysisByDate)).BeginInit();
-            this.panel7.SuspendLayout();
+            this.pnl_hk_analysis1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chart_hk_pie)).BeginInit();
             this.UserInfo_panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.Top_panel.SuspendLayout();
             this.pnl_nav.SuspendLayout();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
-            this.flowLayoutPanel1.SuspendLayout();
-            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tab_form
@@ -309,9 +302,10 @@
             // 
             // memo_add
             // 
-            this.memo_add.BackColor = System.Drawing.Color.SkyBlue;
+            this.memo_add.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(44)))), ((int)(((byte)(65)))));
             this.memo_add.FlatAppearance.BorderSize = 0;
             resources.ApplyResources(this.memo_add, "memo_add");
+            this.memo_add.ForeColor = System.Drawing.Color.White;
             this.memo_add.Name = "memo_add";
             this.memo_add.UseVisualStyleBackColor = false;
             this.memo_add.Click += new System.EventHandler(this.memo_add_Click);
@@ -354,7 +348,7 @@
             // 
             // btn_search
             // 
-            this.btn_search.BackColor = System.Drawing.Color.LightGray;
+            this.btn_search.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(44)))), ((int)(((byte)(65)))));
             resources.ApplyResources(this.btn_search, "btn_search");
             this.btn_search.Name = "btn_search";
             this.btn_search.UseVisualStyleBackColor = false;
@@ -843,10 +837,10 @@
             // 
             // btn_shpAdd
             // 
-            this.btn_shpAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(255)))), ((int)(((byte)(180)))));
+            this.btn_shpAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(44)))), ((int)(((byte)(65)))));
             this.btn_shpAdd.FlatAppearance.BorderSize = 0;
             resources.ApplyResources(this.btn_shpAdd, "btn_shpAdd");
-            this.btn_shpAdd.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btn_shpAdd.ForeColor = System.Drawing.Color.White;
             this.btn_shpAdd.Name = "btn_shpAdd";
             this.btn_shpAdd.UseVisualStyleBackColor = false;
             this.btn_shpAdd.Click += new System.EventHandler(this.btn_shpAdd_Click);
@@ -995,43 +989,43 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.Controls.Add(this.label19);
-            this.panel3.Controls.Add(this.label20);
-            this.panel3.Controls.Add(this.label21);
-            this.panel3.Controls.Add(this.label22);
-            this.panel3.Controls.Add(this.label23);
+            this.panel3.Controls.Add(this.lb_accountinfo5);
+            this.panel3.Controls.Add(this.lb_accountinfo4);
+            this.panel3.Controls.Add(this.lb_accountinfo3);
+            this.panel3.Controls.Add(this.lb_accountinfo2);
+            this.panel3.Controls.Add(this.lb_accountinfo1);
             resources.ApplyResources(this.panel3, "panel3");
             this.panel3.Name = "panel3";
             // 
-            // label19
+            // lb_accountinfo5
             // 
-            this.label19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            resources.ApplyResources(this.label19, "label19");
-            this.label19.Name = "label19";
+            this.lb_accountinfo5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            resources.ApplyResources(this.lb_accountinfo5, "lb_accountinfo5");
+            this.lb_accountinfo5.Name = "lb_accountinfo5";
             // 
-            // label20
+            // lb_accountinfo4
             // 
-            this.label20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            resources.ApplyResources(this.label20, "label20");
-            this.label20.Name = "label20";
+            this.lb_accountinfo4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            resources.ApplyResources(this.lb_accountinfo4, "lb_accountinfo4");
+            this.lb_accountinfo4.Name = "lb_accountinfo4";
             // 
-            // label21
+            // lb_accountinfo3
             // 
-            this.label21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            resources.ApplyResources(this.label21, "label21");
-            this.label21.Name = "label21";
+            this.lb_accountinfo3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            resources.ApplyResources(this.lb_accountinfo3, "lb_accountinfo3");
+            this.lb_accountinfo3.Name = "lb_accountinfo3";
             // 
-            // label22
+            // lb_accountinfo2
             // 
-            this.label22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            resources.ApplyResources(this.label22, "label22");
-            this.label22.Name = "label22";
+            this.lb_accountinfo2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            resources.ApplyResources(this.lb_accountinfo2, "lb_accountinfo2");
+            this.lb_accountinfo2.Name = "lb_accountinfo2";
             // 
-            // label23
+            // lb_accountinfo1
             // 
-            this.label23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            resources.ApplyResources(this.label23, "label23");
-            this.label23.Name = "label23";
+            this.lb_accountinfo1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            resources.ApplyResources(this.lb_accountinfo1, "lb_accountinfo1");
+            this.lb_accountinfo1.Name = "lb_accountinfo1";
             // 
             // lb_hk_infoNo3
             // 
@@ -1532,18 +1526,49 @@
             // 
             // hk_month_Analysis
             // 
-            this.hk_month_Analysis.Controls.Add(this.panel8);
-            this.hk_month_Analysis.Controls.Add(this.panel7);
+            this.hk_month_Analysis.Controls.Add(this.pnl_hk_analysis_title);
+            this.hk_month_Analysis.Controls.Add(this.pnl_hk_analysis2);
+            this.hk_month_Analysis.Controls.Add(this.pnl_hk_analysis1);
             resources.ApplyResources(this.hk_month_Analysis, "hk_month_Analysis");
             this.hk_month_Analysis.Name = "hk_month_Analysis";
             this.hk_month_Analysis.UseVisualStyleBackColor = true;
             // 
-            // panel8
+            // pnl_hk_analysis_title
             // 
-            this.panel8.BackColor = System.Drawing.Color.Aqua;
-            this.panel8.Controls.Add(this.chart_AnalysisByDate);
-            resources.ApplyResources(this.panel8, "panel8");
-            this.panel8.Name = "panel8";
+            this.pnl_hk_analysis_title.BackColor = System.Drawing.Color.White;
+            this.pnl_hk_analysis_title.Controls.Add(this.lb_hk_anal_title3);
+            this.pnl_hk_analysis_title.Controls.Add(this.lb_hk_anal_title2);
+            this.pnl_hk_analysis_title.Controls.Add(this.lb_hk_anal_title1);
+            resources.ApplyResources(this.pnl_hk_analysis_title, "pnl_hk_analysis_title");
+            this.pnl_hk_analysis_title.Name = "pnl_hk_analysis_title";
+            // 
+            // lb_hk_anal_title3
+            // 
+            this.lb_hk_anal_title3.Cursor = System.Windows.Forms.Cursors.Default;
+            this.lb_hk_anal_title3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            resources.ApplyResources(this.lb_hk_anal_title3, "lb_hk_anal_title3");
+            this.lb_hk_anal_title3.Name = "lb_hk_anal_title3";
+            // 
+            // lb_hk_anal_title2
+            // 
+            this.lb_hk_anal_title2.Cursor = System.Windows.Forms.Cursors.Default;
+            this.lb_hk_anal_title2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            resources.ApplyResources(this.lb_hk_anal_title2, "lb_hk_anal_title2");
+            this.lb_hk_anal_title2.Name = "lb_hk_anal_title2";
+            // 
+            // lb_hk_anal_title1
+            // 
+            this.lb_hk_anal_title1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.lb_hk_anal_title1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            resources.ApplyResources(this.lb_hk_anal_title1, "lb_hk_anal_title1");
+            this.lb_hk_anal_title1.Name = "lb_hk_anal_title1";
+            // 
+            // pnl_hk_analysis2
+            // 
+            this.pnl_hk_analysis2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(44)))), ((int)(((byte)(65)))));
+            this.pnl_hk_analysis2.Controls.Add(this.chart_AnalysisByDate);
+            resources.ApplyResources(this.pnl_hk_analysis2, "pnl_hk_analysis2");
+            this.pnl_hk_analysis2.Name = "pnl_hk_analysis2";
             // 
             // chart_AnalysisByDate
             // 
@@ -1558,14 +1583,39 @@
             series3.Name = "Series1";
             this.chart_AnalysisByDate.Series.Add(series3);
             // 
-            // panel7
+            // pnl_hk_analysis1
             // 
-            this.panel7.BackColor = System.Drawing.Color.Aqua;
-            this.panel7.Controls.Add(this.panel1);
-            this.panel7.Controls.Add(this.flowLayoutPanel1);
-            this.panel7.Controls.Add(this.panel2);
-            resources.ApplyResources(this.panel7, "panel7");
-            this.panel7.Name = "panel7";
+            this.pnl_hk_analysis1.BackColor = System.Drawing.Color.White;
+            this.pnl_hk_analysis1.Controls.Add(this.pnl_hk_side2);
+            this.pnl_hk_analysis1.Controls.Add(this.chart_hk_pie);
+            this.pnl_hk_analysis1.Controls.Add(this.flp_hk_analysis);
+            resources.ApplyResources(this.pnl_hk_analysis1, "pnl_hk_analysis1");
+            this.pnl_hk_analysis1.Name = "pnl_hk_analysis1";
+            // 
+            // pnl_hk_side2
+            // 
+            resources.ApplyResources(this.pnl_hk_side2, "pnl_hk_side2");
+            this.pnl_hk_side2.Name = "pnl_hk_side2";
+            // 
+            // chart_hk_pie
+            // 
+            chartArea4.Name = "ChartArea1";
+            this.chart_hk_pie.ChartAreas.Add(chartArea4);
+            legend4.Name = "Legend1";
+            this.chart_hk_pie.Legends.Add(legend4);
+            resources.ApplyResources(this.chart_hk_pie, "chart_hk_pie");
+            this.chart_hk_pie.Name = "chart_hk_pie";
+            series4.ChartArea = "ChartArea1";
+            series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            series4.Legend = "Legend1";
+            series4.Name = "Series1";
+            this.chart_hk_pie.Series.Add(series4);
+            // 
+            // flp_hk_analysis
+            // 
+            resources.ApplyResources(this.flp_hk_analysis, "flp_hk_analysis");
+            this.flp_hk_analysis.BackColor = System.Drawing.Color.White;
+            this.flp_hk_analysis.Name = "flp_hk_analysis";
             // 
             // panel43
             // 
@@ -1703,98 +1753,6 @@
             this.btn_memo.Name = "btn_memo";
             this.btn_memo.Click += new System.EventHandler(this.Btn_memo_Click);
             // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.Aqua;
-            this.panel2.Controls.Add(this.chart1);
-            resources.ApplyResources(this.panel2, "panel2");
-            this.panel2.Name = "panel2";
-            // 
-            // chart1
-            // 
-            chartArea4.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea4);
-            legend4.Name = "Legend1";
-            this.chart1.Legends.Add(legend4);
-            resources.ApplyResources(this.chart1, "chart1");
-            this.chart1.Name = "chart1";
-            series4.ChartArea = "ChartArea1";
-            series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
-            series4.Legend = "Legend1";
-            series4.Name = "Series1";
-            this.chart1.Series.Add(series4);
-            // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.BackColor = System.Drawing.Color.White;
-            this.flowLayoutPanel1.Controls.Add(this.panel5);
-            this.flowLayoutPanel1.Controls.Add(this.panel6);
-            this.flowLayoutPanel1.Controls.Add(this.panel9);
-            this.flowLayoutPanel1.Controls.Add(this.panel10);
-            this.flowLayoutPanel1.Controls.Add(this.panel11);
-            resources.ApplyResources(this.flowLayoutPanel1, "flowLayoutPanel1");
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.label1);
-            resources.ApplyResources(this.panel1, "panel1");
-            this.panel1.Name = "panel1";
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            resources.ApplyResources(this.panel5, "panel5");
-            this.panel5.Name = "panel5";
-            // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            resources.ApplyResources(this.panel6, "panel6");
-            this.panel6.Name = "panel6";
-            // 
-            // panel9
-            // 
-            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            resources.ApplyResources(this.panel9, "panel9");
-            this.panel9.Name = "panel9";
-            // 
-            // panel10
-            // 
-            this.panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            resources.ApplyResources(this.panel10, "panel10");
-            this.panel10.Name = "panel10";
-            // 
-            // panel11
-            // 
-            this.panel11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            resources.ApplyResources(this.panel11, "panel11");
-            this.panel11.Name = "panel11";
-            // 
-            // label1
-            // 
-            this.label1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            resources.ApplyResources(this.label1, "label1");
-            this.label1.Name = "label1";
-            // 
-            // label2
-            // 
-            this.label2.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            resources.ApplyResources(this.label2, "label2");
-            this.label2.Name = "label2";
-            // 
-            // label3
-            // 
-            this.label3.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            resources.ApplyResources(this.label3, "label3");
-            this.label3.Name = "label3";
-            // 
             // Form_main
             // 
             resources.ApplyResources(this, "$this");
@@ -1846,17 +1804,15 @@
             this.tabPage_hk_account.ResumeLayout(false);
             this.tabPage_hk_account.PerformLayout();
             this.hk_month_Analysis.ResumeLayout(false);
-            this.panel8.ResumeLayout(false);
+            this.pnl_hk_analysis_title.ResumeLayout(false);
+            this.pnl_hk_analysis2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.chart_AnalysisByDate)).EndInit();
-            this.panel7.ResumeLayout(false);
+            this.pnl_hk_analysis1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.chart_hk_pie)).EndInit();
             this.UserInfo_panel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.Top_panel.ResumeLayout(false);
             this.pnl_nav.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
-            this.flowLayoutPanel1.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1969,9 +1925,9 @@
         private System.Windows.Forms.TabPage hk_month_Analysis;
         private System.Windows.Forms.Panel panel43;
         private System.Windows.Forms.TabPage hk_year;
-        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Panel pnl_hk_analysis2;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart_AnalysisByDate;
-        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Panel pnl_hk_analysis1;
         private System.Windows.Forms.ComboBox cb_hk_selectMonth;
         private System.Windows.Forms.TextBox txt_hk_selectYear;
         private System.Windows.Forms.Button cal_1;
@@ -2018,23 +1974,18 @@
         private System.Windows.Forms.Label lb_hk_infoNo2;
         private System.Windows.Forms.Label lb_hk_infoNo1;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label lb_accountinfo5;
+        private System.Windows.Forms.Label lb_accountinfo4;
+        private System.Windows.Forms.Label lb_accountinfo3;
+        private System.Windows.Forms.Label lb_accountinfo2;
+        private System.Windows.Forms.Label lb_accountinfo1;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.Panel panel10;
-        private System.Windows.Forms.Panel panel11;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chart_hk_pie;
+        private System.Windows.Forms.Panel pnl_hk_analysis_title;
+        private System.Windows.Forms.Label lb_hk_anal_title3;
+        private System.Windows.Forms.Label lb_hk_anal_title2;
+        private System.Windows.Forms.Label lb_hk_anal_title1;
+        private System.Windows.Forms.FlowLayoutPanel flp_hk_analysis;
+        private System.Windows.Forms.Panel pnl_hk_side2;
     }
 }

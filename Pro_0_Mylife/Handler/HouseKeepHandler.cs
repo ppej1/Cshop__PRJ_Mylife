@@ -42,7 +42,6 @@ namespace Pro_0_Mylife.Handler
                 if(!(row["KE_TYPE"].ToString().Equals("0") || row["KE_TYPE"].ToString().Equals("1")))
                 {
                     list.Add(row["KEEP_TYPE_NAME"].ToString());
-
                 }
             }
             return list;
@@ -132,10 +131,10 @@ namespace Pro_0_Mylife.Handler
         }
 
 
-        public Dictionary<String, float> AnalysisHkByDate(String year, String month, UserVO user, int exchangeType)
+        public Dictionary<String, float> AnalysisHkByDate(String year, String month, UserVO user, int exchangeType ,int ieType)
         {
             DataSet ds = new DataSet();
-            hkDao.AnalysisHkByDate(ds, year, month, user);
+            hkDao.AnalysisHkByDate(ds, year, month, user,ieType);
             DataTable dt = ds.Tables[0];
             Dictionary<String, float> _Dic = new Dictionary<string, float>();
 
@@ -169,6 +168,26 @@ namespace Pro_0_Mylife.Handler
             }
             return _Dic;
 
+        }
+
+        public float CalcTotalByType(String year, String month, UserVO user, int hkType, int exchangeType)
+        {
+            DataSet ds = new DataSet();
+            hkDao.CalcTotalByType(ds, year, month, user, hkType);
+            DataTable dt = ds.Tables[0];
+            float result = 0;
+            foreach (DataRow row in dt.Rows)
+            {
+                if (exchangeType == Convert.ToInt32(row["EXCHANGE_TYPE"].ToString()))
+                {
+                    result += Convert.ToSingle(row["TOTALPRICE"].ToString());
+                }
+                else
+                {
+                    result += Convert.ToSingle(shoppingHandler.exchangePrice(exchangeType, row["EXCHANGE_TYPE"].ToString(), row["TOTALPRICE"].ToString()));
+                }
+            }
+            return Convert.ToSingle(result.ToString("N0"));
         }
 
     }

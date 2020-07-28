@@ -13,6 +13,7 @@ using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.DataVisualization.Charting;
 using System.Windows.Forms.VisualStyles;
 
 namespace Pro_0_Mylife
@@ -1183,24 +1184,104 @@ namespace Pro_0_Mylife
 
         private void AnalysisHkByGenre(String year, String month)
         {
+            chart_hk_pie.Series["Series1"].Points.Clear();
+            flp_hk_analysis.Controls.Clear();
+            List<String> list = hkHandler.SettingHouseKeepType();
+            float total= 0;
 
+            foreach (String item in list)
+            {
+                float result = hkHandler.CalcTotalByType(year, month, _logIn_User, list.IndexOf(item) + 2, cb_hk_spendEx.SelectedIndex);
+                total += result;
+            }
+            foreach (String item in list)
+            {
+                float result = hkHandler.CalcTotalByType(year, month, _logIn_User, list.IndexOf(item) + 2, cb_hk_spendEx.SelectedIndex);
+                float rate = 0;
+                rate = result / total * 100;
+                if (rate.Equals(float.NaN))
+                {
+                  rate = 0;
+                }
+                Panel pnl = new Panel();
+                Label txt_hkType = new Label();
+                Label txt_price = new Label();
+                Label txt_rate = new Label();
+
+                pnl.Size = new Size(628, 24);
+                pnl.BackColor = Color.FromArgb(255, 255, 255);
+                pnl.BorderStyle = BorderStyle.None;
+                pnl.Name = String.Format("pnl_text_{0}", list.IndexOf(item));
+
+                txt_hkType.Name = String.Format("{0}", list.IndexOf(item)+2);
+                txt_hkType.Text = item;
+                txt_hkType.AutoSize = false;
+                txt_hkType.Size = new Size(200, 20);
+                txt_hkType.Location = new Point(7, 2);
+                txt_hkType.BackColor = Color.FromArgb(255, 255, 255);
+                txt_hkType.BorderStyle = BorderStyle.None;
+                txt_hkType.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+
+                txt_price.Text = String.Format("{0}", shoppingHandler.AddExchangeType(cb_hk_spendEx.SelectedIndex, result.ToString("N0")));
+                txt_price.Name = String.Format("{0}", list.IndexOf(item) + 2);
+                txt_price.AutoSize = false;
+                txt_price.Size = new Size(200, 20);
+                txt_price.Location = new Point(214, 2);
+                txt_price.BackColor = Color.FromArgb(255, 255, 255);
+                txt_price.BorderStyle = BorderStyle.None;
+                txt_price.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+
+                txt_rate.Name = String.Format("txt_price_{0}", list.IndexOf(item) + 2);
+                txt_rate.Text = String.Format("{0}%", rate.ToString("N2"));
+                txt_rate.AutoSize = false;
+                txt_rate.Size = new Size(200, 20);
+                txt_rate.Location = new Point(421, 2);
+                txt_rate.BackColor = Color.FromArgb(255, 255, 255);
+                txt_rate.BorderStyle = BorderStyle.None;
+                txt_rate.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+
+                pnl.Controls.Add(txt_hkType);
+                pnl.Controls.Add(txt_price);
+                pnl.Controls.Add(txt_rate);
+                flp_hk_analysis.Controls.Add(pnl);
+
+                if (result != 0)
+                {
+                    chart_hk_pie.Series["Series1"].Points.AddXY(item, result);
+                }
+            }
+            chart_hk_pie.Series["Series1"].IsValueShownAsLabel = false;
+            chart_hk_pie.Series["Series1"].IsVisibleInLegend = false;
         }
         private void AnalysisHkByDate(String year, String month)
         {
-            chart_AnalysisByDate.Series["Series1"].Points.Clear();
+            chart_AnalysisByDate.Series.Clear();
 
-            Dictionary<String, float> dic = hkHandler.AnalysisHkByDate(year, month, _logIn_User, cb_hk_spendEx.SelectedIndex);
+            Dictionary<String, float> dic = hkHandler.AnalysisHkByDate(year, month, _logIn_User, cb_hk_spendEx.SelectedIndex,0);
+            Dictionary<String, float> dicIn = hkHandler.AnalysisHkByDate(year, month, _logIn_User, cb_hk_spendEx.SelectedIndex, 1);
 
+            Series Series1 = new Series();
+            Series Series2 = new Series();
+            chart_AnalysisByDate.Series.Add(Series1);
+            chart_AnalysisByDate.Series.Add(Series2);
             foreach (KeyValuePair<string, float> each in dic)
             {
                 string key = each.Key;
                 float value = each.Value;
                 chart_AnalysisByDate.Series["Series1"].Points.AddXY(key, value);
-                //chart_AnalysisByDate.Series[key].LegendText = key+ " : " + value.ToString();
                 chart_AnalysisByDate.Series["Series1"].IsValueShownAsLabel = true;
                 chart_AnalysisByDate.Series["Series1"].IsVisibleInLegend = false;
-            }
 
+            }
+            foreach (KeyValuePair<string, float> each in dicIn)
+            {
+                string key = each.Key;
+                float value = each.Value;
+                chart_AnalysisByDate.Series["Series2"].Points.AddXY(key, value);
+                //chart_AnalysisByDate.Series[key].LegendText = key+ " : " + value.ToString();
+                chart_AnalysisByDate.Series["Series2"].IsValueShownAsLabel = true;
+                chart_AnalysisByDate.Series["Series2"].IsVisibleInLegend = false;
+            }
         }
 
         //setting for show
@@ -1265,6 +1346,7 @@ namespace Pro_0_Mylife
             LoadHouseKeepSpend(txt_hk_selectYear.Text, cb_hk_selectMonth.SelectedItem.ToString());
             LoadHouseKeepAccountList(txt_hk_selectYear.Text, cb_hk_selectMonth.SelectedItem.ToString());
             AnalysisHkByDate(txt_hk_selectYear.Text, cb_hk_selectMonth.SelectedItem.ToString());
+            AnalysisHkByGenre(txt_hk_selectYear.Text, cb_hk_selectMonth.SelectedItem.ToString());
         }
 
 
