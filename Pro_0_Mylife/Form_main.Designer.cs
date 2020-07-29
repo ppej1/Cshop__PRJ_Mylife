@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_main));
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
@@ -41,15 +42,27 @@
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend6 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea7 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend7 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series7 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea8 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend8 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series8 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.tab_form = new System.Windows.Forms.TabControl();
             this.tab_home = new System.Windows.Forms.TabPage();
-            this.panel23 = new System.Windows.Forms.Panel();
+            this.lb_title_Time = new System.Windows.Forms.Label();
             this.tab_Memo = new System.Windows.Forms.TabPage();
             this.pnl_memo_side = new System.Windows.Forms.Panel();
             this.Memo_flowpanel = new System.Windows.Forms.FlowLayoutPanel();
             this.txt_memo = new System.Windows.Forms.TextBox();
             this.memo_add = new System.Windows.Forms.Button();
-            this.Lb_memo = new System.Windows.Forms.Label();
+            this.lb_memo = new System.Windows.Forms.Label();
             this.tab_TodoList = new System.Windows.Forms.TabPage();
             this.todo_panel2 = new System.Windows.Forms.Panel();
             this.pnl_todo_side = new System.Windows.Forms.Panel();
@@ -112,7 +125,7 @@
             this.home_tab_result = new System.Windows.Forms.TabControl();
             this.hk_month_table = new System.Windows.Forms.TabPage();
             this.pnl_hk_input = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.pnl_hk_info = new System.Windows.Forms.Panel();
             this.lb_accountinfo5 = new System.Windows.Forms.Label();
             this.lb_accountinfo4 = new System.Windows.Forms.Label();
             this.lb_accountinfo3 = new System.Windows.Forms.Label();
@@ -135,7 +148,7 @@
             this.cal_4 = new System.Windows.Forms.Button();
             this.cal_7 = new System.Windows.Forms.Button();
             this.cal_CE = new System.Windows.Forms.Button();
-            this.button21 = new System.Windows.Forms.Button();
+            this.cal_equal = new System.Windows.Forms.Button();
             this.cal_comma = new System.Windows.Forms.Button();
             this.cal_0 = new System.Windows.Forms.Button();
             this.cal_Plus = new System.Windows.Forms.Button();
@@ -162,7 +175,7 @@
             this.lb_hk_title2 = new System.Windows.Forms.Label();
             this.cb_hk_exchangeEx = new System.Windows.Forms.ComboBox();
             this.cb_hk_incomeEx = new System.Windows.Forms.ComboBox();
-            this.EXCHANGE = new System.Windows.Forms.Button();
+            this.btn_exchange = new System.Windows.Forms.Button();
             this.btn_hk_income = new System.Windows.Forms.Button();
             this.txt_hk_incomePrice = new System.Windows.Forms.TextBox();
             this.txt_hk_incomeComment = new System.Windows.Forms.TextBox();
@@ -176,7 +189,7 @@
             this.btn_hk_AccountRegister = new System.Windows.Forms.Button();
             this.txt_hk_AccountName = new System.Windows.Forms.TextBox();
             this.cb_hk_AccountType = new System.Windows.Forms.ComboBox();
-            this.panel4 = new System.Windows.Forms.Panel();
+            this.pnl_hk_side = new System.Windows.Forms.Panel();
             this.flp_hk_income = new System.Windows.Forms.FlowLayoutPanel();
             this.lb_hk_income = new System.Windows.Forms.Label();
             this.lb_hk_spend = new System.Windows.Forms.Label();
@@ -192,8 +205,16 @@
             this.pnl_hk_side2 = new System.Windows.Forms.Panel();
             this.chart_hk_pie = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.flp_hk_analysis = new System.Windows.Forms.FlowLayoutPanel();
-            this.panel43 = new System.Windows.Forms.Panel();
             this.hk_year = new System.Windows.Forms.TabPage();
+            this.flp_hk_year = new System.Windows.Forms.FlowLayoutPanel();
+            this.pnl_hk_y_ana1 = new System.Windows.Forms.Panel();
+            this.pnl_hk_year_anal1 = new System.Windows.Forms.Panel();
+            this.chart_hk_year_anal2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.chart_hk_year_anal1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.pnl_hk_y_ana2 = new System.Windows.Forms.Panel();
+            this.pnl_hk_year_anal2 = new System.Windows.Forms.Panel();
+            this.chart_hk_year_anal4 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.chart_hk_year_anal3 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.UserInfo_panel = new System.Windows.Forms.Panel();
             this.btn_UserModify = new System.Windows.Forms.Button();
             this.btn_signOut = new System.Windows.Forms.Button();
@@ -201,14 +222,33 @@
             this.lb_UserName = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.LOGO = new System.Windows.Forms.Button();
-            this.Lb_loginUser = new System.Windows.Forms.Button();
+            this.lb_loginUser = new System.Windows.Forms.Button();
             this.Top_panel = new System.Windows.Forms.Panel();
             this.pnl_nav = new System.Windows.Forms.Panel();
             this.btn_ck = new System.Windows.Forms.Button();
             this.btn_shp = new System.Windows.Forms.Button();
             this.btn_hk = new System.Windows.Forms.Button();
             this.btn_memo = new System.Windows.Forms.Button();
+            this.Title_timer = new System.Windows.Forms.Timer(this.components);
+            this.txt_hk_A_selectYear = new System.Windows.Forms.TextBox();
+            this.flp_hk_year_anal2 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flp_hk_year_anal1 = new System.Windows.Forms.FlowLayoutPanel();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.pnl_hk_anal_title = new System.Windows.Forms.Panel();
+            this.lb_hk_Ana_title1 = new System.Windows.Forms.Label();
+            this.lb_hk_Ana_title2 = new System.Windows.Forms.Label();
+            this.lb_hk_Ana_title3 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
             this.tab_form.SuspendLayout();
             this.tab_home.SuspendLayout();
             this.tab_Memo.SuspendLayout();
@@ -231,7 +271,7 @@
             this.home_tab_result.SuspendLayout();
             this.hk_month_table.SuspendLayout();
             this.pnl_hk_input.SuspendLayout();
-            this.panel3.SuspendLayout();
+            this.pnl_hk_info.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart_inOut)).BeginInit();
             this.home_tab_insert.SuspendLayout();
             this.tabPage_hk_spend.SuspendLayout();
@@ -243,10 +283,21 @@
             ((System.ComponentModel.ISupportInitialize)(this.chart_AnalysisByDate)).BeginInit();
             this.pnl_hk_analysis1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart_hk_pie)).BeginInit();
+            this.hk_year.SuspendLayout();
+            this.flp_hk_year.SuspendLayout();
+            this.pnl_hk_y_ana1.SuspendLayout();
+            this.pnl_hk_year_anal1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chart_hk_year_anal2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart_hk_year_anal1)).BeginInit();
+            this.pnl_hk_y_ana2.SuspendLayout();
+            this.pnl_hk_year_anal2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chart_hk_year_anal4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart_hk_year_anal3)).BeginInit();
             this.UserInfo_panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.Top_panel.SuspendLayout();
             this.pnl_nav.SuspendLayout();
+            this.pnl_hk_anal_title.SuspendLayout();
             this.SuspendLayout();
             // 
             // tab_form
@@ -264,15 +315,14 @@
             // tab_home
             // 
             this.tab_home.BackColor = System.Drawing.Color.White;
-            this.tab_home.Controls.Add(this.panel23);
+            this.tab_home.Controls.Add(this.lb_title_Time);
             resources.ApplyResources(this.tab_home, "tab_home");
             this.tab_home.Name = "tab_home";
             // 
-            // panel23
+            // lb_title_Time
             // 
-            this.panel23.BackColor = System.Drawing.Color.White;
-            resources.ApplyResources(this.panel23, "panel23");
-            this.panel23.Name = "panel23";
+            resources.ApplyResources(this.lb_title_Time, "lb_title_Time");
+            this.lb_title_Time.Name = "lb_title_Time";
             // 
             // tab_Memo
             // 
@@ -281,7 +331,7 @@
             this.tab_Memo.Controls.Add(this.Memo_flowpanel);
             this.tab_Memo.Controls.Add(this.txt_memo);
             this.tab_Memo.Controls.Add(this.memo_add);
-            this.tab_Memo.Controls.Add(this.Lb_memo);
+            this.tab_Memo.Controls.Add(this.lb_memo);
             resources.ApplyResources(this.tab_Memo, "tab_Memo");
             this.tab_Memo.Name = "tab_Memo";
             // 
@@ -310,11 +360,11 @@
             this.memo_add.UseVisualStyleBackColor = false;
             this.memo_add.Click += new System.EventHandler(this.memo_add_Click);
             // 
-            // Lb_memo
+            // lb_memo
             // 
-            resources.ApplyResources(this.Lb_memo, "Lb_memo");
-            this.Lb_memo.Name = "Lb_memo";
-            this.Lb_memo.Click += new System.EventHandler(this.Lb_memo_Click);
+            resources.ApplyResources(this.lb_memo, "lb_memo");
+            this.lb_memo.Name = "lb_memo";
+            this.lb_memo.Click += new System.EventHandler(this.Lb_memo_Click);
             // 
             // tab_TodoList
             // 
@@ -915,7 +965,6 @@
             this.hk_Month.Controls.Add(this.cb_hk_selectMonth);
             this.hk_Month.Controls.Add(this.txt_hk_selectYear);
             this.hk_Month.Controls.Add(this.home_tab_result);
-            this.hk_Month.Controls.Add(this.panel43);
             resources.ApplyResources(this.hk_Month, "hk_Month");
             this.hk_Month.Name = "hk_Month";
             // 
@@ -946,6 +995,7 @@
             this.txt_hk_selectYear.BorderStyle = System.Windows.Forms.BorderStyle.None;
             resources.ApplyResources(this.txt_hk_selectYear, "txt_hk_selectYear");
             this.txt_hk_selectYear.Name = "txt_hk_selectYear";
+            this.txt_hk_selectYear.TextChanged += new System.EventHandler(this.txt_hk_selectYear_TextChanged);
             // 
             // home_tab_result
             // 
@@ -960,7 +1010,7 @@
             // 
             this.hk_month_table.BackColor = System.Drawing.Color.White;
             this.hk_month_table.Controls.Add(this.pnl_hk_input);
-            this.hk_month_table.Controls.Add(this.panel4);
+            this.hk_month_table.Controls.Add(this.pnl_hk_side);
             this.hk_month_table.Controls.Add(this.flp_hk_income);
             this.hk_month_table.Controls.Add(this.lb_hk_income);
             this.hk_month_table.Controls.Add(this.lb_hk_spend);
@@ -971,7 +1021,7 @@
             // pnl_hk_input
             // 
             this.pnl_hk_input.BackColor = System.Drawing.Color.White;
-            this.pnl_hk_input.Controls.Add(this.panel3);
+            this.pnl_hk_input.Controls.Add(this.pnl_hk_info);
             this.pnl_hk_input.Controls.Add(this.lb_hk_infoNo3);
             this.pnl_hk_input.Controls.Add(this.lb_hk_infoNo2);
             this.pnl_hk_input.Controls.Add(this.lb_hk_infoNo1);
@@ -986,16 +1036,16 @@
             resources.ApplyResources(this.pnl_hk_input, "pnl_hk_input");
             this.pnl_hk_input.Name = "pnl_hk_input";
             // 
-            // panel3
+            // pnl_hk_info
             // 
-            this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.Controls.Add(this.lb_accountinfo5);
-            this.panel3.Controls.Add(this.lb_accountinfo4);
-            this.panel3.Controls.Add(this.lb_accountinfo3);
-            this.panel3.Controls.Add(this.lb_accountinfo2);
-            this.panel3.Controls.Add(this.lb_accountinfo1);
-            resources.ApplyResources(this.panel3, "panel3");
-            this.panel3.Name = "panel3";
+            this.pnl_hk_info.BackColor = System.Drawing.Color.White;
+            this.pnl_hk_info.Controls.Add(this.lb_accountinfo5);
+            this.pnl_hk_info.Controls.Add(this.lb_accountinfo4);
+            this.pnl_hk_info.Controls.Add(this.lb_accountinfo3);
+            this.pnl_hk_info.Controls.Add(this.lb_accountinfo2);
+            this.pnl_hk_info.Controls.Add(this.lb_accountinfo1);
+            resources.ApplyResources(this.pnl_hk_info, "pnl_hk_info");
+            this.pnl_hk_info.Name = "pnl_hk_info";
             // 
             // lb_accountinfo5
             // 
@@ -1104,7 +1154,7 @@
             this.tabPage_hk_spend.Controls.Add(this.cal_4);
             this.tabPage_hk_spend.Controls.Add(this.cal_7);
             this.tabPage_hk_spend.Controls.Add(this.cal_CE);
-            this.tabPage_hk_spend.Controls.Add(this.button21);
+            this.tabPage_hk_spend.Controls.Add(this.cal_equal);
             this.tabPage_hk_spend.Controls.Add(this.cal_comma);
             this.tabPage_hk_spend.Controls.Add(this.cal_0);
             this.tabPage_hk_spend.Controls.Add(this.cal_Plus);
@@ -1166,13 +1216,13 @@
             this.cal_CE.Name = "cal_CE";
             this.cal_CE.UseVisualStyleBackColor = false;
             // 
-            // button21
+            // cal_equal
             // 
-            this.button21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.button21.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.button21, "button21");
-            this.button21.Name = "button21";
-            this.button21.UseVisualStyleBackColor = false;
+            this.cal_equal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.cal_equal.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.cal_equal, "cal_equal");
+            this.cal_equal.Name = "cal_equal";
+            this.cal_equal.UseVisualStyleBackColor = false;
             // 
             // cal_comma
             // 
@@ -1288,6 +1338,7 @@
             resources.GetString("cb_hk_spendEx.Items1"),
             resources.GetString("cb_hk_spendEx.Items2")});
             this.cb_hk_spendEx.Name = "cb_hk_spendEx";
+            this.cb_hk_spendEx.SelectedIndexChanged += new System.EventHandler(this.cb_hk_spendEx_SelectedIndexChanged);
             // 
             // cal_Percent
             // 
@@ -1347,7 +1398,7 @@
             this.tabPage_hk_income.Controls.Add(this.lb_hk_title2);
             this.tabPage_hk_income.Controls.Add(this.cb_hk_exchangeEx);
             this.tabPage_hk_income.Controls.Add(this.cb_hk_incomeEx);
-            this.tabPage_hk_income.Controls.Add(this.EXCHANGE);
+            this.tabPage_hk_income.Controls.Add(this.btn_exchange);
             this.tabPage_hk_income.Controls.Add(this.btn_hk_income);
             this.tabPage_hk_income.Controls.Add(this.txt_hk_incomePrice);
             this.tabPage_hk_income.Controls.Add(this.txt_hk_incomeComment);
@@ -1379,6 +1430,7 @@
             resources.GetString("cb_hk_exchangeEx.Items1"),
             resources.GetString("cb_hk_exchangeEx.Items2")});
             this.cb_hk_exchangeEx.Name = "cb_hk_exchangeEx";
+            this.cb_hk_exchangeEx.SelectedIndexChanged += new System.EventHandler(this.cb_hk_exchangeEx_SelectedIndexChanged);
             // 
             // cb_hk_incomeEx
             // 
@@ -1390,15 +1442,16 @@
             resources.GetString("cb_hk_incomeEx.Items1"),
             resources.GetString("cb_hk_incomeEx.Items2")});
             this.cb_hk_incomeEx.Name = "cb_hk_incomeEx";
+            this.cb_hk_incomeEx.SelectedIndexChanged += new System.EventHandler(this.cb_hk_incomeEx_SelectedIndexChanged);
             // 
-            // EXCHANGE
+            // btn_exchange
             // 
-            this.EXCHANGE.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.EXCHANGE.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.EXCHANGE, "EXCHANGE");
-            this.EXCHANGE.Name = "EXCHANGE";
-            this.EXCHANGE.UseVisualStyleBackColor = false;
-            this.EXCHANGE.Click += new System.EventHandler(this.EXCHANGE_Click);
+            this.btn_exchange.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btn_exchange.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.btn_exchange, "btn_exchange");
+            this.btn_exchange.Name = "btn_exchange";
+            this.btn_exchange.UseVisualStyleBackColor = false;
+            this.btn_exchange.Click += new System.EventHandler(this.EXCHANGE_Click);
             // 
             // btn_hk_income
             // 
@@ -1497,10 +1550,10 @@
             resources.GetString("cb_hk_AccountType.Items1")});
             this.cb_hk_AccountType.Name = "cb_hk_AccountType";
             // 
-            // panel4
+            // pnl_hk_side
             // 
-            resources.ApplyResources(this.panel4, "panel4");
-            this.panel4.Name = "panel4";
+            resources.ApplyResources(this.pnl_hk_side, "pnl_hk_side");
+            this.pnl_hk_side.Name = "pnl_hk_side";
             // 
             // flp_hk_income
             // 
@@ -1617,16 +1670,105 @@
             this.flp_hk_analysis.BackColor = System.Drawing.Color.White;
             this.flp_hk_analysis.Name = "flp_hk_analysis";
             // 
-            // panel43
-            // 
-            resources.ApplyResources(this.panel43, "panel43");
-            this.panel43.Name = "panel43";
-            // 
             // hk_year
             // 
             this.hk_year.BackColor = System.Drawing.Color.White;
+            this.hk_year.Controls.Add(this.txt_hk_A_selectYear);
+            this.hk_year.Controls.Add(this.flp_hk_year);
             resources.ApplyResources(this.hk_year, "hk_year");
             this.hk_year.Name = "hk_year";
+            // 
+            // flp_hk_year
+            // 
+            resources.ApplyResources(this.flp_hk_year, "flp_hk_year");
+            this.flp_hk_year.Controls.Add(this.pnl_hk_y_ana1);
+            this.flp_hk_year.Controls.Add(this.pnl_hk_y_ana2);
+            this.flp_hk_year.Name = "flp_hk_year";
+            // 
+            // pnl_hk_y_ana1
+            // 
+            this.pnl_hk_y_ana1.Controls.Add(this.pnl_hk_year_anal1);
+            this.pnl_hk_y_ana1.Controls.Add(this.chart_hk_year_anal2);
+            this.pnl_hk_y_ana1.Controls.Add(this.chart_hk_year_anal1);
+            resources.ApplyResources(this.pnl_hk_y_ana1, "pnl_hk_y_ana1");
+            this.pnl_hk_y_ana1.Name = "pnl_hk_y_ana1";
+            // 
+            // pnl_hk_year_anal1
+            // 
+            this.pnl_hk_year_anal1.BackColor = System.Drawing.Color.DarkGray;
+            this.pnl_hk_year_anal1.Controls.Add(this.pnl_hk_anal_title);
+            this.pnl_hk_year_anal1.Controls.Add(this.flp_hk_year_anal1);
+            resources.ApplyResources(this.pnl_hk_year_anal1, "pnl_hk_year_anal1");
+            this.pnl_hk_year_anal1.Name = "pnl_hk_year_anal1";
+            // 
+            // chart_hk_year_anal2
+            // 
+            chartArea5.Name = "ChartArea1";
+            this.chart_hk_year_anal2.ChartAreas.Add(chartArea5);
+            legend5.Name = "Legend1";
+            this.chart_hk_year_anal2.Legends.Add(legend5);
+            resources.ApplyResources(this.chart_hk_year_anal2, "chart_hk_year_anal2");
+            this.chart_hk_year_anal2.Name = "chart_hk_year_anal2";
+            series5.ChartArea = "ChartArea1";
+            series5.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.StackedColumn;
+            series5.Legend = "Legend1";
+            series5.Name = "Series1";
+            this.chart_hk_year_anal2.Series.Add(series5);
+            // 
+            // chart_hk_year_anal1
+            // 
+            chartArea6.Name = "ChartArea1";
+            this.chart_hk_year_anal1.ChartAreas.Add(chartArea6);
+            legend6.Name = "Legend1";
+            this.chart_hk_year_anal1.Legends.Add(legend6);
+            resources.ApplyResources(this.chart_hk_year_anal1, "chart_hk_year_anal1");
+            this.chart_hk_year_anal1.Name = "chart_hk_year_anal1";
+            series6.ChartArea = "ChartArea1";
+            series6.Legend = "Legend1";
+            series6.Name = "Series1";
+            this.chart_hk_year_anal1.Series.Add(series6);
+            // 
+            // pnl_hk_y_ana2
+            // 
+            this.pnl_hk_y_ana2.Controls.Add(this.pnl_hk_year_anal2);
+            this.pnl_hk_y_ana2.Controls.Add(this.chart_hk_year_anal4);
+            this.pnl_hk_y_ana2.Controls.Add(this.chart_hk_year_anal3);
+            resources.ApplyResources(this.pnl_hk_y_ana2, "pnl_hk_y_ana2");
+            this.pnl_hk_y_ana2.Name = "pnl_hk_y_ana2";
+            // 
+            // pnl_hk_year_anal2
+            // 
+            this.pnl_hk_year_anal2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.pnl_hk_year_anal2.Controls.Add(this.flp_hk_year_anal2);
+            resources.ApplyResources(this.pnl_hk_year_anal2, "pnl_hk_year_anal2");
+            this.pnl_hk_year_anal2.Name = "pnl_hk_year_anal2";
+            // 
+            // chart_hk_year_anal4
+            // 
+            chartArea7.Name = "ChartArea1";
+            this.chart_hk_year_anal4.ChartAreas.Add(chartArea7);
+            legend7.Name = "Legend1";
+            this.chart_hk_year_anal4.Legends.Add(legend7);
+            resources.ApplyResources(this.chart_hk_year_anal4, "chart_hk_year_anal4");
+            this.chart_hk_year_anal4.Name = "chart_hk_year_anal4";
+            series7.ChartArea = "ChartArea1";
+            series7.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.StackedColumn;
+            series7.Legend = "Legend1";
+            series7.Name = "Series1";
+            this.chart_hk_year_anal4.Series.Add(series7);
+            // 
+            // chart_hk_year_anal3
+            // 
+            chartArea8.Name = "ChartArea1";
+            this.chart_hk_year_anal3.ChartAreas.Add(chartArea8);
+            legend8.Name = "Legend1";
+            this.chart_hk_year_anal3.Legends.Add(legend8);
+            resources.ApplyResources(this.chart_hk_year_anal3, "chart_hk_year_anal3");
+            this.chart_hk_year_anal3.Name = "chart_hk_year_anal3";
+            series8.ChartArea = "ChartArea1";
+            series8.Legend = "Legend1";
+            series8.Name = "Series1";
+            this.chart_hk_year_anal3.Series.Add(series8);
             // 
             // UserInfo_panel
             // 
@@ -1690,20 +1832,20 @@
             this.LOGO.UseVisualStyleBackColor = false;
             this.LOGO.Click += new System.EventHandler(this.LOGO_Click);
             // 
-            // Lb_loginUser
+            // lb_loginUser
             // 
-            resources.ApplyResources(this.Lb_loginUser, "Lb_loginUser");
-            this.Lb_loginUser.BackColor = System.Drawing.Color.Transparent;
-            this.Lb_loginUser.FlatAppearance.BorderSize = 0;
-            this.Lb_loginUser.Name = "Lb_loginUser";
-            this.Lb_loginUser.UseVisualStyleBackColor = false;
-            this.Lb_loginUser.Click += new System.EventHandler(this.Lb_loginUser_Click);
+            resources.ApplyResources(this.lb_loginUser, "lb_loginUser");
+            this.lb_loginUser.BackColor = System.Drawing.Color.Transparent;
+            this.lb_loginUser.FlatAppearance.BorderSize = 0;
+            this.lb_loginUser.Name = "lb_loginUser";
+            this.lb_loginUser.UseVisualStyleBackColor = false;
+            this.lb_loginUser.Click += new System.EventHandler(this.Lb_loginUser_Click);
             // 
             // Top_panel
             // 
             this.Top_panel.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.Top_panel.Controls.Add(this.LOGO);
-            this.Top_panel.Controls.Add(this.Lb_loginUser);
+            this.Top_panel.Controls.Add(this.lb_loginUser);
             resources.ApplyResources(this.Top_panel, "Top_panel");
             this.Top_panel.Name = "Top_panel";
             // 
@@ -1753,6 +1895,121 @@
             this.btn_memo.Name = "btn_memo";
             this.btn_memo.Click += new System.EventHandler(this.Btn_memo_Click);
             // 
+            // Title_timer
+            // 
+            this.Title_timer.Enabled = true;
+            this.Title_timer.Interval = 1000;
+            this.Title_timer.Tick += new System.EventHandler(this.Title_timer_Tick);
+            // 
+            // txt_hk_A_selectYear
+            // 
+            this.txt_hk_A_selectYear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.txt_hk_A_selectYear.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            resources.ApplyResources(this.txt_hk_A_selectYear, "txt_hk_A_selectYear");
+            this.txt_hk_A_selectYear.Name = "txt_hk_A_selectYear";
+            this.txt_hk_A_selectYear.TextChanged += new System.EventHandler(this.txt_hk_A_selectYear_TextChanged);
+            // 
+            // flp_hk_year_anal2
+            // 
+            resources.ApplyResources(this.flp_hk_year_anal2, "flp_hk_year_anal2");
+            this.flp_hk_year_anal2.Name = "flp_hk_year_anal2";
+            // 
+            // flp_hk_year_anal1
+            // 
+            resources.ApplyResources(this.flp_hk_year_anal1, "flp_hk_year_anal1");
+            this.flp_hk_year_anal1.BackColor = System.Drawing.Color.White;
+            this.flp_hk_year_anal1.Name = "flp_hk_year_anal1";
+            // 
+            // pnl_hk_anal_title
+            // 
+            this.pnl_hk_anal_title.BackColor = System.Drawing.Color.White;
+            this.pnl_hk_anal_title.Controls.Add(this.label11);
+            this.pnl_hk_anal_title.Controls.Add(this.label10);
+            this.pnl_hk_anal_title.Controls.Add(this.label9);
+            this.pnl_hk_anal_title.Controls.Add(this.label8);
+            this.pnl_hk_anal_title.Controls.Add(this.label7);
+            this.pnl_hk_anal_title.Controls.Add(this.label6);
+            this.pnl_hk_anal_title.Controls.Add(this.label5);
+            this.pnl_hk_anal_title.Controls.Add(this.label4);
+            this.pnl_hk_anal_title.Controls.Add(this.label3);
+            this.pnl_hk_anal_title.Controls.Add(this.label2);
+            this.pnl_hk_anal_title.Controls.Add(this.label1);
+            this.pnl_hk_anal_title.Controls.Add(this.lb_hk_Ana_title3);
+            this.pnl_hk_anal_title.Controls.Add(this.lb_hk_Ana_title2);
+            this.pnl_hk_anal_title.Controls.Add(this.lb_hk_Ana_title1);
+            resources.ApplyResources(this.pnl_hk_anal_title, "pnl_hk_anal_title");
+            this.pnl_hk_anal_title.Name = "pnl_hk_anal_title";
+            // 
+            // lb_hk_Ana_title1
+            // 
+            resources.ApplyResources(this.lb_hk_Ana_title1, "lb_hk_Ana_title1");
+            this.lb_hk_Ana_title1.Name = "lb_hk_Ana_title1";
+            // 
+            // lb_hk_Ana_title2
+            // 
+            resources.ApplyResources(this.lb_hk_Ana_title2, "lb_hk_Ana_title2");
+            this.lb_hk_Ana_title2.Name = "lb_hk_Ana_title2";
+            // 
+            // lb_hk_Ana_title3
+            // 
+            resources.ApplyResources(this.lb_hk_Ana_title3, "lb_hk_Ana_title3");
+            this.lb_hk_Ana_title3.Name = "lb_hk_Ana_title3";
+            // 
+            // label1
+            // 
+            resources.ApplyResources(this.label1, "label1");
+            this.label1.Name = "label1";
+            // 
+            // label2
+            // 
+            resources.ApplyResources(this.label2, "label2");
+            this.label2.Name = "label2";
+            // 
+            // label3
+            // 
+            resources.ApplyResources(this.label3, "label3");
+            this.label3.Name = "label3";
+            // 
+            // label4
+            // 
+            resources.ApplyResources(this.label4, "label4");
+            this.label4.Name = "label4";
+            // 
+            // label5
+            // 
+            resources.ApplyResources(this.label5, "label5");
+            this.label5.Name = "label5";
+            // 
+            // label6
+            // 
+            resources.ApplyResources(this.label6, "label6");
+            this.label6.Name = "label6";
+            // 
+            // label7
+            // 
+            resources.ApplyResources(this.label7, "label7");
+            this.label7.Name = "label7";
+            // 
+            // label8
+            // 
+            resources.ApplyResources(this.label8, "label8");
+            this.label8.Name = "label8";
+            // 
+            // label9
+            // 
+            resources.ApplyResources(this.label9, "label9");
+            this.label9.Name = "label9";
+            // 
+            // label10
+            // 
+            resources.ApplyResources(this.label10, "label10");
+            this.label10.Name = "label10";
+            // 
+            // label11
+            // 
+            resources.ApplyResources(this.label11, "label11");
+            this.label11.Name = "label11";
+            // 
             // Form_main
             // 
             resources.ApplyResources(this, "$this");
@@ -1794,7 +2051,7 @@
             this.home_tab_result.ResumeLayout(false);
             this.hk_month_table.ResumeLayout(false);
             this.pnl_hk_input.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
+            this.pnl_hk_info.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.chart_inOut)).EndInit();
             this.home_tab_insert.ResumeLayout(false);
             this.tabPage_hk_spend.ResumeLayout(false);
@@ -1809,10 +2066,22 @@
             ((System.ComponentModel.ISupportInitialize)(this.chart_AnalysisByDate)).EndInit();
             this.pnl_hk_analysis1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.chart_hk_pie)).EndInit();
+            this.hk_year.ResumeLayout(false);
+            this.hk_year.PerformLayout();
+            this.flp_hk_year.ResumeLayout(false);
+            this.pnl_hk_y_ana1.ResumeLayout(false);
+            this.pnl_hk_year_anal1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.chart_hk_year_anal2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart_hk_year_anal1)).EndInit();
+            this.pnl_hk_y_ana2.ResumeLayout(false);
+            this.pnl_hk_year_anal2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.chart_hk_year_anal4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart_hk_year_anal3)).EndInit();
             this.UserInfo_panel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.Top_panel.ResumeLayout(false);
             this.pnl_nav.ResumeLayout(false);
+            this.pnl_hk_anal_title.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1824,7 +2093,7 @@
         private System.Windows.Forms.TabPage tab_Memo;
         private System.Windows.Forms.TabPage tab_TodoList;
         private System.Windows.Forms.TabPage tab_shopping;
-        private System.Windows.Forms.Label Lb_memo;
+        private System.Windows.Forms.Label lb_memo;
         private System.Windows.Forms.TextBox txt_memo;
         private System.Windows.Forms.Button memo_add;
         private System.Windows.Forms.Button btn_TodoRegister;
@@ -1850,7 +2119,7 @@
         private System.Windows.Forms.Panel pnl_memo_side;
         private System.Windows.Forms.Panel pnl_todo_side;
         private System.Windows.Forms.Panel UserInfo_panel;
-        private System.Windows.Forms.Button Lb_loginUser;
+        private System.Windows.Forms.Button lb_loginUser;
         private System.Windows.Forms.Button btn_signOut;
         private System.Windows.Forms.Label lb_UserEmail;
         private System.Windows.Forms.Label lb_UserName;
@@ -1875,7 +2144,6 @@
         private System.Windows.Forms.Label lb_productName;
         private System.Windows.Forms.ComboBox cb_shp_type;
         private System.Windows.Forms.Button btn_shpRegister;
-        private System.Windows.Forms.Panel panel23;
         private System.Windows.Forms.Label lb_shp_price;
         private System.Windows.Forms.ComboBox cb_shp_exchangeType;
         private System.Windows.Forms.TabControl shp_tab_result;
@@ -1883,7 +2151,6 @@
         private System.Windows.Forms.TabPage tabPage_purechased;
         private System.Windows.Forms.Panel pnl_shp_side1;
         private System.Windows.Forms.FlowLayoutPanel flp_wishShp;
-        private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.Panel pnl_shp_purchased;
         private System.Windows.Forms.Panel pnl_shp_side2;
         private System.Windows.Forms.FlowLayoutPanel flp_purchasedList;
@@ -1923,7 +2190,6 @@
         private System.Windows.Forms.Label lb_hk_spend;
         private System.Windows.Forms.FlowLayoutPanel flp_hk_spend;
         private System.Windows.Forms.TabPage hk_month_Analysis;
-        private System.Windows.Forms.Panel panel43;
         private System.Windows.Forms.TabPage hk_year;
         private System.Windows.Forms.Panel pnl_hk_analysis2;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart_AnalysisByDate;
@@ -1934,7 +2200,7 @@
         private System.Windows.Forms.Button cal_4;
         private System.Windows.Forms.Button cal_7;
         private System.Windows.Forms.Button cal_CE;
-        private System.Windows.Forms.Button button21;
+        private System.Windows.Forms.Button cal_equal;
         private System.Windows.Forms.Button cal_comma;
         private System.Windows.Forms.Button cal_0;
         private System.Windows.Forms.Button cal_Plus;
@@ -1954,7 +2220,7 @@
         private System.Windows.Forms.Label lb_exchange;
         private System.Windows.Forms.ComboBox cb_hk_exchangeEx;
         private System.Windows.Forms.ComboBox cb_hk_incomeEx;
-        private System.Windows.Forms.Button EXCHANGE;
+        private System.Windows.Forms.Button btn_exchange;
         private System.Windows.Forms.Button btn_hk_income;
         private System.Windows.Forms.DateTimePicker Todo_startDate;
         private System.Windows.Forms.Panel pnl_hk_side1;
@@ -1973,13 +2239,13 @@
         private System.Windows.Forms.Label lb_hk_infoNo3;
         private System.Windows.Forms.Label lb_hk_infoNo2;
         private System.Windows.Forms.Label lb_hk_infoNo1;
-        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel pnl_hk_info;
         private System.Windows.Forms.Label lb_accountinfo5;
         private System.Windows.Forms.Label lb_accountinfo4;
         private System.Windows.Forms.Label lb_accountinfo3;
         private System.Windows.Forms.Label lb_accountinfo2;
         private System.Windows.Forms.Label lb_accountinfo1;
-        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel pnl_hk_side;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart_hk_pie;
         private System.Windows.Forms.Panel pnl_hk_analysis_title;
         private System.Windows.Forms.Label lb_hk_anal_title3;
@@ -1987,5 +2253,35 @@
         private System.Windows.Forms.Label lb_hk_anal_title1;
         private System.Windows.Forms.FlowLayoutPanel flp_hk_analysis;
         private System.Windows.Forms.Panel pnl_hk_side2;
+        private System.Windows.Forms.FlowLayoutPanel flp_hk_year;
+        private System.Windows.Forms.Panel pnl_hk_y_ana1;
+        private System.Windows.Forms.Panel pnl_hk_year_anal1;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chart_hk_year_anal2;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chart_hk_year_anal1;
+        private System.Windows.Forms.Timer Title_timer;
+        private System.Windows.Forms.Label lb_title_Time;
+        private System.Windows.Forms.Panel pnl_hk_y_ana2;
+        private System.Windows.Forms.Panel pnl_hk_year_anal2;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chart_hk_year_anal4;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chart_hk_year_anal3;
+        private System.Windows.Forms.TextBox txt_hk_A_selectYear;
+        private System.Windows.Forms.FlowLayoutPanel flp_hk_year_anal1;
+        private System.Windows.Forms.FlowLayoutPanel flp_hk_year_anal2;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private System.Windows.Forms.Panel pnl_hk_anal_title;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lb_hk_Ana_title3;
+        private System.Windows.Forms.Label lb_hk_Ana_title2;
+        private System.Windows.Forms.Label lb_hk_Ana_title1;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label11;
     }
 }

@@ -9,6 +9,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Media;
+using System.Runtime.Remoting.Metadata.W3cXsd2001;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
@@ -41,6 +42,7 @@ namespace Pro_0_Mylife
             todolistFlowPanel.AutoScroll = true;
             UserInfo_panel.Hide();
             cb_shp_exchangeType.SelectedIndex = 1;
+
         }
 
 
@@ -68,7 +70,7 @@ namespace Pro_0_Mylife
         private void SettingUser()
         {
             logindao.selectNowLogin(_logIn_User);           
-            Lb_loginUser.Text = _logIn_User.FirstName +" " +_logIn_User.LastName + " 님";
+            lb_loginUser.Text = _logIn_User.FirstName +" " +_logIn_User.LastName + " 님";
             lb_UserName.Text = _logIn_User.FirstName + " " + _logIn_User.LastName;
             lb_UserEmail.Text = _logIn_User.Email;
         }
@@ -135,26 +137,15 @@ namespace Pro_0_Mylife
         // nav function //////////////////////////////////////////////////////////////////////////
         private void LOGO_Click(object sender, EventArgs e)
         {
-            tab_Memo.Hide();
-            tab_TodoList.Hide();
-            tab_HouseKeep.Hide();
-            tab_shopping.Hide();
-            tab_home.Show();
-
+            TabPageHideAndShow(tab_home, tab_shopping, tab_Memo, tab_TodoList, tab_HouseKeep);
             tab_form.SelectedIndex = 0;
             btn_setting(LOGO);
-
 
         }
 
         private void Btn_memo_Click(object sender, EventArgs e)
         {
-            tab_home.Hide();
-            tab_TodoList.Hide();
-            tab_HouseKeep.Hide();
-            tab_shopping.Hide();
-            tab_Memo.Show();
-
+            TabPageHideAndShow(tab_Memo, tab_home, tab_shopping, tab_TodoList, tab_HouseKeep);
             tab_form.SelectedIndex = 1;
             btn_setting(btn_memo);
             LoadMemo();
@@ -162,31 +153,19 @@ namespace Pro_0_Mylife
 
         private void Btn_ck_Click(object sender, EventArgs e)
         {
-            tab_home.Hide();
-            tab_Memo.Hide();
-            tab_HouseKeep.Hide();
-            tab_shopping.Hide();
-            tab_TodoList.Show();
-
+            TabPageHideAndShow(tab_TodoList, tab_home, tab_Memo, tab_shopping, tab_HouseKeep);
             tab_form.SelectedIndex = 2;
             btn_setting(btn_ck);
             ResetTodolistForm();
-        
         }
 
         private void Btn_shp_Click(object sender, EventArgs e)
         {
-            tab_home.Hide();
-            tab_Memo.Hide();
-            tab_TodoList.Hide();
-            tab_HouseKeep.Hide();
-            tab_shopping.Show();
-
+            TabPageHideAndShow(tab_shopping, tab_home, tab_Memo, tab_TodoList, tab_HouseKeep);
             tab_form.SelectedIndex = 3;
             loadShoppingProdType();
             resetShoppingRegister();
 
-            
             if(shp_tab_result.SelectedIndex == 0) 
             {
                 loadshopList(shp_tab_result.SelectedIndex);
@@ -198,22 +177,23 @@ namespace Pro_0_Mylife
 
         private void Btn_hk_click(object sender, EventArgs e)
         {
-            tab_home.Hide();
-            tab_Memo.Hide();
-            tab_TodoList.Hide();
-            tab_shopping.Hide();
-            tab_HouseKeep.Show();
-
+            TabPageHideAndShow(tab_HouseKeep, tab_home, tab_Memo, tab_TodoList, tab_shopping);
             SettingHouseKeepAccount();
             SettingHouseKeepType();
             ResetHouseKeep();
             SetHouseKeepDate();
 
-
             tab_form.SelectedIndex = 4;
             btn_setting(btn_hk);
         }
-
+        private void TabPageHideAndShow(TabPage show, TabPage hide1, TabPage hide2, TabPage hide3, TabPage hide4)
+        {
+            show.Show();
+            hide1.Hide();
+            hide2.Hide();
+            hide3.Hide();
+            hide4.Hide();
+        }
         private void btn_setting(Button btn_select)
         {
             btn_memo.BackColor = Color.FromArgb(37, 44, 65);
@@ -227,7 +207,6 @@ namespace Pro_0_Mylife
             btn_select.BackColor = Color.FromArgb(255, 255, 255);
             btn_select.ForeColor = Color.FromArgb(0, 0, 0);
         }
-
 
         // memo function /////////////////////////////////////////////////////////////////////////////////
         // memo label click 
@@ -265,33 +244,11 @@ namespace Pro_0_Mylife
                 Label txtbox_date = new Label();
                 Button btn_x = new Button();
 
-                pnl.Size = new Size(200, 250);
-                pnl.BackColor = Color.FromArgb(255, 255, 102);
-                pnl.Name = String.Format("pnl_text_{0}", row["ME_NO"].ToString());
+                PanelDesign(pnl, 200, 250, 255, 255, 102,String.Format("pnl_text_{0}", row["ME_NO"].ToString()));
+                LabelDesign(txtbox_contents, 140, 175, 15, 15, 255, 255, 102, String.Format("txt_content_{0}", row["ME_NO"].ToString()), String.Format("{0}", row["ME_CONTENTS"].ToString()));
+                LabelDesign(txtbox_date, 145, 25, 50, 214, 255, 255, 102, String.Format("txt_date_{0}", row["ME_NO"].ToString()), String.Format("{0}", row["ME_REG_DATE"].ToString()));
 
-                txtbox_contents.Size = new Size(140, 175);
-                txtbox_contents.Location = new Point(15, 15);
-                txtbox_contents.BackColor = Color.FromArgb(255, 255, 102);
-                txtbox_contents.BorderStyle = BorderStyle.None;
-                txtbox_contents.Text = String.Format("{0}", row["ME_CONTENTS"].ToString());
-                txtbox_contents.Name = String.Format("txt_content_{0}", row["ME_NO"].ToString());
-
-
-                txtbox_date.Size = new Size(145, 25);
-                txtbox_date.Location = new Point(50, 214); 
-                txtbox_date.BackColor = Color.FromArgb(255, 255, 102);
-                txtbox_date.BorderStyle = BorderStyle.None;
-                txtbox_date.Text = String.Format("{0}", row["ME_REG_DATE"].ToString());
-                txtbox_date.Name = String.Format("txt_date_{0}", row["ME_NO"].ToString());
-
-                btn_x.Size = new Size(28,28);
-                btn_x.BackColor = System.Drawing.Color.FromArgb(255, 255, 102);
-                btn_x.Font = new System.Drawing.Font("Ravie", 10F);
-                btn_x.FlatStyle = FlatStyle.Flat;
-                btn_x.FlatAppearance.BorderSize = 0;
-                btn_x.Location = new Point(170, 4);
-                btn_x.Text = String.Format("X");
-                btn_x.Name = String.Format("{0}", row["ME_NO"].ToString());
+                ButtonDesign(btn_x, 28, 28, 170, 4, 255, 255, 102, String.Format("{0}", row["ME_NO"].ToString()), String.Format("X"));
                 btn_x.Click += delete_memo_click;
                 
                 pnl.Controls.Add(txtbox_contents);
@@ -370,7 +327,6 @@ namespace Pro_0_Mylife
             }
         }
 
-
         private void ChangeMinute()
         {
             if (DateTime.Compare(DateTime.Parse(Todo_startDate.Value.ToString("yyyy-MM-dd")), DateTime.Parse(Todo_EndDate.Value.ToString("yyyy-MM-dd"))) == 0)
@@ -440,57 +396,29 @@ namespace Pro_0_Mylife
                 Label txt_Period = new Label();
                 Label txt_state = new Label();
 
-                pnl.Size = new Size(804, 60);
-                pnl.BackColor = Color.FromArgb(255, 255, 255);
-                pnl.BorderStyle = BorderStyle.FixedSingle;
-                pnl.Name = String.Format("pnl_text_{0}", row["TOD_NO"].ToString());
+                PanelDesign(pnl, 804, 60, 255, 255, 255, String.Format("pnl_text_{0}", row["TOD_NO"].ToString()));
 
                 ch_todo.AutoSize = false;
                 ch_todo.Size = new Size(15, 30);
                 ch_todo.Location = new Point(14, 15);
                 ch_todo.Name = String.Format("{0}", row["TOD_NO"].ToString());
-                if (row[5].ToString().Equals("1"))
+                if (row["TOD_STATE"].ToString().Equals("1"))
                 {
                     ch_todo.Checked = true;
                 }
                 ch_todo.CheckStateChanged += TodoCheckStateChanged;
 
-                txt_DDay.AutoSize = false;
-                txt_DDay.Size = new Size(60, 40);
-                txt_DDay.Location = new Point(43, 9);
-                txt_DDay.BackColor = Color.FromArgb(255, 255, 255);
-                txt_DDay.BorderStyle = BorderStyle.None;
-                txt_DDay.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-                txt_DDay.Name = String.Format("txt_DDayt_{0}", row["TOD_NO"].ToString());
-                txt_DDay.Text = todolistHandler.selectDDay(DateTime.Parse(row["TOD_DEADLINE_DATE"].ToString()));
 
-                txt_contents.AutoSize = false;
-                txt_contents.Size = new Size(515, 40);
-                txt_contents.Location = new Point(107, 9);
-                txt_contents.BackColor = Color.FromArgb(255, 255, 255);
-                txt_contents.BorderStyle = BorderStyle.None;
-                txt_contents.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-                txt_contents.Text = String.Format("{0}", row["TOD_CONTENTS"].ToString());
-                txt_contents.Name = String.Format("{0}", row["TOD_NO"].ToString());
+                LabelDesign(txt_DDay,60,40,43,9,255,255,255, todolistHandler.selectDDay(DateTime.Parse(row["TOD_DEADLINE_DATE"].ToString())), todolistHandler.selectDDay(DateTime.Parse(row["TOD_DEADLINE_DATE"].ToString())));
+
+                LabelDesign(txt_contents, 515, 40, 107, 9, 255, 255, 255, String.Format("{0}", row["TOD_NO"].ToString()), String.Format("{0}", row["TOD_CONTENTS"].ToString()));
                 txt_contents.Click += PopUpTodo;
 
-                txt_Period.AutoSize = false;
-                txt_Period.Size = new Size(80, 40);
-                txt_Period.Location = new Point(628, 9);
-                txt_Period.BackColor = Color.FromArgb(255, 255, 255);
-                txt_Period.BorderStyle = BorderStyle.None;
+                LabelDesign(txt_Period,80,40,628,9,255,255,255, String.Format("txt_Period_{0}", row["TOD_NO"].ToString()), String.Format("{0}", row["TOD_END_DATE"].ToString()));
                 txt_Period.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-                txt_Period.Text = String.Format("{0}", row["TOD_END_DATE"].ToString());
-                txt_Period.Name = String.Format("txt_Period_{0}", row["TOD_NO"].ToString());
 
-                txt_state.AutoSize = false;
-                txt_state.Size = new Size(90, 40);
-                txt_state.Location = new Point(715, 9);
-                txt_state.BackColor = Color.FromArgb(255, 255, 255);
-                txt_state.BorderStyle = BorderStyle.None;
+                LabelDesign(txt_state,90,40,715,9,255,255,255, String.Format("txt_state_{0}", row["TOD_NO"].ToString()), todolistHandler.todoState(row["TOD_STATE"].ToString(), DateTime.Parse(row[5].ToString())));
                 txt_state.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-                txt_state.Name = String.Format("txt_state_{0}", row["TOD_NO"].ToString());
-                txt_state.Text = todolistHandler.todoState(row["TOD_STATE"].ToString(), DateTime.Parse(row[5].ToString()));
 
                 pnl.Controls.Add(ch_todo);
                 pnl.Controls.Add(txt_DDay);
@@ -502,14 +430,12 @@ namespace Pro_0_Mylife
             }
         }
 
-
         private void TodoCheckStateChanged(object sender, EventArgs e)
         {
             CheckBox chk = (CheckBox)sender;            
             todoListDao.ChangeChecklistState(chk.Name, chk.Checked);           
             LoadAllTodolist(Todo_Calendar.SelectionStart);
         }
-
 
         private void btn_search_Click(object sender, EventArgs e)
         {
@@ -542,7 +468,6 @@ namespace Pro_0_Mylife
                     PopUp.Close();
                     break;
             }
-
         }
 
 
@@ -635,10 +560,8 @@ namespace Pro_0_Mylife
                 Label txt_buyDate = new Label();
                 Label txt_state = new Label();
 
-                pnl.Size = new Size(754, 100);
-                pnl.BackColor = Color.FromArgb(255, 255, 255);
-                pnl.BorderStyle = BorderStyle.FixedSingle;
-                pnl.Name = String.Format("pnl_text_{0}", row["SHOP_NO"].ToString());
+
+                PanelDesign(pnl, 754, 100, 255, 255, 255, String.Format("pnl_text_{0}", row["SHOP_NO"].ToString()));
 
                 ch_wishShp.AutoSize = false;
                 ch_wishShp.Size = new Size(14, 14);
@@ -646,51 +569,22 @@ namespace Pro_0_Mylife
                 ch_wishShp.Name = String.Format("{0}", row["SHOP_NO"].ToString());
                 ch_wishShp.CheckedChanged += ch_wishShp_Change;
 
-                txt_Type.AutoSize = false;
-                txt_Type.Size = new Size(180,20);
-                txt_Type.Location = new Point(50, 5);
-                txt_Type.BackColor = Color.FromArgb(255, 255, 255);
-                txt_Type.BorderStyle = BorderStyle.None;
-                txt_Type.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-                txt_Type.Name = String.Format("txt_DDayt_{0}", row["SHOP_NO"].ToString());
                 DataSet tds = new DataSet();
                 shoppingWishDAO.SelectOneProdType(tds, Convert.ToInt32(row["PROD_TYPE"].ToString()));
                 DataTable ttb = tds.Tables[0];
-                txt_Type.Text = String.Format("{0}", ttb.Rows[0]["PROD_T_NAME"].ToString());
+                LabelDesign(txt_Type,180,20,50,5,255,255,255, String.Format("txt_DDayt_{0}", row["SHOP_NO"].ToString()), String.Format("{0}", ttb.Rows[0]["PROD_T_NAME"].ToString()));
 
-                txt_contents.Text = String.Format("{0}", row["SHOP_NAME"].ToString());
-                txt_contents.Name = String.Format("{0}", row["SHOP_NO"].ToString());
-                txt_contents.AutoSize = false;
-                txt_contents.Size = new Size(590, 40);
-                txt_contents.Location = new Point(50, 30);
-                txt_contents.BackColor = Color.FromArgb(255, 255, 255);
-                txt_contents.BorderStyle = BorderStyle.None;
-                txt_contents.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+                LabelDesign(txt_contents,590,40,50,30,255,255,255, String.Format("{0}", row["SHOP_NO"].ToString()), String.Format("{0}", row["SHOP_NAME"].ToString()));
 
-                txt_registerDate.Text = String.Format("{0}", DateTime.Parse(row["SHOP_REGISTER"].ToString()).ToString("yyyy-MM-dd"));
-                txt_registerDate.Name = String.Format("txt_Period_{0}", row["SHOP_NO"].ToString());
-                txt_registerDate.AutoSize = false;
-                txt_registerDate.Size = new Size(70, 20);
-                txt_registerDate.Location = new Point(50, 75);
-                txt_registerDate.BackColor = Color.FromArgb(255, 255, 255);
-                txt_registerDate.BorderStyle = BorderStyle.None;
+                LabelDesign(txt_registerDate,70,20,50,75,255,255,255, String.Format("txt_Period_{0}", row["SHOP_NO"].ToString()), String.Format("{0}", DateTime.Parse(row["SHOP_REGISTER"].ToString()).ToString("yyyy-MM-dd")));
                 txt_registerDate.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 
-                txt_price.Name = String.Format("txt_state_{0}", row["SHOP_NO"].ToString());
-                txt_price.Text = String.Format("{0}", shoppingHandler.ExchangeSet(cb_shp_exchangeType.SelectedIndex, row["EXCHANGE_TYPE"].ToString(), row["PRICE"].ToString()));
-                txt_price.AutoSize = false;
-                txt_price.Size = new Size(100, 20);
-                txt_price.Location = new Point(500, 75);
-                txt_price.BackColor = Color.FromArgb(255, 255, 255);
-                txt_price.BorderStyle = BorderStyle.None;
+                LabelDesign(txt_price,100,20,500,75,255,255,255, String.Format("txt_state_{0}", row["SHOP_NO"].ToString()), String.Format("{0}", shoppingHandler.ExchangeSet(cb_shp_exchangeType.SelectedIndex, row["EXCHANGE_TYPE"].ToString(), row["PRICE"].ToString())));
                 txt_price.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
 
-                btn_URL.Name = String.Format("{0}", row["SHOP_URL"].ToString());
-                btn_URL.Text = String.Format("판매사이트로 가기");
-                btn_URL.AutoSize = false;
-                btn_URL.Size = new Size(130, 25);
-                btn_URL.Location = new Point(610, 70);
-                btn_URL.BackColor = Color.FromArgb(150, 255, 180);
+                ButtonDesign(btn_URL, 130, 25, 610, 70, 37, 44, 65, String.Format("{0}", row["SHOP_URL"].ToString()), String.Format("판매사이트로 가기"));
+                btn_URL.Font = new System.Drawing.Font("Ravie", 9F);
+                btn_URL.ForeColor = Color.FromArgb(255, 255, 255);
                 btn_URL.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
                 btn_URL.FlatStyle = FlatStyle.Flat;
                 btn_URL.Click += btn_URL_Click;
@@ -704,22 +598,9 @@ namespace Pro_0_Mylife
 
                 if (shp_tab_result.SelectedIndex == 1)
                 {
-                    txt_buyDate.Name = String.Format("txt_state_{0}", row["SHOP_NO"].ToString());
-                    txt_buyDate.Text = String.Format("({0})", DateTime.Parse(row["BUY_DATE"].ToString()).ToString("yyyy-MM-dd"));
-                    txt_buyDate.AutoSize = false;
-                    txt_buyDate.Size = new Size(80, 20);
-                    txt_buyDate.Location = new Point(120, 75);
-                    txt_buyDate.BackColor = Color.FromArgb(255, 255, 255);
-                    txt_buyDate.BorderStyle = BorderStyle.None;
-                    txt_buyDate.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+                    LabelDesign(txt_buyDate, 80, 20, 120, 75, 255, 255, 255, String.Format("txt_state_{0}", row["SHOP_NO"].ToString()), String.Format("({0})", DateTime.Parse(row["BUY_DATE"].ToString()).ToString("yyyy-MM-dd")));
 
-                    txt_state.Name = String.Format("txt_state_{0}", row["SHOP_NO"].ToString());
-                    txt_state.Text = String.Format("구매완료");
-                    txt_state.AutoSize = false;
-                    txt_state.Size = new Size(90, 40);
-                    txt_state.Location = new Point(650, 30);
-                    txt_state.BackColor = Color.FromArgb(255, 255, 255);
-                    txt_state.BorderStyle = BorderStyle.None;
+                    LabelDesign(txt_state,90,40,650,30,255,255,255, String.Format("txt_state_{0}", row["SHOP_NO"].ToString()), String.Format("구매완료"));
                     txt_state.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 
                     pnl.Controls.Add(txt_buyDate);
@@ -731,10 +612,7 @@ namespace Pro_0_Mylife
                     flp_wishShp.Controls.Add(pnl);
                 }
             }
-
-
             ShoppingInfo();
-            
         }
 
         private void ShoppingInfo()
@@ -949,45 +827,17 @@ namespace Pro_0_Mylife
                 Label txt_price = new Label();
                 Label txt_payType = new Label();
 
-                pnl.Size = new Size(678, 24);
-                pnl.BackColor = Color.FromArgb(255, 255, 255);
-                pnl.BorderStyle = BorderStyle.FixedSingle;
-                pnl.Name = String.Format("pnl_text_{0}", row["KE_NO"].ToString());
+                PanelDesign(pnl, 678, 24, 255, 255, 255, String.Format("pnl_text_{0}", row["KE_NO"].ToString()));
 
-                txt_registerDate.Text = String.Format("{0}", DateTime.Parse(row["KE_PAY_DATE"].ToString()).ToString("yyyy-MM-dd"));
-                txt_registerDate.Name = String.Format("txt_registerDate_{0}", row["KE_NO"].ToString());
-                txt_registerDate.AutoSize = false;
-                txt_registerDate.Size = new Size(99, 20);
-                txt_registerDate.Location = new Point(0, 2);
-                txt_registerDate.BackColor = Color.FromArgb(255, 255, 255);
-                txt_registerDate.BorderStyle = BorderStyle.None;
+                LabelDesign(txt_registerDate,99,20,0,2,255,255,255, String.Format("txt_registerDate_{0}", row["KE_NO"].ToString()), String.Format("{0}", DateTime.Parse(row["KE_PAY_DATE"].ToString()).ToString("yyyy-MM-dd")));
                 txt_registerDate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 
-                txt_contents.Text = String.Format("{0}", row["KE_CONTENTS"].ToString());
-                txt_contents.Name = String.Format("{0}", row["KE_NO"].ToString());
-                txt_contents.AutoSize = false;
-                txt_contents.Size = new Size(359, 20);
-                txt_contents.Location = new Point(100, 2);
-                txt_contents.BackColor = Color.FromArgb(255, 255, 255);
-                txt_contents.BorderStyle = BorderStyle.None;
-                txt_contents.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+                LabelDesign(txt_contents,359,20,100,2,255,255,255, String.Format("{0}", row["KE_NO"].ToString()), String.Format("{0}", row["KE_CONTENTS"].ToString()));
 
-                txt_price.Name = String.Format("txt_price_{0}", row["KE_NO"].ToString());
-                txt_price.Text = String.Format("{0}", shoppingHandler.ExchangeSet(cb_hk_spendEx.SelectedIndex, row["EXCHANGE_TYPE"].ToString(), row["KE_PRICE"].ToString()));
-                txt_price.AutoSize = false;
-                txt_price.Size = new Size(79, 20);
-                txt_price.Location = new Point(460, 2);
-                txt_price.BackColor = Color.FromArgb(255, 255, 255);
-                txt_price.BorderStyle = BorderStyle.None;
+                LabelDesign(txt_price,79,20,460,2,255,255,255, String.Format("txt_price_{0}", row["KE_NO"].ToString()), String.Format("{0}", shoppingHandler.ExchangeSet(cb_hk_spendEx.SelectedIndex, row["EXCHANGE_TYPE"].ToString(), row["KE_PRICE"].ToString())));
                 txt_price.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
 
-                txt_payType.Name = String.Format("txt_payType_{0}", row["KE_NO"].ToString());
-                txt_payType.Text = hkHandler.selectPaymentName(row["PAY_TYPE_NO"].ToString(), _logIn_User);
-                txt_payType.AutoSize = false;
-                txt_payType.Size = new Size(148, 20);
-                txt_payType.Location = new Point(540, 2);
-                txt_payType.BackColor = Color.FromArgb(255, 255, 255);
-                txt_payType.BorderStyle = BorderStyle.None;
+                LabelDesign(txt_payType,148,20,540,2,255,255,255, String.Format("txt_payType_{0}", row["KE_NO"].ToString()), hkHandler.selectPaymentName(row["PAY_TYPE_NO"].ToString(), _logIn_User));
                 txt_payType.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 
                 pnl.Controls.Add(txt_registerDate);
@@ -1014,55 +864,22 @@ namespace Pro_0_Mylife
                 Label txt_price = new Label();
                 Label txt_payType = new Label();
 
-                pnl.Size = new Size(678, 24);
-                pnl.BackColor = Color.FromArgb(255, 255, 255);
-                pnl.BorderStyle = BorderStyle.FixedSingle;
-                pnl.Name = String.Format("pnl_text_{0}", row["KE_NO"].ToString());
+                PanelDesign(pnl,678,24,255,255,255, String.Format("pnl_text_{0}", row["KE_NO"].ToString()));
 
-                txt_registerDate.Text = String.Format("{0}", DateTime.Parse(row["KE_PAY_DATE"].ToString()).ToString("yyyy-MM-dd"));
-                txt_registerDate.Name = String.Format("txt_registerDate_{0}", row["KE_NO"].ToString());
-                txt_registerDate.AutoSize = false;
-                txt_registerDate.Size = new Size(99, 20);
-                txt_registerDate.Location = new Point(0, 2);
-                txt_registerDate.BackColor = Color.FromArgb(255, 255, 255);
-                txt_registerDate.BorderStyle = BorderStyle.None;
+                LabelDesign(txt_registerDate,99,20,0,2,255,255,255, String.Format("txt_registerDate_{0}", row["KE_NO"].ToString()), String.Format("{0}", DateTime.Parse(row["KE_PAY_DATE"].ToString()).ToString("yyyy-MM-dd")));
                 txt_registerDate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 
-                txt_hkType.Name = String.Format("txt_payType_{0}", row["KE_NO"].ToString());
-                txt_hkType.Text = hkHandler.SelectHKTypeName(row["KE_TYPE"].ToString());
-                txt_hkType.AutoSize = false;
-                txt_hkType.Size = new Size(149, 20);
-                txt_hkType.Location = new Point(100, 2);
-                txt_hkType.BackColor = Color.FromArgb(255, 255, 255);
-                txt_hkType.BorderStyle = BorderStyle.None;
+
+                LabelDesign(txt_hkType,149,20,100,2,255,255,255, String.Format("txt_payType_{0}", row["KE_NO"].ToString()), hkHandler.SelectHKTypeName(row["KE_TYPE"].ToString()));
                 txt_hkType.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 
-                txt_contents.Text = String.Format("{0}", row["KE_CONTENTS"].ToString());
-                txt_contents.Name = String.Format("{0}", row["KE_NO"].ToString());
-                txt_contents.AutoSize = false;
-                txt_contents.Size = new Size(209, 20);
-                txt_contents.Location = new Point(250, 2);
-                txt_contents.BackColor = Color.FromArgb(255, 255, 255);
-                txt_contents.BorderStyle = BorderStyle.None;
-                txt_contents.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+                LabelDesign(txt_contents,209,20,250,2,255,255,255, String.Format("{0}", row["KE_NO"].ToString()), String.Format("{0}", row["KE_CONTENTS"].ToString()));
 
-                txt_price.Name = String.Format("txt_price_{0}", row["KE_NO"].ToString());
-                txt_price.Text = String.Format("{0}", shoppingHandler.ExchangeSet(cb_hk_spendEx.SelectedIndex, row["EXCHANGE_TYPE"].ToString(), row["KE_PRICE"].ToString()));
-                txt_price.AutoSize = false;
-                txt_price.Size = new Size(79, 20);
-                txt_price.Location = new Point(460, 2);
-                txt_price.BackColor = Color.FromArgb(255, 255, 255);
-                txt_price.BorderStyle = BorderStyle.None;
+                LabelDesign(txt_price,79,20,460,20,255,255,255, String.Format("txt_price_{0}", row["KE_NO"].ToString()), String.Format("{0}", shoppingHandler.ExchangeSet(cb_hk_spendEx.SelectedIndex, row["EXCHANGE_TYPE"].ToString(), row["KE_PRICE"].ToString())));
                 txt_price.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
 
-                txt_payType.AutoSize = false;
-                txt_payType.Size = new Size(148, 20);
-                txt_payType.Location = new Point(540, 2);
-                txt_payType.BackColor = Color.FromArgb(255, 255, 255);
-                txt_payType.BorderStyle = BorderStyle.None;
+                LabelDesign(txt_payType,148,20,540,2,255,255,255, String.Format("txt_payType_{0}", row["KE_NO"].ToString()), hkHandler.selectPaymentName(row["PAY_TYPE_NO"].ToString(), _logIn_User));
                 txt_payType.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-                txt_payType.Name = String.Format("txt_payType_{0}", row["KE_NO"].ToString());
-                txt_payType.Text = hkHandler.selectPaymentName(row["PAY_TYPE_NO"].ToString(), _logIn_User);
 
                 pnl.Controls.Add(txt_registerDate);
                 pnl.Controls.Add(txt_hkType);
@@ -1092,61 +909,28 @@ namespace Pro_0_Mylife
                 Label txt_Spend = new Label();
                 Label txt_Total = new Label();
 
-                pnl.Size = new Size(428, 24);
-                pnl.BackColor = Color.FromArgb(255, 255, 255);
-                pnl.BorderStyle = BorderStyle.FixedSingle;
-                pnl.Name = String.Format("pnl_text_{0}", row["PAY_TYPE_NO"].ToString());
+                PanelDesign(pnl,428,24,255,255,255, String.Format("pnl_text_{0}", row["PAY_TYPE_NO"].ToString()));
 
-                txt_UserAccounts.AutoSize = false;
-                txt_UserAccounts.Size = new Size(149, 20);
-                txt_UserAccounts.Location = new Point(0, 2);
-                txt_UserAccounts.BackColor = Color.FromArgb(255, 255, 255);
-                txt_UserAccounts.BorderStyle = BorderStyle.None;
+                LabelDesign(txt_UserAccounts,149,20,0,2,255,255,255, String.Format("txt_registerDate_{0}", row["PAY_TYPE_NO"].ToString()), String.Format("{0}", row["PAY_NAME"].ToString()));
                 txt_UserAccounts.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-                txt_UserAccounts.Name = String.Format("txt_registerDate_{0}", row["PAY_TYPE_NO"].ToString());
-                txt_UserAccounts.Text = String.Format("{0}", row["PAY_NAME"].ToString());
 
-                txt_Carryforward.AutoSize = false;
-                txt_Carryforward.Size = new Size(69, 20);
-                txt_Carryforward.Location = new Point(150, 2);
-                txt_Carryforward.BackColor = Color.FromArgb(255, 255, 255);
-                txt_Carryforward.BorderStyle = BorderStyle.None;
-                txt_Carryforward.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-                txt_Carryforward.Name = String.Format("txt_payType_{0}", row["PAY_TYPE_NO"].ToString());
                 float forward = hkHandler.CarryForewardByAccount(year, month, row["PAY_TYPE_NO"].ToString(), _logIn_User, cb_hk_spendEx.SelectedIndex);
-                txt_Carryforward.Text = shoppingHandler.AddExchangeType(cb_hk_spendEx.SelectedIndex, forward.ToString("N0"));
+                LabelDesign(txt_Carryforward,69,20,150,2,255,255,255, String.Format("txt_payType_{0}", row["PAY_TYPE_NO"].ToString()), shoppingHandler.AddExchangeType(cb_hk_spendEx.SelectedIndex, forward.ToString("N0")));
+                txt_Carryforward.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 
-                txt_Income.AutoSize = false;
-                txt_Income.Size = new Size(69, 20);
-                txt_Income.Location = new Point(220, 2);
-                txt_Income.BackColor = Color.FromArgb(255, 255, 255);
-                txt_Income.BorderStyle = BorderStyle.None;
-                txt_Income.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-                txt_Income.Name = String.Format("{0}", row["PAY_TYPE_NO"].ToString());
                 float income = hkHandler.SelectMontlyIncomeByAccount(year, month,row["PAY_TYPE_NO"].ToString(), _logIn_User, cb_hk_spendEx.SelectedIndex);
-                txt_Income.Text = shoppingHandler.AddExchangeType(cb_hk_spendEx.SelectedIndex, income.ToString("N0"));
+                LabelDesign(txt_Income,69,20,220,2,255,255,255, String.Format("{0}", row["PAY_TYPE_NO"].ToString()), shoppingHandler.AddExchangeType(cb_hk_spendEx.SelectedIndex, income.ToString("N0")));
                 allIncome += income;
 
-                txt_Spend.AutoSize = false;
-                txt_Spend.Size = new Size(69, 20);
-                txt_Spend.Location = new Point(290, 2);
-                txt_Spend.BackColor = Color.FromArgb(255, 255, 255);
-                txt_Spend.BorderStyle = BorderStyle.None;
-                txt_Spend.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-                txt_Spend.Name = String.Format("txt_price_{0}", row["PAY_TYPE_NO"].ToString());
-                float spend = hkHandler.SelectMontlySpendByAccount(year, month, row["PAY_TYPE_NO"].ToString(), _logIn_User, cb_hk_spendEx.SelectedIndex);
-                txt_Spend.Text = shoppingHandler.AddExchangeType(cb_hk_spendEx.SelectedIndex, spend.ToString("N0"));
-                allSpend += spend;
 
-                txt_Total.AutoSize = false;
-                txt_Total.Size = new Size(68, 20);
-                txt_Total.Location = new Point(360, 2);
-                txt_Total.BackColor = Color.FromArgb(255, 255, 255);
-                txt_Total.BorderStyle = BorderStyle.None;
-                txt_Total.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-                txt_Total.Name = String.Format("txt_payType_{0}", row["PAY_TYPE_NO"].ToString());
+                float spend = hkHandler.SelectMontlySpendByAccount(year, month, row["PAY_TYPE_NO"].ToString(), _logIn_User, cb_hk_spendEx.SelectedIndex);
+                allSpend += spend;
+                LabelDesign(txt_Spend,69,20,290,2,255,255,255, String.Format("txt_price_{0}", row["PAY_TYPE_NO"].ToString()), shoppingHandler.AddExchangeType(cb_hk_spendEx.SelectedIndex, spend.ToString("N0")));
+                txt_Spend.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+
                 total = forward + income - spend;
-                txt_Total.Text = shoppingHandler.AddExchangeType(cb_hk_spendEx.SelectedIndex, total.ToString("N0"));
+                LabelDesign(txt_Total,68,20,360,2,255,255,255, String.Format("txt_payType_{0}", row["PAY_TYPE_NO"].ToString()), shoppingHandler.AddExchangeType(cb_hk_spendEx.SelectedIndex, total.ToString("N0")));
+                txt_Total.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
                 if (row["PAY_TYPE"].ToString().Equals("1"))
                 {
                     cashTotal += total;
@@ -1181,6 +965,7 @@ namespace Pro_0_Mylife
             
         }
 
+        //Monthly analysis
 
         private void AnalysisHkByGenre(String year, String month)
         {
@@ -1208,36 +993,15 @@ namespace Pro_0_Mylife
                 Label txt_price = new Label();
                 Label txt_rate = new Label();
 
-                pnl.Size = new Size(628, 24);
-                pnl.BackColor = Color.FromArgb(255, 255, 255);
+                PanelDesign(pnl,628,20,255,255,255, String.Format("pnl_text_{0}", list.IndexOf(item)));
                 pnl.BorderStyle = BorderStyle.None;
-                pnl.Name = String.Format("pnl_text_{0}", list.IndexOf(item));
 
-                txt_hkType.Name = String.Format("{0}", list.IndexOf(item)+2);
-                txt_hkType.Text = item;
-                txt_hkType.AutoSize = false;
-                txt_hkType.Size = new Size(200, 20);
-                txt_hkType.Location = new Point(7, 2);
-                txt_hkType.BackColor = Color.FromArgb(255, 255, 255);
-                txt_hkType.BorderStyle = BorderStyle.None;
-                txt_hkType.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+                LabelDesign(txt_hkType,200,16,7,2,255,255,255, String.Format("{0}", list.IndexOf(item) + 2), item);
 
-                txt_price.Text = String.Format("{0}", shoppingHandler.AddExchangeType(cb_hk_spendEx.SelectedIndex, result.ToString("N0")));
-                txt_price.Name = String.Format("{0}", list.IndexOf(item) + 2);
-                txt_price.AutoSize = false;
-                txt_price.Size = new Size(200, 20);
-                txt_price.Location = new Point(214, 2);
-                txt_price.BackColor = Color.FromArgb(255, 255, 255);
-                txt_price.BorderStyle = BorderStyle.None;
+                LabelDesign(txt_price, 200, 16, 214, 2, 255, 255, 255, String.Format("{0}", list.IndexOf(item) + 2), String.Format("{0}", shoppingHandler.AddExchangeType(cb_hk_spendEx.SelectedIndex, result.ToString("N0"))));
                 txt_price.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-
-                txt_rate.Name = String.Format("txt_price_{0}", list.IndexOf(item) + 2);
-                txt_rate.Text = String.Format("{0}%", rate.ToString("N2"));
-                txt_rate.AutoSize = false;
-                txt_rate.Size = new Size(200, 20);
-                txt_rate.Location = new Point(421, 2);
-                txt_rate.BackColor = Color.FromArgb(255, 255, 255);
-                txt_rate.BorderStyle = BorderStyle.None;
+                    
+                LabelDesign(txt_rate,200,16,421,2,255,255,255, String.Format("txt_price_{0}", list.IndexOf(item) + 2), String.Format("{0}%", rate.ToString("N2")));
                 txt_rate.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
 
                 pnl.Controls.Add(txt_hkType);
@@ -1278,11 +1042,180 @@ namespace Pro_0_Mylife
                 string key = each.Key;
                 float value = each.Value;
                 chart_AnalysisByDate.Series["Series2"].Points.AddXY(key, value);
-                //chart_AnalysisByDate.Series[key].LegendText = key+ " : " + value.ToString();
                 chart_AnalysisByDate.Series["Series2"].IsValueShownAsLabel = true;
                 chart_AnalysisByDate.Series["Series2"].IsVisibleInLegend = false;
             }
         }
+        //year Analysis
+        private void AnalysisHkYearAccountList(String year)
+        {
+            flp_hk_year_anal1.Controls.Clear();
+
+            DataSet ds = hkDao.LoadPayment(_logIn_User);
+            DataTable dt = ds.Tables[0];
+
+            float allIncome = 0, allSpend = 0, totalIncome = 0, total = 0 ,totalSpend =0;
+            int flp_height = 0;
+
+            Panel pnl1 = new Panel();
+            Label[] txt_Incomes = new Label[12];
+            Label txt_UserTitle = new Label();
+            Label txt_TotalIncome = new Label();
+
+            PanelDesign(pnl1, 1071, 24, 255, 255, 255, String.Format("pnl_text"));
+            pnl1.Margin = new Padding(0, 0, 0, 0);
+            LabelDesign(txt_UserTitle, 159, 20, 0, 1, 255, 255, 255, String.Format("txt_registerDate"), String.Format("입금"));
+            txt_UserTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            
+
+            for (int i =0; i<12; i++)
+            {
+                Label txt_Income = new Label();
+                int x = 230 + i * 70;
+                foreach (DataRow row in dt.Rows)
+                {
+                    int month = i + 1;
+                    float income = hkHandler.SelectMontlyIncomeByAccount(year, month.ToString(), row["PAY_TYPE_NO"].ToString(), _logIn_User, cb_hk_spendEx.SelectedIndex);
+                    allIncome += income;
+                }
+                LabelDesign(txt_Income, 69, 20, x, 1, 255, 255, 255, String.Format("income"), shoppingHandler.AddExchangeType(cb_hk_spendEx.SelectedIndex, allIncome.ToString("N0")));
+                txt_Income.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+
+                txt_Incomes[i] = txt_Income;
+                pnl1.Controls.Add(txt_Incomes[i]);
+                totalIncome += allIncome;
+                allIncome = 0;
+            }
+
+            LabelDesign(txt_TotalIncome, 69, 20, 160, 1, 255, 255, 255, String.Format("txt_TotalIncome"), shoppingHandler.AddExchangeType(cb_hk_spendEx.SelectedIndex, totalIncome.ToString("N0")));
+            txt_TotalIncome.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            txt_TotalIncome.BorderStyle = BorderStyle.FixedSingle;
+            pnl1.Controls.Add(txt_TotalIncome);
+            pnl1.Controls.Add(txt_UserTitle);
+
+            flp_hk_year_anal1.Controls.Add(pnl1);
+
+            foreach (DataRow row in dt.Rows)
+            {
+                Panel pnl = new Panel();
+                Label txt_Total = new Label();
+                Label[] txt_Spends = new Label[12];
+                Label txt_UserAccounts = new Label();
+                flp_height += 25;
+                PanelDesign(pnl, 1071, 24, 255, 255, 255, String.Format("pnl_txt_{0}", row["PAY_TYPE_NO"].ToString()));
+                pnl.Margin = new Padding(0, 0, 0, 0);
+
+                LabelDesign(txt_UserAccounts, 159, 20, 0, 1, 255, 255, 255, String.Format("txt_registerDate_{0}", row["PAY_TYPE_NO"].ToString()), String.Format("{0}", row["PAY_NAME"].ToString()));
+                txt_UserAccounts.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+
+                for (int i = 0; i<=11; i++)
+                {
+                    Label txt_Spend = new Label();
+                    int x = 230+i*70;
+                    int month = i + 1;
+                    float spend = hkHandler.SelectMontlySpendByAccount(year, month.ToString(), row["PAY_TYPE_NO"].ToString(), _logIn_User, cb_hk_spendEx.SelectedIndex); ;
+                    LabelDesign(txt_Spend, 69, 20, x, 1, 255, 255, 255, String.Format("txt_price_{0}", row["PAY_TYPE_NO"].ToString()), shoppingHandler.AddExchangeType(cb_hk_spendEx.SelectedIndex, spend.ToString("N0")));
+                    txt_Spend.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+                    allSpend += spend;
+                    txt_Spends[i] =txt_Spend;
+                }
+
+                LabelDesign(txt_Total, 69, 20, 160, 1, 255, 255, 255, String.Format("txt_payType_{0}", row["PAY_TYPE_NO"].ToString()), shoppingHandler.AddExchangeType(cb_hk_spendEx.SelectedIndex, total.ToString("N0")));
+                txt_Total.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+                txt_Total.BorderStyle = BorderStyle.FixedSingle;
+
+                total = allSpend;
+                allSpend = 0;
+
+
+
+                pnl.Controls.Add(txt_UserAccounts);
+
+                for(int i =0; i<=11; i++)
+                {
+                    pnl.Controls.Add(txt_Spends[i]);
+                }
+                pnl.Controls.Add(txt_Total);
+                flp_hk_year_anal1.Controls.Add(pnl);
+
+            }
+
+            Panel pnl2 = new Panel();
+            Label[] txt_spends2 = new Label[12];
+            Label txt_TotalSpendTitle2 = new Label();
+            Label txt_TotalSpend = new Label();
+
+            PanelDesign(pnl2, 1071, 24, 255, 255, 255, String.Format("pnl_text"));
+            pnl2.Margin = new Padding(0, 0, 0, 0);
+
+            LabelDesign(txt_TotalSpendTitle2, 159, 20, 0, 1, 255, 255, 255, String.Format("txt_registerDate"), String.Format("합계"));
+            txt_TotalSpendTitle2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+
+
+            for (int i = 0; i < 12; i++)
+            {
+                Label txt_spend = new Label();
+                int x = 230 + i * 70;
+                foreach (DataRow row in dt.Rows)
+                {
+                    int month = i + 1;
+                    float spend = hkHandler.SelectMontlySpendByAccount(year, month.ToString(), row["PAY_TYPE_NO"].ToString(), _logIn_User, cb_hk_spendEx.SelectedIndex); ;
+                    allSpend += spend;
+                }
+                LabelDesign(txt_spend, 69, 20, x, 1, 255, 255, 255, String.Format("spend"), shoppingHandler.AddExchangeType(cb_hk_spendEx.SelectedIndex, allSpend.ToString("N0")));
+                txt_spend.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+
+                txt_spends2[i] = txt_spend;
+                pnl2.Controls.Add(txt_spends2[i]);
+                totalSpend += allSpend;
+                allSpend = 0;
+            }
+
+            LabelDesign(txt_TotalSpend, 69, 20, 160, 1, 255, 255, 255, String.Format("txt_TotalIncome"), shoppingHandler.AddExchangeType(cb_hk_spendEx.SelectedIndex, totalSpend.ToString("N0")));
+            txt_TotalSpend.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            txt_TotalSpend.BorderStyle = BorderStyle.FixedSingle;
+            pnl2.Controls.Add(txt_TotalSpendTitle2);
+            pnl2.Controls.Add(txt_TotalSpend);
+
+            flp_hk_year_anal1.Controls.Add(pnl2);
+            flp_height += 50;
+            flp_hk_year_anal1.Height = flp_height;
+            pnl_hk_year_anal1.Height = flp_height + 50;
+
+        }
+        //design
+
+        private void ButtonDesign(Button btn, int size_x, int size_y, int location_x, int location_y, int r, int g, int b, String n, String s)
+        {
+            btn.Size = new Size(size_x, size_y);
+            btn.Location = new Point(location_x, location_y);
+            btn.BackColor = System.Drawing.Color.FromArgb(r, g, b);
+            btn.Font = new System.Drawing.Font("Ravie", 10F);
+            btn.FlatStyle = FlatStyle.Flat;
+            btn.FlatAppearance.BorderSize = 0;
+            btn.Text = s;
+            btn.Name = n;
+        }
+        private void PanelDesign(Panel pnl, int size_x, int size_y, int r, int g, int b, String n)
+        {
+            pnl.Size = new Size(size_x, size_y);
+            pnl.BackColor = Color.FromArgb(r, g, b);
+            pnl.BorderStyle = BorderStyle.FixedSingle;
+            pnl.Name = n;
+        }
+        private void LabelDesign(Label temp, int size_x , int size_y,int location_x,int location_y, int r, int g, int b,String n,String s)
+        {
+            temp.AutoSize = false;
+            temp.Size = new Size(size_x, size_y);
+            temp.Location = new Point(location_x, location_y);
+            temp.BackColor = Color.FromArgb(r, g, b);
+            temp.BorderStyle = BorderStyle.None;
+            temp.Name = n;
+            temp.Text = s;
+            temp.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+
+        }
+
 
         //setting for show
 
@@ -1338,6 +1271,7 @@ namespace Pro_0_Mylife
             tdp_hk_selectDate.Value = now;
             txt_hk_selectYear.Text = now.ToString("yyyy");
             cb_hk_selectMonth.SelectedIndex = Convert.ToInt32(now.ToString("MM")) - 1;
+            txt_hk_A_selectYear.Text = now.ToString("yyyy");
         }
 
         private void cb_hk_selectMonth_SelectedIndexChanged(object sender, EventArgs e)
@@ -1349,6 +1283,44 @@ namespace Pro_0_Mylife
             AnalysisHkByGenre(txt_hk_selectYear.Text, cb_hk_selectMonth.SelectedItem.ToString());
         }
 
+        private void Title_timer_Tick(object sender, EventArgs e)
+        {
+            lb_title_Time.Text = DateTime.Now.ToString("HH:mm:ss");
+        }
+
+        private void cb_hk_spendEx_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            cb_hk_incomeEx.SelectedIndex = cb_hk_spendEx.SelectedIndex;
+            cb_hk_exchangeEx.SelectedIndex = cb_hk_spendEx.SelectedIndex;
+        }
+
+        private void cb_hk_incomeEx_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            cb_hk_spendEx.SelectedIndex = cb_hk_incomeEx.SelectedIndex;
+            cb_hk_exchangeEx.SelectedIndex = cb_hk_incomeEx.SelectedIndex;
+        }
+
+        private void cb_hk_exchangeEx_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            cb_hk_incomeEx.SelectedIndex = cb_hk_exchangeEx.SelectedIndex;
+            cb_hk_spendEx.SelectedIndex = cb_hk_exchangeEx.SelectedIndex;
+        }
+
+        private void txt_hk_selectYear_TextChanged(object sender, EventArgs e)
+        {
+            if(txt_hk_selectYear.TextLength <=0|| txt_hk_selectYear.TextLength > 4 || Convert.ToInt32(txt_hk_selectYear.Text.ToString())<= 0 ) { txt_hk_selectYear.Text = now.ToString("yyyy"); }
+            if(!(cb_hk_selectMonth.SelectedItem is null))
+            {
+                txt_hk_A_selectYear.Text = txt_hk_selectYear.Text;
+            }
+        }
+
+        private void txt_hk_A_selectYear_TextChanged(object sender, EventArgs e)
+        {
+            if (txt_hk_A_selectYear.TextLength <= 0 || txt_hk_A_selectYear.TextLength > 4 || Convert.ToInt32(txt_hk_A_selectYear.Text.ToString()) <= 0) { txt_hk_A_selectYear.Text = now.ToString("yyyy"); }
+
+            AnalysisHkYearAccountList(txt_hk_A_selectYear.Text);
+        }
 
 
 
