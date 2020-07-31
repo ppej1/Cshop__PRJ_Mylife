@@ -51,9 +51,6 @@
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea7 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend7 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series7 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea8 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend8 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series8 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.tab_form = new System.Windows.Forms.TabControl();
             this.tab_home = new System.Windows.Forms.TabPage();
             this.lb_title_Time = new System.Windows.Forms.Label();
@@ -125,21 +122,7 @@
             this.home_tab_result = new System.Windows.Forms.TabControl();
             this.hk_month_table = new System.Windows.Forms.TabPage();
             this.pnl_hk_input = new System.Windows.Forms.Panel();
-            this.pnl_hk_info = new System.Windows.Forms.Panel();
-            this.lb_accountinfo5 = new System.Windows.Forms.Label();
-            this.lb_accountinfo4 = new System.Windows.Forms.Label();
-            this.lb_accountinfo3 = new System.Windows.Forms.Label();
-            this.lb_accountinfo2 = new System.Windows.Forms.Label();
-            this.lb_accountinfo1 = new System.Windows.Forms.Label();
-            this.lb_hk_infoNo3 = new System.Windows.Forms.Label();
-            this.lb_hk_infoNo2 = new System.Windows.Forms.Label();
-            this.lb_hk_infoNo1 = new System.Windows.Forms.Label();
-            this.lb_hk_info2 = new System.Windows.Forms.Label();
-            this.lb_hk_info3 = new System.Windows.Forms.Label();
-            this.lb_hk_info1 = new System.Windows.Forms.Label();
-            this.pnl_hk_side1 = new System.Windows.Forms.Panel();
-            this.chart_inOut = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.flp_hk_AccontInfo = new System.Windows.Forms.FlowLayoutPanel();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.tdp_hk_selectDate = new System.Windows.Forms.DateTimePicker();
             this.home_tab_insert = new System.Windows.Forms.TabControl();
             this.tabPage_hk_spend = new System.Windows.Forms.TabPage();
@@ -189,6 +172,21 @@
             this.btn_hk_AccountRegister = new System.Windows.Forms.Button();
             this.txt_hk_AccountName = new System.Windows.Forms.TextBox();
             this.cb_hk_AccountType = new System.Windows.Forms.ComboBox();
+            this.pnl_hk_info = new System.Windows.Forms.Panel();
+            this.lb_accountinfo5 = new System.Windows.Forms.Label();
+            this.lb_accountinfo4 = new System.Windows.Forms.Label();
+            this.lb_accountinfo3 = new System.Windows.Forms.Label();
+            this.lb_accountinfo2 = new System.Windows.Forms.Label();
+            this.lb_accountinfo1 = new System.Windows.Forms.Label();
+            this.lb_hk_infoNo3 = new System.Windows.Forms.Label();
+            this.lb_hk_infoNo2 = new System.Windows.Forms.Label();
+            this.lb_hk_infoNo1 = new System.Windows.Forms.Label();
+            this.lb_hk_info2 = new System.Windows.Forms.Label();
+            this.lb_hk_info3 = new System.Windows.Forms.Label();
+            this.lb_hk_info1 = new System.Windows.Forms.Label();
+            this.pnl_hk_side1 = new System.Windows.Forms.Panel();
+            this.chart_inOut = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.flp_hk_AccontInfo = new System.Windows.Forms.FlowLayoutPanel();
             this.pnl_hk_side = new System.Windows.Forms.Panel();
             this.flp_hk_income = new System.Windows.Forms.FlowLayoutPanel();
             this.lb_hk_income = new System.Windows.Forms.Label();
@@ -206,14 +204,46 @@
             this.chart_hk_pie = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.flp_hk_analysis = new System.Windows.Forms.FlowLayoutPanel();
             this.hk_year = new System.Windows.Forms.TabPage();
+            this.txt_hk_A_selectYear = new System.Windows.Forms.TextBox();
             this.flp_hk_year = new System.Windows.Forms.FlowLayoutPanel();
             this.pnl_hk_y_ana1 = new System.Windows.Forms.Panel();
             this.pnl_hk_year_anal1 = new System.Windows.Forms.Panel();
+            this.pnl_hk_anal_title = new System.Windows.Forms.Panel();
+            this.lb_hk_Ana_title14 = new System.Windows.Forms.Label();
+            this.lb_hk_Ana_title13 = new System.Windows.Forms.Label();
+            this.lb_hk_Ana_title12 = new System.Windows.Forms.Label();
+            this.lb_hk_Ana_title11 = new System.Windows.Forms.Label();
+            this.lb_hk_Ana_title10 = new System.Windows.Forms.Label();
+            this.lb_hk_Ana_title9 = new System.Windows.Forms.Label();
+            this.lb_hk_Ana_title8 = new System.Windows.Forms.Label();
+            this.lb_hk_Ana_title7 = new System.Windows.Forms.Label();
+            this.lb_hk_Ana_title6 = new System.Windows.Forms.Label();
+            this.lb_hk_Ana_title5 = new System.Windows.Forms.Label();
+            this.lb_hk_Ana_title4 = new System.Windows.Forms.Label();
+            this.lb_hk_Ana_title3 = new System.Windows.Forms.Label();
+            this.lb_hk_Ana_title2 = new System.Windows.Forms.Label();
+            this.lb_hk_Ana_title1 = new System.Windows.Forms.Label();
+            this.flp_hk_year_anal1 = new System.Windows.Forms.FlowLayoutPanel();
             this.chart_hk_year_anal2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.chart_hk_year_anal1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.pnl_hk_y_ana2 = new System.Windows.Forms.Panel();
             this.pnl_hk_year_anal2 = new System.Windows.Forms.Panel();
-            this.chart_hk_year_anal4 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.lb_hk_Ana2_title14 = new System.Windows.Forms.Label();
+            this.lb_hk_Ana2_title13 = new System.Windows.Forms.Label();
+            this.lb_hk_Ana2_title12 = new System.Windows.Forms.Label();
+            this.lb_hk_Ana2_title11 = new System.Windows.Forms.Label();
+            this.lb_hk_Ana2_title10 = new System.Windows.Forms.Label();
+            this.lb_hk_Ana2_title9 = new System.Windows.Forms.Label();
+            this.lb_hk_Ana2_title8 = new System.Windows.Forms.Label();
+            this.lb_hk_Ana2_title7 = new System.Windows.Forms.Label();
+            this.lb_hk_Ana2_title6 = new System.Windows.Forms.Label();
+            this.lb_hk_Ana2_title5 = new System.Windows.Forms.Label();
+            this.lb_hk_Ana2_title4 = new System.Windows.Forms.Label();
+            this.lb_hk_Ana2_title3 = new System.Windows.Forms.Label();
+            this.lb_hk_Ana2_title2 = new System.Windows.Forms.Label();
+            this.lb_hk_Ana2_title1 = new System.Windows.Forms.Label();
+            this.flp_hk_year_anal2 = new System.Windows.Forms.FlowLayoutPanel();
             this.chart_hk_year_anal3 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.UserInfo_panel = new System.Windows.Forms.Panel();
             this.btn_UserModify = new System.Windows.Forms.Button();
@@ -230,25 +260,7 @@
             this.btn_hk = new System.Windows.Forms.Button();
             this.btn_memo = new System.Windows.Forms.Button();
             this.Title_timer = new System.Windows.Forms.Timer(this.components);
-            this.txt_hk_A_selectYear = new System.Windows.Forms.TextBox();
-            this.flp_hk_year_anal2 = new System.Windows.Forms.FlowLayoutPanel();
-            this.flp_hk_year_anal1 = new System.Windows.Forms.FlowLayoutPanel();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.pnl_hk_anal_title = new System.Windows.Forms.Panel();
-            this.lb_hk_Ana_title1 = new System.Windows.Forms.Label();
-            this.lb_hk_Ana_title2 = new System.Windows.Forms.Label();
-            this.lb_hk_Ana_title3 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
             this.tab_form.SuspendLayout();
             this.tab_home.SuspendLayout();
             this.tab_Memo.SuspendLayout();
@@ -271,12 +283,13 @@
             this.home_tab_result.SuspendLayout();
             this.hk_month_table.SuspendLayout();
             this.pnl_hk_input.SuspendLayout();
-            this.pnl_hk_info.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chart_inOut)).BeginInit();
+            this.panel2.SuspendLayout();
             this.home_tab_insert.SuspendLayout();
             this.tabPage_hk_spend.SuspendLayout();
             this.tabPage_hk_income.SuspendLayout();
             this.tabPage_hk_account.SuspendLayout();
+            this.pnl_hk_info.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chart_inOut)).BeginInit();
             this.hk_month_Analysis.SuspendLayout();
             this.pnl_hk_analysis_title.SuspendLayout();
             this.pnl_hk_analysis2.SuspendLayout();
@@ -287,17 +300,17 @@
             this.flp_hk_year.SuspendLayout();
             this.pnl_hk_y_ana1.SuspendLayout();
             this.pnl_hk_year_anal1.SuspendLayout();
+            this.pnl_hk_anal_title.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart_hk_year_anal2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart_hk_year_anal1)).BeginInit();
             this.pnl_hk_y_ana2.SuspendLayout();
             this.pnl_hk_year_anal2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chart_hk_year_anal4)).BeginInit();
+            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart_hk_year_anal3)).BeginInit();
             this.UserInfo_panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.Top_panel.SuspendLayout();
             this.pnl_nav.SuspendLayout();
-            this.pnl_hk_anal_title.SuspendLayout();
             this.SuspendLayout();
             // 
             // tab_form
@@ -352,9 +365,9 @@
             // 
             // memo_add
             // 
+            resources.ApplyResources(this.memo_add, "memo_add");
             this.memo_add.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(44)))), ((int)(((byte)(65)))));
             this.memo_add.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.memo_add, "memo_add");
             this.memo_add.ForeColor = System.Drawing.Color.White;
             this.memo_add.Name = "memo_add";
             this.memo_add.UseVisualStyleBackColor = false;
@@ -376,14 +389,15 @@
             // 
             // todo_panel2
             // 
+            resources.ApplyResources(this.todo_panel2, "todo_panel2");
             this.todo_panel2.BackColor = System.Drawing.Color.White;
             this.todo_panel2.Controls.Add(this.pnl_todo_side);
             this.todo_panel2.Controls.Add(this.txt_todoSearch);
             this.todo_panel2.Controls.Add(this.btn_search);
             this.todo_panel2.Controls.Add(this.lb_Todo_Title);
             this.todo_panel2.Controls.Add(this.todolistFlowPanel);
-            resources.ApplyResources(this.todo_panel2, "todo_panel2");
             this.todo_panel2.Name = "todo_panel2";
+            this.todo_panel2.Resize += new System.EventHandler(this.todo_panel2_Resize);
             // 
             // pnl_todo_side
             // 
@@ -392,14 +406,14 @@
             // 
             // txt_todoSearch
             // 
-            this.txt_todoSearch.BackColor = System.Drawing.Color.LightCyan;
             resources.ApplyResources(this.txt_todoSearch, "txt_todoSearch");
+            this.txt_todoSearch.BackColor = System.Drawing.Color.LightCyan;
             this.txt_todoSearch.Name = "txt_todoSearch";
             // 
             // btn_search
             // 
-            this.btn_search.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(44)))), ((int)(((byte)(65)))));
             resources.ApplyResources(this.btn_search, "btn_search");
+            this.btn_search.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(44)))), ((int)(((byte)(65)))));
             this.btn_search.Name = "btn_search";
             this.btn_search.UseVisualStyleBackColor = false;
             this.btn_search.Click += new System.EventHandler(this.btn_search_Click);
@@ -412,12 +426,13 @@
             // 
             // todolistFlowPanel
             // 
-            this.todolistFlowPanel.BackColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(this.todolistFlowPanel, "todolistFlowPanel");
+            this.todolistFlowPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.todolistFlowPanel.Name = "todolistFlowPanel";
             // 
             // Todo_panel1
             // 
+            resources.ApplyResources(this.Todo_panel1, "Todo_panel1");
             this.Todo_panel1.BackColor = System.Drawing.Color.White;
             this.Todo_panel1.Controls.Add(this.Todo_EndMinute);
             this.Todo_panel1.Controls.Add(this.Todo_StartMinute);
@@ -431,11 +446,11 @@
             this.Todo_panel1.Controls.Add(this.Todo_EndHour);
             this.Todo_panel1.Controls.Add(this.Todo_EndDate);
             this.Todo_panel1.Controls.Add(this.Todo_startDate);
-            resources.ApplyResources(this.Todo_panel1, "Todo_panel1");
             this.Todo_panel1.Name = "Todo_panel1";
             // 
             // Todo_EndMinute
             // 
+            resources.ApplyResources(this.Todo_EndMinute, "Todo_EndMinute");
             this.Todo_EndMinute.BackColor = System.Drawing.Color.LightCyan;
             this.Todo_EndMinute.FormattingEnabled = true;
             this.Todo_EndMinute.Items.AddRange(new object[] {
@@ -499,12 +514,12 @@
             resources.GetString("Todo_EndMinute.Items57"),
             resources.GetString("Todo_EndMinute.Items58"),
             resources.GetString("Todo_EndMinute.Items59")});
-            resources.ApplyResources(this.Todo_EndMinute, "Todo_EndMinute");
             this.Todo_EndMinute.Name = "Todo_EndMinute";
             this.Todo_EndMinute.SelectedIndexChanged += new System.EventHandler(this.CkEndMinuteChanged);
             // 
             // Todo_StartMinute
             // 
+            resources.ApplyResources(this.Todo_StartMinute, "Todo_StartMinute");
             this.Todo_StartMinute.BackColor = System.Drawing.Color.LightCyan;
             this.Todo_StartMinute.FormattingEnabled = true;
             this.Todo_StartMinute.Items.AddRange(new object[] {
@@ -568,7 +583,6 @@
             resources.GetString("Todo_StartMinute.Items57"),
             resources.GetString("Todo_StartMinute.Items58"),
             resources.GetString("Todo_StartMinute.Items59")});
-            resources.ApplyResources(this.Todo_StartMinute, "Todo_StartMinute");
             this.Todo_StartMinute.Name = "Todo_StartMinute";
             this.Todo_StartMinute.SelectedIndexChanged += new System.EventHandler(this.CkStartMinuteChanged);
             // 
@@ -582,10 +596,10 @@
             // 
             // btn_TodoRegister
             // 
+            resources.ApplyResources(this.btn_TodoRegister, "btn_TodoRegister");
             this.btn_TodoRegister.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(44)))), ((int)(((byte)(65)))));
             this.btn_TodoRegister.FlatAppearance.BorderSize = 0;
             this.btn_TodoRegister.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(59)))), ((int)(((byte)(80)))));
-            resources.ApplyResources(this.btn_TodoRegister, "btn_TodoRegister");
             this.btn_TodoRegister.ForeColor = System.Drawing.Color.White;
             this.btn_TodoRegister.Name = "btn_TodoRegister";
             this.btn_TodoRegister.UseVisualStyleBackColor = false;
@@ -593,8 +607,8 @@
             // 
             // Todo_StartHour
             // 
-            this.Todo_StartHour.BackColor = System.Drawing.Color.LightCyan;
             resources.ApplyResources(this.Todo_StartHour, "Todo_StartHour");
+            this.Todo_StartHour.BackColor = System.Drawing.Color.LightCyan;
             this.Todo_StartHour.FormattingEnabled = true;
             this.Todo_StartHour.Items.AddRange(new object[] {
             resources.GetString("Todo_StartHour.Items"),
@@ -631,10 +645,10 @@
             // 
             // Todo_contents
             // 
+            resources.ApplyResources(this.Todo_contents, "Todo_contents");
             this.Todo_contents.BackColor = System.Drawing.Color.LightCyan;
             this.Todo_contents.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Todo_contents.ForeColor = System.Drawing.SystemColors.WindowText;
-            resources.ApplyResources(this.Todo_contents, "Todo_contents");
             this.Todo_contents.Name = "Todo_contents";
             // 
             // lb_startDate
@@ -649,6 +663,7 @@
             // 
             // Todo_EndHour
             // 
+            resources.ApplyResources(this.Todo_EndHour, "Todo_EndHour");
             this.Todo_EndHour.BackColor = System.Drawing.Color.LightCyan;
             this.Todo_EndHour.FormattingEnabled = true;
             this.Todo_EndHour.Items.AddRange(new object[] {
@@ -676,21 +691,20 @@
             resources.GetString("Todo_EndHour.Items21"),
             resources.GetString("Todo_EndHour.Items22"),
             resources.GetString("Todo_EndHour.Items23")});
-            resources.ApplyResources(this.Todo_EndHour, "Todo_EndHour");
             this.Todo_EndHour.Name = "Todo_EndHour";
             this.Todo_EndHour.SelectedIndexChanged += new System.EventHandler(this.CkEndHourChanged);
             // 
             // Todo_EndDate
             // 
-            this.Todo_EndDate.CalendarMonthBackground = System.Drawing.Color.LightCyan;
             resources.ApplyResources(this.Todo_EndDate, "Todo_EndDate");
+            this.Todo_EndDate.CalendarMonthBackground = System.Drawing.Color.LightCyan;
             this.Todo_EndDate.Name = "Todo_EndDate";
             this.Todo_EndDate.ValueChanged += new System.EventHandler(this.CkEndDateChanged);
             // 
             // Todo_startDate
             // 
-            this.Todo_startDate.CalendarMonthBackground = System.Drawing.Color.LightCyan;
             resources.ApplyResources(this.Todo_startDate, "Todo_startDate");
+            this.Todo_startDate.CalendarMonthBackground = System.Drawing.Color.LightCyan;
             this.Todo_startDate.Name = "Todo_startDate";
             this.Todo_startDate.ValueChanged += new System.EventHandler(this.CKstartDateChanged);
             // 
@@ -701,15 +715,16 @@
             this.tab_shopping.ForeColor = System.Drawing.SystemColors.ControlText;
             resources.ApplyResources(this.tab_shopping, "tab_shopping");
             this.tab_shopping.Name = "tab_shopping";
+            this.tab_shopping.Resize += new System.EventHandler(this.tab_shopping_Resize);
             // 
             // pnl_shplist
             // 
+            resources.ApplyResources(this.pnl_shplist, "pnl_shplist");
             this.pnl_shplist.BackColor = System.Drawing.Color.White;
             this.pnl_shplist.Controls.Add(this.lb_logoShp);
             this.pnl_shplist.Controls.Add(this.pnl_Shpinfo);
             this.pnl_shplist.Controls.Add(this.pnl_shp_insert);
             this.pnl_shplist.Controls.Add(this.shp_tab_result);
-            resources.ApplyResources(this.pnl_shplist, "pnl_shplist");
             this.pnl_shplist.Name = "pnl_shplist";
             // 
             // lb_logoShp
@@ -794,6 +809,7 @@
             // 
             // pnl_shp_insert
             // 
+            resources.ApplyResources(this.pnl_shp_insert, "pnl_shp_insert");
             this.pnl_shp_insert.BackColor = System.Drawing.Color.White;
             this.pnl_shp_insert.Controls.Add(this.cb_shp_exchangeType);
             this.pnl_shp_insert.Controls.Add(this.cb_shp_type);
@@ -804,7 +820,6 @@
             this.pnl_shp_insert.Controls.Add(this.txt_shp_productName);
             this.pnl_shp_insert.Controls.Add(this.txt_shp_price);
             this.pnl_shp_insert.Controls.Add(this.txt_shp_URL);
-            resources.ApplyResources(this.pnl_shp_insert, "pnl_shp_insert");
             this.pnl_shp_insert.Name = "pnl_shp_insert";
             // 
             // cb_shp_exchangeType
@@ -828,8 +843,8 @@
             // 
             // btn_shpRegister
             // 
-            this.btn_shpRegister.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(44)))), ((int)(((byte)(65)))));
             resources.ApplyResources(this.btn_shpRegister, "btn_shpRegister");
+            this.btn_shpRegister.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(44)))), ((int)(((byte)(65)))));
             this.btn_shpRegister.ForeColor = System.Drawing.Color.White;
             this.btn_shpRegister.Name = "btn_shpRegister";
             this.btn_shpRegister.UseVisualStyleBackColor = false;
@@ -864,15 +879,15 @@
             // 
             // txt_shp_URL
             // 
-            this.txt_shp_URL.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(255)))), ((int)(((byte)(180)))));
             resources.ApplyResources(this.txt_shp_URL, "txt_shp_URL");
+            this.txt_shp_URL.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(255)))), ((int)(((byte)(180)))));
             this.txt_shp_URL.Name = "txt_shp_URL";
             // 
             // shp_tab_result
             // 
+            resources.ApplyResources(this.shp_tab_result, "shp_tab_result");
             this.shp_tab_result.Controls.Add(this.tabPage_shpWish);
             this.shp_tab_result.Controls.Add(this.tabPage_purechased);
-            resources.ApplyResources(this.shp_tab_result, "shp_tab_result");
             this.shp_tab_result.Name = "shp_tab_result";
             this.shp_tab_result.SelectedIndex = 0;
             this.shp_tab_result.SelectedIndexChanged += new System.EventHandler(this.shp_tab_result_SelectedIndexChanged);
@@ -887,9 +902,9 @@
             // 
             // btn_shpAdd
             // 
+            resources.ApplyResources(this.btn_shpAdd, "btn_shpAdd");
             this.btn_shpAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(44)))), ((int)(((byte)(65)))));
             this.btn_shpAdd.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.btn_shpAdd, "btn_shpAdd");
             this.btn_shpAdd.ForeColor = System.Drawing.Color.White;
             this.btn_shpAdd.Name = "btn_shpAdd";
             this.btn_shpAdd.UseVisualStyleBackColor = false;
@@ -897,16 +912,16 @@
             // 
             // pnl_wish_shp
             // 
+            resources.ApplyResources(this.pnl_wish_shp, "pnl_wish_shp");
             this.pnl_wish_shp.BackColor = System.Drawing.Color.White;
             this.pnl_wish_shp.Controls.Add(this.pnl_shp_side1);
             this.pnl_wish_shp.Controls.Add(this.flp_wishShp);
-            resources.ApplyResources(this.pnl_wish_shp, "pnl_wish_shp");
             this.pnl_wish_shp.Name = "pnl_wish_shp";
             // 
             // pnl_shp_side1
             // 
-            this.pnl_shp_side1.BackColor = System.Drawing.Color.White;
             resources.ApplyResources(this.pnl_shp_side1, "pnl_shp_side1");
+            this.pnl_shp_side1.BackColor = System.Drawing.Color.White;
             this.pnl_shp_side1.Name = "pnl_shp_side1";
             // 
             // flp_wishShp
@@ -924,16 +939,16 @@
             // 
             // pnl_shp_purchased
             // 
+            resources.ApplyResources(this.pnl_shp_purchased, "pnl_shp_purchased");
             this.pnl_shp_purchased.BackColor = System.Drawing.Color.White;
             this.pnl_shp_purchased.Controls.Add(this.pnl_shp_side2);
             this.pnl_shp_purchased.Controls.Add(this.flp_purchasedList);
-            resources.ApplyResources(this.pnl_shp_purchased, "pnl_shp_purchased");
             this.pnl_shp_purchased.Name = "pnl_shp_purchased";
             // 
             // pnl_shp_side2
             // 
-            this.pnl_shp_side2.BackColor = System.Drawing.Color.White;
             resources.ApplyResources(this.pnl_shp_side2, "pnl_shp_side2");
+            this.pnl_shp_side2.BackColor = System.Drawing.Color.White;
             this.pnl_shp_side2.Name = "pnl_shp_side2";
             // 
             // flp_purchasedList
@@ -951,10 +966,10 @@
             // 
             // home_tab_list
             // 
+            resources.ApplyResources(this.home_tab_list, "home_tab_list");
             this.home_tab_list.Controls.Add(this.hk_Month);
             this.home_tab_list.Controls.Add(this.hk_year);
             this.home_tab_list.HotTrack = true;
-            resources.ApplyResources(this.home_tab_list, "home_tab_list");
             this.home_tab_list.Multiline = true;
             this.home_tab_list.Name = "home_tab_list";
             this.home_tab_list.SelectedIndex = 0;
@@ -970,8 +985,8 @@
             // 
             // cb_hk_selectMonth
             // 
-            this.cb_hk_selectMonth.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             resources.ApplyResources(this.cb_hk_selectMonth, "cb_hk_selectMonth");
+            this.cb_hk_selectMonth.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.cb_hk_selectMonth.FormattingEnabled = true;
             this.cb_hk_selectMonth.Items.AddRange(new object[] {
             resources.GetString("cb_hk_selectMonth.Items"),
@@ -991,17 +1006,17 @@
             // 
             // txt_hk_selectYear
             // 
+            resources.ApplyResources(this.txt_hk_selectYear, "txt_hk_selectYear");
             this.txt_hk_selectYear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.txt_hk_selectYear.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            resources.ApplyResources(this.txt_hk_selectYear, "txt_hk_selectYear");
             this.txt_hk_selectYear.Name = "txt_hk_selectYear";
             this.txt_hk_selectYear.TextChanged += new System.EventHandler(this.txt_hk_selectYear_TextChanged);
             // 
             // home_tab_result
             // 
+            resources.ApplyResources(this.home_tab_result, "home_tab_result");
             this.home_tab_result.Controls.Add(this.hk_month_table);
             this.home_tab_result.Controls.Add(this.hk_month_Analysis);
-            resources.ApplyResources(this.home_tab_result, "home_tab_result");
             this.home_tab_result.Multiline = true;
             this.home_tab_result.Name = "home_tab_result";
             this.home_tab_result.SelectedIndex = 0;
@@ -1017,10 +1032,13 @@
             this.hk_month_table.Controls.Add(this.flp_hk_spend);
             resources.ApplyResources(this.hk_month_table, "hk_month_table");
             this.hk_month_table.Name = "hk_month_table";
+            this.hk_month_table.Resize += new System.EventHandler(this.hk_month_table_Resize);
             // 
             // pnl_hk_input
             // 
+            resources.ApplyResources(this.pnl_hk_input, "pnl_hk_input");
             this.pnl_hk_input.BackColor = System.Drawing.Color.White;
+            this.pnl_hk_input.Controls.Add(this.panel2);
             this.pnl_hk_input.Controls.Add(this.pnl_hk_info);
             this.pnl_hk_input.Controls.Add(this.lb_hk_infoNo3);
             this.pnl_hk_input.Controls.Add(this.lb_hk_infoNo2);
@@ -1031,10 +1049,432 @@
             this.pnl_hk_input.Controls.Add(this.pnl_hk_side1);
             this.pnl_hk_input.Controls.Add(this.chart_inOut);
             this.pnl_hk_input.Controls.Add(this.flp_hk_AccontInfo);
-            this.pnl_hk_input.Controls.Add(this.tdp_hk_selectDate);
-            this.pnl_hk_input.Controls.Add(this.home_tab_insert);
-            resources.ApplyResources(this.pnl_hk_input, "pnl_hk_input");
             this.pnl_hk_input.Name = "pnl_hk_input";
+            // 
+            // panel2
+            // 
+            resources.ApplyResources(this.panel2, "panel2");
+            this.panel2.Controls.Add(this.tdp_hk_selectDate);
+            this.panel2.Controls.Add(this.home_tab_insert);
+            this.panel2.Name = "panel2";
+            // 
+            // tdp_hk_selectDate
+            // 
+            resources.ApplyResources(this.tdp_hk_selectDate, "tdp_hk_selectDate");
+            this.tdp_hk_selectDate.Name = "tdp_hk_selectDate";
+            // 
+            // home_tab_insert
+            // 
+            resources.ApplyResources(this.home_tab_insert, "home_tab_insert");
+            this.home_tab_insert.Controls.Add(this.tabPage_hk_spend);
+            this.home_tab_insert.Controls.Add(this.tabPage_hk_income);
+            this.home_tab_insert.Controls.Add(this.tabPage_hk_account);
+            this.home_tab_insert.Name = "home_tab_insert";
+            this.home_tab_insert.SelectedIndex = 0;
+            // 
+            // tabPage_hk_spend
+            // 
+            this.tabPage_hk_spend.BackColor = System.Drawing.Color.White;
+            this.tabPage_hk_spend.Controls.Add(this.lb_hk_title1);
+            this.tabPage_hk_spend.Controls.Add(this.cal_1);
+            this.tabPage_hk_spend.Controls.Add(this.cal_4);
+            this.tabPage_hk_spend.Controls.Add(this.cal_7);
+            this.tabPage_hk_spend.Controls.Add(this.cal_CE);
+            this.tabPage_hk_spend.Controls.Add(this.cal_equal);
+            this.tabPage_hk_spend.Controls.Add(this.cal_comma);
+            this.tabPage_hk_spend.Controls.Add(this.cal_0);
+            this.tabPage_hk_spend.Controls.Add(this.cal_Plus);
+            this.tabPage_hk_spend.Controls.Add(this.cal_3);
+            this.tabPage_hk_spend.Controls.Add(this.cal_2);
+            this.tabPage_hk_spend.Controls.Add(this.cal_minuse);
+            this.tabPage_hk_spend.Controls.Add(this.cal_6);
+            this.tabPage_hk_spend.Controls.Add(this.cal_5);
+            this.tabPage_hk_spend.Controls.Add(this.cal_multiple);
+            this.tabPage_hk_spend.Controls.Add(this.cal_9);
+            this.tabPage_hk_spend.Controls.Add(this.cal_8);
+            this.tabPage_hk_spend.Controls.Add(this.cal_Backspace);
+            this.tabPage_hk_spend.Controls.Add(this.cal_division);
+            this.tabPage_hk_spend.Controls.Add(this.cb_hk_spendEx);
+            this.tabPage_hk_spend.Controls.Add(this.cal_Percent);
+            this.tabPage_hk_spend.Controls.Add(this.cal_result);
+            this.tabPage_hk_spend.Controls.Add(this.btn_hk_spend);
+            this.tabPage_hk_spend.Controls.Add(this.cb_hk_spendAccont);
+            this.tabPage_hk_spend.Controls.Add(this.cb_hk_spendType);
+            this.tabPage_hk_spend.Controls.Add(this.txt_hk_spendPrice);
+            this.tabPage_hk_spend.Controls.Add(this.txt_hk_spendComment);
+            resources.ApplyResources(this.tabPage_hk_spend, "tabPage_hk_spend");
+            this.tabPage_hk_spend.Name = "tabPage_hk_spend";
+            // 
+            // lb_hk_title1
+            // 
+            resources.ApplyResources(this.lb_hk_title1, "lb_hk_title1");
+            this.lb_hk_title1.Name = "lb_hk_title1";
+            // 
+            // cal_1
+            // 
+            resources.ApplyResources(this.cal_1, "cal_1");
+            this.cal_1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.cal_1.FlatAppearance.BorderSize = 0;
+            this.cal_1.Name = "cal_1";
+            this.cal_1.UseVisualStyleBackColor = false;
+            // 
+            // cal_4
+            // 
+            resources.ApplyResources(this.cal_4, "cal_4");
+            this.cal_4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.cal_4.FlatAppearance.BorderSize = 0;
+            this.cal_4.Name = "cal_4";
+            this.cal_4.UseVisualStyleBackColor = false;
+            // 
+            // cal_7
+            // 
+            resources.ApplyResources(this.cal_7, "cal_7");
+            this.cal_7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.cal_7.FlatAppearance.BorderSize = 0;
+            this.cal_7.Name = "cal_7";
+            this.cal_7.UseVisualStyleBackColor = false;
+            // 
+            // cal_CE
+            // 
+            resources.ApplyResources(this.cal_CE, "cal_CE");
+            this.cal_CE.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.cal_CE.FlatAppearance.BorderSize = 0;
+            this.cal_CE.Name = "cal_CE";
+            this.cal_CE.UseVisualStyleBackColor = false;
+            // 
+            // cal_equal
+            // 
+            resources.ApplyResources(this.cal_equal, "cal_equal");
+            this.cal_equal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.cal_equal.FlatAppearance.BorderSize = 0;
+            this.cal_equal.Name = "cal_equal";
+            this.cal_equal.UseVisualStyleBackColor = false;
+            // 
+            // cal_comma
+            // 
+            resources.ApplyResources(this.cal_comma, "cal_comma");
+            this.cal_comma.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.cal_comma.FlatAppearance.BorderSize = 0;
+            this.cal_comma.Name = "cal_comma";
+            this.cal_comma.UseVisualStyleBackColor = false;
+            // 
+            // cal_0
+            // 
+            resources.ApplyResources(this.cal_0, "cal_0");
+            this.cal_0.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.cal_0.FlatAppearance.BorderSize = 0;
+            this.cal_0.Name = "cal_0";
+            this.cal_0.UseVisualStyleBackColor = false;
+            // 
+            // cal_Plus
+            // 
+            resources.ApplyResources(this.cal_Plus, "cal_Plus");
+            this.cal_Plus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.cal_Plus.FlatAppearance.BorderSize = 0;
+            this.cal_Plus.Name = "cal_Plus";
+            this.cal_Plus.UseVisualStyleBackColor = false;
+            // 
+            // cal_3
+            // 
+            resources.ApplyResources(this.cal_3, "cal_3");
+            this.cal_3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.cal_3.FlatAppearance.BorderSize = 0;
+            this.cal_3.Name = "cal_3";
+            this.cal_3.UseVisualStyleBackColor = false;
+            // 
+            // cal_2
+            // 
+            resources.ApplyResources(this.cal_2, "cal_2");
+            this.cal_2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.cal_2.FlatAppearance.BorderSize = 0;
+            this.cal_2.Name = "cal_2";
+            this.cal_2.UseVisualStyleBackColor = false;
+            // 
+            // cal_minuse
+            // 
+            resources.ApplyResources(this.cal_minuse, "cal_minuse");
+            this.cal_minuse.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.cal_minuse.FlatAppearance.BorderSize = 0;
+            this.cal_minuse.Name = "cal_minuse";
+            this.cal_minuse.UseVisualStyleBackColor = false;
+            // 
+            // cal_6
+            // 
+            resources.ApplyResources(this.cal_6, "cal_6");
+            this.cal_6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.cal_6.FlatAppearance.BorderSize = 0;
+            this.cal_6.Name = "cal_6";
+            this.cal_6.UseVisualStyleBackColor = false;
+            // 
+            // cal_5
+            // 
+            resources.ApplyResources(this.cal_5, "cal_5");
+            this.cal_5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.cal_5.FlatAppearance.BorderSize = 0;
+            this.cal_5.Name = "cal_5";
+            this.cal_5.UseVisualStyleBackColor = false;
+            // 
+            // cal_multiple
+            // 
+            resources.ApplyResources(this.cal_multiple, "cal_multiple");
+            this.cal_multiple.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.cal_multiple.FlatAppearance.BorderSize = 0;
+            this.cal_multiple.Name = "cal_multiple";
+            this.cal_multiple.UseVisualStyleBackColor = false;
+            // 
+            // cal_9
+            // 
+            resources.ApplyResources(this.cal_9, "cal_9");
+            this.cal_9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.cal_9.FlatAppearance.BorderSize = 0;
+            this.cal_9.Name = "cal_9";
+            this.cal_9.UseVisualStyleBackColor = false;
+            // 
+            // cal_8
+            // 
+            resources.ApplyResources(this.cal_8, "cal_8");
+            this.cal_8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.cal_8.FlatAppearance.BorderSize = 0;
+            this.cal_8.Name = "cal_8";
+            this.cal_8.UseVisualStyleBackColor = false;
+            // 
+            // cal_Backspace
+            // 
+            resources.ApplyResources(this.cal_Backspace, "cal_Backspace");
+            this.cal_Backspace.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.cal_Backspace.FlatAppearance.BorderSize = 0;
+            this.cal_Backspace.Name = "cal_Backspace";
+            this.cal_Backspace.UseVisualStyleBackColor = false;
+            // 
+            // cal_division
+            // 
+            resources.ApplyResources(this.cal_division, "cal_division");
+            this.cal_division.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.cal_division.FlatAppearance.BorderSize = 0;
+            this.cal_division.Name = "cal_division";
+            this.cal_division.UseVisualStyleBackColor = false;
+            // 
+            // cb_hk_spendEx
+            // 
+            resources.ApplyResources(this.cb_hk_spendEx, "cb_hk_spendEx");
+            this.cb_hk_spendEx.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.cb_hk_spendEx.FormattingEnabled = true;
+            this.cb_hk_spendEx.Items.AddRange(new object[] {
+            resources.GetString("cb_hk_spendEx.Items"),
+            resources.GetString("cb_hk_spendEx.Items1"),
+            resources.GetString("cb_hk_spendEx.Items2")});
+            this.cb_hk_spendEx.Name = "cb_hk_spendEx";
+            this.cb_hk_spendEx.SelectedIndexChanged += new System.EventHandler(this.cb_hk_spendEx_SelectedIndexChanged);
+            // 
+            // cal_Percent
+            // 
+            resources.ApplyResources(this.cal_Percent, "cal_Percent");
+            this.cal_Percent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.cal_Percent.FlatAppearance.BorderSize = 0;
+            this.cal_Percent.Name = "cal_Percent";
+            this.cal_Percent.UseVisualStyleBackColor = false;
+            // 
+            // cal_result
+            // 
+            resources.ApplyResources(this.cal_result, "cal_result");
+            this.cal_result.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.cal_result.Name = "cal_result";
+            // 
+            // btn_hk_spend
+            // 
+            resources.ApplyResources(this.btn_hk_spend, "btn_hk_spend");
+            this.btn_hk_spend.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btn_hk_spend.FlatAppearance.BorderSize = 0;
+            this.btn_hk_spend.Name = "btn_hk_spend";
+            this.btn_hk_spend.UseVisualStyleBackColor = false;
+            this.btn_hk_spend.Click += new System.EventHandler(this.btn_hk_spend_Click);
+            // 
+            // cb_hk_spendAccont
+            // 
+            resources.ApplyResources(this.cb_hk_spendAccont, "cb_hk_spendAccont");
+            this.cb_hk_spendAccont.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.cb_hk_spendAccont.FormattingEnabled = true;
+            this.cb_hk_spendAccont.Name = "cb_hk_spendAccont";
+            // 
+            // cb_hk_spendType
+            // 
+            this.cb_hk_spendType.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            resources.ApplyResources(this.cb_hk_spendType, "cb_hk_spendType");
+            this.cb_hk_spendType.FormattingEnabled = true;
+            this.cb_hk_spendType.Name = "cb_hk_spendType";
+            // 
+            // txt_hk_spendPrice
+            // 
+            resources.ApplyResources(this.txt_hk_spendPrice, "txt_hk_spendPrice");
+            this.txt_hk_spendPrice.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.txt_hk_spendPrice.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_hk_spendPrice.Name = "txt_hk_spendPrice";
+            // 
+            // txt_hk_spendComment
+            // 
+            resources.ApplyResources(this.txt_hk_spendComment, "txt_hk_spendComment");
+            this.txt_hk_spendComment.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.txt_hk_spendComment.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_hk_spendComment.Name = "txt_hk_spendComment";
+            // 
+            // tabPage_hk_income
+            // 
+            this.tabPage_hk_income.BackColor = System.Drawing.Color.White;
+            this.tabPage_hk_income.Controls.Add(this.lb_hk_title3);
+            this.tabPage_hk_income.Controls.Add(this.lb_hk_title2);
+            this.tabPage_hk_income.Controls.Add(this.cb_hk_exchangeEx);
+            this.tabPage_hk_income.Controls.Add(this.cb_hk_incomeEx);
+            this.tabPage_hk_income.Controls.Add(this.btn_exchange);
+            this.tabPage_hk_income.Controls.Add(this.btn_hk_income);
+            this.tabPage_hk_income.Controls.Add(this.txt_hk_incomePrice);
+            this.tabPage_hk_income.Controls.Add(this.txt_hk_incomeComment);
+            this.tabPage_hk_income.Controls.Add(this.cb_hk_incomeAccount);
+            this.tabPage_hk_income.Controls.Add(this.cb_hk_exChange1);
+            this.tabPage_hk_income.Controls.Add(this.cb_hk_exChange2);
+            this.tabPage_hk_income.Controls.Add(this.txt_hk_exchangePrice);
+            this.tabPage_hk_income.Controls.Add(this.lb_exchange);
+            resources.ApplyResources(this.tabPage_hk_income, "tabPage_hk_income");
+            this.tabPage_hk_income.Name = "tabPage_hk_income";
+            // 
+            // lb_hk_title3
+            // 
+            resources.ApplyResources(this.lb_hk_title3, "lb_hk_title3");
+            this.lb_hk_title3.Name = "lb_hk_title3";
+            // 
+            // lb_hk_title2
+            // 
+            resources.ApplyResources(this.lb_hk_title2, "lb_hk_title2");
+            this.lb_hk_title2.Name = "lb_hk_title2";
+            // 
+            // cb_hk_exchangeEx
+            // 
+            resources.ApplyResources(this.cb_hk_exchangeEx, "cb_hk_exchangeEx");
+            this.cb_hk_exchangeEx.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.cb_hk_exchangeEx.FormattingEnabled = true;
+            this.cb_hk_exchangeEx.Items.AddRange(new object[] {
+            resources.GetString("cb_hk_exchangeEx.Items"),
+            resources.GetString("cb_hk_exchangeEx.Items1"),
+            resources.GetString("cb_hk_exchangeEx.Items2")});
+            this.cb_hk_exchangeEx.Name = "cb_hk_exchangeEx";
+            this.cb_hk_exchangeEx.SelectedIndexChanged += new System.EventHandler(this.cb_hk_exchangeEx_SelectedIndexChanged);
+            // 
+            // cb_hk_incomeEx
+            // 
+            resources.ApplyResources(this.cb_hk_incomeEx, "cb_hk_incomeEx");
+            this.cb_hk_incomeEx.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.cb_hk_incomeEx.FormattingEnabled = true;
+            this.cb_hk_incomeEx.Items.AddRange(new object[] {
+            resources.GetString("cb_hk_incomeEx.Items"),
+            resources.GetString("cb_hk_incomeEx.Items1"),
+            resources.GetString("cb_hk_incomeEx.Items2")});
+            this.cb_hk_incomeEx.Name = "cb_hk_incomeEx";
+            this.cb_hk_incomeEx.SelectedIndexChanged += new System.EventHandler(this.cb_hk_incomeEx_SelectedIndexChanged);
+            // 
+            // btn_exchange
+            // 
+            resources.ApplyResources(this.btn_exchange, "btn_exchange");
+            this.btn_exchange.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btn_exchange.FlatAppearance.BorderSize = 0;
+            this.btn_exchange.Name = "btn_exchange";
+            this.btn_exchange.UseVisualStyleBackColor = false;
+            this.btn_exchange.Click += new System.EventHandler(this.EXCHANGE_Click);
+            // 
+            // btn_hk_income
+            // 
+            resources.ApplyResources(this.btn_hk_income, "btn_hk_income");
+            this.btn_hk_income.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btn_hk_income.FlatAppearance.BorderSize = 0;
+            this.btn_hk_income.Name = "btn_hk_income";
+            this.btn_hk_income.UseVisualStyleBackColor = false;
+            this.btn_hk_income.Click += new System.EventHandler(this.btn_hk_income_Click);
+            // 
+            // txt_hk_incomePrice
+            // 
+            resources.ApplyResources(this.txt_hk_incomePrice, "txt_hk_incomePrice");
+            this.txt_hk_incomePrice.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.txt_hk_incomePrice.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_hk_incomePrice.Name = "txt_hk_incomePrice";
+            // 
+            // txt_hk_incomeComment
+            // 
+            resources.ApplyResources(this.txt_hk_incomeComment, "txt_hk_incomeComment");
+            this.txt_hk_incomeComment.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.txt_hk_incomeComment.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_hk_incomeComment.Name = "txt_hk_incomeComment";
+            // 
+            // cb_hk_incomeAccount
+            // 
+            this.cb_hk_incomeAccount.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            resources.ApplyResources(this.cb_hk_incomeAccount, "cb_hk_incomeAccount");
+            this.cb_hk_incomeAccount.FormattingEnabled = true;
+            this.cb_hk_incomeAccount.Name = "cb_hk_incomeAccount";
+            // 
+            // cb_hk_exChange1
+            // 
+            resources.ApplyResources(this.cb_hk_exChange1, "cb_hk_exChange1");
+            this.cb_hk_exChange1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.cb_hk_exChange1.FormattingEnabled = true;
+            this.cb_hk_exChange1.Name = "cb_hk_exChange1";
+            // 
+            // cb_hk_exChange2
+            // 
+            resources.ApplyResources(this.cb_hk_exChange2, "cb_hk_exChange2");
+            this.cb_hk_exChange2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.cb_hk_exChange2.FormattingEnabled = true;
+            this.cb_hk_exChange2.Name = "cb_hk_exChange2";
+            // 
+            // txt_hk_exchangePrice
+            // 
+            resources.ApplyResources(this.txt_hk_exchangePrice, "txt_hk_exchangePrice");
+            this.txt_hk_exchangePrice.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.txt_hk_exchangePrice.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_hk_exchangePrice.Name = "txt_hk_exchangePrice";
+            // 
+            // lb_exchange
+            // 
+            resources.ApplyResources(this.lb_exchange, "lb_exchange");
+            this.lb_exchange.Name = "lb_exchange";
+            // 
+            // tabPage_hk_account
+            // 
+            this.tabPage_hk_account.Controls.Add(this.lb_hk_title4);
+            this.tabPage_hk_account.Controls.Add(this.btn_hk_AccountRegister);
+            this.tabPage_hk_account.Controls.Add(this.txt_hk_AccountName);
+            this.tabPage_hk_account.Controls.Add(this.cb_hk_AccountType);
+            resources.ApplyResources(this.tabPage_hk_account, "tabPage_hk_account");
+            this.tabPage_hk_account.Name = "tabPage_hk_account";
+            this.tabPage_hk_account.UseVisualStyleBackColor = true;
+            // 
+            // lb_hk_title4
+            // 
+            resources.ApplyResources(this.lb_hk_title4, "lb_hk_title4");
+            this.lb_hk_title4.Name = "lb_hk_title4";
+            // 
+            // btn_hk_AccountRegister
+            // 
+            this.btn_hk_AccountRegister.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btn_hk_AccountRegister.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.btn_hk_AccountRegister, "btn_hk_AccountRegister");
+            this.btn_hk_AccountRegister.Name = "btn_hk_AccountRegister";
+            this.btn_hk_AccountRegister.UseVisualStyleBackColor = false;
+            this.btn_hk_AccountRegister.Click += new System.EventHandler(this.btn_hk_AccountRegister_Click);
+            // 
+            // txt_hk_AccountName
+            // 
+            this.txt_hk_AccountName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.txt_hk_AccountName.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            resources.ApplyResources(this.txt_hk_AccountName, "txt_hk_AccountName");
+            this.txt_hk_AccountName.Name = "txt_hk_AccountName";
+            // 
+            // cb_hk_AccountType
+            // 
+            this.cb_hk_AccountType.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            resources.ApplyResources(this.cb_hk_AccountType, "cb_hk_AccountType");
+            this.cb_hk_AccountType.FormattingEnabled = true;
+            this.cb_hk_AccountType.Items.AddRange(new object[] {
+            resources.GetString("cb_hk_AccountType.Items"),
+            resources.GetString("cb_hk_AccountType.Items1")});
+            this.cb_hk_AccountType.Name = "cb_hk_AccountType";
             // 
             // pnl_hk_info
             // 
@@ -1114,12 +1554,12 @@
             // 
             // chart_inOut
             // 
+            resources.ApplyResources(this.chart_inOut, "chart_inOut");
             this.chart_inOut.BackColor = System.Drawing.Color.Transparent;
             chartArea2.Name = "ChartArea1";
             this.chart_inOut.ChartAreas.Add(chartArea2);
             legend2.Name = "Legend1";
             this.chart_inOut.Legends.Add(legend2);
-            resources.ApplyResources(this.chart_inOut, "chart_inOut");
             this.chart_inOut.Name = "chart_inOut";
             series2.ChartArea = "ChartArea1";
             series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Bar;
@@ -1131,424 +1571,6 @@
             // 
             resources.ApplyResources(this.flp_hk_AccontInfo, "flp_hk_AccontInfo");
             this.flp_hk_AccontInfo.Name = "flp_hk_AccontInfo";
-            // 
-            // tdp_hk_selectDate
-            // 
-            resources.ApplyResources(this.tdp_hk_selectDate, "tdp_hk_selectDate");
-            this.tdp_hk_selectDate.Name = "tdp_hk_selectDate";
-            // 
-            // home_tab_insert
-            // 
-            this.home_tab_insert.Controls.Add(this.tabPage_hk_spend);
-            this.home_tab_insert.Controls.Add(this.tabPage_hk_income);
-            this.home_tab_insert.Controls.Add(this.tabPage_hk_account);
-            resources.ApplyResources(this.home_tab_insert, "home_tab_insert");
-            this.home_tab_insert.Name = "home_tab_insert";
-            this.home_tab_insert.SelectedIndex = 0;
-            // 
-            // tabPage_hk_spend
-            // 
-            this.tabPage_hk_spend.BackColor = System.Drawing.Color.White;
-            this.tabPage_hk_spend.Controls.Add(this.lb_hk_title1);
-            this.tabPage_hk_spend.Controls.Add(this.cal_1);
-            this.tabPage_hk_spend.Controls.Add(this.cal_4);
-            this.tabPage_hk_spend.Controls.Add(this.cal_7);
-            this.tabPage_hk_spend.Controls.Add(this.cal_CE);
-            this.tabPage_hk_spend.Controls.Add(this.cal_equal);
-            this.tabPage_hk_spend.Controls.Add(this.cal_comma);
-            this.tabPage_hk_spend.Controls.Add(this.cal_0);
-            this.tabPage_hk_spend.Controls.Add(this.cal_Plus);
-            this.tabPage_hk_spend.Controls.Add(this.cal_3);
-            this.tabPage_hk_spend.Controls.Add(this.cal_2);
-            this.tabPage_hk_spend.Controls.Add(this.cal_minuse);
-            this.tabPage_hk_spend.Controls.Add(this.cal_6);
-            this.tabPage_hk_spend.Controls.Add(this.cal_5);
-            this.tabPage_hk_spend.Controls.Add(this.cal_multiple);
-            this.tabPage_hk_spend.Controls.Add(this.cal_9);
-            this.tabPage_hk_spend.Controls.Add(this.cal_8);
-            this.tabPage_hk_spend.Controls.Add(this.cal_Backspace);
-            this.tabPage_hk_spend.Controls.Add(this.cal_division);
-            this.tabPage_hk_spend.Controls.Add(this.cb_hk_spendEx);
-            this.tabPage_hk_spend.Controls.Add(this.cal_Percent);
-            this.tabPage_hk_spend.Controls.Add(this.cal_result);
-            this.tabPage_hk_spend.Controls.Add(this.btn_hk_spend);
-            this.tabPage_hk_spend.Controls.Add(this.cb_hk_spendAccont);
-            this.tabPage_hk_spend.Controls.Add(this.cb_hk_spendType);
-            this.tabPage_hk_spend.Controls.Add(this.txt_hk_spendPrice);
-            this.tabPage_hk_spend.Controls.Add(this.txt_hk_spendComment);
-            resources.ApplyResources(this.tabPage_hk_spend, "tabPage_hk_spend");
-            this.tabPage_hk_spend.Name = "tabPage_hk_spend";
-            // 
-            // lb_hk_title1
-            // 
-            resources.ApplyResources(this.lb_hk_title1, "lb_hk_title1");
-            this.lb_hk_title1.Name = "lb_hk_title1";
-            // 
-            // cal_1
-            // 
-            this.cal_1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.cal_1.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.cal_1, "cal_1");
-            this.cal_1.Name = "cal_1";
-            this.cal_1.UseVisualStyleBackColor = false;
-            // 
-            // cal_4
-            // 
-            this.cal_4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.cal_4.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.cal_4, "cal_4");
-            this.cal_4.Name = "cal_4";
-            this.cal_4.UseVisualStyleBackColor = false;
-            // 
-            // cal_7
-            // 
-            this.cal_7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.cal_7.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.cal_7, "cal_7");
-            this.cal_7.Name = "cal_7";
-            this.cal_7.UseVisualStyleBackColor = false;
-            // 
-            // cal_CE
-            // 
-            this.cal_CE.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.cal_CE.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.cal_CE, "cal_CE");
-            this.cal_CE.Name = "cal_CE";
-            this.cal_CE.UseVisualStyleBackColor = false;
-            // 
-            // cal_equal
-            // 
-            this.cal_equal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.cal_equal.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.cal_equal, "cal_equal");
-            this.cal_equal.Name = "cal_equal";
-            this.cal_equal.UseVisualStyleBackColor = false;
-            // 
-            // cal_comma
-            // 
-            this.cal_comma.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.cal_comma.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.cal_comma, "cal_comma");
-            this.cal_comma.Name = "cal_comma";
-            this.cal_comma.UseVisualStyleBackColor = false;
-            // 
-            // cal_0
-            // 
-            this.cal_0.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.cal_0.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.cal_0, "cal_0");
-            this.cal_0.Name = "cal_0";
-            this.cal_0.UseVisualStyleBackColor = false;
-            // 
-            // cal_Plus
-            // 
-            this.cal_Plus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.cal_Plus.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.cal_Plus, "cal_Plus");
-            this.cal_Plus.Name = "cal_Plus";
-            this.cal_Plus.UseVisualStyleBackColor = false;
-            // 
-            // cal_3
-            // 
-            this.cal_3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.cal_3.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.cal_3, "cal_3");
-            this.cal_3.Name = "cal_3";
-            this.cal_3.UseVisualStyleBackColor = false;
-            // 
-            // cal_2
-            // 
-            this.cal_2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.cal_2.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.cal_2, "cal_2");
-            this.cal_2.Name = "cal_2";
-            this.cal_2.UseVisualStyleBackColor = false;
-            // 
-            // cal_minuse
-            // 
-            this.cal_minuse.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.cal_minuse.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.cal_minuse, "cal_minuse");
-            this.cal_minuse.Name = "cal_minuse";
-            this.cal_minuse.UseVisualStyleBackColor = false;
-            // 
-            // cal_6
-            // 
-            this.cal_6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.cal_6.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.cal_6, "cal_6");
-            this.cal_6.Name = "cal_6";
-            this.cal_6.UseVisualStyleBackColor = false;
-            // 
-            // cal_5
-            // 
-            this.cal_5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.cal_5.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.cal_5, "cal_5");
-            this.cal_5.Name = "cal_5";
-            this.cal_5.UseVisualStyleBackColor = false;
-            // 
-            // cal_multiple
-            // 
-            this.cal_multiple.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.cal_multiple.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.cal_multiple, "cal_multiple");
-            this.cal_multiple.Name = "cal_multiple";
-            this.cal_multiple.UseVisualStyleBackColor = false;
-            // 
-            // cal_9
-            // 
-            this.cal_9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.cal_9.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.cal_9, "cal_9");
-            this.cal_9.Name = "cal_9";
-            this.cal_9.UseVisualStyleBackColor = false;
-            // 
-            // cal_8
-            // 
-            this.cal_8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.cal_8.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.cal_8, "cal_8");
-            this.cal_8.Name = "cal_8";
-            this.cal_8.UseVisualStyleBackColor = false;
-            // 
-            // cal_Backspace
-            // 
-            this.cal_Backspace.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.cal_Backspace.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.cal_Backspace, "cal_Backspace");
-            this.cal_Backspace.Name = "cal_Backspace";
-            this.cal_Backspace.UseVisualStyleBackColor = false;
-            // 
-            // cal_division
-            // 
-            this.cal_division.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.cal_division.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.cal_division, "cal_division");
-            this.cal_division.Name = "cal_division";
-            this.cal_division.UseVisualStyleBackColor = false;
-            // 
-            // cb_hk_spendEx
-            // 
-            this.cb_hk_spendEx.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            resources.ApplyResources(this.cb_hk_spendEx, "cb_hk_spendEx");
-            this.cb_hk_spendEx.FormattingEnabled = true;
-            this.cb_hk_spendEx.Items.AddRange(new object[] {
-            resources.GetString("cb_hk_spendEx.Items"),
-            resources.GetString("cb_hk_spendEx.Items1"),
-            resources.GetString("cb_hk_spendEx.Items2")});
-            this.cb_hk_spendEx.Name = "cb_hk_spendEx";
-            this.cb_hk_spendEx.SelectedIndexChanged += new System.EventHandler(this.cb_hk_spendEx_SelectedIndexChanged);
-            // 
-            // cal_Percent
-            // 
-            this.cal_Percent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.cal_Percent.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.cal_Percent, "cal_Percent");
-            this.cal_Percent.Name = "cal_Percent";
-            this.cal_Percent.UseVisualStyleBackColor = false;
-            // 
-            // cal_result
-            // 
-            this.cal_result.BackColor = System.Drawing.Color.WhiteSmoke;
-            resources.ApplyResources(this.cal_result, "cal_result");
-            this.cal_result.Name = "cal_result";
-            // 
-            // btn_hk_spend
-            // 
-            this.btn_hk_spend.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btn_hk_spend.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.btn_hk_spend, "btn_hk_spend");
-            this.btn_hk_spend.Name = "btn_hk_spend";
-            this.btn_hk_spend.UseVisualStyleBackColor = false;
-            this.btn_hk_spend.Click += new System.EventHandler(this.btn_hk_spend_Click);
-            // 
-            // cb_hk_spendAccont
-            // 
-            this.cb_hk_spendAccont.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            resources.ApplyResources(this.cb_hk_spendAccont, "cb_hk_spendAccont");
-            this.cb_hk_spendAccont.FormattingEnabled = true;
-            this.cb_hk_spendAccont.Name = "cb_hk_spendAccont";
-            // 
-            // cb_hk_spendType
-            // 
-            this.cb_hk_spendType.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            resources.ApplyResources(this.cb_hk_spendType, "cb_hk_spendType");
-            this.cb_hk_spendType.FormattingEnabled = true;
-            this.cb_hk_spendType.Name = "cb_hk_spendType";
-            // 
-            // txt_hk_spendPrice
-            // 
-            this.txt_hk_spendPrice.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.txt_hk_spendPrice.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            resources.ApplyResources(this.txt_hk_spendPrice, "txt_hk_spendPrice");
-            this.txt_hk_spendPrice.Name = "txt_hk_spendPrice";
-            // 
-            // txt_hk_spendComment
-            // 
-            this.txt_hk_spendComment.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.txt_hk_spendComment.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            resources.ApplyResources(this.txt_hk_spendComment, "txt_hk_spendComment");
-            this.txt_hk_spendComment.Name = "txt_hk_spendComment";
-            // 
-            // tabPage_hk_income
-            // 
-            this.tabPage_hk_income.BackColor = System.Drawing.Color.White;
-            this.tabPage_hk_income.Controls.Add(this.lb_hk_title3);
-            this.tabPage_hk_income.Controls.Add(this.lb_hk_title2);
-            this.tabPage_hk_income.Controls.Add(this.cb_hk_exchangeEx);
-            this.tabPage_hk_income.Controls.Add(this.cb_hk_incomeEx);
-            this.tabPage_hk_income.Controls.Add(this.btn_exchange);
-            this.tabPage_hk_income.Controls.Add(this.btn_hk_income);
-            this.tabPage_hk_income.Controls.Add(this.txt_hk_incomePrice);
-            this.tabPage_hk_income.Controls.Add(this.txt_hk_incomeComment);
-            this.tabPage_hk_income.Controls.Add(this.cb_hk_incomeAccount);
-            this.tabPage_hk_income.Controls.Add(this.cb_hk_exChange1);
-            this.tabPage_hk_income.Controls.Add(this.cb_hk_exChange2);
-            this.tabPage_hk_income.Controls.Add(this.txt_hk_exchangePrice);
-            this.tabPage_hk_income.Controls.Add(this.lb_exchange);
-            resources.ApplyResources(this.tabPage_hk_income, "tabPage_hk_income");
-            this.tabPage_hk_income.Name = "tabPage_hk_income";
-            // 
-            // lb_hk_title3
-            // 
-            resources.ApplyResources(this.lb_hk_title3, "lb_hk_title3");
-            this.lb_hk_title3.Name = "lb_hk_title3";
-            // 
-            // lb_hk_title2
-            // 
-            resources.ApplyResources(this.lb_hk_title2, "lb_hk_title2");
-            this.lb_hk_title2.Name = "lb_hk_title2";
-            // 
-            // cb_hk_exchangeEx
-            // 
-            this.cb_hk_exchangeEx.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            resources.ApplyResources(this.cb_hk_exchangeEx, "cb_hk_exchangeEx");
-            this.cb_hk_exchangeEx.FormattingEnabled = true;
-            this.cb_hk_exchangeEx.Items.AddRange(new object[] {
-            resources.GetString("cb_hk_exchangeEx.Items"),
-            resources.GetString("cb_hk_exchangeEx.Items1"),
-            resources.GetString("cb_hk_exchangeEx.Items2")});
-            this.cb_hk_exchangeEx.Name = "cb_hk_exchangeEx";
-            this.cb_hk_exchangeEx.SelectedIndexChanged += new System.EventHandler(this.cb_hk_exchangeEx_SelectedIndexChanged);
-            // 
-            // cb_hk_incomeEx
-            // 
-            this.cb_hk_incomeEx.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            resources.ApplyResources(this.cb_hk_incomeEx, "cb_hk_incomeEx");
-            this.cb_hk_incomeEx.FormattingEnabled = true;
-            this.cb_hk_incomeEx.Items.AddRange(new object[] {
-            resources.GetString("cb_hk_incomeEx.Items"),
-            resources.GetString("cb_hk_incomeEx.Items1"),
-            resources.GetString("cb_hk_incomeEx.Items2")});
-            this.cb_hk_incomeEx.Name = "cb_hk_incomeEx";
-            this.cb_hk_incomeEx.SelectedIndexChanged += new System.EventHandler(this.cb_hk_incomeEx_SelectedIndexChanged);
-            // 
-            // btn_exchange
-            // 
-            this.btn_exchange.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btn_exchange.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.btn_exchange, "btn_exchange");
-            this.btn_exchange.Name = "btn_exchange";
-            this.btn_exchange.UseVisualStyleBackColor = false;
-            this.btn_exchange.Click += new System.EventHandler(this.EXCHANGE_Click);
-            // 
-            // btn_hk_income
-            // 
-            this.btn_hk_income.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btn_hk_income.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.btn_hk_income, "btn_hk_income");
-            this.btn_hk_income.Name = "btn_hk_income";
-            this.btn_hk_income.UseVisualStyleBackColor = false;
-            this.btn_hk_income.Click += new System.EventHandler(this.btn_hk_income_Click);
-            // 
-            // txt_hk_incomePrice
-            // 
-            this.txt_hk_incomePrice.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.txt_hk_incomePrice.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            resources.ApplyResources(this.txt_hk_incomePrice, "txt_hk_incomePrice");
-            this.txt_hk_incomePrice.Name = "txt_hk_incomePrice";
-            // 
-            // txt_hk_incomeComment
-            // 
-            this.txt_hk_incomeComment.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.txt_hk_incomeComment.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            resources.ApplyResources(this.txt_hk_incomeComment, "txt_hk_incomeComment");
-            this.txt_hk_incomeComment.Name = "txt_hk_incomeComment";
-            // 
-            // cb_hk_incomeAccount
-            // 
-            this.cb_hk_incomeAccount.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            resources.ApplyResources(this.cb_hk_incomeAccount, "cb_hk_incomeAccount");
-            this.cb_hk_incomeAccount.FormattingEnabled = true;
-            this.cb_hk_incomeAccount.Name = "cb_hk_incomeAccount";
-            // 
-            // cb_hk_exChange1
-            // 
-            this.cb_hk_exChange1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            resources.ApplyResources(this.cb_hk_exChange1, "cb_hk_exChange1");
-            this.cb_hk_exChange1.FormattingEnabled = true;
-            this.cb_hk_exChange1.Name = "cb_hk_exChange1";
-            // 
-            // cb_hk_exChange2
-            // 
-            this.cb_hk_exChange2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            resources.ApplyResources(this.cb_hk_exChange2, "cb_hk_exChange2");
-            this.cb_hk_exChange2.FormattingEnabled = true;
-            this.cb_hk_exChange2.Name = "cb_hk_exChange2";
-            // 
-            // txt_hk_exchangePrice
-            // 
-            this.txt_hk_exchangePrice.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.txt_hk_exchangePrice.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            resources.ApplyResources(this.txt_hk_exchangePrice, "txt_hk_exchangePrice");
-            this.txt_hk_exchangePrice.Name = "txt_hk_exchangePrice";
-            // 
-            // lb_exchange
-            // 
-            resources.ApplyResources(this.lb_exchange, "lb_exchange");
-            this.lb_exchange.Name = "lb_exchange";
-            // 
-            // tabPage_hk_account
-            // 
-            this.tabPage_hk_account.Controls.Add(this.lb_hk_title4);
-            this.tabPage_hk_account.Controls.Add(this.btn_hk_AccountRegister);
-            this.tabPage_hk_account.Controls.Add(this.txt_hk_AccountName);
-            this.tabPage_hk_account.Controls.Add(this.cb_hk_AccountType);
-            resources.ApplyResources(this.tabPage_hk_account, "tabPage_hk_account");
-            this.tabPage_hk_account.Name = "tabPage_hk_account";
-            this.tabPage_hk_account.UseVisualStyleBackColor = true;
-            // 
-            // lb_hk_title4
-            // 
-            resources.ApplyResources(this.lb_hk_title4, "lb_hk_title4");
-            this.lb_hk_title4.Name = "lb_hk_title4";
-            // 
-            // btn_hk_AccountRegister
-            // 
-            this.btn_hk_AccountRegister.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btn_hk_AccountRegister.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.btn_hk_AccountRegister, "btn_hk_AccountRegister");
-            this.btn_hk_AccountRegister.Name = "btn_hk_AccountRegister";
-            this.btn_hk_AccountRegister.UseVisualStyleBackColor = false;
-            this.btn_hk_AccountRegister.Click += new System.EventHandler(this.btn_hk_AccountRegister_Click);
-            // 
-            // txt_hk_AccountName
-            // 
-            this.txt_hk_AccountName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.txt_hk_AccountName.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            resources.ApplyResources(this.txt_hk_AccountName, "txt_hk_AccountName");
-            this.txt_hk_AccountName.Name = "txt_hk_AccountName";
-            // 
-            // cb_hk_AccountType
-            // 
-            this.cb_hk_AccountType.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            resources.ApplyResources(this.cb_hk_AccountType, "cb_hk_AccountType");
-            this.cb_hk_AccountType.FormattingEnabled = true;
-            this.cb_hk_AccountType.Items.AddRange(new object[] {
-            resources.GetString("cb_hk_AccountType.Items"),
-            resources.GetString("cb_hk_AccountType.Items1")});
-            this.cb_hk_AccountType.Name = "cb_hk_AccountType";
             // 
             // pnl_hk_side
             // 
@@ -1588,11 +1610,11 @@
             // 
             // pnl_hk_analysis_title
             // 
+            resources.ApplyResources(this.pnl_hk_analysis_title, "pnl_hk_analysis_title");
             this.pnl_hk_analysis_title.BackColor = System.Drawing.Color.White;
             this.pnl_hk_analysis_title.Controls.Add(this.lb_hk_anal_title3);
             this.pnl_hk_analysis_title.Controls.Add(this.lb_hk_anal_title2);
             this.pnl_hk_analysis_title.Controls.Add(this.lb_hk_anal_title1);
-            resources.ApplyResources(this.pnl_hk_analysis_title, "pnl_hk_analysis_title");
             this.pnl_hk_analysis_title.Name = "pnl_hk_analysis_title";
             // 
             // lb_hk_anal_title3
@@ -1618,18 +1640,18 @@
             // 
             // pnl_hk_analysis2
             // 
+            resources.ApplyResources(this.pnl_hk_analysis2, "pnl_hk_analysis2");
             this.pnl_hk_analysis2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(44)))), ((int)(((byte)(65)))));
             this.pnl_hk_analysis2.Controls.Add(this.chart_AnalysisByDate);
-            resources.ApplyResources(this.pnl_hk_analysis2, "pnl_hk_analysis2");
             this.pnl_hk_analysis2.Name = "pnl_hk_analysis2";
             // 
             // chart_AnalysisByDate
             // 
+            resources.ApplyResources(this.chart_AnalysisByDate, "chart_AnalysisByDate");
             chartArea3.Name = "ChartArea1";
             this.chart_AnalysisByDate.ChartAreas.Add(chartArea3);
             legend3.Name = "Legend1";
             this.chart_AnalysisByDate.Legends.Add(legend3);
-            resources.ApplyResources(this.chart_AnalysisByDate, "chart_AnalysisByDate");
             this.chart_AnalysisByDate.Name = "chart_AnalysisByDate";
             series3.ChartArea = "ChartArea1";
             series3.Legend = "Legend1";
@@ -1638,11 +1660,11 @@
             // 
             // pnl_hk_analysis1
             // 
+            resources.ApplyResources(this.pnl_hk_analysis1, "pnl_hk_analysis1");
             this.pnl_hk_analysis1.BackColor = System.Drawing.Color.White;
             this.pnl_hk_analysis1.Controls.Add(this.pnl_hk_side2);
             this.pnl_hk_analysis1.Controls.Add(this.chart_hk_pie);
             this.pnl_hk_analysis1.Controls.Add(this.flp_hk_analysis);
-            resources.ApplyResources(this.pnl_hk_analysis1, "pnl_hk_analysis1");
             this.pnl_hk_analysis1.Name = "pnl_hk_analysis1";
             // 
             // pnl_hk_side2
@@ -1652,11 +1674,11 @@
             // 
             // chart_hk_pie
             // 
+            resources.ApplyResources(this.chart_hk_pie, "chart_hk_pie");
             chartArea4.Name = "ChartArea1";
             this.chart_hk_pie.ChartAreas.Add(chartArea4);
             legend4.Name = "Legend1";
             this.chart_hk_pie.Legends.Add(legend4);
-            resources.ApplyResources(this.chart_hk_pie, "chart_hk_pie");
             this.chart_hk_pie.Name = "chart_hk_pie";
             series4.ChartArea = "ChartArea1";
             series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
@@ -1677,6 +1699,15 @@
             this.hk_year.Controls.Add(this.flp_hk_year);
             resources.ApplyResources(this.hk_year, "hk_year");
             this.hk_year.Name = "hk_year";
+            this.hk_year.Resize += new System.EventHandler(this.hk_year_Resize);
+            // 
+            // txt_hk_A_selectYear
+            // 
+            resources.ApplyResources(this.txt_hk_A_selectYear, "txt_hk_A_selectYear");
+            this.txt_hk_A_selectYear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.txt_hk_A_selectYear.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_hk_A_selectYear.Name = "txt_hk_A_selectYear";
+            this.txt_hk_A_selectYear.TextChanged += new System.EventHandler(this.txt_hk_A_selectYear_TextChanged);
             // 
             // flp_hk_year
             // 
@@ -1687,27 +1718,124 @@
             // 
             // pnl_hk_y_ana1
             // 
+            resources.ApplyResources(this.pnl_hk_y_ana1, "pnl_hk_y_ana1");
+            this.pnl_hk_y_ana1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(44)))), ((int)(((byte)(65)))));
             this.pnl_hk_y_ana1.Controls.Add(this.pnl_hk_year_anal1);
             this.pnl_hk_y_ana1.Controls.Add(this.chart_hk_year_anal2);
             this.pnl_hk_y_ana1.Controls.Add(this.chart_hk_year_anal1);
-            resources.ApplyResources(this.pnl_hk_y_ana1, "pnl_hk_y_ana1");
             this.pnl_hk_y_ana1.Name = "pnl_hk_y_ana1";
             // 
             // pnl_hk_year_anal1
             // 
-            this.pnl_hk_year_anal1.BackColor = System.Drawing.Color.DarkGray;
+            this.pnl_hk_year_anal1.BackColor = System.Drawing.Color.White;
             this.pnl_hk_year_anal1.Controls.Add(this.pnl_hk_anal_title);
             this.pnl_hk_year_anal1.Controls.Add(this.flp_hk_year_anal1);
             resources.ApplyResources(this.pnl_hk_year_anal1, "pnl_hk_year_anal1");
             this.pnl_hk_year_anal1.Name = "pnl_hk_year_anal1";
             // 
+            // pnl_hk_anal_title
+            // 
+            this.pnl_hk_anal_title.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.pnl_hk_anal_title.Controls.Add(this.lb_hk_Ana_title14);
+            this.pnl_hk_anal_title.Controls.Add(this.lb_hk_Ana_title13);
+            this.pnl_hk_anal_title.Controls.Add(this.lb_hk_Ana_title12);
+            this.pnl_hk_anal_title.Controls.Add(this.lb_hk_Ana_title11);
+            this.pnl_hk_anal_title.Controls.Add(this.lb_hk_Ana_title10);
+            this.pnl_hk_anal_title.Controls.Add(this.lb_hk_Ana_title9);
+            this.pnl_hk_anal_title.Controls.Add(this.lb_hk_Ana_title8);
+            this.pnl_hk_anal_title.Controls.Add(this.lb_hk_Ana_title7);
+            this.pnl_hk_anal_title.Controls.Add(this.lb_hk_Ana_title6);
+            this.pnl_hk_anal_title.Controls.Add(this.lb_hk_Ana_title5);
+            this.pnl_hk_anal_title.Controls.Add(this.lb_hk_Ana_title4);
+            this.pnl_hk_anal_title.Controls.Add(this.lb_hk_Ana_title3);
+            this.pnl_hk_anal_title.Controls.Add(this.lb_hk_Ana_title2);
+            this.pnl_hk_anal_title.Controls.Add(this.lb_hk_Ana_title1);
+            resources.ApplyResources(this.pnl_hk_anal_title, "pnl_hk_anal_title");
+            this.pnl_hk_anal_title.Name = "pnl_hk_anal_title";
+            // 
+            // lb_hk_Ana_title14
+            // 
+            resources.ApplyResources(this.lb_hk_Ana_title14, "lb_hk_Ana_title14");
+            this.lb_hk_Ana_title14.Name = "lb_hk_Ana_title14";
+            // 
+            // lb_hk_Ana_title13
+            // 
+            resources.ApplyResources(this.lb_hk_Ana_title13, "lb_hk_Ana_title13");
+            this.lb_hk_Ana_title13.Name = "lb_hk_Ana_title13";
+            // 
+            // lb_hk_Ana_title12
+            // 
+            resources.ApplyResources(this.lb_hk_Ana_title12, "lb_hk_Ana_title12");
+            this.lb_hk_Ana_title12.Name = "lb_hk_Ana_title12";
+            // 
+            // lb_hk_Ana_title11
+            // 
+            resources.ApplyResources(this.lb_hk_Ana_title11, "lb_hk_Ana_title11");
+            this.lb_hk_Ana_title11.Name = "lb_hk_Ana_title11";
+            // 
+            // lb_hk_Ana_title10
+            // 
+            resources.ApplyResources(this.lb_hk_Ana_title10, "lb_hk_Ana_title10");
+            this.lb_hk_Ana_title10.Name = "lb_hk_Ana_title10";
+            // 
+            // lb_hk_Ana_title9
+            // 
+            resources.ApplyResources(this.lb_hk_Ana_title9, "lb_hk_Ana_title9");
+            this.lb_hk_Ana_title9.Name = "lb_hk_Ana_title9";
+            // 
+            // lb_hk_Ana_title8
+            // 
+            resources.ApplyResources(this.lb_hk_Ana_title8, "lb_hk_Ana_title8");
+            this.lb_hk_Ana_title8.Name = "lb_hk_Ana_title8";
+            // 
+            // lb_hk_Ana_title7
+            // 
+            resources.ApplyResources(this.lb_hk_Ana_title7, "lb_hk_Ana_title7");
+            this.lb_hk_Ana_title7.Name = "lb_hk_Ana_title7";
+            // 
+            // lb_hk_Ana_title6
+            // 
+            resources.ApplyResources(this.lb_hk_Ana_title6, "lb_hk_Ana_title6");
+            this.lb_hk_Ana_title6.Name = "lb_hk_Ana_title6";
+            // 
+            // lb_hk_Ana_title5
+            // 
+            resources.ApplyResources(this.lb_hk_Ana_title5, "lb_hk_Ana_title5");
+            this.lb_hk_Ana_title5.Name = "lb_hk_Ana_title5";
+            // 
+            // lb_hk_Ana_title4
+            // 
+            resources.ApplyResources(this.lb_hk_Ana_title4, "lb_hk_Ana_title4");
+            this.lb_hk_Ana_title4.Name = "lb_hk_Ana_title4";
+            // 
+            // lb_hk_Ana_title3
+            // 
+            resources.ApplyResources(this.lb_hk_Ana_title3, "lb_hk_Ana_title3");
+            this.lb_hk_Ana_title3.Name = "lb_hk_Ana_title3";
+            // 
+            // lb_hk_Ana_title2
+            // 
+            resources.ApplyResources(this.lb_hk_Ana_title2, "lb_hk_Ana_title2");
+            this.lb_hk_Ana_title2.Name = "lb_hk_Ana_title2";
+            // 
+            // lb_hk_Ana_title1
+            // 
+            resources.ApplyResources(this.lb_hk_Ana_title1, "lb_hk_Ana_title1");
+            this.lb_hk_Ana_title1.Name = "lb_hk_Ana_title1";
+            // 
+            // flp_hk_year_anal1
+            // 
+            resources.ApplyResources(this.flp_hk_year_anal1, "flp_hk_year_anal1");
+            this.flp_hk_year_anal1.BackColor = System.Drawing.Color.White;
+            this.flp_hk_year_anal1.Name = "flp_hk_year_anal1";
+            // 
             // chart_hk_year_anal2
             // 
+            resources.ApplyResources(this.chart_hk_year_anal2, "chart_hk_year_anal2");
             chartArea5.Name = "ChartArea1";
             this.chart_hk_year_anal2.ChartAreas.Add(chartArea5);
             legend5.Name = "Legend1";
             this.chart_hk_year_anal2.Legends.Add(legend5);
-            resources.ApplyResources(this.chart_hk_year_anal2, "chart_hk_year_anal2");
             this.chart_hk_year_anal2.Name = "chart_hk_year_anal2";
             series5.ChartArea = "ChartArea1";
             series5.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.StackedColumn;
@@ -1717,11 +1845,11 @@
             // 
             // chart_hk_year_anal1
             // 
+            resources.ApplyResources(this.chart_hk_year_anal1, "chart_hk_year_anal1");
             chartArea6.Name = "ChartArea1";
             this.chart_hk_year_anal1.ChartAreas.Add(chartArea6);
             legend6.Name = "Legend1";
             this.chart_hk_year_anal1.Legends.Add(legend6);
-            resources.ApplyResources(this.chart_hk_year_anal1, "chart_hk_year_anal1");
             this.chart_hk_year_anal1.Name = "chart_hk_year_anal1";
             series6.ChartArea = "ChartArea1";
             series6.Legend = "Legend1";
@@ -1730,45 +1858,129 @@
             // 
             // pnl_hk_y_ana2
             // 
+            this.pnl_hk_y_ana2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(44)))), ((int)(((byte)(65)))));
             this.pnl_hk_y_ana2.Controls.Add(this.pnl_hk_year_anal2);
-            this.pnl_hk_y_ana2.Controls.Add(this.chart_hk_year_anal4);
             this.pnl_hk_y_ana2.Controls.Add(this.chart_hk_year_anal3);
             resources.ApplyResources(this.pnl_hk_y_ana2, "pnl_hk_y_ana2");
             this.pnl_hk_y_ana2.Name = "pnl_hk_y_ana2";
             // 
             // pnl_hk_year_anal2
             // 
-            this.pnl_hk_year_anal2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.pnl_hk_year_anal2.BackColor = System.Drawing.Color.White;
+            this.pnl_hk_year_anal2.Controls.Add(this.panel1);
             this.pnl_hk_year_anal2.Controls.Add(this.flp_hk_year_anal2);
             resources.ApplyResources(this.pnl_hk_year_anal2, "pnl_hk_year_anal2");
             this.pnl_hk_year_anal2.Name = "pnl_hk_year_anal2";
             // 
-            // chart_hk_year_anal4
+            // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.panel1.Controls.Add(this.lb_hk_Ana2_title14);
+            this.panel1.Controls.Add(this.lb_hk_Ana2_title13);
+            this.panel1.Controls.Add(this.lb_hk_Ana2_title12);
+            this.panel1.Controls.Add(this.lb_hk_Ana2_title11);
+            this.panel1.Controls.Add(this.lb_hk_Ana2_title10);
+            this.panel1.Controls.Add(this.lb_hk_Ana2_title9);
+            this.panel1.Controls.Add(this.lb_hk_Ana2_title8);
+            this.panel1.Controls.Add(this.lb_hk_Ana2_title7);
+            this.panel1.Controls.Add(this.lb_hk_Ana2_title6);
+            this.panel1.Controls.Add(this.lb_hk_Ana2_title5);
+            this.panel1.Controls.Add(this.lb_hk_Ana2_title4);
+            this.panel1.Controls.Add(this.lb_hk_Ana2_title3);
+            this.panel1.Controls.Add(this.lb_hk_Ana2_title2);
+            this.panel1.Controls.Add(this.lb_hk_Ana2_title1);
+            resources.ApplyResources(this.panel1, "panel1");
+            this.panel1.Name = "panel1";
+            // 
+            // lb_hk_Ana2_title14
+            // 
+            resources.ApplyResources(this.lb_hk_Ana2_title14, "lb_hk_Ana2_title14");
+            this.lb_hk_Ana2_title14.Name = "lb_hk_Ana2_title14";
+            // 
+            // lb_hk_Ana2_title13
+            // 
+            resources.ApplyResources(this.lb_hk_Ana2_title13, "lb_hk_Ana2_title13");
+            this.lb_hk_Ana2_title13.Name = "lb_hk_Ana2_title13";
+            // 
+            // lb_hk_Ana2_title12
+            // 
+            resources.ApplyResources(this.lb_hk_Ana2_title12, "lb_hk_Ana2_title12");
+            this.lb_hk_Ana2_title12.Name = "lb_hk_Ana2_title12";
+            // 
+            // lb_hk_Ana2_title11
+            // 
+            resources.ApplyResources(this.lb_hk_Ana2_title11, "lb_hk_Ana2_title11");
+            this.lb_hk_Ana2_title11.Name = "lb_hk_Ana2_title11";
+            // 
+            // lb_hk_Ana2_title10
+            // 
+            resources.ApplyResources(this.lb_hk_Ana2_title10, "lb_hk_Ana2_title10");
+            this.lb_hk_Ana2_title10.Name = "lb_hk_Ana2_title10";
+            // 
+            // lb_hk_Ana2_title9
+            // 
+            resources.ApplyResources(this.lb_hk_Ana2_title9, "lb_hk_Ana2_title9");
+            this.lb_hk_Ana2_title9.Name = "lb_hk_Ana2_title9";
+            // 
+            // lb_hk_Ana2_title8
+            // 
+            resources.ApplyResources(this.lb_hk_Ana2_title8, "lb_hk_Ana2_title8");
+            this.lb_hk_Ana2_title8.Name = "lb_hk_Ana2_title8";
+            // 
+            // lb_hk_Ana2_title7
+            // 
+            resources.ApplyResources(this.lb_hk_Ana2_title7, "lb_hk_Ana2_title7");
+            this.lb_hk_Ana2_title7.Name = "lb_hk_Ana2_title7";
+            // 
+            // lb_hk_Ana2_title6
+            // 
+            resources.ApplyResources(this.lb_hk_Ana2_title6, "lb_hk_Ana2_title6");
+            this.lb_hk_Ana2_title6.Name = "lb_hk_Ana2_title6";
+            // 
+            // lb_hk_Ana2_title5
+            // 
+            resources.ApplyResources(this.lb_hk_Ana2_title5, "lb_hk_Ana2_title5");
+            this.lb_hk_Ana2_title5.Name = "lb_hk_Ana2_title5";
+            // 
+            // lb_hk_Ana2_title4
+            // 
+            resources.ApplyResources(this.lb_hk_Ana2_title4, "lb_hk_Ana2_title4");
+            this.lb_hk_Ana2_title4.Name = "lb_hk_Ana2_title4";
+            // 
+            // lb_hk_Ana2_title3
+            // 
+            resources.ApplyResources(this.lb_hk_Ana2_title3, "lb_hk_Ana2_title3");
+            this.lb_hk_Ana2_title3.Name = "lb_hk_Ana2_title3";
+            // 
+            // lb_hk_Ana2_title2
+            // 
+            resources.ApplyResources(this.lb_hk_Ana2_title2, "lb_hk_Ana2_title2");
+            this.lb_hk_Ana2_title2.Name = "lb_hk_Ana2_title2";
+            // 
+            // lb_hk_Ana2_title1
+            // 
+            resources.ApplyResources(this.lb_hk_Ana2_title1, "lb_hk_Ana2_title1");
+            this.lb_hk_Ana2_title1.Name = "lb_hk_Ana2_title1";
+            // 
+            // flp_hk_year_anal2
+            // 
+            resources.ApplyResources(this.flp_hk_year_anal2, "flp_hk_year_anal2");
+            this.flp_hk_year_anal2.BackColor = System.Drawing.Color.White;
+            this.flp_hk_year_anal2.Name = "flp_hk_year_anal2";
+            // 
+            // chart_hk_year_anal3
+            // 
+            resources.ApplyResources(this.chart_hk_year_anal3, "chart_hk_year_anal3");
             chartArea7.Name = "ChartArea1";
-            this.chart_hk_year_anal4.ChartAreas.Add(chartArea7);
+            this.chart_hk_year_anal3.ChartAreas.Add(chartArea7);
             legend7.Name = "Legend1";
-            this.chart_hk_year_anal4.Legends.Add(legend7);
-            resources.ApplyResources(this.chart_hk_year_anal4, "chart_hk_year_anal4");
-            this.chart_hk_year_anal4.Name = "chart_hk_year_anal4";
+            this.chart_hk_year_anal3.Legends.Add(legend7);
+            this.chart_hk_year_anal3.Name = "chart_hk_year_anal3";
             series7.ChartArea = "ChartArea1";
             series7.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.StackedColumn;
             series7.Legend = "Legend1";
             series7.Name = "Series1";
-            this.chart_hk_year_anal4.Series.Add(series7);
-            // 
-            // chart_hk_year_anal3
-            // 
-            chartArea8.Name = "ChartArea1";
-            this.chart_hk_year_anal3.ChartAreas.Add(chartArea8);
-            legend8.Name = "Legend1";
-            this.chart_hk_year_anal3.Legends.Add(legend8);
-            resources.ApplyResources(this.chart_hk_year_anal3, "chart_hk_year_anal3");
-            this.chart_hk_year_anal3.Name = "chart_hk_year_anal3";
-            series8.ChartArea = "ChartArea1";
-            series8.Legend = "Legend1";
-            series8.Name = "Series1";
-            this.chart_hk_year_anal3.Series.Add(series8);
+            this.chart_hk_year_anal3.Series.Add(series7);
             // 
             // UserInfo_panel
             // 
@@ -1843,20 +2055,20 @@
             // 
             // Top_panel
             // 
+            resources.ApplyResources(this.Top_panel, "Top_panel");
             this.Top_panel.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.Top_panel.Controls.Add(this.LOGO);
             this.Top_panel.Controls.Add(this.lb_loginUser);
-            resources.ApplyResources(this.Top_panel, "Top_panel");
             this.Top_panel.Name = "Top_panel";
             // 
             // pnl_nav
             // 
+            resources.ApplyResources(this.pnl_nav, "pnl_nav");
             this.pnl_nav.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(44)))), ((int)(((byte)(65)))));
             this.pnl_nav.Controls.Add(this.btn_ck);
             this.pnl_nav.Controls.Add(this.btn_shp);
             this.pnl_nav.Controls.Add(this.btn_hk);
             this.pnl_nav.Controls.Add(this.btn_memo);
-            resources.ApplyResources(this.pnl_nav, "pnl_nav");
             this.pnl_nav.Name = "pnl_nav";
             // 
             // btn_ck
@@ -1901,115 +2113,6 @@
             this.Title_timer.Interval = 1000;
             this.Title_timer.Tick += new System.EventHandler(this.Title_timer_Tick);
             // 
-            // txt_hk_A_selectYear
-            // 
-            this.txt_hk_A_selectYear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.txt_hk_A_selectYear.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            resources.ApplyResources(this.txt_hk_A_selectYear, "txt_hk_A_selectYear");
-            this.txt_hk_A_selectYear.Name = "txt_hk_A_selectYear";
-            this.txt_hk_A_selectYear.TextChanged += new System.EventHandler(this.txt_hk_A_selectYear_TextChanged);
-            // 
-            // flp_hk_year_anal2
-            // 
-            resources.ApplyResources(this.flp_hk_year_anal2, "flp_hk_year_anal2");
-            this.flp_hk_year_anal2.Name = "flp_hk_year_anal2";
-            // 
-            // flp_hk_year_anal1
-            // 
-            resources.ApplyResources(this.flp_hk_year_anal1, "flp_hk_year_anal1");
-            this.flp_hk_year_anal1.BackColor = System.Drawing.Color.White;
-            this.flp_hk_year_anal1.Name = "flp_hk_year_anal1";
-            // 
-            // pnl_hk_anal_title
-            // 
-            this.pnl_hk_anal_title.BackColor = System.Drawing.Color.White;
-            this.pnl_hk_anal_title.Controls.Add(this.label11);
-            this.pnl_hk_anal_title.Controls.Add(this.label10);
-            this.pnl_hk_anal_title.Controls.Add(this.label9);
-            this.pnl_hk_anal_title.Controls.Add(this.label8);
-            this.pnl_hk_anal_title.Controls.Add(this.label7);
-            this.pnl_hk_anal_title.Controls.Add(this.label6);
-            this.pnl_hk_anal_title.Controls.Add(this.label5);
-            this.pnl_hk_anal_title.Controls.Add(this.label4);
-            this.pnl_hk_anal_title.Controls.Add(this.label3);
-            this.pnl_hk_anal_title.Controls.Add(this.label2);
-            this.pnl_hk_anal_title.Controls.Add(this.label1);
-            this.pnl_hk_anal_title.Controls.Add(this.lb_hk_Ana_title3);
-            this.pnl_hk_anal_title.Controls.Add(this.lb_hk_Ana_title2);
-            this.pnl_hk_anal_title.Controls.Add(this.lb_hk_Ana_title1);
-            resources.ApplyResources(this.pnl_hk_anal_title, "pnl_hk_anal_title");
-            this.pnl_hk_anal_title.Name = "pnl_hk_anal_title";
-            // 
-            // lb_hk_Ana_title1
-            // 
-            resources.ApplyResources(this.lb_hk_Ana_title1, "lb_hk_Ana_title1");
-            this.lb_hk_Ana_title1.Name = "lb_hk_Ana_title1";
-            // 
-            // lb_hk_Ana_title2
-            // 
-            resources.ApplyResources(this.lb_hk_Ana_title2, "lb_hk_Ana_title2");
-            this.lb_hk_Ana_title2.Name = "lb_hk_Ana_title2";
-            // 
-            // lb_hk_Ana_title3
-            // 
-            resources.ApplyResources(this.lb_hk_Ana_title3, "lb_hk_Ana_title3");
-            this.lb_hk_Ana_title3.Name = "lb_hk_Ana_title3";
-            // 
-            // label1
-            // 
-            resources.ApplyResources(this.label1, "label1");
-            this.label1.Name = "label1";
-            // 
-            // label2
-            // 
-            resources.ApplyResources(this.label2, "label2");
-            this.label2.Name = "label2";
-            // 
-            // label3
-            // 
-            resources.ApplyResources(this.label3, "label3");
-            this.label3.Name = "label3";
-            // 
-            // label4
-            // 
-            resources.ApplyResources(this.label4, "label4");
-            this.label4.Name = "label4";
-            // 
-            // label5
-            // 
-            resources.ApplyResources(this.label5, "label5");
-            this.label5.Name = "label5";
-            // 
-            // label6
-            // 
-            resources.ApplyResources(this.label6, "label6");
-            this.label6.Name = "label6";
-            // 
-            // label7
-            // 
-            resources.ApplyResources(this.label7, "label7");
-            this.label7.Name = "label7";
-            // 
-            // label8
-            // 
-            resources.ApplyResources(this.label8, "label8");
-            this.label8.Name = "label8";
-            // 
-            // label9
-            // 
-            resources.ApplyResources(this.label9, "label9");
-            this.label9.Name = "label9";
-            // 
-            // label10
-            // 
-            resources.ApplyResources(this.label10, "label10");
-            this.label10.Name = "label10";
-            // 
-            // label11
-            // 
-            resources.ApplyResources(this.label11, "label11");
-            this.label11.Name = "label11";
-            // 
             // Form_main
             // 
             resources.ApplyResources(this, "$this");
@@ -2020,8 +2123,6 @@
             this.Controls.Add(this.Top_panel);
             this.Controls.Add(this.tab_form);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
             this.Name = "Form_main";
             this.Load += new System.EventHandler(this.Form_main_Load);
             this.tab_form.ResumeLayout(false);
@@ -2051,8 +2152,7 @@
             this.home_tab_result.ResumeLayout(false);
             this.hk_month_table.ResumeLayout(false);
             this.pnl_hk_input.ResumeLayout(false);
-            this.pnl_hk_info.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.chart_inOut)).EndInit();
+            this.panel2.ResumeLayout(false);
             this.home_tab_insert.ResumeLayout(false);
             this.tabPage_hk_spend.ResumeLayout(false);
             this.tabPage_hk_spend.PerformLayout();
@@ -2060,6 +2160,8 @@
             this.tabPage_hk_income.PerformLayout();
             this.tabPage_hk_account.ResumeLayout(false);
             this.tabPage_hk_account.PerformLayout();
+            this.pnl_hk_info.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.chart_inOut)).EndInit();
             this.hk_month_Analysis.ResumeLayout(false);
             this.pnl_hk_analysis_title.ResumeLayout(false);
             this.pnl_hk_analysis2.ResumeLayout(false);
@@ -2071,17 +2173,17 @@
             this.flp_hk_year.ResumeLayout(false);
             this.pnl_hk_y_ana1.ResumeLayout(false);
             this.pnl_hk_year_anal1.ResumeLayout(false);
+            this.pnl_hk_anal_title.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.chart_hk_year_anal2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart_hk_year_anal1)).EndInit();
             this.pnl_hk_y_ana2.ResumeLayout(false);
             this.pnl_hk_year_anal2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.chart_hk_year_anal4)).EndInit();
+            this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.chart_hk_year_anal3)).EndInit();
             this.UserInfo_panel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.Top_panel.ResumeLayout(false);
             this.pnl_nav.ResumeLayout(false);
-            this.pnl_hk_anal_title.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -2262,26 +2364,41 @@
         private System.Windows.Forms.Label lb_title_Time;
         private System.Windows.Forms.Panel pnl_hk_y_ana2;
         private System.Windows.Forms.Panel pnl_hk_year_anal2;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chart_hk_year_anal4;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart_hk_year_anal3;
         private System.Windows.Forms.TextBox txt_hk_A_selectYear;
         private System.Windows.Forms.FlowLayoutPanel flp_hk_year_anal1;
         private System.Windows.Forms.FlowLayoutPanel flp_hk_year_anal2;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.Panel pnl_hk_anal_title;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lb_hk_Ana_title9;
+        private System.Windows.Forms.Label lb_hk_Ana_title8;
+        private System.Windows.Forms.Label lb_hk_Ana_title7;
+        private System.Windows.Forms.Label lb_hk_Ana_title6;
+        private System.Windows.Forms.Label lb_hk_Ana_title5;
+        private System.Windows.Forms.Label lb_hk_Ana_title4;
         private System.Windows.Forms.Label lb_hk_Ana_title3;
         private System.Windows.Forms.Label lb_hk_Ana_title2;
         private System.Windows.Forms.Label lb_hk_Ana_title1;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label lb_hk_Ana_title13;
+        private System.Windows.Forms.Label lb_hk_Ana_title12;
+        private System.Windows.Forms.Label lb_hk_Ana_title11;
+        private System.Windows.Forms.Label lb_hk_Ana_title10;
+        private System.Windows.Forms.Label lb_hk_Ana_title14;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label lb_hk_Ana2_title14;
+        private System.Windows.Forms.Label lb_hk_Ana2_title13;
+        private System.Windows.Forms.Label lb_hk_Ana2_title12;
+        private System.Windows.Forms.Label lb_hk_Ana2_title11;
+        private System.Windows.Forms.Label lb_hk_Ana2_title10;
+        private System.Windows.Forms.Label lb_hk_Ana2_title9;
+        private System.Windows.Forms.Label lb_hk_Ana2_title8;
+        private System.Windows.Forms.Label lb_hk_Ana2_title7;
+        private System.Windows.Forms.Label lb_hk_Ana2_title6;
+        private System.Windows.Forms.Label lb_hk_Ana2_title5;
+        private System.Windows.Forms.Label lb_hk_Ana2_title4;
+        private System.Windows.Forms.Label lb_hk_Ana2_title3;
+        private System.Windows.Forms.Label lb_hk_Ana2_title2;
+        private System.Windows.Forms.Label lb_hk_Ana2_title1;
+        private System.Windows.Forms.Panel panel2;
     }
 }
