@@ -209,40 +209,12 @@
             this.pnl_hk_y_ana1 = new System.Windows.Forms.Panel();
             this.pnl_hk_year_anal1 = new System.Windows.Forms.Panel();
             this.pnl_hk_anal_title = new System.Windows.Forms.Panel();
-            this.lb_hk_Ana_title14 = new System.Windows.Forms.Label();
-            this.lb_hk_Ana_title13 = new System.Windows.Forms.Label();
-            this.lb_hk_Ana_title12 = new System.Windows.Forms.Label();
-            this.lb_hk_Ana_title11 = new System.Windows.Forms.Label();
-            this.lb_hk_Ana_title10 = new System.Windows.Forms.Label();
-            this.lb_hk_Ana_title9 = new System.Windows.Forms.Label();
-            this.lb_hk_Ana_title8 = new System.Windows.Forms.Label();
-            this.lb_hk_Ana_title7 = new System.Windows.Forms.Label();
-            this.lb_hk_Ana_title6 = new System.Windows.Forms.Label();
-            this.lb_hk_Ana_title5 = new System.Windows.Forms.Label();
-            this.lb_hk_Ana_title4 = new System.Windows.Forms.Label();
-            this.lb_hk_Ana_title3 = new System.Windows.Forms.Label();
-            this.lb_hk_Ana_title2 = new System.Windows.Forms.Label();
-            this.lb_hk_Ana_title1 = new System.Windows.Forms.Label();
             this.flp_hk_year_anal1 = new System.Windows.Forms.FlowLayoutPanel();
             this.chart_hk_year_anal2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.chart_hk_year_anal1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.pnl_hk_y_ana2 = new System.Windows.Forms.Panel();
             this.pnl_hk_year_anal2 = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.lb_hk_Ana2_title14 = new System.Windows.Forms.Label();
-            this.lb_hk_Ana2_title13 = new System.Windows.Forms.Label();
-            this.lb_hk_Ana2_title12 = new System.Windows.Forms.Label();
-            this.lb_hk_Ana2_title11 = new System.Windows.Forms.Label();
-            this.lb_hk_Ana2_title10 = new System.Windows.Forms.Label();
-            this.lb_hk_Ana2_title9 = new System.Windows.Forms.Label();
-            this.lb_hk_Ana2_title8 = new System.Windows.Forms.Label();
-            this.lb_hk_Ana2_title7 = new System.Windows.Forms.Label();
-            this.lb_hk_Ana2_title6 = new System.Windows.Forms.Label();
-            this.lb_hk_Ana2_title5 = new System.Windows.Forms.Label();
-            this.lb_hk_Ana2_title4 = new System.Windows.Forms.Label();
-            this.lb_hk_Ana2_title3 = new System.Windows.Forms.Label();
-            this.lb_hk_Ana2_title2 = new System.Windows.Forms.Label();
-            this.lb_hk_Ana2_title1 = new System.Windows.Forms.Label();
+            this.pnl_hk_anal_title2 = new System.Windows.Forms.Panel();
             this.flp_hk_year_anal2 = new System.Windows.Forms.FlowLayoutPanel();
             this.chart_hk_year_anal3 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.UserInfo_panel = new System.Windows.Forms.Panel();
@@ -300,12 +272,10 @@
             this.flp_hk_year.SuspendLayout();
             this.pnl_hk_y_ana1.SuspendLayout();
             this.pnl_hk_year_anal1.SuspendLayout();
-            this.pnl_hk_anal_title.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart_hk_year_anal2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart_hk_year_anal1)).BeginInit();
             this.pnl_hk_y_ana2.SuspendLayout();
             this.pnl_hk_year_anal2.SuspendLayout();
-            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart_hk_year_anal3)).BeginInit();
             this.UserInfo_panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -1727,101 +1697,17 @@
             // 
             // pnl_hk_year_anal1
             // 
+            resources.ApplyResources(this.pnl_hk_year_anal1, "pnl_hk_year_anal1");
             this.pnl_hk_year_anal1.BackColor = System.Drawing.Color.White;
             this.pnl_hk_year_anal1.Controls.Add(this.pnl_hk_anal_title);
             this.pnl_hk_year_anal1.Controls.Add(this.flp_hk_year_anal1);
-            resources.ApplyResources(this.pnl_hk_year_anal1, "pnl_hk_year_anal1");
             this.pnl_hk_year_anal1.Name = "pnl_hk_year_anal1";
             // 
             // pnl_hk_anal_title
             // 
-            this.pnl_hk_anal_title.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.pnl_hk_anal_title.Controls.Add(this.lb_hk_Ana_title14);
-            this.pnl_hk_anal_title.Controls.Add(this.lb_hk_Ana_title13);
-            this.pnl_hk_anal_title.Controls.Add(this.lb_hk_Ana_title12);
-            this.pnl_hk_anal_title.Controls.Add(this.lb_hk_Ana_title11);
-            this.pnl_hk_anal_title.Controls.Add(this.lb_hk_Ana_title10);
-            this.pnl_hk_anal_title.Controls.Add(this.lb_hk_Ana_title9);
-            this.pnl_hk_anal_title.Controls.Add(this.lb_hk_Ana_title8);
-            this.pnl_hk_anal_title.Controls.Add(this.lb_hk_Ana_title7);
-            this.pnl_hk_anal_title.Controls.Add(this.lb_hk_Ana_title6);
-            this.pnl_hk_anal_title.Controls.Add(this.lb_hk_Ana_title5);
-            this.pnl_hk_anal_title.Controls.Add(this.lb_hk_Ana_title4);
-            this.pnl_hk_anal_title.Controls.Add(this.lb_hk_Ana_title3);
-            this.pnl_hk_anal_title.Controls.Add(this.lb_hk_Ana_title2);
-            this.pnl_hk_anal_title.Controls.Add(this.lb_hk_Ana_title1);
             resources.ApplyResources(this.pnl_hk_anal_title, "pnl_hk_anal_title");
+            this.pnl_hk_anal_title.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
             this.pnl_hk_anal_title.Name = "pnl_hk_anal_title";
-            // 
-            // lb_hk_Ana_title14
-            // 
-            resources.ApplyResources(this.lb_hk_Ana_title14, "lb_hk_Ana_title14");
-            this.lb_hk_Ana_title14.Name = "lb_hk_Ana_title14";
-            // 
-            // lb_hk_Ana_title13
-            // 
-            resources.ApplyResources(this.lb_hk_Ana_title13, "lb_hk_Ana_title13");
-            this.lb_hk_Ana_title13.Name = "lb_hk_Ana_title13";
-            // 
-            // lb_hk_Ana_title12
-            // 
-            resources.ApplyResources(this.lb_hk_Ana_title12, "lb_hk_Ana_title12");
-            this.lb_hk_Ana_title12.Name = "lb_hk_Ana_title12";
-            // 
-            // lb_hk_Ana_title11
-            // 
-            resources.ApplyResources(this.lb_hk_Ana_title11, "lb_hk_Ana_title11");
-            this.lb_hk_Ana_title11.Name = "lb_hk_Ana_title11";
-            // 
-            // lb_hk_Ana_title10
-            // 
-            resources.ApplyResources(this.lb_hk_Ana_title10, "lb_hk_Ana_title10");
-            this.lb_hk_Ana_title10.Name = "lb_hk_Ana_title10";
-            // 
-            // lb_hk_Ana_title9
-            // 
-            resources.ApplyResources(this.lb_hk_Ana_title9, "lb_hk_Ana_title9");
-            this.lb_hk_Ana_title9.Name = "lb_hk_Ana_title9";
-            // 
-            // lb_hk_Ana_title8
-            // 
-            resources.ApplyResources(this.lb_hk_Ana_title8, "lb_hk_Ana_title8");
-            this.lb_hk_Ana_title8.Name = "lb_hk_Ana_title8";
-            // 
-            // lb_hk_Ana_title7
-            // 
-            resources.ApplyResources(this.lb_hk_Ana_title7, "lb_hk_Ana_title7");
-            this.lb_hk_Ana_title7.Name = "lb_hk_Ana_title7";
-            // 
-            // lb_hk_Ana_title6
-            // 
-            resources.ApplyResources(this.lb_hk_Ana_title6, "lb_hk_Ana_title6");
-            this.lb_hk_Ana_title6.Name = "lb_hk_Ana_title6";
-            // 
-            // lb_hk_Ana_title5
-            // 
-            resources.ApplyResources(this.lb_hk_Ana_title5, "lb_hk_Ana_title5");
-            this.lb_hk_Ana_title5.Name = "lb_hk_Ana_title5";
-            // 
-            // lb_hk_Ana_title4
-            // 
-            resources.ApplyResources(this.lb_hk_Ana_title4, "lb_hk_Ana_title4");
-            this.lb_hk_Ana_title4.Name = "lb_hk_Ana_title4";
-            // 
-            // lb_hk_Ana_title3
-            // 
-            resources.ApplyResources(this.lb_hk_Ana_title3, "lb_hk_Ana_title3");
-            this.lb_hk_Ana_title3.Name = "lb_hk_Ana_title3";
-            // 
-            // lb_hk_Ana_title2
-            // 
-            resources.ApplyResources(this.lb_hk_Ana_title2, "lb_hk_Ana_title2");
-            this.lb_hk_Ana_title2.Name = "lb_hk_Ana_title2";
-            // 
-            // lb_hk_Ana_title1
-            // 
-            resources.ApplyResources(this.lb_hk_Ana_title1, "lb_hk_Ana_title1");
-            this.lb_hk_Ana_title1.Name = "lb_hk_Ana_title1";
             // 
             // flp_hk_year_anal1
             // 
@@ -1831,11 +1717,11 @@
             // 
             // chart_hk_year_anal2
             // 
-            resources.ApplyResources(this.chart_hk_year_anal2, "chart_hk_year_anal2");
             chartArea5.Name = "ChartArea1";
             this.chart_hk_year_anal2.ChartAreas.Add(chartArea5);
             legend5.Name = "Legend1";
             this.chart_hk_year_anal2.Legends.Add(legend5);
+            resources.ApplyResources(this.chart_hk_year_anal2, "chart_hk_year_anal2");
             this.chart_hk_year_anal2.Name = "chart_hk_year_anal2";
             series5.ChartArea = "ChartArea1";
             series5.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.StackedColumn;
@@ -1845,11 +1731,11 @@
             // 
             // chart_hk_year_anal1
             // 
-            resources.ApplyResources(this.chart_hk_year_anal1, "chart_hk_year_anal1");
             chartArea6.Name = "ChartArea1";
             this.chart_hk_year_anal1.ChartAreas.Add(chartArea6);
             legend6.Name = "Legend1";
             this.chart_hk_year_anal1.Legends.Add(legend6);
+            resources.ApplyResources(this.chart_hk_year_anal1, "chart_hk_year_anal1");
             this.chart_hk_year_anal1.Name = "chart_hk_year_anal1";
             series6.ChartArea = "ChartArea1";
             series6.Legend = "Legend1";
@@ -1866,101 +1752,17 @@
             // 
             // pnl_hk_year_anal2
             // 
-            this.pnl_hk_year_anal2.BackColor = System.Drawing.Color.White;
-            this.pnl_hk_year_anal2.Controls.Add(this.panel1);
-            this.pnl_hk_year_anal2.Controls.Add(this.flp_hk_year_anal2);
             resources.ApplyResources(this.pnl_hk_year_anal2, "pnl_hk_year_anal2");
+            this.pnl_hk_year_anal2.BackColor = System.Drawing.Color.White;
+            this.pnl_hk_year_anal2.Controls.Add(this.pnl_hk_anal_title2);
+            this.pnl_hk_year_anal2.Controls.Add(this.flp_hk_year_anal2);
             this.pnl_hk_year_anal2.Name = "pnl_hk_year_anal2";
             // 
-            // panel1
+            // pnl_hk_anal_title2
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.panel1.Controls.Add(this.lb_hk_Ana2_title14);
-            this.panel1.Controls.Add(this.lb_hk_Ana2_title13);
-            this.panel1.Controls.Add(this.lb_hk_Ana2_title12);
-            this.panel1.Controls.Add(this.lb_hk_Ana2_title11);
-            this.panel1.Controls.Add(this.lb_hk_Ana2_title10);
-            this.panel1.Controls.Add(this.lb_hk_Ana2_title9);
-            this.panel1.Controls.Add(this.lb_hk_Ana2_title8);
-            this.panel1.Controls.Add(this.lb_hk_Ana2_title7);
-            this.panel1.Controls.Add(this.lb_hk_Ana2_title6);
-            this.panel1.Controls.Add(this.lb_hk_Ana2_title5);
-            this.panel1.Controls.Add(this.lb_hk_Ana2_title4);
-            this.panel1.Controls.Add(this.lb_hk_Ana2_title3);
-            this.panel1.Controls.Add(this.lb_hk_Ana2_title2);
-            this.panel1.Controls.Add(this.lb_hk_Ana2_title1);
-            resources.ApplyResources(this.panel1, "panel1");
-            this.panel1.Name = "panel1";
-            // 
-            // lb_hk_Ana2_title14
-            // 
-            resources.ApplyResources(this.lb_hk_Ana2_title14, "lb_hk_Ana2_title14");
-            this.lb_hk_Ana2_title14.Name = "lb_hk_Ana2_title14";
-            // 
-            // lb_hk_Ana2_title13
-            // 
-            resources.ApplyResources(this.lb_hk_Ana2_title13, "lb_hk_Ana2_title13");
-            this.lb_hk_Ana2_title13.Name = "lb_hk_Ana2_title13";
-            // 
-            // lb_hk_Ana2_title12
-            // 
-            resources.ApplyResources(this.lb_hk_Ana2_title12, "lb_hk_Ana2_title12");
-            this.lb_hk_Ana2_title12.Name = "lb_hk_Ana2_title12";
-            // 
-            // lb_hk_Ana2_title11
-            // 
-            resources.ApplyResources(this.lb_hk_Ana2_title11, "lb_hk_Ana2_title11");
-            this.lb_hk_Ana2_title11.Name = "lb_hk_Ana2_title11";
-            // 
-            // lb_hk_Ana2_title10
-            // 
-            resources.ApplyResources(this.lb_hk_Ana2_title10, "lb_hk_Ana2_title10");
-            this.lb_hk_Ana2_title10.Name = "lb_hk_Ana2_title10";
-            // 
-            // lb_hk_Ana2_title9
-            // 
-            resources.ApplyResources(this.lb_hk_Ana2_title9, "lb_hk_Ana2_title9");
-            this.lb_hk_Ana2_title9.Name = "lb_hk_Ana2_title9";
-            // 
-            // lb_hk_Ana2_title8
-            // 
-            resources.ApplyResources(this.lb_hk_Ana2_title8, "lb_hk_Ana2_title8");
-            this.lb_hk_Ana2_title8.Name = "lb_hk_Ana2_title8";
-            // 
-            // lb_hk_Ana2_title7
-            // 
-            resources.ApplyResources(this.lb_hk_Ana2_title7, "lb_hk_Ana2_title7");
-            this.lb_hk_Ana2_title7.Name = "lb_hk_Ana2_title7";
-            // 
-            // lb_hk_Ana2_title6
-            // 
-            resources.ApplyResources(this.lb_hk_Ana2_title6, "lb_hk_Ana2_title6");
-            this.lb_hk_Ana2_title6.Name = "lb_hk_Ana2_title6";
-            // 
-            // lb_hk_Ana2_title5
-            // 
-            resources.ApplyResources(this.lb_hk_Ana2_title5, "lb_hk_Ana2_title5");
-            this.lb_hk_Ana2_title5.Name = "lb_hk_Ana2_title5";
-            // 
-            // lb_hk_Ana2_title4
-            // 
-            resources.ApplyResources(this.lb_hk_Ana2_title4, "lb_hk_Ana2_title4");
-            this.lb_hk_Ana2_title4.Name = "lb_hk_Ana2_title4";
-            // 
-            // lb_hk_Ana2_title3
-            // 
-            resources.ApplyResources(this.lb_hk_Ana2_title3, "lb_hk_Ana2_title3");
-            this.lb_hk_Ana2_title3.Name = "lb_hk_Ana2_title3";
-            // 
-            // lb_hk_Ana2_title2
-            // 
-            resources.ApplyResources(this.lb_hk_Ana2_title2, "lb_hk_Ana2_title2");
-            this.lb_hk_Ana2_title2.Name = "lb_hk_Ana2_title2";
-            // 
-            // lb_hk_Ana2_title1
-            // 
-            resources.ApplyResources(this.lb_hk_Ana2_title1, "lb_hk_Ana2_title1");
-            this.lb_hk_Ana2_title1.Name = "lb_hk_Ana2_title1";
+            resources.ApplyResources(this.pnl_hk_anal_title2, "pnl_hk_anal_title2");
+            this.pnl_hk_anal_title2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.pnl_hk_anal_title2.Name = "pnl_hk_anal_title2";
             // 
             // flp_hk_year_anal2
             // 
@@ -2173,12 +1975,10 @@
             this.flp_hk_year.ResumeLayout(false);
             this.pnl_hk_y_ana1.ResumeLayout(false);
             this.pnl_hk_year_anal1.ResumeLayout(false);
-            this.pnl_hk_anal_title.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.chart_hk_year_anal2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart_hk_year_anal1)).EndInit();
             this.pnl_hk_y_ana2.ResumeLayout(false);
             this.pnl_hk_year_anal2.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.chart_hk_year_anal3)).EndInit();
             this.UserInfo_panel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -2370,35 +2170,7 @@
         private System.Windows.Forms.FlowLayoutPanel flp_hk_year_anal2;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.Panel pnl_hk_anal_title;
-        private System.Windows.Forms.Label lb_hk_Ana_title9;
-        private System.Windows.Forms.Label lb_hk_Ana_title8;
-        private System.Windows.Forms.Label lb_hk_Ana_title7;
-        private System.Windows.Forms.Label lb_hk_Ana_title6;
-        private System.Windows.Forms.Label lb_hk_Ana_title5;
-        private System.Windows.Forms.Label lb_hk_Ana_title4;
-        private System.Windows.Forms.Label lb_hk_Ana_title3;
-        private System.Windows.Forms.Label lb_hk_Ana_title2;
-        private System.Windows.Forms.Label lb_hk_Ana_title1;
-        private System.Windows.Forms.Label lb_hk_Ana_title13;
-        private System.Windows.Forms.Label lb_hk_Ana_title12;
-        private System.Windows.Forms.Label lb_hk_Ana_title11;
-        private System.Windows.Forms.Label lb_hk_Ana_title10;
-        private System.Windows.Forms.Label lb_hk_Ana_title14;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label lb_hk_Ana2_title14;
-        private System.Windows.Forms.Label lb_hk_Ana2_title13;
-        private System.Windows.Forms.Label lb_hk_Ana2_title12;
-        private System.Windows.Forms.Label lb_hk_Ana2_title11;
-        private System.Windows.Forms.Label lb_hk_Ana2_title10;
-        private System.Windows.Forms.Label lb_hk_Ana2_title9;
-        private System.Windows.Forms.Label lb_hk_Ana2_title8;
-        private System.Windows.Forms.Label lb_hk_Ana2_title7;
-        private System.Windows.Forms.Label lb_hk_Ana2_title6;
-        private System.Windows.Forms.Label lb_hk_Ana2_title5;
-        private System.Windows.Forms.Label lb_hk_Ana2_title4;
-        private System.Windows.Forms.Label lb_hk_Ana2_title3;
-        private System.Windows.Forms.Label lb_hk_Ana2_title2;
-        private System.Windows.Forms.Label lb_hk_Ana2_title1;
+        private System.Windows.Forms.Panel pnl_hk_anal_title2;
         private System.Windows.Forms.Panel panel2;
     }
 }
