@@ -127,27 +127,7 @@
             this.home_tab_insert = new System.Windows.Forms.TabControl();
             this.tabPage_hk_spend = new System.Windows.Forms.TabPage();
             this.lb_hk_title1 = new System.Windows.Forms.Label();
-            this.cal_1 = new System.Windows.Forms.Button();
-            this.cal_4 = new System.Windows.Forms.Button();
-            this.cal_7 = new System.Windows.Forms.Button();
-            this.cal_CE = new System.Windows.Forms.Button();
-            this.cal_equal = new System.Windows.Forms.Button();
-            this.cal_comma = new System.Windows.Forms.Button();
-            this.cal_0 = new System.Windows.Forms.Button();
-            this.cal_Plus = new System.Windows.Forms.Button();
-            this.cal_3 = new System.Windows.Forms.Button();
-            this.cal_2 = new System.Windows.Forms.Button();
-            this.cal_minuse = new System.Windows.Forms.Button();
-            this.cal_6 = new System.Windows.Forms.Button();
-            this.cal_5 = new System.Windows.Forms.Button();
-            this.cal_multiple = new System.Windows.Forms.Button();
-            this.cal_9 = new System.Windows.Forms.Button();
-            this.cal_8 = new System.Windows.Forms.Button();
-            this.cal_Backspace = new System.Windows.Forms.Button();
-            this.cal_division = new System.Windows.Forms.Button();
             this.cb_hk_spendEx = new System.Windows.Forms.ComboBox();
-            this.cal_Percent = new System.Windows.Forms.Button();
-            this.cal_result = new System.Windows.Forms.Label();
             this.btn_hk_spend = new System.Windows.Forms.Button();
             this.cb_hk_spendAccont = new System.Windows.Forms.ComboBox();
             this.cb_hk_spendType = new System.Windows.Forms.ComboBox();
@@ -1046,27 +1026,7 @@
             // 
             this.tabPage_hk_spend.BackColor = System.Drawing.Color.White;
             this.tabPage_hk_spend.Controls.Add(this.lb_hk_title1);
-            this.tabPage_hk_spend.Controls.Add(this.cal_1);
-            this.tabPage_hk_spend.Controls.Add(this.cal_4);
-            this.tabPage_hk_spend.Controls.Add(this.cal_7);
-            this.tabPage_hk_spend.Controls.Add(this.cal_CE);
-            this.tabPage_hk_spend.Controls.Add(this.cal_equal);
-            this.tabPage_hk_spend.Controls.Add(this.cal_comma);
-            this.tabPage_hk_spend.Controls.Add(this.cal_0);
-            this.tabPage_hk_spend.Controls.Add(this.cal_Plus);
-            this.tabPage_hk_spend.Controls.Add(this.cal_3);
-            this.tabPage_hk_spend.Controls.Add(this.cal_2);
-            this.tabPage_hk_spend.Controls.Add(this.cal_minuse);
-            this.tabPage_hk_spend.Controls.Add(this.cal_6);
-            this.tabPage_hk_spend.Controls.Add(this.cal_5);
-            this.tabPage_hk_spend.Controls.Add(this.cal_multiple);
-            this.tabPage_hk_spend.Controls.Add(this.cal_9);
-            this.tabPage_hk_spend.Controls.Add(this.cal_8);
-            this.tabPage_hk_spend.Controls.Add(this.cal_Backspace);
-            this.tabPage_hk_spend.Controls.Add(this.cal_division);
             this.tabPage_hk_spend.Controls.Add(this.cb_hk_spendEx);
-            this.tabPage_hk_spend.Controls.Add(this.cal_Percent);
-            this.tabPage_hk_spend.Controls.Add(this.cal_result);
             this.tabPage_hk_spend.Controls.Add(this.btn_hk_spend);
             this.tabPage_hk_spend.Controls.Add(this.cb_hk_spendAccont);
             this.tabPage_hk_spend.Controls.Add(this.cb_hk_spendType);
@@ -1080,150 +1040,6 @@
             resources.ApplyResources(this.lb_hk_title1, "lb_hk_title1");
             this.lb_hk_title1.Name = "lb_hk_title1";
             // 
-            // cal_1
-            // 
-            resources.ApplyResources(this.cal_1, "cal_1");
-            this.cal_1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.cal_1.FlatAppearance.BorderSize = 0;
-            this.cal_1.Name = "cal_1";
-            this.cal_1.UseVisualStyleBackColor = false;
-            // 
-            // cal_4
-            // 
-            resources.ApplyResources(this.cal_4, "cal_4");
-            this.cal_4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.cal_4.FlatAppearance.BorderSize = 0;
-            this.cal_4.Name = "cal_4";
-            this.cal_4.UseVisualStyleBackColor = false;
-            // 
-            // cal_7
-            // 
-            resources.ApplyResources(this.cal_7, "cal_7");
-            this.cal_7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.cal_7.FlatAppearance.BorderSize = 0;
-            this.cal_7.Name = "cal_7";
-            this.cal_7.UseVisualStyleBackColor = false;
-            // 
-            // cal_CE
-            // 
-            resources.ApplyResources(this.cal_CE, "cal_CE");
-            this.cal_CE.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.cal_CE.FlatAppearance.BorderSize = 0;
-            this.cal_CE.Name = "cal_CE";
-            this.cal_CE.UseVisualStyleBackColor = false;
-            // 
-            // cal_equal
-            // 
-            resources.ApplyResources(this.cal_equal, "cal_equal");
-            this.cal_equal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.cal_equal.FlatAppearance.BorderSize = 0;
-            this.cal_equal.Name = "cal_equal";
-            this.cal_equal.UseVisualStyleBackColor = false;
-            // 
-            // cal_comma
-            // 
-            resources.ApplyResources(this.cal_comma, "cal_comma");
-            this.cal_comma.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.cal_comma.FlatAppearance.BorderSize = 0;
-            this.cal_comma.Name = "cal_comma";
-            this.cal_comma.UseVisualStyleBackColor = false;
-            // 
-            // cal_0
-            // 
-            resources.ApplyResources(this.cal_0, "cal_0");
-            this.cal_0.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.cal_0.FlatAppearance.BorderSize = 0;
-            this.cal_0.Name = "cal_0";
-            this.cal_0.UseVisualStyleBackColor = false;
-            // 
-            // cal_Plus
-            // 
-            resources.ApplyResources(this.cal_Plus, "cal_Plus");
-            this.cal_Plus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.cal_Plus.FlatAppearance.BorderSize = 0;
-            this.cal_Plus.Name = "cal_Plus";
-            this.cal_Plus.UseVisualStyleBackColor = false;
-            // 
-            // cal_3
-            // 
-            resources.ApplyResources(this.cal_3, "cal_3");
-            this.cal_3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.cal_3.FlatAppearance.BorderSize = 0;
-            this.cal_3.Name = "cal_3";
-            this.cal_3.UseVisualStyleBackColor = false;
-            // 
-            // cal_2
-            // 
-            resources.ApplyResources(this.cal_2, "cal_2");
-            this.cal_2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.cal_2.FlatAppearance.BorderSize = 0;
-            this.cal_2.Name = "cal_2";
-            this.cal_2.UseVisualStyleBackColor = false;
-            // 
-            // cal_minuse
-            // 
-            resources.ApplyResources(this.cal_minuse, "cal_minuse");
-            this.cal_minuse.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.cal_minuse.FlatAppearance.BorderSize = 0;
-            this.cal_minuse.Name = "cal_minuse";
-            this.cal_minuse.UseVisualStyleBackColor = false;
-            // 
-            // cal_6
-            // 
-            resources.ApplyResources(this.cal_6, "cal_6");
-            this.cal_6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.cal_6.FlatAppearance.BorderSize = 0;
-            this.cal_6.Name = "cal_6";
-            this.cal_6.UseVisualStyleBackColor = false;
-            // 
-            // cal_5
-            // 
-            resources.ApplyResources(this.cal_5, "cal_5");
-            this.cal_5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.cal_5.FlatAppearance.BorderSize = 0;
-            this.cal_5.Name = "cal_5";
-            this.cal_5.UseVisualStyleBackColor = false;
-            // 
-            // cal_multiple
-            // 
-            resources.ApplyResources(this.cal_multiple, "cal_multiple");
-            this.cal_multiple.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.cal_multiple.FlatAppearance.BorderSize = 0;
-            this.cal_multiple.Name = "cal_multiple";
-            this.cal_multiple.UseVisualStyleBackColor = false;
-            // 
-            // cal_9
-            // 
-            resources.ApplyResources(this.cal_9, "cal_9");
-            this.cal_9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.cal_9.FlatAppearance.BorderSize = 0;
-            this.cal_9.Name = "cal_9";
-            this.cal_9.UseVisualStyleBackColor = false;
-            // 
-            // cal_8
-            // 
-            resources.ApplyResources(this.cal_8, "cal_8");
-            this.cal_8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.cal_8.FlatAppearance.BorderSize = 0;
-            this.cal_8.Name = "cal_8";
-            this.cal_8.UseVisualStyleBackColor = false;
-            // 
-            // cal_Backspace
-            // 
-            resources.ApplyResources(this.cal_Backspace, "cal_Backspace");
-            this.cal_Backspace.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.cal_Backspace.FlatAppearance.BorderSize = 0;
-            this.cal_Backspace.Name = "cal_Backspace";
-            this.cal_Backspace.UseVisualStyleBackColor = false;
-            // 
-            // cal_division
-            // 
-            resources.ApplyResources(this.cal_division, "cal_division");
-            this.cal_division.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.cal_division.FlatAppearance.BorderSize = 0;
-            this.cal_division.Name = "cal_division";
-            this.cal_division.UseVisualStyleBackColor = false;
-            // 
             // cb_hk_spendEx
             // 
             resources.ApplyResources(this.cb_hk_spendEx, "cb_hk_spendEx");
@@ -1235,20 +1051,6 @@
             resources.GetString("cb_hk_spendEx.Items2")});
             this.cb_hk_spendEx.Name = "cb_hk_spendEx";
             this.cb_hk_spendEx.SelectedIndexChanged += new System.EventHandler(this.cb_hk_spendEx_SelectedIndexChanged);
-            // 
-            // cal_Percent
-            // 
-            resources.ApplyResources(this.cal_Percent, "cal_Percent");
-            this.cal_Percent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.cal_Percent.FlatAppearance.BorderSize = 0;
-            this.cal_Percent.Name = "cal_Percent";
-            this.cal_Percent.UseVisualStyleBackColor = false;
-            // 
-            // cal_result
-            // 
-            resources.ApplyResources(this.cal_result, "cal_result");
-            this.cal_result.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.cal_result.Name = "cal_result";
             // 
             // btn_hk_spend
             // 
@@ -2098,27 +1900,7 @@
         private System.Windows.Forms.Panel pnl_hk_analysis1;
         private System.Windows.Forms.ComboBox cb_hk_selectMonth;
         private System.Windows.Forms.TextBox txt_hk_selectYear;
-        private System.Windows.Forms.Button cal_1;
-        private System.Windows.Forms.Button cal_4;
-        private System.Windows.Forms.Button cal_7;
-        private System.Windows.Forms.Button cal_CE;
-        private System.Windows.Forms.Button cal_equal;
-        private System.Windows.Forms.Button cal_comma;
-        private System.Windows.Forms.Button cal_0;
-        private System.Windows.Forms.Button cal_Plus;
-        private System.Windows.Forms.Button cal_3;
-        private System.Windows.Forms.Button cal_2;
-        private System.Windows.Forms.Button cal_minuse;
-        private System.Windows.Forms.Button cal_6;
-        private System.Windows.Forms.Button cal_5;
-        private System.Windows.Forms.Button cal_multiple;
-        private System.Windows.Forms.Button cal_9;
-        private System.Windows.Forms.Button cal_8;
-        private System.Windows.Forms.Button cal_Backspace;
-        private System.Windows.Forms.Button cal_division;
         private System.Windows.Forms.ComboBox cb_hk_spendEx;
-        private System.Windows.Forms.Button cal_Percent;
-        private System.Windows.Forms.Label cal_result;
         private System.Windows.Forms.Label lb_exchange;
         private System.Windows.Forms.ComboBox cb_hk_exchangeEx;
         private System.Windows.Forms.ComboBox cb_hk_incomeEx;

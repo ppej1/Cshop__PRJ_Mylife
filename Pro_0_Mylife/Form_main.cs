@@ -86,7 +86,7 @@ namespace Pro_0_Mylife
             }
             else
             {
-                UserInfo_panel.Location = new Point(1040, 41);
+                UserInfo_panel.Location = new Point(Top_panel.Width-UserInfo_panel.Width, 41);
                 UserInfo_panel.Show();
             }
         }

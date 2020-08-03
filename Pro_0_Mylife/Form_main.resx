@@ -2583,654 +2583,6 @@
   <data name="&gt;&gt;lb_hk_title1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="cal_1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left</value>
-  </data>
-  <data name="cal_1.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="cal_1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="cal_1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>246, 179</value>
-  </data>
-  <data name="cal_1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="cal_1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>39, 39</value>
-  </data>
-  <data name="cal_1.TabIndex" type="System.Int32, mscorlib">
-    <value>49</value>
-  </data>
-  <data name="cal_1.Text" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;cal_1.Name" xml:space="preserve">
-    <value>cal_1</value>
-  </data>
-  <data name="&gt;&gt;cal_1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cal_1.Parent" xml:space="preserve">
-    <value>tabPage_hk_spend</value>
-  </data>
-  <data name="&gt;&gt;cal_1.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="cal_4.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left</value>
-  </data>
-  <data name="cal_4.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="cal_4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="cal_4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>246, 139</value>
-  </data>
-  <data name="cal_4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="cal_4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>39, 39</value>
-  </data>
-  <data name="cal_4.TabIndex" type="System.Int32, mscorlib">
-    <value>48</value>
-  </data>
-  <data name="cal_4.Text" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;cal_4.Name" xml:space="preserve">
-    <value>cal_4</value>
-  </data>
-  <data name="&gt;&gt;cal_4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cal_4.Parent" xml:space="preserve">
-    <value>tabPage_hk_spend</value>
-  </data>
-  <data name="&gt;&gt;cal_4.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="cal_7.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left</value>
-  </data>
-  <data name="cal_7.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="cal_7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="cal_7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>246, 99</value>
-  </data>
-  <data name="cal_7.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="cal_7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>39, 39</value>
-  </data>
-  <data name="cal_7.TabIndex" type="System.Int32, mscorlib">
-    <value>47</value>
-  </data>
-  <data name="cal_7.Text" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;cal_7.Name" xml:space="preserve">
-    <value>cal_7</value>
-  </data>
-  <data name="&gt;&gt;cal_7.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cal_7.Parent" xml:space="preserve">
-    <value>tabPage_hk_spend</value>
-  </data>
-  <data name="&gt;&gt;cal_7.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="cal_CE.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left</value>
-  </data>
-  <data name="cal_CE.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="cal_CE.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="cal_CE.Location" type="System.Drawing.Point, System.Drawing">
-    <value>246, 59</value>
-  </data>
-  <data name="cal_CE.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="cal_CE.Size" type="System.Drawing.Size, System.Drawing">
-    <value>39, 39</value>
-  </data>
-  <data name="cal_CE.TabIndex" type="System.Int32, mscorlib">
-    <value>46</value>
-  </data>
-  <data name="cal_CE.Text" xml:space="preserve">
-    <value>CE</value>
-  </data>
-  <data name="&gt;&gt;cal_CE.Name" xml:space="preserve">
-    <value>cal_CE</value>
-  </data>
-  <data name="&gt;&gt;cal_CE.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cal_CE.Parent" xml:space="preserve">
-    <value>tabPage_hk_spend</value>
-  </data>
-  <data name="&gt;&gt;cal_CE.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="cal_equal.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left</value>
-  </data>
-  <data name="cal_equal.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="cal_equal.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="cal_equal.Location" type="System.Drawing.Point, System.Drawing">
-    <value>366, 219</value>
-  </data>
-  <data name="cal_equal.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="cal_equal.Size" type="System.Drawing.Size, System.Drawing">
-    <value>39, 39</value>
-  </data>
-  <data name="cal_equal.TabIndex" type="System.Int32, mscorlib">
-    <value>44</value>
-  </data>
-  <data name="cal_equal.Text" xml:space="preserve">
-    <value>=</value>
-  </data>
-  <data name="&gt;&gt;cal_equal.Name" xml:space="preserve">
-    <value>cal_equal</value>
-  </data>
-  <data name="&gt;&gt;cal_equal.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cal_equal.Parent" xml:space="preserve">
-    <value>tabPage_hk_spend</value>
-  </data>
-  <data name="&gt;&gt;cal_equal.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="cal_comma.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left</value>
-  </data>
-  <data name="cal_comma.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="cal_comma.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="cal_comma.Location" type="System.Drawing.Point, System.Drawing">
-    <value>326, 219</value>
-  </data>
-  <data name="cal_comma.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="cal_comma.Size" type="System.Drawing.Size, System.Drawing">
-    <value>39, 39</value>
-  </data>
-  <data name="cal_comma.TabIndex" type="System.Int32, mscorlib">
-    <value>43</value>
-  </data>
-  <data name="cal_comma.Text" xml:space="preserve">
-    <value>.</value>
-  </data>
-  <data name="&gt;&gt;cal_comma.Name" xml:space="preserve">
-    <value>cal_comma</value>
-  </data>
-  <data name="&gt;&gt;cal_comma.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cal_comma.Parent" xml:space="preserve">
-    <value>tabPage_hk_spend</value>
-  </data>
-  <data name="&gt;&gt;cal_comma.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="cal_0.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left</value>
-  </data>
-  <data name="cal_0.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="cal_0.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="cal_0.Location" type="System.Drawing.Point, System.Drawing">
-    <value>246, 219</value>
-  </data>
-  <data name="cal_0.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="cal_0.Size" type="System.Drawing.Size, System.Drawing">
-    <value>79, 39</value>
-  </data>
-  <data name="cal_0.TabIndex" type="System.Int32, mscorlib">
-    <value>42</value>
-  </data>
-  <data name="cal_0.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;cal_0.Name" xml:space="preserve">
-    <value>cal_0</value>
-  </data>
-  <data name="&gt;&gt;cal_0.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cal_0.Parent" xml:space="preserve">
-    <value>tabPage_hk_spend</value>
-  </data>
-  <data name="&gt;&gt;cal_0.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="cal_Plus.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left</value>
-  </data>
-  <data name="cal_Plus.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="cal_Plus.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="cal_Plus.Location" type="System.Drawing.Point, System.Drawing">
-    <value>366, 179</value>
-  </data>
-  <data name="cal_Plus.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="cal_Plus.Size" type="System.Drawing.Size, System.Drawing">
-    <value>39, 39</value>
-  </data>
-  <data name="cal_Plus.TabIndex" type="System.Int32, mscorlib">
-    <value>40</value>
-  </data>
-  <data name="cal_Plus.Text" xml:space="preserve">
-    <value>+</value>
-  </data>
-  <data name="&gt;&gt;cal_Plus.Name" xml:space="preserve">
-    <value>cal_Plus</value>
-  </data>
-  <data name="&gt;&gt;cal_Plus.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cal_Plus.Parent" xml:space="preserve">
-    <value>tabPage_hk_spend</value>
-  </data>
-  <data name="&gt;&gt;cal_Plus.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="cal_3.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left</value>
-  </data>
-  <data name="cal_3.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="cal_3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="cal_3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>326, 179</value>
-  </data>
-  <data name="cal_3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="cal_3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>39, 39</value>
-  </data>
-  <data name="cal_3.TabIndex" type="System.Int32, mscorlib">
-    <value>39</value>
-  </data>
-  <data name="cal_3.Text" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;cal_3.Name" xml:space="preserve">
-    <value>cal_3</value>
-  </data>
-  <data name="&gt;&gt;cal_3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cal_3.Parent" xml:space="preserve">
-    <value>tabPage_hk_spend</value>
-  </data>
-  <data name="&gt;&gt;cal_3.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="cal_2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left</value>
-  </data>
-  <data name="cal_2.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="cal_2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="cal_2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>286, 179</value>
-  </data>
-  <data name="cal_2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="cal_2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>39, 39</value>
-  </data>
-  <data name="cal_2.TabIndex" type="System.Int32, mscorlib">
-    <value>38</value>
-  </data>
-  <data name="cal_2.Text" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;cal_2.Name" xml:space="preserve">
-    <value>cal_2</value>
-  </data>
-  <data name="&gt;&gt;cal_2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cal_2.Parent" xml:space="preserve">
-    <value>tabPage_hk_spend</value>
-  </data>
-  <data name="&gt;&gt;cal_2.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="cal_minuse.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left</value>
-  </data>
-  <data name="cal_minuse.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="cal_minuse.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="cal_minuse.Location" type="System.Drawing.Point, System.Drawing">
-    <value>366, 139</value>
-  </data>
-  <data name="cal_minuse.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="cal_minuse.Size" type="System.Drawing.Size, System.Drawing">
-    <value>39, 39</value>
-  </data>
-  <data name="cal_minuse.TabIndex" type="System.Int32, mscorlib">
-    <value>36</value>
-  </data>
-  <data name="cal_minuse.Text" xml:space="preserve">
-    <value>-</value>
-  </data>
-  <data name="&gt;&gt;cal_minuse.Name" xml:space="preserve">
-    <value>cal_minuse</value>
-  </data>
-  <data name="&gt;&gt;cal_minuse.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cal_minuse.Parent" xml:space="preserve">
-    <value>tabPage_hk_spend</value>
-  </data>
-  <data name="&gt;&gt;cal_minuse.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="cal_6.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left</value>
-  </data>
-  <data name="cal_6.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="cal_6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="cal_6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>326, 139</value>
-  </data>
-  <data name="cal_6.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="cal_6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>39, 39</value>
-  </data>
-  <data name="cal_6.TabIndex" type="System.Int32, mscorlib">
-    <value>35</value>
-  </data>
-  <data name="cal_6.Text" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;cal_6.Name" xml:space="preserve">
-    <value>cal_6</value>
-  </data>
-  <data name="&gt;&gt;cal_6.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cal_6.Parent" xml:space="preserve">
-    <value>tabPage_hk_spend</value>
-  </data>
-  <data name="&gt;&gt;cal_6.ZOrder" xml:space="preserve">
-    <value>12</value>
-  </data>
-  <data name="cal_5.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left</value>
-  </data>
-  <data name="cal_5.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="cal_5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="cal_5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>286, 139</value>
-  </data>
-  <data name="cal_5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="cal_5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>39, 39</value>
-  </data>
-  <data name="cal_5.TabIndex" type="System.Int32, mscorlib">
-    <value>34</value>
-  </data>
-  <data name="cal_5.Text" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;cal_5.Name" xml:space="preserve">
-    <value>cal_5</value>
-  </data>
-  <data name="&gt;&gt;cal_5.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cal_5.Parent" xml:space="preserve">
-    <value>tabPage_hk_spend</value>
-  </data>
-  <data name="&gt;&gt;cal_5.ZOrder" xml:space="preserve">
-    <value>13</value>
-  </data>
-  <data name="cal_multiple.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left</value>
-  </data>
-  <data name="cal_multiple.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="cal_multiple.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="cal_multiple.Location" type="System.Drawing.Point, System.Drawing">
-    <value>366, 99</value>
-  </data>
-  <data name="cal_multiple.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="cal_multiple.Size" type="System.Drawing.Size, System.Drawing">
-    <value>39, 39</value>
-  </data>
-  <data name="cal_multiple.TabIndex" type="System.Int32, mscorlib">
-    <value>32</value>
-  </data>
-  <data name="cal_multiple.Text" xml:space="preserve">
-    <value>X</value>
-  </data>
-  <data name="&gt;&gt;cal_multiple.Name" xml:space="preserve">
-    <value>cal_multiple</value>
-  </data>
-  <data name="&gt;&gt;cal_multiple.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cal_multiple.Parent" xml:space="preserve">
-    <value>tabPage_hk_spend</value>
-  </data>
-  <data name="&gt;&gt;cal_multiple.ZOrder" xml:space="preserve">
-    <value>14</value>
-  </data>
-  <data name="cal_9.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left</value>
-  </data>
-  <data name="cal_9.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="cal_9.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="cal_9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>326, 99</value>
-  </data>
-  <data name="cal_9.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="cal_9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>39, 39</value>
-  </data>
-  <data name="cal_9.TabIndex" type="System.Int32, mscorlib">
-    <value>31</value>
-  </data>
-  <data name="cal_9.Text" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="&gt;&gt;cal_9.Name" xml:space="preserve">
-    <value>cal_9</value>
-  </data>
-  <data name="&gt;&gt;cal_9.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cal_9.Parent" xml:space="preserve">
-    <value>tabPage_hk_spend</value>
-  </data>
-  <data name="&gt;&gt;cal_9.ZOrder" xml:space="preserve">
-    <value>15</value>
-  </data>
-  <data name="cal_8.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left</value>
-  </data>
-  <data name="cal_8.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="cal_8.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="cal_8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>286, 99</value>
-  </data>
-  <data name="cal_8.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="cal_8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>39, 39</value>
-  </data>
-  <data name="cal_8.TabIndex" type="System.Int32, mscorlib">
-    <value>30</value>
-  </data>
-  <data name="cal_8.Text" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;cal_8.Name" xml:space="preserve">
-    <value>cal_8</value>
-  </data>
-  <data name="&gt;&gt;cal_8.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cal_8.Parent" xml:space="preserve">
-    <value>tabPage_hk_spend</value>
-  </data>
-  <data name="&gt;&gt;cal_8.ZOrder" xml:space="preserve">
-    <value>16</value>
-  </data>
-  <data name="cal_Backspace.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left</value>
-  </data>
-  <data name="cal_Backspace.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="cal_Backspace.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="cal_Backspace.Location" type="System.Drawing.Point, System.Drawing">
-    <value>366, 59</value>
-  </data>
-  <data name="cal_Backspace.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="cal_Backspace.Size" type="System.Drawing.Size, System.Drawing">
-    <value>39, 39</value>
-  </data>
-  <data name="cal_Backspace.TabIndex" type="System.Int32, mscorlib">
-    <value>28</value>
-  </data>
-  <data name="cal_Backspace.Text" xml:space="preserve">
-    <value>&lt;-</value>
-  </data>
-  <data name="&gt;&gt;cal_Backspace.Name" xml:space="preserve">
-    <value>cal_Backspace</value>
-  </data>
-  <data name="&gt;&gt;cal_Backspace.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cal_Backspace.Parent" xml:space="preserve">
-    <value>tabPage_hk_spend</value>
-  </data>
-  <data name="&gt;&gt;cal_Backspace.ZOrder" xml:space="preserve">
-    <value>17</value>
-  </data>
-  <data name="cal_division.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left</value>
-  </data>
-  <data name="cal_division.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="cal_division.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="cal_division.Location" type="System.Drawing.Point, System.Drawing">
-    <value>326, 59</value>
-  </data>
-  <data name="cal_division.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="cal_division.Size" type="System.Drawing.Size, System.Drawing">
-    <value>39, 39</value>
-  </data>
-  <data name="cal_division.TabIndex" type="System.Int32, mscorlib">
-    <value>27</value>
-  </data>
-  <data name="cal_division.Text" xml:space="preserve">
-    <value>/</value>
-  </data>
-  <data name="&gt;&gt;cal_division.Name" xml:space="preserve">
-    <value>cal_division</value>
-  </data>
-  <data name="&gt;&gt;cal_division.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cal_division.Parent" xml:space="preserve">
-    <value>tabPage_hk_spend</value>
-  </data>
-  <data name="&gt;&gt;cal_division.ZOrder" xml:space="preserve">
-    <value>18</value>
-  </data>
   <data name="cb_hk_spendEx.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Left</value>
   </data>
@@ -3268,76 +2620,7 @@
     <value>tabPage_hk_spend</value>
   </data>
   <data name="&gt;&gt;cb_hk_spendEx.ZOrder" xml:space="preserve">
-    <value>19</value>
-  </data>
-  <data name="cal_Percent.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left</value>
-  </data>
-  <data name="cal_Percent.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="cal_Percent.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="cal_Percent.Location" type="System.Drawing.Point, System.Drawing">
-    <value>286, 59</value>
-  </data>
-  <data name="cal_Percent.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="cal_Percent.Size" type="System.Drawing.Size, System.Drawing">
-    <value>39, 39</value>
-  </data>
-  <data name="cal_Percent.TabIndex" type="System.Int32, mscorlib">
-    <value>24</value>
-  </data>
-  <data name="cal_Percent.Text" xml:space="preserve">
-    <value>%</value>
-  </data>
-  <data name="&gt;&gt;cal_Percent.Name" xml:space="preserve">
-    <value>cal_Percent</value>
-  </data>
-  <data name="&gt;&gt;cal_Percent.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cal_Percent.Parent" xml:space="preserve">
-    <value>tabPage_hk_spend</value>
-  </data>
-  <data name="&gt;&gt;cal_Percent.ZOrder" xml:space="preserve">
-    <value>20</value>
-  </data>
-  <data name="cal_result.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left</value>
-  </data>
-  <data name="cal_result.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="cal_result.Location" type="System.Drawing.Point, System.Drawing">
-    <value>246, 18</value>
-  </data>
-  <data name="cal_result.Size" type="System.Drawing.Size, System.Drawing">
-    <value>159, 34</value>
-  </data>
-  <data name="cal_result.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="cal_result.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="cal_result.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleRight</value>
-  </data>
-  <data name="&gt;&gt;cal_result.Name" xml:space="preserve">
-    <value>cal_result</value>
-  </data>
-  <data name="&gt;&gt;cal_result.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cal_result.Parent" xml:space="preserve">
-    <value>tabPage_hk_spend</value>
-  </data>
-  <data name="&gt;&gt;cal_result.ZOrder" xml:space="preserve">
-    <value>21</value>
+    <value>1</value>
   </data>
   <data name="btn_hk_spend.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Left</value>
@@ -3355,7 +2638,7 @@
     <value>3, 2, 3, 2</value>
   </data>
   <data name="btn_hk_spend.Size" type="System.Drawing.Size, System.Drawing">
-    <value>215, 33</value>
+    <value>404, 33</value>
   </data>
   <data name="btn_hk_spend.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -3373,7 +2656,7 @@
     <value>tabPage_hk_spend</value>
   </data>
   <data name="&gt;&gt;btn_hk_spend.ZOrder" xml:space="preserve">
-    <value>22</value>
+    <value>2</value>
   </data>
   <data name="cb_hk_spendAccont.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Left</value>
@@ -3388,7 +2671,7 @@
     <value>3, 2, 3, 2</value>
   </data>
   <data name="cb_hk_spendAccont.Size" type="System.Drawing.Size, System.Drawing">
-    <value>215, 20</value>
+    <value>404, 20</value>
   </data>
   <data name="cb_hk_spendAccont.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -3403,7 +2686,7 @@
     <value>tabPage_hk_spend</value>
   </data>
   <data name="&gt;&gt;cb_hk_spendAccont.ZOrder" xml:space="preserve">
-    <value>23</value>
+    <value>3</value>
   </data>
   <data name="cb_hk_spendType.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -3415,7 +2698,7 @@
     <value>3, 2, 3, 2</value>
   </data>
   <data name="cb_hk_spendType.Size" type="System.Drawing.Size, System.Drawing">
-    <value>215, 20</value>
+    <value>404, 20</value>
   </data>
   <data name="cb_hk_spendType.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -3430,7 +2713,7 @@
     <value>tabPage_hk_spend</value>
   </data>
   <data name="&gt;&gt;cb_hk_spendType.ZOrder" xml:space="preserve">
-    <value>24</value>
+    <value>4</value>
   </data>
   <data name="txt_hk_spendPrice.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Left</value>
@@ -3445,7 +2728,7 @@
     <value>True</value>
   </data>
   <data name="txt_hk_spendPrice.Size" type="System.Drawing.Size, System.Drawing">
-    <value>129, 21</value>
+    <value>318, 21</value>
   </data>
   <data name="txt_hk_spendPrice.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -3460,7 +2743,7 @@
     <value>tabPage_hk_spend</value>
   </data>
   <data name="&gt;&gt;txt_hk_spendPrice.ZOrder" xml:space="preserve">
-    <value>25</value>
+    <value>5</value>
   </data>
   <data name="txt_hk_spendComment.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left</value>
@@ -3475,7 +2758,7 @@
     <value>True</value>
   </data>
   <data name="txt_hk_spendComment.Size" type="System.Drawing.Size, System.Drawing">
-    <value>215, 120</value>
+    <value>404, 120</value>
   </data>
   <data name="txt_hk_spendComment.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -3490,7 +2773,7 @@
     <value>tabPage_hk_spend</value>
   </data>
   <data name="&gt;&gt;txt_hk_spendComment.ZOrder" xml:space="preserve">
-    <value>26</value>
+    <value>6</value>
   </data>
   <data name="tabPage_hk_spend.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 22</value>
